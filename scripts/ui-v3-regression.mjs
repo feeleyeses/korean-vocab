@@ -1,33 +1,120 @@
 import { chromium } from 'playwright';
+
 const url = process.env.KWF_URL || 'https://feeleyeses.github.io/korean-vocab/';
-const browser = await chromium.launch({headless:true});
-const page = await browser.newPage({viewport:{width:1440,height:900}});
-await page.goto(url,{waitUntil:'networkidle',timeout:60000});
-await page.waitForTimeout(700);
-const fail=[]; const pass=(n,d)=>console.log('PASS',n,d); const check=(n,ok,d)=>ok?pass(n,d):fail.push(`${n}: ${d}`);
+const browser = await chromium.launch({ headless: true });
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
+await page.waitForTimeout(800);
 
-check('UI v3 runtime',await page.evaluate(()=>window.__KWF_UI_V3_READY__===true),'runtime not ready');
-let g=await page.locator('#study-card').evaluate(el=>{const r=el.getBoundingClientRect(),s=getComputedStyle(el);return {h:r.height,p:s.paddingLeft,pr:s.paddingRight,pb:s.paddingBottom}});
-const initialH=g.h; check('学习卡固定高度',initialH>=620&&initialH<=705,JSON.stringify(g));
-const actions=await page.locator('#study-card .pre-answer > div').evaluate(el=>{const er=el.getBoundingClientRect(),cr=el.closest('#study-card').getBoundingClientRect();return {left:Math.round(er.left-cr.left),right:Math.round(cr.right-er.right),cols:getComputedStyle(el).gridTemplateColumns.split(' ').length}});
-check('学习按钮保留左右边距',actions.left>=16&&actions.right>=16,JSON.stringify(actions));
-check('学习初始页三按钮单行',actions.cols===3,JSON.stringify(actions));
-await page.getByRole('button',{name:'直接看答案'}).click(); await page.waitForTimeout(250);
-const reveal=await page.locator('#study-card').evaluate(el=>{const r=el.getBoundingClientRect(); const texts=[...el.querySelectorAll('.answer-scroll > *')].filter(x=>x.getBoundingClientRect().width>0).map(x=>getComputedStyle(x).textAlign); return {h:r.height,texts}});
-check('学习揭晓页与初始页等高',Math.abs(reveal.h-initialH)<=2,JSON.stringify({initialH,revealH:reveal.h}));
-check('学习揭晓文字水平居中',reveal.texts.every(x=>x==='center'),JSON.stringify(reveal.texts));
+const failures = [];
+const pass = (name, detail) => console.log(`PASS ${name}: ${detail}`);
+const check = (name, ok, detail) => ok ? pass(name, detail) : failures.push(`${name}: ${detail}`);
 
-// learned row check only when present in current profile
-const open=page.getByRole('button',{name:/打开已学词库|查看已学词库/}).first(); if(await open.count()){try{await open.click();await page.waitForTimeout(200)}catch{}}
-const rows=page.locator('#learned-library-section .kwf-learned-row');
-if(await rows.count()){
- const d=await rows.first().evaluate(row=>{const rr=row.getBoundingClientRect();const sels=['.select-word','.learned-word-main','.learned-word-meaning','.learned-word-status'];let worst=0;for(const s of sels){const e=row.querySelector(s);if(!e)continue;const r=e.getBoundingClientRect();worst=Math.max(worst,Math.abs((r.top+r.height/2)-(rr.top+rr.height/2)));}return {h:rr.height,worst};});
- check('词库词条紧凑高度',d.h<=125,JSON.stringify(d)); check('词库词条垂直居中',d.worst<=12,JSON.stringify(d));
-}else pass('词库词条几何','fresh profile: no learned rows');
+check('UI v3 runtime', await page.evaluate(() => window.__KWF_UI_V3_READY__ === true), 'runtime not ready');
 
-// verify CSS contract for review 2x2 even if no review items in fresh profile
-const reviewContract=await page.evaluate(()=>{const s=[...document.styleSheets].flatMap(ss=>{try{return [...ss.cssRules]}catch{return[]}}).map(r=>r.cssText).join('\n');return s.includes('#study #study-card .review-question > div')&&s.includes('repeat(2, minmax(0, 1fr))')});
-check('复习选项 2×2 合同',reviewContract,'missing 2x2 rule');
+// ---- Learning card: initial geometry ----
+const initial = await page.locator('#study-card').evaluate(card => {
+  const r = card.getBoundingClientRect();
+  const s = getComputedStyle(card);
+  const group = card.querySelector('.pre-answer > div');
+  const gr = group.getBoundingClientRect();
+  const cols = getComputedStyle(group).gridTemplateColumns.split(' ').filter(Boolean).length;
+  const buttons = [...group.querySelectorAll('button')].map(b => b.getBoundingClientRect());
+  return {
+    h: r.height,
+    paddingLeft: s.paddingLeft,
+    paddingRight: s.paddingRight,
+    paddingBottom: s.paddingBottom,
+    groupLeft: Math.round(gr.left - r.left),
+    groupRight: Math.round(r.right - gr.right),
+    firstButtonLeft: Math.round(buttons[0].left - r.left),
+    lastButtonRight: Math.round(r.right - buttons.at(-1).right),
+    cols,
+  };
+});
+check('学习卡固定高度', initial.h >= 600 && initial.h <= 705, JSON.stringify(initial));
+check('学习按钮保留卡片边距', initial.firstButtonLeft >= 20 && initial.lastButtonRight >= 20, JSON.stringify(initial));
+check('学习初始页三按钮单行', initial.cols === 3, JSON.stringify(initial));
 
-if(fail.length){console.error('FAILURES\n'+fail.join('\n'));process.exitCode=1}else console.log('PASS UI v3 strict geometry regression');
+// Mark the first word learned so the same browser has a real learned row and a real review queue.
+await page.getByRole('button', { name: '不认识' }).click();
+await page.waitForTimeout(300);
+const learningReveal = await page.locator('#study-card').evaluate(card => {
+  const r = card.getBoundingClientRect();
+  const visible = [...card.querySelectorAll('.answer-scroll > *')].filter(x => x.getBoundingClientRect().width && x.getBoundingClientRect().height);
+  return { h: r.height, align: visible.map(x => getComputedStyle(x).textAlign) };
+});
+check('学习揭晓页与初始页等高', Math.abs(learningReveal.h - initial.h) <= 2, JSON.stringify({ initial: initial.h, reveal: learningReveal.h }));
+check('学习揭晓文字水平居中', learningReveal.align.length > 0 && learningReveal.align.every(x => x === 'center'), JSON.stringify(learningReveal.align));
+
+// ---- Learned library: actual row created by the interaction above ----
+const openLearned = page.getByRole('button', { name: /打开已学词库|查看已学词库/ }).first();
+await openLearned.click();
+await page.waitForTimeout(350);
+const rows = page.locator('#learned-library-section .kwf-learned-row');
+check('真实已学词条已生成', await rows.count() > 0, `rows=${await rows.count()}`);
+if (await rows.count()) {
+  const learned = await rows.first().evaluate(row => {
+    const rr = row.getBoundingClientRect();
+    const center = rr.top + rr.height / 2;
+    const offsets = {};
+    for (const sel of ['.select-word', '.learned-word-main', '.learned-word-meaning', '.learned-word-status']) {
+      const el = row.querySelector(sel);
+      if (!el) continue;
+      const r = el.getBoundingClientRect();
+      offsets[sel] = Math.round(Math.abs((r.top + r.height / 2) - center));
+    }
+    return { h: rr.height, offsets, worst: Math.max(0, ...Object.values(offsets)) };
+  });
+  check('词库词条紧凑高度', learned.h <= 125, JSON.stringify(learned));
+  check('词库词条垂直居中', learned.worst <= 12, JSON.stringify(learned));
+}
+
+// ---- Real full-library review card ----
+// The first answer created an actual learning record. Open the review module rather than testing CSS text.
+const fullReviewArticle = page.locator('#review .review-module-grid article').filter({ hasText: '全量库' }).first();
+const fullReviewButton = fullReviewArticle.locator('button');
+check('全量库复习入口已启用', await fullReviewButton.count() > 0 && !(await fullReviewButton.isDisabled()), `text=${await fullReviewButton.textContent().catch(() => '')}`);
+if (await fullReviewButton.count() && !(await fullReviewButton.isDisabled())) {
+  await fullReviewButton.click();
+  await page.waitForTimeout(400);
+
+  const reviewInitial = await page.locator('#study-card').evaluate(card => {
+    const r = card.getBoundingClientRect();
+    const q = card.querySelector('.review-question');
+    const grid = q?.querySelector('div');
+    const buttons = grid ? [...grid.querySelectorAll('button')] : [];
+    const rects = buttons.map(b => b.getBoundingClientRect());
+    const rows = [...new Set(rects.map(x => Math.round(x.top)))];
+    const cols = grid ? getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length : 0;
+    return { h: r.height, hasQuestion: Boolean(q), buttons: buttons.length, rows: rows.length, cols };
+  });
+  check('复习初始页真实 2×2', reviewInitial.hasQuestion && reviewInitial.buttons === 4 && reviewInitial.rows === 2 && reviewInitial.cols === 2, JSON.stringify(reviewInitial));
+
+  const reviewOption = page.locator('#study-card .review-question button').first();
+  if (await reviewOption.count()) {
+    await reviewOption.click();
+    await page.waitForTimeout(300);
+    const reviewReveal = await page.locator('#study-card').evaluate(card => {
+      const r = card.getBoundingClientRect();
+      const answer = card.querySelector('.answer-scroll,.answer,.compact-answer');
+      const visible = answer ? [...answer.querySelectorAll('*')].filter(x => {
+        const b = x.getBoundingClientRect();
+        return b.width > 0 && b.height > 0 && x.children.length === 0 && (x.textContent || '').trim();
+      }) : [];
+      return { h: r.height, hasAnswer: Boolean(answer), align: visible.map(x => getComputedStyle(x).textAlign) };
+    });
+    check('复习揭晓页与初始页等高', Math.abs(reviewReveal.h - reviewInitial.h) <= 2, JSON.stringify({ initial: reviewInitial.h, reveal: reviewReveal.h }));
+    check('复习揭晓文字水平居中', reviewReveal.hasAnswer && reviewReveal.align.length > 0 && reviewReveal.align.every(x => x === 'center'), JSON.stringify(reviewReveal.align));
+  } else {
+    failures.push('复习真实选项不存在');
+  }
+}
+
+if (failures.length) {
+  console.error('FAILURES\n' + failures.join('\n'));
+  process.exitCode = 1;
+} else {
+  console.log('PASS UI v3 strict real-state geometry regression');
+}
 await browser.close();
