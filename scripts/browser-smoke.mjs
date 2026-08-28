@@ -48,7 +48,6 @@ await expect('v2 runtime ready', async () => {
   const ready = await mobile.evaluate(() => Boolean(window.__KWF_LAYOUT_V2_READY__) && document.documentElement.dataset.kwfLayout === 'v2');
   return { ok: ready, detail: String(ready) };
 });
-
 await checkChange(mobile, '怎么学', mobile.getByRole('button', { name: '怎么学' }), async () => String(await mobile.getByRole('button', { name: '怎么学' }).getAttribute('aria-expanded')));
 await checkChange(mobile, '直接看答案', mobile.getByRole('button', { name: '直接看答案' }), async () => `${(await mobile.locator('#study-card').innerText()).slice(-240)}|shortcut:${await mobile.getByRole('button', { name: '直接看答案' }).count()}`);
 
@@ -60,7 +59,6 @@ await expect('学习卡无内部滚条', async () => {
   });
   return { ok: data.bad === 0, detail: JSON.stringify(data) };
 });
-
 await expect('学习卡内容不漂出边界', async () => {
   const result = await mobile.locator('#study-card').evaluate(card => {
     const outer = card.getBoundingClientRect();
@@ -75,11 +73,9 @@ await expect('学习卡内容不漂出边界', async () => {
   });
   return { ok: result.length === 0, detail: result.length ? result.join('; ') : 'contained' };
 });
-
 await expect('备考起点不在当前词库学习区', async () => {
   const visible = await mobile.getByText('选择备考起点', { exact: true }).evaluateAll(nodes => nodes.filter(n => {
-    const s = getComputedStyle(n);
-    const r = n.getBoundingClientRect();
+    const s = getComputedStyle(n); const r = n.getBoundingClientRect();
     return s.display !== 'none' && s.visibility !== 'hidden' && r.width > 0 && r.height > 0;
   }).length);
   return { ok: visible === 0, detail: `visible=${visible}` };
@@ -94,55 +90,43 @@ await desktop.waitForTimeout(600);
 
 await expect('已学概览保持全宽', async () => {
   const data = await desktop.evaluate(() => {
-    const board = document.querySelector('#review .review-board');
-    const summary = document.querySelector('#review .review-stat.learned-stat');
+    const board = document.querySelector('#review .review-board'); const summary = document.querySelector('#review .review-stat.learned-stat');
     if (!board || !summary) return null;
-    const b = board.getBoundingClientRect();
-    const s = summary.getBoundingClientRect();
+    const b = board.getBoundingClientRect(); const s = summary.getBoundingClientRect();
     return { ratio: s.width / b.width, height: s.height, parent: summary.parentElement?.className || '' };
   });
   return { ok: Boolean(data && data.ratio > 0.94 && data.height >= 130), detail: JSON.stringify(data) };
 });
-
 await expect('间隔复习保持全宽且不乱位', async () => {
   const data = await desktop.evaluate(() => {
-    const board = document.querySelector('#review .review-board');
-    const note = document.querySelector('#review .memory-note');
+    const board = document.querySelector('#review .review-board'); const note = document.querySelector('#review .memory-note');
     if (!board || !note) return null;
-    const b = board.getBoundingClientRect();
-    const n = note.getBoundingClientRect();
+    const b = board.getBoundingClientRect(); const n = note.getBoundingClientRect();
     return { ratio: n.width / b.width, overflowY: getComputedStyle(note).overflowY, parent: note.parentElement?.className || '' };
   });
   return { ok: Boolean(data && data.ratio > 0.94 && !['auto', 'scroll'].includes(data.overflowY)), detail: JSON.stringify(data) };
 });
-
 await expect('已学词库列表无内部滚动', async () => {
   const list = desktop.locator('#learned-library-section .kwf-learned-list');
   if (await list.count() === 0) return { ok: true, detail: 'N/A: fresh CI profile has no learned list' };
   const data = await list.evaluate(el => ({ overflowY: getComputedStyle(el).overflowY, maxHeight: getComputedStyle(el).maxHeight }));
   return { ok: !['auto', 'scroll'].includes(data.overflowY), detail: JSON.stringify(data) };
 });
-
 await expect('词条主要信息垂直居中', async () => {
   const rows = desktop.locator('#learned-library-section .kwf-learned-row');
   if (await rows.count() === 0) return { ok: true, detail: 'N/A: fresh CI profile has no learned rows; CSS regression rule still shipped' };
   const data = await rows.first().evaluate(row => {
-    const rr = row.getBoundingClientRect();
-    const center = rr.top + rr.height / 2;
-    const selectors = ['.select-word', '.learned-word-main', '.learned-word-meaning', '.learned-word-status'];
+    const rr = row.getBoundingClientRect(); const center = rr.top + rr.height / 2;
     const offsets = {};
-    for (const sel of selectors) {
-      const el = row.querySelector(sel);
-      if (!el) continue;
-      const r = el.getBoundingClientRect();
-      offsets[sel] = Math.round(Math.abs((r.top + r.height / 2) - center));
+    for (const sel of ['.select-word', '.learned-word-main', '.learned-word-meaning', '.learned-word-status']) {
+      const el = row.querySelector(sel); if (!el) continue;
+      const r = el.getBoundingClientRect(); offsets[sel] = Math.round(Math.abs((r.top + r.height / 2) - center));
     }
     return offsets;
   });
   const worst = Math.max(0, ...Object.values(data));
   return { ok: worst <= 16, detail: `${JSON.stringify(data)} worst=${worst}px` };
 });
-
 await expect('常用搭配按数据精选显示', async () => {
   const learnedRows = await desktop.locator('#learned-library-section .kwf-learned-row').count();
   const previews = await desktop.locator('#learned-library-section .kwf-row-collocation').count();
@@ -152,8 +136,7 @@ await expect('常用搭配按数据精选显示', async () => {
 console.log('DIAGNOSTICS FINAL');
 console.log(diagnostics.length ? diagnostics.join('\n') : '(none)');
 const hardDiagnostics = diagnostics.filter(x =>
-  x.includes('pageerror:') ||
-  (x.includes('http 404: https://feeleyeses.github.io/assets/'))
+  x.includes('pageerror:') || x.includes('requestfailed:') || x.includes('http 4') || x.includes('http 5')
 );
 if (failures.length || hardDiagnostics.length) {
   console.error('FAILURES:\n' + [...failures, ...hardDiagnostics].join('\n'));
@@ -161,5 +144,4 @@ if (failures.length || hardDiagnostics.length) {
 } else {
   console.log('PASS v2 browser interaction and layout smoke');
 }
-
 await browser.close();
