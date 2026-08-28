@@ -29,28 +29,91 @@ function hideMisplacedPlacement() {
 function normalizeCard() {
   const card = document.querySelector('#study-card.study-card');
   if (!card) return;
+  const mobile = matchMedia('(max-width: 900px)').matches;
+  const cardH = mobile ? '600px' : '620px';
+  const wordH = mobile ? '160px' : '168px';
   const revealed = Boolean(card.querySelector('.answer,.compact-answer,.answer-scroll'));
   const review = Boolean(card.querySelector('.review-question')) || /复习/.test(card.className);
   card.dataset.kwfUi = 'v3';
   card.dataset.kwfState = revealed ? 'revealed' : 'initial';
   card.dataset.kwfMode = review ? 'review' : 'learn';
 
-  important(card, 'overflow', 'hidden');
-  important(card, 'display', 'flex');
-  important(card, 'flex-direction', 'column');
+  for (const [prop, value] of [
+    ['overflow', 'hidden'], ['display', 'flex'], ['flex-direction', 'column'],
+    ['height', cardH], ['min-height', cardH], ['max-height', cardH]
+  ]) important(card, prop, value);
 
-  // Kill inherited legacy offsets/absolute positioning in card content.
-  for (const el of card.querySelectorAll('.word,.pre-answer,.answer,.compact-answer,.answer-scroll,.review-question,.pronunciation-stack,.sentence,.continue')) {
+  const meta = card.querySelector('.card-meta');
+  if (meta) {
+    important(meta, 'flex', '0 0 68px');
+    important(meta, 'height', '68px');
+    important(meta, 'min-height', '68px');
+    important(meta, 'max-height', '68px');
+  }
+
+  const word = card.querySelector('.word');
+  if (word) {
+    important(word, 'position', 'static');
+    important(word, 'inset', 'auto');
+    important(word, 'transform', 'none');
+    important(word, 'translate', 'none');
+    important(word, 'flex', `0 0 ${wordH}`);
+    important(word, 'height', wordH);
+    important(word, 'min-height', wordH);
+    important(word, 'max-height', wordH);
+    important(word, 'margin', '0');
+  }
+
+  // Kill inherited legacy offsets/sizing in state-dependent content.
+  for (const el of card.querySelectorAll('.pre-answer,.answer,.compact-answer,.answer-scroll,.review-question,.pronunciation-stack,.sentence,.continue')) {
     important(el, 'position', 'static');
     important(el, 'inset', 'auto');
     important(el, 'transform', 'none');
     important(el, 'translate', 'none');
   }
 
+  const pre = card.querySelector('.pre-answer');
+  if (pre) {
+    important(pre, 'flex', '1 1 0');
+    important(pre, 'height', 'auto');
+    important(pre, 'min-height', '0');
+    important(pre, 'max-height', 'none');
+  }
+
+  for (const answer of card.querySelectorAll('.answer,.compact-answer')) {
+    important(answer, 'flex', '1 1 0');
+    important(answer, 'display', 'flex');
+    important(answer, 'flex-direction', 'column');
+    important(answer, 'height', 'auto');
+    important(answer, 'min-height', '0');
+    important(answer, 'max-height', 'none');
+    important(answer, 'padding', '0');
+    important(answer, 'margin', '0');
+  }
+  for (const scroll of card.querySelectorAll('.answer-scroll')) {
+    important(scroll, 'flex', '1 1 0');
+    important(scroll, 'height', 'auto');
+    important(scroll, 'min-height', '0');
+    important(scroll, 'max-height', 'none');
+    important(scroll, 'overflow', 'visible');
+  }
+  for (const el of card.querySelectorAll('.answer *, .compact-answer *, .answer-scroll *')) important(el, 'text-align', 'center');
+
+  const question = card.querySelector('.review-question');
+  if (question) {
+    important(question, 'flex', '1 1 0');
+    important(question, 'height', 'auto');
+    important(question, 'min-height', '0');
+    important(question, 'max-height', 'none');
+    important(question, 'overflow', 'visible');
+  }
+
   // Review choices must always be a balanced 2 × 2 grid.
   for (const grid of card.querySelectorAll('.review-question > div')) {
     important(grid, 'display', 'grid');
     important(grid, 'grid-template-columns', 'repeat(2, minmax(0, 1fr))');
+    important(grid, 'grid-template-rows', mobile ? 'repeat(2, 50px)' : 'repeat(2, 54px)');
+    important(grid, 'height', 'auto');
   }
 }
 
@@ -112,7 +175,8 @@ function schedule() {
 
 const observer = new MutationObserver(schedule);
 function boot() {
-  observer.observe(document.documentElement, { childList: true, subtree: true });
+  observer.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] });
+  addEventListener('resize', schedule, { passive: true });
   schedule();
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once: true });
