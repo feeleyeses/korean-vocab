@@ -45,17 +45,18 @@ jobs:
           p = Path('_site/index.html')
           s = p.read_text(encoding='utf-8')
 
-          # The mirrored vinext page was built for a domain root. GitHub project
-          # Pages lives under /korean-vocab/, so root-absolute app assets break
-          # hydration and leave SSR buttons inert. Make all app-owned root paths
-          # project-relative at deploy time instead of mutating the mirrored source.
+          # GitHub Project Pages lives under /korean-vocab/. Patch both plain HTML
+          # URLs and escaped URLs inside the embedded vinext/RSC payload.
           replacements = {
               '"/assets/': '"assets/',
               "'/assets/": "'assets/",
+              '\\"/assets/': '\\"assets/',
+              "\\'/assets/": "\\'assets/",
               'import("/assets/': 'import("assets/',
               "import('/assets/": "import('assets/",
               'href="/favicon.svg"': 'href="favicon.svg"',
               "href='/favicon.svg'": "href='favicon.svg'",
+              '\\"href\\":\\"/favicon.svg\\"': '\\"href\\":\\"favicon.svg\\"',
           }
           for old, new in replacements.items():
               s = s.replace(old, new)
@@ -65,7 +66,8 @@ jobs:
               '<link rel="stylesheet" href="assets/study-card-v2.css" data-kwf-study-card-v2="true"/>',
           ]
           for tag in css_tags:
-              if tag.split(' data-')[1].split('=')[0] not in s:
+              marker = tag.split(' data-')[1].split('=')[0]
+              if marker not in s:
                   s = s.replace('</head>', tag + '</head>')
 
           enhancement = '<script type="module" src="assets/study-card-v2.js" data-kwf-study-card-v2-js="true"></script>'
@@ -79,6 +81,7 @@ jobs:
           grep -q 'data-kwf-study-card-v2' _site/index.html
           grep -q 'import("assets/index-' _site/index.html
           ! grep -q 'import("/assets/index-' _site/index.html
+          ! grep -q '\\"/assets/' _site/index.html
           test -f _site/assets/stabilize.css
           test -f _site/assets/study-card-v2.css
           test -f _site/assets/study-card-v2.js
@@ -100,16 +103,17 @@ jobs:
     needs: build-and-audit
     runs-on: ubuntu-latest
     steps:
-      - name: Confirm public app and runtime assets respond
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Confirm public assets respond
         shell: bash
         run: |
           set -euo pipefail
           base='https://feeleyeses.github.io/korean-vocab/'
           html=/tmp/kwf.html
           for i in 1 2 3 4 5 6; do
-            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html"; then
-              break
-            fi
+            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html"; then break; fi
             sleep 10
           done
           grep -q '韩语词场' "$html"
@@ -119,4 +123,14 @@ jobs:
           curl -fsSL "${base}${asset}" >/dev/null
           curl -fsSL "${base}assets/study-card-v2.js" >/dev/null
           curl -fsSL "${base}data/enrichment.json" >/dev/null
-          echo "Pages runtime smoke check passed: ${base}${asset}"
+
+      - name: Install Playwright
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install --no-save playwright@1.55.0
+          npx playwright install chromium --with-deps
+
+      - name: Browser interaction smoke test
+        env:
+          KWF_URL: https://feeleyeses.github.io/korean-vocab/
+        run: node scripts/browser-smoke.mjs
