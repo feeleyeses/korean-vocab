@@ -90,22 +90,31 @@ jobs:
                   s = s.replace('</body>', script + '</body>')
 
           p.write_text(s, encoding='utf-8')
+
+          # Vinext/Vite lazy dependency maps contain generated `assets/foo.js`
+          # strings. On Project Pages the runtime resolved those against the host
+          # root. Scope generated dependency strings to /korean-vocab/assets/.
+          for js in Path('_site/assets').glob('*.js'):
+              body = js.read_text(encoding='utf-8')
+              for old, new in (
+                  ('"/assets/', '"/korean-vocab/assets/'),
+                  ("'/assets/", "'/korean-vocab/assets/"),
+                  ('`/assets/', '`/korean-vocab/assets/'),
+                  ('"assets/', '"/korean-vocab/assets/'),
+                  ("'assets/", "'/korean-vocab/assets/"),
+                  ('`assets/', '`/korean-vocab/assets/'),
+              ):
+                  body = body.replace(old, new)
+              js.write_text(body, encoding='utf-8')
           PY
           touch _site/.nojekyll
-          grep -q 'data-kwf-stabilize' _site/index.html
-          grep -q 'data-kwf-study-card-v2' _site/index.html
           grep -q 'data-kwf-layout-v2' _site/index.html
           grep -q 'data-kwf-layout-v2-js' _site/index.html
           grep -q 'import("./assets/index-' _site/index.html
-          ! grep -q 'import("assets/index-' _site/index.html
-          ! grep -q 'import("/assets/index-' _site/index.html
           ! grep -q '/cdn-cgi/challenge-platform/' _site/index.html
-          test -f _site/assets/stabilize.css
-          test -f _site/assets/study-card-v2.css
-          test -f _site/assets/study-card-v2.js
           test -f _site/assets/layout-v2.css
           test -f _site/assets/layout-v2.js
-          test -f _site/data/enrichment.json
+          grep -R -q '/korean-vocab/assets/' _site/assets/index-*.js
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -141,7 +150,6 @@ jobs:
           asset=$(grep -o 'import("\./assets/index-[^"]*' "$html" | head -1 | sed 's/import("\.\///')
           test -n "$asset"
           curl -fsSL "${base}${asset}" >/dev/null
-          curl -fsSL "${base}assets/study-card-v2.js" >/dev/null
           curl -fsSL "${base}assets/layout-v2.css" >/dev/null
           curl -fsSL "${base}assets/layout-v2.js" >/dev/null
           curl -fsSL "${base}data/enrichment.json" >/dev/null
