@@ -1,0 +1,193 @@
+/* Korean Word Field — study card v2
+   Current-stage learning-card hierarchy inspired by compact mobile study cards.
+   Loaded after the mirrored app CSS. */
+
+#study .study-card {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+#study .study-card .word {
+  display: grid !important;
+  justify-items: center !important;
+  text-align: center !important;
+  gap: 8px !important;
+  padding: 22px 18px 14px !important;
+}
+
+#study .study-card .word h3 {
+  margin: 0 !important;
+  font-size: clamp(44px, 7vw, 72px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.035em !important;
+}
+
+#study .study-card .pronunciation-stack {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 7px 10px !important;
+  margin-top: 4px !important;
+}
+
+#study .study-card .pronunciation-stack p {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  margin: 0 !important;
+  padding: 6px 9px !important;
+  border-radius: 999px !important;
+  font-size: 12px !important;
+}
+
+#study .study-card .pronunciation-stack p span {
+  opacity: .62 !important;
+  font-size: 10px !important;
+}
+
+#study .study-card .pre-answer {
+  text-align: center !important;
+}
+
+#study .study-card .pre-answer > div,
+#study .study-card .review-question > div {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+}
+
+#study .study-card .pre-answer button,
+#study .study-card .review-question button,
+#study .study-card .continue {
+  min-height: 46px !important;
+}
+
+#study .study-card .answer.compact-answer {
+  display: grid !important;
+  gap: 10px !important;
+}
+
+#study .study-card .answer-scroll {
+  max-height: 430px !important;
+  overflow: hidden auto !important;
+  padding-right: 4px !important;
+}
+
+#study .study-card .answer-scroll h4 {
+  margin: 10px 0 6px !important;
+  text-align: center !important;
+  font-size: clamp(28px, 4.5vw, 40px) !important;
+  line-height: 1.15 !important;
+}
+
+#study .study-card .answer-scroll .sentence {
+  margin: 14px 0 5px !important;
+  font-size: clamp(18px, 2.4vw, 24px) !important;
+  line-height: 1.65 !important;
+  font-weight: 650 !important;
+}
+
+#study .study-card .answer-scroll .sentence + p {
+  margin: 0 0 12px !important;
+  opacity: .72 !important;
+  line-height: 1.6 !important;
+}
+
+#study .study-card .answer-scroll aside {
+  display: inline-flex !important;
+  align-items: center !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  margin: 4px auto 0 !important;
+  padding: 8px 12px !important;
+  border-radius: 12px !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+}
+
+.kwf-learning-extra {
+  display: grid;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.kwf-learning-extra > section {
+  padding: 12px 14px;
+  border: 1px solid rgba(53, 84, 69, .16);
+  border-radius: 14px;
+  background: rgba(245, 248, 244, .72);
+}
+
+.kwf-learning-extra h5 {
+  margin: 0 0 7px;
+  font-size: 12px;
+  letter-spacing: .03em;
+}
+
+.kwf-learning-extra ul {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.kwf-learning-extra li,
+.kwf-learning-extra p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.kwf-learning-extra .kwf-confusion {
+  background: rgba(255, 247, 241, .82);
+}
+
+.kwf-learning-extra mark {
+  background: transparent;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  #study .study-grid {
+    align-items: start !important;
+  }
+
+  #study .study-card {
+    padding-bottom: 74px !important;
+  }
+
+  #study .study-card .card-meta {
+    gap: 7px !important;
+  }
+
+  #study .study-card .word {
+    padding: 18px 10px 10px !important;
+  }
+
+  #study .study-card .answer-scroll {
+    max-height: min(48vh, 390px) !important;
+  }
+
+  #study .study-card .pre-answer > div,
+  #study .study-card .review-question > div {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  #study .study-card .pre-answer > div button,
+  #study .study-card .review-question > div button {
+    padding-inline: 6px !important;
+    font-size: 12px !important;
+  }
+
+  #study .study-card .continue {
+    position: sticky !important;
+    bottom: 74px !important;
+    z-index: 8 !important;
+    width: 100% !important;
+    min-height: 50px !important;
+  }
+
+  .kwf-learning-extra > section {
+    padding: 10px 12px;
+  }
+}
