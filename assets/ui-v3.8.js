@@ -6,9 +6,11 @@ function applyReviewV38(){
   const mobile=matchMedia('(max-width:900px)').matches;
   const edge=mobile?12:16;
   const buttonH=mobile?48:52;
+  const continueBottom=mobile?14:18;
+  const mapBottom=mobile?88:100;
 
   /* Do not resize or shift the review card itself. */
-  for(const [p,v] of [['width',''],['min-width',''],['max-width',''],['margin-left',''],['margin-right','']]) card.style.removeProperty(p);
+  for(const p of ['width','min-width','max-width','margin-left','margin-right']) card.style.removeProperty(p);
 
   /* Initial review: full-width question rail + four fixed, equal 2×2 buttons. */
   const q=card.querySelector('.review-question');
@@ -30,10 +32,9 @@ function applyReviewV38(){
 
   const revealed=card.querySelector('.answer.compact-answer');
   if(revealed){
-    /* Reserve a clean rail above Continue for the mapping summary. */
     const scroll=revealed.querySelector('.answer-scroll');
     if(scroll){
-      imp(scroll,'padding-bottom','46px');
+      imp(scroll,'padding-bottom','58px');
       const aside=scroll.querySelector('aside');
       if(aside) imp(aside,'display','none');
       for(const el of scroll.querySelectorAll('h4,.sentence,p,.chosen-answer')){
@@ -46,7 +47,7 @@ function applyReviewV38(){
     /* Reveal CTA: wide on X-axis, same fixed height. */
     const cont=revealed.querySelector('.continue');
     if(cont){
-      for(const [p,v] of [['box-sizing','border-box'],['position','absolute'],['left',`${edge}px`],['right',`${edge}px`],['bottom',mobile?'14px':'18px'],['width','auto'],['min-width','0'],['max-width','none'],['height',`${buttonH}px`],['min-height',`${buttonH}px`],['max-height',`${buttonH}px`],['margin','0'],['padding','0 18px']]) imp(cont,p,v);
+      for(const [p,v] of [['box-sizing','border-box'],['position','absolute'],['left',`${edge}px`],['right',`${edge}px`],['bottom',`${continueBottom}px`],['width','auto'],['min-width','0'],['max-width','none'],['height',`${buttonH}px`],['min-height',`${buttonH}px`],['max-height',`${buttonH}px`],['margin','0'],['padding','0 18px'],['z-index','30']]) imp(cont,p,v);
     }
 
     const map=revealed.querySelector('details.answer-map');
@@ -54,13 +55,13 @@ function applyReviewV38(){
       const summary=map.querySelector(':scope > summary');
       const list=map.querySelector('.option-map-list');
 
-      /* Closed state: a dedicated rail, never floating over the answer text. */
+      /* Closed state: dedicated rail above Continue; no overlap with the answer body. */
       if(!map.open){
-        for(const [p,v] of [['box-sizing','border-box'],['position','absolute'],['left',`${edge}px`],['right',`${edge}px`],['bottom',mobile?'72px':'80px'],['top','auto'],['width','auto'],['height','36px'],['min-height','36px'],['max-height','36px'],['margin','0'],['overflow','hidden'],['z-index','20'],['background','#fffdf7']]) imp(map,p,v);
+        for(const [p,v] of [['box-sizing','border-box'],['position','absolute'],['left',`${edge}px`],['right',`${edge}px`],['bottom',`${mapBottom}px`],['top','auto'],['width','auto'],['height','36px'],['min-height','36px'],['max-height','36px'],['margin','0'],['overflow','hidden'],['z-index','20'],['background','#fffdf7']]) imp(map,p,v);
         if(summary) for(const [p,v] of [['height','36px'],['min-height','36px'],['max-height','36px'],['display','flex'],['align-items','center'],['justify-content','center']]) imp(summary,p,v);
       }else{
-        /* Open state: replace the answer-body area, but stay between status and Continue. */
-        for(const [p,v] of [['box-sizing','border-box'],['position','absolute'],['left',`${edge}px`],['right',`${edge}px`],['top',mobile?'220px':'224px'],['bottom',mobile?'72px':'80px'],['width','auto'],['height','auto'],['min-height','0'],['max-height','none'],['margin','0'],['display','flex'],['flex-direction','column'],['overflow','hidden'],['z-index','24'],['opacity','1'],['background','#fffdf7'],['border-radius','14px']]) imp(map,p,v);
+        /* Open state: all four mappings occupy a clean 2×2 board above Continue. */
+        for(const [p,v] of [['box-sizing','border-box'],['position','absolute'],['left',`${edge}px`],['right',`${edge}px`],['top','216px'],['bottom',`${mapBottom}px`],['width','auto'],['height','auto'],['min-height','0'],['max-height','none'],['margin','0'],['display','flex'],['flex-direction','column'],['overflow','hidden'],['z-index','24'],['opacity','1'],['background','#fffdf7'],['border-radius','14px']]) imp(map,p,v);
         if(summary) for(const [p,v] of [['flex','0 0 36px'],['height','36px'],['min-height','36px'],['max-height','36px']]) imp(summary,p,v);
       }
 
