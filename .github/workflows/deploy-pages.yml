@@ -56,16 +56,14 @@ jobs:
           }
           for old, new in replacements.items(): s = s.replace(old, new)
           s = re.sub(r'<script>\(function\(\)\{function c\(\).*?/cdn-cgi/challenge-platform/scripts/jsd/main\.js.*?</script>', '', s, flags=re.S)
-
-          # Remove any old injected patch layers if a mirrored source ever contains them.
           s = re.sub(r'<link[^>]+(?:study-card-v2|layout-v2|stabilize)\.css[^>]*>', '', s)
-          s = re.sub(r'<script[^>]+(?:layout-v2)\.js[^>]*></script>', '', s)
+          s = re.sub(r'<script[^>]+(?:layout-v2|ui-v3(?:\.3)?)\.js[^>]*></script>', '', s)
 
           css = '<link rel="stylesheet" href="assets/ui-v3.css" data-kwf-ui-v3="true"/>'
           if 'data-kwf-ui-v3=' not in s: s = s.replace('</head>', css + '</head>')
           scripts = [
               '<script type="module" src="assets/study-card-v2.js" data-kwf-enrichment-js="true"></script>',
-              '<script type="module" src="assets/ui-v3.js" data-kwf-ui-v3-js="true"></script>',
+              '<script type="module" src="assets/ui-v3.3.js" data-kwf-ui-v3-js="true"></script>',
           ]
           for script in scripts:
               marker = script.split(' data-')[1].split('=')[0]
@@ -83,13 +81,15 @@ jobs:
           touch _site/.nojekyll
           grep -q 'data-kwf-ui-v3="true"' _site/index.html
           grep -q 'data-kwf-ui-v3-js="true"' _site/index.html
+          grep -q 'assets/ui-v3.3.js' _site/index.html
+          ! grep -q 'src="assets/ui-v3.js"' _site/index.html
           ! grep -q 'study-card-v2.css' _site/index.html
           ! grep -q 'layout-v2.css' _site/index.html
           ! grep -q 'layout-v2.js' _site/index.html
           grep -q 'import("./assets/index-' _site/index.html
           ! grep -q '/cdn-cgi/challenge-platform/' _site/index.html
           test -f _site/assets/ui-v3.css
-          test -f _site/assets/ui-v3.js
+          test -f _site/assets/ui-v3.3.js
           grep -R -q 'korean-vocab/assets/' _site/assets/index-*.js
 
       - name: Configure Pages
@@ -118,16 +118,17 @@ jobs:
           base='https://feeleyeses.github.io/korean-vocab/'
           html=/tmp/kwf.html
           for i in 1 2 3 4 5 6; do
-            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html"; then break; fi
+            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html" && grep -q 'assets/ui-v3.3.js' "$html"; then break; fi
             sleep 10
           done
           grep -q '韩语词场' "$html"
           grep -q 'data-kwf-ui-v3-js' "$html"
+          grep -q 'assets/ui-v3.3.js' "$html"
           asset=$(grep -o 'import("\./assets/index-[^"]*' "$html" | head -1 | sed 's/import("\.\///')
           test -n "$asset"
           curl -fsSL "${base}${asset}" >/dev/null
           curl -fsSL "${base}assets/ui-v3.css" >/dev/null
-          curl -fsSL "${base}assets/ui-v3.js" >/dev/null
+          curl -fsSL "${base}assets/ui-v3.3.js" >/dev/null
           curl -fsSL "${base}data/enrichment.json" >/dev/null
 
       - name: Install Playwright
