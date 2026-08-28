@@ -6,7 +6,7 @@ function applyReviewV38(){
   const isReview=card.classList.contains('review-mode')||Boolean(card.querySelector('.review-question, details.answer-map'));
   if(!isReview)return;
   const mobile=matchMedia('(max-width:900px)').matches;
-  const edge=mobile?12:16;
+  const edge=12;
   const buttonH=mobile?48:52;
   const continueBottom=mobile?14:18;
   const mapBottom=mobile?88:100;
