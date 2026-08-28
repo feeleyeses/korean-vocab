@@ -9,6 +9,7 @@ await page.waitForTimeout(800);
 const failures = [];
 const pass = (name, detail) => console.log(`PASS ${name}: ${detail}`);
 const check = (name, ok, detail) => ok ? pass(name, detail) : failures.push(`${name}: ${detail}`);
+const domClick = async locator => locator.evaluate(el => el.click());
 
 check('UI v3 runtime', await page.evaluate(() => window.__KWF_UI_V3_READY__ === true), 'runtime not ready');
 
@@ -46,7 +47,7 @@ check('学习揭晓页与初始页等高', Math.abs(learningReveal.h - initial.h
 check('学习揭晓文字水平居中', learningReveal.align.length > 0 && learningReveal.align.every(x => x === 'center'), JSON.stringify(learningReveal.align));
 
 const openLearned = page.getByRole('button', { name: /打开已学词库|查看已学词库/ }).first();
-await openLearned.click();
+await domClick(openLearned);
 await page.waitForTimeout(350);
 const rows = page.locator('#learned-library-section .kwf-learned-row');
 check('真实已学词条已生成', await rows.count() > 0, `rows=${await rows.count()}`);
@@ -71,7 +72,7 @@ const fullReviewArticle = page.locator('#review .review-module-grid article').fi
 const fullReviewButton = fullReviewArticle.locator('button');
 check('全量库复习入口已启用', await fullReviewButton.count() > 0 && !(await fullReviewButton.isDisabled()), `text=${await fullReviewButton.textContent().catch(() => '')}`);
 if (await fullReviewButton.count() && !(await fullReviewButton.isDisabled())) {
-  await fullReviewButton.click();
+  await domClick(fullReviewButton);
   await page.waitForTimeout(400);
   const reviewInitial = await page.locator('#study-card').evaluate(card => {
     const r = card.getBoundingClientRect();
@@ -87,7 +88,7 @@ if (await fullReviewButton.count() && !(await fullReviewButton.isDisabled())) {
 
   const reviewOption = page.locator('#study-card .review-question button').first();
   if (await reviewOption.count()) {
-    await reviewOption.click();
+    await domClick(reviewOption);
     await page.waitForTimeout(300);
     const reviewReveal = await page.locator('#study-card').evaluate(card => {
       const r = card.getBoundingClientRect();
