@@ -17,6 +17,39 @@ function text(el) {
   return (el?.textContent || '').replace(/\s+/g, ' ').trim();
 }
 
+function markOverviewStructure() {
+  const summary = document.querySelector('#review .review-stat.learned-stat');
+  const profile = document.querySelector('#review .memory-profile');
+  const note = document.querySelector('#review .memory-note');
+  const library = document.querySelector('#review #learned-library-section');
+
+  for (const [el, cls] of [
+    [summary, 'kwf-v2-summary'],
+    [profile, 'kwf-v2-profile'],
+    [note, 'kwf-v2-note'],
+    [library, 'kwf-v2-library'],
+  ]) {
+    if (!el) continue;
+    el.classList.add(cls);
+    if (el.parentElement && !el.parentElement.classList.contains('review-board')) {
+      el.parentElement.classList.add('kwf-v2-full-row-wrap');
+    }
+  }
+
+  // A legacy wrapper can own both summary/profile and keep a two-column grid.
+  // Mark the smallest shared ancestor so v2 can force a stable vertical stack.
+  if (summary && profile) {
+    let node = summary.parentElement;
+    while (node && node.id !== 'review') {
+      if (node.contains(profile)) {
+        node.classList.add('kwf-v2-overview-stack');
+        break;
+      }
+      node = node.parentElement;
+    }
+  }
+}
+
 function markMisplacedPlacementControls() {
   const study = document.querySelector('#study') || document;
   const labels = [...study.querySelectorAll('span, p, div, small')]
@@ -84,6 +117,7 @@ function markV2Ready() {
 async function applyV2() {
   v2State.scheduled = false;
   markV2Ready();
+  markOverviewStructure();
   markMisplacedPlacementControls();
   await enhanceLearnedRows();
 }
