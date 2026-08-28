@@ -7,6 +7,22 @@
   overflow: visible !important;
 }
 
+/* P0/P1 invariant: learning/review cards never create an inner scrollbar.
+   The page may grow naturally; content must not be trapped in a card viewport. */
+#study .study-card .answer-scroll,
+#study .study-card .answer,
+#study .study-card .review-question {
+  max-height: none !important;
+  height: auto !important;
+  overflow: visible !important;
+  scrollbar-width: none !important;
+}
+#study .study-card .answer-scroll::-webkit-scrollbar,
+#study .study-card .answer::-webkit-scrollbar,
+#study .study-card .review-question::-webkit-scrollbar {
+  display: none !important;
+}
+
 #study .study-card .word {
   display: grid !important;
   justify-items: center !important;
@@ -68,9 +84,7 @@
 }
 
 #study .study-card .answer-scroll {
-  max-height: 430px !important;
-  overflow: hidden auto !important;
-  padding-right: 4px !important;
+  padding-right: 0 !important;
 }
 
 #study .study-card .answer-scroll h4 {
@@ -162,10 +176,6 @@
 
   #study .study-card .word {
     padding: 18px 10px 10px !important;
-  }
-
-  #study .study-card .answer-scroll {
-    max-height: min(48vh, 390px) !important;
   }
 
   #study .study-card .pre-answer > div,
