@@ -3,120 +3,250 @@ const important = (el, prop, value) => el?.style?.setProperty(prop, value, 'impo
 const txt = el => (el?.textContent || '').replace(/\s+/g, ' ').trim();
 
 function injectPolishStyles() {
-  if (document.querySelector('#kwf-ui-v31')) return;
+  document.querySelector('#kwf-ui-v31')?.remove();
+  if (document.querySelector('#kwf-ui-v32')) return;
   const style = document.createElement('style');
-  style.id = 'kwf-ui-v31';
+  style.id = 'kwf-ui-v32';
   style.textContent = `
-    :root { --kwf-card-h: 540px !important; --kwf-word-h: 148px !important; }
-    #study #study-card.study-card { border-radius: 22px !important; padding-bottom: 18px !important; }
-    #study #study-card .card-meta { padding: 14px 0 8px !important; }
-    #study #study-card .word { padding: 8px 0 6px !important; gap: 8px !important; }
-    #study #study-card .word h3 { font-size: clamp(54px,5.3vw,76px) !important; }
-    #study #study-card .pronunciation-stack { gap: 5px 16px !important; }
+    :root { --kwf-card-h: 500px !important; --kwf-word-h: 136px !important; --kwf-action-h: 52px !important; --kwf-action-x: 24px !important; }
 
-    /* Initial learning: one compact control cluster, no floating hint/shortcut collision. */
+    #study #study-card.study-card {
+      position: relative !important;
+      border-radius: 22px !important;
+      padding: 0 22px 18px !important;
+      overflow: hidden !important;
+    }
+    #study #study-card .card-meta {
+      flex: 0 0 56px !important;
+      height: 56px !important;
+      min-height: 56px !important;
+      max-height: 56px !important;
+      padding: 12px 0 6px !important;
+    }
+    #study #study-card .word {
+      padding: 6px 0 4px !important;
+      gap: 6px !important;
+    }
+    #study #study-card .word h3 { font-size: clamp(52px,5vw,72px) !important; }
+    #study #study-card .pronunciation-stack { gap: 4px 14px !important; }
+
+    /* One fixed action rail: initial judgement buttons and revealed continue occupy the same footprint. */
     #study #study-card .pre-answer {
+      position: relative !important;
+      display: flex !important;
+      flex-direction: column !important;
       justify-content: center !important;
       align-items: stretch !important;
-      gap: 0 !important;
-      padding-top: 8px !important;
+      padding: 0 0 70px !important;
+      margin: 0 !important;
     }
     #study #study-card .pre-answer > p {
       position: static !important;
-      margin: 0 auto 4px !important;
+      margin: 0 auto 6px !important;
       line-height: 1.35 !important;
+      text-align: center !important;
     }
-    #study #study-card .pre-answer > .show-shortcut {
+    #study #study-card .pre-answer > .show-shortcut,
+    #study #study-card .review-question > .show-shortcut {
       position: static !important;
       display: inline-flex !important;
       align-items: center !important;
       justify-content: center !important;
-      min-height: 34px !important;
+      align-self: center !important;
+      width: auto !important;
+      min-width: 118px !important;
       height: 34px !important;
-      margin: 0 auto 14px !important;
-      padding: 4px 12px !important;
+      min-height: 34px !important;
+      max-height: 34px !important;
+      margin: 0 auto !important;
+      padding: 4px 14px !important;
       line-height: 1.2 !important;
+      text-align: center !important;
     }
-    #study #study-card .pre-answer > div { margin-top: 0 !important; }
-
-    /* Review question follows the same compact vertical rhythm. */
-    #study #study-card .review-question { justify-content: center !important; padding-top: 4px !important; }
-    #study #study-card .review-question > p { margin: 0 0 5px !important; }
-    #study #study-card .review-question > .show-shortcut {
-      min-height: 34px !important; height: 34px !important; margin: 0 auto 10px !important; padding: 4px 12px !important;
+    #study #study-card .pre-answer > div {
+      position: absolute !important;
+      left: var(--kwf-action-x) !important;
+      right: var(--kwf-action-x) !important;
+      bottom: 0 !important;
+      display: grid !important;
+      grid-template-columns: repeat(3,minmax(0,1fr)) !important;
+      gap: 10px !important;
+      width: auto !important;
+      height: var(--kwf-action-h) !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
-    #study #study-card .review-question > div { gap: 8px 10px !important; }
+    #study #study-card .pre-answer > div > button {
+      width: 100% !important;
+      height: var(--kwf-action-h) !important;
+      min-height: var(--kwf-action-h) !important;
+      max-height: var(--kwf-action-h) !important;
+      margin: 0 !important;
+    }
 
-    /* Revealed answer: denser hierarchy, no nested scrolling. */
-    #study #study-card .answer-scroll { gap: 5px !important; padding: 4px 8px 2px !important; }
-    #study #study-card .answer-scroll h4 { font-size: clamp(27px,3vw,36px) !important; margin: 0 0 2px !important; }
-    #study #study-card .answer-scroll .sentence { font-size: clamp(18px,1.8vw,22px) !important; margin: 2px auto 0 !important; }
+    /* Review question stays compact and balanced. */
+    #study #study-card .review-question {
+      position: relative !important;
+      justify-content: center !important;
+      padding: 0 0 126px !important;
+    }
+    #study #study-card .review-question > p { margin: 0 0 6px !important; text-align: center !important; }
+    #study #study-card .review-question > .show-shortcut { margin-bottom: 10px !important; }
+    #study #study-card .review-question > div {
+      position: absolute !important;
+      left: var(--kwf-action-x) !important;
+      right: var(--kwf-action-x) !important;
+      bottom: 0 !important;
+      display: grid !important;
+      grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+      grid-template-rows: repeat(2,52px) !important;
+      gap: 8px 10px !important;
+      width: auto !important;
+      height: 112px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    #study #study-card .review-question > div > button {
+      width: 100% !important;
+      height: 52px !important;
+      min-height: 52px !important;
+      max-height: 52px !important;
+      margin: 0 !important;
+      text-align: center !important;
+    }
+
+    /* Revealed state reserves the exact same action rail for Continue. */
+    #study #study-card .answer,
+    #study #study-card .compact-answer {
+      position: static !important;
+      padding: 0 0 70px !important;
+      margin: 0 !important;
+    }
+    #study #study-card .answer-scroll {
+      gap: 4px !important;
+      padding: 2px 8px !important;
+      overflow: visible !important;
+    }
+    #study #study-card .answer-scroll h4 { font-size: clamp(26px,2.8vw,34px) !important; margin: 0 0 1px !important; }
+    #study #study-card .answer-scroll .sentence { font-size: clamp(18px,1.7vw,21px) !important; margin: 1px auto 0 !important; }
     #study #study-card .answer-scroll aside { margin: 1px auto !important; }
-    #study #study-card .continue { height: 46px !important; min-height: 46px !important; max-height: 46px !important; flex-basis: 46px !important; margin-top: 6px !important; }
+    #study #study-card .continue {
+      position: absolute !important;
+      left: var(--kwf-action-x) !important;
+      right: var(--kwf-action-x) !important;
+      bottom: 18px !important;
+      width: auto !important;
+      height: var(--kwf-action-h) !important;
+      min-height: var(--kwf-action-h) !important;
+      max-height: var(--kwf-action-h) !important;
+      margin: 0 !important;
+      padding: 0 18px !important;
+      z-index: 30 !important;
+    }
+    #study #study-card .fuzzy-correction { margin: 2px auto !important; min-height: 32px !important; }
 
-    /* Option → Korean mapping becomes a lightweight comparison tray instead of a scroll box. */
+    /* Collapsed mapping is a small centered trigger. */
     #study #study-card details.answer-map {
       box-sizing: border-box !important;
-      width: calc(100% - 16px) !important;
-      margin: 5px 8px 2px !important;
+      position: static !important;
+      width: min(100%, 500px) !important;
+      margin: 4px auto 0 !important;
       padding: 0 !important;
       border: 1px solid rgba(18,49,38,.14) !important;
-      border-radius: 14px !important;
-      background: rgba(239,244,239,.72) !important;
+      border-radius: 12px !important;
+      background: #fffdf7 !important;
+      opacity: 1 !important;
       overflow: hidden !important;
     }
     #study #study-card details.answer-map > summary {
       list-style: none !important;
       cursor: pointer !important;
-      min-height: 34px !important;
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
+      height: 34px !important;
+      min-height: 34px !important;
       margin: 0 !important;
-      padding: 6px 12px !important;
+      padding: 0 12px !important;
       font-size: 13px !important;
+      line-height: 1 !important;
+      text-align: center !important;
       text-decoration: none !important;
+      background: #fffdf7 !important;
     }
     #study #study-card details.answer-map > summary::-webkit-details-marker { display:none !important; }
     #study #study-card details.answer-map > summary::after { content:'⌄'; margin-left:7px; opacity:.55; }
     #study #study-card details.answer-map[open] > summary::after { content:'⌃'; }
+
+    /* Open mapping replaces the answer body, fully opaque, never overlays Continue. */
+    #study #study-card details.answer-map[open] {
+      position: absolute !important;
+      left: 22px !important;
+      right: 22px !important;
+      top: 238px !important;
+      bottom: 82px !important;
+      z-index: 20 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      width: auto !important;
+      margin: 0 !important;
+      border: 1px solid rgba(18,49,38,.18) !important;
+      border-radius: 14px !important;
+      background: #fffdf7 !important;
+      opacity: 1 !important;
+      overflow: hidden !important;
+      box-shadow: 0 8px 24px rgba(18,49,38,.08) !important;
+    }
+    #study #study-card details.answer-map[open] > summary {
+      flex: 0 0 36px !important;
+      height: 36px !important;
+      min-height: 36px !important;
+      max-height: 36px !important;
+      border-bottom: 1px solid rgba(18,49,38,.12) !important;
+    }
     #study #study-card .option-map-list {
+      flex: 1 1 0 !important;
       display: grid !important;
       grid-template-columns: repeat(2,minmax(0,1fr)) !important;
-      gap: 7px !important;
+      grid-template-rows: repeat(2,minmax(0,1fr)) !important;
+      gap: 8px !important;
       width: 100% !important;
-      max-height: none !important;
       height: auto !important;
-      overflow: visible !important;
+      min-height: 0 !important;
+      max-height: none !important;
       margin: 0 !important;
-      padding: 0 8px 8px !important;
+      padding: 8px !important;
+      overflow: hidden !important;
     }
     #study #study-card .option-map-list article {
       box-sizing: border-box !important;
-      min-height: 58px !important;
-      height: 58px !important;
       display: grid !important;
-      grid-template-columns: 1fr !important;
       place-content: center !important;
-      gap: 2px !important;
+      min-width: 0 !important;
+      min-height: 0 !important;
+      height: auto !important;
       margin: 0 !important;
-      padding: 6px 8px !important;
+      padding: 8px 10px !important;
+      gap: 4px !important;
       border-radius: 11px !important;
       overflow: hidden !important;
+      text-align: center !important;
     }
-    #study #study-card .option-map-list article b { font-size: 13px !important; line-height: 1.2 !important; }
-    #study #study-card .option-map-list article span { font-size: 18px !important; line-height: 1.2 !important; font-weight: 650 !important; }
+    #study #study-card .option-map-list article b { font-size: 14px !important; line-height: 1.25 !important; }
+    #study #study-card .option-map-list article span { font-size: 20px !important; line-height: 1.2 !important; font-weight: 700 !important; }
     #study #study-card .option-map-list article small { display: none !important; }
-    #study #study-card .answer-map > small { display:block !important; margin: 3px 10px 8px !important; font-size:11px !important; line-height:1.3 !important; }
+    #study #study-card .answer-map > small { display: none !important; }
 
     @media (max-width: 900px) {
-      :root { --kwf-card-h: 520px !important; --kwf-word-h: 142px !important; }
-      #study #study-card.study-card { padding-bottom: 14px !important; }
-      #study #study-card .word h3 { font-size: clamp(50px,15vw,68px) !important; }
-      #study #study-card .pre-answer > div { width: calc(100% - 28px) !important; margin-left:14px !important; margin-right:14px !important; gap:8px !important; }
-      #study #study-card .pre-answer > div > button { min-height: 50px !important; }
-      #study #study-card .review-question > div { width: calc(100% - 28px) !important; }
-      #study #study-card .option-map-list article { min-height:54px !important; height:54px !important; }
+      :root { --kwf-card-h: 500px !important; --kwf-word-h: 132px !important; --kwf-action-h: 50px !important; --kwf-action-x: 14px !important; }
+      #study #study-card.study-card { padding: 0 14px 14px !important; }
+      #study #study-card .word h3 { font-size: clamp(48px,14vw,64px) !important; }
+      #study #study-card .review-question > div { grid-template-rows: repeat(2,48px) !important; height:104px !important; }
+      #study #study-card .review-question > div > button { height:48px !important; min-height:48px !important; max-height:48px !important; }
+      #study #study-card .continue { bottom:14px !important; }
+      #study #study-card details.answer-map[open] { left:14px !important; right:14px !important; top:224px !important; bottom:76px !important; }
+      #study #study-card .option-map-list article b { font-size:13px !important; }
+      #study #study-card .option-map-list article span { font-size:18px !important; }
     }
   `;
   document.head.appendChild(style);
@@ -143,32 +273,62 @@ function hideMisplacedPlacement() {
   }
 }
 
+function enforceShortPathRule() {
+  const panel = document.querySelector('#study .logic-panel');
+  const items = panel?.querySelectorAll('ol > li');
+  if (!items || items.length < 3) return;
+  const target = items[2];
+  if (!txt(target).includes('原位继续')) target.innerHTML = '<b>03</b>判断后原位继续，尽量不移动鼠标';
+}
+
 function normalizeCard() {
   const card = document.querySelector('#study-card.study-card');
   if (!card) return;
   const mobile = matchMedia('(max-width: 900px)').matches;
-  const cardH = mobile ? '520px' : '540px';
-  const wordH = mobile ? '142px' : '148px';
+  const cardH = '500px';
+  const wordH = mobile ? '132px' : '136px';
+  const actionH = mobile ? '50px' : '52px';
+  const actionX = mobile ? '14px' : '24px';
   const revealed = Boolean(card.querySelector('.answer,.compact-answer,.answer-scroll'));
   const review = Boolean(card.querySelector('.review-question')) || /review-mode/.test(card.className);
-  card.dataset.kwfUi = 'v3.1'; card.dataset.kwfState = revealed ? 'revealed' : 'initial'; card.dataset.kwfMode = review ? 'review' : 'learn';
-  for (const [prop,value] of [['overflow','hidden'],['display','flex'],['flex-direction','column'],['height',cardH],['min-height',cardH],['max-height',cardH]]) important(card,prop,value);
+  card.dataset.kwfUi = 'v3.2';
+  card.dataset.kwfState = revealed ? 'revealed' : 'initial';
+  card.dataset.kwfMode = review ? 'review' : 'learn';
+  for (const [prop,value] of [['position','relative'],['overflow','hidden'],['display','flex'],['flex-direction','column'],['height',cardH],['min-height',cardH],['max-height',cardH]]) important(card,prop,value);
+
   const meta = card.querySelector('.card-meta');
-  if (meta) for (const [p,v] of [['flex','0 0 60px'],['height','60px'],['min-height','60px'],['max-height','60px']]) important(meta,p,v);
+  if (meta) for (const [p,v] of [['flex','0 0 56px'],['height','56px'],['min-height','56px'],['max-height','56px']]) important(meta,p,v);
+
   const word = card.querySelector('.word');
   if (word) for (const [p,v] of [['position','static'],['inset','auto'],['transform','none'],['translate','none'],['flex',`0 0 ${wordH}`],['height',wordH],['min-height',wordH],['max-height',wordH],['margin','0']]) important(word,p,v);
-  for (const el of card.querySelectorAll('.pre-answer,.answer,.compact-answer,.answer-scroll,.review-question,.pronunciation-stack,.sentence,.continue')) {
+
+  for (const el of card.querySelectorAll('.pronunciation-stack,.sentence')) {
     important(el,'position','static'); important(el,'inset','auto'); important(el,'transform','none'); important(el,'translate','none');
   }
+
   const pre = card.querySelector('.pre-answer');
-  if (pre) for (const [p,v] of [['flex','1 1 0'],['height','auto'],['min-height','0'],['max-height','none']]) important(pre,p,v);
-  for (const answer of card.querySelectorAll('.answer,.compact-answer')) for (const [p,v] of [['flex','1 1 0'],['display','flex'],['flex-direction','column'],['height','auto'],['min-height','0'],['max-height','none'],['padding','0'],['margin','0']]) important(answer,p,v);
-  for (const scroll of card.querySelectorAll('.answer-scroll')) for (const [p,v] of [['flex','1 1 0'],['height','auto'],['min-height','0'],['max-height','none'],['overflow','visible']]) important(scroll,p,v);
+  if (pre) {
+    for (const [p,v] of [['position','relative'],['flex','1 1 0'],['height','auto'],['min-height','0'],['max-height','none']]) important(pre,p,v);
+    const grid = pre.querySelector(':scope > div');
+    if (grid) for (const [p,v] of [['position','absolute'],['left',actionX],['right',actionX],['bottom','0'],['height',actionH],['display','grid'],['grid-template-columns','repeat(3,minmax(0,1fr))']]) important(grid,p,v);
+  }
+
+  for (const answer of card.querySelectorAll('.answer,.compact-answer')) {
+    for (const [p,v] of [['position','static'],['flex','1 1 0'],['display','flex'],['flex-direction','column'],['height','auto'],['min-height','0'],['max-height','none'],['padding','0 0 70px'],['margin','0']]) important(answer,p,v);
+  }
+  for (const scroll of card.querySelectorAll('.answer-scroll')) {
+    for (const [p,v] of [['position','static'],['flex','1 1 0'],['height','auto'],['min-height','0'],['max-height','none'],['overflow','visible']]) important(scroll,p,v);
+  }
   for (const el of card.querySelectorAll('.answer *, .compact-answer *, .answer-scroll *')) important(el,'text-align','center');
+
+  const cont = card.querySelector('.continue');
+  if (cont) for (const [p,v] of [['position','absolute'],['left',actionX],['right',actionX],['bottom',mobile?'14px':'18px'],['width','auto'],['height',actionH],['min-height',actionH],['max-height',actionH],['margin','0'],['z-index','30']]) important(cont,p,v);
+
   const question = card.querySelector('.review-question');
-  if (question) for (const [p,v] of [['flex','1 1 0'],['height','auto'],['min-height','0'],['max-height','none'],['overflow','visible']]) important(question,p,v);
-  for (const grid of card.querySelectorAll('.review-question > div')) {
-    important(grid,'display','grid'); important(grid,'grid-template-columns','repeat(2,minmax(0,1fr))'); important(grid,'grid-template-rows',mobile?'repeat(2,48px)':'repeat(2,50px)'); important(grid,'height','auto');
+  if (question) {
+    for (const [p,v] of [['position','relative'],['flex','1 1 0'],['height','auto'],['min-height','0'],['max-height','none'],['overflow','visible']]) important(question,p,v);
+    const grid = question.querySelector(':scope > div');
+    if (grid) for (const [p,v] of [['position','absolute'],['left',actionX],['right',actionX],['bottom','0'],['display','grid'],['grid-template-columns','repeat(2,minmax(0,1fr))'],['grid-template-rows',mobile?'repeat(2,48px)':'repeat(2,52px)'],['height',mobile?'104px':'112px']]) important(grid,p,v);
   }
 }
 
@@ -181,7 +341,7 @@ function normalizeReviewStack() {
 async function normalizeLearnedRows() {
   const data = await enrichment(), entries = data?.entries || {};
   for (const row of document.querySelectorAll('#learned-library-section .kwf-learned-row')) {
-    row.dataset.kwfUi='v3.1'; important(row,'align-items','center');
+    row.dataset.kwfUi='v3.2'; important(row,'align-items','center');
     const main=row.querySelector('.learned-word-main'), meaning=row.querySelector('.learned-word-meaning'), status=row.querySelector('.learned-word-status');
     for (const el of [main,meaning,status]) { important(el,'align-self','center'); important(el,'justify-content','center'); }
     const word=txt(main?.querySelector('b,strong')); if(!word) continue;
@@ -191,8 +351,23 @@ async function normalizeLearnedRows() {
   }
 }
 
-async function apply(){ state.scheduled=false; injectPolishStyles(); document.documentElement.dataset.kwfUi='v3.1'; window.__KWF_UI_V3_READY__=true; hideMisplacedPlacement(); normalizeCard(); normalizeReviewStack(); await normalizeLearnedRows(); }
+async function apply(){
+  state.scheduled=false;
+  injectPolishStyles();
+  document.documentElement.dataset.kwfUi='v3.2';
+  window.__KWF_UI_V3_READY__=true;
+  hideMisplacedPlacement();
+  enforceShortPathRule();
+  normalizeCard();
+  normalizeReviewStack();
+  await normalizeLearnedRows();
+}
 function schedule(){ if(state.scheduled)return; state.scheduled=true; requestAnimationFrame(apply); }
 const observer=new MutationObserver(schedule);
-function boot(){ injectPolishStyles(); observer.observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['class']}); addEventListener('resize',schedule,{passive:true}); schedule(); }
+function boot(){
+  injectPolishStyles();
+  observer.observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['class','open']});
+  addEventListener('resize',schedule,{passive:true});
+  schedule();
+}
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot,{once:true}); else boot();
