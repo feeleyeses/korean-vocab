@@ -1,0 +1,84 @@
+name: Deploy Korean Word Field
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: korean-vocab-pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Audit vocabulary data
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/audit-vocab.py | tee vocab-audit.md
+          cat vocab-audit.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Build static Pages artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir _site
+          rsync -a ./ _site/ \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '_site' \
+            --exclude 'scripts'
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('_site/index.html')
+          s = p.read_text(encoding='utf-8')
+          tag = '<link rel="stylesheet" href="assets/stabilize.css" data-kwf-stabilize="true"/>'
+          if 'data-kwf-stabilize' not in s:
+              s = s.replace('</head>', tag + '</head>')
+          p.write_text(s, encoding='utf-8')
+          PY
+          touch _site/.nojekyll
+          grep -q 'data-kwf-stabilize' _site/index.html
+          test -f _site/assets/stabilize.css
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  smoke-check:
+    needs: build-and-audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm public site responds
+        shell: bash
+        run: |
+          set -euo pipefail
+          url='https://feeleyeses.github.io/korean-vocab/'
+          for i in 1 2 3 4 5 6; do
+            if curl -fsSL "$url" | grep -q '韩语词场'; then
+              echo "Pages smoke check passed: $url"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo 'Pages did not become readable during smoke-check window.' >&2
+          exit 1
