@@ -112,6 +112,9 @@ jobs:
       - name: UI v3 geometry regression
         env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
         run: node scripts/ui-v3-regression.mjs
+      - name: Review v3.5 x-axis regression
+        env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
+        run: node scripts/review-v35-regression.mjs
       - name: Live DOM audit
         env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
         run: node scripts/dom-audit.mjs
