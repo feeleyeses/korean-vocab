@@ -57,17 +57,17 @@ jobs:
           for old, new in replacements.items(): s = s.replace(old, new)
           s = re.sub(r'<script>\(function\(\)\{function c\(\).*?/cdn-cgi/challenge-platform/scripts/jsd/main\.js.*?</script>', '', s, flags=re.S)
 
-          for tag in [
-              '<link rel="stylesheet" href="assets/stabilize.css" data-kwf-stabilize="true"/>',
-              '<link rel="stylesheet" href="assets/study-card-v2.css" data-kwf-study-card-v2="true"/>',
-              '<link rel="stylesheet" href="assets/layout-v2.css" data-kwf-layout-v2="true"/>',
-          ]:
-              marker = tag.split(' data-')[1].split('=')[0]
-              if marker not in s: s = s.replace('</head>', tag + '</head>')
-          for script in [
-              '<script type="module" src="assets/study-card-v2.js" data-kwf-study-card-v2-js="true"></script>',
-              '<script type="module" src="assets/layout-v2.js" data-kwf-layout-v2-js="true"></script>',
-          ]:
+          # Remove any old injected patch layers if a mirrored source ever contains them.
+          s = re.sub(r'<link[^>]+(?:study-card-v2|layout-v2|stabilize)\.css[^>]*>', '', s)
+          s = re.sub(r'<script[^>]+(?:layout-v2)\.js[^>]*></script>', '', s)
+
+          css = '<link rel="stylesheet" href="assets/ui-v3.css" data-kwf-ui-v3="true"/>'
+          if 'data-kwf-ui-v3=' not in s: s = s.replace('</head>', css + '</head>')
+          scripts = [
+              '<script type="module" src="assets/study-card-v2.js" data-kwf-enrichment-js="true"></script>',
+              '<script type="module" src="assets/ui-v3.js" data-kwf-ui-v3-js="true"></script>',
+          ]
+          for script in scripts:
               marker = script.split(' data-')[1].split('=')[0]
               if marker not in s: s = s.replace('</body>', script + '</body>')
           p.write_text(s, encoding='utf-8')
@@ -81,11 +81,15 @@ jobs:
               js.write_text(body, encoding='utf-8')
           PY
           touch _site/.nojekyll
-          grep -q 'data-kwf-layout-v2-js' _site/index.html
+          grep -q 'data-kwf-ui-v3="true"' _site/index.html
+          grep -q 'data-kwf-ui-v3-js="true"' _site/index.html
+          ! grep -q 'study-card-v2.css' _site/index.html
+          ! grep -q 'layout-v2.css' _site/index.html
+          ! grep -q 'layout-v2.js' _site/index.html
           grep -q 'import("./assets/index-' _site/index.html
           ! grep -q '/cdn-cgi/challenge-platform/' _site/index.html
-          test -f _site/assets/layout-v2.css
-          test -f _site/assets/layout-v2.js
+          test -f _site/assets/ui-v3.css
+          test -f _site/assets/ui-v3.js
           grep -R -q 'korean-vocab/assets/' _site/assets/index-*.js
 
       - name: Configure Pages
@@ -118,12 +122,12 @@ jobs:
             sleep 10
           done
           grep -q '韩语词场' "$html"
-          grep -q 'data-kwf-layout-v2-js' "$html"
+          grep -q 'data-kwf-ui-v3-js' "$html"
           asset=$(grep -o 'import("\./assets/index-[^"]*' "$html" | head -1 | sed 's/import("\.\///')
           test -n "$asset"
           curl -fsSL "${base}${asset}" >/dev/null
-          curl -fsSL "${base}assets/layout-v2.css" >/dev/null
-          curl -fsSL "${base}assets/layout-v2.js" >/dev/null
+          curl -fsSL "${base}assets/ui-v3.css" >/dev/null
+          curl -fsSL "${base}assets/ui-v3.js" >/dev/null
           curl -fsSL "${base}data/enrichment.json" >/dev/null
 
       - name: Install Playwright
@@ -136,6 +140,11 @@ jobs:
         env:
           KWF_URL: https://feeleyeses.github.io/korean-vocab/
         run: node scripts/browser-smoke.mjs
+
+      - name: UI v3 geometry regression
+        env:
+          KWF_URL: https://feeleyeses.github.io/korean-vocab/
+        run: node scripts/ui-v3-regression.mjs
 
       - name: Live DOM audit
         env:
