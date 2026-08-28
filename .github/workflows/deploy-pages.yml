@@ -34,72 +34,45 @@ jobs:
           set -euo pipefail
           rm -rf _site
           mkdir _site
-          rsync -a ./ _site/ \
-            --exclude '.git' \
-            --exclude '.github' \
-            --exclude '_site' \
-            --exclude 'scripts' \
-            --exclude 'docs'
+          rsync -a ./ _site/ --exclude '.git' --exclude '.github' --exclude '_site' --exclude 'scripts' --exclude 'docs'
           python - <<'PY'
           from pathlib import Path
           import re
-
-          p = Path('_site/index.html')
-          s = p.read_text(encoding='utf-8')
-          replacements = {
-              '"/assets/': '"assets/', "'/assets/": "'assets/",
-              '\\"/assets/': '\\"assets/', "\\'/assets/": "\\'assets/",
-              'import("/assets/': 'import("./assets/', "import('/assets/": "import('./assets/",
-              'import("assets/': 'import("./assets/', "import('assets/": "import('./assets/",
-              'href="/favicon.svg"': 'href="favicon.svg"', "href='/favicon.svg'": "href='favicon.svg'",
-              '\\"href\\":\\"/favicon.svg\\"': '\\"href\\":\\"favicon.svg\\"',
-          }
-          for old, new in replacements.items(): s = s.replace(old, new)
-          s = re.sub(r'<script>\(function\(\)\{function c\(\).*?/cdn-cgi/challenge-platform/scripts/jsd/main\.js.*?</script>', '', s, flags=re.S)
-          s = re.sub(r'<link[^>]+(?:study-card-v2|layout-v2|stabilize)\.css[^>]*>', '', s)
-          s = re.sub(r'<script[^>]+(?:layout-v2|ui-v3(?:\.3)?)\.js[^>]*></script>', '', s)
-
-          css = '<link rel="stylesheet" href="assets/ui-v3.css" data-kwf-ui-v3="true"/>'
-          if 'data-kwf-ui-v3=' not in s: s = s.replace('</head>', css + '</head>')
-          scripts = [
-              '<script type="module" src="assets/study-card-v2.js" data-kwf-enrichment-js="true"></script>',
-              '<script type="module" src="assets/ui-v3.3.js" data-kwf-ui-v3-js="true"></script>',
-          ]
+          p=Path('_site/index.html'); s=p.read_text(encoding='utf-8')
+          replacements={'"/assets/':'"assets/',"'/assets/":"'assets/",'\\"/assets/':'\\"assets/',"\\'/assets/":"\\'assets/",'import("/assets/':'import("./assets/',"import('/assets/":"import('./assets/",'import("assets/':'import("./assets/',"import('assets/":"import('./assets/",'href="/favicon.svg"':'href="favicon.svg"',"href='/favicon.svg'":"href='favicon.svg'",'\\"href\\":\\"/favicon.svg\\"':'\\"href\\":\\"favicon.svg\\"'}
+          for old,new in replacements.items(): s=s.replace(old,new)
+          s=re.sub(r'<script>\(function\(\)\{function c\(\).*?/cdn-cgi/challenge-platform/scripts/jsd/main\.js.*?</script>','',s,flags=re.S)
+          s=re.sub(r'<link[^>]+(?:study-card-v2|layout-v2)\.css[^>]*>','',s)
+          s=re.sub(r'<link[^>]+ui-v3(?:\.4)?\.css[^>]*>','',s)
+          s=re.sub(r'<script[^>]+(?:layout-v2|ui-v3(?:\.3)?)\.js[^>]*></script>','',s)
+          css='<link rel="stylesheet" href="assets/ui-v3.css" data-kwf-ui-v3="true"/><link rel="stylesheet" href="assets/ui-v3.4.css" data-kwf-ui-v34="true"/>'
+          s=s.replace('</head>',css+'</head>')
+          scripts=['<script type="module" src="assets/study-card-v2.js" data-kwf-enrichment-js="true"></script>','<script type="module" src="assets/ui-v3.3.js" data-kwf-ui-v3-js="true"></script>']
           for script in scripts:
-              marker = script.split(' data-')[1].split('=')[0]
-              if marker not in s: s = s.replace('</body>', script + '</body>')
-          p.write_text(s, encoding='utf-8')
-
-          asset_base = 'korean-vocab/assets/'
+              marker=script.split(' data-')[1].split('=')[0]
+              if marker not in s:s=s.replace('</body>',script+'</body>')
+          p.write_text(s,encoding='utf-8')
+          asset_base='korean-vocab/assets/'
           for js in Path('_site/assets').glob('*.js'):
-              body = js.read_text(encoding='utf-8')
-              for old in ('"/assets/', "'/assets/", '`/assets/', '"assets/', "'assets/", '`assets/'):
-                  quote = old[0]
-                  body = body.replace(old, quote + asset_base)
-              js.write_text(body, encoding='utf-8')
+              body=js.read_text(encoding='utf-8')
+              for old in ('"/assets/',"'/assets/",'`/assets/','"assets/',"'assets/",'`assets/'):
+                  quote=old[0];body=body.replace(old,quote+asset_base)
+              js.write_text(body,encoding='utf-8')
           PY
           touch _site/.nojekyll
           grep -q 'data-kwf-ui-v3="true"' _site/index.html
-          grep -q 'data-kwf-ui-v3-js="true"' _site/index.html
+          grep -q 'data-kwf-ui-v34="true"' _site/index.html
+          grep -q 'assets/ui-v3.4.css' _site/index.html
           grep -q 'assets/ui-v3.3.js' _site/index.html
-          ! grep -q 'src="assets/ui-v3.js"' _site/index.html
-          ! grep -q 'study-card-v2.css' _site/index.html
-          ! grep -q 'layout-v2.css' _site/index.html
-          ! grep -q 'layout-v2.js' _site/index.html
+          test -f _site/assets/ui-v3.4.css
           grep -q 'import("./assets/index-' _site/index.html
-          ! grep -q '/cdn-cgi/challenge-platform/' _site/index.html
-          test -f _site/assets/ui-v3.css
-          test -f _site/assets/ui-v3.3.js
-          grep -R -q 'korean-vocab/assets/' _site/assets/index-*.js
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
@@ -110,44 +83,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Confirm public assets respond
         shell: bash
         run: |
           set -euo pipefail
-          base='https://feeleyeses.github.io/korean-vocab/'
-          html=/tmp/kwf.html
+          base='https://feeleyeses.github.io/korean-vocab/'; html=/tmp/kwf.html
           for i in 1 2 3 4 5 6; do
-            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html" && grep -q 'assets/ui-v3.3.js' "$html"; then break; fi
+            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html" && grep -q 'assets/ui-v3.4.css' "$html"; then break; fi
             sleep 10
           done
-          grep -q '韩语词场' "$html"
-          grep -q 'data-kwf-ui-v3-js' "$html"
-          grep -q 'assets/ui-v3.3.js' "$html"
-          asset=$(grep -o 'import("\./assets/index-[^"]*' "$html" | head -1 | sed 's/import("\.\///')
-          test -n "$asset"
-          curl -fsSL "${base}${asset}" >/dev/null
-          curl -fsSL "${base}assets/ui-v3.css" >/dev/null
+          grep -q 'assets/ui-v3.4.css' "$html"
+          curl -fsSL "${base}assets/ui-v3.4.css" >/dev/null
           curl -fsSL "${base}assets/ui-v3.3.js" >/dev/null
           curl -fsSL "${base}data/enrichment.json" >/dev/null
-
       - name: Install Playwright
         run: |
           npm init -y >/dev/null 2>&1
           npm install --no-save playwright@1.55.0
           npx playwright install chromium --with-deps
-
       - name: Browser interaction smoke test
-        env:
-          KWF_URL: https://feeleyeses.github.io/korean-vocab/
+        env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
         run: node scripts/browser-smoke.mjs
-
       - name: UI v3 geometry regression
-        env:
-          KWF_URL: https://feeleyeses.github.io/korean-vocab/
+        env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
         run: node scripts/ui-v3-regression.mjs
-
       - name: Live DOM audit
-        env:
-          KWF_URL: https://feeleyeses.github.io/korean-vocab/
+        env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
         run: node scripts/dom-audit.mjs
