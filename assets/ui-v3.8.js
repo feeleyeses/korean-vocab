@@ -9,7 +9,9 @@ function applyReviewV38(){
   const edge=12;
   const buttonH=mobile?48:52;
   const continueBottom=mobile?14:18;
-  const mapBottom=mobile?88:100;
+  const closedMapBottom=mobile?80:84;
+  const openMapBottom=mobile?82:88;
+  const openMapH=mobile?204:212;
   const usable=`calc(100% - ${edge*2}px)`;
 
   /* Never resize or shift the review card itself. */
@@ -36,7 +38,9 @@ function applyReviewV38(){
   if(revealed){
     const scroll=revealed.querySelector('.answer-scroll');
     if(scroll){
-      imp(scroll,'padding-bottom','58px');
+      /* Reserve the lower action rail so the closed mapping control can never sit on answer/example text. */
+      imp(scroll,'box-sizing','border-box');
+      imp(scroll,'padding-bottom',mobile?'126px':'130px');
       const aside=scroll.querySelector('aside');
       if(aside) imp(aside,'display','none');
       for(const el of scroll.querySelectorAll('h4,.sentence,p,.chosen-answer')){
@@ -55,19 +59,21 @@ function applyReviewV38(){
     if(map){
       const summary=map.querySelector(':scope > summary');
       const list=map.querySelector('.option-map-list');
+
       if(!map.open){
-        for(const [p,v] of [['box-sizing','border-box'],['position','absolute'],['left',`${edge}px`],['right','auto'],['bottom',`${mapBottom}px`],['top','auto'],['width',usable],['min-width',usable],['max-width',usable],['height','36px'],['min-height','36px'],['max-height','36px'],['margin','0'],['overflow','hidden'],['z-index','20'],['background','#fffdf7'],['transform','none'],['translate','none']]) imp(map,p,v);
-        if(summary) for(const [p,v] of [['height','36px'],['min-height','36px'],['max-height','36px'],['display','flex'],['align-items','center'],['justify-content','center']]) imp(summary,p,v);
+        for(const [p,v] of [['box-sizing','border-box'],['position','absolute'],['left',`${edge}px`],['right','auto'],['bottom',`${closedMapBottom}px`],['top','auto'],['width',usable],['min-width',usable],['max-width',usable],['height','36px'],['min-height','36px'],['max-height','36px'],['margin','0'],['padding','0'],['overflow','hidden'],['z-index','20'],['background','#fffdf7'],['transform','none'],['translate','none']]) imp(map,p,v);
+        if(summary) for(const [p,v] of [['box-sizing','border-box'],['height','36px'],['min-height','36px'],['max-height','36px'],['display','flex'],['align-items','center'],['justify-content','center'],['margin','0'],['padding','0 12px']]) imp(summary,p,v);
       }else{
-        for(const [p,v] of [['box-sizing','border-box'],['position','absolute'],['left',`${edge}px`],['right','auto'],['top','216px'],['bottom',`${mapBottom}px`],['width',usable],['min-width',usable],['max-width',usable],['height','auto'],['min-height','0'],['margin','0'],['display','flex'],['flex-direction','column'],['overflow','hidden'],['z-index','24'],['opacity','1'],['background','#fffdf7'],['border-radius','14px'],['transform','none'],['translate','none']]) imp(map,p,v);
-        if(summary) for(const [p,v] of [['flex','0 0 36px'],['height','36px'],['min-height','36px'],['max-height','36px']]) imp(summary,p,v);
+        /* Explicit board geometry: parent itself owns all four cells; no child is allowed to overflow it. */
+        for(const [p,v] of [['box-sizing','border-box'],['position','absolute'],['left',`${edge}px`],['right','auto'],['top','auto'],['bottom',`${openMapBottom}px`],['width',usable],['min-width',usable],['max-width',usable],['height',`${openMapH}px`],['min-height',`${openMapH}px`],['max-height',`${openMapH}px`],['margin','0'],['padding','0'],['display','grid'],['grid-template-rows','36px minmax(0,1fr)'],['overflow','hidden'],['z-index','24'],['opacity','1'],['background','#fffdf7'],['border-radius','14px'],['transform','none'],['translate','none']]) imp(map,p,v);
+        if(summary) for(const [p,v] of [['box-sizing','border-box'],['position','relative'],['inset','auto'],['width','100%'],['height','36px'],['min-height','36px'],['max-height','36px'],['display','flex'],['align-items','center'],['justify-content','center'],['margin','0'],['padding','0 12px'],['grid-row','1']]) imp(summary,p,v);
       }
 
       if(list){
-        for(const [p,v] of [['box-sizing','border-box'],['display','grid'],['grid-template-columns','repeat(2,minmax(0,1fr))'],['grid-template-rows','repeat(2,minmax(0,1fr))'],['gap','8px'],['width','100%'],['height','100%'],['min-height','0'],['max-height','none'],['padding','8px'],['margin','0'],['overflow','hidden'],['flex','1 1 0']]) imp(list,p,v);
+        for(const [p,v] of [['box-sizing','border-box'],['position','relative'],['inset','auto'],['display',map.open?'grid':'none'],['grid-template-columns','repeat(2,minmax(0,1fr))'],['grid-template-rows','repeat(2,minmax(0,1fr))'],['gap','8px'],['width','100%'],['min-width','0'],['max-width','100%'],['height','100%'],['min-height','0'],['max-height','100%'],['padding','8px'],['margin','0'],['overflow','hidden'],['grid-row','2'],['align-self','stretch']]) imp(list,p,v);
         const articles=[...list.querySelectorAll(':scope > article')];
         for(const a of articles){
-          for(const [p,v] of [['box-sizing','border-box'],['display','grid'],['place-content','center'],['visibility','visible'],['opacity','1'],['width','100%'],['min-width','0'],['max-width','none'],['height','100%'],['min-height','0'],['max-height','none'],['overflow','hidden'],['margin','0'],['padding',mobile?'6px 8px':'8px 10px'],['text-align','center']]) imp(a,p,v);
+          for(const [p,v] of [['box-sizing','border-box'],['position','relative'],['inset','auto'],['display','grid'],['place-content','center'],['visibility','visible'],['opacity','1'],['width','100%'],['min-width','0'],['max-width','100%'],['height','100%'],['min-height','0'],['max-height','100%'],['overflow','hidden'],['margin','0'],['padding',mobile?'6px 8px':'8px 10px'],['text-align','center'],['transform','none'],['translate','none']]) imp(a,p,v);
         }
         list.dataset.kwfMappingCount=String(articles.length);
       }
