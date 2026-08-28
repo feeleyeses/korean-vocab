@@ -44,10 +44,10 @@ jobs:
           s=re.sub(r'<script>\(function\(\)\{function c\(\).*?/cdn-cgi/challenge-platform/scripts/jsd/main\.js.*?</script>','',s,flags=re.S)
           s=re.sub(r'<link[^>]+(?:study-card-v2|layout-v2)\.css[^>]*>','',s)
           s=re.sub(r'<link[^>]+ui-v3(?:\.4)?\.css[^>]*>','',s)
-          s=re.sub(r'<script[^>]+(?:layout-v2|ui-v3(?:\.3|\.5)?)\.js[^>]*></script>','',s)
+          s=re.sub(r'<script[^>]+(?:layout-v2|ui-v3(?:\.3|\.5|\.6)?)\.js[^>]*></script>','',s)
           css='<link rel="stylesheet" href="assets/ui-v3.css" data-kwf-ui-v3="true"/><link rel="stylesheet" href="assets/ui-v3.4.css" data-kwf-ui-v34="true"/>'
           s=s.replace('</head>',css+'</head>')
-          scripts=['<script type="module" src="assets/study-card-v2.js" data-kwf-enrichment-js="true"></script>','<script type="module" src="assets/ui-v3.3.js" data-kwf-ui-v3-js="true"></script>','<script type="module" src="assets/ui-v3.5.js" data-kwf-ui-v35-js="true"></script>']
+          scripts=['<script type="module" src="assets/study-card-v2.js" data-kwf-enrichment-js="true"></script>','<script type="module" src="assets/ui-v3.3.js" data-kwf-ui-v3-js="true"></script>','<script type="module" src="assets/ui-v3.5.js" data-kwf-ui-v35-js="true"></script>','<script type="module" src="assets/ui-v3.6.js?v=1" data-kwf-ui-v36-js="true"></script>']
           for script in scripts:
               marker=script.split(' data-')[1].split('=')[0]
               if marker not in s:s=s.replace('</body>',script+'</body>')
@@ -62,12 +62,9 @@ jobs:
           touch _site/.nojekyll
           grep -q 'data-kwf-ui-v3="true"' _site/index.html
           grep -q 'data-kwf-ui-v34="true"' _site/index.html
-          grep -q 'data-kwf-ui-v35-js="true"' _site/index.html
-          grep -q 'assets/ui-v3.4.css' _site/index.html
-          grep -q 'assets/ui-v3.3.js' _site/index.html
-          grep -q 'assets/ui-v3.5.js' _site/index.html
-          test -f _site/assets/ui-v3.4.css
-          test -f _site/assets/ui-v3.5.js
+          grep -q 'data-kwf-ui-v36-js="true"' _site/index.html
+          grep -q 'assets/ui-v3.6.js?v=1' _site/index.html
+          test -f _site/assets/ui-v3.6.js
           grep -q 'import("./assets/index-' _site/index.html
 
       - name: Configure Pages
@@ -92,14 +89,11 @@ jobs:
           set -euo pipefail
           base='https://feeleyeses.github.io/korean-vocab/'; html=/tmp/kwf.html
           for i in 1 2 3 4 5 6; do
-            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html" && grep -q 'assets/ui-v3.5.js' "$html"; then break; fi
+            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html" && grep -q 'assets/ui-v3.6.js?v=1' "$html"; then break; fi
             sleep 10
           done
-          grep -q 'assets/ui-v3.4.css' "$html"
-          grep -q 'assets/ui-v3.5.js' "$html"
-          curl -fsSL "${base}assets/ui-v3.4.css" >/dev/null
-          curl -fsSL "${base}assets/ui-v3.3.js" >/dev/null
-          curl -fsSL "${base}assets/ui-v3.5.js" >/dev/null
+          grep -q 'assets/ui-v3.6.js?v=1' "$html"
+          curl -fsSL "${base}assets/ui-v3.6.js?v=1" >/dev/null
           curl -fsSL "${base}data/enrichment.json" >/dev/null
       - name: Install Playwright
         run: |
@@ -112,9 +106,9 @@ jobs:
       - name: UI v3 geometry regression
         env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
         run: node scripts/ui-v3-regression.mjs
-      - name: Review v3.5 x-axis regression
+      - name: Review v3.6 x-axis regression
         env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
-        run: node scripts/review-v35-regression.mjs
+        run: node scripts/review-v36-regression.mjs
       - name: Live DOM audit
         env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
         run: node scripts/dom-audit.mjs
