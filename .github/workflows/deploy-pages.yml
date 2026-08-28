@@ -42,24 +42,36 @@ jobs:
             --exclude 'docs'
           python - <<'PY'
           from pathlib import Path
+          import re
+
           p = Path('_site/index.html')
           s = p.read_text(encoding='utf-8')
 
-          # GitHub Project Pages lives under /korean-vocab/. Patch both plain HTML
-          # URLs and escaped URLs inside the embedded vinext/RSC payload.
+          # GitHub Project Pages lives under /korean-vocab/. Plain HTML asset URLs
+          # may be project-relative, but ES module specifiers MUST start with ./ .
           replacements = {
               '"/assets/': '"assets/',
               "'/assets/": "'assets/",
               '\\"/assets/': '\\"assets/',
               "\\'/assets/": "\\'assets/",
-              'import("/assets/': 'import("assets/',
-              "import('/assets/": "import('assets/",
+              'import("/assets/': 'import("./assets/',
+              "import('/assets/": "import('./assets/",
+              'import("assets/': 'import("./assets/',
+              "import('assets/": "import('./assets/",
               'href="/favicon.svg"': 'href="favicon.svg"',
               "href='/favicon.svg'": "href='favicon.svg'",
               '\\"href\\":\\"/favicon.svg\\"': '\\"href\\":\\"favicon.svg\\"',
           }
           for old, new in replacements.items():
               s = s.replace(old, new)
+
+          # Remove Cloudflare challenge bootstrap that belonged to the old host.
+          s = re.sub(
+              r'<script>\(function\(\)\{function c\(\).*?/cdn-cgi/challenge-platform/scripts/jsd/main\.js.*?</script>',
+              '',
+              s,
+              flags=re.S,
+          )
 
           css_tags = [
               '<link rel="stylesheet" href="assets/stabilize.css" data-kwf-stabilize="true"/>',
@@ -79,9 +91,10 @@ jobs:
           touch _site/.nojekyll
           grep -q 'data-kwf-stabilize' _site/index.html
           grep -q 'data-kwf-study-card-v2' _site/index.html
-          grep -q 'import("assets/index-' _site/index.html
+          grep -q 'import("./assets/index-' _site/index.html
+          ! grep -q 'import("assets/index-' _site/index.html
           ! grep -q 'import("/assets/index-' _site/index.html
-          ! grep -q '\\"/assets/' _site/index.html
+          ! grep -q '/cdn-cgi/challenge-platform/' _site/index.html
           test -f _site/assets/stabilize.css
           test -f _site/assets/study-card-v2.css
           test -f _site/assets/study-card-v2.js
@@ -118,7 +131,7 @@ jobs:
           done
           grep -q '韩语词场' "$html"
           grep -q 'data-kwf-study-card-v2-js' "$html"
-          asset=$(grep -o 'import("assets/index-[^"]*' "$html" | head -1 | sed 's/import("//')
+          asset=$(grep -o 'import("\./assets/index-[^"]*' "$html" | head -1 | sed 's/import("\.\///')
           test -n "$asset"
           curl -fsSL "${base}${asset}" >/dev/null
           curl -fsSL "${base}assets/study-card-v2.js" >/dev/null
