@@ -12,6 +12,9 @@ function wireDiagnostics(page, label) {
   page.on('response', res => { if (res.status() >= 400) diagnostics.push(`${label} http ${res.status()}: ${res.url()}`); });
 }
 
+async function waitForUi(page) {
+  await page.waitForFunction(() => Boolean(window.__KWF_UI_V3_READY__) && /^v3(?:\.|$)/.test(document.documentElement.dataset.kwfUi || ''), { timeout: 10000 });
+}
 async function checkChange(page, label, locator, snapshot) {
   try {
     const before = await snapshot();
@@ -29,11 +32,12 @@ async function expect(label, fn) {
 
 const mobile = await browser.newPage({ viewport: { width: 390, height: 844 } });
 wireDiagnostics(mobile, 'mobile');
-await mobile.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
-await mobile.waitForTimeout(1200);
+await mobile.goto(`${url}?smoke=${Date.now()}`, { waitUntil: 'networkidle', timeout: 60000 });
+await waitForUi(mobile);
+await mobile.waitForTimeout(500);
 await expect('UI v3 runtime ready', async () => {
-  const ready = await mobile.evaluate(() => Boolean(window.__KWF_UI_V3_READY__) && document.documentElement.dataset.kwfUi === 'v3');
-  return { ok: ready, detail: String(ready) };
+  const value = await mobile.evaluate(() => ({ ready: Boolean(window.__KWF_UI_V3_READY__), ui: document.documentElement.dataset.kwfUi || '' }));
+  return { ok: value.ready && /^v3(?:\.|$)/.test(value.ui), detail: JSON.stringify(value) };
 });
 await checkChange(mobile, '怎么学', mobile.getByRole('button', { name: '怎么学' }), async () => String(await mobile.getByRole('button', { name: '怎么学' }).getAttribute('aria-expanded')));
 await checkChange(mobile, '直接看答案', mobile.getByRole('button', { name: '直接看答案' }), async () => `${(await mobile.locator('#study-card').innerText()).slice(-240)}|shortcut:${await mobile.getByRole('button', { name: '直接看答案' }).count()}`);
@@ -60,8 +64,9 @@ await expect('备考起点不在当前词库学习区', async () => {
 
 const desktop = await browser.newPage({ viewport: { width: 1440, height: 1100 } });
 wireDiagnostics(desktop, 'desktop');
-await desktop.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
-await desktop.waitForTimeout(900);
+await desktop.goto(`${url}?smokeDesktop=${Date.now()}`, { waitUntil: 'networkidle', timeout: 60000 });
+await waitForUi(desktop);
+await desktop.waitForTimeout(400);
 await checkChange(desktop, '查看已学词库', desktop.getByRole('button', { name: '查看已学词库' }).first(), async () => `${await desktop.locator('#learned-library-section').count()}|${await desktop.getByRole('button', { name: '查看已学词库' }).first().getAttribute('aria-expanded')}`);
 await desktop.waitForTimeout(600);
 await expect('已学概览保持全宽', async () => {
@@ -80,5 +85,5 @@ console.log('DIAGNOSTICS FINAL');
 console.log(diagnostics.length ? diagnostics.join('\n') : '(none)');
 const hardDiagnostics = diagnostics.filter(x => x.includes('pageerror:') || x.includes('requestfailed:') || x.includes('http 4') || x.includes('http 5'));
 if (failures.length || hardDiagnostics.length) { console.error('FAILURES:\n' + [...failures, ...hardDiagnostics].join('\n')); process.exitCode = 1; }
-else console.log('PASS UI v3 browser interaction and layout smoke');
+else console.log('PASS UI v3.x browser interaction and layout smoke');
 await browser.close();
