@@ -46,75 +46,50 @@ jobs:
 
           p = Path('_site/index.html')
           s = p.read_text(encoding='utf-8')
-
           replacements = {
-              '"/assets/': '"assets/',
-              "'/assets/": "'assets/",
-              '\\"/assets/': '\\"assets/',
-              "\\'/assets/": "\\'assets/",
-              'import("/assets/': 'import("./assets/',
-              "import('/assets/": "import('./assets/",
-              'import("assets/': 'import("./assets/',
-              "import('assets/": "import('./assets/",
-              'href="/favicon.svg"': 'href="favicon.svg"',
-              "href='/favicon.svg'": "href='favicon.svg'",
+              '"/assets/': '"assets/', "'/assets/": "'assets/",
+              '\\"/assets/': '\\"assets/', "\\'/assets/": "\\'assets/",
+              'import("/assets/': 'import("./assets/', "import('/assets/": "import('./assets/",
+              'import("assets/': 'import("./assets/', "import('assets/": "import('./assets/",
+              'href="/favicon.svg"': 'href="favicon.svg"', "href='/favicon.svg'": "href='favicon.svg'",
               '\\"href\\":\\"/favicon.svg\\"': '\\"href\\":\\"favicon.svg\\"',
           }
-          for old, new in replacements.items():
-              s = s.replace(old, new)
+          for old, new in replacements.items(): s = s.replace(old, new)
+          s = re.sub(r'<script>\(function\(\)\{function c\(\).*?/cdn-cgi/challenge-platform/scripts/jsd/main\.js.*?</script>', '', s, flags=re.S)
 
-          s = re.sub(
-              r'<script>\(function\(\)\{function c\(\).*?/cdn-cgi/challenge-platform/scripts/jsd/main\.js.*?</script>',
-              '',
-              s,
-              flags=re.S,
-          )
-
-          css_tags = [
+          for tag in [
               '<link rel="stylesheet" href="assets/stabilize.css" data-kwf-stabilize="true"/>',
               '<link rel="stylesheet" href="assets/study-card-v2.css" data-kwf-study-card-v2="true"/>',
               '<link rel="stylesheet" href="assets/layout-v2.css" data-kwf-layout-v2="true"/>',
-          ]
-          for tag in css_tags:
+          ]:
               marker = tag.split(' data-')[1].split('=')[0]
-              if marker not in s:
-                  s = s.replace('</head>', tag + '</head>')
-
-          scripts = [
+              if marker not in s: s = s.replace('</head>', tag + '</head>')
+          for script in [
               '<script type="module" src="assets/study-card-v2.js" data-kwf-study-card-v2-js="true"></script>',
               '<script type="module" src="assets/layout-v2.js" data-kwf-layout-v2-js="true"></script>',
-          ]
-          for script in scripts:
+          ]:
               marker = script.split(' data-')[1].split('=')[0]
-              if marker not in s:
-                  s = s.replace('</body>', script + '</body>')
-
+              if marker not in s: s = s.replace('</body>', script + '</body>')
           p.write_text(s, encoding='utf-8')
 
-          # Vinext/Vite lazy dependency maps contain generated `assets/foo.js`
-          # strings. On Project Pages the runtime resolved those against the host
-          # root. Scope generated dependency strings to /korean-vocab/assets/.
+          # Generated lazy dependency-map strings were built for domain-root hosting.
+          # Make them fully qualified so Vinext cannot reinterpret them as a host name
+          # or as the github.io root when running under Project Pages.
+          asset_base = 'https://feeleyeses.github.io/korean-vocab/assets/'
           for js in Path('_site/assets').glob('*.js'):
               body = js.read_text(encoding='utf-8')
-              for old, new in (
-                  ('"/assets/', '"/korean-vocab/assets/'),
-                  ("'/assets/", "'/korean-vocab/assets/"),
-                  ('`/assets/', '`/korean-vocab/assets/'),
-                  ('"assets/', '"/korean-vocab/assets/'),
-                  ("'assets/", "'/korean-vocab/assets/"),
-                  ('`assets/', '`/korean-vocab/assets/'),
-              ):
-                  body = body.replace(old, new)
+              for old in ('"/assets/', "'/assets/", '`/assets/', '"assets/', "'assets/", '`assets/'):
+                  quote = old[0]
+                  body = body.replace(old, quote + asset_base)
               js.write_text(body, encoding='utf-8')
           PY
           touch _site/.nojekyll
-          grep -q 'data-kwf-layout-v2' _site/index.html
           grep -q 'data-kwf-layout-v2-js' _site/index.html
           grep -q 'import("./assets/index-' _site/index.html
           ! grep -q '/cdn-cgi/challenge-platform/' _site/index.html
           test -f _site/assets/layout-v2.css
           test -f _site/assets/layout-v2.js
-          grep -R -q '/korean-vocab/assets/' _site/assets/index-*.js
+          grep -R -q 'https://feeleyeses.github.io/korean-vocab/assets/' _site/assets/index-*.js
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
