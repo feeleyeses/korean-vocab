@@ -38,19 +38,51 @@ jobs:
             --exclude '.git' \
             --exclude '.github' \
             --exclude '_site' \
-            --exclude 'scripts'
+            --exclude 'scripts' \
+            --exclude 'docs'
           python - <<'PY'
           from pathlib import Path
           p = Path('_site/index.html')
           s = p.read_text(encoding='utf-8')
-          tag = '<link rel="stylesheet" href="assets/stabilize.css" data-kwf-stabilize="true"/>'
-          if 'data-kwf-stabilize' not in s:
-              s = s.replace('</head>', tag + '</head>')
+
+          # The mirrored vinext page was built for a domain root. GitHub project
+          # Pages lives under /korean-vocab/, so root-absolute app assets break
+          # hydration and leave SSR buttons inert. Make all app-owned root paths
+          # project-relative at deploy time instead of mutating the mirrored source.
+          replacements = {
+              '"/assets/': '"assets/',
+              "'/assets/": "'assets/",
+              'import("/assets/': 'import("assets/',
+              "import('/assets/": "import('assets/",
+              'href="/favicon.svg"': 'href="favicon.svg"',
+              "href='/favicon.svg'": "href='favicon.svg'",
+          }
+          for old, new in replacements.items():
+              s = s.replace(old, new)
+
+          css_tags = [
+              '<link rel="stylesheet" href="assets/stabilize.css" data-kwf-stabilize="true"/>',
+              '<link rel="stylesheet" href="assets/study-card-v2.css" data-kwf-study-card-v2="true"/>',
+          ]
+          for tag in css_tags:
+              if tag.split(' data-')[1].split('=')[0] not in s:
+                  s = s.replace('</head>', tag + '</head>')
+
+          enhancement = '<script type="module" src="assets/study-card-v2.js" data-kwf-study-card-v2-js="true"></script>'
+          if 'data-kwf-study-card-v2-js' not in s:
+              s = s.replace('</body>', enhancement + '</body>')
+
           p.write_text(s, encoding='utf-8')
           PY
           touch _site/.nojekyll
           grep -q 'data-kwf-stabilize' _site/index.html
+          grep -q 'data-kwf-study-card-v2' _site/index.html
+          grep -q 'import("assets/index-' _site/index.html
+          ! grep -q 'import("/assets/index-' _site/index.html
           test -f _site/assets/stabilize.css
+          test -f _site/assets/study-card-v2.css
+          test -f _site/assets/study-card-v2.js
+          test -f _site/data/enrichment.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -68,17 +100,23 @@ jobs:
     needs: build-and-audit
     runs-on: ubuntu-latest
     steps:
-      - name: Confirm public site responds
+      - name: Confirm public app and runtime assets respond
         shell: bash
         run: |
           set -euo pipefail
-          url='https://feeleyeses.github.io/korean-vocab/'
+          base='https://feeleyeses.github.io/korean-vocab/'
+          html=/tmp/kwf.html
           for i in 1 2 3 4 5 6; do
-            if curl -fsSL "$url" | grep -q '韩语词场'; then
-              echo "Pages smoke check passed: $url"
-              exit 0
+            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html"; then
+              break
             fi
             sleep 10
           done
-          echo 'Pages did not become readable during smoke-check window.' >&2
-          exit 1
+          grep -q '韩语词场' "$html"
+          grep -q 'data-kwf-study-card-v2-js' "$html"
+          asset=$(grep -o 'import("assets/index-[^"]*' "$html" | head -1 | sed 's/import("//')
+          test -n "$asset"
+          curl -fsSL "${base}${asset}" >/dev/null
+          curl -fsSL "${base}assets/study-card-v2.js" >/dev/null
+          curl -fsSL "${base}data/enrichment.json" >/dev/null
+          echo "Pages runtime smoke check passed: ${base}${asset}"
