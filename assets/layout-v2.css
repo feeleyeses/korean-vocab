@@ -1,35 +1,45 @@
-/* Korean Word Field — v2 authoritative layout
-   Loaded last. This file intentionally overrides legacy patch debt. */
-
+/* Korean Word Field — v2 authoritative layout. Loaded last. */
 :root { --kwf-v2-shell: 1220px; }
 
-/* =========================
-   Review / learned overview
-   ========================= */
-#review .review-board {
+/* ---------- review overview ---------- */
+#review .review-board,
+#review .kwf-v2-overview-stack,
+#review .kwf-v2-full-row-wrap {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  grid-column: 1 / -1 !important;
+  grid-row: auto !important;
+  grid-area: auto !important;
+}
+#review .review-board,
+#review .kwf-v2-overview-stack {
   display: flex !important;
   flex-direction: column !important;
   align-items: stretch !important;
   gap: 18px !important;
-  width: min(var(--kwf-v2-shell), 100%) !important;
 }
+#review .review-board { width: min(var(--kwf-v2-shell), 100%) !important; }
 
 #review .review-stat.learned-stat,
 #review .memory-profile,
 #review .memory-note,
 #review #learned-library-section {
+  box-sizing: border-box !important;
   flex: 0 0 auto !important;
   width: 100% !important;
   max-width: 100% !important;
+  min-width: 0 !important;
   align-self: stretch !important;
-  grid-column: auto !important;
+  grid-column: 1 / -1 !important;
   grid-row: auto !important;
   grid-area: auto !important;
+  margin-inline: 0 !important;
 }
 
-/* Learned summary must not morph into a left-side block after reveal. */
+/* Learned summary: stable card, reveal cannot turn it into a left block. */
 #review .review-stat.learned-stat {
-  box-sizing: border-box !important;
   min-height: 156px !important;
   height: auto !important;
   display: grid !important;
@@ -42,8 +52,8 @@
   overflow: hidden !important;
 }
 #review .review-stat.learned-stat > span { grid-area: label !important; }
-#review .review-stat.learned-stat > strong { grid-area: count !important; }
-#review .review-stat.learned-stat > small { grid-area: copy !important; }
+#review .review-stat.learned-stat > strong { grid-area: count !important; margin: 0 !important; }
+#review .review-stat.learned-stat > small { grid-area: copy !important; min-height: 0 !important; }
 #review .review-stat.learned-stat .learned-card-actions {
   grid-area: actions !important;
   display: flex !important;
@@ -51,25 +61,20 @@
   align-items: center !important;
   justify-content: flex-end !important;
   gap: 10px !important;
-  max-width: 460px !important;
-}
-
-/* Local profile stays below summary and spans the whole board. */
-#review .memory-profile {
-  min-height: 0 !important;
-  height: auto !important;
+  max-width: 480px !important;
   margin: 0 !important;
 }
 
-/* Interval review becomes a full-width horizontal rule strip. */
+/* Local profile below summary. */
+#review .memory-profile { min-height: 0 !important; height: auto !important; }
+
+/* Interval review: one full-width horizontal strip. */
 #review .memory-note {
-  box-sizing: border-box !important;
   min-height: 112px !important;
   display: grid !important;
-  grid-template-columns: minmax(180px, .75fr) minmax(260px, 1.3fr) minmax(420px, 1.6fr) !important;
+  grid-template-columns: minmax(190px, .75fr) minmax(260px, 1.25fr) minmax(420px, 1.6fr) !important;
   align-items: center !important;
   gap: 18px !important;
-  margin: 0 !important;
   padding: 18px 22px !important;
   overflow: hidden !important;
 }
@@ -86,23 +91,19 @@
 #review .memory-note li {
   min-height: 62px !important;
   display: grid !important;
-  align-content: center !important;
-  justify-items: center !important;
+  place-content: center !important;
+  place-items: center !important;
   padding: 8px !important;
   text-align: center !important;
 }
 
-/* =========================
-   Learned library v2
-   ========================= */
+/* ---------- learned library ---------- */
 #learned-library-section.kwf-learned-drawer {
   box-sizing: border-box !important;
   width: 100% !important;
   max-width: 100% !important;
   overflow: visible !important;
 }
-
-/* No nested scroll area: pagination controls list length. */
 #learned-library-section .kwf-learned-list {
   max-height: none !important;
   height: auto !important;
@@ -112,11 +113,11 @@
 }
 #learned-library-section .kwf-learned-list::-webkit-scrollbar { display: none !important; }
 
-/* Stable table-card: select | headword | meaning | collocation | state/time. */
+/* Desktop table-card: select | word | core meaning | selected collocations | state/time. */
 #learned-library-section .kwf-learned-row {
   box-sizing: border-box !important;
   display: grid !important;
-  grid-template-columns: 64px minmax(150px, .78fr) minmax(220px, 1.35fr) minmax(210px, 1.15fr) minmax(170px, .78fr) !important;
+  grid-template-columns: 64px minmax(150px, .78fr) minmax(220px, 1.3fr) minmax(210px, 1.1fr) minmax(170px, .78fr) !important;
   grid-auto-rows: minmax(74px, auto) !important;
   align-items: center !important;
   gap: 10px 16px !important;
@@ -128,8 +129,7 @@
 #learned-library-section .kwf-learned-row > * {
   min-width: 0 !important;
   align-self: center !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-block: 0 !important;
 }
 #learned-library-section .select-word {
   grid-column: 1 !important;
@@ -138,30 +138,30 @@
 }
 #learned-library-section .learned-word-main {
   grid-column: 2 !important;
-  align-self: center !important;
   display: grid !important;
+  place-content: center !important;
   place-items: center !important;
-  gap: 4px !important;
   min-height: 54px !important;
+  gap: 4px !important;
+  text-align: center !important;
 }
 #learned-library-section .learned-word-main > * { margin-block: 0 !important; }
 #learned-library-section .learned-word-meaning {
   grid-column: 3 !important;
-  align-self: center !important;
   display: grid !important;
   place-content: center !important;
   place-items: center !important;
-  gap: 4px !important;
   min-height: 54px !important;
+  gap: 4px !important;
+  text-align: center !important;
 }
-#learned-library-section .learned-word-meaning > * { margin-block: 0 !important; }
+#learned-library-section .learned-word-meaning > * { margin-block: 0 !important; text-align: center !important; }
 #learned-library-section .kwf-row-collocation {
   grid-column: 4 !important;
-  align-self: center !important;
   display: grid !important;
   place-content: center !important;
-  gap: 3px !important;
   min-height: 54px !important;
+  gap: 3px !important;
   padding: 4px 8px !important;
   text-align: center !important;
   font-size: 11px !important;
@@ -176,27 +176,23 @@
 }
 #learned-library-section .learned-word-status {
   grid-column: 5 !important;
-  align-self: center !important;
   display: flex !important;
   flex-wrap: wrap !important;
   justify-content: center !important;
   align-items: center !important;
   align-content: center !important;
-  gap: 6px 8px !important;
   min-height: 54px !important;
+  gap: 6px 8px !important;
   margin: 0 !important;
   text-align: center !important;
 }
 #learned-library-section .learned-word-status > * { margin-block: 0 !important; }
 #learned-library-section .learned-word-status small {
   flex-basis: 100% !important;
-  display: block !important;
   margin: 0 !important;
   line-height: 1.25 !important;
   text-align: center !important;
 }
-
-/* Expanded detail is a separate row below; it never changes the five-column header row. */
 #learned-library-section .kwf-learned-row > .learned-detail,
 #learned-library-section .kwf-learned-row > [class*="detail"]:not(.learned-word-status) {
   grid-column: 2 / -1 !important;
@@ -204,9 +200,7 @@
   align-self: stretch !important;
 }
 
-/* =========================
-   Study / review cards v2
-   ========================= */
+/* ---------- study / review card ---------- */
 #study .study-card,
 #study #study-card {
   box-sizing: border-box !important;
@@ -216,12 +210,10 @@
   flex-direction: column !important;
   width: 100% !important;
   min-width: 0 !important;
-  height: auto !important;
   min-height: 520px !important;
+  height: auto !important;
   overflow: hidden !important;
 }
-
-/* Reset legacy absolute/translated pieces that caused text to float outside the card. */
 #study .study-card .word,
 #study .study-card .pre-answer,
 #study .study-card .answer,
@@ -239,24 +231,19 @@
   float: none !important;
   transform: none !important;
   translate: none !important;
-  width: auto !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
 }
-
 #study .study-card .word {
   flex: 0 0 auto !important;
   display: grid !important;
   place-items: center !important;
-  gap: 8px !important;
   width: 100% !important;
+  gap: 8px !important;
   padding: 22px 20px 16px !important;
   text-align: center !important;
 }
-#study .study-card .word h3 {
-  margin: 0 !important;
-  text-align: center !important;
-}
+#study .study-card .word h3 { margin: 0 !important; text-align: center !important; }
 #study .study-card .pronunciation-stack {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -265,7 +252,6 @@
   gap: 8px !important;
   margin: 0 !important;
 }
-
 #study .study-card .answer,
 #study .study-card .compact-answer,
 #study .study-card .answer-scroll,
@@ -278,8 +264,6 @@
   overflow: visible !important;
   margin: 0 !important;
 }
-
-/* Revealed learning content: core meaning first, then examples/enrichment. */
 #study .study-card .answer-scroll {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) !important;
@@ -287,11 +271,7 @@
   gap: 8px !important;
   padding: 12px 22px 18px !important;
 }
-#study .study-card .answer-scroll h4 {
-  justify-self: center !important;
-  margin: 0 0 4px !important;
-  text-align: center !important;
-}
+#study .study-card .answer-scroll h4 { justify-self: center !important; margin: 0 0 4px !important; text-align: center !important; }
 #study .study-card .answer-scroll .sentence,
 #study .study-card .answer-scroll .sentence + p {
   justify-self: stretch !important;
@@ -300,22 +280,11 @@
   margin-right: 0 !important;
   text-align: left !important;
 }
-#study .study-card .answer-scroll aside {
-  justify-self: center !important;
-  margin: 4px auto !important;
-}
-#study .study-card .kwf-learning-extra {
-  width: 100% !important;
-  min-width: 0 !important;
-  margin: 8px 0 0 !important;
-}
-
-/* Actions are a normal footer, never a floating/sticky overlay. */
+#study .study-card .answer-scroll aside { justify-self: center !important; margin: 4px auto !important; }
+#study .study-card .kwf-learning-extra { width: 100% !important; min-width: 0 !important; margin: 8px 0 0 !important; }
 #study .study-card .continue,
 #study .study-card .pre-answer,
-#study .study-card .review-question {
-  margin-top: auto !important;
-}
+#study .study-card .review-question { margin-top: auto !important; }
 #study .study-card .continue {
   position: static !important;
   inset: auto !important;
@@ -325,70 +294,45 @@
   margin: 16px 20px 20px !important;
 }
 #study .study-card .pre-answer,
-#study .study-card .review-question {
-  padding: 14px 20px 20px !important;
-}
-
-/* No internal scrollbar in study/review cards. */
+#study .study-card .review-question { padding: 14px 20px 20px !important; }
 #study .study-card,
 #study .study-card .answer,
 #study .study-card .answer-scroll,
 #study .study-card .review-question,
-#review .review-module-grid article {
-  scrollbar-width: none !important;
-}
+#review .review-module-grid article { scrollbar-width: none !important; }
 #study .study-card::-webkit-scrollbar,
 #study .study-card .answer::-webkit-scrollbar,
 #study .study-card .answer-scroll::-webkit-scrollbar,
 #study .study-card .review-question::-webkit-scrollbar,
 #review .review-module-grid article::-webkit-scrollbar { display: none !important; }
 
-/* Placement controls are not a vocabulary/library control. v2 JS marks misplaced rows. */
+/* Placement controls belong to planning/settings, not this study/library control strip. */
 .kwf-v2-placement-misplaced { display: none !important; }
 
 @media (max-width: 1100px) {
-  #review .memory-note {
-    grid-template-columns: 1fr 1.2fr !important;
-  }
+  #review .memory-note { grid-template-columns: 1fr 1.2fr !important; }
   #review .memory-note ul { grid-column: 1 / -1 !important; }
-
   #learned-library-section .kwf-learned-row {
     grid-template-columns: 56px minmax(130px, .8fr) minmax(190px, 1.25fr) minmax(180px, 1fr) !important;
   }
-  #learned-library-section .learned-word-status {
-    grid-column: 2 / -1 !important;
-    min-height: 38px !important;
-  }
+  #learned-library-section .learned-word-status { grid-column: 2 / -1 !important; min-height: 38px !important; }
   #learned-library-section .kwf-row-collocation { grid-column: 4 !important; }
 }
 
 @media (max-width: 720px) {
   #review .review-stat.learned-stat {
     min-height: 168px !important;
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: 1fr !important;
     grid-template-areas: "label" "count" "copy" "actions" !important;
     gap: 7px !important;
-    overflow: hidden !important;
   }
-  #review .review-stat.learned-stat .learned-card-actions {
-    justify-content: flex-start !important;
-    max-width: none !important;
-  }
-  #review .memory-note {
-    grid-template-columns: 1fr !important;
-    min-height: 0 !important;
-  }
-  #review .memory-note ul {
-    grid-column: 1 !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
+  #review .review-stat.learned-stat .learned-card-actions { justify-content: flex-start !important; max-width: none !important; }
+  #review .memory-note { grid-template-columns: 1fr !important; min-height: 0 !important; }
+  #review .memory-note ul { grid-column: 1 !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 
   #learned-library-section .kwf-learned-row {
     grid-template-columns: 42px minmax(0, 1fr) auto !important;
-    grid-template-areas:
-      "select word status"
-      "select meaning meaning"
-      "select collocation collocation" !important;
+    grid-template-areas: "select word status" "select meaning meaning" "select collocation collocation" !important;
     gap: 6px 10px !important;
     min-height: 112px !important;
     padding: 10px 12px !important;
@@ -396,49 +340,42 @@
   #learned-library-section .select-word { grid-area: select !important; }
   #learned-library-section .learned-word-main {
     grid-area: word !important;
-    justify-items: start !important;
     place-content: center start !important;
+    justify-items: start !important;
     text-align: left !important;
   }
   #learned-library-section .learned-word-meaning {
     grid-area: meaning !important;
-    justify-items: start !important;
     place-content: center start !important;
-    text-align: left !important;
+    justify-items: start !important;
     min-height: 0 !important;
+    text-align: left !important;
   }
-  #learned-library-section .learned-word-meaning p { text-align: left !important; }
+  #learned-library-section .learned-word-meaning > * { text-align: left !important; }
   #learned-library-section .kwf-row-collocation {
     grid-area: collocation !important;
     place-content: center start !important;
-    text-align: left !important;
     min-height: 0 !important;
     padding: 0 !important;
+    text-align: left !important;
   }
   #learned-library-section .learned-word-status {
     grid-area: status !important;
-    align-self: center !important;
     justify-content: flex-end !important;
     min-height: 0 !important;
   }
-  #learned-library-section .learned-word-status small {
-    flex-basis: auto !important;
-    text-align: right !important;
-  }
+  #learned-library-section .learned-word-status small { flex-basis: auto !important; text-align: right !important; }
   #learned-library-section .kwf-learned-row > .learned-detail,
   #learned-library-section .kwf-learned-row > [class*="detail"]:not(.learned-word-status) {
-    grid-column: 1 / -1 !important;
     grid-area: auto !important;
+    grid-column: 1 / -1 !important;
   }
 
   #study .study-card,
   #study #study-card { min-height: 500px !important; }
   #study .study-card .word { padding: 18px 14px 12px !important; }
   #study .study-card .answer-scroll { padding: 10px 16px 16px !important; }
-  #study .study-card .continue {
-    width: calc(100% - 32px) !important;
-    margin: 14px 16px 16px !important;
-  }
+  #study .study-card .continue { width: calc(100% - 32px) !important; margin: 14px 16px 16px !important; }
   #study .study-card .pre-answer,
   #study .study-card .review-question { padding: 12px 16px 16px !important; }
 }
