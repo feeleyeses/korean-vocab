@@ -72,9 +72,6 @@ jobs:
               if marker not in s: s = s.replace('</body>', script + '</body>')
           p.write_text(s, encoding='utf-8')
 
-          # Vinext's preload helper prepends `/` to dependency-map entries.
-          # Therefore the entry itself must be `korean-vocab/assets/...` (no leading slash).
-          # Runtime then requests `/korean-vocab/assets/...`, which is the Project Pages path.
           asset_base = 'korean-vocab/assets/'
           for js in Path('_site/assets').glob('*.js'):
               body = js.read_text(encoding='utf-8')
@@ -139,3 +136,8 @@ jobs:
         env:
           KWF_URL: https://feeleyeses.github.io/korean-vocab/
         run: node scripts/browser-smoke.mjs
+
+      - name: Live DOM audit
+        env:
+          KWF_URL: https://feeleyeses.github.io/korean-vocab/
+        run: node scripts/dom-audit.mjs
