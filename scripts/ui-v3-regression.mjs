@@ -12,7 +12,6 @@ const check = (name, ok, detail) => ok ? pass(name, detail) : failures.push(`${n
 
 check('UI v3 runtime', await page.evaluate(() => window.__KWF_UI_V3_READY__ === true), 'runtime not ready');
 
-// ---- Learning card: initial geometry ----
 const initial = await page.locator('#study-card').evaluate(card => {
   const r = card.getBoundingClientRect();
   const s = getComputedStyle(card);
@@ -36,8 +35,7 @@ check('学习卡固定高度', initial.h >= 600 && initial.h <= 705, JSON.string
 check('学习按钮保留卡片边距', initial.firstButtonLeft >= 20 && initial.lastButtonRight >= 20, JSON.stringify(initial));
 check('学习初始页三按钮单行', initial.cols === 3, JSON.stringify(initial));
 
-// Mark the first word learned so the same browser has a real learned row and a real review queue.
-await page.getByRole('button', { name: '不认识' }).click();
+await page.locator('#study-card .pre-answer').getByRole('button', { name: '不认识', exact: true }).click();
 await page.waitForTimeout(300);
 const learningReveal = await page.locator('#study-card').evaluate(card => {
   const r = card.getBoundingClientRect();
@@ -47,7 +45,6 @@ const learningReveal = await page.locator('#study-card').evaluate(card => {
 check('学习揭晓页与初始页等高', Math.abs(learningReveal.h - initial.h) <= 2, JSON.stringify({ initial: initial.h, reveal: learningReveal.h }));
 check('学习揭晓文字水平居中', learningReveal.align.length > 0 && learningReveal.align.every(x => x === 'center'), JSON.stringify(learningReveal.align));
 
-// ---- Learned library: actual row created by the interaction above ----
 const openLearned = page.getByRole('button', { name: /打开已学词库|查看已学词库/ }).first();
 await openLearned.click();
 await page.waitForTimeout(350);
@@ -70,24 +67,21 @@ if (await rows.count()) {
   check('词库词条垂直居中', learned.worst <= 12, JSON.stringify(learned));
 }
 
-// ---- Real full-library review card ----
-// The first answer created an actual learning record. Open the review module rather than testing CSS text.
 const fullReviewArticle = page.locator('#review .review-module-grid article').filter({ hasText: '全量库' }).first();
 const fullReviewButton = fullReviewArticle.locator('button');
 check('全量库复习入口已启用', await fullReviewButton.count() > 0 && !(await fullReviewButton.isDisabled()), `text=${await fullReviewButton.textContent().catch(() => '')}`);
 if (await fullReviewButton.count() && !(await fullReviewButton.isDisabled())) {
   await fullReviewButton.click();
   await page.waitForTimeout(400);
-
   const reviewInitial = await page.locator('#study-card').evaluate(card => {
     const r = card.getBoundingClientRect();
     const q = card.querySelector('.review-question');
     const grid = q?.querySelector('div');
     const buttons = grid ? [...grid.querySelectorAll('button')] : [];
     const rects = buttons.map(b => b.getBoundingClientRect());
-    const rows = [...new Set(rects.map(x => Math.round(x.top)))];
+    const rowTops = [...new Set(rects.map(x => Math.round(x.top)))];
     const cols = grid ? getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length : 0;
-    return { h: r.height, hasQuestion: Boolean(q), buttons: buttons.length, rows: rows.length, cols };
+    return { h: r.height, hasQuestion: Boolean(q), buttons: buttons.length, rows: rowTops.length, cols };
   });
   check('复习初始页真实 2×2', reviewInitial.hasQuestion && reviewInitial.buttons === 4 && reviewInitial.rows === 2 && reviewInitial.cols === 2, JSON.stringify(reviewInitial));
 
