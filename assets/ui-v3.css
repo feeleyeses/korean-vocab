@@ -91,8 +91,8 @@
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   gap: 12px !important;
-  width: 100% !important;
-  margin: 0 !important;
+  width: calc(100% - 24px) !important;
+  margin: 0 12px !important;
   padding: 0 !important;
 }
 #study #study-card .pre-answer > div > button {
@@ -152,7 +152,7 @@
   text-align: center !important;
 }
 #study #study-card .kwf-learning-extra {
-  display: none !important; /* keep core learning card stable; enrichment belongs in word detail, not primary reveal */
+  display: none !important;
 }
 #study #study-card .continue {
   position: static !important;
@@ -184,7 +184,7 @@
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 12px !important;
-  width: min(100%, 520px) !important;
+  width: min(calc(100% - 24px), 520px) !important;
   margin: 18px auto 0 !important;
   padding: 0 !important;
 }
@@ -242,10 +242,7 @@
   margin: 0 !important;
   align-self: center !important;
 }
-#learned-library-section .select-word {
-  grid-column: 1 !important;
-  justify-self: center !important;
-}
+#learned-library-section .select-word { grid-column: 1 !important; justify-self: center !important; }
 #learned-library-section .learned-word-main {
   grid-column: 2 !important;
   display: flex !important;
@@ -257,10 +254,7 @@
   text-align: center !important;
 }
 #learned-library-section .learned-word-main b,
-#learned-library-section .learned-word-main strong {
-  margin: 0 !important;
-  line-height: 1.1 !important;
-}
+#learned-library-section .learned-word-main strong { margin: 0 !important; line-height: 1.1 !important; }
 #learned-library-section .learned-word-meaning {
   grid-column: 3 !important;
   display: flex !important;
@@ -304,19 +298,13 @@
 #learned-library-section .learned-word-status > * { margin: 0 !important; }
 #learned-library-section .learned-word-status small { flex-basis: 100% !important; text-align: center !important; }
 #learned-library-section .kwf-learned-row > .learned-detail,
-#learned-library-section .kwf-learned-row > [class*="detail"]:not(.learned-word-status) {
-  display: none !important;
-}
+#learned-library-section .kwf-learned-row > [class*="detail"]:not(.learned-word-status) { display: none !important; }
 
-/* Misplaced placement control is not a vocabulary-library control. */
 .kwf-v3-placement-misplaced { display: none !important; }
 
 @media (max-width: 900px) {
   :root { --kwf-card-pad: 16px; }
-  #study #study-card.study-card {
-    height: min(700px, calc(100dvh - 96px)) !important;
-    min-height: 600px !important;
-  }
+  #study #study-card.study-card { height: min(700px, calc(100dvh - 96px)) !important; min-height: 600px !important; }
   #study #study-card .word h3 { font-size: clamp(48px, 15vw, 68px) !important; }
   #learned-library-section .kwf-learned-row {
     grid-template-columns: 44px minmax(110px, .8fr) minmax(150px, 1.2fr) 150px !important;
@@ -330,10 +318,10 @@
 }
 
 @media (max-width: 560px) {
-  #study #study-card .pre-answer > div { gap: 8px !important; }
+  #study #study-card .pre-answer > div { width: calc(100% - 16px) !important; margin-inline: 8px !important; gap: 8px !important; }
   #study #study-card .pre-answer > div > button,
   #study #study-card .review-question > div > button { min-height: 50px !important; padding-inline: 6px !important; }
-  #study #study-card .review-question > div { width: 100% !important; gap: 8px !important; }
+  #study #study-card .review-question > div { width: calc(100% - 16px) !important; gap: 8px !important; }
   #learned-library-section .kwf-learned-row {
     grid-template-columns: 40px minmax(0, 1fr) auto !important;
     grid-template-rows: 1fr 1fr !important;
