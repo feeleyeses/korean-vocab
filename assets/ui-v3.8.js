@@ -1,8 +1,10 @@
 const imp=(el,p,v)=>el?.style?.setProperty(p,v,'important');
 
 function applyReviewV38(){
-  const card=document.querySelector('#study-card.study-card.review-mode');
+  const card=document.querySelector('#study-card.study-card');
   if(!card)return;
+  const isReview=card.classList.contains('review-mode')||Boolean(card.querySelector('.review-question, details.answer-map'));
+  if(!isReview)return;
   const mobile=matchMedia('(max-width:900px)').matches;
   const edge=mobile?12:16;
   const buttonH=mobile?48:52;
