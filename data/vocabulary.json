@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-29T18:48:16.075Z",
+  "generatedAt": "2026-08-29T20:31:20.449Z",
   "pipeline": [
     "Raw",
     "Normalize",
@@ -11305,7 +11305,7 @@
             {
               "collocationId": "ko-여름-179-s1-c1",
               "ko": "여름 휴가",
-              "zh": "夏天",
+              "zh": "暑假",
               "source": "legacy-bundle",
               "verified": true
             }
