@@ -7,12 +7,18 @@
   --kwf-space-3: 12px;
   --kwf-space-4: 16px;
   --kwf-space-5: 22px;
+  --kwf-content-safe-w: 1180px;
+  --kwf-page-pad-x: max(24px, calc((100vw - var(--kwf-content-safe-w)) / 2));
+  --kwf-section-gap: 44px;
+  --kwf-card-gap: 16px;
+  --kwf-card-pad: 22px;
+  --kwf-footer-pad: 22px;
   --kwf-radius-card: 22px;
   --kwf-radius-control: 14px;
   --kwf-shadow-card: 0 18px 48px rgba(18,49,38,.10);
   --kwf-button-font: 700 14px/1.2 Arial, "Noto Sans KR", "Microsoft YaHei", sans-serif;
   --kwf-button-border: 1px solid rgba(24,37,31,.16);
-  --kwf-hero-x: 7vw;
+  --kwf-hero-x: var(--kwf-page-pad-x);
   --kwf-action-h: 52px;
   --kwf-action-gap: 10px;
   --kwf-primary-action-w: 134px;
@@ -20,14 +26,14 @@
   --kwf-secondary-action-w: 168px;
   --kwf-review-action-w: 206px;
   --kwf-hero-bottom-gap: 28px;
-  --kwf-review-container-w: 1180px;
+  --kwf-review-container-w: var(--kwf-content-safe-w);
   --kwf-filter-title-h: 16px;
   --kwf-filter-chip-h: 32px;
   --kwf-card-vpad: 0px;
   --kwf-card-content-align: center;
 }
 
-:root { --kwf-card-h: 620px; --kwf-card-pad: 22px; --kwf-word-h: 168px; }
+:root { --kwf-card-h: 620px; --kwf-word-h: 168px; }
 
 .hero,
 .study-wrap,
@@ -36,6 +42,42 @@
 #review.review-hub {
   padding-left: var(--kwf-hero-x) !important;
   padding-right: var(--kwf-hero-x) !important;
+}
+
+.study-wrap,
+.polysemy,
+.review-hub {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--kwf-section-gap) !important;
+  box-sizing: border-box !important;
+}
+
+.study-wrap > .section-heading,
+.study-wrap > .mode-switch,
+.study-wrap > .study-tools,
+.study-wrap > .deck-switch,
+.study-wrap > .level-selector,
+.study-wrap > .study-settings,
+.study-wrap > .unlock-panel,
+.study-wrap > .study-grid,
+.polysemy > .section-heading,
+.polysemy > .poly-actions,
+.polysemy > #poly-reference,
+#review .review-title,
+#review .review-board,
+#review .kwf-layout-review-stack {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: var(--kwf-content-safe-w) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.study-wrap > .section-heading,
+.polysemy > .section-heading,
+#review .review-title {
+  align-self: center !important;
 }
 
 button,
@@ -346,6 +388,82 @@ a.mobile-tab:hover {
 #review #learned-library-section {
   grid-column: 1 / -1 !important;
   align-self: stretch !important;
+}
+
+/* Polysemy reference follows the same safe area and card rhythm. */
+.polysemy > .poly-actions,
+.polysemy > #poly-reference {
+  align-self: center !important;
+}
+#poly-reference {
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+#poly-reference[open] {
+  padding-bottom: var(--kwf-footer-pad) !important;
+}
+#poly-reference summary {
+  box-sizing: border-box !important;
+  padding-left: var(--kwf-card-pad) !important;
+  padding-right: var(--kwf-card-pad) !important;
+}
+#poly-reference .kwf-poly-ref-controls {
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: start !important;
+  gap: var(--kwf-card-gap) !important;
+  padding: var(--kwf-card-pad) var(--kwf-card-pad) var(--kwf-space-4) !important;
+  margin: 0 !important;
+}
+#poly-reference .kwf-poly-ref-controls > div {
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: start !important;
+  align-content: start !important;
+  gap: 6px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#poly-reference .kwf-poly-ref-controls > div > span {
+  display: flex !important;
+  align-items: baseline !important;
+  flex: 0 0 100% !important;
+  height: var(--kwf-filter-title-h) !important;
+  min-height: var(--kwf-filter-title-h) !important;
+  max-height: var(--kwf-filter-title-h) !important;
+  line-height: var(--kwf-filter-title-h) !important;
+  margin: 0 !important;
+}
+#poly-reference .kwf-poly-ref-controls button {
+  height: var(--kwf-filter-chip-h) !important;
+  min-height: var(--kwf-filter-chip-h) !important;
+  max-height: var(--kwf-filter-chip-h) !important;
+  margin: 0 !important;
+}
+#poly-reference .kwf-poly-ref-list {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  padding-left: var(--kwf-card-pad) !important;
+  padding-right: var(--kwf-card-pad) !important;
+  margin: 0 !important;
+}
+#poly-reference .kwf-poly-ref-bottom {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: var(--kwf-card-gap) !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: var(--kwf-space-4) var(--kwf-card-pad) var(--kwf-footer-pad) !important;
+}
+#poly-reference .kwf-poly-ref-bottom > div {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-end !important;
+  gap: 8px !important;
 }
 
 /* Learned library toolbar: compact, not a 400+ px control wall. */
