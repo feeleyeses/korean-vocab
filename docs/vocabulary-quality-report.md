@@ -1,5 +1,29 @@
 # Vocabulary Quality Report
 
+## 2026-08-30 Sprint 3 Batch 2
+
+- Scope: TOPIK-2 vocabulary, continuing in TOPIK order.
+- Review items before batch: 394.
+- TOPIK-2 review items before batch: 85.
+- Review items processed: 85 romanization normalization items.
+- Review items after batch: 309.
+- TOPIK-2 review items after batch: 0.
+- TOPIK levels completed in this batch: TOPIK-2 romanization cleanup, 87 TOPIK-2 entries normalized to learner-facing Latin romanization.
+- Pronunciation cleanup: 9 TOPIK-2 entries received actual reading and sound-rule review.
+- Example cleanup: 10 TOPIK-2 entries received stronger learning examples.
+- Collocation cleanup: 10 TOPIK-2 entries received stronger common collocations.
+- Source cleanup: 10 TOPIK-2 entries moved to `EDITORIAL_REVIEW`, the current human-reviewed source tier.
+- Current complete-quality count by audit queue: 302 lexical entries.
+- Blocking audit failures: 0.
+- Remaining review items: 309, all non-blocking romanization normalization warnings in TOPIK-3 and above.
+
+## Source Tiers
+
+- `KRDICT`: official dictionary-derived source.
+- `TOPIK`: exam-list source awaiting source-level human review.
+- `EDITORIAL`: editorial seed data awaiting source-level human review.
+- `EDITORIAL_REVIEW`: human-reviewed editorial source for pronunciation, examples, and collocations.
+
 ## 2026-08-30 Sprint 3 Batch 1
 
 - Scope: TOPIK-1 high-priority vocabulary.
@@ -13,7 +37,7 @@
 
 ## Remaining Review Queue
 
-- TOPIK-2: 85.
+- TOPIK-2: 0.
 - TOPIK-3: 132.
 - TOPIK-4: 20.
 - TOPIK-5: 128.
