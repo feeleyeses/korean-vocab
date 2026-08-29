@@ -9,10 +9,10 @@
   --kwf-space-5: 22px;
   --kwf-content-safe-w: 1180px;
   --kwf-page-pad-x: max(24px, calc((100vw - var(--kwf-content-safe-w)) / 2));
-  --kwf-section-gap: 44px;
-  --kwf-card-gap: 16px;
-  --kwf-card-pad: 22px;
-  --kwf-footer-pad: 22px;
+  --kwf-section-gap: 22px;
+  --kwf-card-gap: 12px;
+  --kwf-card-pad: 16px;
+  --kwf-footer-pad: 18px;
   --kwf-radius-card: 22px;
   --kwf-radius-control: 14px;
   --kwf-shadow-card: 0 18px 48px rgba(18,49,38,.10);
@@ -20,12 +20,12 @@
   --kwf-button-border: 1px solid rgba(24,37,31,.16);
   --kwf-hero-x: var(--kwf-page-pad-x);
   --kwf-action-h: 52px;
-  --kwf-action-gap: 10px;
+  --kwf-action-gap: 8px;
   --kwf-primary-action-w: 134px;
   --kwf-primary-action-group-w: calc((3 * var(--kwf-primary-action-w)) + (2 * var(--kwf-action-gap)));
   --kwf-secondary-action-w: 168px;
   --kwf-review-action-w: 206px;
-  --kwf-hero-bottom-gap: 28px;
+  --kwf-hero-bottom-gap: 24px;
   --kwf-review-container-w: var(--kwf-content-safe-w);
   --kwf-filter-title-h: 16px;
   --kwf-filter-chip-h: 32px;
@@ -72,12 +72,57 @@
   max-width: var(--kwf-content-safe-w) !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .study-wrap > .section-heading,
 .polysemy > .section-heading,
 #review .review-title {
   align-self: center !important;
+}
+
+.study-wrap > .level-selector { order: 1 !important; }
+.study-wrap > .deck-switch { order: 2 !important; }
+.study-wrap > .study-settings { order: 3 !important; }
+.study-wrap > .mode-switch { order: 0 !important; }
+.study-wrap > .study-tools { order: 0 !important; }
+.study-wrap > .unlock-panel { order: 4 !important; }
+.study-wrap > .study-grid { order: 5 !important; }
+
+.study-wrap > .deck-switch,
+.study-wrap > .level-selector,
+.study-wrap > .study-settings {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.study-wrap > .study-settings {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto !important;
+  align-items: center !important;
+  gap: var(--kwf-card-gap) !important;
+}
+
+.study-wrap > .study-settings > p {
+  display: flex !important;
+  align-items: center !important;
+  align-self: stretch !important;
+  margin: 0 !important;
+  min-height: 100% !important;
+}
+
+.polysemy > .section-heading {
+  display: grid !important;
+  grid-template-columns: minmax(0, 720px) !important;
+  justify-content: start !important;
+  align-items: start !important;
+  gap: var(--kwf-space-2) !important;
+}
+
+.polysemy > .section-heading > p {
+  max-width: 720px !important;
+  margin: 0 !important;
 }
 
 button,
@@ -400,6 +445,9 @@ a.mobile-tab:hover {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+#learned-panel.open {
+  padding: var(--kwf-card-pad) !important;
+}
 
 /* Polysemy reference follows the same safe area and card rhythm. */
 .polysemy > .poly-actions,
@@ -448,9 +496,14 @@ a.mobile-tab:hover {
   margin: 0 !important;
 }
 #poly-reference .kwf-poly-ref-controls button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   height: var(--kwf-filter-chip-h) !important;
   min-height: var(--kwf-filter-chip-h) !important;
   max-height: var(--kwf-filter-chip-h) !important;
+  padding: 0 12px !important;
+  line-height: 1 !important;
   margin: 0 !important;
 }
 #poly-reference .kwf-poly-ref-list {
@@ -481,8 +534,8 @@ a.mobile-tab:hover {
 #learned-library-section .learned-drawer-head {
   min-height: 0 !important;
   height: auto !important;
-  padding-bottom: 12px !important;
-  gap: 12px !important;
+  padding: var(--kwf-space-4) var(--kwf-card-pad) var(--kwf-space-2) !important;
+  gap: var(--kwf-card-gap) !important;
 }
 #learned-library-section .kwf-learned-control {
   box-sizing: border-box !important;
@@ -492,12 +545,12 @@ a.mobile-tab:hover {
     "search quick level rating"
     "sort sort sort sort" !important;
   align-items: start !important;
-  gap: 10px 14px !important;
+  gap: var(--kwf-card-gap) !important;
   width: 100% !important;
   min-height: 0 !important;
   height: auto !important;
   max-height: none !important;
-  padding: 12px 14px !important;
+  padding: var(--kwf-space-3) var(--kwf-card-pad) !important;
 }
 #learned-library-section .learned-search { grid-area: search !important; margin: 0 !important; }
 #learned-library-section .quick-filter { grid-area: quick !important; }
@@ -528,20 +581,32 @@ a.mobile-tab:hover {
 }
 #learned-library-section .learned-filters button,
 #learned-library-section .learned-sort button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   min-height: var(--kwf-filter-chip-h) !important;
   height: var(--kwf-filter-chip-h) !important;
   max-height: var(--kwf-filter-chip-h) !important;
-  padding: 5px 9px !important;
+  padding: 0 10px !important;
+  line-height: 1 !important;
   margin: 0 !important;
 }
-#learned-library-section .kwf-learned-pager { min-height: 54px !important; height: 54px !important; padding: 8px 12px !important; }
+#learned-library-section .kwf-learned-pager {
+  min-height: 46px !important;
+  height: 46px !important;
+  padding: var(--kwf-space-2) var(--kwf-card-pad) !important;
+  margin: 0 !important;
+}
 
 /* Learned rows: fixed-density, truly vertically centered. */
 #learned-library-section .kwf-learned-list {
   display: grid !important;
-  gap: 10px !important;
+  gap: var(--kwf-card-gap) !important;
   max-height: none !important;
   overflow: visible !important;
+  padding-left: var(--kwf-card-pad) !important;
+  padding-right: var(--kwf-card-pad) !important;
+  padding-bottom: var(--kwf-card-pad) !important;
 }
 #learned-library-section .kwf-learned-row {
   box-sizing: border-box !important;
@@ -555,7 +620,7 @@ a.mobile-tab:hover {
   min-height: 112px !important;
   max-height: 112px !important;
   margin: 0 !important;
-  padding: var(--kwf-card-vpad) 18px !important;
+  padding: var(--kwf-card-vpad) var(--kwf-card-pad) !important;
   overflow: hidden !important;
 }
 #learned-library-section .kwf-learned-row > * {
@@ -623,19 +688,27 @@ a.mobile-tab:hover {
 #learned-library-section .learned-word-status {
   grid-column: 5 !important;
   grid-row: 1 !important;
-  display: flex !important;
-  flex-wrap: wrap !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: 26px 24px 18px !important;
   justify-content: center !important;
   align-items: center !important;
-  align-content: center !important;
-  gap: 6px 8px !important;
+  justify-items: center !important;
+  gap: 2px !important;
   height: 72px !important;
   min-height: 72px !important;
   max-height: 72px !important;
   text-align: center !important;
 }
 #learned-library-section .learned-word-status > * { margin: 0 !important; }
-#learned-library-section .learned-word-status small { flex-basis: 100% !important; text-align: center !important; }
+#learned-library-section .learned-word-status .favorite-chip { grid-row: 1 !important; }
+#learned-library-section .learned-word-status mark { grid-row: 2 !important; }
+#learned-library-section .learned-word-status small {
+  grid-row: 3 !important;
+  align-self: end !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
 #learned-library-section .kwf-learned-row > .learned-detail,
 #learned-library-section .kwf-learned-row > [class*="detail"]:not(.learned-word-status) { display: none !important; }
 
