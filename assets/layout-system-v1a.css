@@ -592,10 +592,40 @@ a.mobile-tab:hover {
   margin: 0 !important;
 }
 #learned-library-section .kwf-learned-pager {
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: var(--kwf-card-gap) !important;
   min-height: 46px !important;
   height: 46px !important;
   padding: var(--kwf-space-2) var(--kwf-card-pad) !important;
   margin: 0 !important;
+  line-height: 1 !important;
+}
+#learned-library-section .kwf-learned-pager > * {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 30px !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+#learned-library-section .kwf-learned-pager > div,
+#learned-library-section .kwf-learned-pager [class*="action"],
+#learned-library-section .kwf-learned-pager [class*="button"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: var(--kwf-card-gap) !important;
+}
+#learned-library-section .kwf-learned-pager button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 30px !important;
+  min-height: 30px !important;
+  max-height: 30px !important;
+  line-height: 1 !important;
 }
 
 /* Learned rows: fixed-density, truly vertically centered. */
@@ -689,6 +719,7 @@ a.mobile-tab:hover {
   grid-column: 5 !important;
   grid-row: 1 !important;
   display: grid !important;
+  box-sizing: border-box !important;
   grid-template-columns: 1fr !important;
   grid-template-rows: 26px 24px 18px !important;
   justify-content: center !important;
@@ -698,14 +729,29 @@ a.mobile-tab:hover {
   height: 72px !important;
   min-height: 72px !important;
   max-height: 72px !important;
+  width: 180px !important;
+  min-width: 180px !important;
+  max-width: 180px !important;
   text-align: center !important;
 }
 #learned-library-section .learned-word-status > * { margin: 0 !important; }
-#learned-library-section .learned-word-status .favorite-chip { grid-row: 1 !important; }
-#learned-library-section .learned-word-status mark { grid-row: 2 !important; }
+#learned-library-section .learned-word-status .favorite-chip {
+  grid-row: 1 !important;
+  justify-self: center !important;
+  align-self: center !important;
+}
+#learned-library-section .learned-word-status mark {
+  grid-row: 2 !important;
+  justify-self: center !important;
+  align-self: center !important;
+  min-width: 54px !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
 #learned-library-section .learned-word-status small {
   grid-row: 3 !important;
   align-self: end !important;
+  justify-self: center !important;
   text-align: center !important;
   white-space: nowrap !important;
 }
@@ -781,6 +827,7 @@ a.mobile-tab:hover {
   }
   #learned-library-section .learned-word-meaning > * { text-align: left !important; }
   #learned-library-section .learned-word-status {
-    grid-column: 3 !important; grid-row: 1 / 3 !important; height: auto !important; min-height: 0 !important; max-height: none !important;
+    grid-column: 3 !important; grid-row: 1 / 3 !important; height: 72px !important; min-height: 72px !important; max-height: 72px !important;
+    width: 96px !important; min-width: 96px !important; max-width: 96px !important;
   }
 }
