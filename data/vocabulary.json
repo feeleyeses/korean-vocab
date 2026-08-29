@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-29T17:56:19.862Z",
+  "generatedAt": "2026-08-29T18:48:16.075Z",
   "pipeline": [
     "Raw",
     "Normalize",
@@ -3439,7 +3439,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "반면",
-        "romanization": "반면",
+        "romanization": "ban-myeon",
         "soundRules": [],
         "audio": null
       },
@@ -3453,8 +3453,8 @@
           "examples": [
             {
               "exampleId": "ko-반면-053-s1-e1",
-              "ko": "도시는 편리한 반면 복잡해요.",
-              "zh": "城市方便但复杂。",
+              "ko": "도시는 빠르게 성장한 반면 농촌 인구는 줄고 있다.",
+              "zh": "城市快速发展的同时，农村人口正在减少。",
               "source": "legacy-bundle",
               "verified": true
             }
@@ -3462,7 +3462,7 @@
           "collocations": [
             {
               "collocationId": "ko-반면-053-s1-c1",
-              "ko": "~한 반면",
+              "ko": "반면에 감소하다",
               "zh": "另一方面",
               "source": "legacy-bundle",
               "verified": true
@@ -3473,8 +3473,8 @@
           "primary": true
         }
       ],
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "verificationStatus": "approved",
       "qualityScore": {
         "score": 100,
@@ -3561,7 +3561,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "발전",
-        "romanization": "발전",
+        "romanization": "bal-jeon",
         "soundRules": [],
         "audio": null
       },
@@ -3575,8 +3575,8 @@
           "examples": [
             {
               "exampleId": "ko-발전-055-s1-e1",
-              "ko": "기술이 빠르게 발전해요.",
-              "zh": "技术快速发展。",
+              "ko": "기술 발전은 생활 방식을 크게 바꾸었다.",
+              "zh": "技术发展大大改变了生活方式。",
               "source": "legacy-bundle",
               "verified": true
             }
@@ -3584,7 +3584,7 @@
           "collocations": [
             {
               "collocationId": "ko-발전-055-s1-c1",
-              "ko": "경제 발전",
+              "ko": "발전을 이루다",
               "zh": "发展",
               "source": "legacy-bundle",
               "verified": true
@@ -3595,8 +3595,8 @@
           "primary": true
         }
       ],
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "verificationStatus": "approved",
       "qualityScore": {
         "score": 100,
@@ -5026,7 +5026,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "영향",
-        "romanization": "영향",
+        "romanization": "yeong-hyang",
         "soundRules": [],
         "audio": null
       },
@@ -5040,8 +5040,8 @@
           "examples": [
             {
               "exampleId": "ko-영향-078-s1-e1",
-              "ko": "날씨가 기분에 영향을 줘요.",
-              "zh": "天气会影响心情。",
+              "ko": "환경 변화가 경제에 큰 영향을 미쳤다.",
+              "zh": "环境变化对经济产生了很大影响。",
               "source": "legacy-bundle",
               "verified": true
             }
@@ -5060,8 +5060,8 @@
           "primary": true
         }
       ],
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "verificationStatus": "approved",
       "qualityScore": {
         "score": 100,
@@ -5087,7 +5087,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "예상하다",
-        "romanization": "예상하다",
+        "romanization": "ye-sang-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -5101,8 +5101,8 @@
           "examples": [
             {
               "exampleId": "ko-예상하다-079-s1-e1",
-              "ko": "결과를 예상하기 어려워요.",
-              "zh": "很难预测结果。",
+              "ko": "전문가들은 물가 상승이 계속될 것으로 예상했다.",
+              "zh": "专家预计物价上涨会持续。",
               "source": "legacy-bundle",
               "verified": true
             }
@@ -5110,7 +5110,7 @@
           "collocations": [
             {
               "collocationId": "ko-예상하다-079-s1-c1",
-              "ko": "변화를 예상하다",
+              "ko": "예상보다 높다",
               "zh": "预想",
               "source": "legacy-bundle",
               "verified": true
@@ -5121,8 +5121,8 @@
           "primary": true
         }
       ],
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "verificationStatus": "approved",
       "qualityScore": {
         "score": 100,
@@ -5209,7 +5209,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "기여하다",
-        "romanization": "기여하다",
+        "romanization": "gi-yeo-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -5223,8 +5223,8 @@
           "examples": [
             {
               "exampleId": "ko-기여하다-081-s1-e1",
-              "ko": "이 연구는 사회 발전에 기여했다.",
-              "zh": "这项研究为社会发展作出了贡献。",
+              "ko": "교육 투자는 사회 발전에 기여한다.",
+              "zh": "教育投资有助于社会发展。",
               "source": "legacy-bundle",
               "verified": true
             }
@@ -5243,8 +5243,8 @@
           "primary": true
         }
       ],
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "verificationStatus": "approved",
       "qualityScore": {
         "score": 100,
@@ -5269,9 +5269,11 @@
       ],
       "register": "正式",
       "pronunciation": {
-        "hangul": "촉진하다",
-        "romanization": "촉진하다",
-        "soundRules": [],
+        "hangul": "촉찐하다",
+        "romanization": "chok-jjin-ha-da",
+        "soundRules": [
+          "ㄱ+ㅈ → ㅉ（紧音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -5284,8 +5286,8 @@
           "examples": [
             {
               "exampleId": "ko-촉진하다-082-s1-e1",
-              "ko": "교류를 촉진할 정책이 필요하다.",
-              "zh": "需要促进交流的政策。",
+              "ko": "정부는 지역 경제를 촉진하기 위한 정책을 발표했다.",
+              "zh": "政府发布了促进地区经济的政策。",
               "source": "legacy-bundle",
               "verified": true
             }
@@ -5304,8 +5306,8 @@
           "primary": true
         }
       ],
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "verificationStatus": "approved",
       "qualityScore": {
         "score": 100,
@@ -5331,7 +5333,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "간주하다",
-        "romanization": "간주하다",
+        "romanization": "gan-ju-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -5345,8 +5347,8 @@
           "examples": [
             {
               "exampleId": "ko-간주하다-083-s1-e1",
-              "ko": "이를 중요한 문제로 간주한다.",
-              "zh": "将此视为重要问题。",
+              "ko": "그 행동은 규칙을 위반한 것으로 간주된다.",
+              "zh": "该行为被视为违反规定。",
               "source": "legacy-bundle",
               "verified": true
             }
@@ -5354,7 +5356,7 @@
           "collocations": [
             {
               "collocationId": "ko-간주하다-083-s1-c1",
-              "ko": "~로 간주하다",
+              "ko": "문제로 간주하다",
               "zh": "视为",
               "source": "legacy-bundle",
               "verified": true
@@ -5365,8 +5367,8 @@
           "primary": true
         }
       ],
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "verificationStatus": "approved",
       "qualityScore": {
         "score": 100,
@@ -5392,7 +5394,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "초래하다",
-        "romanization": "초래하다",
+        "romanization": "cho-rae-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -5406,8 +5408,8 @@
           "examples": [
             {
               "exampleId": "ko-초래하다-084-s1-e1",
-              "ko": "무리한 개발은 환경 문제를 초래한다.",
-              "zh": "过度开发会导致环境问题。",
+              "ko": "무리한 개발은 환경 문제를 초래할 수 있다.",
+              "zh": "过度开发可能导致环境问题。",
               "source": "legacy-bundle",
               "verified": true
             }
@@ -5415,7 +5417,7 @@
           "collocations": [
             {
               "collocationId": "ko-초래하다-084-s1-c1",
-              "ko": "결과를 초래하다",
+              "ko": "문제를 초래하다",
               "zh": "招致；导致",
               "source": "legacy-bundle",
               "verified": true
@@ -5426,8 +5428,8 @@
           "primary": true
         }
       ],
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "verificationStatus": "approved",
       "qualityScore": {
         "score": 100,
@@ -5453,7 +5455,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "도모하다",
-        "romanization": "도모하다",
+        "romanization": "do-mo-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -5467,8 +5469,8 @@
           "examples": [
             {
               "exampleId": "ko-도모하다-085-s1-e1",
-              "ko": "협력을 통해 발전을 도모해야 한다.",
-              "zh": "应通过合作谋求发展。",
+              "ko": "이 제도는 시민의 참여를 도모하기 위해 마련되었다.",
+              "zh": "该制度是为促进市民参与而设立的。",
               "source": "legacy-bundle",
               "verified": true
             }
@@ -5476,7 +5478,7 @@
           "collocations": [
             {
               "collocationId": "ko-도모하다-085-s1-c1",
-              "ko": "이익을 도모하다",
+              "ko": "협력을 도모하다",
               "zh": "谋求",
               "source": "legacy-bundle",
               "verified": true
@@ -5487,8 +5489,8 @@
           "primary": true
         }
       ],
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "verificationStatus": "approved",
       "qualityScore": {
         "score": 100,
@@ -5514,7 +5516,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "규명하다",
-        "romanization": "규명하다",
+        "romanization": "gyu-myeong-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -5528,8 +5530,8 @@
           "examples": [
             {
               "exampleId": "ko-규명하다-086-s1-e1",
-              "ko": "사건의 원인을 규명해야 한다.",
-              "zh": "必须查明事件原因。",
+              "ko": "연구진은 사고의 원인을 규명하려고 했다.",
+              "zh": "研究团队试图查明事故原因。",
               "source": "legacy-bundle",
               "verified": true
             }
@@ -5548,8 +5550,8 @@
           "primary": true
         }
       ],
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "verificationStatus": "approved",
       "qualityScore": {
         "score": 100,
@@ -5575,7 +5577,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "상충하다",
-        "romanization": "상충하다",
+        "romanization": "sang-chung-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -5635,9 +5637,11 @@
       ],
       "register": "正式",
       "pronunciation": {
-        "hangul": "함축하다",
-        "romanization": "함축하다",
-        "soundRules": [],
+        "hangul": "함추카다",
+        "romanization": "ham-chu-ka-da",
+        "soundRules": [
+          "ㄱ+ㅎ → ㅋ（激音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -5697,7 +5701,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "고찰하다",
-        "romanization": "고찰하다",
+        "romanization": "go-chal-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -5758,7 +5762,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "타당하다",
-        "romanization": "타당하다",
+        "romanization": "ta-dang-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -6147,7 +6151,7 @@
       "register": "网络",
       "pronunciation": {
         "hangul": "알잘딱깔센",
-        "romanization": "알잘딱깔센",
+        "romanization": "al-jal-ttak-kkal-sen",
         "soundRules": [],
         "audio": null
       },
@@ -6330,7 +6334,7 @@
       "register": "网络",
       "pronunciation": {
         "hangul": "손절",
-        "romanization": "손절",
+        "romanization": "son-jeol",
         "soundRules": [],
         "audio": null
       },
@@ -18564,7 +18568,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "쟁점",
-        "romanization": "쟁점",
+        "romanization": "jaeng-jeom",
         "soundRules": [],
         "audio": null
       },
@@ -18625,7 +18629,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "완화하다",
-        "romanization": "완화하다",
+        "romanization": "wan-hwa-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -18686,7 +18690,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "제기하다",
-        "romanization": "제기하다",
+        "romanization": "je-gi-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -18747,7 +18751,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "반영하다",
-        "romanization": "반영하다",
+        "romanization": "ban-yeong-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -18808,7 +18812,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "부각되다",
-        "romanization": "부각되다",
+        "romanization": "bu-gak-doe-da",
         "soundRules": [],
         "audio": null
       },
@@ -18869,7 +18873,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "불가피하다",
-        "romanization": "불가피하다",
+        "romanization": "bul-ga-pi-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -18930,7 +18934,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "초점",
-        "romanization": "초점",
+        "romanization": "cho-jeom",
         "soundRules": [],
         "audio": null
       },
@@ -18991,7 +18995,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "토대",
-        "romanization": "토대",
+        "romanization": "to-dae",
         "soundRules": [],
         "audio": null
       },
@@ -19052,7 +19056,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "저해하다",
-        "romanization": "저해하다",
+        "romanization": "jeo-hae-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -19113,7 +19117,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "수반하다",
-        "romanization": "수반하다",
+        "romanization": "su-ban-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -19174,7 +19178,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "상쇄하다",
-        "romanization": "상쇄하다",
+        "romanization": "sang-swae-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -19235,7 +19239,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "유발하다",
-        "romanization": "유발하다",
+        "romanization": "yu-bal-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -19296,7 +19300,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "급증하다",
-        "romanization": "급증하다",
+        "romanization": "geup-jeung-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -19357,7 +19361,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "감소하다",
-        "romanization": "감소하다",
+        "romanization": "gam-so-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -19418,7 +19422,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "대안",
-        "romanization": "대안",
+        "romanization": "dae-an",
         "soundRules": [],
         "audio": null
       },
@@ -19479,7 +19483,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "방안",
-        "romanization": "방안",
+        "romanization": "bang-an",
         "soundRules": [],
         "audio": null
       },
@@ -19540,7 +19544,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "갈등",
-        "romanization": "갈등",
+        "romanization": "gal-deung",
         "soundRules": [],
         "audio": null
       },
@@ -19601,7 +19605,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "효율적",
-        "romanization": "효율적",
+        "romanization": "hyo-yul-jeok",
         "soundRules": [],
         "audio": null
       },
@@ -19662,7 +19666,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "지속적",
-        "romanization": "지속적",
+        "romanization": "ji-sok-jeok",
         "soundRules": [],
         "audio": null
       },
@@ -19723,7 +19727,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "전반적",
-        "romanization": "전반적",
+        "romanization": "jeon-ban-jeok",
         "soundRules": [],
         "audio": null
       },
@@ -19784,7 +19788,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "비롯하다",
-        "romanization": "비롯하다",
+        "romanization": "bi-rot-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -19845,7 +19849,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "대두되다",
-        "romanization": "대두되다",
+        "romanization": "dae-du-doe-da",
         "soundRules": [],
         "audio": null
       },
@@ -19906,7 +19910,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "심화되다",
-        "romanization": "심화되다",
+        "romanization": "sim-hwa-doe-da",
         "soundRules": [],
         "audio": null
       },
@@ -19967,7 +19971,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "확산되다",
-        "romanization": "확산되다",
+        "romanization": "hwak-san-doe-da",
         "soundRules": [],
         "audio": null
       },
@@ -20028,7 +20032,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "저출산",
-        "romanization": "저출산",
+        "romanization": "jeo-chul-san",
         "soundRules": [],
         "audio": null
       },
@@ -20089,7 +20093,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "고령화",
-        "romanization": "고령화",
+        "romanization": "go-ryeong-hwa",
         "soundRules": [],
         "audio": null
       },
@@ -20150,7 +20154,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "양극화",
-        "romanization": "양극화",
+        "romanization": "yang-geuk-hwa",
         "soundRules": [],
         "audio": null
       },
@@ -20211,7 +20215,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "격차",
-        "romanization": "격차",
+        "romanization": "gyeok-cha",
         "soundRules": [],
         "audio": null
       },
@@ -20272,7 +20276,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "부담",
-        "romanization": "부담",
+        "romanization": "bu-dam",
         "soundRules": [],
         "audio": null
       },
@@ -20333,7 +20337,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "인식",
-        "romanization": "인식",
+        "romanization": "in-sik",
         "soundRules": [],
         "audio": null
       },
@@ -20394,7 +20398,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "관점",
-        "romanization": "관점",
+        "romanization": "gwan-jeom",
         "soundRules": [],
         "audio": null
       },
@@ -20455,7 +20459,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "추세",
-        "romanization": "추세",
+        "romanization": "chu-se",
         "soundRules": [],
         "audio": null
       },
@@ -20516,7 +20520,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "실태",
-        "romanization": "실태",
+        "romanization": "sil-tae",
         "soundRules": [],
         "audio": null
       },
@@ -20577,7 +20581,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "개선하다",
-        "romanization": "개선하다",
+        "romanization": "gae-seon-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -20638,7 +20642,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "보완하다",
-        "romanization": "보완하다",
+        "romanization": "bo-wan-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -20699,7 +20703,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "강화하다",
-        "romanization": "강화하다",
+        "romanization": "gang-hwa-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -20760,7 +20764,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "마련하다",
-        "romanization": "마련하다",
+        "romanization": "ma-ryeon-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -20821,7 +20825,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "도입하다",
-        "romanization": "도입하다",
+        "romanization": "do-ip-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -20882,7 +20886,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "제한하다",
-        "romanization": "제한하다",
+        "romanization": "je-han-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -20943,7 +20947,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "촉구하다",
-        "romanization": "촉구하다",
+        "romanization": "chok-gu-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21004,7 +21008,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "시사하다",
-        "romanization": "시사하다",
+        "romanization": "si-sa-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21065,7 +21069,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "입증하다",
-        "romanization": "입증하다",
+        "romanization": "ip-jeung-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21126,7 +21130,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "모색하다",
-        "romanization": "모색하다",
+        "romanization": "mo-saek-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21187,7 +21191,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "활성화하다",
-        "romanization": "활성화하다",
+        "romanization": "hwal-seong-hwa-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21248,7 +21252,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "불균형",
-        "romanization": "불균형",
+        "romanization": "bul-gyun-hyeong",
         "soundRules": [],
         "audio": null
       },
@@ -21309,7 +21313,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "취약하다",
-        "romanization": "취약하다",
+        "romanization": "chwi-yak-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21370,7 +21374,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "유의미하다",
-        "romanization": "유의미하다",
+        "romanization": "yu-ui-mi-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21431,7 +21435,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "근거",
-        "romanization": "근거",
+        "romanization": "geun-geo",
         "soundRules": [],
         "audio": null
       },
@@ -21553,7 +21557,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "반영하다",
-        "romanization": "반영하다",
+        "romanization": "ban-yeong-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21614,7 +21618,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "제시하다",
-        "romanization": "제시하다",
+        "romanization": "je-si-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21675,7 +21679,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "확보하다",
-        "romanization": "확보하다",
+        "romanization": "hwak-bo-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21736,7 +21740,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "완화하다",
-        "romanization": "완화하다",
+        "romanization": "wan-hwa-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21797,7 +21801,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "유발하다",
-        "romanization": "유발하다",
+        "romanization": "yu-bal-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21858,7 +21862,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "비판하다",
-        "romanization": "비판하다",
+        "romanization": "bi-pan-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -21980,7 +21984,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "분석하다",
-        "romanization": "분석하다",
+        "romanization": "bun-seok-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -22041,7 +22045,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "초점",
-        "romanization": "초점",
+        "romanization": "cho-jeom",
         "soundRules": [],
         "audio": null
       },
@@ -22102,7 +22106,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "쟁점",
-        "romanization": "쟁점",
+        "romanization": "jaeng-jeom",
         "soundRules": [],
         "audio": null
       },
@@ -22163,7 +22167,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "대안",
-        "romanization": "대안",
+        "romanization": "dae-an",
         "soundRules": [],
         "audio": null
       },
@@ -22224,7 +22228,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "효과적",
-        "romanization": "효과적",
+        "romanization": "hyo-gwa-jeok",
         "soundRules": [],
         "audio": null
       },
@@ -22285,7 +22289,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "불가피하다",
-        "romanization": "불가피하다",
+        "romanization": "bul-ga-pi-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -22346,7 +22350,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "상대적",
-        "romanization": "상대적",
+        "romanization": "sang-dae-jeok",
         "soundRules": [],
         "audio": null
       },
@@ -22407,7 +22411,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "의존하다",
-        "romanization": "의존하다",
+        "romanization": "ui-jon-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -22468,7 +22472,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "전환하다",
-        "romanization": "전환하다",
+        "romanization": "jeon-hwan-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -22529,7 +22533,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "증대하다",
-        "romanization": "증대하다",
+        "romanization": "jeung-dae-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -22590,7 +22594,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "비중",
-        "romanization": "비중",
+        "romanization": "bi-jung",
         "soundRules": [],
         "audio": null
       },
@@ -22651,7 +22655,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "요인",
-        "romanization": "요인",
+        "romanization": "yo-in",
         "soundRules": [],
         "audio": null
       },
@@ -22712,7 +22716,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "해소하다",
-        "romanization": "해소하다",
+        "romanization": "hae-so-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -22773,7 +22777,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "지속되다",
-        "romanization": "지속되다",
+        "romanization": "ji-sok-doe-da",
         "soundRules": [],
         "audio": null
       },
@@ -22834,7 +22838,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "적용하다",
-        "romanization": "적용하다",
+        "romanization": "jeok-yong-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -22895,7 +22899,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "확립하다",
-        "romanization": "확립하다",
+        "romanization": "hwak-rip-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -22956,7 +22960,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "전망",
-        "romanization": "전망",
+        "romanization": "jeon-mang",
         "soundRules": [],
         "audio": null
       },
@@ -23078,7 +23082,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "자원",
-        "romanization": "자원",
+        "romanization": "ja-won",
         "soundRules": [],
         "audio": null
       },
@@ -23139,7 +23143,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "갈등",
-        "romanization": "갈등",
+        "romanization": "gal-deung",
         "soundRules": [],
         "audio": null
       },
@@ -23200,7 +23204,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "감소하다",
-        "romanization": "감소하다",
+        "romanization": "gam-so-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -23261,7 +23265,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "가속화되다",
-        "romanization": "가속화되다",
+        "romanization": "ga-sok-hwa-doe-da",
         "soundRules": [],
         "audio": null
       },
@@ -23322,7 +23326,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "도출하다",
-        "romanization": "도출하다",
+        "romanization": "do-chul-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -23383,7 +23387,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "초래되다",
-        "romanization": "초래되다",
+        "romanization": "cho-rae-doe-da",
         "soundRules": [],
         "audio": null
       },
@@ -23444,7 +23448,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "차별화하다",
-        "romanization": "차별화하다",
+        "romanization": "cha-byeol-hwa-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -23505,7 +23509,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "실효성",
-        "romanization": "실효성",
+        "romanization": "sil-hyo-seong",
         "soundRules": [],
         "audio": null
       },
@@ -23566,7 +23570,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "당면하다",
-        "romanization": "당면하다",
+        "romanization": "dang-myeon-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -23627,7 +23631,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "전제하다",
-        "romanization": "전제하다",
+        "romanization": "jeon-je-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -23688,7 +23692,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "모순",
-        "romanization": "모순",
+        "romanization": "mo-sun",
         "soundRules": [],
         "audio": null
       },
@@ -23749,7 +23753,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "부합하다",
-        "romanization": "부합하다",
+        "romanization": "bu-hap-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -23810,7 +23814,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "구체적",
-        "romanization": "구체적",
+        "romanization": "gu-che-jeok",
         "soundRules": [],
         "audio": null
       },
@@ -23871,7 +23875,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "균형",
-        "romanization": "균형",
+        "romanization": "gyun-hyeong",
         "soundRules": [],
         "audio": null
       },
@@ -23932,7 +23936,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "재정",
-        "romanization": "재정",
+        "romanization": "jae-jeong",
         "soundRules": [],
         "audio": null
       },
@@ -23993,7 +23997,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "복지",
-        "romanization": "복지",
+        "romanization": "bok-ji",
         "soundRules": [],
         "audio": null
       },
@@ -24054,7 +24058,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "고용",
-        "romanization": "고용",
+        "romanization": "go-yong",
         "soundRules": [],
         "audio": null
       },
@@ -24115,7 +24119,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "실업",
-        "romanization": "실업",
+        "romanization": "sil-eop",
         "soundRules": [],
         "audio": null
       },
@@ -24176,7 +24180,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "빈곤",
-        "romanization": "빈곤",
+        "romanization": "bin-gon",
         "soundRules": [],
         "audio": null
       },
@@ -24237,7 +24241,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "계층",
-        "romanization": "계층",
+        "romanization": "gye-cheung",
         "soundRules": [],
         "audio": null
       },
@@ -24298,7 +24302,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "소득",
-        "romanization": "소득",
+        "romanization": "so-deuk",
         "soundRules": [],
         "audio": null
       },
@@ -24359,7 +24363,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "소비",
-        "romanization": "소비",
+        "romanization": "so-bi",
         "soundRules": [],
         "audio": null
       },
@@ -24420,7 +24424,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "수요",
-        "romanization": "수요",
+        "romanization": "su-yo",
         "soundRules": [],
         "audio": null
       },
@@ -24481,7 +24485,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "공급",
-        "romanization": "공급",
+        "romanization": "gong-geup",
         "soundRules": [],
         "audio": null
       },
@@ -24542,7 +24546,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "경쟁력",
-        "romanization": "경쟁력",
+        "romanization": "gyeong-jaeng-ryeok",
         "soundRules": [],
         "audio": null
       },
@@ -24603,7 +24607,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "혁신",
-        "romanization": "혁신",
+        "romanization": "hyeok-sin",
         "soundRules": [],
         "audio": null
       },
@@ -24664,7 +24668,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "규제",
-        "romanization": "규제",
+        "romanization": "gyu-je",
         "soundRules": [],
         "audio": null
       },
@@ -24725,7 +24729,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "자율",
-        "romanization": "자율",
+        "romanization": "ja-yul",
         "soundRules": [],
         "audio": null
       },
@@ -24786,7 +24790,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "공공",
-        "romanization": "공공",
+        "romanization": "gong-gong",
         "soundRules": [],
         "audio": null
       },
@@ -24847,7 +24851,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "민간",
-        "romanization": "민간",
+        "romanization": "min-gan",
         "soundRules": [],
         "audio": null
       },
@@ -24908,7 +24912,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "환경오염",
-        "romanization": "환경오염",
+        "romanization": "hwan-gyeong-o-yeom",
         "soundRules": [],
         "audio": null
       },
@@ -24969,7 +24973,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "탄소",
-        "romanization": "탄소",
+        "romanization": "tan-so",
         "soundRules": [],
         "audio": null
       },
@@ -25030,7 +25034,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "배출",
-        "romanization": "배출",
+        "romanization": "bae-chul",
         "soundRules": [],
         "audio": null
       },
@@ -25091,7 +25095,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "절감하다",
-        "romanization": "절감하다",
+        "romanization": "jeol-gam-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25152,7 +25156,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "절약하다",
-        "romanization": "절약하다",
+        "romanization": "jeol-yak-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25213,7 +25217,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "확대하다",
-        "romanization": "확대하다",
+        "romanization": "hwak-dae-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25274,7 +25278,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "축소하다",
-        "romanization": "축소하다",
+        "romanization": "chuk-so-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25335,7 +25339,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "추진하다",
-        "romanization": "추진하다",
+        "romanization": "chu-jin-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25396,7 +25400,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "검토하다",
-        "romanization": "검토하다",
+        "romanization": "geom-to-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25457,7 +25461,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "시행하다",
-        "romanization": "시행하다",
+        "romanization": "si-haeng-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25518,7 +25522,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "폐지하다",
-        "romanization": "폐지하다",
+        "romanization": "pye-ji-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25579,7 +25583,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "유지하다",
-        "romanization": "유지하다",
+        "romanization": "yu-ji-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25640,7 +25644,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "형성하다",
-        "romanization": "형성하다",
+        "romanization": "hyeong-seong-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25701,7 +25705,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "분배",
-        "romanization": "분배",
+        "romanization": "bun-bae",
         "soundRules": [],
         "audio": null
       },
@@ -25762,7 +25766,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "해석하다",
-        "romanization": "해석하다",
+        "romanization": "hae-seok-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25823,7 +25827,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "예측하다",
-        "romanization": "예측하다",
+        "romanization": "ye-cheuk-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -25884,7 +25888,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "상호작용",
-        "romanization": "상호작용",
+        "romanization": "sang-ho-jak-yong",
         "soundRules": [],
         "audio": null
       },
@@ -25945,7 +25949,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "지표",
-        "romanization": "지표",
+        "romanization": "ji-pyo",
         "soundRules": [],
         "audio": null
       },
@@ -33039,7 +33043,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "가종녁",
-        "romanization": "가종녁",
+        "romanization": "ga-jong-nyeok",
         "soundRules": [],
         "audio": null
       },
@@ -33100,7 +33104,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "대ː가족",
-        "romanization": "대ː가족",
+        "romanization": "dae-ga-jok",
         "soundRules": [],
         "audio": null
       },
@@ -33161,7 +33165,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "개회사/개훼사",
-        "romanization": "개회사/개훼사",
+        "romanization": "gae-hoe-sa/gae-hwe-sa",
         "soundRules": [],
         "audio": null
       },
@@ -33222,7 +33226,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "자회사/자훼사",
-        "romanization": "자회사/자훼사",
+        "romanization": "ja-hoe-sa/ja-hwe-sa",
         "soundRules": [],
         "audio": null
       },
@@ -33283,7 +33287,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "주시쾨사/주시퀘사",
-        "romanization": "주시쾨사/주시퀘사",
+        "romanization": "ju-si-koe-sa/ju-si-kwe-sa",
         "soundRules": [],
         "audio": null
       },
@@ -33344,7 +33348,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "환경미화원",
-        "romanization": "환경미화원",
+        "romanization": "hwan-gyeong-mi-hwa-won",
         "soundRules": [],
         "audio": null
       },
@@ -33405,7 +33409,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "환경적",
-        "romanization": "환경적",
+        "romanization": "hwan-gyeong-jeok",
         "soundRules": [],
         "audio": null
       },
@@ -33466,7 +33470,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "친환경",
-        "romanization": "친환경",
+        "romanization": "chin-hwan-gyeong",
         "soundRules": [],
         "audio": null
       },
@@ -33527,7 +33531,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "정책쩍",
-        "romanization": "정책쩍",
+        "romanization": "jeong-chaek-jjeok",
         "soundRules": [],
         "audio": null
       },
@@ -33588,7 +33592,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "문화계/문화게",
-        "romanization": "문화계/문화게",
+        "romanization": "mun-hwa-gye/mun-hwa-ge",
         "soundRules": [],
         "audio": null
       },
@@ -33649,7 +33653,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "문화꿘",
-        "romanization": "문화꿘",
+        "romanization": "mun-hwa-kkwon",
         "soundRules": [],
         "audio": null
       },
@@ -33710,7 +33714,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "문화부",
-        "romanization": "문화부",
+        "romanization": "mun-hwa-bu",
         "soundRules": [],
         "audio": null
       },
@@ -33771,7 +33775,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "문화비",
-        "romanization": "문화비",
+        "romanization": "mun-hwa-bi",
         "soundRules": [],
         "audio": null
       },
@@ -33832,7 +33836,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "문화사",
-        "romanization": "문화사",
+        "romanization": "mun-hwa-sa",
         "soundRules": [],
         "audio": null
       },
@@ -33893,7 +33897,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "문ː제시되다/문ː제시뒈다",
-        "romanization": "문ː제시되다/문ː제시뒈다",
+        "romanization": "mun-je-si-doe-da/mun-je-si-dwe-da",
         "soundRules": [],
         "audio": null
       },
@@ -33954,7 +33958,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "문ː제시하다",
-        "romanization": "문ː제시하다",
+        "romanization": "mun-je-si-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -34015,7 +34019,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "문ː제아",
-        "romanization": "문ː제아",
+        "romanization": "mun-je-a",
         "soundRules": [],
         "audio": null
       },
@@ -34076,7 +34080,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "문ː제의식/문ː제이식",
-        "romanization": "문ː제의식/문ː제이식",
+        "romanization": "mun-je-ui-sik/mun-je-i-sik",
         "soundRules": [],
         "audio": null
       },
@@ -34137,7 +34141,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "해ː결싸",
-        "romanization": "해ː결싸",
+        "romanization": "hae-gyeol-ssa",
         "soundRules": [],
         "audio": null
       },
@@ -34198,7 +34202,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "미ː해결",
-        "romanization": "미ː해결",
+        "romanization": "mi-hae-gyeol",
         "soundRules": [],
         "audio": null
       },
@@ -34259,7 +34263,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "증가세",
-        "romanization": "증가세",
+        "romanization": "jeung-ga-se",
         "soundRules": [],
         "audio": null
       },
@@ -34320,7 +34324,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "감감소식",
-        "romanization": "감감소식",
+        "romanization": "gam-gam-so-sik",
         "soundRules": [],
         "audio": null
       },
@@ -34381,7 +34385,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "변ː화무쌍",
-        "romanization": "변ː화무쌍",
+        "romanization": "byeon-hwa-mu-ssang",
         "soundRules": [],
         "audio": null
       },
@@ -34442,7 +34446,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "변ː화무쌍하다",
-        "romanization": "변ː화무쌍하다",
+        "romanization": "byeon-hwa-mu-ssang-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -34503,7 +34507,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "변ː화율",
-        "romanization": "변ː화율",
+        "romanization": "byeon-hwa-yul",
         "soundRules": [],
         "audio": null
       },
@@ -34564,7 +34568,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "다변화",
-        "romanization": "다변화",
+        "romanization": "da-byeon-hwa",
         "soundRules": [],
         "audio": null
       },
@@ -34625,7 +34629,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "다변화되다/다변화뒈다",
-        "romanization": "다변화되다/다변화뒈다",
+        "romanization": "da-byeon-hwa-doe-da/da-byeon-hwa-dwe-da",
         "soundRules": [],
         "audio": null
       },
@@ -34686,7 +34690,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "발쩐기",
-        "romanization": "발쩐기",
+        "romanization": "bal-jjeon-gi",
         "soundRules": [],
         "audio": null
       },
@@ -34747,7 +34751,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "발쩐기",
-        "romanization": "발쩐기",
+        "romanization": "bal-jjeon-gi",
         "soundRules": [],
         "audio": null
       },
@@ -34808,7 +34812,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "발쩐사",
-        "romanization": "발쩐사",
+        "romanization": "bal-jjeon-sa",
         "soundRules": [],
         "audio": null
       },
@@ -34869,7 +34873,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "발쩐상",
-        "romanization": "발쩐상",
+        "romanization": "bal-jjeon-sang",
         "soundRules": [],
         "audio": null
       },
@@ -34930,7 +34934,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "발쩐썽",
-        "romanization": "발쩐썽",
+        "romanization": "bal-jjeon-sseong",
         "soundRules": [],
         "audio": null
       },
@@ -34991,7 +34995,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "생활고",
-        "romanization": "생활고",
+        "romanization": "saeng-hwal-go",
         "soundRules": [],
         "audio": null
       },
@@ -35052,7 +35056,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "생활꿘",
-        "romanization": "생활꿘",
+        "romanization": "saeng-hwal-kkwon",
         "soundRules": [],
         "audio": null
       },
@@ -35113,7 +35117,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "건ː강체",
-        "romanization": "건ː강체",
+        "romanization": "geon-gang-che",
         "soundRules": [],
         "audio": null
       },
@@ -35540,7 +35544,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "통운 회사",
-        "romanization": "통운 회사",
+        "romanization": "tong-un hoe-sa",
         "soundRules": [],
         "audio": null
       },
@@ -35968,7 +35972,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "긴축 정책",
-        "romanization": "긴축 정책",
+        "romanization": "gin-chuk jeong-chaek",
         "soundRules": [],
         "audio": null
       },
@@ -36029,7 +36033,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "쇄국 정책",
-        "romanization": "쇄국 정책",
+        "romanization": "swae-guk jeong-chaek",
         "soundRules": [],
         "audio": null
       },
@@ -36639,7 +36643,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "기후 변화",
-        "romanization": "기후 변화",
+        "romanization": "gi-hu byeon-hwa",
         "soundRules": [],
         "audio": null
       },
@@ -37005,7 +37009,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "생활 기록부",
-        "romanization": "생활 기록부",
+        "romanization": "saeng-hwal gi-rok-bu",
         "soundRules": [],
         "audio": null
       },
@@ -37250,7 +37254,7 @@
       "register": "正式",
       "pronunciation": {
         "hangul": "여행자 수표",
-        "romanization": "여행자 수표",
+        "romanization": "yeo-haeng-ja su-pyo",
         "soundRules": [],
         "audio": null
       },
@@ -37312,7 +37316,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "제철 음식",
-        "romanization": "제철 음식",
+        "romanization": "je-cheol eum-sik",
         "soundRules": [],
         "audio": null
       },

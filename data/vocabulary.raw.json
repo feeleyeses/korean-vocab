@@ -1490,19 +1490,20 @@
         "TOPIK"
       ],
       "register": "中性",
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "senses": [
         {
           "id": "w053-s1",
           "gloss": "另一方面",
-          "exampleKo": "도시는 편리한 반면 복잡해요.",
-          "exampleZh": "城市方便但复杂。",
-          "collocation": "~한 반면",
+          "exampleKo": "도시는 빠르게 성장한 반면 농촌 인구는 줄고 있다.",
+          "exampleZh": "城市快速发展的同时，农村人口正在减少。",
+          "collocation": "반면에 감소하다",
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ban-myeon"
     },
     {
       "id": "w054",
@@ -1543,19 +1544,20 @@
         "TOPIK"
       ],
       "register": "中性",
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "senses": [
         {
           "id": "w055-s1",
           "gloss": "发展",
-          "exampleKo": "기술이 빠르게 발전해요.",
-          "exampleZh": "技术快速发展。",
-          "collocation": "경제 발전",
+          "exampleKo": "기술 발전은 생활 방식을 크게 바꾸었다.",
+          "exampleZh": "技术发展大大改变了生活方式。",
+          "collocation": "발전을 이루다",
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bal-jeon"
     },
     {
       "id": "w056",
@@ -2182,19 +2184,20 @@
         "TOPIK"
       ],
       "register": "中性",
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "senses": [
         {
           "id": "w078-s1",
           "gloss": "影响",
-          "exampleKo": "날씨가 기분에 영향을 줘요.",
-          "exampleZh": "天气会影响心情。",
+          "exampleKo": "환경 변화가 경제에 큰 영향을 미쳤다.",
+          "exampleZh": "环境变化对经济产生了很大影响。",
           "collocation": "영향을 미치다",
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "yeong-hyang"
     },
     {
       "id": "w079",
@@ -2208,19 +2211,20 @@
         "TOPIK"
       ],
       "register": "中性",
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "senses": [
         {
           "id": "w079-s1",
           "gloss": "预想",
-          "exampleKo": "결과를 예상하기 어려워요.",
-          "exampleZh": "很难预测结果。",
-          "collocation": "변화를 예상하다",
+          "exampleKo": "전문가들은 물가 상승이 계속될 것으로 예상했다.",
+          "exampleZh": "专家预计物价上涨会持续。",
+          "collocation": "예상보다 높다",
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ye-sang-ha-da"
     },
     {
       "id": "w080",
@@ -2261,24 +2265,25 @@
         "TOPIK"
       ],
       "register": "正式",
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "senses": [
         {
           "id": "w081-s1",
           "gloss": "贡献",
-          "exampleKo": "이 연구는 사회 발전에 기여했다.",
-          "exampleZh": "这项研究为社会发展作出了贡献。",
+          "exampleKo": "교육 투자는 사회 발전에 기여한다.",
+          "exampleZh": "教育投资有助于社会发展。",
           "collocation": "발전에 기여하다",
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gi-yeo-ha-da"
     },
     {
       "id": "w082",
       "headword": "촉진하다",
-      "pronunciation": "촉진하다",
+      "pronunciation": "촉찐하다",
       "pos": "动词",
       "levels": [
         5
@@ -2287,19 +2292,21 @@
         "TOPIK"
       ],
       "register": "正式",
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "senses": [
         {
           "id": "w082-s1",
           "gloss": "促进",
-          "exampleKo": "교류를 촉진할 정책이 필요하다.",
-          "exampleZh": "需要促进交流的政策。",
+          "exampleKo": "정부는 지역 경제를 촉진하기 위한 정책을 발표했다.",
+          "exampleZh": "政府发布了促进地区经济的政策。",
           "collocation": "성장을 촉진하다",
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "chok-jjin-ha-da",
+      "soundRule": "ㄱ+ㅈ → ㅉ（紧音化）"
     },
     {
       "id": "w083",
@@ -2313,19 +2320,20 @@
         "TOPIK"
       ],
       "register": "正式",
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "senses": [
         {
           "id": "w083-s1",
           "gloss": "视为",
-          "exampleKo": "이를 중요한 문제로 간주한다.",
-          "exampleZh": "将此视为重要问题。",
-          "collocation": "~로 간주하다",
+          "exampleKo": "그 행동은 규칙을 위반한 것으로 간주된다.",
+          "exampleZh": "该行为被视为违反规定。",
+          "collocation": "문제로 간주하다",
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gan-ju-ha-da"
     },
     {
       "id": "w084",
@@ -2339,19 +2347,20 @@
         "TOPIK"
       ],
       "register": "正式",
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "senses": [
         {
           "id": "w084-s1",
           "gloss": "招致；导致",
-          "exampleKo": "무리한 개발은 환경 문제를 초래한다.",
-          "exampleZh": "过度开发会导致环境问题。",
-          "collocation": "결과를 초래하다",
+          "exampleKo": "무리한 개발은 환경 문제를 초래할 수 있다.",
+          "exampleZh": "过度开发可能导致环境问题。",
+          "collocation": "문제를 초래하다",
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "cho-rae-ha-da"
     },
     {
       "id": "w085",
@@ -2365,19 +2374,20 @@
         "TOPIK"
       ],
       "register": "正式",
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "senses": [
         {
           "id": "w085-s1",
           "gloss": "谋求",
-          "exampleKo": "협력을 통해 발전을 도모해야 한다.",
-          "exampleZh": "应通过合作谋求发展。",
-          "collocation": "이익을 도모하다",
+          "exampleKo": "이 제도는 시민의 참여를 도모하기 위해 마련되었다.",
+          "exampleZh": "该制度是为促进市民参与而设立的。",
+          "collocation": "협력을 도모하다",
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "do-mo-ha-da"
     },
     {
       "id": "w086",
@@ -2391,19 +2401,20 @@
         "TOPIK"
       ],
       "register": "正式",
-      "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "source": "EDITORIAL_REVIEW",
+      "verifiedAt": "2026-08-30",
       "senses": [
         {
           "id": "w086-s1",
           "gloss": "查明；阐明",
-          "exampleKo": "사건의 원인을 규명해야 한다.",
-          "exampleZh": "必须查明事件原因。",
+          "exampleKo": "연구진은 사고의 원인을 규명하려고 했다.",
+          "exampleZh": "研究团队试图查明事故原因。",
           "collocation": "원인을 규명하다",
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gyu-myeong-ha-da"
     },
     {
       "id": "w087",
@@ -2429,12 +2440,13 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "sang-chung-ha-da"
     },
     {
       "id": "w088",
       "headword": "함축하다",
-      "pronunciation": "함축하다",
+      "pronunciation": "함추카다",
       "pos": "动词",
       "levels": [
         6
@@ -2455,7 +2467,9 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ham-chu-ka-da",
+      "soundRule": "ㄱ+ㅎ → ㅋ（激音化）"
     },
     {
       "id": "w089",
@@ -2481,7 +2495,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "go-chal-ha-da"
     },
     {
       "id": "w090",
@@ -2507,7 +2522,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ta-dang-ha-da"
     },
     {
       "id": "w091",
@@ -2665,7 +2681,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "al-jal-ttak-kkal-sen"
     },
     {
       "id": "w096",
@@ -2745,7 +2762,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "son-jeol"
     },
     {
       "id": "w099",
@@ -8138,7 +8156,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jaeng-jeom"
     },
     {
       "id": "cr002",
@@ -8164,7 +8183,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "wan-hwa-ha-da"
     },
     {
       "id": "cr003",
@@ -8190,7 +8210,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "je-gi-ha-da"
     },
     {
       "id": "cr004",
@@ -8216,7 +8237,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ban-yeong-ha-da"
     },
     {
       "id": "cr005",
@@ -8242,7 +8264,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bu-gak-doe-da"
     },
     {
       "id": "cr006",
@@ -8268,7 +8291,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bul-ga-pi-ha-da"
     },
     {
       "id": "cr007",
@@ -8294,7 +8318,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "cho-jeom"
     },
     {
       "id": "cr008",
@@ -8320,7 +8345,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "to-dae"
     },
     {
       "id": "cr009",
@@ -8346,7 +8372,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeo-hae-ha-da"
     },
     {
       "id": "cr010",
@@ -8372,7 +8399,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "su-ban-ha-da"
     },
     {
       "id": "cr011",
@@ -8398,7 +8426,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "sang-swae-ha-da"
     },
     {
       "id": "cr012",
@@ -8424,7 +8453,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "yu-bal-ha-da"
     },
     {
       "id": "ce001",
@@ -8450,7 +8480,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "geup-jeung-ha-da"
     },
     {
       "id": "ce002",
@@ -8476,7 +8507,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gam-so-ha-da"
     },
     {
       "id": "ce003",
@@ -8502,7 +8534,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "dae-an"
     },
     {
       "id": "ce004",
@@ -8528,7 +8561,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bang-an"
     },
     {
       "id": "ce005",
@@ -8554,7 +8588,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gal-deung"
     },
     {
       "id": "ce006",
@@ -8580,7 +8615,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hyo-yul-jeok"
     },
     {
       "id": "ce007",
@@ -8606,7 +8642,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ji-sok-jeok"
     },
     {
       "id": "ce008",
@@ -8632,7 +8669,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeon-ban-jeok"
     },
     {
       "id": "ce009",
@@ -8658,7 +8696,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bi-rot-ha-da"
     },
     {
       "id": "ce010",
@@ -8684,7 +8723,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "dae-du-doe-da"
     },
     {
       "id": "ca001",
@@ -8710,7 +8750,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "sim-hwa-doe-da"
     },
     {
       "id": "ca002",
@@ -8736,7 +8777,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hwak-san-doe-da"
     },
     {
       "id": "ca003",
@@ -8762,7 +8804,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeo-chul-san"
     },
     {
       "id": "ca004",
@@ -8788,7 +8831,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "go-ryeong-hwa"
     },
     {
       "id": "ca005",
@@ -8814,7 +8858,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "yang-geuk-hwa"
     },
     {
       "id": "ca006",
@@ -8840,7 +8885,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gyeok-cha"
     },
     {
       "id": "ca007",
@@ -8866,7 +8912,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bu-dam"
     },
     {
       "id": "ca008",
@@ -8892,7 +8939,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "in-sik"
     },
     {
       "id": "ca009",
@@ -8918,7 +8966,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gwan-jeom"
     },
     {
       "id": "ca010",
@@ -8944,7 +8993,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "chu-se"
     },
     {
       "id": "ca011",
@@ -8970,7 +9020,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "sil-tae"
     },
     {
       "id": "ca012",
@@ -8996,7 +9047,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gae-seon-ha-da"
     },
     {
       "id": "ca013",
@@ -9022,7 +9074,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bo-wan-ha-da"
     },
     {
       "id": "ca014",
@@ -9048,7 +9101,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gang-hwa-ha-da"
     },
     {
       "id": "ca015",
@@ -9074,7 +9128,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ma-ryeon-ha-da"
     },
     {
       "id": "ca016",
@@ -9100,7 +9155,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "do-ip-ha-da"
     },
     {
       "id": "ca017",
@@ -9126,7 +9182,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "je-han-ha-da"
     },
     {
       "id": "ca018",
@@ -9152,7 +9209,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "chok-gu-ha-da"
     },
     {
       "id": "ca019",
@@ -9178,7 +9236,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "si-sa-ha-da"
     },
     {
       "id": "ca020",
@@ -9204,7 +9263,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ip-jeung-ha-da"
     },
     {
       "id": "ca021",
@@ -9230,7 +9290,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mo-saek-ha-da"
     },
     {
       "id": "ca022",
@@ -9256,7 +9317,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hwal-seong-hwa-ha-da"
     },
     {
       "id": "ca023",
@@ -9282,7 +9344,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bul-gyun-hyeong"
     },
     {
       "id": "ca024",
@@ -9308,7 +9371,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "chwi-yak-ha-da"
     },
     {
       "id": "ca025",
@@ -9334,7 +9398,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "yu-ui-mi-ha-da"
     },
     {
       "id": "tr001",
@@ -9360,7 +9425,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "geun-geo"
     },
     {
       "id": "tr002",
@@ -9413,7 +9479,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ban-yeong-ha-da"
     },
     {
       "id": "tr004",
@@ -9439,7 +9506,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "je-si-ha-da"
     },
     {
       "id": "tr005",
@@ -9465,7 +9533,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hwak-bo-ha-da"
     },
     {
       "id": "tr006",
@@ -9491,7 +9560,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "wan-hwa-ha-da"
     },
     {
       "id": "tr007",
@@ -9517,7 +9587,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "yu-bal-ha-da"
     },
     {
       "id": "tr008",
@@ -9543,7 +9614,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bi-pan-ha-da"
     },
     {
       "id": "tr009",
@@ -9596,7 +9668,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bun-seok-ha-da"
     },
     {
       "id": "cb001",
@@ -9622,7 +9695,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "cho-jeom"
     },
     {
       "id": "cb002",
@@ -9648,7 +9722,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jaeng-jeom"
     },
     {
       "id": "cb003",
@@ -9674,7 +9749,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "dae-an"
     },
     {
       "id": "cb004",
@@ -9700,7 +9776,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hyo-gwa-jeok"
     },
     {
       "id": "cb005",
@@ -9726,7 +9803,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bul-ga-pi-ha-da"
     },
     {
       "id": "cb006",
@@ -9752,7 +9830,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "sang-dae-jeok"
     },
     {
       "id": "cb007",
@@ -9778,7 +9857,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ui-jon-ha-da"
     },
     {
       "id": "cb008",
@@ -9804,7 +9884,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeon-hwan-ha-da"
     },
     {
       "id": "tc001",
@@ -9830,7 +9911,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeung-dae-ha-da"
     },
     {
       "id": "tc002",
@@ -9856,7 +9938,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bi-jung"
     },
     {
       "id": "tc003",
@@ -9882,7 +9965,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "yo-in"
     },
     {
       "id": "tc004",
@@ -9908,7 +9992,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hae-so-ha-da"
     },
     {
       "id": "tc005",
@@ -9934,7 +10019,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ji-sok-doe-da"
     },
     {
       "id": "tc006",
@@ -9960,7 +10046,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeok-yong-ha-da"
     },
     {
       "id": "tc007",
@@ -9986,7 +10073,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hwak-rip-ha-da"
     },
     {
       "id": "tc008",
@@ -10012,7 +10100,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeon-mang"
     },
     {
       "id": "tc009",
@@ -10065,7 +10154,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ja-won"
     },
     {
       "id": "tc011",
@@ -10091,7 +10181,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gal-deung"
     },
     {
       "id": "tc012",
@@ -10117,7 +10208,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gam-so-ha-da"
     },
     {
       "id": "cc001",
@@ -10143,7 +10235,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ga-sok-hwa-doe-da"
     },
     {
       "id": "cc002",
@@ -10169,7 +10262,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "do-chul-ha-da"
     },
     {
       "id": "cc003",
@@ -10195,7 +10289,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "cho-rae-doe-da"
     },
     {
       "id": "cc004",
@@ -10221,7 +10316,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "cha-byeol-hwa-ha-da"
     },
     {
       "id": "cc005",
@@ -10247,7 +10343,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "sil-hyo-seong"
     },
     {
       "id": "cc006",
@@ -10273,7 +10370,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "dang-myeon-ha-da"
     },
     {
       "id": "cc007",
@@ -10299,7 +10397,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeon-je-ha-da"
     },
     {
       "id": "cc008",
@@ -10325,7 +10424,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mo-sun"
     },
     {
       "id": "cc009",
@@ -10351,7 +10451,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bu-hap-ha-da"
     },
     {
       "id": "cc010",
@@ -10377,7 +10478,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gu-che-jeok"
     },
     {
       "id": "cd001",
@@ -10403,7 +10505,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gyun-hyeong"
     },
     {
       "id": "cd002",
@@ -10429,7 +10532,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jae-jeong"
     },
     {
       "id": "cd003",
@@ -10455,7 +10559,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bok-ji"
     },
     {
       "id": "cd004",
@@ -10481,7 +10586,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "go-yong"
     },
     {
       "id": "cd005",
@@ -10507,7 +10613,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "sil-eop"
     },
     {
       "id": "cd006",
@@ -10533,7 +10640,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bin-gon"
     },
     {
       "id": "cd007",
@@ -10559,7 +10667,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gye-cheung"
     },
     {
       "id": "cd008",
@@ -10585,7 +10694,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "so-deuk"
     },
     {
       "id": "cd009",
@@ -10611,7 +10721,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "so-bi"
     },
     {
       "id": "cd010",
@@ -10637,7 +10748,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "su-yo"
     },
     {
       "id": "cd011",
@@ -10663,7 +10775,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gong-geup"
     },
     {
       "id": "cd012",
@@ -10689,7 +10802,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gyeong-jaeng-ryeok"
     },
     {
       "id": "cd013",
@@ -10715,7 +10829,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hyeok-sin"
     },
     {
       "id": "cd014",
@@ -10741,7 +10856,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gyu-je"
     },
     {
       "id": "cd015",
@@ -10767,7 +10883,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ja-yul"
     },
     {
       "id": "cd016",
@@ -10793,7 +10910,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gong-gong"
     },
     {
       "id": "cd017",
@@ -10819,7 +10937,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "min-gan"
     },
     {
       "id": "cd018",
@@ -10845,7 +10964,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hwan-gyeong-o-yeom"
     },
     {
       "id": "cd019",
@@ -10871,7 +10991,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "tan-so"
     },
     {
       "id": "cd020",
@@ -10897,7 +11018,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bae-chul"
     },
     {
       "id": "cd021",
@@ -10923,7 +11045,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeol-gam-ha-da"
     },
     {
       "id": "cd022",
@@ -10949,7 +11072,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeol-yak-ha-da"
     },
     {
       "id": "cd023",
@@ -10975,7 +11099,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hwak-dae-ha-da"
     },
     {
       "id": "cd024",
@@ -11001,7 +11126,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "chuk-so-ha-da"
     },
     {
       "id": "cd025",
@@ -11027,7 +11153,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "chu-jin-ha-da"
     },
     {
       "id": "cd026",
@@ -11053,7 +11180,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "geom-to-ha-da"
     },
     {
       "id": "cd027",
@@ -11079,7 +11207,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "si-haeng-ha-da"
     },
     {
       "id": "cd028",
@@ -11105,7 +11234,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "pye-ji-ha-da"
     },
     {
       "id": "cd029",
@@ -11131,7 +11261,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "yu-ji-ha-da"
     },
     {
       "id": "cd030",
@@ -11157,7 +11288,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hyeong-seong-ha-da"
     },
     {
       "id": "cd031",
@@ -11183,7 +11315,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bun-bae"
     },
     {
       "id": "cd032",
@@ -11209,7 +11342,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hae-seok-ha-da"
     },
     {
       "id": "cd033",
@@ -11235,7 +11369,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ye-cheuk-ha-da"
     },
     {
       "id": "cd034",
@@ -11261,7 +11396,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "sang-ho-jak-yong"
     },
     {
       "id": "cd035",
@@ -11287,7 +11423,8 @@
           "level": 6,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ji-pyo"
     },
     {
       "id": "te101",
@@ -14461,7 +14598,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ga-jong-nyeok"
     },
     {
       "id": "kb002",
@@ -14487,7 +14625,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "dae-ga-jok"
     },
     {
       "id": "kb003",
@@ -14513,7 +14652,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gae-hoe-sa/gae-hwe-sa"
     },
     {
       "id": "kb004",
@@ -14539,7 +14679,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ja-hoe-sa/ja-hwe-sa"
     },
     {
       "id": "kb005",
@@ -14565,7 +14706,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "ju-si-koe-sa/ju-si-kwe-sa"
     },
     {
       "id": "kb006",
@@ -14591,7 +14733,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hwan-gyeong-mi-hwa-won"
     },
     {
       "id": "kb007",
@@ -14617,7 +14760,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hwan-gyeong-jeok"
     },
     {
       "id": "kb008",
@@ -14643,7 +14787,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "chin-hwan-gyeong"
     },
     {
       "id": "kb009",
@@ -14669,7 +14814,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeong-chaek-jjeok"
     },
     {
       "id": "kb010",
@@ -14695,7 +14841,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mun-hwa-gye/mun-hwa-ge"
     },
     {
       "id": "kb011",
@@ -14721,7 +14868,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mun-hwa-kkwon"
     },
     {
       "id": "kb012",
@@ -14747,7 +14895,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mun-hwa-bu"
     },
     {
       "id": "kb013",
@@ -14773,7 +14922,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mun-hwa-bi"
     },
     {
       "id": "kb014",
@@ -14799,7 +14949,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mun-hwa-sa"
     },
     {
       "id": "kb015",
@@ -14825,7 +14976,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mun-je-si-doe-da/mun-je-si-dwe-da"
     },
     {
       "id": "kb016",
@@ -14851,7 +15003,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mun-je-si-ha-da"
     },
     {
       "id": "kb017",
@@ -14877,7 +15030,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mun-je-a"
     },
     {
       "id": "kb018",
@@ -14903,7 +15057,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mun-je-ui-sik/mun-je-i-sik"
     },
     {
       "id": "kb019",
@@ -14929,7 +15084,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "hae-gyeol-ssa"
     },
     {
       "id": "kb020",
@@ -14955,7 +15111,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "mi-hae-gyeol"
     },
     {
       "id": "kb021",
@@ -14981,7 +15138,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "jeung-ga-se"
     },
     {
       "id": "kb022",
@@ -15007,7 +15165,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gam-gam-so-sik"
     },
     {
       "id": "kb023",
@@ -15033,7 +15192,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "byeon-hwa-mu-ssang"
     },
     {
       "id": "kb024",
@@ -15059,7 +15219,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "byeon-hwa-mu-ssang-ha-da"
     },
     {
       "id": "kb025",
@@ -15085,7 +15246,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "byeon-hwa-yul"
     },
     {
       "id": "kb026",
@@ -15111,7 +15273,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "da-byeon-hwa"
     },
     {
       "id": "kb027",
@@ -15137,7 +15300,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "da-byeon-hwa-doe-da/da-byeon-hwa-dwe-da"
     },
     {
       "id": "kb028",
@@ -15163,7 +15327,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bal-jjeon-gi"
     },
     {
       "id": "kb029",
@@ -15189,7 +15354,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bal-jjeon-gi"
     },
     {
       "id": "kb030",
@@ -15215,7 +15381,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bal-jjeon-sa"
     },
     {
       "id": "kb031",
@@ -15241,7 +15408,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bal-jjeon-sang"
     },
     {
       "id": "kb032",
@@ -15267,7 +15435,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "bal-jjeon-sseong"
     },
     {
       "id": "kb033",
@@ -15293,7 +15462,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "saeng-hwal-go"
     },
     {
       "id": "kb034",
@@ -15319,7 +15489,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "saeng-hwal-kkwon"
     },
     {
       "id": "kb035",
@@ -15345,7 +15516,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "geon-gang-che"
     },
     {
       "id": "kg001",
@@ -15533,7 +15705,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "tong-un hoe-sa"
     },
     {
       "id": "kg008",
@@ -15722,7 +15895,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gin-chuk jeong-chaek"
     },
     {
       "id": "kg015",
@@ -15748,7 +15922,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "swae-guk jeong-chaek"
     },
     {
       "id": "kg016",
@@ -16017,7 +16192,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "gi-hu byeon-hwa"
     },
     {
       "id": "kg026",
@@ -16178,7 +16354,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "saeng-hwal gi-rok-bu"
     },
     {
       "id": "kg032",
@@ -16286,7 +16463,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "yeo-haeng-ja su-pyo"
     },
     {
       "id": "kg036",
@@ -16313,7 +16491,8 @@
           "level": 5,
           "primary": true
         }
-      ]
+      ],
+      "romanization": "je-cheol eum-sik"
     },
     {
       "id": "kg037",

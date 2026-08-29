@@ -1,5 +1,27 @@
 # Vocabulary Quality Report
 
+## 2026-08-30 Sprint 4 TOPIK-4/5/6 Cleanup
+
+- Scope: TOPIK-4 through TOPIK-6 romanization cleanup, preserving the existing schema and UI Freeze.
+- Review items before batch: 177.
+- TOPIK-4 review items before batch: 20.
+- TOPIK-5 review items before batch: 128.
+- TOPIK-6 review items before batch: 29.
+- Review items processed: 177 romanization normalization items.
+- Review items after batch: 0.
+- TOPIK-4 review items after batch: 0.
+- TOPIK-5 review items after batch: 0.
+- TOPIK-6 review items after batch: 0.
+- TOPIK levels completed in this batch: TOPIK-4, TOPIK-5, and TOPIK-6 romanization cleanup; 175 entries had romanization newly written through the normalized pipeline and 2 entries were updated with reviewed actual readings.
+- Pronunciation cleanup: 2 entries received actual reading review.
+- Sound-rule cleanup: 2 entries received high-confidence sound-rule labels.
+- Example cleanup: 10 entries received stronger learning examples.
+- Collocation cleanup: 10 entries received stronger common collocations.
+- Source cleanup: 10 entries moved to `EDITORIAL_REVIEW`, the current human-reviewed source tier.
+- Current complete-quality count by audit queue: 611 lexical entries.
+- Blocking audit failures: 0.
+- Remaining review items: 0.
+
 ## 2026-08-30 Sprint 3 Batch 3
 
 - Scope: TOPIK-3 vocabulary, continuing in TOPIK order.
@@ -57,12 +79,12 @@
 
 - TOPIK-2: 0.
 - TOPIK-3: 0.
-- TOPIK-4: 20.
-- TOPIK-5: 128.
-- TOPIK-6: 29.
+- TOPIK-4: 0.
+- TOPIK-5: 0.
+- TOPIK-6: 0.
 
 ## Manual Confirmation Needed
 
-- Remaining romanization cleanup should continue in TOPIK order.
-- Source credibility is present for all entries, but external citation quality has not yet been manually upgraded.
-- Examples and collocations pass structural quality checks, but source-level linguistic review remains future work.
+- The romanization review queue is clear across TOPIK-1 through TOPIK-6.
+- Source credibility is present for all entries, but external citation quality still needs a separate source-traceability pass.
+- Examples and collocations pass structural quality checks, but broader source-level linguistic review remains future work.
