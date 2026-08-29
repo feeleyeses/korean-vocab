@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-30
 
+- Sprint 3 Batch 3: cleared TOPIK-3 romanization review items and upgraded selected TOPIK-3 pronunciation, sound rules, examples, collocations, and source tier.
 - Sprint 3 Batch 2: cleared all TOPIK-2 romanization review items, upgraded selected TOPIK-2 pronunciation/examples/collocations, and introduced tracked source tiers in the quality report.
 - Sprint 3 Batch 1: normalized TOPIK-1 romanization, added verified pronunciation/sound-rule cleanup for 12 basic TOPIK-1 entries, and recorded the quality report summary.
 
