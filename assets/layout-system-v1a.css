@@ -16,8 +16,11 @@
   --kwf-action-h: 52px;
   --kwf-action-gap: 10px;
   --kwf-primary-action-w: 134px;
+  --kwf-primary-action-group-w: calc((3 * var(--kwf-primary-action-w)) + (2 * var(--kwf-action-gap)));
   --kwf-secondary-action-w: 168px;
   --kwf-review-action-w: 206px;
+  --kwf-hero-bottom-gap: 28px;
+  --kwf-review-container-w: 1180px;
   --kwf-filter-title-h: 16px;
   --kwf-filter-chip-h: 32px;
   --kwf-card-vpad: 0px;
@@ -158,7 +161,7 @@ a.mobile-tab:hover {
   grid-template-columns: repeat(3, var(--kwf-primary-action-w)) !important;
   justify-content: center !important;
   gap: var(--kwf-action-gap) !important;
-  width: calc((3 * var(--kwf-primary-action-w)) + (2 * var(--kwf-action-gap))) !important;
+  width: var(--kwf-primary-action-group-w) !important;
   margin: 0 auto !important;
   padding: 0 !important;
 }
@@ -230,7 +233,7 @@ a.mobile-tab:hover {
 #study #study-card .answer-scroll aside { margin: 3px auto !important; }
 #study #study-card .kwf-learning-extra { display: none !important; }
 #study #study-card .continue {
-  --kwf-continue-w: var(--kwf-primary-action-w);
+  --kwf-continue-w: var(--kwf-primary-action-group-w);
   position: absolute !important;
   left: calc(50% - (var(--kwf-continue-w) / 2)) !important;
   right: auto !important;
@@ -311,20 +314,36 @@ a.mobile-tab:hover {
 }
 
 /* Review overview */
+#review {
+  --kwf-layout-lock-w: min(var(--kwf-review-container-w), 100%) !important;
+}
+#review .review-title {
+  margin-bottom: var(--kwf-hero-bottom-gap) !important;
+}
 #review .review-board,
 #review .kwf-layout-review-stack {
   display: flex !important;
   flex-direction: column !important;
   align-items: stretch !important;
   gap: 16px !important;
+  width: var(--kwf-layout-lock-w) !important;
+  max-width: var(--kwf-review-container-w) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+#review .review-module-grid,
+#review .review-stat.learned-stat,
+#review .memory-profile,
+#review .memory-note,
+#review #learned-library-section {
+  box-sizing: border-box !important;
   width: 100% !important;
+  max-width: 100% !important;
 }
 #review .review-stat.learned-stat,
 #review .memory-profile,
 #review .memory-note,
 #review #learned-library-section {
-  width: 100% !important;
-  max-width: 100% !important;
   grid-column: 1 / -1 !important;
   align-self: stretch !important;
 }
@@ -398,7 +417,7 @@ a.mobile-tab:hover {
 #learned-library-section .kwf-learned-row {
   box-sizing: border-box !important;
   display: grid !important;
-  grid-template-columns: 70px 230px minmax(260px, 1.45fr) minmax(220px, 1fr) 220px !important;
+  grid-template-columns: 60px 180px minmax(220px, 1fr) 180px 180px !important;
   grid-template-rows: 1fr !important;
   align-items: center !important;
   gap: 16px !important;
@@ -526,7 +545,7 @@ a.mobile-tab:hover {
 @media (max-width: 560px) {
   #study #study-card .pre-answer > div {
     grid-template-columns: repeat(3, var(--kwf-primary-action-w)) !important;
-    width: calc((3 * var(--kwf-primary-action-w)) + (2 * var(--kwf-action-gap))) !important;
+    width: var(--kwf-primary-action-group-w) !important;
     margin-inline: auto !important;
     gap: var(--kwf-action-gap) !important;
   }

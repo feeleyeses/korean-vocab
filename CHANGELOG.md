@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-29
 
+- UI Fix: changed Continue to span the full initial three-button action group width, added review Hero bottom spacing, and locked review container width across learned-library expansion.
 - UI Polish: added shared layout tokens for Hero left inset, filter title/chip baseline, learned-card vertical padding/alignment, and Primary CTA dimensions.
 - Fixed memory Hero title alignment, learned-library filter group baseline alignment, learned-card vertical centering, and Continue button token reuse without changing home modules or interactions.
 - UI Polish: unified study/review Primary CTA width so the revealed Continue button now uses the same fixed token as each initial action button instead of text-width sizing.
