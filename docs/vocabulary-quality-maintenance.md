@@ -18,10 +18,14 @@ The audit report creates a `reviewQueue` with:
 
 - `lexicalEntryId`
 - `headword`
+- `source`
+- `levels`
 - `reason`
 - `severity`
 
 Reviewers should resolve `failure` items before publish. `warning` items are Sprint 3 backlog candidates for pronunciation normalization, romanization cleanup, sourced examples, collocations, and human verification.
+
+The report also includes `reviewSummary` grouped by severity, reason, source, and TOPIK level so batches can be assigned without manually scanning the whole dataset.
 
 ## Batch Maintenance Flow
 

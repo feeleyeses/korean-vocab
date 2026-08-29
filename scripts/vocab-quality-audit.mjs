@@ -34,9 +34,27 @@ function addReview(entry, reason, severity = 'warning') {
   reviewQueue.push({
     lexicalEntryId: entry.lexicalEntryId || null,
     headword: entry.headword || null,
+    source: entry.source || null,
+    levels: entry.levels || [],
     reason,
     severity
   });
+}
+
+function countBy(items, keyFn) {
+  return items.reduce((acc, item) => {
+    const key = keyFn(item) || 'unknown';
+    acc[key] = (acc[key] || 0) + 1;
+    return acc;
+  }, {});
+}
+
+function countByLevel(items) {
+  return items.reduce((acc, item) => {
+    const levels = item.levels?.length ? item.levels : ['unknown'];
+    for (const level of levels) acc[level] = (acc[level] || 0) + 1;
+    return acc;
+  }, {});
 }
 
 function checkQualityScore(entry) {
@@ -154,6 +172,12 @@ const report = {
     reviewed: entries.filter(entry => entry.verificationStatus === 'reviewed').length,
     draft: entries.filter(entry => entry.verificationStatus === 'draft').length,
     below90: entries.filter(entry => (entry.qualityScore?.score ?? 0) < 90).length
+  },
+  reviewSummary: {
+    bySeverity: countBy(reviewQueue, item => item.severity),
+    byReason: countBy(reviewQueue, item => item.reason),
+    bySource: countBy(reviewQueue, item => item.source),
+    byLevel: countByLevel(reviewQueue)
   },
   reviewQueue
 };

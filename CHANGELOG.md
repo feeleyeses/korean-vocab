@@ -4,6 +4,8 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-29
 
+- UI Fix: rebuilt the learned-library Right Info Group so the favorite circle and memory state share one row and the next-review time sits directly below.
+- Sprint 3: expanded vocabulary quality reports with review summaries by severity, reason, source, and TOPIK level for batch cleanup planning.
 - UI Fix: centered the learned-library favorite star inside its circular button and froze the learned row template after the final alignment audit.
 - Sprint 3: started vocabulary quality infrastructure with aligned QualityScore schema fields, reportable quality audit output, and a documented human review/batch maintenance workflow.
 - UI Fix: locked the learned-library row status column to a fixed favorite/state/next-review template and rebuilt the learned pager as a flex baseline row without changing typography or colors.
