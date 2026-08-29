@@ -98,7 +98,7 @@ async function auditViewport(viewport) {
         if (!entry.hadRecentInput) total += entry.value;
       }
     });
-    observer.observe({ type: 'layout-shift', buffered: true });
+    observer.observe({ type: 'layout-shift' });
     await new Promise(resolve => setTimeout(resolve, 800));
     observer.disconnect();
     return total;
