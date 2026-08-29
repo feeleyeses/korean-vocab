@@ -389,6 +389,17 @@ a.mobile-tab:hover {
   grid-column: 1 / -1 !important;
   align-self: stretch !important;
 }
+#learned-library-section {
+  box-sizing: border-box !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  translate: none !important;
+  width: 100% !important;
+  max-width: var(--kwf-content-safe-w) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
 /* Polysemy reference follows the same safe area and card rhythm. */
 .polysemy > .poly-actions,
