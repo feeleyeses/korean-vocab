@@ -14,6 +14,16 @@
 
 :root { --kwf-card-h: 620px; --kwf-card-pad: 22px; --kwf-word-h: 168px; }
 
+#study #study-card :is(button, summary) {
+  box-sizing: border-box !important;
+  transition-property: background-color, color, border-color, box-shadow, opacity !important;
+  transition-duration: .18s !important;
+  transition-timing-function: ease !important;
+}
+#study #study-card :is(button, summary):hover {
+  transform: none !important;
+}
+
 #study .study-grid { align-items: start !important; }
 #study #study-card.study-card {
   box-sizing: border-box !important;
@@ -171,16 +181,21 @@
 #study #study-card .answer-scroll aside { margin: 3px auto !important; }
 #study #study-card .kwf-learning-extra { display: none !important; }
 #study #study-card .continue {
-  position: static !important;
-  inset: auto !important;
+  --kwf-continue-w: 180px;
+  position: absolute !important;
+  left: calc(50% - (var(--kwf-continue-w) / 2)) !important;
+  right: auto !important;
+  bottom: 18px !important;
   transform: none !important;
   flex: 0 0 50px !important;
   align-self: center !important;
-  width: 180px !important;
+  width: var(--kwf-continue-w) !important;
+  min-width: var(--kwf-continue-w) !important;
+  max-width: var(--kwf-continue-w) !important;
   height: 50px !important;
   min-height: 50px !important;
   max-height: 50px !important;
-  margin: 8px auto 0 !important;
+  margin: 0 !important;
 }
 
 /* Review initial state: word block is identical to learning; question owns remaining space. */

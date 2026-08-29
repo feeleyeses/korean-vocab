@@ -1,6 +1,6 @@
 # Vocabulary Model
 
-Sprint 1 keeps the visible UI unchanged while defining the next durable data shape.
+Sprint 2 keeps the visible UI unchanged while moving the production word bank to `data/vocabulary.json`. The JavaScript page module loads this JSON and maps it into the existing UI contract at runtime.
 
 ## LexicalEntry
 
@@ -16,7 +16,7 @@ Sprint 1 keeps the visible UI unchanged while defining the next durable data sha
 - `qualityScore`: one Quality Score object.
 - `source`: source notes or citations for human review.
 - `verifiedAt`: ISO date or null.
-- `verificationStatus`: `draft`, `normalized`, `reviewed`, or `approved`.
+- `verificationStatus`: `draft`, `reviewed`, or `approved`.
 
 ## Sense
 
@@ -52,8 +52,9 @@ Sprint 1 keeps the visible UI unchanged while defining the next durable data sha
 
 ## Quality Score
 
-- `completeness`: 0-1 field coverage.
-- `sourceReliability`: 0-1 source quality.
+- `completeness`: 0-100 field coverage.
+- `accuracy`: 0-100 linguistic confidence.
+- `sourceReliability`: 0-100 source quality.
 - `humanReviewed`: boolean.
 - `issues`: known issues that block approval.
 - `score`: final 0-100 score.

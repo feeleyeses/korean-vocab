@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://feeleyeses.github.io/korean-vocab/data/vocabulary.schema.json",
+  "title": "Korean Vocabulary Dataset",
+  "type": "object",
+  "required": ["schemaVersion", "pipeline", "entries"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "generatedAt": { "type": "string" },
+    "pipeline": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "entries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/LexicalEntry" }
+    }
+  },
+  "$defs": {
+    "LexicalEntry": {
+      "type": "object",
+      "required": ["lexicalEntryId", "headword", "partOfSpeech", "levels", "pronunciation", "senses", "source", "qualityScore"],
+      "properties": {
+        "lexicalEntryId": { "type": "string" },
+        "legacyId": { "type": ["string", "null"] },
+        "headword": { "type": "string" },
+        "homographNo": { "type": "integer", "minimum": 1 },
+        "partOfSpeech": { "type": "string" },
+        "levels": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "tracks": { "type": "array", "items": { "type": "string" } },
+        "register": { "type": "string" },
+        "pronunciation": { "$ref": "#/$defs/Pronunciation" },
+        "senses": { "type": "array", "items": { "$ref": "#/$defs/Sense" }, "minItems": 1 },
+        "source": { "type": "string" },
+        "verifiedAt": { "type": ["string", "null"] },
+        "verificationStatus": { "enum": ["draft", "reviewed", "approved"] },
+        "qualityScore": { "$ref": "#/$defs/QualityScore" }
+      }
+    },
+    "Sense": {
+      "type": "object",
+      "required": ["senseId", "glossZh", "examples", "collocations"],
+      "properties": {
+        "senseId": { "type": "string" },
+        "legacyId": { "type": ["string", "null"] },
+        "glossZh": { "type": "string" },
+        "definitionZh": { "type": "string" },
+        "usageNote": { "type": "string" },
+        "examples": { "type": "array", "items": { "$ref": "#/$defs/Example" } },
+        "collocations": { "type": "array", "items": { "$ref": "#/$defs/Collocation" } },
+        "relations": { "type": "array", "items": { "type": "object" } },
+        "level": { "type": "string" },
+        "primary": { "type": "boolean" }
+      }
+    },
+    "Example": {
+      "type": "object",
+      "required": ["exampleId", "ko", "zh", "source", "verified"],
+      "properties": {
+        "exampleId": { "type": "string" },
+        "ko": { "type": "string" },
+        "zh": { "type": "string" },
+        "source": { "type": "string" },
+        "verified": { "type": "boolean" }
+      }
+    },
+    "Collocation": {
+      "type": "object",
+      "required": ["collocationId", "ko", "zh", "source", "verified"],
+      "properties": {
+        "collocationId": { "type": "string" },
+        "ko": { "type": "string" },
+        "zh": { "type": "string" },
+        "source": { "type": "string" },
+        "verified": { "type": "boolean" }
+      }
+    },
+    "Pronunciation": {
+      "type": "object",
+      "required": ["hangul", "romanization", "soundRules"],
+      "properties": {
+        "hangul": { "type": "string" },
+        "romanization": { "type": "string" },
+        "soundRules": { "type": "array", "items": { "type": "string" } },
+        "audio": { "type": ["string", "null"] }
+      }
+    },
+    "QualityScore": {
+      "type": "object",
+      "required": ["score", "completeness", "accuracy", "sourceReliability", "humanReviewed", "issues"],
+      "properties": {
+        "score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "completeness": { "type": "number", "minimum": 0, "maximum": 100 },
+        "accuracy": { "type": "number", "minimum": 0, "maximum": 100 },
+        "sourceReliability": { "type": "number", "minimum": 0, "maximum": 100 },
+        "humanReviewed": { "type": "boolean" },
+        "issues": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
