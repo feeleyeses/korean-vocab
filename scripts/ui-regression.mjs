@@ -12,6 +12,11 @@ const failures = [];
 const check = (name, ok, detail) => ok ? console.log(`PASS ${name}: ${detail}`) : failures.push(`${name}: ${detail}`);
 const roundRect = r => ({ left: Math.round(r.left * 10) / 10, top: Math.round(r.top * 10) / 10, width: Math.round(r.width * 10) / 10, height: Math.round(r.height * 10) / 10 });
 const sameRect = (a, b) => ['left', 'top', 'width', 'height'].every(k => Math.abs(a[k] - b[k]) <= 1);
+const heroNoWrapTexts = [
+  '它应该记得你学过什么',
+  '本机学习档案会保存已学词、最近判断、下次复习时间和今日累计。',
+  '查阅时可以看释义；点复习后会进入隐藏答案的测试，不会把答案摊在题面上。'
+];
 
 async function auditHoverGeometry(page, locator, label) {
   await locator.evaluate(el => el.scrollIntoView({ block: 'center', inline: 'center' }));
@@ -68,6 +73,7 @@ async function runViewport(viewport) {
   check(`${label} initial card height`, Math.abs(initial.card.height - 500) <= 1, JSON.stringify(initial.card));
   check(`${label} initial button group centered`, Math.abs(initial.group.center - initial.card.center) <= 1, JSON.stringify(initial.group));
   check(`${label} initial buttons equal`, initial.buttons.every(button => Math.abs(button.height - initial.buttons[0].height) <= 0.5 && Math.abs(button.width - initial.buttons[0].width) <= 0.5), JSON.stringify(initial.buttons));
+  check(`${label} initial primary button token width`, Math.abs(initial.buttons[0].width - (viewport.width <= 900 ? 102 : 134)) <= 1, JSON.stringify(initial.buttons));
 
   for (const button of await page.locator('#study-card .pre-answer > div > button').all()) {
     await auditHoverGeometry(page, button, `${label} learn button`);
@@ -81,7 +87,7 @@ async function runViewport(viewport) {
     const button = card.querySelector('.continue').getBoundingClientRect();
     return { width: button.width, height: button.height, center: (button.left + button.right) / 2, bottom: cardRect.bottom - button.bottom };
   });
-  check(`${label} continue fixed width`, Math.abs(reveal.width - 180) <= 1, JSON.stringify(reveal));
+  check(`${label} continue fixed width matches primary token`, Math.abs(reveal.width - initial.buttons[0].width) <= 1, JSON.stringify({ initial: initial.buttons[0], reveal }));
   check(`${label} continue same centerline`, Math.abs(reveal.center - initial.group.center) <= 1, JSON.stringify({ initial: initial.group, reveal }));
   check(`${label} continue height stable`, Math.abs(reveal.height - initial.buttons[0].height) <= 2, JSON.stringify(reveal));
   await auditHoverGeometry(page, page.locator('#study-card .continue'), `${label} continue button`);
@@ -89,6 +95,26 @@ async function runViewport(viewport) {
   const openLearned = page.getByRole('button', { name: /打开已学词库|查看已学词库/ }).first();
   await openLearned.evaluate(el => el.click());
   await page.waitForTimeout(300);
+
+  if (viewport.width >= 1200) {
+    const nowrap = await page.evaluate((texts) => texts.map(text => {
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = walker.nextNode())) {
+        if ((node.textContent || '').replace(/\s+/g, ' ').trim() === text) {
+          const el = node.parentElement;
+          const rects = [...el.getClientRects()].map(r => ({ width: r.width, height: r.height }));
+          const s = getComputedStyle(el);
+          return { text, rectCount: rects.length, height: el.getBoundingClientRect().height, lineHeight: parseFloat(s.lineHeight), whiteSpace: s.whiteSpace, rects };
+        }
+      }
+      return { text, missing: true };
+    }), heroNoWrapTexts);
+    for (const item of nowrap) {
+      check(`${label} hero text single line: ${item.text}`, !item.missing && item.rectCount === 1 && item.whiteSpace === 'nowrap', JSON.stringify(item));
+    }
+  }
+
   const full = page.locator('#review .review-module-grid article').filter({ hasText: '全量库' }).first().locator('button');
   if (await full.count() && !(await full.isDisabled())) {
     await full.evaluate(el => el.click());
