@@ -1,45 +1,175 @@
 import fs from 'node:fs';
+import path from 'node:path';
 
-const path = process.argv[2] || 'data/vocabulary.json';
-const payload = JSON.parse(fs.readFileSync(path, 'utf8'));
+const args = process.argv.slice(2);
+const inputPath = args.find(arg => !arg.startsWith('--')) || 'data/vocabulary.json';
+const reportFlag = args.find(arg => arg.startsWith('--report='));
+const reportPath = reportFlag?.split('=')[1] || null;
+const strict = args.includes('--strict');
+
+const payload = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
 const entries = Array.isArray(payload) ? payload : payload.entries;
 const failures = [];
+const warnings = [];
 const ids = new Set();
 const senseIds = new Set();
+const reviewQueue = [];
+const coverage = {
+  entries: 0,
+  senses: 0,
+  examples: 0,
+  collocations: 0,
+  pronunciation: 0,
+  romanization: 0,
+  soundRules: 0,
+  sources: 0,
+  humanReviewed: 0
+};
 
-for (const entry of entries) {
+const hasHangul = value => /[\u3131-\u318e\uac00-\ud7a3]/u.test(String(value || ''));
+const hasLatin = value => /[a-z]/i.test(String(value || ''));
+const isNumberInRange = value => typeof value === 'number' && value >= 0 && value <= 100;
+
+function addReview(entry, reason, severity = 'warning') {
+  reviewQueue.push({
+    lexicalEntryId: entry.lexicalEntryId || null,
+    headword: entry.headword || null,
+    reason,
+    severity
+  });
+}
+
+function checkQualityScore(entry) {
+  const q = entry.qualityScore;
+  if (!q) {
+    failures.push(`${entry.lexicalEntryId}: missing qualityScore`);
+    addReview(entry, 'missing qualityScore', 'failure');
+    return;
+  }
+  for (const key of ['score', 'completeness', 'accuracy', 'sourceReliability']) {
+    if (!isNumberInRange(q[key])) {
+      failures.push(`${entry.lexicalEntryId}: invalid qualityScore.${key}`);
+      addReview(entry, `invalid qualityScore.${key}`, 'failure');
+    }
+  }
+  if (typeof q.humanReviewed !== 'boolean') {
+    failures.push(`${entry.lexicalEntryId}: qualityScore.humanReviewed must be boolean`);
+  }
+  if (!Array.isArray(q.issues)) {
+    failures.push(`${entry.lexicalEntryId}: qualityScore.issues must be an array`);
+  }
+  if (!q.humanReviewed) addReview(entry, 'pending human review');
+  if (q.issues?.length) addReview(entry, `open quality issues: ${q.issues.join('; ')}`);
+}
+
+for (const entry of entries || []) {
+  coverage.entries += 1;
   const id = entry.lexicalEntryId;
   if (!id || ids.has(id)) failures.push(`duplicate or missing lexicalEntryId: ${id || '(missing)'}`);
   ids.add(id);
-  if (!entry.headword) failures.push(`${id}: missing headword`);
-  if (!entry.levels?.length) failures.push(`${id}: missing TOPIK level`);
-  if (!entry.source) failures.push(`${id}: missing data source`);
-  if (!entry.pronunciation?.hangul || !entry.pronunciation?.romanization) failures.push(`${id}: missing pronunciation or romanization`);
-  if (!Array.isArray(entry.pronunciation?.soundRules)) failures.push(`${id}: soundRules must be an array`);
-  if (!Array.isArray(entry.senses) || entry.senses.length === 0) failures.push(`${id}: missing senses`);
+
+  if (!entry.headword || !hasHangul(entry.headword)) {
+    failures.push(`${id}: missing Korean headword`);
+    addReview(entry, 'missing Korean headword', 'failure');
+  }
+  if (!entry.levels?.length) {
+    failures.push(`${id}: missing TOPIK level`);
+    addReview(entry, 'missing TOPIK level', 'failure');
+  }
+  if (entry.source) coverage.sources += 1;
+  else {
+    failures.push(`${id}: missing data source`);
+    addReview(entry, 'missing data source', 'failure');
+  }
+
+  const pronunciation = entry.pronunciation;
+  if (pronunciation?.hangul) coverage.pronunciation += 1;
+  if (pronunciation?.romanization) coverage.romanization += 1;
+  if (pronunciation?.soundRules?.length) coverage.soundRules += 1;
+  if (!pronunciation?.hangul || !pronunciation?.romanization) {
+    failures.push(`${id}: missing pronunciation or romanization`);
+    addReview(entry, 'missing pronunciation or romanization', 'failure');
+  }
+  if (!Array.isArray(pronunciation?.soundRules)) failures.push(`${id}: soundRules must be an array`);
+  if (pronunciation?.romanization && !hasLatin(pronunciation.romanization)) {
+    warnings.push(`${id}: romanization does not contain Latin characters`);
+    addReview(entry, 'romanization needs human normalization');
+  }
+  if (pronunciation?.hangul && !hasHangul(pronunciation.hangul)) {
+    warnings.push(`${id}: pronunciation.hangul does not contain Hangul`);
+    addReview(entry, 'pronunciation needs human verification');
+  }
+
+  if (!Array.isArray(entry.senses) || entry.senses.length === 0) {
+    failures.push(`${id}: missing senses`);
+    addReview(entry, 'missing senses', 'failure');
+  }
   for (const sense of entry.senses || []) {
+    coverage.senses += 1;
     if (!sense.senseId || senseIds.has(sense.senseId)) failures.push(`${id}: duplicate or missing senseId ${sense.senseId || '(missing)'}`);
     senseIds.add(sense.senseId);
-    if (!sense.glossZh) failures.push(`${id}/${sense.senseId}: missing glossZh`);
+    if (!sense.glossZh) {
+      failures.push(`${id}/${sense.senseId}: missing Chinese gloss`);
+      addReview(entry, `${sense.senseId}: missing Chinese gloss`, 'failure');
+    }
     if (!Array.isArray(sense.examples)) failures.push(`${id}/${sense.senseId}: examples must be an array`);
-    if (!sense.examples?.some(example => example.ko && example.zh)) failures.push(`${id}/${sense.senseId}: missing Korean/Chinese example pair`);
+    const verifiedExample = sense.examples?.some(example => example.ko && example.zh && example.source && example.verified);
+    if (verifiedExample) coverage.examples += 1;
+    else {
+      warnings.push(`${id}/${sense.senseId}: missing verified Korean/Chinese example pair`);
+      addReview(entry, `${sense.senseId}: example needs source and verification`);
+    }
     if (!Array.isArray(sense.collocations)) failures.push(`${id}/${sense.senseId}: collocations must be an array`);
-    if (!sense.collocations?.some(item => item.ko && item.zh)) failures.push(`${id}/${sense.senseId}: missing collocation pair`);
+    const verifiedCollocation = sense.collocations?.some(item => item.ko && item.zh && item.source && item.verified);
+    if (verifiedCollocation) coverage.collocations += 1;
+    else {
+      warnings.push(`${id}/${sense.senseId}: missing verified collocation pair`);
+      addReview(entry, `${sense.senseId}: collocation needs source and verification`);
+    }
   }
-  const q = entry.qualityScore;
-  if (!q || typeof q.score !== 'number' || q.score < 0 || q.score > 100) failures.push(`${id}: invalid quality score`);
-  if (typeof q?.completeness !== 'number' || typeof q?.accuracy !== 'number' || typeof q?.sourceReliability !== 'number') failures.push(`${id}: incomplete quality score dimensions`);
+
+  checkQualityScore(entry);
+  if (entry.qualityScore?.humanReviewed) coverage.humanReviewed += 1;
   if (entry.verificationStatus === 'approved') {
-    if (!q.humanReviewed) failures.push(`${id}: approved entries require humanReviewed=true`);
-    if (q.issues?.length) failures.push(`${id}: approved entries cannot have open quality issues`);
+    if (!entry.qualityScore?.humanReviewed) failures.push(`${id}: approved entries require humanReviewed=true`);
+    if (entry.qualityScore?.issues?.length) failures.push(`${id}: approved entries cannot have open quality issues`);
     if (!entry.verifiedAt) failures.push(`${id}: approved entries require verifiedAt`);
   }
 }
 
-if (failures.length) {
-  console.error(`FAIL vocabulary quality audit (${path})`);
-  console.error(failures.join('\n'));
+const report = {
+  auditedAt: new Date().toISOString(),
+  inputPath,
+  strict,
+  totals: {
+    lexicalEntries: coverage.entries,
+    senses: coverage.senses,
+    blockingFailures: failures.length,
+    warnings: warnings.length,
+    reviewQueue: reviewQueue.length
+  },
+  coverage,
+  qualityBands: {
+    approved: entries.filter(entry => entry.verificationStatus === 'approved').length,
+    reviewed: entries.filter(entry => entry.verificationStatus === 'reviewed').length,
+    draft: entries.filter(entry => entry.verificationStatus === 'draft').length,
+    below90: entries.filter(entry => (entry.qualityScore?.score ?? 0) < 90).length
+  },
+  reviewQueue
+};
+
+if (reportPath) {
+  fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+  fs.writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`);
+}
+
+if (failures.length || (strict && warnings.length)) {
+  console.error(`FAIL vocabulary quality audit (${inputPath})`);
+  if (failures.length) console.error(failures.join('\n'));
+  if (strict && warnings.length) console.error(warnings.join('\n'));
   process.exit(1);
 }
 
-console.log(`PASS vocabulary quality audit: ${entries.length} lexical entries, ${senseIds.size} senses`);
+console.log(`PASS vocabulary quality audit: ${coverage.entries} lexical entries, ${coverage.senses} senses`);
+if (warnings.length) console.log(`WARN vocabulary quality audit: ${warnings.length} non-blocking review items`);
+if (reportPath) console.log(`WROTE quality report: ${reportPath}`);

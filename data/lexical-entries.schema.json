@@ -16,7 +16,7 @@
       "register": { "type": ["string", "null"] },
       "pronunciation": {
         "type": "object",
-        "required": ["hangul", "romanization"],
+        "required": ["hangul", "romanization", "soundRules"],
         "properties": {
           "hangul": { "type": "string", "minLength": 1 },
           "romanization": { "type": "string", "minLength": 1 },
@@ -43,10 +43,11 @@
       },
       "qualityScore": {
         "type": "object",
-        "required": ["completeness", "sourceReliability", "humanReviewed", "issues", "score"],
+        "required": ["completeness", "accuracy", "sourceReliability", "humanReviewed", "issues", "score"],
         "properties": {
-          "completeness": { "type": "number", "minimum": 0, "maximum": 1 },
-          "sourceReliability": { "type": "number", "minimum": 0, "maximum": 1 },
+          "completeness": { "type": "number", "minimum": 0, "maximum": 100 },
+          "accuracy": { "type": "number", "minimum": 0, "maximum": 100 },
+          "sourceReliability": { "type": "number", "minimum": 0, "maximum": 100 },
           "humanReviewed": { "type": "boolean" },
           "issues": { "type": "array", "items": { "type": "string" } },
           "score": { "type": "integer", "minimum": 0, "maximum": 100 }

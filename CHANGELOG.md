@@ -4,6 +4,8 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-29
 
+- UI Fix: centered the learned-library favorite star inside its circular button and froze the learned row template after the final alignment audit.
+- Sprint 3: started vocabulary quality infrastructure with aligned QualityScore schema fields, reportable quality audit output, and a documented human review/batch maintenance workflow.
 - UI Fix: locked the learned-library row status column to a fixed favorite/state/next-review template and rebuilt the learned pager as a flex baseline row without changing typography or colors.
 - UI Layout Rhythm: tightened global spacing tokens, compacted the study controls and learned drawer, restructured the polysemy intro/filter/footer rhythm, and fixed learned-row status time placement.
 - UI Layout System: replaced section-specific width rules with one Content Safe Area token, aligned study/polysemy/review first-level modules to the same width, and added shared card/footer rhythm for the polysemy reference drawer.

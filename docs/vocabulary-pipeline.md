@@ -8,5 +8,7 @@ New entries must pass this path before they enter the production vocabulary. The
 4. Pronunciation: add actual Hangul pronunciation and sound-change labels when applicable.
 5. Romanization: add learner-facing romanization for every entry.
 6. Collocation: add common collocations and examples only when sourced or human verified.
-7. Quality Check: calculate Quality Score and record blocking issues.
-8. Publish: run `scripts/vocab-quality-audit.mjs`; only approved, valid entries can move into `data/vocabulary.json`.
+7. Quality Check: calculate Quality Score, record blocking issues, and generate the review queue with `scripts/vocab-quality-audit.mjs data/vocabulary.json --report=artifacts/vocab-quality-report.json`.
+8. Publish: only entries with zero blocking failures can move into `data/vocabulary.json`; use `--strict` when a batch must also clear every warning.
+
+See `docs/vocabulary-quality-maintenance.md` for the Sprint 3 review queue and batch-maintenance workflow.
