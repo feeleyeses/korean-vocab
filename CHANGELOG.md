@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-30
 
+- Added a read-only KRDict collocation coverage analyzer and recorded full-run coverage for future `collocationZh` repair planning without modifying vocabulary data.
 - V2 Card Section Layout: organized revealed-card content into definition, example, collocation, optional sound-rule, option-map, and Continue sections with a shared centered content column and fixed section spacing.
 - V2 Card Polish: unified revealed-card information block spacing and fixed collocation translation rendering to use the collocation's own Chinese meaning.
 - V2 Card Spec: added four implementation-ready card specification diagrams and aligned learning/review card states to the unified reveal order, stable Continue action rail, and initial-state information rules.
