@@ -1,7 +1,8 @@
-import { chromium } from 'playwright';
+const playwrightModule = await import(process.env.PLAYWRIGHT_MODULE || 'playwright').catch(() => import('playwright'));
+const { chromium } = playwrightModule.default || playwrightModule;
 
 const url = process.env.KWF_URL || 'https://feeleyeses.github.io/korean-vocab/';
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe' });
 const failures = [];
 const diagnostics = [];
 
@@ -13,7 +14,7 @@ function wireDiagnostics(page, label) {
 }
 
 async function waitForUi(page) {
-  await page.waitForFunction(() => Boolean(window.__KWF_UI_V3_READY__) && /^v3(?:\.|$)/.test(document.documentElement.dataset.kwfUi || ''), { timeout: 10000 });
+  await page.waitForFunction(() => Boolean(window.__KWF_LAYOUT_SYSTEM_READY__) && document.documentElement.dataset.kwfLayoutAuthority === 'layout-system', { timeout: 10000 });
 }
 async function checkChange(page, label, locator, snapshot) {
   try {
@@ -35,9 +36,13 @@ wireDiagnostics(mobile, 'mobile');
 await mobile.goto(`${url}?smoke=${Date.now()}`, { waitUntil: 'networkidle', timeout: 60000 });
 await waitForUi(mobile);
 await mobile.waitForTimeout(500);
-await expect('UI v3 runtime ready', async () => {
-  const value = await mobile.evaluate(() => ({ ready: Boolean(window.__KWF_UI_V3_READY__), ui: document.documentElement.dataset.kwfUi || '' }));
-  return { ok: value.ready && /^v3(?:\.|$)/.test(value.ui), detail: JSON.stringify(value) };
+await expect('Layout System runtime ready', async () => {
+  const value = await mobile.evaluate(() => ({ ready: Boolean(window.__KWF_LAYOUT_SYSTEM_READY__), ui: document.documentElement.dataset.kwfLayoutSystem || '' }));
+  return { ok: value.ready && value.ui === 'layout-v1', detail: JSON.stringify(value) };
+});
+await expect('legacy layout markers removed', async () => {
+  const count = await mobile.evaluate(() => document.querySelectorAll('[class*="kwf-v2"],[class*="kwf-v3"]').length);
+  return { ok: count === 0, detail: `legacy=${count}` };
 });
 await checkChange(mobile, '怎么学', mobile.getByRole('button', { name: '怎么学' }), async () => String(await mobile.getByRole('button', { name: '怎么学' }).getAttribute('aria-expanded')));
 await checkChange(mobile, '直接看答案', mobile.getByRole('button', { name: '直接看答案' }), async () => `${(await mobile.locator('#study-card').innerText()).slice(-240)}|shortcut:${await mobile.getByRole('button', { name: '直接看答案' }).count()}`);
@@ -85,5 +90,5 @@ console.log('DIAGNOSTICS FINAL');
 console.log(diagnostics.length ? diagnostics.join('\n') : '(none)');
 const hardDiagnostics = diagnostics.filter(x => x.includes('pageerror:') || x.includes('requestfailed:') || x.includes('http 4') || x.includes('http 5'));
 if (failures.length || hardDiagnostics.length) { console.error('FAILURES:\n' + [...failures, ...hardDiagnostics].join('\n')); process.exitCode = 1; }
-else console.log('PASS UI v3.x browser interaction and layout smoke');
+else console.log('PASS Layout System browser interaction and layout smoke');
 await browser.close();

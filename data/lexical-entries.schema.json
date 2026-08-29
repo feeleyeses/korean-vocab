@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://feeleyeses.github.io/korean-vocab/data/lexical-entries.schema.json",
+  "title": "Korean Word Field Lexical Entries",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["lexicalEntryId", "headword", "partOfSpeech", "pronunciation", "senses", "qualityScore", "verificationStatus"],
+    "properties": {
+      "lexicalEntryId": { "type": "string", "pattern": "^le-[a-z0-9-]+$" },
+      "headword": { "type": "string", "minLength": 1 },
+      "homographNo": { "type": ["integer", "null"], "minimum": 1 },
+      "partOfSpeech": { "type": "string", "minLength": 1 },
+      "levels": { "type": "array", "items": { "type": "string" } },
+      "tracks": { "type": "array", "items": { "type": "string" } },
+      "register": { "type": ["string", "null"] },
+      "pronunciation": {
+        "type": "object",
+        "required": ["hangul", "romanization"],
+        "properties": {
+          "hangul": { "type": "string", "minLength": 1 },
+          "romanization": { "type": "string", "minLength": 1 },
+          "soundRules": { "type": "array", "items": { "type": "string" } },
+          "audio": { "type": ["string", "null"] }
+        }
+      },
+      "senses": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": ["senseId", "glossZh", "examples", "collocations"],
+          "properties": {
+            "senseId": { "type": "string", "pattern": "^se-[a-z0-9-]+$" },
+            "glossZh": { "type": "string", "minLength": 1 },
+            "definitionZh": { "type": ["string", "null"] },
+            "usageNote": { "type": ["string", "null"] },
+            "examples": { "type": "array" },
+            "collocations": { "type": "array" },
+            "relations": { "type": "object" }
+          }
+        }
+      },
+      "qualityScore": {
+        "type": "object",
+        "required": ["completeness", "sourceReliability", "humanReviewed", "issues", "score"],
+        "properties": {
+          "completeness": { "type": "number", "minimum": 0, "maximum": 1 },
+          "sourceReliability": { "type": "number", "minimum": 0, "maximum": 1 },
+          "humanReviewed": { "type": "boolean" },
+          "issues": { "type": "array", "items": { "type": "string" } },
+          "score": { "type": "integer", "minimum": 0, "maximum": 100 }
+        }
+      },
+      "source": { "type": ["string", "null"] },
+      "verifiedAt": { "type": ["string", "null"] },
+      "verificationStatus": { "enum": ["draft", "normalized", "reviewed", "approved"] }
+    }
+  }
+}

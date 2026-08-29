@@ -1,0 +1,38 @@
+[
+  {
+    "lexicalEntryId": "le-gage",
+    "headword": "가게",
+    "homographNo": null,
+    "partOfSpeech": "noun",
+    "levels": ["TOPIK 1"],
+    "tracks": ["topik"],
+    "register": "neutral",
+    "pronunciation": {
+      "hangul": "가게",
+      "romanization": "ga-ge",
+      "soundRules": [],
+      "audio": null
+    },
+    "senses": [
+      {
+        "senseId": "se-gage-shop",
+        "glossZh": "店铺",
+        "definitionZh": "卖东西或提供服务的地方。",
+        "usageNote": null,
+        "examples": [],
+        "collocations": [],
+        "relations": {}
+      }
+    ],
+    "qualityScore": {
+      "completeness": 0.72,
+      "sourceReliability": 0.6,
+      "humanReviewed": false,
+      "issues": ["Needs sourced example before approval."],
+      "score": 58
+    },
+    "source": "Sprint 1 structural seed; not production-approved.",
+    "verifiedAt": null,
+    "verificationStatus": "draft"
+  }
+]

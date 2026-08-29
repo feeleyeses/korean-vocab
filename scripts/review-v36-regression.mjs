@@ -1,9 +1,10 @@
-import { chromium } from 'playwright';
+const playwrightModule = await import(process.env.PLAYWRIGHT_MODULE || 'playwright').catch(() => import('playwright'));
+const { chromium } = playwrightModule.default || playwrightModule;
 const url=process.env.KWF_URL||'https://feeleyeses.github.io/korean-vocab/';
-const browser=await chromium.launch({headless:true});
+const browser=await chromium.launch({headless:true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 const page=await browser.newPage({viewport:{width:1440,height:900}});
 await page.goto(`${url}?v36=${Date.now()}`,{waitUntil:'networkidle',timeout:60000});
-await page.waitForFunction(()=>window.__KWF_UI_V36_READY__===true,{timeout:10000});
+await page.waitForFunction(()=>window.__KWF_LAYOUT_SYSTEM_READY__===true&&document.documentElement.dataset.kwfLayoutAuthority==='layout-system',{timeout:10000});
 const click=async l=>l.evaluate(el=>el.click());
 const openLearned=page.getByRole('button',{name:/打开已学词库|查看已学词库/}).first();
 await click(openLearned); await page.waitForTimeout(250);

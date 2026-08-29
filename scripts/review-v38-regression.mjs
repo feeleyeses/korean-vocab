@@ -1,6 +1,7 @@
-import { chromium } from 'playwright';
+const playwrightModule = await import(process.env.PLAYWRIGHT_MODULE || 'playwright').catch(() => import('playwright'));
+const { chromium } = playwrightModule.default || playwrightModule;
 const url=process.env.KWF_URL||'https://feeleyeses.github.io/korean-vocab/';
-const browser=await chromium.launch({headless:true});
+const browser=await chromium.launch({headless:true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 const page=await browser.newPage({viewport:{width:1440,height:900}});
 await page.goto(`${url}?review38=${Date.now()}`,{waitUntil:'networkidle',timeout:60000});
 await page.evaluate(()=>{
@@ -10,7 +11,7 @@ await page.evaluate(()=>{
   localStorage.setItem('memory:w001-s1',JSON.stringify({wordId:'w001',senseId:'w001-s1',rating:'remember',reviewedAt:past,dueAt:past,stability:1,difficulty:5,lapses:0,mode:'new',objectiveCorrect:true}));
 });
 await page.reload({waitUntil:'networkidle'});
-await page.waitForFunction(()=>window.__KWF_UI_V38_READY__===true,{timeout:10000});
+await page.waitForFunction(()=>window.__KWF_LAYOUT_SYSTEM_READY__===true&&document.documentElement.dataset.kwfLayoutAuthority==='layout-system',{timeout:10000});
 const click=async loc=>loc.evaluate(el=>el.click());
 const openLearned=page.getByRole('button',{name:/打开已学词库|查看已学词库/}).first();
 await click(openLearned); await page.waitForTimeout(200);
@@ -18,6 +19,7 @@ const full=page.locator('#review .review-module-grid article').filter({hasText:'
 if(!await full.count()||await full.isDisabled())throw new Error('全量库复习入口不可用');
 await click(full); await page.waitForTimeout(300);
 await page.waitForSelector('#study-card.review-mode .review-question');
+await page.waitForFunction(() => { const card=document.querySelector('#study-card'); const grid=card?.querySelector('.review-question > div'); if(!card||!grid||card.dataset.kwfLayoutAuthority!=='layout-system') return false; const cr=card.getBoundingClientRect(), gr=grid.getBoundingClientRect(); return gr.width / cr.width > 0.84; }, { timeout: 10000 });
 const initial=await page.locator('#study-card').evaluate(card=>{
  const cr=card.getBoundingClientRect(),q=card.querySelector('.review-question'),qr=q.getBoundingClientRect(),g=q.querySelector(':scope>div'),gr=g.getBoundingClientRect(),bs=[...g.querySelectorAll(':scope>button')].map(b=>b.getBoundingClientRect());
  return {cardW:cr.width,qW:qr.width,gridW:gr.width,gridRatio:gr.width/cr.width,left:gr.left-cr.left,right:cr.right-gr.right,count:bs.length,widths:bs.map(x=>x.width),heights:bs.map(x=>x.height)};
@@ -42,5 +44,5 @@ if(reveal.continueRatio<0.84)throw new Error(`继续按钮没有明显沿X轴拉
 if(reveal.mapCount!==4||reveal.mapRows!==2||!reveal.mapVisible.every(Boolean))throw new Error(`对应韩文未完整显示4项: ${JSON.stringify(reveal)}`);
 if(reveal.scroll>reveal.client+2)throw new Error(`对应韩文发生内部滚动: ${JSON.stringify(reveal)}`);
 if(reveal.mapBottom>reveal.continueTop)throw new Error(`对应韩文遮挡继续按钮: ${JSON.stringify(reveal)}`);
-console.log('PASS review v3.8 fixed wide controls + four visible mappings',JSON.stringify({initial,collapsed,reveal}));
+console.log('PASS Layout System review fixed wide controls + four visible mappings',JSON.stringify({initial,collapsed,reveal}));
 await browser.close();

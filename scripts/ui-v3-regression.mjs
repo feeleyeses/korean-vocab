@@ -1,9 +1,10 @@
-import { chromium } from 'playwright';
+const playwrightModule = await import(process.env.PLAYWRIGHT_MODULE || 'playwright').catch(() => import('playwright'));
+const { chromium } = playwrightModule.default || playwrightModule;
 const url=process.env.KWF_URL||'https://feeleyeses.github.io/korean-vocab/';
-const browser=await chromium.launch({headless:true});
+const browser=await chromium.launch({headless:true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 const page=await browser.newPage({viewport:{width:1440,height:900}});
 await page.goto(`${url}?ui=${Date.now()}`,{waitUntil:'networkidle',timeout:60000});
-await page.waitForFunction(()=>window.__KWF_UI_V3_READY__===true&&document.documentElement.dataset.kwfUi==='v3.3',{timeout:10000});
+await page.waitForFunction(()=>window.__KWF_LAYOUT_SYSTEM_READY__===true&&document.documentElement.dataset.kwfLayoutAuthority==='layout-system',{timeout:10000});
 await page.waitForTimeout(500);
 const failures=[]; const pass=(n,d)=>console.log(`PASS ${n}: ${d}`); const check=(n,o,d)=>o?pass(n,d):failures.push(`${n}: ${d}`); const domClick=async l=>l.evaluate(el=>el.click());
 const initial=await page.locator('#study-card').evaluate(card=>{const r=card.getBoundingClientRect(),group=card.querySelector('.pre-answer > div'),gr=group.getBoundingClientRect(),buttons=[...group.querySelectorAll('button')].map(b=>b.getBoundingClientRect()),shortcut=card.querySelector('.pre-answer > .show-shortcut').getBoundingClientRect(),word=card.querySelector('.word').getBoundingClientRect();return{h:r.height,wordH:word.height,group:{l:Math.round(gr.left-r.left),r:Math.round(r.right-gr.right),b:Math.round(r.bottom-gr.bottom),h:Math.round(gr.height)},buttonHs:buttons.map(x=>Math.round(x.height)),shortcutCenter:Math.round((shortcut.left+shortcut.right)/2-(r.left+r.right)/2),shortcutW:Math.round(shortcut.width)}});
@@ -39,5 +40,5 @@ if(await full.count()&&!(await full.isDisabled())){
     check('对应韩文无内部滚动',map.scroll<=map.client+2,JSON.stringify(map));
   } else failures.push('对应韩文 details 不存在');
 }
-if(failures.length){console.error('FAILURES\n'+failures.join('\n'));process.exitCode=1}else console.log('PASS UI v3.3 basic layout regression');
+if(failures.length){console.error('FAILURES\n'+failures.join('\n'));process.exitCode=1}else console.log('PASS Layout System basic layout regression');
 await browser.close();
