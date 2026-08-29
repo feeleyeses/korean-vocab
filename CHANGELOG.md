@@ -2,6 +2,10 @@
 
 All meaningful product, UI, data, and pipeline changes must be recorded here.
 
+## 2026-08-30
+
+- Sprint 3 Batch 1: normalized TOPIK-1 romanization, added verified pronunciation/sound-rule cleanup for 12 basic TOPIK-1 entries, and recorded the quality report summary.
+
 ## 2026-08-29
 
 - UI Fix: rebuilt the learned-library Right Info Group so the favorite circle and memory state share one row and the next-review time sits directly below.

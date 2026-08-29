@@ -27,7 +27,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "가게",
-        "romanization": "가게",
+        "romanization": "ga-ge",
         "soundRules": [],
         "audio": null
       },
@@ -88,7 +88,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "가격",
-        "romanization": "가격",
+        "romanization": "ga-gyeok",
         "soundRules": [],
         "audio": null
       },
@@ -148,9 +148,11 @@
       ],
       "register": "口语",
       "pronunciation": {
-        "hangul": "가깝다",
-        "romanization": "가깝다",
-        "soundRules": [],
+        "hangul": "가깝따",
+        "romanization": "ga-kkap-tta",
+        "soundRules": [
+          "ㅂ+ㄷ → ㅃ（紧音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -210,7 +212,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "가다",
-        "romanization": "가다",
+        "romanization": "ga-da",
         "soundRules": [],
         "audio": null
       },
@@ -271,7 +273,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "가르치다",
-        "romanization": "가르치다",
+        "romanization": "ga-reu-chi-da",
         "soundRules": [],
         "audio": null
       },
@@ -332,7 +334,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "가방",
-        "romanization": "가방",
+        "romanization": "ga-bang",
         "soundRules": [],
         "audio": null
       },
@@ -454,7 +456,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "가수",
-        "romanization": "가수",
+        "romanization": "ga-su",
         "soundRules": [],
         "audio": null
       },
@@ -576,7 +578,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "가족",
-        "romanization": "가족",
+        "romanization": "ga-jok",
         "soundRules": [],
         "audio": null
       },
@@ -637,7 +639,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "감사하다",
-        "romanization": "감사하다",
+        "romanization": "gam-sa-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -758,9 +760,11 @@
       ],
       "register": "中性",
       "pronunciation": {
-        "hangul": "같다",
-        "romanization": "같다",
-        "soundRules": [],
+        "hangul": "갇따",
+        "romanization": "gat-tta",
+        "soundRules": [
+          "ㅌ 받침 + ㄷ → ㄸ（紧音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -875,9 +879,11 @@
       ],
       "register": "口语",
       "pronunciation": {
-        "hangul": "같이",
-        "romanization": "같이",
-        "soundRules": [],
+        "hangul": "가치",
+        "romanization": "ga-chi",
+        "soundRules": [
+          "ㅌ이 → 치（腭化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -937,7 +943,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "거기",
-        "romanization": "거기",
+        "romanization": "geo-gi",
         "soundRules": [],
         "audio": null
       },
@@ -1058,9 +1064,11 @@
       ],
       "register": "口语",
       "pronunciation": {
-        "hangul": "걷다",
-        "romanization": "걷다",
-        "soundRules": [],
+        "hangul": "걷따",
+        "romanization": "geot-tta",
+        "soundRules": [
+          "ㄷ+ㄷ → ㄸ（紧音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -1513,9 +1521,11 @@
       ],
       "register": "口语",
       "pronunciation": {
-        "hangul": "고맙다",
-        "romanization": "고맙다",
-        "soundRules": [],
+        "hangul": "고맙따",
+        "romanization": "go-map-tta",
+        "soundRules": [
+          "ㅂ+ㄷ → ㅃ（紧音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -1575,7 +1585,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "공부",
-        "romanization": "공부",
+        "romanization": "gong-bu",
         "soundRules": [],
         "audio": null
       },
@@ -1785,9 +1795,11 @@
       ],
       "register": "口语",
       "pronunciation": {
-        "hangul": "괜찮다",
-        "romanization": "괜찮다",
-        "soundRules": [],
+        "hangul": "괜찬타",
+        "romanization": "gwaen-chan-ta",
+        "soundRules": [
+          "ㄶ+ㄷ → ㄴㅌ（激音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -2086,7 +2098,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "기다리다",
-        "romanization": "기다리다",
+        "romanization": "gi-da-ri-da",
         "soundRules": [],
         "audio": null
       },
@@ -2329,9 +2341,11 @@
       ],
       "register": "口语",
       "pronunciation": {
-        "hangul": "끝나다",
-        "romanization": "끝나다",
-        "soundRules": [],
+        "hangul": "끈나다",
+        "romanization": "kkeun-na-da",
+        "soundRules": [
+          "ㅌ+ㄴ → ㄴㄴ（鼻音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -2452,7 +2466,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "나쁘다",
-        "romanization": "나쁘다",
+        "romanization": "na-ppeu-da",
         "soundRules": [],
         "audio": null
       },
@@ -2513,7 +2527,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "나중",
-        "romanization": "나중",
+        "romanization": "na-jung",
         "soundRules": [],
         "audio": null
       },
@@ -2818,7 +2832,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "다르다",
-        "romanization": "다르다",
+        "romanization": "da-reu-da",
         "soundRules": [],
         "audio": null
       },
@@ -3123,7 +3137,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "마음",
-        "romanization": "마음",
+        "romanization": "ma-eum",
         "soundRules": [],
         "audio": null
       },
@@ -3240,7 +3254,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "만나다",
-        "romanization": "만나다",
+        "romanization": "man-na-da",
         "soundRules": [],
         "audio": null
       },
@@ -3789,7 +3803,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "보다",
-        "romanization": "보다",
+        "romanization": "bo-da",
         "soundRules": [],
         "audio": null
       },
@@ -4272,7 +4286,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "생각",
-        "romanization": "생각",
+        "romanization": "saeng-gak",
         "soundRules": [],
         "audio": null
       },
@@ -4638,7 +4652,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "시작하다",
-        "romanization": "시작하다",
+        "romanization": "si-jak-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -4821,7 +4835,7 @@
       "register": "口语",
       "pronunciation": {
         "hangul": "알다",
-        "romanization": "알다",
+        "romanization": "al-da",
         "soundRules": [],
         "audio": null
       },
@@ -4882,7 +4896,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "어렵다",
-        "romanization": "어렵다",
+        "romanization": "eo-ryeop-da",
         "soundRules": [],
         "audio": null
       },
@@ -7406,7 +7420,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "나라",
-        "romanization": "나라",
+        "romanization": "na-ra",
         "soundRules": [],
         "audio": null
       },
@@ -7467,7 +7481,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "날씨",
-        "romanization": "날씨",
+        "romanization": "nal-ssi",
         "soundRules": [],
         "audio": null
       },
@@ -7528,7 +7542,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "날짜",
-        "romanization": "날짜",
+        "romanization": "nal-jja",
         "soundRules": [],
         "audio": null
       },
@@ -7589,7 +7603,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "누구",
-        "romanization": "누구",
+        "romanization": "nu-gu",
         "soundRules": [],
         "audio": null
       },
@@ -7650,7 +7664,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "어디",
-        "romanization": "어디",
+        "romanization": "eo-di",
         "soundRules": [],
         "audio": null
       },
@@ -7711,7 +7725,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "언제",
-        "romanization": "언제",
+        "romanization": "eon-je",
         "soundRules": [],
         "audio": null
       },
@@ -7772,7 +7786,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "오늘",
-        "romanization": "오늘",
+        "romanization": "o-neul",
         "soundRules": [],
         "audio": null
       },
@@ -7833,7 +7847,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "내일",
-        "romanization": "내일",
+        "romanization": "nae-il",
         "soundRules": [],
         "audio": null
       },
@@ -7894,7 +7908,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "어제",
-        "romanization": "어제",
+        "romanization": "eo-je",
         "soundRules": [],
         "audio": null
       },
@@ -7955,7 +7969,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "이름",
-        "romanization": "이름",
+        "romanization": "i-reum",
         "soundRules": [],
         "audio": null
       },
@@ -8626,7 +8640,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "가구",
-        "romanization": "가구",
+        "romanization": "ga-gu",
         "soundRules": [],
         "audio": null
       },
@@ -8687,7 +8701,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "가끔",
-        "romanization": "가끔",
+        "romanization": "ga-kkeum",
         "soundRules": [],
         "audio": null
       },
@@ -8748,7 +8762,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "강",
-        "romanization": "강",
+        "romanization": "gang",
         "soundRules": [],
         "audio": null
       },
@@ -8870,7 +8884,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "거리",
-        "romanization": "거리",
+        "romanization": "geo-ri",
         "soundRules": [],
         "audio": null
       },
@@ -8992,7 +9006,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "계절",
-        "romanization": "계절",
+        "romanization": "gye-jeol",
         "soundRules": [],
         "audio": null
       },
@@ -9114,7 +9128,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "공원",
-        "romanization": "공원",
+        "romanization": "gong-won",
         "soundRules": [],
         "audio": null
       },
@@ -9236,7 +9250,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "과일",
-        "romanization": "과일",
+        "romanization": "gwa-il",
         "soundRules": [],
         "audio": null
       },
@@ -9297,7 +9311,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "교실",
-        "romanization": "교실",
+        "romanization": "gyo-sil",
         "soundRules": [],
         "audio": null
       },
@@ -9358,7 +9372,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "구두",
-        "romanization": "구두",
+        "romanization": "gu-du",
         "soundRules": [],
         "audio": null
       },
@@ -9419,7 +9433,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "그림",
-        "romanization": "그림",
+        "romanization": "geu-rim",
         "soundRules": [],
         "audio": null
       },
@@ -9541,7 +9555,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "기차",
-        "romanization": "기차",
+        "romanization": "gi-cha",
         "soundRules": [],
         "audio": null
       },
@@ -9602,7 +9616,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "길",
-        "romanization": "길",
+        "romanization": "gil",
         "soundRules": [],
         "audio": null
       },
@@ -9663,7 +9677,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "김치",
-        "romanization": "김치",
+        "romanization": "gim-chi",
         "soundRules": [],
         "audio": null
       },
@@ -9785,7 +9799,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "깨끗하다",
-        "romanization": "깨끗하다",
+        "romanization": "kkae-kkeut-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -9846,7 +9860,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "나이",
-        "romanization": "나이",
+        "romanization": "na-i",
         "soundRules": [],
         "audio": null
       },
@@ -9907,7 +9921,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "남자",
-        "romanization": "남자",
+        "romanization": "nam-ja",
         "soundRules": [],
         "audio": null
       },
@@ -9968,7 +9982,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "여자",
-        "romanization": "여자",
+        "romanization": "yeo-ja",
         "soundRules": [],
         "audio": null
       },
@@ -10029,7 +10043,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "동생",
-        "romanization": "동생",
+        "romanization": "dong-saeng",
         "soundRules": [],
         "audio": null
       },
@@ -10090,7 +10104,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "부모님",
-        "romanization": "부모님",
+        "romanization": "bu-mo-nim",
         "soundRules": [],
         "audio": null
       },
@@ -10151,7 +10165,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "문",
-        "romanization": "문",
+        "romanization": "mun",
         "soundRules": [],
         "audio": null
       },
@@ -10212,7 +10226,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "물",
-        "romanization": "물",
+        "romanization": "mul",
         "soundRules": [],
         "audio": null
       },
@@ -10273,7 +10287,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "바다",
-        "romanization": "바다",
+        "romanization": "ba-da",
         "soundRules": [],
         "audio": null
       },
@@ -10334,7 +10348,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "사진",
-        "romanization": "사진",
+        "romanization": "sa-jin",
         "soundRules": [],
         "audio": null
       },
@@ -10395,7 +10409,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "선생님",
-        "romanization": "선생님",
+        "romanization": "seon-saeng-nim",
         "soundRules": [],
         "audio": null
       },
@@ -10456,7 +10470,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "시간",
-        "romanization": "시간",
+        "romanization": "si-gan",
         "soundRules": [],
         "audio": null
       },
@@ -10517,7 +10531,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "시장",
-        "romanization": "시장",
+        "romanization": "si-jang",
         "soundRules": [],
         "audio": null
       },
@@ -10578,7 +10592,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "아침",
-        "romanization": "아침",
+        "romanization": "a-chim",
         "soundRules": [],
         "audio": null
       },
@@ -10639,7 +10653,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "오후",
-        "romanization": "오후",
+        "romanization": "o-hu",
         "soundRules": [],
         "audio": null
       },
@@ -10700,7 +10714,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "저녁",
-        "romanization": "저녁",
+        "romanization": "jeo-nyeok",
         "soundRules": [],
         "audio": null
       },
@@ -10761,7 +10775,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "학교",
-        "romanization": "학교",
+        "romanization": "hak-gyo",
         "soundRules": [],
         "audio": null
       },
@@ -10822,7 +10836,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "학생",
-        "romanization": "학생",
+        "romanization": "hak-saeng",
         "soundRules": [],
         "audio": null
       },
@@ -11066,7 +11080,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "가을",
-        "romanization": "가을",
+        "romanization": "ga-eul",
         "soundRules": [],
         "audio": null
       },
@@ -11127,7 +11141,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "겨울",
-        "romanization": "겨울",
+        "romanization": "gyeo-ul",
         "soundRules": [],
         "audio": null
       },
@@ -11188,7 +11202,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "봄",
-        "romanization": "봄",
+        "romanization": "bom",
         "soundRules": [],
         "audio": null
       },
@@ -11249,7 +11263,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "여름",
-        "romanization": "여름",
+        "romanization": "yeo-reum",
         "soundRules": [],
         "audio": null
       },
@@ -11310,7 +11324,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "월요일",
-        "romanization": "월요일",
+        "romanization": "wol-yo-il",
         "soundRules": [],
         "audio": null
       },
@@ -11371,7 +11385,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "주말",
-        "romanization": "주말",
+        "romanization": "ju-mal",
         "soundRules": [],
         "audio": null
       },
@@ -11432,7 +11446,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "아버지",
-        "romanization": "아버지",
+        "romanization": "a-beo-ji",
         "soundRules": [],
         "audio": null
       },
@@ -11493,7 +11507,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "어머니",
-        "romanization": "어머니",
+        "romanization": "eo-meo-ni",
         "soundRules": [],
         "audio": null
       },
@@ -11554,7 +11568,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "형",
-        "romanization": "형",
+        "romanization": "hyeong",
         "soundRules": [],
         "audio": null
       },
@@ -11615,7 +11629,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "언니",
-        "romanization": "언니",
+        "romanization": "eon-ni",
         "soundRules": [],
         "audio": null
       },
@@ -11676,7 +11690,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "오빠",
-        "romanization": "오빠",
+        "romanization": "o-ppa",
         "soundRules": [],
         "audio": null
       },
@@ -11737,7 +11751,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "누나",
-        "romanization": "누나",
+        "romanization": "nu-na",
         "soundRules": [],
         "audio": null
       },
@@ -11798,7 +11812,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "친구",
-        "romanization": "친구",
+        "romanization": "chin-gu",
         "soundRules": [],
         "audio": null
       },
@@ -11859,7 +11873,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "사람",
-        "romanization": "사람",
+        "romanization": "sa-ram",
         "soundRules": [],
         "audio": null
       },
@@ -11920,7 +11934,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "아이",
-        "romanization": "아이",
+        "romanization": "a-i",
         "soundRules": [],
         "audio": null
       },
@@ -11981,7 +11995,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "집",
-        "romanization": "집",
+        "romanization": "jip",
         "soundRules": [],
         "audio": null
       },
@@ -12042,7 +12056,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "방",
-        "romanization": "방",
+        "romanization": "bang",
         "soundRules": [],
         "audio": null
       },
@@ -12103,7 +12117,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "책상",
-        "romanization": "책상",
+        "romanization": "chaek-sang",
         "soundRules": [],
         "audio": null
       },
@@ -12164,7 +12178,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "의자",
-        "romanization": "의자",
+        "romanization": "ui-ja",
         "soundRules": [],
         "audio": null
       },
@@ -12225,7 +12239,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "침대",
-        "romanization": "침대",
+        "romanization": "chim-dae",
         "soundRules": [],
         "audio": null
       },
@@ -12591,7 +12605,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "배우다",
-        "romanization": "배우다",
+        "romanization": "bae-u-da",
         "soundRules": [],
         "audio": null
       },
@@ -12652,7 +12666,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "쓰다",
-        "romanization": "쓰다",
+        "romanization": "sseu-da",
         "soundRules": [],
         "audio": null
       },
@@ -12796,9 +12810,11 @@
       ],
       "register": "中性",
       "pronunciation": {
-        "hangul": "읽다",
-        "romanization": "읽다",
-        "soundRules": [],
+        "hangul": "익따",
+        "romanization": "ik-tta",
+        "soundRules": [
+          "ㄺ+ㄷ → ㄱㄸ（辅音群简化/紧音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -12858,7 +12874,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "듣다",
-        "romanization": "듣다",
+        "romanization": "deut-da",
         "soundRules": [],
         "audio": null
       },
@@ -12919,7 +12935,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "말하다",
-        "romanization": "말하다",
+        "romanization": "mal-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -12979,9 +12995,11 @@
       ],
       "register": "中性",
       "pronunciation": {
-        "hangul": "먹다",
-        "romanization": "먹다",
-        "soundRules": [],
+        "hangul": "먹따",
+        "romanization": "meok-tta",
+        "soundRules": [
+          "ㄱ+ㄷ → ㄸ（紧音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -13097,7 +13115,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "마시다",
-        "romanization": "마시다",
+        "romanization": "ma-si-da",
         "soundRules": [],
         "audio": null
       },
@@ -13158,7 +13176,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "사다",
-        "romanization": "사다",
+        "romanization": "sa-da",
         "soundRules": [],
         "audio": null
       },
@@ -13219,7 +13237,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "팔다",
-        "romanization": "팔다",
+        "romanization": "pal-da",
         "soundRules": [],
         "audio": null
       },
@@ -13280,7 +13298,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "열다",
-        "romanization": "열다",
+        "romanization": "yeol-da",
         "soundRules": [],
         "audio": null
       },
@@ -13341,7 +13359,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "닫다",
-        "romanization": "닫다",
+        "romanization": "dat-da",
         "soundRules": [],
         "audio": null
       },
@@ -13401,9 +13419,11 @@
       ],
       "register": "中性",
       "pronunciation": {
-        "hangul": "앉다",
-        "romanization": "앉다",
-        "soundRules": [],
+        "hangul": "안따",
+        "romanization": "an-tta",
+        "soundRules": [
+          "ㄵ+ㄷ → ㄴㄸ（辅音群简化/紧音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -13463,7 +13483,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "서다",
-        "romanization": "서다",
+        "romanization": "seo-da",
         "soundRules": [],
         "audio": null
       },
@@ -13524,7 +13544,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "쉬다",
-        "romanization": "쉬다",
+        "romanization": "swi-da",
         "soundRules": [],
         "audio": null
       },
@@ -13585,7 +13605,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "자다",
-        "romanization": "자다",
+        "romanization": "ja-da",
         "soundRules": [],
         "audio": null
       },
@@ -13646,7 +13666,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "크다",
-        "romanization": "크다",
+        "romanization": "keu-da",
         "soundRules": [],
         "audio": null
       },
@@ -13706,9 +13726,11 @@
       ],
       "register": "中性",
       "pronunciation": {
-        "hangul": "작다",
-        "romanization": "작다",
-        "soundRules": [],
+        "hangul": "작따",
+        "romanization": "jak-tta",
+        "soundRules": [
+          "ㄱ+ㄷ → ㄸ（紧音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -13767,9 +13789,11 @@
       ],
       "register": "中性",
       "pronunciation": {
-        "hangul": "많다",
-        "romanization": "많다",
-        "soundRules": [],
+        "hangul": "만타",
+        "romanization": "man-ta",
+        "soundRules": [
+          "ㄶ+ㄷ → ㄴㅌ（激音化）"
+        ],
         "audio": null
       },
       "senses": [
@@ -13829,7 +13853,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "적다",
-        "romanization": "적다",
+        "romanization": "jeok-da",
         "soundRules": [],
         "audio": null
       },
@@ -14134,7 +14158,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "쉽다",
-        "romanization": "쉽다",
+        "romanization": "swip-da",
         "soundRules": [],
         "audio": null
       },
@@ -14195,7 +14219,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "맛있다",
-        "romanization": "맛있다",
+        "romanization": "mat-it-da",
         "soundRules": [],
         "audio": null
       },
@@ -14256,7 +14280,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "가져오다",
-        "romanization": "가져오다",
+        "romanization": "ga-jyeo-o-da",
         "soundRules": [],
         "audio": null
       },
@@ -14378,7 +14402,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "간식",
-        "romanization": "간식",
+        "romanization": "gan-sik",
         "soundRules": [],
         "audio": null
       },
@@ -14500,7 +14524,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "감기",
-        "romanization": "감기",
+        "romanization": "gam-gi",
         "soundRules": [],
         "audio": null
       },
@@ -14561,7 +14585,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "강아지",
-        "romanization": "강아지",
+        "romanization": "gang-a-ji",
         "soundRules": [],
         "audio": null
       },
@@ -14622,7 +14646,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "거실",
-        "romanization": "거실",
+        "romanization": "geo-sil",
         "soundRules": [],
         "audio": null
       },
@@ -14683,7 +14707,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "거울",
-        "romanization": "거울",
+        "romanization": "geo-ul",
         "soundRules": [],
         "audio": null
       },
@@ -14866,7 +14890,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "건물",
-        "romanization": "건물",
+        "romanization": "geon-mul",
         "soundRules": [],
         "audio": null
       },
@@ -14927,7 +14951,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "계단",
-        "romanization": "계단",
+        "romanization": "gye-dan",
         "soundRules": [],
         "audio": null
       },
@@ -14988,7 +15012,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "고기",
-        "romanization": "고기",
+        "romanization": "go-gi",
         "soundRules": [],
         "audio": null
       },
@@ -15110,7 +15134,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "구름",
-        "romanization": "구름",
+        "romanization": "gu-reum",
         "soundRules": [],
         "audio": null
       },
@@ -15171,7 +15195,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "귀엽다",
-        "romanization": "귀엽다",
+        "romanization": "gwi-yeop-da",
         "soundRules": [],
         "audio": null
       },
@@ -15232,7 +15256,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "귤",
-        "romanization": "귤",
+        "romanization": "gyul",
         "soundRules": [],
         "audio": null
       },
@@ -15293,7 +15317,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "그릇",
-        "romanization": "그릇",
+        "romanization": "geu-reut",
         "soundRules": [],
         "audio": null
       },
@@ -15354,7 +15378,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "기쁘다",
-        "romanization": "기쁘다",
+        "romanization": "gi-ppeu-da",
         "soundRules": [],
         "audio": null
       },
@@ -15476,7 +15500,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "나무",
-        "romanization": "나무",
+        "romanization": "na-mu",
         "soundRules": [],
         "audio": null
       },
@@ -15537,7 +15561,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "냉장고",
-        "romanization": "냉장고",
+        "romanization": "naeng-jang-go",
         "soundRules": [],
         "audio": null
       },
@@ -15598,7 +15622,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "노래",
-        "romanization": "노래",
+        "romanization": "no-rae",
         "soundRules": [],
         "audio": null
       },
@@ -15659,7 +15683,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "놀다",
-        "romanization": "놀다",
+        "romanization": "nol-da",
         "soundRules": [],
         "audio": null
       },
@@ -15720,7 +15744,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "다음",
-        "romanization": "다음",
+        "romanization": "da-eum",
         "soundRules": [],
         "audio": null
       },
@@ -15781,7 +15805,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "달",
-        "romanization": "달",
+        "romanization": "dal",
         "soundRules": [],
         "audio": null
       },
@@ -15842,7 +15866,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "닭",
-        "romanization": "닭",
+        "romanization": "dak",
         "soundRules": [],
         "audio": null
       },
@@ -16025,7 +16049,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "도서관",
-        "romanization": "도서관",
+        "romanization": "do-seo-gwan",
         "soundRules": [],
         "audio": null
       },
@@ -16086,7 +16110,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "돈",
-        "romanization": "돈",
+        "romanization": "don",
         "soundRules": [],
         "audio": null
       },
@@ -16269,7 +16293,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "돼지",
-        "romanization": "돼지",
+        "romanization": "dwae-ji",
         "soundRules": [],
         "audio": null
       },
@@ -16391,7 +16415,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "따뜻하다",
-        "romanization": "따뜻하다",
+        "romanization": "tta-tteut-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -16452,7 +16476,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "딸",
-        "romanization": "딸",
+        "romanization": "ttal",
         "soundRules": [],
         "audio": null
       },
@@ -16513,7 +16537,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "라디오",
-        "romanization": "라디오",
+        "romanization": "ra-di-o",
         "soundRules": [],
         "audio": null
       },
@@ -16635,7 +16659,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "맛",
-        "romanization": "맛",
+        "romanization": "mat",
         "soundRules": [],
         "audio": null
       },
@@ -16696,7 +16720,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "머리",
-        "romanization": "머리",
+        "romanization": "meo-ri",
         "soundRules": [],
         "audio": null
       },
@@ -16757,7 +16781,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "멀다",
-        "romanization": "멀다",
+        "romanization": "meol-da",
         "soundRules": [],
         "audio": null
       },
@@ -16818,7 +16842,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "메뉴",
-        "romanization": "메뉴",
+        "romanization": "me-nyu",
         "soundRules": [],
         "audio": null
       },
@@ -16879,7 +16903,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "모자",
-        "romanization": "모자",
+        "romanization": "mo-ja",
         "soundRules": [],
         "audio": null
       },
@@ -17001,7 +17025,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "목",
-        "romanization": "목",
+        "romanization": "mok",
         "soundRules": [],
         "audio": null
       },
@@ -17062,7 +17086,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "몸",
-        "romanization": "몸",
+        "romanization": "mom",
         "soundRules": [],
         "audio": null
       },
@@ -17306,7 +17330,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "바지",
-        "romanization": "바지",
+        "romanization": "ba-ji",
         "soundRules": [],
         "audio": null
       },
@@ -17367,7 +17391,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "밖",
-        "romanization": "밖",
+        "romanization": "bak",
         "soundRules": [],
         "audio": null
       },
@@ -17428,7 +17452,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "반",
-        "romanization": "반",
+        "romanization": "ban",
         "soundRules": [],
         "audio": null
       },
@@ -17489,7 +17513,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "배",
-        "romanization": "배",
+        "romanization": "bae",
         "soundRules": [],
         "audio": null
       },
@@ -17672,7 +17696,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "별",
-        "romanization": "별",
+        "romanization": "byeol",
         "soundRules": [],
         "audio": null
       },
@@ -17733,7 +17757,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "보내다",
-        "romanization": "보내다",
+        "romanization": "bo-nae-da",
         "soundRules": [],
         "audio": null
       },
@@ -17855,7 +17879,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "분",
-        "romanization": "분",
+        "romanization": "bun",
         "soundRules": [],
         "audio": null
       },
@@ -18038,7 +18062,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "사과",
-        "romanization": "사과",
+        "romanization": "sa-gwa",
         "soundRules": [],
         "audio": null
       },
@@ -18160,7 +18184,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "산",
-        "romanization": "산",
+        "romanization": "san",
         "soundRules": [],
         "audio": null
       },
@@ -18221,7 +18245,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "새",
-        "romanization": "새",
+        "romanization": "sae",
         "soundRules": [],
         "audio": null
       },
@@ -18282,7 +18306,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "색",
-        "romanization": "색",
+        "romanization": "saek",
         "soundRules": [],
         "audio": null
       },
@@ -18343,7 +18367,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "샤워하다",
-        "romanization": "샤워하다",
+        "romanization": "sya-wo-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -18404,7 +18428,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "서점",
-        "romanization": "서점",
+        "romanization": "seo-jeom",
         "soundRules": [],
         "audio": null
       },
@@ -18465,7 +18489,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "선물",
-        "romanization": "선물",
+        "romanization": "seon-mul",
         "soundRules": [],
         "audio": null
       },
@@ -27798,7 +27822,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "가족싸진",
-        "romanization": "가족싸진",
+        "romanization": "ga-jok-ssa-jin",
         "soundRules": [],
         "audio": null
       },
@@ -28103,7 +28127,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "학꾜생활",
-        "romanization": "학꾜생활",
+        "romanization": "hak-kkyo-saeng-hwal",
         "soundRules": [],
         "audio": null
       },
@@ -28225,7 +28249,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "고등학꾜",
-        "romanization": "고등학꾜",
+        "romanization": "go-deung-hak-kkyo",
         "soundRules": [],
         "audio": null
       },
@@ -28286,7 +28310,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "대ː학꾜",
-        "romanization": "대ː학꾜",
+        "romanization": "dae-hak-kkyo",
         "soundRules": [],
         "audio": null
       },
@@ -28347,7 +28371,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "중학꾜",
-        "romanization": "중학꾜",
+        "romanization": "jung-hak-kkyo",
         "soundRules": [],
         "audio": null
       },
@@ -28408,7 +28432,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "초등학꾜",
-        "romanization": "초등학꾜",
+        "romanization": "cho-deung-hak-kkyo",
         "soundRules": [],
         "audio": null
       },
@@ -28469,7 +28493,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "회ː사원/훼ː사원",
-        "romanization": "회ː사원/훼ː사원",
+        "romanization": "hoe-sa-won/hwe-sa-won",
         "soundRules": [],
         "audio": null
       },
@@ -28591,7 +28615,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "교통비",
-        "romanization": "교통비",
+        "romanization": "gyo-tong-bi",
         "soundRules": [],
         "audio": null
       },
@@ -28652,7 +28676,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "교통사고",
-        "romanization": "교통사고",
+        "romanization": "gyo-tong-sa-go",
         "soundRules": [],
         "audio": null
       },
@@ -31336,7 +31360,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "교ː육",
-        "romanization": "교ː육",
+        "romanization": "gyo-yuk",
         "soundRules": [],
         "audio": null
       },
@@ -31397,7 +31421,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "교ː육뙤다/교ː육뛔다",
-        "romanization": "교ː육뙤다/교ː육뛔다",
+        "romanization": "gyo-yuk-ttoe-da/gyo-yuk-ttwe-da",
         "soundRules": [],
         "audio": null
       },
@@ -31458,7 +31482,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "교ː유카다",
-        "romanization": "교ː유카다",
+        "romanization": "gyo-yu-ka-da",
         "soundRules": [],
         "audio": null
       },
@@ -31702,7 +31726,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "생활하다",
-        "romanization": "생활하다",
+        "romanization": "saeng-hwal-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -31946,7 +31970,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "건ː강하다",
-        "romanization": "건ː강하다",
+        "romanization": "geon-gang-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -32251,7 +32275,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "여행사",
-        "romanization": "여행사",
+        "romanization": "yeo-haeng-sa",
         "soundRules": [],
         "audio": null
       },
@@ -32312,7 +32336,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "여행지",
-        "romanization": "여행지",
+        "romanization": "yeo-haeng-ji",
         "soundRules": [],
         "audio": null
       },
@@ -32373,7 +32397,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "여행하다",
-        "romanization": "여행하다",
+        "romanization": "yeo-haeng-ha-da",
         "soundRules": [],
         "audio": null
       },
@@ -32739,7 +32763,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "음ː식쩜",
-        "romanization": "음ː식쩜",
+        "romanization": "eum-sik-jjeom",
         "soundRules": [],
         "audio": null
       },
@@ -35240,7 +35264,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "여자 고등학교",
-        "romanization": "여자 고등학교",
+        "romanization": "yeo-ja go-deung-hak-gyo",
         "soundRules": [],
         "audio": null
       },
@@ -35301,7 +35325,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "여자 중학교",
-        "romanization": "여자 중학교",
+        "romanization": "yeo-ja jung-hak-gyo",
         "soundRules": [],
         "audio": null
       },
@@ -35546,7 +35570,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "교통 카드",
-        "romanization": "교통 카드",
+        "romanization": "gyo-tong ka-deu",
         "soundRules": [],
         "audio": null
       },
@@ -37011,7 +37035,7 @@
       "register": "中性",
       "pronunciation": {
         "hangul": "건강 관리",
-        "romanization": "건강 관리",
+        "romanization": "geon-gang gwan-ri",
         "soundRules": [],
         "audio": null
       },
