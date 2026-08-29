@@ -4,6 +4,8 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-29
 
+- UI Polish: added shared layout tokens for Hero left inset, filter title/chip baseline, learned-card vertical padding/alignment, and Primary CTA dimensions.
+- Fixed memory Hero title alignment, learned-library filter group baseline alignment, learned-card vertical centering, and Continue button token reuse without changing home modules or interactions.
 - UI Polish: unified study/review Primary CTA width so the revealed Continue button now uses the same fixed token as each initial action button instead of text-width sizing.
 - Added desktop Hero single-line guards for the memory-profile and learned-library copy while preserving mobile responsive wrapping.
 - Added a full-site UI consistency audit script and Pages workflow step for hover geometry, transition-property, and CLS checks across Desktop 1920 and Mobile 390.

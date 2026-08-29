@@ -12,14 +12,28 @@
   --kwf-shadow-card: 0 18px 48px rgba(18,49,38,.10);
   --kwf-button-font: 700 14px/1.2 Arial, "Noto Sans KR", "Microsoft YaHei", sans-serif;
   --kwf-button-border: 1px solid rgba(24,37,31,.16);
+  --kwf-hero-x: 7vw;
   --kwf-action-h: 52px;
   --kwf-action-gap: 10px;
   --kwf-primary-action-w: 134px;
   --kwf-secondary-action-w: 168px;
   --kwf-review-action-w: 206px;
+  --kwf-filter-title-h: 16px;
+  --kwf-filter-chip-h: 32px;
+  --kwf-card-vpad: 0px;
+  --kwf-card-content-align: center;
 }
 
 :root { --kwf-card-h: 620px; --kwf-card-pad: 22px; --kwf-word-h: 168px; }
+
+.hero,
+.study-wrap,
+.polysemy,
+.review-hub,
+#review.review-hub {
+  padding-left: var(--kwf-hero-x) !important;
+  padding-right: var(--kwf-hero-x) !important;
+}
 
 button,
 summary,
@@ -277,8 +291,10 @@ a.mobile-tab:hover {
 
 @media (min-width: 1200px) {
   #review .review-title {
-    width: min(1500px, 100%) !important;
-    max-width: 1500px !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   #review .review-title h2,
   #review .review-title p:not(.eyebrow),
@@ -327,7 +343,7 @@ a.mobile-tab:hover {
   grid-template-areas:
     "search quick level rating"
     "sort sort sort sort" !important;
-  align-items: end !important;
+  align-items: start !important;
   gap: 10px 14px !important;
   width: 100% !important;
   min-height: 0 !important;
@@ -344,17 +360,29 @@ a.mobile-tab:hover {
 #learned-library-section .learned-sort {
   display: flex !important;
   flex-wrap: wrap !important;
-  align-items: center !important;
+  align-items: start !important;
+  align-content: start !important;
   gap: 6px !important;
   min-height: 0 !important;
   margin: 0 !important;
+  padding: 0 !important;
 }
 #learned-library-section .learned-filters > span,
-#learned-library-section .learned-sort > span { flex: 0 0 100% !important; margin: 0 0 2px !important; }
+#learned-library-section .learned-sort > span {
+  display: flex !important;
+  align-items: baseline !important;
+  flex: 0 0 100% !important;
+  height: var(--kwf-filter-title-h) !important;
+  min-height: var(--kwf-filter-title-h) !important;
+  max-height: var(--kwf-filter-title-h) !important;
+  margin: 0 !important;
+  line-height: var(--kwf-filter-title-h) !important;
+}
 #learned-library-section .learned-filters button,
 #learned-library-section .learned-sort button {
-  min-height: 32px !important;
-  height: 32px !important;
+  min-height: var(--kwf-filter-chip-h) !important;
+  height: var(--kwf-filter-chip-h) !important;
+  max-height: var(--kwf-filter-chip-h) !important;
   padding: 5px 9px !important;
   margin: 0 !important;
 }
@@ -379,7 +407,7 @@ a.mobile-tab:hover {
   min-height: 112px !important;
   max-height: 112px !important;
   margin: 0 !important;
-  padding: 12px 18px !important;
+  padding: var(--kwf-card-vpad) 18px !important;
   overflow: hidden !important;
 }
 #learned-library-section .kwf-learned-row > * {
@@ -387,6 +415,7 @@ a.mobile-tab:hover {
   min-height: 0 !important;
   margin: 0 !important;
   align-self: center !important;
+  align-items: var(--kwf-card-content-align) !important;
 }
 #learned-library-section .select-word {
   grid-column: 1 !important;
