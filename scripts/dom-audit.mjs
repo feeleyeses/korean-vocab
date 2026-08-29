@@ -1,8 +1,9 @@
 const playwrightModule = await import(process.env.PLAYWRIGHT_MODULE || 'playwright').catch(() => import('playwright'));
 const { chromium } = playwrightModule.default || playwrightModule;
+const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH;
 
 const url = process.env.KWF_URL || 'https://feeleyeses.github.io/korean-vocab/';
-const browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe' });
+const browser = await chromium.launch({ headless: true, ...(executablePath ? { executablePath } : {}) });
 const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
 await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
 await page.waitForTimeout(1000);
