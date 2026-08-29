@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820">
+  <rect width="1280" height="820" fill="#f6f3ea"/>
+  <text x="80" y="74" fill="#193226" font-family="Arial, sans-serif" font-size="28" font-weight="700">V2 Card Spec · 学习卡片（初始）</text>
+  <text x="80" y="112" fill="#5f6f65" font-family="Arial, sans-serif" font-size="16">只展示高频回想信息；不展示释义、例句、固定搭配、音变规则。</text>
+  <rect x="300" y="150" width="680" height="560" rx="22" fill="#fffdf7" stroke="#d8d0c3"/>
+  <rect x="332" y="178" width="616" height="44" rx="14" fill="#f3efe5" stroke="#dfd7c9"/>
+  <text x="356" y="206" fill="#667269" font-family="Arial, sans-serif" font-size="14">工具区</text>
+  <circle cx="884" cy="200" r="18" fill="#fbfaf5" stroke="#b7aa9d"/>
+  <text x="874" y="207" fill="#2a3a31" font-family="Arial, sans-serif" font-size="16" font-weight="700">听</text>
+  <circle cx="928" cy="200" r="18" fill="#fbfaf5" stroke="#b7aa9d"/>
+  <text x="918" y="208" fill="#2a3a31" font-family="Arial, sans-serif" font-size="20">☆</text>
+  <text x="640" y="358" text-anchor="middle" fill="#183226" font-family="Arial, sans-serif" font-size="76" font-weight="800">구경하다</text>
+  <text x="640" y="414" text-anchor="middle" fill="#3f5148" font-family="Arial, sans-serif" font-size="22">实际读音 구경하다</text>
+  <text x="640" y="452" text-anchor="middle" fill="#3f5148" font-family="Arial, sans-serif" font-size="22">罗马音 gu-gyeong-ha-da</text>
+  <g transform="translate(426 626)">
+    <rect width="134" height="52" rx="14" fill="#213d2f"/>
+    <rect x="142" width="134" height="52" rx="14" fill="#efe8d8" stroke="#d8d0c3"/>
+    <rect x="284" width="134" height="52" rx="14" fill="#efe8d8" stroke="#d8d0c3"/>
+    <text x="67" y="33" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="15" font-weight="700">认识</text>
+    <text x="209" y="33" text-anchor="middle" fill="#193226" font-family="Arial, sans-serif" font-size="15" font-weight="700">模糊</text>
+    <text x="351" y="33" text-anchor="middle" fill="#193226" font-family="Arial, sans-serif" font-size="15" font-weight="700">不认识</text>
+  </g>
+  <line x1="426" y1="704" x2="844" y2="704" stroke="#83a58e" stroke-width="2"/>
+  <text x="640" y="738" text-anchor="middle" fill="#5f6f65" font-family="Arial, sans-serif" font-size="14">底部操作区固定：三按钮总宽 418px，高 52px，中心线稳定</text>
+</svg>

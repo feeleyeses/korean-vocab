@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820">
+  <rect width="1280" height="820" fill="#f6f3ea"/>
+  <text x="80" y="74" fill="#193226" font-family="Arial, sans-serif" font-size="28" font-weight="700">V2 Card Spec · 学习卡片（揭晓）</text>
+  <text x="80" y="112" fill="#5f6f65" font-family="Arial, sans-serif" font-size="16">释义、例句、固定搭配、音变规则按固定阅读顺序自适应展示。</text>
+  <rect x="300" y="150" width="680" height="560" rx="22" fill="#fffdf7" stroke="#d8d0c3"/>
+  <text x="640" y="244" text-anchor="middle" fill="#183226" font-family="Arial, sans-serif" font-size="48" font-weight="800">逛，参观</text>
+  <g font-family="Arial, sans-serif" fill="#20382c">
+    <text x="420" y="322" font-size="15" font-weight="700">例句</text>
+    <text x="420" y="356" font-size="26">시장에 가서 구경했어요.</text>
+    <text x="420" y="388" font-size="18" fill="#59675f">去了市场逛了逛。</text>
+    <text x="420" y="454" font-size="15" font-weight="700">固定搭配</text>
+    <text x="420" y="488" font-size="24">시장을 구경하다</text>
+    <text x="420" y="520" font-size="18" fill="#59675f">逛市场</text>
+    <text x="420" y="586" font-size="15" font-weight="700">音变规则</text>
+    <text x="420" y="618" font-size="18" fill="#59675f">无音变时本区不保留空白；有音变时自然出现。</text>
+  </g>
+  <rect x="431" y="626" width="418" height="52" rx="14" fill="#213d2f"/>
+  <text x="640" y="659" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="15" font-weight="700">继续</text>
+  <line x1="431" y1="704" x2="849" y2="704" stroke="#83a58e" stroke-width="2"/>
+  <text x="640" y="738" text-anchor="middle" fill="#5f6f65" font-family="Arial, sans-serif" font-size="14">Continue 覆盖三按钮总宽，Top/Bottom 与初始操作区一致</text>
+</svg>

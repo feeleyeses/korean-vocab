@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820">
+  <rect width="1280" height="820" fill="#f6f3ea"/>
+  <text x="80" y="74" fill="#193226" font-family="Arial, sans-serif" font-size="28" font-weight="700">V2 Card Spec · 复习卡片（初始）</text>
+  <text x="80" y="112" fill="#5f6f65" font-family="Arial, sans-serif" font-size="16">保持四选一；题干展示韩文、实际读音、罗马音，不出现认识/模糊/不认识。</text>
+  <rect x="300" y="150" width="680" height="560" rx="22" fill="#fffdf7" stroke="#d8d0c3"/>
+  <text x="640" y="292" text-anchor="middle" fill="#183226" font-family="Arial, sans-serif" font-size="72" font-weight="800">구경하다</text>
+  <text x="640" y="344" text-anchor="middle" fill="#3f5148" font-family="Arial, sans-serif" font-size="22">실제 읽기 구경하다 · gu-gyeong-ha-da</text>
+  <text x="640" y="414" text-anchor="middle" fill="#5f6f65" font-family="Arial, sans-serif" font-size="16">选出最准确的中文释义</text>
+  <g transform="translate(430 462)" font-family="Arial, sans-serif" font-size="15" font-weight="700">
+    <rect width="206" height="54" rx="14" fill="#f2eadb" stroke="#d8d0c3"/>
+    <rect x="214" width="206" height="54" rx="14" fill="#f2eadb" stroke="#d8d0c3"/>
+    <rect y="64" width="206" height="54" rx="14" fill="#f2eadb" stroke="#d8d0c3"/>
+    <rect x="214" y="64" width="206" height="54" rx="14" fill="#f2eadb" stroke="#d8d0c3"/>
+    <text x="103" y="34" text-anchor="middle" fill="#193226">逛，参观</text>
+    <text x="317" y="34" text-anchor="middle" fill="#193226">尊重</text>
+    <text x="103" y="98" text-anchor="middle" fill="#193226">掌握</text>
+    <text x="317" y="98" text-anchor="middle" fill="#193226">完成</text>
+  </g>
+</svg>

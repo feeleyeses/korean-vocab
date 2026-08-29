@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820">
+  <rect width="1280" height="820" fill="#f6f3ea"/>
+  <text x="80" y="74" fill="#193226" font-family="Arial, sans-serif" font-size="28" font-weight="700">V2 Card Spec · 复习卡片（揭晓）</text>
+  <text x="80" y="112" fill="#5f6f65" font-family="Arial, sans-serif" font-size="16">正确释义、例句、固定搭配、音变规则、选项对应韩文；无内容自动收紧。</text>
+  <rect x="300" y="150" width="680" height="560" rx="22" fill="#fffdf7" stroke="#d8d0c3"/>
+  <text x="640" y="230" text-anchor="middle" fill="#183226" font-family="Arial, sans-serif" font-size="44" font-weight="800">逛，参观</text>
+  <g font-family="Arial, sans-serif" fill="#20382c">
+    <text x="420" y="300" font-size="15" font-weight="700">例句</text>
+    <text x="420" y="332" font-size="24">시장에 가서 구경했어요.</text>
+    <text x="420" y="362" font-size="18" fill="#59675f">去了市场逛了逛。</text>
+    <text x="420" y="422" font-size="15" font-weight="700">固定搭配</text>
+    <text x="420" y="454" font-size="22">시장을 구경하다</text>
+    <text x="420" y="484" font-size="18" fill="#59675f">逛市场</text>
+    <text x="420" y="542" font-size="15" font-weight="700">查看选项对应韩文</text>
+    <text x="420" y="572" font-size="18" fill="#59675f">逛，参观 = 구경하다；其余干扰项按需展开。</text>
+  </g>
+  <rect x="431" y="626" width="418" height="52" rx="14" fill="#213d2f"/>
+  <text x="640" y="659" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="15" font-weight="700">继续</text>
+</svg>

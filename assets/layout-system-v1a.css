@@ -31,6 +31,9 @@
   --kwf-filter-chip-h: 32px;
   --kwf-card-vpad: 0px;
   --kwf-card-content-align: center;
+  --kwf-card-v2-rail-bottom: 18px;
+  --kwf-card-v2-reveal-gap: 10px;
+  --kwf-card-v2-answer-max-w: 560px;
 }
 
 :root { --kwf-card-h: 620px; --kwf-word-h: 168px; }
@@ -215,6 +218,15 @@ a.mobile-tab:hover {
   line-height: 1.45 !important;
 }
 
+#study #study-card.new-mode:not(.revealed) .card-meta > span,
+#study #study-card.review-mode:not(.revealed) .card-meta > span {
+  visibility: hidden !important;
+}
+
+#study #study-card:not(.revealed) .pronunciation-stack .sound-rule {
+  display: none !important;
+}
+
 /* Learning initial state */
 #study #study-card .pre-answer {
   flex: 1 1 0 !important;
@@ -292,8 +304,8 @@ a.mobile-tab:hover {
   flex-direction: column !important;
   justify-content: center !important;
   align-items: center !important;
-  gap: 10px !important;
-  padding: 10px 10px 6px !important;
+  gap: var(--kwf-card-v2-reveal-gap) !important;
+  padding: 8px 10px calc(var(--kwf-action-h) + var(--kwf-card-v2-rail-bottom) + 10px) !important;
   text-align: center !important;
 }
 #study #study-card .answer *,
@@ -307,24 +319,46 @@ a.mobile-tab:hover {
 }
 #study #study-card .answer-scroll h4 {
   margin-top: 0 !important;
-  margin-bottom: 6px !important;
+  margin-bottom: 2px !important;
   font-size: clamp(30px, 3.5vw, 42px) !important;
   line-height: 1.15 !important;
 }
+#study #study-card .answer-scroll .kwf-v2-example,
+#study #study-card .answer-scroll .kwf-v2-collocation,
+#study #study-card .answer-scroll .kwf-v2-sound-rule {
+  display: grid !important;
+  justify-items: center !important;
+  gap: 4px !important;
+  width: min(var(--kwf-card-v2-answer-max-w), 100%) !important;
+  margin: 0 auto !important;
+}
+#study #study-card .answer-scroll .kwf-v2-example b,
+#study #study-card .answer-scroll .kwf-v2-collocation b,
+#study #study-card .answer-scroll .kwf-v2-sound-rule b {
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+  color: rgba(34, 56, 44, .72) !important;
+}
+#study #study-card .answer-scroll .kwf-v2-example p,
+#study #study-card .answer-scroll .kwf-v2-collocation p,
+#study #study-card .answer-scroll .kwf-v2-sound-rule p,
+#study #study-card .answer-scroll .kwf-v2-collocation small {
+  margin: 0 auto !important;
+}
 #study #study-card .answer-scroll .sentence {
-  margin: 6px auto 2px !important;
+  margin: 0 auto !important;
   font-size: clamp(19px, 2vw, 25px) !important;
   line-height: 1.45 !important;
 }
-#study #study-card .answer-scroll .sentence + p { margin: 0 auto 4px !important; line-height: 1.5 !important; }
-#study #study-card .answer-scroll aside { margin: 3px auto !important; }
+#study #study-card .answer-scroll .sentence + p { margin: 0 auto !important; line-height: 1.5 !important; }
+#study #study-card .answer-scroll aside { display: none !important; }
 #study #study-card .kwf-learning-extra { display: none !important; }
 #study #study-card .continue {
   --kwf-continue-w: var(--kwf-primary-action-group-w);
   position: absolute !important;
   left: calc(50% - (var(--kwf-continue-w) / 2)) !important;
   right: auto !important;
-  bottom: 18px !important;
+  bottom: var(--kwf-card-v2-rail-bottom) !important;
   transform: none !important;
   flex: 0 0 50px !important;
   align-self: center !important;

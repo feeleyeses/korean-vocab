@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-30
 
+- V2 Card Spec: added four implementation-ready card specification diagrams and aligned learning/review card states to the unified reveal order, stable Continue action rail, and initial-state information rules.
 - Sprint 4: cleared the remaining TOPIK-4, TOPIK-5, and TOPIK-6 romanization review queue, added conservative pronunciation/sound-rule updates, and upgraded selected examples, collocations, and source tier entries without touching UI.
 - Sprint 3 Batch 3: cleared TOPIK-3 romanization review items and upgraded selected TOPIK-3 pronunciation, sound rules, examples, collocations, and source tier.
 - Sprint 3 Batch 2: cleared all TOPIK-2 romanization review items, upgraded selected TOPIK-2 pronunciation/examples/collocations, and introduced tracked source tiers in the quality report.
