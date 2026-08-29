@@ -42,15 +42,12 @@ jobs:
           replacements={'"/assets/':'"assets/',"'/assets/":"'assets/",'\\"/assets/':'\\"assets/',"\\'/assets/":"\\'assets/",'import("/assets/':'import("./assets/',"import('/assets/":"import('./assets/",'import("assets/':'import("./assets/',"import('assets/":"import('./assets/",'href="/favicon.svg"':'href="favicon.svg"',"href='/favicon.svg'":"href='favicon.svg'",'\\"href\\":\\"/favicon.svg\\"':'\\"href\\":\\"favicon.svg\\"'}
           for old,new in replacements.items(): s=s.replace(old,new)
           s=re.sub(r'<script>\(function\(\)\{function c\(\).*?/cdn-cgi/challenge-platform/scripts/jsd/main\.js.*?</script>','',s,flags=re.S)
-          s=re.sub(r'<link[^>]+(?:study-card-v2|layout-v2)\.css[^>]*>','',s)
-          s=re.sub(r'<link[^>]+ui-v3(?:\.4)?\.css[^>]*>','',s)
-          s=re.sub(r'<script[^>]+(?:layout-v2|ui-v3(?:\.3|\.5|\.6|\.7|\.8)?)\.js[^>]*></script>','',s)
-          css='<link rel="stylesheet" href="assets/ui-v3.css" data-kwf-ui-v3="true"/>'
-          s=s.replace('</head>',css+'</head>')
-          scripts=['<script type="module" src="assets/study-card-v2.js" data-kwf-enrichment-js="true"></script>','<script type="module" src="assets/ui-v3.3.js" data-kwf-ui-v3-js="true"></script>','<script type="module" src="assets/ui-v3.8.js?v=7" data-kwf-ui-v38-js="true"></script>']
-          for script in scripts:
-              marker=script.split(' data-')[1].split('=')[0]
-              if marker not in s:s=s.replace('</body>',script+'</body>')
+          s=re.sub(r'<link[^>]+(?:study-card-v2|layout-v2|ui-v3(?:\.4)?)\.css[^>]*>','',s)
+          s=re.sub(r'<script[^>]+(?:study-card-v2|layout-v2|ui-v3(?:\.3|\.5|\.6|\.7|\.8)?)\.js[^>]*></script>','',s)
+          if 'layout-system-v1a.css' not in s:
+              s=s.replace('</head>','<link rel="stylesheet" href="assets/layout-system-v1a.css" data-kwf-layout-system-css="true"/></head>')
+          if 'layout-system-v1a.js' not in s:
+              s=s.replace('</body>','<script src="assets/layout-system-v1a.js" defer data-kwf-layout-system-js="true"></script></body>')
           p.write_text(s,encoding='utf-8')
           asset_base='korean-vocab/assets/'
           for js in Path('_site/assets').glob('*.js'):
@@ -60,10 +57,10 @@ jobs:
               js.write_text(body,encoding='utf-8')
           PY
           touch _site/.nojekyll
-          grep -q 'data-kwf-ui-v3="true"' _site/index.html
-          grep -q 'data-kwf-ui-v38-js="true"' _site/index.html
-          grep -q 'assets/ui-v3.8.js?v=7' _site/index.html
-          test -f _site/assets/ui-v3.8.js
+          grep -q 'layout-system-v1a.css' _site/index.html
+          grep -q 'layout-system-v1a.js' _site/index.html
+          test -f _site/assets/layout-system-v1a.js
+          test -f _site/data/vocabulary.json
           grep -q 'import("./assets/index-' _site/index.html
 
       - name: Configure Pages
@@ -88,11 +85,12 @@ jobs:
           set -euo pipefail
           base='https://feeleyeses.github.io/korean-vocab/'; html=/tmp/kwf.html
           for i in 1 2 3 4 5 6; do
-            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html" && grep -q 'assets/ui-v3.8.js?v=7' "$html"; then break; fi
+            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html" && grep -q 'layout-system-v1a.js' "$html"; then break; fi
             sleep 10
           done
-          grep -q 'assets/ui-v3.8.js?v=7' "$html"
-          curl -fsSL "${base}assets/ui-v3.8.js?v=7" >/dev/null
+          grep -q 'layout-system-v1a.js' "$html"
+          curl -fsSL "${base}assets/layout-system-v1a.js" >/dev/null
+          curl -fsSL "${base}data/vocabulary.json" >/dev/null
           curl -fsSL "${base}data/enrichment.json" >/dev/null
       - name: Install Playwright
         run: |
@@ -102,12 +100,9 @@ jobs:
       - name: Browser interaction smoke test
         env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
         run: node scripts/browser-smoke.mjs
-      - name: UI v3 geometry regression
+      - name: UI geometry regression
         env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
-        run: node scripts/ui-v3-regression.mjs
-      - name: Review v3.8 visual regression
-        env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
-        run: node scripts/review-v38-regression.mjs
+        run: node scripts/ui-regression.mjs
       - name: Live DOM audit
         env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
         run: node scripts/dom-audit.mjs

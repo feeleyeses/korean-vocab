@@ -1,67 +1,85 @@
 #!/usr/bin/env python3
-"""Non-destructive audit for the mirrored vocabulary bundle.
-
-The production bundle currently contains the vocabulary data, so this script
-extracts explicit object literals and reports risks without rewriting meanings.
-It is intentionally advisory: homographs can be legitimate separate lexemes.
-"""
+"""Non-destructive audit for the published vocabulary JSON."""
 from __future__ import annotations
 
-import glob
-import re
+import json
 from collections import Counter, defaultdict
 from pathlib import Path
 
-bundles = sorted(glob.glob("assets/page-*.js"))
-if not bundles:
-    raise SystemExit("No assets/page-*.js bundle found")
+payload = json.loads(Path("data/vocabulary.json").read_text(encoding="utf-8"))
+entries = payload["entries"] if isinstance(payload, dict) else payload
 
-text = "\n".join(Path(p).read_text(encoding="utf-8") for p in bundles)
-
-# Explicit structured vocabulary objects (KRDICT/sound-change/polysemy additions).
-obj_re = re.compile(
-    r"id:`(?P<id>[^`]+)`,headword:`(?P<headword>[^`]+)`.*?senses:\[\{id:`[^`]+`,gloss:`(?P<gloss>[^`]+)`",
-    re.S,
+ids = Counter(entry.get("lexicalEntryId") for entry in entries)
+sense_ids = Counter(
+    sense.get("senseId")
+    for entry in entries
+    for sense in entry.get("senses", [])
 )
-records = [m.groupdict() for m in obj_re.finditer(text)]
+by_headword: dict[str, list[dict]] = defaultdict(list)
+for entry in entries:
+    by_headword[entry.get("headword", "")].append(entry)
 
-ids = Counter(r["id"] for r in records)
-by_headword: dict[str, list[dict[str, str]]] = defaultdict(list)
-for r in records:
-    by_headword[r["headword"]].append(r)
-
-id_dupes = {k: v for k, v in ids.items() if v > 1}
+id_dupes = {key: count for key, count in ids.items() if not key or count > 1}
+sense_dupes = {key: count for key, count in sense_ids.items() if not key or count > 1}
 homograph_risks = {
     headword: rows
     for headword, rows in by_headword.items()
-    if len({r["gloss"] for r in rows}) > 1
+    if len(rows) > 1 and len({tuple(s.get("glossZh", "") for s in row.get("senses", [])) for row in rows}) > 1
 }
+field_errors: list[str] = []
+
+for entry in entries:
+    entry_id = entry.get("lexicalEntryId", "(missing)")
+    pronunciation = entry.get("pronunciation") or {}
+    quality = entry.get("qualityScore") or {}
+    if not entry.get("headword"):
+        field_errors.append(f"{entry_id}: missing headword")
+    if not entry.get("levels"):
+        field_errors.append(f"{entry_id}: missing TOPIK level")
+    if not pronunciation.get("hangul") or not pronunciation.get("romanization"):
+        field_errors.append(f"{entry_id}: missing pronunciation or romanization")
+    if not isinstance(pronunciation.get("soundRules"), list):
+        field_errors.append(f"{entry_id}: soundRules must be an array")
+    if not entry.get("source"):
+        field_errors.append(f"{entry_id}: missing source")
+    if not isinstance(quality.get("score"), (int, float)):
+        field_errors.append(f"{entry_id}: missing quality score")
+    for sense in entry.get("senses", []):
+        sense_id = sense.get("senseId", "(missing)")
+        if not sense.get("glossZh"):
+            field_errors.append(f"{entry_id}/{sense_id}: missing Chinese gloss")
+        if not sense.get("examples"):
+            field_errors.append(f"{entry_id}/{sense_id}: missing examples")
+        if not sense.get("collocations"):
+            field_errors.append(f"{entry_id}/{sense_id}: missing collocations")
 
 print("# Korean Word Field vocabulary audit")
 print()
-print(f"- Explicit structured records scanned: {len(records)}")
-print(f"- Duplicate IDs: {len(id_dupes)}")
+print(f"- Schema version: {payload.get('schemaVersion') if isinstance(payload, dict) else 'array'}")
+print(f"- LexicalEntry records scanned: {len(entries)}")
+print(f"- Sense records scanned: {len(sense_ids)}")
+print(f"- Duplicate entry IDs: {len(id_dupes)}")
+print(f"- Duplicate sense IDs: {len(sense_dupes)}")
 print(f"- Same-spelling / different-gloss groups: {len(homograph_risks)}")
+print(f"- Field errors: {len(field_errors)}")
 print()
-
-if id_dupes:
-    print("## ERROR: duplicate IDs")
-    for key, count in sorted(id_dupes.items()):
-        print(f"- `{key}` × {count}")
-    print()
 
 print("## Homograph review queue")
-if not homograph_risks:
-    print("- None detected in explicit object records.")
-else:
+if homograph_risks:
     for headword, rows in sorted(homograph_risks.items()):
-        variants = " / ".join(f"{r['id']}: {r['gloss']}" for r in rows)
-        print(f"- **{headword}** — {variants}")
-
+        variants = " / ".join(f"{row.get('lexicalEntryId')}: {row.get('senses', [{}])[0].get('glossZh', '')}" for row in rows)
+        print(f"- **{headword}** - {variants}")
+else:
+    print("- None detected.")
 print()
-print("## Policy")
-print("Same spelling is not automatically polysemy. Keep separate lexeme IDs when meanings come from distinct dictionary entries; merge only senses belonging to the same lexical entry.")
 
-# Only duplicate IDs block CI. Homographs are a review queue, not an automatic error.
-if id_dupes:
+if field_errors:
+    print("## ERROR: field errors")
+    for error in field_errors[:80]:
+        print(f"- {error}")
+    if len(field_errors) > 80:
+        print(f"- ... {len(field_errors) - 80} more")
+    print()
+
+if id_dupes or sense_dupes or field_errors:
     raise SystemExit(1)
