@@ -32,7 +32,7 @@
   --kwf-card-vpad: 0px;
   --kwf-card-content-align: center;
   --kwf-card-v2-rail-bottom: 18px;
-  --kwf-card-v2-block-gap: 8px;
+  --kwf-card-v2-block-gap: 4px;
   --kwf-card-v2-inner-gap: 4px;
   --kwf-card-v2-answer-max-w: 560px;
   --kwf-card-v2-title-font: 700 12px/1.1 Arial, "Noto Sans KR", "Microsoft YaHei", sans-serif;
@@ -354,7 +354,9 @@ a.mobile-tab:hover {
 }
 #study #study-card .answer-scroll h4 {
   margin: 0 auto !important;
+  width: 100% !important;
   font: var(--kwf-card-v2-body-font) !important;
+  text-align: left !important;
 }
 #study #study-card .answer-scroll .kwf-v2-definition,
 #study #study-card .answer-scroll .kwf-v2-example,
@@ -372,11 +374,6 @@ a.mobile-tab:hover {
   background: var(--kwf-card-v2-block-bg) !important;
   box-shadow: none !important;
 }
-#study #study-card .answer-scroll .kwf-v2-sound-rule {
-  grid-template-columns: auto minmax(0, 1fr) !important;
-  align-items: center !important;
-  column-gap: 8px !important;
-}
 #study #study-card .answer-scroll .kwf-v2-definition::before {
   content: "释义";
   display: block !important;
@@ -390,10 +387,6 @@ a.mobile-tab:hover {
   font: var(--kwf-card-v2-title-font) !important;
   margin: 0 auto !important;
   color: rgba(34, 56, 44, .72) !important;
-}
-#study #study-card .answer-scroll .kwf-v2-sound-rule b {
-  margin: 0 !important;
-  white-space: nowrap !important;
 }
 #study #study-card .answer-scroll .kwf-v2-example p,
 #study #study-card .answer-scroll .kwf-v2-collocation p,
@@ -446,7 +439,8 @@ a.mobile-tab:hover {
 #study #study-card .answer-scroll .kwf-v2-example > p,
 #study #study-card .answer-scroll .kwf-v2-collocation > p,
 #study #study-card .answer-scroll .kwf-v2-collocation > small,
-#study #study-card .answer-scroll .kwf-v2-sound-rule > p {
+#study #study-card .answer-scroll .kwf-v2-sound-rule > p,
+#study #study-card .answer-scroll .kwf-v2-definition > h4 {
   text-align: left !important;
 }
 #study #study-card .kwf-learning-extra { display: none !important; }

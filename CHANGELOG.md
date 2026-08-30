@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-30
 
+- V2 Card Information Hierarchy: aligned revealed-card block titles and body baselines, kept sound rules as optional independent blocks, and preserved the fixed Continue rail.
 - V2 Card Block Layout: replaced revealed-card divider sections with lightweight rounded Information Blocks, kept Continue fixed, and filtered generated collocation-meaning fallbacks from card rendering.
 - Added a read-only KRDict collocation coverage analyzer and recorded full-run coverage for future `collocationZh` repair planning without modifying vocabulary data.
 - V2 Card Section Layout: organized revealed-card content into definition, example, collocation, optional sound-rule, option-map, and Continue sections with a shared centered content column and fixed section spacing.
