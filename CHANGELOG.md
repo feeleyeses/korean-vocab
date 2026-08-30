@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-30
 
+- V2 Card Layout: applied the reference-card vertical budget so revealed definition, example, collocation, and optional sound-rule sections share lightweight rounded blocks with one left baseline across desktop and mobile.
 - V2 Card Reference Polish: restored definition and example to the main reading flow while keeping collocation and sound-rule content in lightweight rounded information blocks.
 - V2 Card Information Hierarchy: aligned revealed-card block titles and body baselines, kept sound rules as optional independent blocks, and preserved the fixed Continue rail.
 - V2 Card Block Layout: replaced revealed-card divider sections with lightweight rounded Information Blocks, kept Continue fixed, and filtered generated collocation-meaning fallbacks from card rendering.

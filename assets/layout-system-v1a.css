@@ -354,24 +354,12 @@ a.mobile-tab:hover {
 }
 #study #study-card .answer-scroll h4 {
   margin: 0 auto !important;
-  width: min(var(--kwf-card-v2-answer-max-w), 100%) !important;
+  width: 100% !important;
   font: var(--kwf-card-v2-body-font) !important;
-  text-align: center !important;
+  text-align: left !important;
 }
 #study #study-card .answer-scroll .kwf-v2-definition,
-#study #study-card .answer-scroll .kwf-v2-example {
-  display: grid !important;
-  justify-items: center !important;
-  gap: var(--kwf-card-v2-inner-gap) !important;
-  width: min(var(--kwf-card-v2-answer-max-w), 100%) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
+#study #study-card .answer-scroll .kwf-v2-example,
 #study #study-card .answer-scroll .kwf-v2-collocation,
 #study #study-card .answer-scroll .kwf-v2-sound-rule {
   display: grid !important;
@@ -388,7 +376,11 @@ a.mobile-tab:hover {
 }
 #study #study-card .answer-scroll .kwf-v2-definition::before {
   content: "释义";
-  display: none !important;
+  display: block !important;
+  font: var(--kwf-card-v2-title-font) !important;
+  margin: 0 !important;
+  text-align: left !important;
+  color: rgba(34, 56, 44, .72) !important;
 }
 #study #study-card .answer-scroll .kwf-v2-example b,
 #study #study-card .answer-scroll .kwf-v2-collocation b,
@@ -449,7 +441,8 @@ a.mobile-tab:hover {
 #study #study-card .answer-scroll .kwf-v2-example > p,
 #study #study-card .answer-scroll .kwf-v2-collocation > p,
 #study #study-card .answer-scroll .kwf-v2-collocation > small,
-#study #study-card .answer-scroll .kwf-v2-sound-rule > p {
+#study #study-card .answer-scroll .kwf-v2-sound-rule > p,
+#study #study-card .answer-scroll .kwf-v2-definition > h4 {
   text-align: left !important;
 }
 #study #study-card .kwf-learning-extra { display: none !important; }
