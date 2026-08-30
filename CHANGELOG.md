@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-30
 
+- V2 Reveal Card Redesign: replaced the patched revealed-card view with a rebuilt `kwf-reveal-v2` Header/Hero/Knowledge/Action flow and moved Continue into the normal document flow.
 - V2 Reveal Card Layout: rebuilt revealed study/review cards as a vertical flow layout so the hero, knowledge blocks, optional sound rules, answer map, and fixed Continue rail no longer overlap.
 - V2 Card Layout: applied the reference-card vertical budget so revealed definition, example, collocation, and optional sound-rule sections share lightweight rounded blocks with one left baseline across desktop and mobile.
 - V2 Card Reference Polish: restored definition and example to the main reading flow while keeping collocation and sound-rule content in lightweight rounded information blocks.

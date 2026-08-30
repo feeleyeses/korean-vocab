@@ -206,9 +206,68 @@ async function enhanceRevealData(){
     return [ko,zh];
   }));
 }
+function cloneInto(tag, className, source){
+  const el=document.createElement(tag); if(className)el.className=className;
+  if(source)el.innerHTML=source.innerHTML;
+  return el;
+}
+async function rebuildRevealCard(){
+  const card=document.querySelector('#study-card.study-card.revealed'); if(!card)return;
+  const sourceMeta=card.querySelector(':scope > .card-meta, .card-meta');
+  const sourceWord=card.querySelector(':scope > .word, .word');
+  const sourceAnswer=card.querySelector('.answer,.compact-answer');
+  const sourceScroll=sourceAnswer?.querySelector('.answer-scroll');
+  const continueButton=sourceAnswer?.querySelector('.continue')||card.querySelector('.continue');
+  if(!sourceMeta||!sourceWord||!sourceScroll||!continueButton)return;
+  const headword=txt(sourceWord.querySelector('h3'));
+  const data=await vocabulary();
+  const entry=data.entries?.find(e=>e.headword===headword);
+  const shell=card.querySelector(':scope > .kwf-reveal-v2')||document.createElement('div');
+  shell.className='kwf-reveal-v2';
+  shell.dataset.headword=headword;
+  const header=cloneInto('header','kwf-reveal-v2-header',sourceMeta);
+  const hero=document.createElement('section'); hero.className='kwf-reveal-v2-hero';
+  const word=document.createElement('h3'); word.className='kwf-reveal-v2-word'; word.textContent=headword;
+  const pronunciation=cloneInto('div','kwf-reveal-v2-pronunciation',sourceWord.querySelector('.pronunciation-stack'));
+  const status=cloneInto('div','kwf-reveal-v2-status',sourceWord.querySelector('.kwf-v2-status')||sourceScroll.querySelector('.kwf-v2-status'));
+  hero.replaceChildren(word,pronunciation,status);
+  const knowledge=document.createElement('section'); knowledge.className='kwf-reveal-v2-knowledge';
+  const makeBlock=(className,title,nodes)=>{
+    const block=document.createElement('section'); block.className=`kwf-reveal-v2-block ${className}`;
+    const b=document.createElement('b'); b.textContent=title;
+    block.appendChild(b);
+    for(const node of nodes.filter(Boolean))block.appendChild(node);
+    return block;
+  };
+  const definition=document.createElement('p'); definition.textContent=txt(sourceScroll.querySelector('.kwf-v2-definition h4'))||txt(sourceScroll.querySelector('h4'));
+  const exampleKo=document.createElement('p'); exampleKo.textContent=txt(sourceScroll.querySelector('.kwf-v2-example .sentence,.kwf-v2-example p'));
+  const exampleZh=document.createElement('small'); exampleZh.textContent=txt(sourceScroll.querySelector('.kwf-v2-example .sentence + p,.kwf-v2-example small'));
+  const collocations=(entry?.senses||[]).flatMap(s=>(s.collocations||[]).map(c=>({...c,zh:c?.zh&&c.zh!==s.glossZh?c.zh:''}))).filter(c=>c?.ko);
+  const collocationNodes=collocations.flatMap(c=>{const ko=document.createElement('p'); ko.textContent=`• ${c.ko}`; if(!c.zh)return [ko]; const zh=document.createElement('small'); zh.textContent=c.zh; return [ko,zh];});
+  if(!collocationNodes.length){
+    const fallbackKo=txt(sourceScroll.querySelector('.kwf-v2-collocation p'));
+    if(fallbackKo){const ko=document.createElement('p'); ko.textContent=fallbackKo.startsWith('•')?fallbackKo:`• ${fallbackKo}`; collocationNodes.push(ko);}
+  }
+  const soundRuleText=txt(sourceScroll.querySelector('.kwf-v2-sound-rule p'));
+  const soundRule=soundRuleText?Object.assign(document.createElement('p'),{textContent:soundRuleText}):null;
+  knowledge.appendChild(makeBlock('kwf-v2-definition','释义',[definition]));
+  if(exampleKo.textContent||exampleZh.textContent)knowledge.appendChild(makeBlock('kwf-v2-example','例句',[exampleKo,exampleZh.textContent?exampleZh:null]));
+  if(collocationNodes.length)knowledge.appendChild(makeBlock('kwf-v2-collocation','固定搭配',collocationNodes));
+  if(soundRule)knowledge.appendChild(makeBlock('kwf-v2-sound-rule','音变规则',[soundRule]));
+  const map=card.querySelector('details.answer-map');
+  if(map)knowledge.appendChild(map);
+  const action=document.createElement('footer'); action.className='kwf-reveal-v2-action'; action.appendChild(continueButton);
+  shell.replaceChildren(header,hero,knowledge,action);
+  if(!shell.parentElement)card.prepend(shell);
+  card.classList.add('kwf-reveal-v2-card');
+  for(const [p,v] of [['display','block'],['height','auto'],['min-height','0'],['max-height','none'],['padding','0'],['overflow','visible']])important(card,p,v);
+  for(const old of card.querySelectorAll(':scope > .card-meta,:scope > .word,:scope > .answer,:scope > .compact-answer'))important(old,'display','none');
+  for(const [p,v] of [['display','flex'],['align-items','flex-start'],['justify-content','center'],['height','auto'],['min-height','0'],['padding','0'],['margin-top','8px']])important(action,p,v);
+  for(const [p,v] of [['position','static'],['display','flex'],['align-items','center'],['justify-content','center'],['left','auto'],['right','auto'],['top','auto'],['bottom','auto'],['inset','auto'],['width','var(--kwf-primary-action-group-w)'],['min-width','var(--kwf-primary-action-group-w)'],['max-width','var(--kwf-primary-action-group-w)'],['height','var(--kwf-action-h)'],['min-height','var(--kwf-action-h)'],['max-height','var(--kwf-action-h)'],['transform','none'],['translate','none'],['margin','0']])important(continueButton,p,v);
+}
 function normalizeReviewStack(){const review=document.querySelector('#review'),board=document.querySelector('#review .review-board');if(!board)return;review?.style?.setProperty('--kwf-layout-lock-w','min(var(--kwf-review-container-w), 100%)','important');const title=document.querySelector('#review .review-title');important(title,'margin-bottom','var(--kwf-hero-bottom-gap)');board.classList.add('kwf-layout-review-stack');important(board,'display','flex');important(board,'flex-direction','column');important(board,'width','var(--kwf-layout-lock-w)');important(board,'max-width','var(--kwf-review-container-w)');important(board,'margin-left','auto');important(board,'margin-right','auto');for(const el of board.querySelectorAll('.review-module-grid,.learned-stat,.memory-profile,.memory-note,#learned-library-section')){important(el,'box-sizing','border-box');important(el,'width','100%');important(el,'max-width','100%');important(el,'grid-column','1 / -1');}const drawer=document.querySelector('#learned-library-section');for(const [p,v] of [['box-sizing','border-box'],['left','auto'],['right','auto'],['transform','none'],['translate','none'],['width','100%'],['max-width','var(--kwf-content-safe-w)'],['margin-left','auto'],['margin-right','auto']])important(drawer,p,v);}
 async function normalizeLearnedRows(){const data=await enrichment(),entries=data?.entries||{};for(const row of document.querySelectorAll('#learned-library-section .kwf-learned-row')){row.dataset.kwfLayoutSystem='layout-v1';const compact=matchMedia('(max-width:560px)').matches, mobile=matchMedia('(max-width:900px)').matches;for(const [p,v] of [['align-items','center'],['padding','var(--kwf-card-vpad) var(--kwf-card-pad)'],['height',compact?'132px':mobile?'124px':'112px'],['min-height',compact?'132px':mobile?'124px':'112px'],['max-height',compact?'132px':mobile?'124px':'112px']])important(row,p,v);const main=row.querySelector('.learned-word-main'),meaning=row.querySelector('.learned-word-meaning'),status=row.querySelector('.learned-word-status'),select=row.querySelector('.select-word'),collocation=row.querySelector('.kwf-row-collocation');for(const el of [main,meaning,status,select,collocation]){important(el,'align-self','center');important(el,'justify-content','center');important(el,'margin','0');}if(status){const statusW=compact?'110px':'180px';for(const [p,v] of [['box-sizing','border-box'],['display','grid'],['grid-template-columns','42px 54px'],['grid-template-rows','42px 18px'],['justify-content','center'],['align-content','center'],['justify-items','center'],['align-items','center'],['gap','6px 8px'],['width',statusW],['min-width',statusW],['max-width',statusW],['height','72px'],['min-height','72px'],['max-height','72px']])important(status,p,v);const fav=status.querySelector('.favorite-chip'),mark=status.querySelector('mark'),small=status.querySelector('small');important(fav,'display','grid');important(fav,'grid-row','1');important(fav,'grid-column','1');important(fav,'place-items','center');important(fav,'justify-self','center');important(fav,'align-self','center');important(fav,'line-height','1');important(fav,'text-align','center');important(fav,'transform','none');important(fav,'translate','none');important(mark,'grid-row','1');important(mark,'grid-column','2');important(mark,'justify-self','center');important(mark,'align-self','center');important(mark,'min-width','54px');important(mark,'white-space','nowrap');important(small,'grid-row','2');important(small,'grid-column','1 / 3');important(small,'align-self','center');important(small,'justify-self','center');important(small,'white-space','nowrap');}const word=txt(main?.querySelector('b,strong'));if(!word)continue;const collocations=entries[word]?.collocations?.slice(0,2)||[];let host=row.querySelector('.kwf-row-collocation');if(!collocations.length){host?.remove();continue;}if(!host){host=document.createElement('div');host.className='kwf-row-collocation';row.appendChild(host);}important(host,'align-self','center');important(host,'justify-content','center');host.replaceChildren(...collocations.map(item=>{const s=document.createElement('span');s.textContent=item;s.title=item;return s;}));}}
-async function apply(){state.scheduled=false;injectPolishStyles();document.documentElement.dataset.kwfLayoutSystem='layout-v1';document.documentElement.dataset.kwfLayoutAuthority='layout-system';window.__KWF_LAYOUT_SYSTEM_READY__=true;hideMisplacedPlacement();normalizeCard();await enhanceRevealData();normalizeCard();normalizeReviewStack();await normalizeLearnedRows();}
+async function apply(){state.scheduled=false;injectPolishStyles();document.documentElement.dataset.kwfLayoutSystem='layout-v1';document.documentElement.dataset.kwfLayoutAuthority='layout-system';window.__KWF_LAYOUT_SYSTEM_READY__=true;hideMisplacedPlacement();normalizeCard();await enhanceRevealData();await rebuildRevealCard();normalizeReviewStack();await normalizeLearnedRows();}
 function schedule(){if(state.scheduled)return;state.scheduled=true;requestAnimationFrame(apply);}
 const observer=new MutationObserver(schedule);
 function boot(){window.__KWF_LAYOUT_SYSTEM_READY__=true;injectPolishStyles();observer.observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['class','open']});addEventListener('resize',schedule,{passive:true});schedule();}
