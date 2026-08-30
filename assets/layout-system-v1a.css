@@ -724,6 +724,184 @@ a.mobile-tab:hover {
   max-height: var(--kwf-action-h) !important;
 }
 
+#study #study-card.study-card.kwf-card-v3-card {
+  display: block !important;
+  height: var(--kwf-card-h) !important;
+  min-height: var(--kwf-card-h) !important;
+  max-height: var(--kwf-card-h) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+#study #study-card.study-card.kwf-card-v3-card > :not(.kwf-card-v3) {
+  display: none !important;
+}
+#study #study-card .kwf-card-v3 {
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  gap: 10px !important;
+  padding: 0 22px 18px !important;
+  border-radius: inherit !important;
+}
+#study #study-card .kwf-card-v3-progress {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: calc(100% + 44px) !important;
+  height: 6px !important;
+  margin: 0 -22px 6px !important;
+  border-radius: 22px 22px 0 0 !important;
+  overflow: hidden !important;
+  background: rgba(31, 61, 54, .12) !important;
+}
+#study #study-card .kwf-card-v3-progress > i {
+  display: block !important;
+  height: 100% !important;
+  border-radius: inherit !important;
+}
+#study #study-card .kwf-card-v3-header,
+#study #study-card .kwf-card-v3-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+  width: 100% !important;
+}
+#study #study-card .kwf-card-v3-hero {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+#study #study-card .kwf-card-v3-word {
+  margin: 0 !important;
+  font: 800 clamp(48px, 4.5vw, 70px)/1.02 Arial, "Noto Sans KR", "Microsoft YaHei", sans-serif !important;
+  text-align: center !important;
+}
+#study #study-card .kwf-card-v3-meta {
+  display: grid !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  width: min(var(--kwf-card-v2-answer-max-w), 100%) !important;
+  margin: 0 auto !important;
+  font: var(--kwf-card-v2-support-font) !important;
+}
+#study #study-card .kwf-card-v3-meta p {
+  display: grid !important;
+  grid-template-columns: 70px minmax(0, auto) !important;
+  align-items: baseline !important;
+  gap: 12px !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+#study #study-card .kwf-card-v3-meta span {
+  color: rgba(34, 56, 44, .62) !important;
+  text-align: right !important;
+}
+#study #study-card .kwf-card-v3-status {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  font: var(--kwf-card-v2-support-font) !important;
+  text-align: center !important;
+}
+#study #study-card .kwf-card-v3-knowledge {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: var(--kwf-card-v2-block-gap) !important;
+  width: 100% !important;
+}
+#study #study-card .kwf-card-v3-block {
+  box-sizing: border-box !important;
+  display: grid !important;
+  justify-items: stretch !important;
+  gap: var(--kwf-card-v2-inner-gap) !important;
+  width: min(var(--kwf-card-v2-answer-max-w), 100%) !important;
+  min-height: 34px !important;
+  padding: var(--kwf-card-v2-block-pad) !important;
+  border: var(--kwf-card-v2-block-border) !important;
+  border-radius: var(--kwf-card-v2-block-radius) !important;
+  background: var(--kwf-card-v2-block-bg) !important;
+  text-align: left !important;
+}
+#study #study-card .kwf-card-v3-block b,
+#study #study-card .kwf-card-v3-block p,
+#study #study-card .kwf-card-v3-block small {
+  width: 100% !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+#study #study-card .kwf-card-v3-block b {
+  font: var(--kwf-card-v2-title-font) !important;
+  color: rgba(34, 56, 44, .72) !important;
+}
+#study #study-card .kwf-card-v3-block p { font: var(--kwf-card-v2-body-font) !important; }
+#study #study-card .kwf-card-v3-block small { font: var(--kwf-card-v2-support-font) !important; }
+#study #study-card .kwf-card-v3-spacer {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+}
+#study #study-card .kwf-card-v3-footer {
+  flex-direction: column !important;
+  justify-content: center !important;
+  margin-top: 0 !important;
+}
+#study #study-card .kwf-card-v3-shortcut {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: var(--kwf-secondary-action-w) !important;
+  min-width: var(--kwf-secondary-action-w) !important;
+  max-width: var(--kwf-secondary-action-w) !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  max-height: 34px !important;
+  padding: 0 14px !important;
+  margin: 0 !important;
+  border-width: 0 !important;
+}
+#study #study-card .kwf-card-v3-actions {
+  display: grid !important;
+  grid-template-columns: repeat(3, var(--kwf-primary-action-w)) !important;
+  gap: var(--kwf-action-gap) !important;
+  width: var(--kwf-primary-action-group-w) !important;
+  height: var(--kwf-action-h) !important;
+}
+#study #study-card .kwf-card-v3-actions > button,
+#study #study-card .kwf-card-v3-continue {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: var(--kwf-action-h) !important;
+  min-height: var(--kwf-action-h) !important;
+  max-height: var(--kwf-action-h) !important;
+  margin: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  pointer-events: auto !important;
+}
+#study #study-card .kwf-card-v3-actions > button {
+  width: var(--kwf-primary-action-w) !important;
+  min-width: var(--kwf-primary-action-w) !important;
+  max-width: var(--kwf-primary-action-w) !important;
+  padding: 0 14px !important;
+}
+#study #study-card .kwf-card-v3-continue {
+  position: static !important;
+  width: var(--kwf-primary-action-group-w) !important;
+  min-width: var(--kwf-primary-action-group-w) !important;
+  max-width: var(--kwf-primary-action-group-w) !important;
+  padding: 0 18px !important;
+  border-width: 0 !important;
+}
+
 /* Review initial state: word block is identical to learning; question owns remaining space. */
 #study #study-card .review-question {
   flex: 1 1 0 !important;
