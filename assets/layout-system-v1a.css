@@ -465,6 +465,126 @@ a.mobile-tab:hover {
   border-width: 0 !important;
 }
 
+/* V2 reveal card: real vertical flow. Header, hero, cards, and fixed action rail
+   are separate layers; content grows by pushing the next block down. */
+#study #study-card.study-card.revealed {
+  height: auto !important;
+  min-height: var(--kwf-card-h) !important;
+  max-height: none !important;
+  padding-bottom: calc(var(--kwf-action-h) + var(--kwf-card-v2-rail-bottom) + 18px) !important;
+  overflow: visible !important;
+}
+#study #study-card.study-card.revealed .card-meta {
+  flex: 0 0 auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  padding: 12px 0 6px !important;
+}
+#study #study-card.study-card.revealed .word {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  place-items: center !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  padding: 6px 0 8px !important;
+  gap: 6px !important;
+  overflow: visible !important;
+}
+#study #study-card.study-card.revealed .word h3 {
+  font-size: clamp(48px, 4.5vw, 70px) !important;
+  line-height: 1.02 !important;
+}
+#study #study-card.study-card.revealed .pronunciation-stack {
+  position: static !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 4px 12px !important;
+  width: min(var(--kwf-card-v2-answer-max-w), 100%) !important;
+  margin: 0 auto !important;
+}
+#study #study-card.study-card.revealed .pronunciation-stack .sound-rule {
+  flex: 0 0 100% !important;
+  justify-content: center !important;
+}
+#study #study-card.study-card.revealed .word .kwf-v2-status {
+  position: static !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: auto !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  font: var(--kwf-card-v2-support-font) !important;
+  text-align: center !important;
+}
+#study #study-card.study-card.revealed .answer,
+#study #study-card.study-card.revealed .compact-answer {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+#study #study-card.study-card.revealed .answer-scroll {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: var(--kwf-card-v2-block-gap) !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  padding: 0 10px !important;
+  overflow: visible !important;
+}
+#study #study-card.study-card.revealed .answer-scroll .kwf-v2-status {
+  display: none !important;
+}
+#study #study-card.study-card.revealed .answer-map[open] {
+  position: static !important;
+  inset: auto !important;
+  display: grid !important;
+  grid-template-rows: auto auto !important;
+  width: min(var(--kwf-card-v2-answer-max-w), 100%) !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 8px auto 0 !important;
+  overflow: visible !important;
+  z-index: auto !important;
+  transform: none !important;
+  translate: none !important;
+}
+#study #study-card.study-card.revealed .answer-map[open] > summary {
+  flex: 0 0 auto !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  max-height: none !important;
+}
+#study #study-card.study-card.revealed .answer-map[open] .option-map-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-template-rows: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
 /* Review initial state: word block is identical to learning; question owns remaining space. */
 #study #study-card .review-question {
   flex: 1 1 0 !important;
