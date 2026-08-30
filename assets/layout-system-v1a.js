@@ -216,11 +216,65 @@ function cloneInto(tag, className, source){
   return el;
 }
 function cloneDetails(source){
-  const clone=document.createElement('details');
-  clone.className=source.className;
-  clone.innerHTML=source.innerHTML;
-  clone.open=source.open;
+  const clone=document.createElement('section');
+  clone.className='answer-map kwf-card-v3-answer-map';
+  const toggle=document.createElement('button');
+  toggle.type='button';
+  toggle.className='kwf-card-v3-answer-map-toggle';
+  toggle.textContent=txt(source.querySelector(':scope > summary'))||'查看选项对应韩文';
+  const list=source.querySelector('.option-map-list')?.cloneNode(true);
+  if(list)clone.append(toggle,list); else clone.append(toggle);
+  const setOpen=open=>{
+    clone.classList.toggle('is-open',open);
+    toggle.setAttribute('aria-expanded',String(open));
+    if(list)list.hidden=!open;
+    normalizeAnswerMapClone(clone);
+  };
+  toggle.addEventListener('click',event=>{
+    event.preventDefault();
+    event.stopPropagation();
+    setOpen(!clone.classList.contains('is-open'));
+  });
+  setOpen(source.open);
   return clone;
+}
+function normalizeAnswerMapClone(map){
+  const open=map.classList.contains('is-open')||map.open;
+  const summary=map.querySelector(':scope > summary, :scope > .kwf-card-v3-answer-map-toggle');
+  const list=map.querySelector('.option-map-list');
+  const maxH=window.matchMedia('(max-width: 560px)').matches?'116px':'128px';
+  const openH=window.matchMedia('(max-width: 560px)').matches?'88px':'96px';
+  const listH=window.matchMedia('(max-width: 560px)').matches?'56px':'64px';
+  for(const [p,v] of [
+    ['box-sizing','border-box'],['position','static'],['inset','auto'],['display',open?'grid':'block'],
+    ['grid-template-rows',open?'34px minmax(0, 1fr)':'none'],['width','min(100%, var(--kwf-card-v2-answer-max-w))'],
+    ['height',open?openH:'34px'],['min-height',open?openH:'0'],['max-height',open?maxH:'34px'],['flex',open?`0 0 ${openH}`:'0 0 34px'],['margin','0 auto'],
+    ['padding','0'],['z-index','auto'],['transform','none'],['translate','none'],['overflow','hidden'],
+    ['border','1px solid rgba(18,49,38,.14)'],['border-radius','16px'],['background','#fffdf7'],
+    ['box-shadow','0 7px 18px rgba(18,49,38,.06)'],['pointer-events','auto']
+  ])important(map,p,v);
+  if(summary){
+    for(const [p,v] of [
+      ['box-sizing','border-box'],['display','flex'],['align-items','center'],['justify-content','center'],
+      ['height','34px'],['min-height','34px'],['max-height','34px'],['margin','0'],['padding','0 12px'],
+      ['cursor','pointer'],['font','var(--kwf-card-v2-support-font)'],['line-height','1'],['text-align','center'],
+      ['background','#fffdf7'],['border-bottom',open?'1px solid rgba(18,49,38,.1)':'0']
+    ])important(summary,p,v);
+  }
+  if(list){
+    for(const [p,v] of [
+      ['box-sizing','border-box'],['display','grid'],['grid-template-columns','repeat(2, minmax(0, 1fr))'],
+      ['grid-template-rows','none'],['gap','6px'],['width','100%'],['height','auto'],['min-height','0'],
+      ['max-height',listH],['margin','0'],['padding','8px'],['overflow','auto']
+    ])important(list,p,v);
+    for(const article of list.querySelectorAll('article')){
+      for(const [p,v] of [
+        ['box-sizing','border-box'],['display','grid'],['align-content','center'],['justify-items','center'],
+        ['min-width','0'],['min-height','34px'],['height','auto'],['margin','0'],['padding','6px 8px'],
+        ['gap','3px'],['border-radius','12px'],['overflow','hidden'],['text-align','center']
+      ])important(article,p,v);
+    }
+  }
 }
 function proxyButton(source, className, label){
   if(!source)return null;
@@ -233,7 +287,20 @@ function proxyButton(source, className, label){
   button.addEventListener('click',event=>{
     event.preventDefault();
     event.stopPropagation();
-    source.click();
+    const findCurrent=()=>label==='继续'
+      ? document.querySelector('#study-card > .answer .continue, #study-card > .compact-answer .continue')
+      : source;
+    const clickTarget=attempt=>{
+      const target=findCurrent()||source;
+      if(target.disabled&&attempt<8){
+        window.setTimeout(()=>clickTarget(attempt+1),80);
+        return;
+      }
+      target.dispatchEvent(new MouseEvent('mousedown',{bubbles:true,cancelable:true,view:window}));
+      target.dispatchEvent(new MouseEvent('mouseup',{bubbles:true,cancelable:true,view:window}));
+      target.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true,view:window}));
+    };
+    clickTarget(0);
   });
   return button;
 }
@@ -280,6 +347,7 @@ async function rebuildCardV3(){
     const fill=shell.querySelector('.kwf-card-v3-progress > i');
     const sourceProgress=document.querySelector('#study .progress-panel .progress i');
     if(fill&&sourceProgress)fill.setAttribute('style',sourceProgress.getAttribute('style')||'');
+    for(const map of shell.querySelectorAll('.kwf-card-v3-answer-map'))normalizeAnswerMapClone(map);
     card.classList.add('kwf-card-v3-card');
     for(const [p,v] of [['display','block'],['height','var(--kwf-card-h)'],['min-height','var(--kwf-card-h)'],['max-height','var(--kwf-card-h)'],['padding','0'],['overflow','hidden']])important(card,p,v);
     hideCardOriginals(card);
@@ -308,6 +376,7 @@ async function rebuildCardV3(){
   hero.replaceChildren(word,meta);
   const knowledge=document.createElement('section');
   knowledge.className='kwf-card-v3-knowledge';
+  let answerMap=null;
   const block=(className,title,nodes)=>{
     const section=document.createElement('section');
     section.className=`kwf-card-v3-block ${className}`;
@@ -336,8 +405,9 @@ async function rebuildCardV3(){
     const soundRuleText=txt(sourceScroll.querySelector('.kwf-v2-sound-rule p'));
     if(soundRuleText){const sound=document.createElement('p');sound.textContent=soundRuleText;knowledge.appendChild(block('kwf-v2-sound-rule','音变规则',[sound]));}
     const map=card.querySelector('details.answer-map');
-    if(map)knowledge.appendChild(cloneDetails(map));
+    if(map)answerMap=cloneDetails(map);
   }
+  shell.classList.toggle('kwf-card-v3-has-answer-map',Boolean(answerMap));
   const spacer=document.createElement('div');
   spacer.className='kwf-card-v3-spacer';
   const footer=document.createElement('footer');
@@ -364,6 +434,7 @@ async function rebuildCardV3(){
   shell.replaceChildren(progress,header,hero);
   if(revealed&&status.childNodes.length)shell.appendChild(status);
   if(revealed)shell.appendChild(knowledge);
+  if(answerMap)shell.appendChild(answerMap);
   shell.append(spacer,footer);
   if(!shell.parentElement)card.prepend(shell);
   card.classList.add('kwf-card-v3-card');
