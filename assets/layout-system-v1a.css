@@ -874,7 +874,15 @@ a.mobile-tab:hover {
   width: var(--kwf-primary-action-group-w) !important;
   height: var(--kwf-action-h) !important;
 }
+#study #study-card .kwf-card-v3-review-actions {
+  display: grid !important;
+  grid-template-columns: repeat(2, var(--kwf-review-action-w)) !important;
+  grid-template-rows: repeat(2, var(--kwf-action-h)) !important;
+  gap: var(--kwf-action-gap) !important;
+  width: calc((2 * var(--kwf-review-action-w)) + var(--kwf-action-gap)) !important;
+}
 #study #study-card .kwf-card-v3-actions > button,
+#study #study-card .kwf-card-v3-review-actions > button,
 #study #study-card .kwf-card-v3-continue {
   display: flex !important;
   align-items: center !important;
@@ -886,12 +894,32 @@ a.mobile-tab:hover {
   transform: none !important;
   translate: none !important;
   pointer-events: auto !important;
+  cursor: pointer !important;
+  font: var(--kwf-button-font) !important;
+  border: 1px solid rgba(30, 77, 56, .18) !important;
+  border-radius: var(--kwf-button-radius) !important;
+  background: #1e4d38 !important;
+  color: #fffdf5 !important;
+  box-shadow: 0 10px 22px rgba(18, 49, 38, .14) !important;
+  transition-property: background-color, color, border-color, box-shadow, opacity !important;
+  transition-duration: .16s !important;
+  transition-timing-function: ease !important;
 }
 #study #study-card .kwf-card-v3-actions > button {
   width: var(--kwf-primary-action-w) !important;
   min-width: var(--kwf-primary-action-w) !important;
   max-width: var(--kwf-primary-action-w) !important;
   padding: 0 14px !important;
+}
+#study #study-card .kwf-card-v3-review-actions > button {
+  width: var(--kwf-review-action-w) !important;
+  min-width: var(--kwf-review-action-w) !important;
+  max-width: var(--kwf-review-action-w) !important;
+  padding: 0 14px !important;
+  background: #fffdf5 !important;
+  color: #1e4d38 !important;
+  border-color: rgba(30, 77, 56, .28) !important;
+  box-shadow: 0 8px 18px rgba(18, 49, 38, .08) !important;
 }
 #study #study-card .kwf-card-v3-continue {
   position: static !important;
@@ -900,6 +928,41 @@ a.mobile-tab:hover {
   max-width: var(--kwf-primary-action-group-w) !important;
   padding: 0 18px !important;
   border-width: 0 !important;
+}
+#study #study-card .kwf-card-v3-actions > button:hover,
+#study #study-card .kwf-card-v3-continue:hover {
+  background: #173d2c !important;
+  box-shadow: 0 12px 26px rgba(18, 49, 38, .2) !important;
+}
+#study #study-card .kwf-card-v3-review-actions > button:hover,
+#study #study-card .kwf-card-v3-shortcut:hover {
+  background: #eef6ef !important;
+  border-color: rgba(30, 77, 56, .42) !important;
+  box-shadow: 0 10px 22px rgba(18, 49, 38, .12) !important;
+}
+#study #study-card .kwf-card-v3-actions > button:active,
+#study #study-card .kwf-card-v3-review-actions > button:active,
+#study #study-card .kwf-card-v3-continue:active,
+#study #study-card .kwf-card-v3-shortcut:active {
+  background: #143425 !important;
+  color: #fffdf5 !important;
+  box-shadow: 0 5px 12px rgba(18, 49, 38, .14) !important;
+}
+#study #study-card .kwf-card-v3-actions > button:focus-visible,
+#study #study-card .kwf-card-v3-review-actions > button:focus-visible,
+#study #study-card .kwf-card-v3-continue:focus-visible,
+#study #study-card .kwf-card-v3-shortcut:focus-visible {
+  outline: 3px solid rgba(246, 198, 91, .7) !important;
+  outline-offset: 3px !important;
+}
+#study #study-card .kwf-card-v3-shortcut {
+  cursor: pointer !important;
+  border: 1px solid rgba(30, 77, 56, .22) !important;
+  border-radius: var(--kwf-button-radius) !important;
+  background: #fffdf5 !important;
+  color: #1e4d38 !important;
+  box-shadow: 0 7px 16px rgba(18, 49, 38, .07) !important;
+  font: var(--kwf-button-font) !important;
 }
 
 /* Review initial state: word block is identical to learning; question owns remaining space. */

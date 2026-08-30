@@ -271,9 +271,11 @@ async function rebuildCardV3(){
   const sourceAnswer=card.querySelector(':scope > .answer, :scope > .compact-answer');
   const sourceScroll=sourceAnswer?.querySelector('.answer-scroll');
   const pre=card.querySelector(':scope > .pre-answer');
+  const reviewQuestion=card.querySelector(':scope > .review-question');
   const revealed=Boolean(sourceAnswer&&sourceScroll);
   const headword=txt(sourceWord.querySelector('h3'));
-  const signature=[revealed?'revealed':'initial',card.className,headword,txt(sourceMeta),txt(sourceWord),txt(sourceAnswer||pre)].join('|');
+  const mode=revealed?'revealed':reviewQuestion?'review-initial':'learn-initial';
+  const signature=[mode,card.className,headword,txt(sourceMeta),txt(sourceWord),txt(sourceAnswer||pre||reviewQuestion)].join('|');
   if(shell.dataset.signature===signature){
     const fill=shell.querySelector('.kwf-card-v3-progress > i');
     const sourceProgress=document.querySelector('#study .progress-panel .progress i');
@@ -344,6 +346,12 @@ async function rebuildCardV3(){
     const originalContinue=sourceAnswer.querySelector('.continue');
     const cont=proxyButton(originalContinue,'kwf-card-v3-continue','继续');
     if(cont)footer.appendChild(cont);
+  }else if(reviewQuestion){
+    const group=document.createElement('div');
+    group.className='kwf-card-v3-review-actions';
+    const originals=[...reviewQuestion.querySelectorAll(':scope > div > button')];
+    for(const original of originals)group.appendChild(proxyButton(original,'',txt(original)));
+    footer.appendChild(group);
   }else if(pre){
     const shortcut=proxyButton(pre.querySelector(':scope > .show-shortcut'),'kwf-card-v3-shortcut show-shortcut','直接看答案');
     const group=document.createElement('div');

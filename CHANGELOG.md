@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-30
 
+- Card Interaction Recovery: restored visible button affordance for learning actions, secondary direct reveal, review options, and Continue while keeping learning/review cards on the shared `kwf-card-v3` layout.
 - Card Structure Recovery: rebuilt the visible study card shell for both initial and revealed states with ordered Header/Hero/Meta/Status/Information/Spacer/Footer regions, restoring learning actions, direct reveal, fixed-height parity, and a normal clickable Continue button.
 - V2 Reveal Card Bugfix: attached the progress bar to the revealed card, restored fixed learning/reveal card height parity, kept Continue clickable through a React-safe proxy, and removed stale reveal shells after state changes.
 - V2 Reveal Card Redesign: replaced the patched revealed-card view with a rebuilt `kwf-reveal-v2` Header/Hero/Knowledge/Action flow and moved Continue into the normal document flow.
