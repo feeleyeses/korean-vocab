@@ -586,11 +586,11 @@ a.mobile-tab:hover {
 }
 #study #study-card.study-card.revealed.kwf-reveal-v2-card {
   display: block !important;
-  height: auto !important;
-  min-height: 0 !important;
-  max-height: none !important;
+  height: var(--kwf-card-h) !important;
+  min-height: var(--kwf-card-h) !important;
+  max-height: var(--kwf-card-h) !important;
   padding: 0 !important;
-  overflow: visible !important;
+  overflow: hidden !important;
 }
 #study #study-card.study-card.revealed.kwf-reveal-v2-card > .card-meta,
 #study #study-card.study-card.revealed.kwf-reveal-v2-card > .word,
@@ -604,10 +604,26 @@ a.mobile-tab:hover {
   flex-direction: column !important;
   gap: 10px !important;
   width: 100% !important;
-  min-height: var(--kwf-card-h) !important;
-  padding: 14px 22px 18px !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  padding: 0 22px 18px !important;
   border-radius: inherit !important;
   background: transparent !important;
+}
+#study #study-card .kwf-reveal-v2-progress {
+  box-sizing: border-box !important;
+  display: block !important;
+  width: calc(100% + 44px) !important;
+  height: 6px !important;
+  margin: 0 -22px 6px !important;
+  border-radius: 22px 22px 0 0 !important;
+  overflow: hidden !important;
+  background: rgba(31, 61, 54, .12) !important;
+}
+#study #study-card .kwf-reveal-v2-progress > i {
+  display: block !important;
+  height: 100% !important;
+  border-radius: inherit !important;
 }
 #study #study-card .kwf-reveal-v2-header {
   display: flex !important;
@@ -690,7 +706,7 @@ a.mobile-tab:hover {
   height: auto !important;
   min-height: 0 !important;
   padding: 0 !important;
-  margin-top: 8px !important;
+  margin-top: auto !important;
 }
 #study #study-card .kwf-reveal-v2-action .continue {
   position: static !important;
