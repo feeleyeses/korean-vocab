@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-30
 
+- Review Reveal Layout Fix: removed internal scrolling from the option-Korean drawer, kept sound-rule review cards at the fixed card height, and compacted the review reveal drawer into a complete 2x2 grid above the fixed Continue action.
 - V2 Card Bugfix: constrained the review reveal option-Korean drawer inside the v3 card flow so sound-rule cards keep Continue visible and clickable, and restored the shared rounded button token for learning, shortcut, review, and Continue actions.
 - Card Interaction Recovery: restored visible button affordance for learning actions, secondary direct reveal, review options, and Continue while keeping learning/review cards on the shared `kwf-card-v3` layout.
 - Card Structure Recovery: rebuilt the visible study card shell for both initial and revealed states with ordered Header/Hero/Meta/Status/Information/Spacer/Footer regions, restoring learning actions, direct reveal, fixed-height parity, and a normal clickable Continue button.

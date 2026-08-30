@@ -1,4 +1,4 @@
-const state = { enrichment: null, vocabulary: null, scheduled: false, rebuildingCard: false };
+const state = { enrichment: null, vocabulary: null, scheduled: false, rebuildingCard: false, answerMap: null };
 const important = (el, prop, value) => el?.style?.setProperty(prop, value, 'important');
 const txt = el => (el?.textContent || '').replace(/\s+/g, ' ').trim();
 
@@ -215,7 +215,7 @@ function cloneInto(tag, className, source){
   if(source)el.innerHTML=source.innerHTML;
   return el;
 }
-function cloneDetails(source){
+function cloneDetails(source,key=''){
   const clone=document.createElement('section');
   clone.className='answer-map kwf-card-v3-answer-map';
   const toggle=document.createElement('button');
@@ -225,6 +225,7 @@ function cloneDetails(source){
   const list=source.querySelector('.option-map-list')?.cloneNode(true);
   if(list)clone.append(toggle,list); else clone.append(toggle);
   const setOpen=open=>{
+    state.answerMap={key,open};
     clone.classList.toggle('is-open',open);
     toggle.setAttribute('aria-expanded',String(open));
     if(list)list.hidden=!open;
@@ -235,16 +236,16 @@ function cloneDetails(source){
     event.stopPropagation();
     setOpen(!clone.classList.contains('is-open'));
   });
-  setOpen(source.open);
+  setOpen(source.open||(state.answerMap?.key===key&&state.answerMap.open));
   return clone;
 }
 function normalizeAnswerMapClone(map){
   const open=map.classList.contains('is-open')||map.open;
   const summary=map.querySelector(':scope > summary, :scope > .kwf-card-v3-answer-map-toggle');
   const list=map.querySelector('.option-map-list');
-  const maxH=window.matchMedia('(max-width: 560px)').matches?'116px':'128px';
-  const openH=window.matchMedia('(max-width: 560px)').matches?'88px':'96px';
-  const listH=window.matchMedia('(max-width: 560px)').matches?'56px':'64px';
+  const maxH=window.matchMedia('(max-width: 560px)').matches?'140px':'146px';
+  const openH=window.matchMedia('(max-width: 560px)').matches?'140px':'146px';
+  const listH=window.matchMedia('(max-width: 560px)').matches?'104px':'110px';
   for(const [p,v] of [
     ['box-sizing','border-box'],['position','static'],['inset','auto'],['display',open?'grid':'block'],
     ['grid-template-rows',open?'34px minmax(0, 1fr)':'none'],['width','min(100%, var(--kwf-card-v2-answer-max-w))'],
@@ -262,17 +263,24 @@ function normalizeAnswerMapClone(map){
     ])important(summary,p,v);
   }
   if(list){
+    if(!open){
+      for(const [p,v] of [['display','none'],['height','0'],['min-height','0'],['max-height','0'],['padding','0'],['overflow','hidden']])important(list,p,v);
+      return;
+    }
     for(const [p,v] of [
       ['box-sizing','border-box'],['display','grid'],['grid-template-columns','repeat(2, minmax(0, 1fr))'],
-      ['grid-template-rows','none'],['gap','6px'],['width','100%'],['height','auto'],['min-height','0'],
-      ['max-height',listH],['margin','0'],['padding','8px'],['overflow','auto']
+      ['grid-template-rows','repeat(2, minmax(0, 1fr))'],['gap','4px'],['width','100%'],['height',listH],['min-height',listH],
+      ['max-height',listH],['margin','0'],['padding','5px'],['overflow','hidden']
     ])important(list,p,v);
     for(const article of list.querySelectorAll('article')){
       for(const [p,v] of [
         ['box-sizing','border-box'],['display','grid'],['align-content','center'],['justify-items','center'],
-        ['min-width','0'],['min-height','34px'],['height','auto'],['margin','0'],['padding','6px 8px'],
-        ['gap','3px'],['border-radius','12px'],['overflow','hidden'],['text-align','center']
+        ['min-width','0'],['min-height','0'],['height','auto'],['margin','0'],['padding','3px 5px'],
+        ['gap','2px'],['border-radius','11px'],['overflow','hidden'],['text-align','center']
       ])important(article,p,v);
+      for(const b of article.querySelectorAll('b')){important(b,'font-size','11px');important(b,'line-height','1.05');}
+      for(const span of article.querySelectorAll('span')){important(span,'font-size','14px');important(span,'line-height','1.05');}
+      for(const small of article.querySelectorAll('small'))important(small,'display','none');
     }
   }
 }
@@ -405,7 +413,7 @@ async function rebuildCardV3(){
     const soundRuleText=txt(sourceScroll.querySelector('.kwf-v2-sound-rule p'));
     if(soundRuleText){const sound=document.createElement('p');sound.textContent=soundRuleText;knowledge.appendChild(block('kwf-v2-sound-rule','音变规则',[sound]));}
     const map=card.querySelector('details.answer-map');
-    if(map)answerMap=cloneDetails(map);
+    if(map)answerMap=cloneDetails(map,`${mode}|${headword}`);
   }
   shell.classList.toggle('kwf-card-v3-has-answer-map',Boolean(answerMap));
   const spacer=document.createElement('div');
