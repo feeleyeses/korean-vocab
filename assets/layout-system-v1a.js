@@ -243,14 +243,13 @@ function normalizeAnswerMapClone(map){
   const open=map.classList.contains('is-open')||map.open;
   const summary=map.querySelector(':scope > summary, :scope > .kwf-card-v3-answer-map-toggle');
   const list=map.querySelector('.option-map-list');
-  const maxH='116px';
-  const openH='116px';
-  const listH='80px';
+  const overlayH=window.matchMedia('(max-width: 560px)').matches?'138px':'146px';
+  const listH=window.matchMedia('(max-width: 560px)').matches?'98px':'106px';
   for(const [p,v] of [
-    ['box-sizing','border-box'],['position','static'],['inset','auto'],['display',open?'grid':'block'],
-    ['grid-template-rows',open?'34px minmax(0, 1fr)':'none'],['width','min(100%, var(--kwf-card-v2-answer-max-w))'],
-    ['height',open?openH:'34px'],['min-height',open?openH:'0'],['max-height',open?maxH:'34px'],['flex',open?`0 0 ${openH}`:'0 0 34px'],['margin','0 auto'],
-    ['padding','0'],['z-index','auto'],['transform','none'],['translate','none'],['overflow','hidden'],
+    ['box-sizing','border-box'],['position','relative'],['inset','auto'],['display','block'],
+    ['grid-template-rows','none'],['width','min(100%, var(--kwf-card-v2-answer-max-w))'],
+    ['height','34px'],['min-height','34px'],['max-height','34px'],['flex','0 0 34px'],['margin','0 auto'],
+    ['padding','0'],['z-index',open?'8':'1'],['transform','none'],['translate','none'],['overflow','visible'],
     ['border','1px solid rgba(18,49,38,.14)'],['border-radius','16px'],['background','#fffdf7'],
     ['box-shadow','0 7px 18px rgba(18,49,38,.06)'],['pointer-events','auto']
   ])important(map,p,v);
@@ -259,7 +258,7 @@ function normalizeAnswerMapClone(map){
       ['box-sizing','border-box'],['display','flex'],['align-items','center'],['justify-content','center'],
       ['height','34px'],['min-height','34px'],['max-height','34px'],['margin','0'],['padding','0 12px'],
       ['cursor','pointer'],['font','var(--kwf-card-v2-support-font)'],['line-height','1'],['text-align','center'],
-      ['background','#fffdf7'],['border-bottom',open?'1px solid rgba(18,49,38,.1)':'0']
+      ['background','#fffdf7'],['border-bottom','0'],['border-radius','16px'],['position','relative'],['z-index','2']
     ])important(summary,p,v);
   }
   if(list){
@@ -268,18 +267,20 @@ function normalizeAnswerMapClone(map){
       return;
     }
     for(const [p,v] of [
-      ['box-sizing','border-box'],['display','grid'],['grid-template-columns','repeat(2, minmax(0, 1fr))'],
-      ['grid-template-rows','repeat(2, minmax(0, 1fr))'],['gap','4px'],['width','100%'],['height',listH],['min-height',listH],
-      ['max-height',listH],['margin','0'],['padding','5px'],['overflow','hidden']
+      ['box-sizing','border-box'],['position','absolute'],['left','0'],['right','0'],['bottom','32px'],['z-index','1'],
+      ['display','grid'],['grid-template-columns','repeat(2, minmax(0, 1fr))'],
+      ['grid-template-rows','repeat(2, minmax(0, 1fr))'],['gap','6px'],['width','100%'],['height',listH],['min-height',listH],
+      ['max-height',listH],['margin','0'],['padding','8px'],['overflow','hidden'],['border','1px solid rgba(18,49,38,.12)'],
+      ['border-radius','16px 16px 10px 10px'],['background','#fffdf7'],['box-shadow','0 12px 28px rgba(18,49,38,.14)']
     ])important(list,p,v);
     for(const article of list.querySelectorAll('article')){
       for(const [p,v] of [
         ['box-sizing','border-box'],['display','grid'],['align-content','center'],['justify-items','center'],
-        ['min-width','0'],['min-height','0'],['height','auto'],['margin','0'],['padding','3px 5px'],
-        ['gap','2px'],['border-radius','11px'],['overflow','hidden'],['text-align','center']
+        ['min-width','0'],['min-height','0'],['height','auto'],['margin','0'],['padding','5px 7px'],
+        ['gap','3px'],['border-radius','12px'],['overflow','hidden'],['text-align','center']
       ])important(article,p,v);
       for(const b of article.querySelectorAll('b')){important(b,'font-size','10px');important(b,'line-height','1.05');}
-      for(const span of article.querySelectorAll('span')){important(span,'font-size','13px');important(span,'line-height','1.05');}
+      for(const span of article.querySelectorAll('span')){important(span,'font-size','13px');important(span,'line-height','1.08');}
       for(const small of article.querySelectorAll('small'))important(small,'display','none');
     }
   }
