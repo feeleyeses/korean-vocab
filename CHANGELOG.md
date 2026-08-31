@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-30
 
+- Reveal Density and Flow Fix: rebalanced sound-rule revealed-card block padding, moved the closed option-Korean control closer to the fixed Continue rail, expanded the option overlay upward without covering status/meta content, ordered option-map Korean above Chinese, and kept completed learning groups anchored in the study section.
 - Review Card Content Polish: removed the review-initial bottom divider, collapsed the option-Korean control to a single 34px row when closed, changed the expanded option map into an upward overlay above the fixed Continue rail, and restored fuller revealed-card knowledge block padding for sound-rule cards.
 - Card Footer Fix: split the v3 study/review card into Header, Hero/ContentArea, and fixed Footer rows, kept learning/review revealed Continue buttons on the same bottom rail, compacted the review option-Korean drawer without internal scrolling, reduced card header metadata to caption weight, and cache-busted the Layout System assets for Pages validation.
 - Review Reveal Layout Fix: removed internal scrolling from the option-Korean drawer, kept sound-rule review cards at the fixed card height, and compacted the review reveal drawer into a complete 2x2 grid above the fixed Continue action.
