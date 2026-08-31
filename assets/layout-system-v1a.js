@@ -243,9 +243,9 @@ function normalizeAnswerMapClone(map){
   const open=map.classList.contains('is-open')||map.open;
   const summary=map.querySelector(':scope > summary, :scope > .kwf-card-v3-answer-map-toggle');
   const list=map.querySelector('.option-map-list');
-  const maxH=window.matchMedia('(max-width: 560px)').matches?'140px':'146px';
-  const openH=window.matchMedia('(max-width: 560px)').matches?'140px':'146px';
-  const listH=window.matchMedia('(max-width: 560px)').matches?'104px':'110px';
+  const maxH='116px';
+  const openH='116px';
+  const listH='80px';
   for(const [p,v] of [
     ['box-sizing','border-box'],['position','static'],['inset','auto'],['display',open?'grid':'block'],
     ['grid-template-rows',open?'34px minmax(0, 1fr)':'none'],['width','min(100%, var(--kwf-card-v2-answer-max-w))'],
@@ -278,8 +278,8 @@ function normalizeAnswerMapClone(map){
         ['min-width','0'],['min-height','0'],['height','auto'],['margin','0'],['padding','3px 5px'],
         ['gap','2px'],['border-radius','11px'],['overflow','hidden'],['text-align','center']
       ])important(article,p,v);
-      for(const b of article.querySelectorAll('b')){important(b,'font-size','11px');important(b,'line-height','1.05');}
-      for(const span of article.querySelectorAll('span')){important(span,'font-size','14px');important(span,'line-height','1.05');}
+      for(const b of article.querySelectorAll('b')){important(b,'font-size','10px');important(b,'line-height','1.05');}
+      for(const span of article.querySelectorAll('span')){important(span,'font-size','13px');important(span,'line-height','1.05');}
       for(const small of article.querySelectorAll('small'))important(small,'display','none');
     }
   }
@@ -385,6 +385,8 @@ async function rebuildCardV3(){
   const knowledge=document.createElement('section');
   knowledge.className='kwf-card-v3-knowledge';
   let answerMap=null;
+  const content=document.createElement('section');
+  content.className='kwf-card-v3-content';
   const block=(className,title,nodes)=>{
     const section=document.createElement('section');
     section.className=`kwf-card-v3-block ${className}`;
@@ -439,11 +441,12 @@ async function rebuildCardV3(){
     if(shortcut)footer.appendChild(shortcut);
     footer.appendChild(group);
   }
-  shell.replaceChildren(progress,header,hero);
-  if(revealed&&status.childNodes.length)shell.appendChild(status);
-  if(revealed)shell.appendChild(knowledge);
-  if(answerMap)shell.appendChild(answerMap);
-  shell.append(spacer,footer);
+  content.appendChild(hero);
+  if(revealed&&status.childNodes.length)content.appendChild(status);
+  if(revealed)content.appendChild(knowledge);
+  if(answerMap)content.appendChild(answerMap);
+  content.appendChild(spacer);
+  shell.replaceChildren(progress,header,content,footer);
   if(!shell.parentElement)card.prepend(shell);
   card.classList.add('kwf-card-v3-card');
   card.classList.remove('kwf-reveal-v2-card');

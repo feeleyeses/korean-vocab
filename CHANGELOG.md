@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-08-30
 
+- Card Footer Fix: split the v3 study/review card into Header, Hero/ContentArea, and fixed Footer rows, kept learning/review revealed Continue buttons on the same bottom rail, compacted the review option-Korean drawer without internal scrolling, reduced card header metadata to caption weight, and cache-busted the Layout System assets for Pages validation.
 - Review Reveal Layout Fix: removed internal scrolling from the option-Korean drawer, kept sound-rule review cards at the fixed card height, and compacted the review reveal drawer into a complete 2x2 grid above the fixed Continue action.
 - V2 Card Bugfix: constrained the review reveal option-Korean drawer inside the v3 card flow so sound-rule cards keep Continue visible and clickable, and restored the shared rounded button token for learning, shortcut, review, and Continue actions.
 - Card Interaction Recovery: restored visible button affordance for learning actions, secondary direct reveal, review options, and Continue while keeping learning/review cards on the shared `kwf-card-v3` layout.

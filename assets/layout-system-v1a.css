@@ -738,25 +738,26 @@ a.mobile-tab:hover {
 }
 #study #study-card .kwf-card-v3 {
   box-sizing: border-box !important;
-  display: flex !important;
-  flex-direction: column !important;
+  display: grid !important;
+  grid-template-rows: 12px auto minmax(0, 1fr) 104px !important;
   width: 100% !important;
+  min-width: 0 !important;
   height: 100% !important;
   min-height: 100% !important;
-  gap: 10px !important;
+  gap: 8px !important;
   padding: 0 22px 18px !important;
   border-radius: inherit !important;
 }
 #study #study-card.revealed .kwf-card-v3-has-answer-map {
   gap: 4px !important;
-  padding-bottom: 10px !important;
+  padding-bottom: 18px !important;
 }
 #study #study-card .kwf-card-v3-progress {
   box-sizing: border-box !important;
   display: block !important;
   width: calc(100% + 44px) !important;
   height: 6px !important;
-  margin: 0 -22px 6px !important;
+  margin: 0 -22px !important;
   border-radius: 22px 22px 0 0 !important;
   overflow: hidden !important;
   background: rgba(31, 61, 54, .12) !important;
@@ -773,6 +774,32 @@ a.mobile-tab:hover {
   justify-content: space-between !important;
   gap: 10px !important;
   width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+#study #study-card .kwf-card-v3-header > span,
+#study #study-card .kwf-card-v3-header > small {
+  font: 500 11px/1.15 Arial, "Noto Sans KR", "Microsoft YaHei", sans-serif !important;
+  color: rgba(34, 56, 44, .62) !important;
+}
+#study #study-card .kwf-card-v3-content {
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+#study #study-card.revealed .kwf-card-v3-content {
+  gap: 4px !important;
+}
+#study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-content {
+  gap: 3px !important;
 }
 #study #study-card .kwf-card-v3-hero {
   display: flex !important;
@@ -878,33 +905,59 @@ a.mobile-tab:hover {
   gap: 4px !important;
   width: min(var(--kwf-card-v2-answer-max-w), 100%) !important;
 }
-#study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-block {
-  width: 100% !important;
+#study #study-card.revealed.has-sound .kwf-card-v3-knowledge {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: 4px !important;
+}
+#study #study-card.revealed.has-sound .kwf-card-v3-block {
   min-height: 0 !important;
   padding: 3px 8px !important;
-  gap: 2px !important;
+  gap: 1px !important;
 }
-#study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-block b {
+#study #study-card.revealed.has-sound .kwf-card-v3-block b {
   font-size: 10px !important;
   line-height: 1.05 !important;
 }
-#study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-block p {
+#study #study-card.revealed.has-sound .kwf-card-v3-block p {
   font-size: 12px !important;
-  line-height: 1.08 !important;
+  line-height: 1.06 !important;
+}
+#study #study-card.revealed.has-sound .kwf-card-v3-block small {
+  font-size: 10px !important;
+  line-height: 1.06 !important;
+}
+#study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-block {
+  width: 100% !important;
+  min-height: 0 !important;
+  padding: 2px 7px !important;
+  gap: 1px !important;
+}
+#study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-block b {
+  font-size: 9px !important;
+  line-height: 1.05 !important;
+}
+#study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-block p {
+  font-size: 11px !important;
+  line-height: 1.04 !important;
 }
 #study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-block small {
-  font-size: 10px !important;
-  line-height: 1.08 !important;
+  font-size: 9px !important;
+  line-height: 1.04 !important;
 }
 #study #study-card.revealed .kwf-card-v3-spacer {
-  flex: 0 0 0 !important;
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
 }
 #study #study-card .kwf-card-v3-footer {
   position: relative !important;
   z-index: 2 !important;
-  flex: 0 0 auto !important;
+  height: 104px !important;
+  min-height: 104px !important;
+  max-height: 104px !important;
   flex-direction: column !important;
-  justify-content: center !important;
+  justify-content: flex-end !important;
   margin-top: 0 !important;
 }
 #study #study-card .kwf-card-v3-shortcut {
@@ -1053,10 +1106,10 @@ a.mobile-tab:hover {
   position: static !important;
   display: grid !important;
   grid-template-rows: 34px minmax(0, 1fr) !important;
-  height: 146px !important;
-  min-height: 146px !important;
-  max-height: 146px !important;
-  flex: 0 0 146px !important;
+  height: 116px !important;
+  min-height: 116px !important;
+  max-height: 116px !important;
+  flex: 0 0 116px !important;
   margin: 0 auto !important;
   overflow: hidden !important;
 }
@@ -1107,9 +1160,9 @@ a.mobile-tab:hover {
   grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
   gap: 4px !important;
   width: 100% !important;
-  height: 110px !important;
-  min-height: 110px !important;
-  max-height: 110px !important;
+  height: 80px !important;
+  min-height: 80px !important;
+  max-height: 80px !important;
   margin: 0 !important;
   padding: 5px !important;
   overflow: hidden !important;
@@ -1130,11 +1183,11 @@ a.mobile-tab:hover {
   text-align: center !important;
 }
 #study #study-card .kwf-card-v3 .kwf-card-v3-answer-map .option-map-list article b {
-  font-size: 11px !important;
+  font-size: 10px !important;
   line-height: 1.05 !important;
 }
 #study #study-card .kwf-card-v3 .kwf-card-v3-answer-map .option-map-list article span {
-  font-size: 14px !important;
+  font-size: 13px !important;
   line-height: 1.05 !important;
 }
 #study #study-card .kwf-card-v3 .kwf-card-v3-answer-map .option-map-list article small {
@@ -1614,18 +1667,18 @@ a.mobile-tab:hover {
   #study #study-card .pre-answer > div > button,
   #study #study-card .review-question > div > button { min-height: 50px !important; height: 50px !important; padding-inline: 6px !important; }
   #study #study-card .kwf-card-v3 .kwf-card-v3-answer-map[open] {
-    max-height: 140px !important;
+    max-height: 116px !important;
   }
   #study #study-card .kwf-card-v3 .kwf-card-v3-answer-map.is-open {
-    height: 140px !important;
-    min-height: 140px !important;
-    max-height: 140px !important;
-    flex-basis: 140px !important;
+    height: 116px !important;
+    min-height: 116px !important;
+    max-height: 116px !important;
+    flex-basis: 116px !important;
   }
   #study #study-card .kwf-card-v3 .kwf-card-v3-answer-map .option-map-list {
-    height: 104px !important;
-    min-height: 104px !important;
-    max-height: 104px !important;
+    height: 80px !important;
+    min-height: 80px !important;
+    max-height: 80px !important;
   }
   #study #study-card .review-question > div {
     grid-template-rows: repeat(2, 50px) !important;
