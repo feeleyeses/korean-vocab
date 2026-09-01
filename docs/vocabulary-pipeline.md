@@ -20,6 +20,8 @@ New entries must pass this path before they enter the production vocabulary. The
   `python scripts/extract-topik-i-candidates.py artifacts/TOPIK-I-1671.pdf artifacts/topik-i-candidates.txt artifacts/topik-i-candidates-report.json`
 - Import a bulk TOPIK-1/2 approved batch from exact KRDict hits:
   `node scripts/vocab-expansion-import.mjs --key=<KRDICT_API_KEY> --candidates=artifacts/topik-i-candidates.txt --limit=500 --status=approved --out=artifacts/vocabulary-expansion-bulk-report.json`
+- Import a bulk TOPIK-3/4 approved batch from exact TOPIK II KRDict hits:
+  `node scripts/vocab-expansion-import.mjs --key=<KRDICT_API_KEY> --candidates=artifacts/topik-ii-candidates.txt --limit=850 --status=approved --levels=3,4 --source-url=https://learning-korean.com/DL/topik-2662.pdf --source-name=TOPIK_II_2662 --batch-id=2026-09-01-topik34-expansion-bulk --id-prefix=exp-tii --out=artifacts/vocabulary-expansion-topik34-bulk-report.json`
 - Regenerate production data:
   `node scripts/vocab-pipeline.mjs data/vocabulary.raw.json data/vocabulary.json`
 - Regenerate the unresolved collocation queue:

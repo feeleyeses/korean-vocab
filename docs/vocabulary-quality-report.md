@@ -1,5 +1,42 @@
 # Vocabulary Quality Report
 
+## 2026-09-01 Bulk TOPIK-3/4 Expansion
+
+- Scope: expanded the published learning vocabulary with TOPIK II candidates while keeping UI Freeze.
+- Source: TOPIK II 2662 PDF (`https://learning-korean.com/DL/topik-2662.pdf`) plus KRDict exact-headword Chinese lookup.
+- Processing rule: auto-approved only exact KRDict headword matches with headword, part of speech, TOPIK level, romanization, and at least one Chinese gloss; ambiguous or non-exact candidates were skipped instead of forced into the queue.
+- Raw entries before batch: 1231.
+- Raw entries after batch: 2081.
+- New raw entries in this batch: 850.
+- Draft reevaluation: 120 previous TOPIK-1/2 drafts were promoted to approved, 0 moved to needs_review.
+- New approved in this batch: 970 (850 new TOPIK II entries + 120 promoted drafts).
+- Current published learning vocabulary: 2081 entries / 2120 senses.
+- Remaining distance to 6000 entries: 3919.
+- New TOPIK II approved distribution: TOPIK-3 425, TOPIK-4 425.
+- Current published distribution: TOPIK-1 603, TOPIK-2 302, TOPIK-3 567, TOPIK-4 449, TOPIK-5 131, TOPIK-6 29.
+- Current raw status: approved 2081, draft 0, needs_review 0.
+- Duplicate lexicalEntryId: 0.
+- Missing TOPIK level: 0.
+- Missing romanization: 0.
+- Missing glossZh: 0.
+- Historical duplicate headword warnings in raw: 15.
+- Collocation fallback-to-gloss rows: 0.
+- Quality audit blocking failures: 0.
+- Quality audit warnings: 3720; previous total was 1780, so this batch added 1940 non-blocking warnings.
+- Warning type distribution: missing_collocation_zh 390, missing_collocation_verification 1860, missing_example_verification 1470.
+- Reports: `artifacts/vocab-quality-expansion-topik34-bulk.json`, `artifacts/vocabulary-expansion-topik34-bulk-report.json`, `artifacts/draft-reevaluation-report.json`, and `artifacts/topik-ii-candidates-report.json`.
+
+### Collocation zh by TOPIK Level
+
+| TOPIK | Total | With zh | Missing zh | Fallback to gloss |
+|---|---:|---:|---:|---:|
+| TOPIK-1 | 188 | 85 | 103 | 0 |
+| TOPIK-2 | 113 | 42 | 71 | 0 |
+| TOPIK-3 | 157 | 90 | 67 | 0 |
+| TOPIK-4 | 32 | 4 | 28 | 0 |
+| TOPIK-5 | 131 | 38 | 93 | 0 |
+| TOPIK-6 | 29 | 1 | 28 | 0 |
+
 ## 2026-09-01 Bulk TOPIK-1/2 Expansion
 
 - Scope: moved expansion from trial-sized draft intake to bulk intake plus automatic publishing for exact, field-complete entries.

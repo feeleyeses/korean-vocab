@@ -66,6 +66,20 @@ function countByLevel(items) {
   }, {});
 }
 
+function reviewType(reason = '') {
+  if (reason.includes('missing TOPIK level')) return 'missing_topik_level';
+  if (reason.includes('missing pronunciation or romanization')) return 'missing_pronunciation_or_romanization';
+  if (reason.includes('missing Chinese gloss')) return 'missing_gloss_zh';
+  if (reason.includes('romanization needs')) return 'romanization_review';
+  if (reason.includes('pronunciation needs')) return 'pronunciation_review';
+  if (reason.includes('collocation.zh fallback')) return 'collocation_fallback_to_gloss';
+  if (reason.includes('collocation.zh needs')) return 'missing_collocation_zh';
+  if (reason.includes('collocation needs')) return 'missing_collocation_verification';
+  if (reason.includes('example needs')) return 'missing_example_verification';
+  if (reason.includes('quality')) return 'quality_score';
+  return 'other';
+}
+
 function addCollocationLevel(level, key) {
   const normalized = level || 'unknown';
   collocationZhStats.byLevel[normalized] ||= { total: 0, withZh: 0, missingZh: 0, fallbackToGloss: 0 };
@@ -289,6 +303,7 @@ const report = {
   },
   reviewSummary: {
     bySeverity: countBy(reviewQueue, item => item.severity),
+    byType: countBy(reviewQueue, item => reviewType(item.reason)),
     byReason: countBy(reviewQueue, item => item.reason),
     bySource: countBy(reviewQueue, item => item.source),
     byLevel: countByLevel(reviewQueue)

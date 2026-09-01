@@ -3,8 +3,8 @@ import path from 'node:path';
 
 const API_URL = 'https://krdict.korean.go.kr/api/search';
 const CHINESE_TRANSLATION_LANG = '11';
-const TOPIK_I_SOURCE_URL = 'https://learning-korean.com/DL/TOPIK-I-1671.pdf';
-const BATCH_ID = '2026-09-01-topik12-expansion-bulk';
+const DEFAULT_SOURCE_URL = 'https://learning-korean.com/DL/TOPIK-I-1671.pdf';
+const DEFAULT_BATCH_ID = '2026-09-01-topik12-expansion-bulk';
 
 const args = process.argv.slice(2);
 const arg = (name, fallback = null) => {
@@ -18,6 +18,11 @@ const rawPath = arg('raw', 'data/vocabulary.raw.json');
 const outPath = arg('out', 'artifacts/vocabulary-expansion-import-report.json');
 const candidatePath = arg('candidates', '');
 const status = arg('status', 'draft');
+const sourceUrl = arg('source-url', DEFAULT_SOURCE_URL);
+const batchId = arg('batch-id', DEFAULT_BATCH_ID);
+const sourceName = arg('source-name', sourceUrl.includes('topik-2662') ? 'TOPIK_II_2662' : 'TOPIK_I_1671');
+const idPrefix = arg('id-prefix', sourceName === 'TOPIK_II_2662' ? 'exp-tii' : 'exp-ti');
+const levelBuckets = arg('levels', '1,2').split(',').map(value => Number(value.trim())).filter(Boolean);
 const limit = Number(arg('limit', '120'));
 const delayMs = Number(arg('delay-ms', '80'));
 const timeoutMs = Number(arg('timeout-ms', '12000'));
@@ -108,9 +113,15 @@ async function queryKrdict(q) {
   }
 }
 
+function bucketLevel(batchOrdinal) {
+  if (levelBuckets.length <= 1) return levelBuckets[0] || 1;
+  const bucketSize = Math.ceil(limit / levelBuckets.length);
+  return levelBuckets[Math.min(levelBuckets.length - 1, Math.floor((batchOrdinal - 1) / bucketSize))];
+}
+
 function makeEntry(row, idSequence, batchOrdinal) {
-  const level = batchOrdinal <= Math.ceil(limit * 0.67) ? 1 : 2;
-  const id = `exp-ti-${String(idSequence).padStart(3, '0')}`;
+  const level = bucketLevel(batchOrdinal);
+  const id = `${idPrefix}-${String(idSequence).padStart(3, '0')}`;
   const translation = row.translations[0];
   return {
     id,
@@ -121,12 +132,12 @@ function makeEntry(row, idSequence, batchOrdinal) {
     levels: [level],
     tracks: ['TOPIK', 'expansion'],
     register: '中性',
-    source: status === 'approved' ? 'TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED' : 'TOPIK_I_1671 + KRDICT_EXACT_HEADWORD',
-    sourceUrl: TOPIK_I_SOURCE_URL,
+    source: status === 'approved' ? `${sourceName} + KRDICT_EXACT_HEADWORD + AUTO_APPROVED` : `${sourceName} + KRDICT_EXACT_HEADWORD`,
+    sourceUrl,
     krdictTargetCode: row.targetCode,
     krdictLink: row.link,
-    expansionBatch: BATCH_ID,
-    levelAssignment: 'TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW',
+    expansionBatch: batchId,
+    levelAssignment: `${sourceName}_ORDER_HEURISTIC_NEEDS_REVIEW`,
     verificationStatus: status,
     verifiedAt: status === 'approved' ? new Date().toISOString() : null,
     senses: [{
@@ -148,7 +159,7 @@ const rawEntries = Array.isArray(rawPayload) ? rawPayload : rawPayload.entries;
 const existingHeadwords = new Set(rawEntries.map(entry => entry.headword));
 const existingIds = new Set(rawEntries.map(entry => entry.id).filter(Boolean));
 const nextExpansionNumber = rawEntries.reduce((max, entry) => {
-  const match = /^exp-ti-(\d+)$/u.exec(entry.id || '');
+  const match = new RegExp(`^${idPrefix}-(\\d+)$`, 'u').exec(entry.id || '');
   return match ? Math.max(max, Number(match[1])) : max;
 }, 0) + 1;
 const uniqueCandidates = [...new Set(candidates)].filter(word => !existingHeadwords.has(word));
@@ -183,8 +194,11 @@ fs.writeFileSync(rawPath, `${JSON.stringify(rawPayload, null, 2)}\n`);
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 const report = {
   generatedAt: new Date().toISOString(),
-  batchId: BATCH_ID,
-  sourceUrl: TOPIK_I_SOURCE_URL,
+  batchId,
+  sourceName,
+  sourceUrl,
+  idPrefix,
+  levels: levelBuckets,
   requestedLimit: limit,
   importedCount: imported.length,
   skippedCount: skipped.length,
