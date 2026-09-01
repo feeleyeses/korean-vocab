@@ -311,7 +311,7 @@ function proxyButton(source, className, label){
       }
       target.dispatchEvent(new MouseEvent('mousedown',{bubbles:true,cancelable:true,view:window}));
       target.dispatchEvent(new MouseEvent('mouseup',{bubbles:true,cancelable:true,view:window}));
-      target.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true,view:window}));
+      target.click();
       if(label==='继续'){
         window.setTimeout(()=>keepStudySectionAfterContinue(),120);
         window.setTimeout(()=>keepStudySectionAfterContinue(),360);

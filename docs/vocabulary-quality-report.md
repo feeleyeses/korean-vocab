@@ -1,5 +1,41 @@
 # Vocabulary Quality Report
 
+## 2026-09-01 Bulk TOPIK-1/2 Expansion
+
+- Scope: moved expansion from trial-sized draft intake to bulk intake plus automatic publishing for exact, field-complete entries.
+- Raw entries before batch: 731.
+- Raw entries after batch: 1231.
+- New raw entries in this batch: 500.
+- New approved entries in this batch: 500.
+- Current published learning vocabulary: 1111 entries / 1150 senses.
+- Remaining distance to 6000 entries: 4889.
+- Bulk source: TOPIK I 1671 PDF candidate extraction plus KRDict exact-headword Chinese lookup.
+- Bulk importer result: 500 imported, 239 skipped as already present, ambiguous, or not exact enough for automatic approval.
+- New approved distribution: TOPIK-1 335, TOPIK-2 165.
+- Current raw status: approved 1111, draft 120, needs_review 0.
+- Current raw TOPIK distribution: TOPIK-1 603, TOPIK-2 302, TOPIK-3 142, TOPIK-4 24, TOPIK-5 131, TOPIK-6 29.
+- Publication boundary: `data/vocabulary.json` publishes only approved entries and still skips the 120 existing draft entries.
+- Duplicate lexicalEntryId: 0.
+- Missing TOPIK level: 0.
+- Missing romanization: 0.
+- Missing glossZh: 0.
+- Historical duplicate headword warnings in raw: 15.
+- Collocation fallback-to-gloss rows: 0.
+- Quality audit blocking failures: 0.
+- Quality audit warnings: 1780.
+- Reports: `artifacts/vocab-quality-expansion-bulk.json`, `artifacts/vocabulary-expansion-bulk-report.json`, and `artifacts/topik-i-candidates-report.json`.
+
+### Collocation zh by TOPIK Level
+
+| TOPIK | Total | With zh | Missing zh | Fallback to gloss |
+|---|---:|---:|---:|---:|
+| TOPIK-1 | 188 | 85 | 103 | 0 |
+| TOPIK-2 | 113 | 42 | 71 | 0 |
+| TOPIK-3 | 157 | 90 | 67 | 0 |
+| TOPIK-4 | 32 | 4 | 28 | 0 |
+| TOPIK-5 | 131 | 38 | 93 | 0 |
+| TOPIK-6 | 29 | 1 | 28 | 0 |
+
 ## 2026-09-01 TOPIK-1/2 Collocation Batch and Expansion Intake
 
 - Scope: continued the collocation meaning cleanup and started controlled TOPIK-1/2 expansion without UI changes.

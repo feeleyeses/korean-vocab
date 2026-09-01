@@ -16,6 +16,10 @@ New entries must pass this path before they enter the production vocabulary. The
 
 - Import a controlled TOPIK-1/2 draft batch with KRDict exact-headword Chinese lookup:
   `node scripts/vocab-expansion-import.mjs --key=<KRDICT_API_KEY> --limit=120 --out=artifacts/vocabulary-expansion-import-report.json`
+- Extract reusable TOPIK I candidates from the source PDF:
+  `python scripts/extract-topik-i-candidates.py artifacts/TOPIK-I-1671.pdf artifacts/topik-i-candidates.txt artifacts/topik-i-candidates-report.json`
+- Import a bulk TOPIK-1/2 approved batch from exact KRDict hits:
+  `node scripts/vocab-expansion-import.mjs --key=<KRDICT_API_KEY> --candidates=artifacts/topik-i-candidates.txt --limit=500 --status=approved --out=artifacts/vocabulary-expansion-bulk-report.json`
 - Regenerate production data:
   `node scripts/vocab-pipeline.mjs data/vocabulary.raw.json data/vocabulary.json`
 - Regenerate the unresolved collocation queue:
