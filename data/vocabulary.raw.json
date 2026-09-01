@@ -11957,7 +11957,7 @@
       ],
       "register": "中性",
       "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "sc104-s1",
@@ -11970,7 +11970,8 @@
           "collocationZh": "几年期间",
           "collocationSource": "EDITORIAL_REVIEW"
         }
-      ]
+      ],
+      "verificationStatus": "needs_review"
     },
     {
       "id": "sc105",
@@ -11988,7 +11989,7 @@
       ],
       "register": "正式",
       "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "sc105-s1",
@@ -11999,7 +12000,8 @@
           "level": 4,
           "primary": true
         }
-      ]
+      ],
+      "verificationStatus": "needs_review"
     },
     {
       "id": "sc106",
@@ -12075,7 +12077,7 @@
       ],
       "register": "中性",
       "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "sc108-s1",
@@ -12088,7 +12090,8 @@
           "collocationZh": "花开",
           "collocationSource": "EDITORIAL_REVIEW"
         }
-      ]
+      ],
+      "verificationStatus": "needs_review"
     },
     {
       "id": "sc109",
@@ -12369,7 +12372,7 @@
       ],
       "register": "中性",
       "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "sc118-s1",
@@ -12380,7 +12383,8 @@
           "level": 3,
           "primary": true
         }
-      ]
+      ],
+      "verificationStatus": "needs_review"
     },
     {
       "id": "sc119",
@@ -12429,7 +12433,7 @@
       ],
       "register": "中性",
       "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "sc120-s1",
@@ -12442,7 +12446,8 @@
           "collocationZh": "衣服漂亮",
           "collocationSource": "EDITORIAL_REVIEW"
         }
-      ]
+      ],
+      "verificationStatus": "needs_review"
     },
     {
       "id": "sc121",
@@ -12460,7 +12465,7 @@
       ],
       "register": "中性",
       "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "sc121-s1",
@@ -12473,7 +12478,8 @@
           "collocationZh": "读书",
           "collocationSource": "EDITORIAL_REVIEW"
         }
-      ]
+      ],
+      "verificationStatus": "needs_review"
     },
     {
       "id": "sc122",
@@ -12669,7 +12675,7 @@
       ],
       "register": "中性",
       "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "sc128-s1",
@@ -12682,7 +12688,8 @@
           "collocationZh": "结束",
           "collocationSource": "EDITORIAL_REVIEW"
         }
-      ]
+      ],
+      "verificationStatus": "needs_review"
     },
     {
       "id": "sc129",
@@ -12701,7 +12708,7 @@
       ],
       "register": "中性",
       "source": "EDITORIAL",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "sc129-s1",
@@ -12714,7 +12721,8 @@
           "collocationZh": "吃饭",
           "collocationSource": "EDITORIAL_REVIEW"
         }
-      ]
+      ],
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kd001",
@@ -14495,7 +14503,7 @@
       ],
       "register": "中性",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "kd062-s1",
@@ -14509,7 +14517,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyo-yuk-kka"
+      "romanization": "gyo-yuk-kka",
+      "verificationStatus": "approved"
     },
     {
       "id": "kd063",
@@ -14932,7 +14941,7 @@
       ],
       "register": "中性",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "kd077-s1",
@@ -14946,7 +14955,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "yeo-haeng-ga"
+      "romanization": "yeo-haeng-ga",
+      "verificationStatus": "approved"
     },
     {
       "id": "kd078",
@@ -16202,7 +16212,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg001-s1",
@@ -16216,7 +16226,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "ga-jok je-do"
+      "romanization": "ga-jok je-do",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg002",
@@ -16231,7 +16242,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg002-s1",
@@ -16245,7 +16256,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "hak-gyo gyo-yuk"
+      "romanization": "hak-gyo gyo-yuk",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg003",
@@ -16260,7 +16272,7 @@
       ],
       "register": "中性",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg003-s1",
@@ -16274,7 +16286,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "yeo-ja go-deung-hak-gyo"
+      "romanization": "yeo-ja go-deung-hak-gyo",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg004",
@@ -16289,7 +16302,7 @@
       ],
       "register": "中性",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg004-s1",
@@ -16303,7 +16316,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "yeo-ja jung-hak-gyo"
+      "romanization": "yeo-ja jung-hak-gyo",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg005",
@@ -16318,7 +16332,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg005-s1",
@@ -16332,7 +16346,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gae-in hoe-sa"
+      "romanization": "gae-in hoe-sa",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg006",
@@ -16347,7 +16362,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg006-s1",
@@ -16361,7 +16376,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "bo-heom hoe-sa"
+      "romanization": "bo-heom hoe-sa",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg007",
@@ -16376,7 +16392,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg007-s1",
@@ -16390,7 +16406,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "tong-un hoe-sa"
+      "romanization": "tong-un hoe-sa",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg008",
@@ -16406,7 +16423,7 @@
       ],
       "register": "中性",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg008-s1",
@@ -16420,7 +16437,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyo-tong ka-deu"
+      "romanization": "gyo-tong ka-deu",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg009",
@@ -16435,7 +16453,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg009-s1",
@@ -16449,7 +16467,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyo-tong gi-gwan"
+      "romanization": "gyo-tong gi-gwan",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg010",
@@ -16464,7 +16483,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg010-s1",
@@ -16478,7 +16497,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "hwan-gyeong bo-ho"
+      "romanization": "hwan-gyeong bo-ho",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg011",
@@ -16493,7 +16513,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg011-s1",
@@ -16507,7 +16527,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "hwan-gyeong o-yeom"
+      "romanization": "hwan-gyeong o-yeom",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg012",
@@ -16522,7 +16543,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg012-s1",
@@ -16536,7 +16557,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "ga-jeong hwan-gyeong"
+      "romanization": "ga-jeong hwan-gyeong",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg013",
@@ -16551,7 +16573,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg013-s1",
@@ -16565,7 +16587,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "saeng-hwal hwan-gyeong"
+      "romanization": "saeng-hwal hwan-gyeong",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg014",
@@ -16580,7 +16603,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg014-s1",
@@ -16594,7 +16617,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gin-chuk jeong-chaek"
+      "romanization": "gin-chuk jeong-chaek",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg015",
@@ -16609,7 +16633,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg015-s1",
@@ -16623,7 +16647,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "swae-guk jeong-chaek"
+      "romanization": "swae-guk jeong-chaek",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg016",
@@ -16638,7 +16663,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg016-s1",
@@ -16652,7 +16677,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "mun-hwa si-seol"
+      "romanization": "mun-hwa si-seol",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg017",
@@ -16667,7 +16693,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg017-s1",
@@ -16681,7 +16707,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyeong-je gae-bal"
+      "romanization": "gyeong-je gae-bal",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg018",
@@ -16696,7 +16723,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg018-s1",
@@ -16710,7 +16737,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyeong-je bal-jeon"
+      "romanization": "gyeong-je bal-jeon",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg019",
@@ -16725,7 +16753,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg019-s1",
@@ -16739,7 +16767,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyeong-je seong-jang"
+      "romanization": "gyeong-je seong-jang",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg020",
@@ -16754,7 +16783,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg020-s1",
@@ -16768,7 +16797,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyeong-je hyeop-ryeok"
+      "romanization": "gyeong-je hyeop-ryeok",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg021",
@@ -16783,7 +16813,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg021-s1",
@@ -16797,7 +16827,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "sa-hoe gye-cheung"
+      "romanization": "sa-hoe gye-cheung",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg022",
@@ -16812,7 +16843,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg022-s1",
@@ -16826,7 +16857,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "sa-hoe mun-je"
+      "romanization": "sa-hoe mun-je",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg023",
@@ -16841,7 +16873,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg023-s1",
@@ -16855,7 +16887,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "sa-hoe bok-ji"
+      "romanization": "sa-hoe bok-ji",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg024",
@@ -16899,7 +16932,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg025-s1",
@@ -16913,7 +16946,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gi-hu byeon-hwa"
+      "romanization": "gi-hu byeon-hwa",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg026",
@@ -16928,7 +16962,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg026-s1",
@@ -16942,7 +16976,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyo-yuk gi-gwan"
+      "romanization": "gyo-yuk gi-gwan",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg027",
@@ -16957,7 +16992,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg027-s1",
@@ -16971,7 +17006,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyo-yuk dae-hak"
+      "romanization": "gyo-yuk dae-hak",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg028",
@@ -16986,7 +17022,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg028-s1",
@@ -17000,7 +17036,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyo-yuk mok-pyo"
+      "romanization": "gyo-yuk mok-pyo",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg029",
@@ -17015,7 +17052,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg029-s1",
@@ -17029,7 +17066,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gyo-yuk sil-seup"
+      "romanization": "gyo-yuk sil-seup",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg030",
@@ -17044,7 +17082,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg030-s1",
@@ -17058,7 +17096,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "saeng-hwal gong-gan"
+      "romanization": "saeng-hwal gong-gan",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg031",
@@ -17073,7 +17112,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg031-s1",
@@ -17087,7 +17126,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "saeng-hwal gi-rok-bu"
+      "romanization": "saeng-hwal gi-rok-bu",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg032",
@@ -17103,7 +17143,7 @@
       ],
       "register": "中性",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg032-s1",
@@ -17117,7 +17157,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "geon-gang gwan-ri"
+      "romanization": "geon-gang gwan-ri",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg033",
@@ -17132,7 +17173,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg033-s1",
@@ -17146,7 +17187,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "geon-gang bo-heom"
+      "romanization": "geon-gang bo-heom",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg034",
@@ -17161,7 +17203,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg034-s1",
@@ -17175,7 +17217,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "geon-gang jin-dan"
+      "romanization": "geon-gang jin-dan",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg035",
@@ -17190,7 +17233,7 @@
       ],
       "register": "正式",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg035-s1",
@@ -17204,7 +17247,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "yeo-haeng-ja su-pyo"
+      "romanization": "yeo-haeng-ja su-pyo",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg036",
@@ -17220,7 +17264,7 @@
       ],
       "register": "中性",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg036-s1",
@@ -17234,7 +17278,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "je-cheol eum-sik"
+      "romanization": "je-cheol eum-sik",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "kg037",
@@ -17250,7 +17295,7 @@
       ],
       "register": "中性",
       "source": "KRDICT",
-      "verifiedAt": "2026-08-12",
+      "verifiedAt": null,
       "senses": [
         {
           "id": "kg037-s1",
@@ -17264,7 +17309,8 @@
           "collocationSource": "KRDICT_EXACT"
         }
       ],
-      "romanization": "gil-geo-ri eum-sik"
+      "romanization": "gil-geo-ri eum-sik",
+      "verificationStatus": "needs_review"
     },
     {
       "id": "px001",
@@ -32009,7 +32055,7 @@
       "expansionBatch": "2026-09-01-topik12-expansion-bulk",
       "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T09:35:13.107Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-ti-398-s1",
@@ -41909,7 +41955,7 @@
       "expansionBatch": "2026-09-01-topik34-expansion-bulk",
       "levelAssignment": "TOPIK_II_2662_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T13:24:32.102Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-tii-053-s1",
@@ -42953,7 +42999,7 @@
       "expansionBatch": "2026-09-01-topik34-expansion-bulk",
       "levelAssignment": "TOPIK_II_2662_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T13:24:40.883Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-tii-082-s1",
@@ -73841,7 +73887,7 @@
       "expansionBatch": "2026-09-01-topik56-expansion-bulk",
       "levelAssignment": "TOPIK_II_2662_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T13:48:19.158Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-tii-940-s1",
@@ -89105,7 +89151,7 @@
       "expansionBatch": "2026-09-01-topik56-expansion-bulk",
       "levelAssignment": "TOPIK_II_2662_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T13:50:22.264Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-tii-1364-s1",
@@ -102065,7 +102111,7 @@
       "expansionBatch": "2026-09-01-topik56-expansion-bulk",
       "levelAssignment": "TOPIK_II_2662_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T13:52:16.459Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-tii-1724-s1",
@@ -103757,7 +103803,7 @@
       "expansionBatch": "2026-09-01-topik234-expansion-bulk",
       "levelAssignment": "TOPIK_II_2662_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T14:43:22.147Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-tii-1771-s1",
@@ -121001,7 +121047,7 @@
       "expansionBatch": "2026-09-01-topik2-gap-expansion",
       "levelAssignment": "TOPIK_I_1671_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T14:47:36.898Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-ti-642-s1",
@@ -121397,7 +121443,7 @@
       "expansionBatch": "2026-09-01-topik2-gap-expansion",
       "levelAssignment": "TOPIK_I_1671_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T14:47:40.585Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-ti-653-s1",
@@ -121865,7 +121911,7 @@
       "expansionBatch": "2026-09-01-topik2-gap-expansion",
       "levelAssignment": "TOPIK_I_1671_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T14:47:45.372Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-ti-666-s1",
@@ -127013,7 +127059,7 @@
       "expansionBatch": "2026-09-01-topik2-gap-expansion",
       "levelAssignment": "TOPIK_I_1671_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T14:48:49.975Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-ti-809-s1",
@@ -134861,7 +134907,7 @@
       "expansionBatch": "2026-09-01-krdict-mid-high-gap",
       "levelAssignment": "KRDICT_MID_HIGH_SEARCH_ORDER_HEURISTIC_NEEDS_REVIEW",
       "verificationStatus": "approved",
-      "verifiedAt": "2026-09-01T14:52:03.620Z",
+      "verifiedAt": "2026-09-01",
       "senses": [
         {
           "id": "exp-krd-002-s1",

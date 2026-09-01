@@ -2,6 +2,10 @@
 
 All meaningful product, UI, data, and pipeline changes must be recorded here.
 
+## 2026-09-02
+
+- Headword Pollution Cleanup and Navigation Fixes: paused vocabulary expansion, added a suspect-headword scanner, moved 44 approved phrase/particle-polluted headwords into `needs_review` so `밥을` no longer publishes, regenerated `data/vocabulary.json`, unlocked TOPIK 1-6 selection, fixed mobile review navigation, restored TTS click behavior, guarded polysemy review queues against unlearned fallback entries, and tightened mobile overflow fixes for the learning settings, polysemy library, and learned-library controls.
+
 ## 2026-09-01
 
 - Bulk TOPIK-2/3/4 Calibration: imported 1083 approved entries across TOPIK II remainder, TOPIK I gap fill, and KRDict official mid/high search candidates; grew the published learning vocabulary from 2981 to 4064 entries, reduced missing `collocationZh` from 329 to 268 with another editorial phrase-meaning batch, and added example-verification backlog plus duplicate-headword reports.

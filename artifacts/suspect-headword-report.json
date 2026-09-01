@@ -1,0 +1,1048 @@
+{
+  "generatedAt": "2026-09-01T18:29:11.668Z",
+  "rawPath": "data/vocabulary.raw.json",
+  "totalRawEntries": 4064,
+  "suspectCount": 64,
+  "changedApprovedToNeedsReview": 0,
+  "currentNeedsReviewSuspects": 44,
+  "byReason": {
+    "contains_space_or_phrase": 38,
+    "particle_suffix_이": 5,
+    "particle_suffix_을": 2,
+    "particle_suffix_가": 11,
+    "particle_suffix_는": 1,
+    "particle_suffix_로": 3,
+    "particle_suffix_도": 3,
+    "particle_suffix_만": 1
+  },
+  "byStatus": {
+    "needs_review": 44,
+    "approved": 20
+  },
+  "suspects": [
+    {
+      "rawIndex": 420,
+      "id": "sc104",
+      "headword": "몇 년",
+      "levels": [
+        2
+      ],
+      "partOfSpeech": "表达",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "EDITORIAL"
+    },
+    {
+      "rawIndex": 421,
+      "id": "sc105",
+      "headword": "백 리",
+      "levels": [
+        4
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "EDITORIAL"
+    },
+    {
+      "rawIndex": 424,
+      "id": "sc108",
+      "headword": "꽃이",
+      "levels": [
+        2
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "particle_suffix_이"
+      ],
+      "suggestedBase": "꽃",
+      "source": "EDITORIAL"
+    },
+    {
+      "rawIndex": 434,
+      "id": "sc118",
+      "headword": "밭이",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "particle_suffix_이"
+      ],
+      "suggestedBase": "밭",
+      "source": "EDITORIAL"
+    },
+    {
+      "rawIndex": 436,
+      "id": "sc120",
+      "headword": "옷이",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "particle_suffix_이"
+      ],
+      "suggestedBase": "옷",
+      "source": "EDITORIAL"
+    },
+    {
+      "rawIndex": 437,
+      "id": "sc121",
+      "headword": "책을",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "particle_suffix_을"
+      ],
+      "suggestedBase": "책",
+      "source": "EDITORIAL"
+    },
+    {
+      "rawIndex": 444,
+      "id": "sc128",
+      "headword": "끝이",
+      "levels": [
+        2
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "particle_suffix_이"
+      ],
+      "suggestedBase": "끝",
+      "source": "EDITORIAL"
+    },
+    {
+      "rawIndex": 445,
+      "id": "sc129",
+      "headword": "밥을",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "particle_suffix_을"
+      ],
+      "suggestedBase": "밥",
+      "source": "EDITORIAL"
+    },
+    {
+      "rawIndex": 507,
+      "id": "kd062",
+      "headword": "교육가",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "교육",
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 522,
+      "id": "kd077",
+      "headword": "여행가",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "여행",
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 566,
+      "id": "kg001",
+      "headword": "가족 제도",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 567,
+      "id": "kg002",
+      "headword": "학교 교육",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 568,
+      "id": "kg003",
+      "headword": "여자 고등학교",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 569,
+      "id": "kg004",
+      "headword": "여자 중학교",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 570,
+      "id": "kg005",
+      "headword": "개인 회사",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 571,
+      "id": "kg006",
+      "headword": "보험 회사",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 572,
+      "id": "kg007",
+      "headword": "통운 회사",
+      "levels": [
+        5
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 573,
+      "id": "kg008",
+      "headword": "교통 카드",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 574,
+      "id": "kg009",
+      "headword": "교통 기관",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 575,
+      "id": "kg010",
+      "headword": "환경 보호",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 576,
+      "id": "kg011",
+      "headword": "환경 오염",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 577,
+      "id": "kg012",
+      "headword": "가정 환경",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 578,
+      "id": "kg013",
+      "headword": "생활 환경",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 579,
+      "id": "kg014",
+      "headword": "긴축 정책",
+      "levels": [
+        5
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 580,
+      "id": "kg015",
+      "headword": "쇄국 정책",
+      "levels": [
+        5
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 581,
+      "id": "kg016",
+      "headword": "문화 시설",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 582,
+      "id": "kg017",
+      "headword": "경제 개발",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 583,
+      "id": "kg018",
+      "headword": "경제 발전",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 584,
+      "id": "kg019",
+      "headword": "경제 성장",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 585,
+      "id": "kg020",
+      "headword": "경제 협력",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 586,
+      "id": "kg021",
+      "headword": "사회 계층",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 587,
+      "id": "kg022",
+      "headword": "사회 문제",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 588,
+      "id": "kg023",
+      "headword": "사회 복지",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 590,
+      "id": "kg025",
+      "headword": "기후 변화",
+      "levels": [
+        5
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 591,
+      "id": "kg026",
+      "headword": "교육 기관",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 592,
+      "id": "kg027",
+      "headword": "교육 대학",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 593,
+      "id": "kg028",
+      "headword": "교육 목표",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 594,
+      "id": "kg029",
+      "headword": "교육 실습",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 595,
+      "id": "kg030",
+      "headword": "생활 공간",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 596,
+      "id": "kg031",
+      "headword": "생활 기록부",
+      "levels": [
+        5
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 597,
+      "id": "kg032",
+      "headword": "건강 관리",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 598,
+      "id": "kg033",
+      "headword": "건강 보험",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 599,
+      "id": "kg034",
+      "headword": "건강 진단",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 600,
+      "id": "kg035",
+      "headword": "여행자 수표",
+      "levels": [
+        5
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 601,
+      "id": "kg036",
+      "headword": "제철 음식",
+      "levels": [
+        5
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 602,
+      "id": "kg037",
+      "headword": "길거리 음식",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "名词",
+      "previousStatus": "needs_review",
+      "status": "needs_review",
+      "reasons": [
+        "contains_space_or_phrase"
+      ],
+      "suggestedBase": null,
+      "source": "KRDICT"
+    },
+    {
+      "rawIndex": 853,
+      "id": "exp-ti-243",
+      "headword": "또는",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "부사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_는"
+      ],
+      "suggestedBase": "또",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 968,
+      "id": "exp-ti-358",
+      "headword": "별로",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "부사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_로"
+      ],
+      "suggestedBase": "별",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 999,
+      "id": "exp-ti-389",
+      "headword": "새로",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "부사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_로"
+      ],
+      "suggestedBase": "새",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 1008,
+      "id": "exp-ti-398",
+      "headword": "사업가",
+      "levels": [
+        1
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "사업",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 1283,
+      "id": "exp-tii-053",
+      "headword": "거북이",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_이"
+      ],
+      "suggestedBase": "거북",
+      "source": "TOPIK_II_2662 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 1312,
+      "id": "exp-tii-082",
+      "headword": "건축가",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "건축",
+      "source": "TOPIK_II_2662 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 1496,
+      "id": "exp-tii-266",
+      "headword": "길가",
+      "levels": [
+        3
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "길",
+      "source": "TOPIK_II_2662 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 2027,
+      "id": "exp-tii-797",
+      "headword": "복도",
+      "levels": [
+        4
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_도"
+      ],
+      "suggestedBase": "복",
+      "source": "TOPIK_II_2662 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 2170,
+      "id": "exp-tii-940",
+      "headword": "산책로",
+      "levels": [
+        5
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_로"
+      ],
+      "suggestedBase": "산책",
+      "source": "TOPIK_II_2662 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 2351,
+      "id": "exp-tii-1121",
+      "headword": "속도",
+      "levels": [
+        5
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_도"
+      ],
+      "suggestedBase": "속",
+      "source": "TOPIK_II_2662 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 2594,
+      "id": "exp-tii-1364",
+      "headword": "영양가",
+      "levels": [
+        6
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "영양",
+      "source": "TOPIK_II_2662 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 2954,
+      "id": "exp-tii-1724",
+      "headword": "정치가",
+      "levels": [
+        6
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "정치",
+      "source": "TOPIK_II_2662 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 3001,
+      "id": "exp-tii-1771",
+      "headword": "주택가",
+      "levels": [
+        2
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "주택",
+      "source": "TOPIK_II_2662 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 3480,
+      "id": "exp-ti-642",
+      "headword": "오랜만",
+      "levels": [
+        2
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_만"
+      ],
+      "suggestedBase": "오랜",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 3491,
+      "id": "exp-ti-653",
+      "headword": "음악가",
+      "levels": [
+        2
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "음악",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 3504,
+      "id": "exp-ti-666",
+      "headword": "이따가",
+      "levels": [
+        2
+      ],
+      "partOfSpeech": "부사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "이따",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 3647,
+      "id": "exp-ti-809",
+      "headword": "지하도",
+      "levels": [
+        2
+      ],
+      "partOfSpeech": "명사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_도"
+      ],
+      "suggestedBase": "지하",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "rawIndex": 3865,
+      "id": "exp-krd-002",
+      "headword": "가다가",
+      "levels": [
+        2
+      ],
+      "partOfSpeech": "부사",
+      "previousStatus": "approved",
+      "status": "approved",
+      "reasons": [
+        "particle_suffix_가"
+      ],
+      "suggestedBase": "가다",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    }
+  ]
+}

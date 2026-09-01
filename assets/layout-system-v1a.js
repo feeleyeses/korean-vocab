@@ -562,7 +562,205 @@ async function rebuildRevealCard(){
 }
 function normalizeReviewStack(){const review=document.querySelector('#review'),board=document.querySelector('#review .review-board');if(!board)return;review?.style?.setProperty('--kwf-layout-lock-w','min(var(--kwf-review-container-w), 100%)','important');const title=document.querySelector('#review .review-title');important(title,'margin-bottom','var(--kwf-hero-bottom-gap)');board.classList.add('kwf-layout-review-stack');important(board,'display','flex');important(board,'flex-direction','column');important(board,'width','var(--kwf-layout-lock-w)');important(board,'max-width','var(--kwf-review-container-w)');important(board,'margin-left','auto');important(board,'margin-right','auto');for(const el of board.querySelectorAll('.review-module-grid,.learned-stat,.memory-profile,.memory-note,#learned-library-section')){important(el,'box-sizing','border-box');important(el,'width','100%');important(el,'max-width','100%');important(el,'grid-column','1 / -1');}const drawer=document.querySelector('#learned-library-section');for(const [p,v] of [['box-sizing','border-box'],['left','auto'],['right','auto'],['transform','none'],['translate','none'],['width','100%'],['max-width','var(--kwf-content-safe-w)'],['margin-left','auto'],['margin-right','auto']])important(drawer,p,v);}
 async function normalizeLearnedRows(){const data=await enrichment(),entries=data?.entries||{};for(const row of document.querySelectorAll('#learned-library-section .kwf-learned-row')){row.dataset.kwfLayoutSystem='layout-v1';const compact=matchMedia('(max-width:560px)').matches, mobile=matchMedia('(max-width:900px)').matches;for(const [p,v] of [['align-items','center'],['padding','var(--kwf-card-vpad) var(--kwf-card-pad)'],['height',compact?'132px':mobile?'124px':'112px'],['min-height',compact?'132px':mobile?'124px':'112px'],['max-height',compact?'132px':mobile?'124px':'112px']])important(row,p,v);const main=row.querySelector('.learned-word-main'),meaning=row.querySelector('.learned-word-meaning'),status=row.querySelector('.learned-word-status'),select=row.querySelector('.select-word'),collocation=row.querySelector('.kwf-row-collocation');for(const el of [main,meaning,status,select,collocation]){important(el,'align-self','center');important(el,'justify-content','center');important(el,'margin','0');}if(status){const statusW=compact?'110px':'180px';for(const [p,v] of [['box-sizing','border-box'],['display','grid'],['grid-template-columns','42px 54px'],['grid-template-rows','42px 18px'],['justify-content','center'],['align-content','center'],['justify-items','center'],['align-items','center'],['gap','6px 8px'],['width',statusW],['min-width',statusW],['max-width',statusW],['height','72px'],['min-height','72px'],['max-height','72px']])important(status,p,v);const fav=status.querySelector('.favorite-chip'),mark=status.querySelector('mark'),small=status.querySelector('small');important(fav,'display','grid');important(fav,'grid-row','1');important(fav,'grid-column','1');important(fav,'place-items','center');important(fav,'justify-self','center');important(fav,'align-self','center');important(fav,'line-height','1');important(fav,'text-align','center');important(fav,'transform','none');important(fav,'translate','none');important(mark,'grid-row','1');important(mark,'grid-column','2');important(mark,'justify-self','center');important(mark,'align-self','center');important(mark,'min-width','54px');important(mark,'white-space','nowrap');important(small,'grid-row','2');important(small,'grid-column','1 / 3');important(small,'align-self','center');important(small,'justify-self','center');important(small,'white-space','nowrap');}const word=txt(main?.querySelector('b,strong'));if(!word)continue;const collocations=entries[word]?.collocations?.slice(0,2)||[];let host=row.querySelector('.kwf-row-collocation');if(!collocations.length){host?.remove();continue;}if(!host){host=document.createElement('div');host.className='kwf-row-collocation';row.appendChild(host);}important(host,'align-self','center');important(host,'justify-content','center');host.replaceChildren(...collocations.map(item=>{const s=document.createElement('span');s.textContent=item;s.title=item;return s;}));}}
-async function apply(){state.scheduled=false;injectPolishStyles();document.documentElement.dataset.kwfLayoutSystem='layout-v1';document.documentElement.dataset.kwfLayoutAuthority='layout-system';window.__KWF_LAYOUT_SYSTEM_READY__=true;hideMisplacedPlacement();normalizeCard();await enhanceRevealData();await rebuildCardV3();normalizeReviewStack();await normalizeLearnedRows();}
+function injectBugfixStyles(){
+  if(document.querySelector('#kwf-critical-bugfixes'))return;
+  const style=document.createElement('style');
+  style.id='kwf-critical-bugfixes';
+  style.textContent=`
+    #study #study-card.kwf-card-v3-card{padding:0!important;overflow:hidden!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{padding-bottom:20px!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-continue{cursor:pointer!important;pointer-events:auto!important}
+    .kwf-mobile-review-menu{position:fixed;left:12px;right:12px;bottom:74px;z-index:90;display:grid;gap:8px;padding:12px;border:1px solid rgba(18,49,38,.16);border-radius:18px;background:#fffdf7;box-shadow:0 18px 44px rgba(18,49,38,.18)}
+    .kwf-mobile-review-menu[hidden]{display:none!important}
+    .kwf-mobile-review-menu button{width:100%;min-height:42px;border-radius:999px;white-space:nowrap;cursor:pointer}
+    .kwf-toast{position:fixed;left:50%;bottom:86px;z-index:120;max-width:min(320px,calc(100vw - 32px));padding:10px 14px;border-radius:999px;background:#173d2e;color:#fffdf7;font:600 13px/1.35 Arial,"Noto Sans KR","Microsoft YaHei",sans-serif;box-shadow:0 14px 30px rgba(18,49,38,.22);transform:translateX(-50%);opacity:.98}
+    .poly-secondary[data-kwf-disabled-review="true"],.review-subnav button[data-kwf-disabled-review="true"]{opacity:.55!important;cursor:not-allowed!important}
+    @media (max-width:760px){
+      html,body{overflow-x:hidden!important}
+      .mobile-tabbar{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:6px!important;padding:8px 10px calc(8px + env(safe-area-inset-bottom))!important}
+      .mobile-tabbar>*{min-width:0!important;white-space:nowrap!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important;font-size:12px!important}
+      .mobile-tabbar>button:nth-of-type(1){order:1!important}
+      .mobile-tabbar>a[href*="polysemy"]{order:2!important}
+      .mobile-tabbar>button:nth-of-type(2){order:3!important}
+      .mobile-tabbar>button:nth-of-type(3){order:4!important}
+      .study-wrap>.level-selector{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;padding:12px!important}
+      .study-wrap>.level-selector>span{grid-column:1/-1!important}
+      .study-wrap>.level-selector>button{min-width:0!important;width:100%!important;height:36px!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
+      .study-wrap>.study-settings{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+      .study-wrap>.study-settings>div{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;align-items:center!important}
+      .study-wrap>.study-settings>div:nth-child(2){grid-template-columns:repeat(2,minmax(0,1fr))!important}
+      .study-wrap>.study-settings span{grid-column:1/-1!important;white-space:nowrap!important}
+      .study-wrap>.study-settings button{min-width:0!important;width:100%!important;height:34px!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
+      .study-wrap>.study-settings p{min-height:40px!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+      #study #study-card.kwf-card-v3-card{height:520px!important;min-height:520px!important;max-height:520px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{padding-bottom:22px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-review-actions{grid-template-columns:1fr!important;width:min(100%,var(--kwf-primary-action-group-w))!important}
+      #poly-reference.kwf-poly-ref>summary{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:2px!important}
+      #poly-reference.kwf-poly-ref>summary .kwf-poly-summary-title,#poly-reference.kwf-poly-ref>summary .kwf-poly-summary-count{display:block!important;white-space:normal!important;min-width:0!important}
+      #poly-reference .kwf-poly-ref-controls button,#poly-reference .kwf-poly-ref-bottom button{min-height:34px!important;padding:7px 10px!important;font-size:12px!important;white-space:nowrap!important}
+      #poly-reference .kwf-poly-ref-bottom>div{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%!important;gap:8px!important}
+      #learned-library-section .learned-card-actions .ghost{white-space:nowrap!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important;min-width:max-content!important}
+      #learned-panel .learned-card-actions{display:flex!important;justify-content:flex-start!important;align-items:center!important;width:100%!important}
+      #learned-panel .learned-card-actions .ghost{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:auto!important;min-width:132px!important;height:38px!important;padding:0 14px!important;white-space:nowrap!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important}
+      #learned-library-section .profile-level-progress{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;gap:8px!important;padding-bottom:4px!important}
+      #learned-library-section .profile-level-progress>button{flex:0 0 58px!important;min-width:58px!important;padding:8px!important}
+      #learned-library-section .archive-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+      #learned-library-section .archive-actions button{min-width:0!important;width:100%!important;white-space:nowrap!important;font-size:12px!important;padding:8px!important}
+    }
+  `;
+  document.head.appendChild(style);
+}
+function ensureTopikUnlock(){
+  try{
+    const profile=JSON.parse(localStorage.getItem('kwf:profile')||'{}');
+    if((profile.unlockedLevel||0)<6){
+      profile.unlockedLevel=6;
+      localStorage.setItem('kwf:profile',JSON.stringify(profile));
+    }
+  }catch{}
+  for(const button of document.querySelectorAll('.level-selector button')){
+    const match=txt(button).match(/TOPIK\s*(\d)/);
+    if(!match)continue;
+    button.disabled=false;
+    button.removeAttribute('disabled');
+    button.textContent=txt(button).replace(/\s*·\s*锁定/g,'');
+  }
+}
+function ensureMobileLanding(){
+  if(!matchMedia('(max-width:760px)').matches)return;
+  if(location.hash&&location.hash!=='#top')return;
+  const top=document.querySelector('#top');
+  if(top&&window.scrollY>24)requestAnimationFrame(()=>top.scrollIntoView({block:'start'}));
+}
+function toast(message){
+  let box=document.querySelector('.kwf-toast');
+  if(!box){box=document.createElement('div');box.className='kwf-toast';document.body.appendChild(box);}
+  box.textContent=message;
+  clearTimeout(toast.timer);
+  toast.timer=setTimeout(()=>box.remove(),2200);
+}
+function bindTts(){
+  if(window.__KWF_TTS_BOUND__)return;
+  window.__KWF_TTS_BOUND__=true;
+  document.addEventListener('click',event=>{
+    const button=event.target?.closest?.('button');
+    if(!button)return;
+    const label=`${button.getAttribute('aria-label')||''} ${button.title||''} ${txt(button)}`;
+    if(!/播放韩语发音|听/.test(label))return;
+    const card=button.closest('#study-card,.kwf-card-v3,.study-card')||document;
+    const headword=txt(card.querySelector('.kwf-card-v3-word,.word h3,h3'));
+    const actual=txt(card.querySelector('.pronunciation-stack p:first-child,.kwf-card-v3-meta p:first-child'))?.replace(/^实际读音\s*/,'');
+    const text=(actual&&/[\u3131-\u318e\uac00-\ud7a3]/u.test(actual)?actual:headword).trim();
+    if(!text)return toast('暂时没有可播放的韩文。');
+    if(!('speechSynthesis'in window)||typeof SpeechSynthesisUtterance==='undefined')return toast('当前浏览器不支持语音播放。');
+    try{
+      window.speechSynthesis.cancel();
+      const utterance=new SpeechSynthesisUtterance(text);
+      utterance.lang='ko-KR';
+      utterance.rate=.86;
+      window.speechSynthesis.speak(utterance);
+    }catch{
+      toast('语音播放启动失败，请稍后再试。');
+    }
+  },true);
+}
+function learnedMemoryCount(){
+  let count=0;
+  try{
+    for(let i=0;i<localStorage.length;i+=1){
+      const key=localStorage.key(i);
+      if(key?.startsWith('memory:'))count+=1;
+    }
+  }catch{}
+  return count;
+}
+function guardPolysemyReview(){
+  const hasLearned=learnedMemoryCount()>0;
+  for(const button of document.querySelectorAll('.poly-secondary,.review-subnav button')){
+    const label=txt(button);
+    if(!/单个释义|整词多选/.test(label))continue;
+    if(!hasLearned){
+      button.disabled=true;
+      button.dataset.kwfDisabledReview='true';
+      button.title='先学习对应多义词后再复习';
+    }else{
+      button.dataset.kwfDisabledReview='false';
+    }
+  }
+}
+function splitPolysemyMobileSummary(){
+  const summary=document.querySelector('#poly-reference.kwf-poly-ref>summary');
+  if(!summary||summary.dataset.kwfSplitSummary)return;
+  const span=summary.querySelector('span');
+  if(!span)return;
+  const text=txt(span);
+  const [title,count]=text.split(/\s*·\s*/);
+  if(!count)return;
+  const titleNode=document.createElement('span');
+  titleNode.className='kwf-poly-summary-title';
+  titleNode.textContent=title;
+  const countNode=document.createElement('span');
+  countNode.className='kwf-poly-summary-count';
+  countNode.textContent=count;
+  span.replaceChildren(titleNode,countNode);
+  summary.dataset.kwfSplitSummary='true';
+}
+function bindMobileReviewNav(){
+  if(window.__KWF_MOBILE_REVIEW_NAV_BOUND__&&document.querySelector('.kwf-mobile-review-menu')&&document.querySelector('.mobile-tabbar[data-kwf-review-capture="true"]'))return;
+  let menu=document.querySelector('.kwf-mobile-review-menu');
+  if(!menu)menu=document.createElement('div');
+  menu.className='kwf-mobile-review-menu';
+  menu.hidden=true;
+  menu.replaceChildren();
+  const enter=document.createElement('button');
+  enter.type='button';
+  enter.textContent='进入复习页';
+  const close=document.createElement('button');
+  close.type='button';
+  close.textContent='收起复习菜单';
+  menu.append(enter,close);
+  if(!menu.parentElement)document.body.appendChild(menu);
+  window.__KWF_MOBILE_REVIEW_NAV_BOUND__=true;
+  let lastTap=0;
+  const goReview=()=>{menu.hidden=true;document.querySelector('#review')?.scrollIntoView({block:'start'});history.replaceState(null,'','#review');};
+  enter.addEventListener('click',goReview);
+  close.addEventListener('click',()=>{menu.hidden=true;});
+  document.addEventListener('click',event=>{
+    const target=event.target?.closest?.('.mobile-tabbar button,.mobile-tabbar a');
+    if(!target)return;
+    const label=txt(target);
+    if(label==='已学')target.textContent='词库';
+    if(label!=='复习')return;
+    event.preventDefault();
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    const now=Date.now();
+    if(now-lastTap<360){lastTap=0;goReview();return;}
+    lastTap=now;
+    menu.hidden=!menu.hidden;
+  },true);
+  const bindButtons=()=>{for(const button of document.querySelectorAll('.mobile-tabbar button')){if(txt(button)!=='复习')continue;button.onclick=event=>{event.preventDefault();event.stopPropagation();const now=Date.now();if(now-lastTap<360){lastTap=0;goReview();return false;}lastTap=now;menu.hidden=false;return false;};button.ondblclick=event=>{event.preventDefault();event.stopPropagation();goReview();return false;};}};
+  bindButtons();
+  setTimeout(bindButtons,800);
+  const tabbar=document.querySelector('.mobile-tabbar');
+  if(tabbar&&!tabbar.dataset.kwfReviewCapture){
+    tabbar.dataset.kwfReviewCapture='true';
+    tabbar.addEventListener('pointerup',event=>{
+      const target=event.target?.closest?.('button');
+      if(!target||txt(target)!=='复习')return;
+      event.preventDefault();
+      event.stopPropagation();
+      const now=Date.now();
+      if(now-lastTap<360){lastTap=0;goReview();return;}
+      lastTap=now;
+      menu.hidden=false;
+    },true);
+  }
+}
+function normalizeMobileTabLabels(){
+  for(const button of document.querySelectorAll('.mobile-tabbar button'))if(txt(button)==='已学')button.textContent='词库';
+}
+async function apply(){state.scheduled=false;injectPolishStyles();injectBugfixStyles();document.documentElement.dataset.kwfLayoutSystem='layout-v1';document.documentElement.dataset.kwfLayoutAuthority='layout-system';window.__KWF_LAYOUT_SYSTEM_READY__=true;ensureTopikUnlock();bindTts();bindMobileReviewNav();normalizeMobileTabLabels();hideMisplacedPlacement();normalizeCard();await enhanceRevealData();await rebuildCardV3();normalizeReviewStack();await normalizeLearnedRows();guardPolysemyReview();splitPolysemyMobileSummary();ensureMobileLanding();}
 function schedule(){if(state.scheduled)return;state.scheduled=true;requestAnimationFrame(apply);}
 const observer=new MutationObserver(schedule);
 function boot(){window.__KWF_LAYOUT_SYSTEM_READY__=true;injectPolishStyles();observer.observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['class','open']});addEventListener('resize',schedule,{passive:true});schedule();}

@@ -1,5 +1,21 @@
 # Vocabulary Quality Report
 
+## 2026-09-02 Headword Pollution Cleanup
+
+- Scope: paused vocabulary expansion and removed polluted headwords from the approved learning queue.
+- Scanner: `scripts/suspect-headword-report.mjs`.
+- Raw entries scanned: 4064.
+- Suspect headwords reported: 64.
+- Approved entries moved to `needs_review`: 44 total in this cleanup pass, including 38 spaced phrase-like headwords and 6 clear particle-attached headwords (`꽃이`, `밭이`, `옷이`, `책을`, `끝이`, `밥을`).
+- Published learning vocabulary after cleanup: 4020 entries / 4059 senses.
+- `밥을` publish status: removed from `data/vocabulary.json`; retained in raw as `needs_review`.
+- Current raw status: approved 4020, draft 0, needs_review 44.
+- Published all-level distribution: TOPIK-1 596, TOPIK-2 984, TOPIK-3 882, TOPIK-4 520, TOPIK-5 574, TOPIK-6 479.
+- Collocation fallback-to-gloss rows: 0.
+- Quality audit blocking failures: 0.
+- Quality audit warnings: 7438.
+- Reports: `docs/suspect-headword-report.md`, `artifacts/suspect-headword-report.json`, and `artifacts/vocab-quality-headword-nav-fix.json`.
+
 ## 2026-09-01 Bulk TOPIK-2/3/4 Calibration
 
 - Scope: expanded the published learning vocabulary toward the 4000-entry milestone while keeping UI Freeze.
