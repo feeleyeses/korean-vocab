@@ -29,7 +29,13 @@ function normalize(raw, index) {
       definitionZh: sense.definitionZh || sense.gloss || '',
       usageNote: sense.usageNote || '',
       examples: [toPair(sense.exampleKo, sense.exampleZh, `${senseId}-e1`)],
-      collocations: [{ collocationId: `${senseId}-c1`, ko: sense.collocation || raw.headword, zh: sense.collocationZh || sense.gloss || '', source: 'legacy-bundle', verified: Boolean(sense.collocation) }],
+      collocations: [{
+        collocationId: `${senseId}-c1`,
+        ko: sense.collocation || raw.headword,
+        zh: sense.collocationZh || '',
+        source: sense.collocationSource || (sense.collocationZh ? 'legacy-bundle' : ''),
+        verified: Boolean(sense.collocation && sense.collocationZh)
+      }],
       relations: [],
       level: toLevel(sense.level || raw.level || raw.levels?.[0]),
       primary: sense.primary !== false

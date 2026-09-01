@@ -585,7 +585,9 @@
           "exampleZh": "一直在继续学习。",
           "collocation": "계속하다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "继续，持续",
+          "collocationSource": "KRDICT_EXACT"
         },
         {
           "id": "w021-s2",
@@ -593,7 +595,9 @@
           "exampleKo": "비가 계속 와요.",
           "exampleZh": "雨一直在下。",
           "collocation": "계속되다",
-          "level": 2
+          "level": 2,
+          "collocationZh": "继续，持续，接连",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gye-sok"
@@ -4031,7 +4035,9 @@
           "exampleZh": "很早到了机场。",
           "collocation": "공항버스",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "机场大巴",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gong-hang"
@@ -4356,7 +4362,9 @@
           "exampleZh": "那个男生是我的朋友。",
           "collocation": "남자 친구",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "男朋友",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "nam-ja"
@@ -4383,7 +4391,9 @@
           "exampleZh": "和女性朋友一起来了。",
           "collocation": "여자 친구",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "女朋友",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-ja"
@@ -4896,7 +4906,9 @@
           "exampleZh": "冬天会下雪。",
           "collocation": "겨울 방학",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "寒假",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyeo-ul"
@@ -4949,7 +4961,6 @@
           "exampleKo": "여름에는 바다에 가요.",
           "exampleZh": "夏天去海边。",
           "collocation": "여름 휴가",
-          "collocationZh": "暑假",
           "level": 1,
           "primary": true
         }
@@ -7156,7 +7167,9 @@
           "exampleZh": "吃了猪肉。",
           "collocation": "돼지고기",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "猪肉",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "dwae-ji"
@@ -11422,7 +11435,9 @@
           "exampleZh": "这个指标显示经济状况。",
           "collocation": "경제 지표",
           "level": 6,
-          "primary": true
+          "primary": true,
+          "collocationZh": "经济指标",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ji-pyo"
@@ -11510,7 +11525,9 @@
           "exampleZh": "国内旅游需求正在增加。",
           "collocation": "국내 시장",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "国内市场",
+          "collocationSource": "KRDICT_EXACT"
         }
       ]
     },
@@ -12061,7 +12078,9 @@
           "exampleZh": "在国立博物馆看了展览。",
           "collocation": "국립 박물관",
           "level": 4,
-          "primary": true
+          "primary": true,
+          "collocationZh": "国立博物馆",
+          "collocationSource": "KRDICT_EXACT"
         }
       ]
     },
@@ -12293,7 +12312,9 @@
           "exampleZh": "全家福，家庭照",
           "collocation": "가족사진",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "全家福，家庭照",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ga-jok-ssa-jin"
@@ -12320,7 +12341,9 @@
           "exampleZh": "生育计划，生子计划",
           "collocation": "가족계획",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "生育计划，生子计划",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ga-jok-kkye-hoek/ga-jok-kke-hwek"
@@ -12347,7 +12370,9 @@
           "exampleZh": "家庭成员",
           "collocation": "가족원",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "家庭成员",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ga-jo-gwon"
@@ -12401,7 +12426,9 @@
           "exampleZh": "家庭会议，家族会议",
           "collocation": "가족회의",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "家庭会议，家族会议",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ga-jo-koe-ui/ga-jo-koe-i/ga-jok-kwe-ui/ga-jok-kwe-i"
@@ -12428,7 +12455,9 @@
           "exampleZh": "校园生活",
           "collocation": "학교생활",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "校园生活",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hak-kkyo-saeng-hwal"
@@ -12455,7 +12484,9 @@
           "exampleZh": "校长",
           "collocation": "학교장",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "校长",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hak-kkyo-jang"
@@ -12482,7 +12513,9 @@
           "exampleZh": "高中",
           "collocation": "고등학교",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "高中",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "go-deung-hak-kkyo"
@@ -12509,7 +12542,9 @@
           "exampleZh": "大学",
           "collocation": "대학교",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "大学",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "dae-hak-kkyo"
@@ -12536,7 +12571,9 @@
           "exampleZh": "初中",
           "collocation": "중학교",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "初中",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "jung-hak-kkyo"
@@ -12563,7 +12600,9 @@
           "exampleZh": "小学",
           "collocation": "초등학교",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "小学",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "cho-deung-hak-kkyo"
@@ -12590,7 +12629,9 @@
           "exampleZh": "公司职员，公司员工",
           "collocation": "회사원",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "公司职员，公司员工",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hoe-sa-won/hwe-sa-won"
@@ -12617,7 +12658,9 @@
           "exampleZh": "社会事业，社会福利事业",
           "collocation": "사회사업",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "社会事业，社会福利事业",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "sa-hoe-sa-eop/sa-hwe-sa-eop"
@@ -12644,7 +12687,9 @@
           "exampleZh": "交通费，车费",
           "collocation": "교통비",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "交通费，车费",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-tong-bi"
@@ -12671,7 +12716,9 @@
           "exampleZh": "交通事故",
           "collocation": "교통사고",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "交通事故",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-tong-sa-go"
@@ -12698,7 +12745,9 @@
           "exampleZh": "交通警察",
           "collocation": "교통경찰",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "交通警察",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-tong-gyeong-chal"
@@ -12725,7 +12774,9 @@
           "exampleZh": "交通困难，交通问题",
           "collocation": "교통난",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "交通困难，交通问题",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-tong-nan"
@@ -12752,7 +12803,9 @@
           "exampleZh": "交通量",
           "collocation": "교통량",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "交通量",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-tong-nyang"
@@ -12779,7 +12832,9 @@
           "exampleZh": "交通，交通工具",
           "collocation": "교통수단",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "交通，交通工具",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-tong-su-dan"
@@ -12806,7 +12861,9 @@
           "exampleZh": "交通巡警，交警",
           "collocation": "교통순경",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "交通巡警，交警",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-tong-sun-gyeong"
@@ -12833,7 +12890,9 @@
           "exampleZh": "环境",
           "collocation": "환경",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "环境",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hwan-gyeong"
@@ -12860,7 +12919,9 @@
           "exampleZh": "自然环境",
           "collocation": "자연환경",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "自然环境",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ja-yeon-hwan-gyeong"
@@ -12887,7 +12948,9 @@
           "exampleZh": "政策",
           "collocation": "정책",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "政策",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "jeong-chaek"
@@ -12914,7 +12977,9 @@
           "exampleZh": "文化资产",
           "collocation": "문화재",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "文化资产",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-hwa-jae"
@@ -12968,7 +13033,9 @@
           "exampleZh": "经济",
           "collocation": "경제",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "经济",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyeong-je"
@@ -12995,7 +13062,9 @@
           "exampleZh": "经济观",
           "collocation": "경제관",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "经济观",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyeong-je-gwan"
@@ -13022,7 +13091,9 @@
           "exampleZh": "经济实力，经济能力",
           "collocation": "경제력",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "经济实力，经济能力",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyeong-je-ryeok"
@@ -13076,7 +13147,9 @@
           "exampleZh": "经济学系",
           "collocation": "경제학과",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "经济学系",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyeong-je-hak-kkwa",
@@ -13131,7 +13204,9 @@
           "exampleZh": "社会团体",
           "collocation": "사회단체",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "社会团体",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "sa-hoe-dan-che/sa-hwe-dan-che"
@@ -13158,7 +13233,9 @@
           "exampleZh": "公益服务",
           "collocation": "사회봉사",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "公益服务",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "sa-hoe-bong-sa/sa-hwe-bong-sa"
@@ -13185,7 +13262,9 @@
           "exampleZh": "社会生活",
           "collocation": "사회생활",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "社会生活",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "sa-hoe-saeng-hwal/sa-hwe-saeng-hwal"
@@ -13212,7 +13291,9 @@
           "exampleZh": "主持人，司仪",
           "collocation": "사회자",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "主持人，司仪",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "sa-hoe-ja/sa-hwe-ja"
@@ -13239,7 +13320,9 @@
           "exampleZh": "没问题，不成问题，不在话下",
           "collocation": "문제없다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "没问题，不成问题，不在话下",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-je-eop-tta",
@@ -13267,7 +13350,9 @@
           "exampleZh": "没问题，不成问题，不在话下",
           "collocation": "문제없이",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "没问题，不成问题，不在话下",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-je-eop-ssi",
@@ -13295,7 +13380,9 @@
           "exampleZh": "问题点，问题",
           "collocation": "문제점",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "问题点，问题",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-je-jjeom",
@@ -13323,7 +13410,9 @@
           "exampleZh": "试卷",
           "collocation": "문제지",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "试卷",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-je-ji"
@@ -13350,7 +13439,9 @@
           "exampleZh": "习题集",
           "collocation": "문제집",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "习题集",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-je-jip"
@@ -13377,7 +13468,9 @@
           "exampleZh": "解决",
           "collocation": "해결",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "解决",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hae-gyeol"
@@ -13404,7 +13497,9 @@
           "exampleZh": "被解决，解决",
           "collocation": "해결되다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "被解决，解决",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hae-gyeol-doe-da/hae-gyeol-dwe-da"
@@ -13431,7 +13526,9 @@
           "exampleZh": "解决方法",
           "collocation": "해결책",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "解决方法",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hae-gyeol-chaek"
@@ -13458,7 +13555,9 @@
           "exampleZh": "增加",
           "collocation": "증가",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "增加",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "jeung-ga"
@@ -13485,7 +13584,9 @@
           "exampleZh": "被增加",
           "collocation": "증가되다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "被增加",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "jeung-ga-doe-da/jeung-ga-dwe-da"
@@ -13512,7 +13613,9 @@
           "exampleZh": "增加量",
           "collocation": "증가량",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "增加量",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "jeung-ga-ryang"
@@ -13539,7 +13642,9 @@
           "exampleZh": "使增加",
           "collocation": "증가시키다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "使增加",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "jeung-ga-si-ki-da"
@@ -13566,7 +13671,9 @@
           "exampleZh": "增长率，增加率",
           "collocation": "증가율",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "增长率，增加率",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "jeung-ga-yul"
@@ -13593,7 +13700,9 @@
           "exampleZh": "减少，下降",
           "collocation": "감소",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "减少，下降",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gam-so"
@@ -13620,7 +13729,9 @@
           "exampleZh": "减少，下降",
           "collocation": "감소되다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "减少，下降",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gam-so-doe-da/gam-so-dwe-da"
@@ -13647,7 +13758,9 @@
           "exampleZh": "减少，降低",
           "collocation": "감소시키다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "减少，降低",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gam-so-si-ki-da"
@@ -13674,7 +13787,9 @@
           "exampleZh": "减少率，下降率",
           "collocation": "감소율",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "减少率，下降率",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gam-so-yul"
@@ -13701,7 +13816,9 @@
           "exampleZh": "变化，改变",
           "collocation": "변화되다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "变化，改变",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "byeon-hwa-doe-da/byeon-hwa-dwe-da"
@@ -13728,7 +13845,9 @@
           "exampleZh": "改变，使变化",
           "collocation": "변화시키다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "改变，使变化",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "byeon-hwa-si-ki-da"
@@ -13755,7 +13874,9 @@
           "exampleZh": "变化，改变",
           "collocation": "변화하다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "变化，改变",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "byeon-hwa-ha-da"
@@ -13782,7 +13903,9 @@
           "exampleZh": "发展",
           "collocation": "발전되다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "发展",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "bal-jjeon-doe-da/bal-jjeon-dwe-da"
@@ -13809,7 +13932,9 @@
           "exampleZh": "使发展",
           "collocation": "발전시키다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "使发展",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "bal-jjeon-si-ki-da"
@@ -13836,7 +13961,9 @@
           "exampleZh": "发展",
           "collocation": "발전하다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "发展",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "bal-jjeon-ha-da",
@@ -13864,7 +13991,9 @@
           "exampleZh": "教育，培训",
           "collocation": "교육",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "教育，培训",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-yuk"
@@ -13891,7 +14020,9 @@
           "exampleZh": "受教育",
           "collocation": "교육되다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "受教育",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-yuk-ttoe-da/gyo-yuk-ttwe-da"
@@ -13918,7 +14049,9 @@
           "exampleZh": "教育，培训",
           "collocation": "교육하다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "教育，培训",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-yu-ka-da"
@@ -13945,7 +14078,9 @@
           "exampleZh": "教育家",
           "collocation": "교육가",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "教育家",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-yuk-kka"
@@ -13972,7 +14107,9 @@
           "exampleZh": "学费，教育费用",
           "collocation": "교육비",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "学费，教育费用",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-yuk-ppi"
@@ -13999,7 +14136,9 @@
           "exampleZh": "教育，管教",
           "collocation": "교육시키다",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "教育，管教",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-yuk-ssi-ki-da",
@@ -14027,7 +14166,9 @@
           "exampleZh": "生活，居住",
           "collocation": "생활하다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "生活，居住",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "saeng-hwal-ha-da"
@@ -14054,7 +14195,9 @@
           "exampleZh": "生活费",
           "collocation": "생활비",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "生活费",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "saeng-hwal-bi"
@@ -14081,7 +14224,9 @@
           "exampleZh": "生活用品，日用品",
           "collocation": "생활용품",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "生活用品，日用品",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "saeng-hwal-lyong-pum",
@@ -14109,7 +14254,9 @@
           "exampleZh": "生活必需品",
           "collocation": "생활필수품",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "生活必需品",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "saeng-hwal-pil-ssu-pum"
@@ -14136,7 +14283,9 @@
           "exampleZh": "健康",
           "collocation": "건강하다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "健康",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "geon-gang-ha-da"
@@ -14163,7 +14312,9 @@
           "exampleZh": "健康美",
           "collocation": "건강미",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "健康美",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "geon-gang-mi"
@@ -14190,7 +14341,9 @@
           "exampleZh": "健康餐，保健餐",
           "collocation": "건강식",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "健康餐，保健餐",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "geon-gang-sik"
@@ -14217,7 +14370,9 @@
           "exampleZh": "保健食品，健康食品",
           "collocation": "건강식품",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "保健食品，健康食品",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "geon-gang-sik-pum"
@@ -14244,7 +14399,9 @@
           "exampleZh": "健康地",
           "collocation": "건강히",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "健康地",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "geon-gang-hi"
@@ -14271,7 +14428,9 @@
           "exampleZh": "旅行社",
           "collocation": "여행사",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "旅行社",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-haeng-sa"
@@ -14298,7 +14457,9 @@
           "exampleZh": "旅游地点，旅行地",
           "collocation": "여행지",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "旅游地点，旅行地",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-haeng-ji"
@@ -14325,7 +14486,9 @@
           "exampleZh": "旅行，旅游",
           "collocation": "여행하다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "旅行，旅游",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-haeng-ha-da"
@@ -14352,7 +14515,9 @@
           "exampleZh": "旅行家",
           "collocation": "여행가",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "旅行家",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-haeng-ga"
@@ -14379,7 +14544,9 @@
           "exampleZh": "游客，旅客",
           "collocation": "여행객",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "游客，旅客",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-haeng-gaek"
@@ -14406,7 +14573,9 @@
           "exampleZh": "旅行日记，旅行见闻",
           "collocation": "여행담",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "旅行日记，旅行见闻",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-haeng-dam"
@@ -14433,7 +14602,9 @@
           "exampleZh": "旅行用",
           "collocation": "여행용",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "旅行用",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-haeng-nyong"
@@ -14460,7 +14631,9 @@
           "exampleZh": "旅行者，游客",
           "collocation": "여행자",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "旅行者，游客",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-haeng-ja"
@@ -14487,7 +14660,9 @@
           "exampleZh": "餐厅，饭店",
           "collocation": "음식점",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "餐厅，饭店",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "eum-sik-jjeom"
@@ -14514,7 +14689,9 @@
           "exampleZh": "饮食量",
           "collocation": "음식량",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "饮食量",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "eum-sing-nyang",
@@ -14542,7 +14719,9 @@
           "exampleZh": "食物",
           "collocation": "음식물",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "食物",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "eum-sing-mul",
@@ -14570,7 +14749,9 @@
           "exampleZh": "餐桌，饭桌",
           "collocation": "음식상",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "餐桌，饭桌",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "eum-sik-ssang"
@@ -14597,7 +14778,9 @@
           "exampleZh": "家族病史",
           "collocation": "가족력",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "家族病史",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ga-jong-nyeok"
@@ -14624,7 +14807,9 @@
           "exampleZh": "大家庭",
           "collocation": "대가족",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "大家庭",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "dae-ga-jok"
@@ -14651,7 +14836,9 @@
           "exampleZh": "开会词，开幕词",
           "collocation": "개회사",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "开会词，开幕词",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gae-hoe-sa/gae-hwe-sa"
@@ -14678,7 +14865,9 @@
           "exampleZh": "分公司，子公司",
           "collocation": "자회사",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "分公司，子公司",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ja-hoe-sa/ja-hwe-sa"
@@ -14705,7 +14894,9 @@
           "exampleZh": "株式会社，股份有限公司",
           "collocation": "주식회사",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "株式会社，股份有限公司",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ju-si-koe-sa/ju-si-kwe-sa"
@@ -14732,7 +14923,9 @@
           "exampleZh": "环卫工，清洁工",
           "collocation": "환경미화원",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "环卫工，清洁工",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hwan-gyeong-mi-hwa-won"
@@ -14786,7 +14979,9 @@
           "exampleZh": "绿色",
           "collocation": "친환경",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "绿色",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "chin-hwan-gyeong"
@@ -14840,7 +15035,9 @@
           "exampleZh": "文化界",
           "collocation": "문화계",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "文化界",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-hwa-gye/mun-hwa-ge"
@@ -14867,7 +15064,9 @@
           "exampleZh": "文化圈",
           "collocation": "문화권",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "文化圈",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-hwa-kkwon"
@@ -14894,7 +15093,9 @@
           "exampleZh": "文化部",
           "collocation": "문화부",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "文化部",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-hwa-bu"
@@ -14921,7 +15122,9 @@
           "exampleZh": "文教费，文化经费",
           "collocation": "문화비",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "文教费，文化经费",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-hwa-bi"
@@ -14948,7 +15151,9 @@
           "exampleZh": "文化史，文化发展史",
           "collocation": "문화사",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "文化史，文化发展史",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-hwa-sa"
@@ -14975,7 +15180,9 @@
           "exampleZh": "被视为问题，当作问题",
           "collocation": "문제시되다",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "被视为问题，当作问题",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-je-si-doe-da/mun-je-si-dwe-da"
@@ -15002,7 +15209,9 @@
           "exampleZh": "当作问题",
           "collocation": "문제시하다",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "当作问题",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-je-si-ha-da"
@@ -15029,7 +15238,9 @@
           "exampleZh": "问题儿童",
           "collocation": "문제아",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "问题儿童",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-je-a"
@@ -15056,7 +15267,9 @@
           "exampleZh": "问题意识",
           "collocation": "문제의식",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "问题意识",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-je-ui-sik/mun-je-i-sik"
@@ -15083,7 +15296,9 @@
           "exampleZh": "暴力解决者",
           "collocation": "해결사",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "暴力解决者",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hae-gyeol-ssa"
@@ -15110,7 +15325,9 @@
           "exampleZh": "未解决",
           "collocation": "미해결",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "未解决",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mi-hae-gyeol"
@@ -15137,7 +15354,9 @@
           "exampleZh": "增势，增长势头",
           "collocation": "증가세",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "增势，增长势头",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "jeung-ga-se"
@@ -15164,7 +15383,9 @@
           "exampleZh": "杳无音讯，渺无音信，音信全无",
           "collocation": "감감소식",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "杳无音讯，渺无音信，音信全无",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gam-gam-so-sik"
@@ -15191,7 +15412,9 @@
           "exampleZh": "变幻莫测，变化无常",
           "collocation": "변화무쌍",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "变幻莫测，变化无常",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "byeon-hwa-mu-ssang"
@@ -15218,7 +15441,9 @@
           "exampleZh": "变幻莫测，变化无常",
           "collocation": "변화무쌍하다",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "变幻莫测，变化无常",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "byeon-hwa-mu-ssang-ha-da"
@@ -15245,7 +15470,9 @@
           "exampleZh": "变率",
           "collocation": "변화율",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "变率",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "byeon-hwa-yul"
@@ -15272,7 +15499,9 @@
           "exampleZh": "多元化，多边化，多样化",
           "collocation": "다변화",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "多元化，多边化，多样化",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "da-byeon-hwa"
@@ -15299,7 +15528,9 @@
           "exampleZh": "多元化，多边化，多样化",
           "collocation": "다변화되다",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "多元化，多边化，多样化",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "da-byeon-hwa-doe-da/da-byeon-hwa-dwe-da"
@@ -15380,7 +15611,9 @@
           "exampleZh": "发展史",
           "collocation": "발전사",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "发展史",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "bal-jjeon-sa"
@@ -15407,7 +15640,9 @@
           "exampleZh": "发展状况",
           "collocation": "발전상",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "发展状况",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "bal-jjeon-sang"
@@ -15434,7 +15669,9 @@
           "exampleZh": "发展前途",
           "collocation": "발전성",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "发展前途",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "bal-jjeon-sseong"
@@ -15461,7 +15698,9 @@
           "exampleZh": "生活困难，生活之苦",
           "collocation": "생활고",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "生活困难，生活之苦",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "saeng-hwal-go"
@@ -15488,7 +15727,9 @@
           "exampleZh": "生活圈",
           "collocation": "생활권",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "生活圈",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "saeng-hwal-kkwon"
@@ -15515,7 +15756,9 @@
           "exampleZh": "健康身体",
           "collocation": "건강체",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "健康身体",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "geon-gang-che"
@@ -15542,7 +15785,9 @@
           "exampleZh": "组成并维系家庭所需要的社会制度。",
           "collocation": "가족 제도",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "家庭制度，家族制度",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ga-jok je-do"
@@ -15569,7 +15814,9 @@
           "exampleZh": "在学校接受的教育。",
           "collocation": "학교 교육",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "学校教育",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hak-gyo gyo-yuk"
@@ -15596,7 +15843,9 @@
           "exampleZh": "只有女生就读的高中。",
           "collocation": "여자 고등학교",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "女子高中",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-ja go-deung-hak-gyo"
@@ -15623,7 +15872,9 @@
           "exampleZh": "只有女生就读的初中。",
           "collocation": "여자 중학교",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "女子初中",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-ja jung-hak-gyo"
@@ -15650,7 +15901,9 @@
           "exampleZh": "个人经营的公司。",
           "collocation": "개인 회사",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "个人公司，私人公司",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gae-in hoe-sa"
@@ -15677,7 +15930,9 @@
           "exampleZh": "销售保险商品并支付保险金的公司。",
           "collocation": "보험 회사",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "保险公司",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "bo-heom hoe-sa"
@@ -15704,7 +15959,9 @@
           "exampleZh": "专门搬运货物的公司。",
           "collocation": "통운 회사",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "运输公司",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "tong-un hoe-sa"
@@ -15732,7 +15989,9 @@
           "exampleZh": "乘坐公共交通时支付车费的卡。",
           "collocation": "교통 카드",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "交通卡",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-tong ka-deu"
@@ -15759,7 +16018,9 @@
           "exampleZh": "与运输人或物的交通工具相关的机构。",
           "collocation": "교통 기관",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "交通机关，交通机构",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-tong gi-gwan"
@@ -15786,7 +16047,9 @@
           "exampleZh": "保护自然环境免受污染或破坏。",
           "collocation": "환경 보호",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "环境保护, 环保",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hwan-gyeong bo-ho"
@@ -15813,7 +16076,9 @@
           "exampleZh": "自然环境变脏或变得有害。",
           "collocation": "환경 오염",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "环境污染",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "hwan-gyeong o-yeom"
@@ -15840,7 +16105,9 @@
           "exampleZh": "家庭氛围或生活条件。",
           "collocation": "가정 환경",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "家境，家庭环境",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "ga-jeong hwan-gyeong"
@@ -15867,7 +16134,9 @@
           "exampleZh": "影响生活的周边条件。",
           "collocation": "생활 환경",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "生活环境",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "saeng-hwal hwan-gyeong"
@@ -15894,7 +16163,9 @@
           "exampleZh": "减少支出并抑制经济活动的政策。",
           "collocation": "긴축 정책",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "紧缩性财政政策，紧缩政策",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gin-chuk jeong-chaek"
@@ -15921,7 +16192,9 @@
           "exampleZh": "限制与其他国家交流的政策。",
           "collocation": "쇄국 정책",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "闭关政策",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "swae-guk jeong-chaek"
@@ -15948,7 +16221,9 @@
           "exampleZh": "为开展文化生活而设置的设施。",
           "collocation": "문화 시설",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "文化设施",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "mun-hwa si-seol"
@@ -15975,7 +16250,9 @@
           "exampleZh": "为发展经济而开发资源和产业。",
           "collocation": "경제 개발",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "经济开发",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyeong-je gae-bal"
@@ -16002,7 +16279,9 @@
           "exampleZh": "经济走向更好状态或更高阶段。",
           "collocation": "경제 발전",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "经济发展",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyeong-je bal-jeon"
@@ -16029,7 +16308,9 @@
           "exampleZh": "经济规模扩大、生产增加。",
           "collocation": "경제 성장",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "经济增长，经济成长",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyeong-je seong-jang"
@@ -16056,7 +16337,9 @@
           "exampleZh": "为了经济利益相互协助。",
           "collocation": "경제 협력",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "经济合作",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyeong-je hyeop-ryeok"
@@ -16083,7 +16366,9 @@
           "exampleZh": "社会中地位或生活水平相近的人群层次。",
           "collocation": "사회 계층",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "社会阶层",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "sa-hoe gye-cheung"
@@ -16110,7 +16395,9 @@
           "exampleZh": "影响社会成员、需要解决的问题。",
           "collocation": "사회 문제",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "社会问题",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "sa-hoe mun-je"
@@ -16137,7 +16424,9 @@
           "exampleZh": "为国民生活稳定和幸福而设的制度与努力。",
           "collocation": "사회 복지",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "社会福利",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "sa-hoe bok-ji"
@@ -16164,7 +16453,9 @@
           "exampleZh": "数量或量减少的趋势。",
           "collocation": "감소세",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "下降趋势，减少趋势",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gam-so-se"
@@ -16191,7 +16482,9 @@
           "exampleZh": "气候长期发生变化的现象。",
           "collocation": "기후 변화",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "气候变化",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gi-hu byeon-hwa"
@@ -16218,7 +16511,9 @@
           "exampleZh": "负责或实施教育的机构。",
           "collocation": "교육 기관",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "教育机构",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-yuk gi-gwan"
@@ -16245,7 +16540,9 @@
           "exampleZh": "培养小学教师的大学。",
           "collocation": "교육 대학",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "教育大学，师范大学",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-yuk dae-hak"
@@ -16272,7 +16569,9 @@
           "exampleZh": "通过教育希望达成的目标。",
           "collocation": "교육 목표",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "教育目标",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-yuk mok-pyo"
@@ -16299,7 +16598,9 @@
           "exampleZh": "为成为教师而在实际学校进行的实习。",
           "collocation": "교육 실습",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "教育实习",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gyo-yuk sil-seup"
@@ -16326,7 +16627,9 @@
           "exampleZh": "人生活的空间。",
           "collocation": "생활 공간",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "生活空间",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "saeng-hwal gong-gan"
@@ -16353,7 +16656,9 @@
           "exampleZh": "记录学生学校生活和成绩等内容的文件。",
           "collocation": "생활 기록부",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "学籍簿",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "saeng-hwal gi-rok-bu"
@@ -16381,7 +16686,9 @@
           "exampleZh": "为保持健康而管理身体和生活。",
           "collocation": "건강 관리",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "健康管理",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "geon-gang gwan-ri"
@@ -16408,7 +16715,9 @@
           "exampleZh": "为疾病或受伤提供医疗费用保障的保险。",
           "collocation": "건강 보험",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "健康保险，医疗保险",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "geon-gang bo-heom"
@@ -16435,7 +16744,9 @@
           "exampleZh": "为了解健康状态而进行的检查。",
           "collocation": "건강 진단",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "健康体检",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "geon-gang jin-dan"
@@ -16462,7 +16773,9 @@
           "exampleZh": "旅行者可代替现金使用的支票。",
           "collocation": "여행자 수표",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "旅行支票",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "yeo-haeng-ja su-pyo"
@@ -16490,7 +16803,9 @@
           "exampleZh": "在该季节最美味、产量较多的食物。",
           "collocation": "제철 음식",
           "level": 5,
-          "primary": true
+          "primary": true,
+          "collocationZh": "当季食物",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "je-cheol eum-sik"
@@ -16518,7 +16833,9 @@
           "exampleZh": "在街边售卖的简单食物。",
           "collocation": "길거리 음식",
           "level": 3,
-          "primary": true
+          "primary": true,
+          "collocationZh": "街边小吃，路边摊小吃",
+          "collocationSource": "KRDICT_EXACT"
         }
       ],
       "romanization": "gil-geo-ri eum-sik"

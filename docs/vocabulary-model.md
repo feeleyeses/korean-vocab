@@ -40,7 +40,8 @@ Sprint 2 keeps the visible UI unchanged while moving the production word bank to
 
 - `collocationId`: stable unique ID.
 - `ko`: Korean phrase.
-- `zh`: Chinese meaning.
+- `zh`: Chinese phrase meaning. This must never fallback to the headword meaning or `sense.gloss`; leave it empty when no verified phrase-level translation exists.
+- `source`: phrase meaning source such as `KRDICT_EXACT` when KRDict returns one exact full-phrase match with Chinese translation.
 - `note`: optional usage note.
 
 ## Pronunciation

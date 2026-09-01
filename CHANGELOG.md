@@ -2,6 +2,10 @@
 
 All meaningful product, UI, data, and pipeline changes must be recorded here.
 
+## 2026-09-01
+
+- Collocation Meaning Cleanup: removed the `sense.gloss` fallback from the vocabulary pipeline, applied 159 KRDict exact Chinese phrase meanings to `data/vocabulary.raw.json`, regenerated `data/vocabulary.json`, upgraded the quality audit with collocation-meaning fallback detection and TOPIK statistics, and added the manual review queue for unresolved collocations.
+
 ## 2026-08-30
 
 - Card Hero Sync and Completion Slot Fix: kept sound-rule learning/review Hero typography identical between initial and revealed states, prevented revealed-card content overlap while preserving the fixed Continue rail, and placed the completed learning summary back in the study-card flow after learning controls.

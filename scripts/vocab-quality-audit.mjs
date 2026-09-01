@@ -25,6 +25,13 @@ const coverage = {
   sources: 0,
   humanReviewed: 0
 };
+const collocationZhStats = {
+  total: 0,
+  withZh: 0,
+  missingZh: 0,
+  fallbackToGloss: 0,
+  byLevel: {}
+};
 
 const hasHangul = value => /[\u3131-\u318e\uac00-\ud7a3]/u.test(String(value || ''));
 const hasLatin = value => /[a-z]/i.test(String(value || ''));
@@ -55,6 +62,12 @@ function countByLevel(items) {
     for (const level of levels) acc[level] = (acc[level] || 0) + 1;
     return acc;
   }, {});
+}
+
+function addCollocationLevel(level, key) {
+  const normalized = level || 'unknown';
+  collocationZhStats.byLevel[normalized] ||= { total: 0, withZh: 0, missingZh: 0, fallbackToGloss: 0 };
+  collocationZhStats.byLevel[normalized][key] += 1;
 }
 
 function checkQualityScore(entry) {
@@ -138,6 +151,26 @@ for (const entry of entries || []) {
       addReview(entry, `${sense.senseId}: example needs source and verification`);
     }
     if (!Array.isArray(sense.collocations)) failures.push(`${id}/${sense.senseId}: collocations must be an array`);
+    for (const collocation of sense.collocations || []) {
+      const level = sense.level || entry.levels?.[0] || 'unknown';
+      collocationZhStats.total += 1;
+      addCollocationLevel(level, 'total');
+      if (collocation.zh) {
+        collocationZhStats.withZh += 1;
+        addCollocationLevel(level, 'withZh');
+      } else {
+        collocationZhStats.missingZh += 1;
+        addCollocationLevel(level, 'missingZh');
+        warnings.push(`${id}/${sense.senseId}/${collocation.collocationId}: missing collocation.zh`);
+        addReview(entry, `${sense.senseId}: collocation.zh needs verified phrase meaning`);
+      }
+      if (collocation.zh && collocation.zh === sense.glossZh && collocation.source !== 'KRDICT_EXACT') {
+        collocationZhStats.fallbackToGloss += 1;
+        addCollocationLevel(level, 'fallbackToGloss');
+        failures.push(`${id}/${sense.senseId}/${collocation.collocationId}: collocation.zh appears to fallback to sense.glossZh`);
+        addReview(entry, `${sense.senseId}: collocation.zh fallback to sense.glossZh`, 'failure');
+      }
+    }
     const verifiedCollocation = sense.collocations?.some(item => item.ko && item.zh && item.source && item.verified);
     if (verifiedCollocation) coverage.collocations += 1;
     else {
@@ -167,6 +200,7 @@ const report = {
     reviewQueue: reviewQueue.length
   },
   coverage,
+  collocationZh: collocationZhStats,
   qualityBands: {
     approved: entries.filter(entry => entry.verificationStatus === 'approved').length,
     reviewed: entries.filter(entry => entry.verificationStatus === 'reviewed').length,
