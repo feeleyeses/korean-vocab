@@ -1,5 +1,44 @@
 # Vocabulary Quality Report
 
+## 2026-09-01 Bulk TOPIK-2/3/4 Calibration
+
+- Scope: expanded the published learning vocabulary toward the 4000-entry milestone while keeping UI Freeze.
+- Sources: TOPIK II 2662 PDF (`https://learning-korean.com/DL/topik-2662.pdf`), TOPIK I 1671 PDF (`https://learning-korean.com/DL/TOPIK-I-1671.pdf`), and KRDict Open API mid/high search candidates (`https://krdict.korean.go.kr`).
+- Processing rule: auto-approved only exact KRDict headword matches with headword, part of speech, TOPIK level, romanization, and at least one Chinese gloss; ambiguous, duplicate, or non-exact candidates were skipped.
+- Raw entries before batch: 2981.
+- Raw entries after batch: 4064.
+- New raw entries in this batch: 1083.
+- New approved entries in this batch: 1083.
+- Current published learning vocabulary: 4064 entries / 4103 senses.
+- Remaining distance to 6000 entries: 1936.
+- New approved distribution: TOPIK-2 684, TOPIK-3 333, TOPIK-4 66.
+- Current published primary-level distribution: TOPIK-1 603, TOPIK-2 986, TOPIK-3 900, TOPIK-4 515, TOPIK-5 581, TOPIK-6 479.
+- Current raw status: approved 4064, draft 0, needs_review 0.
+- Duplicate lexicalEntryId: 0.
+- Missing TOPIK level: 0.
+- Missing romanization: 0.
+- Missing glossZh: 0.
+- Duplicate headword groups: 15; report classifies 1 same-headword/different-POS group, 5 same-headword/polysemy groups, and 9 likely-keep groups.
+- Collocation cleanup: filled another 61 high-confidence phrase meanings with `EDITORIAL_REVIEW`; unresolved items stayed empty under the no-fallback rule.
+- Collocation fallback-to-gloss rows: 0.
+- Quality audit blocking failures: 0.
+- Quality audit warnings: 7442; previous total was 5398, so this batch added 2044 non-blocking warnings.
+- Warning density: 1.831 warnings per approved entry (previous density: 1.811).
+- Warning type distribution: missing_collocation_zh 268, missing_collocation_verification 3721, missing_example_verification 3453.
+- Example verification backlog: 3453 rows; all have a KRDict exact-headword entry point for future KRDict view API example harvesting, but Chinese example translations still need verification.
+- Reports: `artifacts/vocab-quality-expansion-topik234-bulk.json`, `artifacts/vocabulary-expansion-topik234-bulk-report.json`, `artifacts/vocabulary-expansion-topik2-gap-report.json`, `artifacts/vocabulary-expansion-krdict-mid-high-gap-report.json`, `artifacts/example-verification-backlog.json`, and `artifacts/duplicate-headword-report.json`.
+
+### Collocation zh by TOPIK Level
+
+| TOPIK | Total | With zh | Missing zh | Fallback to gloss |
+|---|---:|---:|---:|---:|
+| TOPIK-1 | 188 | 188 | 0 | 0 |
+| TOPIK-2 | 113 | 61 | 52 | 0 |
+| TOPIK-3 | 157 | 90 | 67 | 0 |
+| TOPIK-4 | 32 | 4 | 28 | 0 |
+| TOPIK-5 | 131 | 38 | 93 | 0 |
+| TOPIK-6 | 29 | 1 | 28 | 0 |
+
 ## 2026-09-01 Bulk TOPIK-5/6 Expansion and Collocation Cleanup
 
 - Scope: expanded the published learning vocabulary with a second TOPIK II batch while keeping UI Freeze.

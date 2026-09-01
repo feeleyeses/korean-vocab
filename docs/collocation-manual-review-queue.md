@@ -6,9 +6,8 @@ Rows here should not be auto-filled. They need human review or a separate corpus
 
 ## Summary
 
-- Total manual/unavailable rows: 329
-- TOPIK-1: 42
-- TOPIK-2: 71
+- Total manual/unavailable rows: 268
+- TOPIK-2: 52
 - TOPIK-3: 67
 - TOPIK-4: 28
 - TOPIK-5: 93
@@ -16,76 +15,10 @@ Rows here should not be auto-filled. They need human review or a separate corpus
 
 ## Queue by TOPIK Level
 
-### TOPIK-1
-
-| Headword | Collocation | Current sense.gloss | Reason |
-|---|---|---|---|
-| 시간 | 시간이 없다 | 时间 | Needs manual phrase translation review |
-| 시작하다 | 일을 시작하다 | 开始 | Needs manual phrase translation review |
-| 시장 | 시장에 가다 | 市场 | Needs manual phrase translation review |
-| 쓰다 | 글을 쓰다 | 写 | Needs manual phrase translation review |
-| 쓰다 | 글을 쓰다 | 写 | Needs manual phrase translation review |
-| 아버지 | 아버지와 어머니 | 父亲 | Needs manual phrase translation review |
-| 아이 | 작은 아이 | 孩子 | Needs manual phrase translation review |
-| 아침 | 아침을 먹다 | 早上；早饭 | Needs manual phrase translation review |
-| 앉다 | 자리에 앉다 | 坐 | Needs manual phrase translation review |
-| 알다 | 방법을 알다 | 知道 | Needs manual phrase translation review |
-| 어디 | 어디에서 만나다 | 哪里 | Needs manual phrase translation review |
-| 어렵다 | 이해하기 어렵다 | 难 | Needs manual phrase translation review |
-| 어머니 | 어머니께 전화하다 | 母亲 | Needs manual phrase translation review |
-| 어제 | 어제 저녁 | 昨天 | Needs manual phrase translation review |
-| 언니 | 친한 언니 | 姐姐（女用） | Needs manual phrase translation review |
-| 언제 | 언제부터 | 什么时候 | Needs manual phrase translation review |
-| 여름 | 여름 휴가 | 夏天 | Needs manual phrase translation review |
-| 열다 | 문을 열다 | 打开 | Needs manual phrase translation review |
-| 오늘 | 오늘 아침 | 今天 | Needs manual phrase translation review |
-| 오빠 | 우리 오빠 | 哥哥（女用） | Needs manual phrase translation review |
-| 오후 | 오후 세 시 | 下午 | Needs manual phrase translation review |
-| 옷이 | 옷이 예쁘다 | 衣服（主格） | Needs manual phrase translation review |
-| 월요일 | 월요일 아침 | 星期一 | Needs manual phrase translation review |
-| 의자 | 의자에 앉다 | 椅子 | Needs manual phrase translation review |
-| 이름 | 이름을 쓰다 | 名字 | Needs manual phrase translation review |
-| 읽다 | 책을 읽다 | 读 | Needs manual phrase translation review |
-| 자다 | 잠을 자다 | 睡觉 | Needs manual phrase translation review |
-| 작다 | 크기가 작다 | 小 | Needs manual phrase translation review |
-| 저녁 | 저녁을 먹다 | 晚上；晚饭 | Needs manual phrase translation review |
-| 적다 | 양이 적다 | 少 | Needs manual phrase translation review |
-| 좋다 | 기분이 좋다 | 好 | Needs manual phrase translation review |
-| 주말 | 주말 계획 | 周末 | Needs manual phrase translation review |
-| 집 | 집에 가다 | 家；房子 | Needs manual phrase translation review |
-| 책상 | 책상 위 | 书桌 | Needs manual phrase translation review |
-| 책을 | 책을 읽다 | 书（宾格） | Needs manual phrase translation review |
-| 친구 | 친구를 만나다 | 朋友 | Needs manual phrase translation review |
-| 침대 | 침대에 눕다 | 床 | Needs manual phrase translation review |
-| 크다 | 키가 크다 | 大 | Needs manual phrase translation review |
-| 팔다 | 물건을 팔다 | 卖 | Needs manual phrase translation review |
-| 학교 | 학교에 다니다 | 学校 | Needs manual phrase translation review |
-| 학생 | 학생이 많다 | 学生 | Needs manual phrase translation review |
-| 형 | 우리 형 | 哥哥（男用） | Needs manual phrase translation review |
-
 ### TOPIK-2
 
 | Headword | Collocation | Current sense.gloss | Reason |
 |---|---|---|---|
-| 꽃이 | 꽃이 피다 | 花（主格） | Needs manual phrase translation review |
-| 끝이 | 끝이 나다 | 末端；结尾（主格） | Needs manual phrase translation review |
-| 도움 | 도움을 받다 | 帮助 | Needs manual phrase translation review |
-| 도착하다 | 목적지에 도착하다 | 到达 | Needs manual phrase translation review |
-| 돌아오다 | 집에 돌아오다 | 回来 | Needs manual phrase translation review |
-| 동네 | 동네 사람 | 小区；街区 | Needs manual phrase translation review |
-| 두껍다 | 두꺼운 책 | 厚 | Needs manual phrase translation review |
-| 들다 | 가방을 들다 | 拿；举 | Needs manual phrase translation review |
-| 들다 | 마음에 들다 | 喜欢；合心意 | Needs manual phrase translation review |
-| 마감 | 마감 기한 | 截止；收尾 | Needs manual phrase translation review |
-| 마을 | 마을 사람 | 村庄；社区 | Needs manual phrase translation review |
-| 마음 | 마음을 정하다 | 心意；意愿 | Needs manual phrase translation review |
-| 몇 년 | 몇 년 동안 | 几年 | Needs manual phrase translation review |
-| 모임 | 모임에 참석하다 | 聚会；会议 | Needs manual phrase translation review |
-| 무료 | 무료 서비스 | 免费 | Needs manual phrase translation review |
-| 문자 | 문자를 보내다 | 短信；文字 | Needs manual phrase translation review |
-| 문제 | 문제를 풀다 | 问题；题目 | Needs manual phrase translation review |
-| 문화 | 문화를 배우다 | 文化 | Needs manual phrase translation review |
-| 미리 | 미리 준비하다 | 提前 | Needs manual phrase translation review |
 | 바꾸다 | 생각을 바꾸다 | 更换；改变 | Needs manual phrase translation review |
 | 바르다 | 약을 바르다 | 涂；抹 | Needs manual phrase translation review |
 | 방금 | 방금 전 | 刚刚 | Needs manual phrase translation review |

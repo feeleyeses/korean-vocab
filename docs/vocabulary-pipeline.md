@@ -26,6 +26,13 @@ New entries must pass this path before they enter the production vocabulary. The
   `node scripts/vocab-expansion-import.mjs --key=<KRDICT_API_KEY> --candidates=artifacts/topik-ii-candidates.txt --limit=900 --status=approved --levels=5,6 --source-url=https://learning-korean.com/DL/topik-2662.pdf --source-name=TOPIK_II_2662 --batch-id=2026-09-01-topik56-expansion-bulk --id-prefix=exp-tii --out=artifacts/vocabulary-expansion-topik56-bulk-report.json`
 - Fill a reviewed collocation phrase-meaning batch without using headword or sense-gloss fallback:
   `node scripts/fill-collocation-zh-batch.mjs data/vocabulary.raw.json artifacts/collocation-zh-editorial-topik1-batch-report.json`
+- Generate KRDict official mid/high search candidates for gap-filling when the TOPIK PDF candidate pool is exhausted:
+  `node scripts/krdict-headword-candidates.mjs --key=<KRDICT_API_KEY> --limit=500 --out=artifacts/krdict-mid-high-candidates.txt --report=artifacts/krdict-mid-high-candidates-report.json`
+- Import a TOPIK-2/3/4 calibration batch from KRDict official mid/high candidates:
+  `node scripts/vocab-expansion-import.mjs --key=<KRDICT_API_KEY> --candidates=artifacts/krdict-mid-high-candidates.txt --limit=200 --status=approved --levels=2,3,4 --source-url=https://krdict.korean.go.kr --source-name=KRDICT_MID_HIGH_SEARCH --batch-id=2026-09-01-krdict-mid-high-gap --id-prefix=exp-krd --out=artifacts/vocabulary-expansion-krdict-mid-high-gap-report.json`
+- Generate example-verification and duplicate-headword control reports:
+  `node scripts/example-verification-backlog.mjs data/vocabulary.json artifacts/example-verification-backlog.json docs/example-verification-backlog.md`
+  `node scripts/duplicate-headword-report.mjs data/vocabulary.json artifacts/duplicate-headword-report.json docs/duplicate-headword-report.md`
 - Regenerate production data:
   `node scripts/vocab-pipeline.mjs data/vocabulary.raw.json data/vocabulary.json`
 - Regenerate the unresolved collocation queue:

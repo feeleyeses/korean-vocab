@@ -1,0 +1,4389 @@
+{
+  "generatedAt": "2026-09-01T14:50:28.487Z",
+  "batchId": "2026-09-01-topik2-gap-expansion",
+  "sourceName": "TOPIK_I_1671",
+  "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+  "idPrefix": "exp-ti",
+  "levels": [
+    2,
+    3
+  ],
+  "requestedLimit": 500,
+  "importedCount": 405,
+  "skippedCount": 384,
+  "imported": [
+    {
+      "id": "exp-ti-621",
+      "headword": "왜냐하면",
+      "level": "TOPIK-2",
+      "glossZh": "因为",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-622",
+      "headword": "외국",
+      "level": "TOPIK-2",
+      "glossZh": "外国",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-623",
+      "headword": "옆",
+      "level": "TOPIK-2",
+      "glossZh": "旁，旁边",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-624",
+      "headword": "외국어",
+      "level": "TOPIK-2",
+      "glossZh": "外国语，外语",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-625",
+      "headword": "외국인",
+      "level": "TOPIK-2",
+      "glossZh": "外国人",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-626",
+      "headword": "예문",
+      "level": "TOPIK-2",
+      "glossZh": "例句",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-627",
+      "headword": "외롭다",
+      "level": "TOPIK-2",
+      "glossZh": "孤单，孤独",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-628",
+      "headword": "예쁘다",
+      "level": "TOPIK-2",
+      "glossZh": "漂亮，好看",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-629",
+      "headword": "외삼촌",
+      "level": "TOPIK-2",
+      "glossZh": "舅舅",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-630",
+      "headword": "외숙모",
+      "level": "TOPIK-2",
+      "glossZh": "舅母，舅妈",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-631",
+      "headword": "예약",
+      "level": "TOPIK-2",
+      "glossZh": "预约，预订",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-632",
+      "headword": "외출하다",
+      "level": "TOPIK-2",
+      "glossZh": "外出，出门",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-633",
+      "headword": "옛날",
+      "level": "TOPIK-2",
+      "glossZh": "古，古代",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-634",
+      "headword": "외할머니",
+      "level": "TOPIK-2",
+      "glossZh": "外婆，姥姥，外祖母",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-635",
+      "headword": "외할아버지",
+      "level": "TOPIK-2",
+      "glossZh": "外公，姥爷，外祖父",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-636",
+      "headword": "왼쪽",
+      "level": "TOPIK-2",
+      "glossZh": "左边",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-637",
+      "headword": "요금",
+      "level": "TOPIK-2",
+      "glossZh": "费用，收费，资费",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-638",
+      "headword": "오래",
+      "level": "TOPIK-2",
+      "glossZh": "好久，很久",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-639",
+      "headword": "요르단",
+      "level": "TOPIK-2",
+      "glossZh": "约旦",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-640",
+      "headword": "오래간만",
+      "level": "TOPIK-2",
+      "glossZh": "好久，久违",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-641",
+      "headword": "요일",
+      "level": "TOPIK-2",
+      "glossZh": "星期，周，礼拜",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-642",
+      "headword": "오랜만",
+      "level": "TOPIK-2",
+      "glossZh": "好久，久违",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-643",
+      "headword": "요즘",
+      "level": "TOPIK-2",
+      "glossZh": "最近，近来，这阵子",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-644",
+      "headword": "우리나라",
+      "level": "TOPIK-2",
+      "glossZh": "我们国家，我国",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-645",
+      "headword": "우산",
+      "level": "TOPIK-2",
+      "glossZh": "雨伞",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-646",
+      "headword": "은행원",
+      "level": "TOPIK-2",
+      "glossZh": "银行职员",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-647",
+      "headword": "음료수",
+      "level": "TOPIK-2",
+      "glossZh": "饮用水",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-648",
+      "headword": "우유",
+      "level": "TOPIK-2",
+      "glossZh": "牛奶",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-649",
+      "headword": "음반",
+      "level": "TOPIK-2",
+      "glossZh": "唱片，专辑",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-650",
+      "headword": "우체국",
+      "level": "TOPIK-2",
+      "glossZh": "邮局",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-651",
+      "headword": "우표",
+      "level": "TOPIK-2",
+      "glossZh": "邮票",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-652",
+      "headword": "음악",
+      "level": "TOPIK-2",
+      "glossZh": "音乐",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-653",
+      "headword": "음악가",
+      "level": "TOPIK-2",
+      "glossZh": "音乐家",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-654",
+      "headword": "운동복",
+      "level": "TOPIK-2",
+      "glossZh": "运动服",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-655",
+      "headword": "응",
+      "level": "TOPIK-2",
+      "glossZh": "是，唉",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-656",
+      "headword": "운동선수",
+      "level": "TOPIK-2",
+      "glossZh": "运动选手，运动员",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-657",
+      "headword": "의미",
+      "level": "TOPIK-2",
+      "glossZh": "意义",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-658",
+      "headword": "운동장",
+      "level": "TOPIK-2",
+      "glossZh": "运动场，体育场",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-659",
+      "headword": "운동하다",
+      "level": "TOPIK-2",
+      "glossZh": "运动",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-660",
+      "headword": "운동화",
+      "level": "TOPIK-2",
+      "glossZh": "运动鞋",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-661",
+      "headword": "운전하다",
+      "level": "TOPIK-2",
+      "glossZh": "驾驶，操纵",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-662",
+      "headword": "이거",
+      "level": "TOPIK-2",
+      "glossZh": "这个",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-663",
+      "headword": "이것",
+      "level": "TOPIK-2",
+      "glossZh": "这个",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-664",
+      "headword": "이곳",
+      "level": "TOPIK-2",
+      "glossZh": "这里，这儿",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-665",
+      "headword": "움직이다",
+      "level": "TOPIK-2",
+      "glossZh": "动，移动，动弹",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-666",
+      "headword": "이따가",
+      "level": "TOPIK-2",
+      "glossZh": "稍后，回头",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-667",
+      "headword": "웃기다",
+      "level": "TOPIK-2",
+      "glossZh": "逗笑，可笑",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-668",
+      "headword": "웃다",
+      "level": "TOPIK-2",
+      "glossZh": "笑",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-669",
+      "headword": "이렇게",
+      "level": "TOPIK-2",
+      "glossZh": "“이러하게(这样，这么)”的缩略语。",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-670",
+      "headword": "이렇다",
+      "level": "TOPIK-2",
+      "glossZh": "这样",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-671",
+      "headword": "원피스",
+      "level": "TOPIK-2",
+      "glossZh": "连衣裙",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-672",
+      "headword": "원하다",
+      "level": "TOPIK-2",
+      "glossZh": "希望，想要",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-673",
+      "headword": "이메일",
+      "level": "TOPIK-2",
+      "glossZh": "电邮，电子邮件，电子函件",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-674",
+      "headword": "이모",
+      "level": "TOPIK-2",
+      "glossZh": "阿姨，姨妈",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-675",
+      "headword": "월급",
+      "level": "TOPIK-2",
+      "glossZh": "月薪，月工资",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-676",
+      "headword": "이모부",
+      "level": "TOPIK-2",
+      "glossZh": "姨父，姨夫",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-677",
+      "headword": "월드컵",
+      "level": "TOPIK-2",
+      "glossZh": "世界杯",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-678",
+      "headword": "이번",
+      "level": "TOPIK-2",
+      "glossZh": "这次，这回",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-679",
+      "headword": "월세",
+      "level": "TOPIK-2",
+      "glossZh": "月租",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-680",
+      "headword": "이분",
+      "level": "TOPIK-2",
+      "glossZh": "这位",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-681",
+      "headword": "웬일",
+      "level": "TOPIK-2",
+      "glossZh": "什么事，怎么回事，不知为什么",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-682",
+      "headword": "이상하다",
+      "level": "TOPIK-2",
+      "glossZh": "异常，反常，不正常",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-683",
+      "headword": "위치",
+      "level": "TOPIK-2",
+      "glossZh": "位置，位于",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-684",
+      "headword": "위하다",
+      "level": "TOPIK-2",
+      "glossZh": "为了",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-685",
+      "headword": "이야기",
+      "level": "TOPIK-2",
+      "glossZh": "故事",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-686",
+      "headword": "위험하다",
+      "level": "TOPIK-2",
+      "glossZh": "危险",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-687",
+      "headword": "이야기하다",
+      "level": "TOPIK-2",
+      "glossZh": "谈到，谈及",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-688",
+      "headword": "유럽",
+      "level": "TOPIK-2",
+      "glossZh": "欧洲",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-689",
+      "headword": "이용",
+      "level": "TOPIK-2",
+      "glossZh": "使用",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-690",
+      "headword": "이용하다",
+      "level": "TOPIK-2",
+      "glossZh": "使用",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-691",
+      "headword": "유명하다",
+      "level": "TOPIK-2",
+      "glossZh": "有名，知名，著名",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-692",
+      "headword": "유월",
+      "level": "TOPIK-2",
+      "glossZh": "六月",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-693",
+      "headword": "이유",
+      "level": "TOPIK-2",
+      "glossZh": "理由",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-694",
+      "headword": "유학생",
+      "level": "TOPIK-2",
+      "glossZh": "留学生",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-695",
+      "headword": "이집트",
+      "level": "TOPIK-2",
+      "glossZh": "埃及",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-696",
+      "headword": "유행",
+      "level": "TOPIK-2",
+      "glossZh": "流行",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-697",
+      "headword": "이쪽",
+      "level": "TOPIK-2",
+      "glossZh": "这边",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-698",
+      "headword": "이틀",
+      "level": "TOPIK-2",
+      "glossZh": "两天",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-699",
+      "headword": "이해하다",
+      "level": "TOPIK-2",
+      "glossZh": "理解，领悟",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-700",
+      "headword": "입다",
+      "level": "TOPIK-2",
+      "glossZh": "穿",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-701",
+      "headword": "입원하다",
+      "level": "TOPIK-2",
+      "glossZh": "住院",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-702",
+      "headword": "인구",
+      "level": "TOPIK-2",
+      "glossZh": "人口",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-703",
+      "headword": "인기",
+      "level": "TOPIK-2",
+      "glossZh": "人气",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-704",
+      "headword": "잊다",
+      "level": "TOPIK-2",
+      "glossZh": "忘，忘记，忘却",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-705",
+      "headword": "잊어버리다",
+      "level": "TOPIK-2",
+      "glossZh": "忘掉",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-706",
+      "headword": "인사하다",
+      "level": "TOPIK-2",
+      "glossZh": "问候，打招呼",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-707",
+      "headword": "인삼",
+      "level": "TOPIK-2",
+      "glossZh": "人参",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-708",
+      "headword": "자동차",
+      "level": "TOPIK-2",
+      "glossZh": "汽车",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-709",
+      "headword": "인천",
+      "level": "TOPIK-2",
+      "glossZh": "仁川",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-710",
+      "headword": "인터넷",
+      "level": "TOPIK-2",
+      "glossZh": "互联网",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-711",
+      "headword": "자료",
+      "level": "TOPIK-2",
+      "glossZh": "资料",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-712",
+      "headword": "인터뷰하다",
+      "level": "TOPIK-2",
+      "glossZh": "采访，访谈",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-713",
+      "headword": "자르다",
+      "level": "TOPIK-2",
+      "glossZh": "切断，剪，砍断",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-714",
+      "headword": "인형",
+      "level": "TOPIK-2",
+      "glossZh": "娃娃",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-715",
+      "headword": "자유",
+      "level": "TOPIK-2",
+      "glossZh": "自由",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-716",
+      "headword": "자장면",
+      "level": "TOPIK-2",
+      "glossZh": "韩式炸酱面",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-717",
+      "headword": "일본",
+      "level": "TOPIK-2",
+      "glossZh": "日本",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-718",
+      "headword": "자전거",
+      "level": "TOPIK-2",
+      "glossZh": "自行车",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-719",
+      "headword": "자주",
+      "level": "TOPIK-2",
+      "glossZh": "常常，经常",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-720",
+      "headword": "작년",
+      "level": "TOPIK-2",
+      "glossZh": "去年",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-721",
+      "headword": "일본어",
+      "level": "TOPIK-2",
+      "glossZh": "日语，日本语",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-722",
+      "headword": "작은아버지",
+      "level": "TOPIK-2",
+      "glossZh": "叔父，叔叔",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-723",
+      "headword": "작은어머니",
+      "level": "TOPIK-2",
+      "glossZh": "叔母，婶婶",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-724",
+      "headword": "일상생활",
+      "level": "TOPIK-2",
+      "glossZh": "日常生活",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-725",
+      "headword": "잔",
+      "level": "TOPIK-2",
+      "glossZh": "杯，杯子",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-726",
+      "headword": "잔치",
+      "level": "TOPIK-2",
+      "glossZh": "宴会，喜宴",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-727",
+      "headword": "일어나다",
+      "level": "TOPIK-2",
+      "glossZh": "起，起来",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-728",
+      "headword": "잘",
+      "level": "TOPIK-2",
+      "glossZh": "正确地，善良地",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-729",
+      "headword": "일어서다",
+      "level": "TOPIK-2",
+      "glossZh": "起身，站起来",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-730",
+      "headword": "일요일",
+      "level": "TOPIK-2",
+      "glossZh": "星期日， 星期天，周日，礼拜天",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-731",
+      "headword": "잘생기다",
+      "level": "TOPIK-2",
+      "glossZh": "好看，漂亮，英俊",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-732",
+      "headword": "일월",
+      "level": "TOPIK-2",
+      "glossZh": "一月",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-733",
+      "headword": "잘하다",
+      "level": "TOPIK-2",
+      "glossZh": "好",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-734",
+      "headword": "일주일",
+      "level": "TOPIK-2",
+      "glossZh": "一周，一星期",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-735",
+      "headword": "잠",
+      "level": "TOPIK-2",
+      "glossZh": "觉，睡眠",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-736",
+      "headword": "일찍",
+      "level": "TOPIK-2",
+      "glossZh": "早早儿",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-737",
+      "headword": "일하다",
+      "level": "TOPIK-2",
+      "glossZh": "做事",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-738",
+      "headword": "잠자다",
+      "level": "TOPIK-2",
+      "glossZh": "睡觉，睡眠",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-739",
+      "headword": "읽기",
+      "level": "TOPIK-2",
+      "glossZh": "阅读",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-740",
+      "headword": "잡수시다",
+      "level": "TOPIK-2",
+      "glossZh": "吃",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-741",
+      "headword": "잃다",
+      "level": "TOPIK-2",
+      "glossZh": "丢，丢失，遗失",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-742",
+      "headword": "잡지",
+      "level": "TOPIK-2",
+      "glossZh": "杂志",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-743",
+      "headword": "잃어버리다",
+      "level": "TOPIK-2",
+      "glossZh": "丢，丢失，遗失",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-744",
+      "headword": "입",
+      "level": "TOPIK-2",
+      "glossZh": "嘴，口",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-745",
+      "headword": "장갑",
+      "level": "TOPIK-2",
+      "glossZh": "手套",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-746",
+      "headword": "입구",
+      "level": "TOPIK-2",
+      "glossZh": "入口",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-747",
+      "headword": "장마",
+      "level": "TOPIK-2",
+      "glossZh": "梅雨",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-748",
+      "headword": "장마철",
+      "level": "TOPIK-2",
+      "glossZh": "梅雨季",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-749",
+      "headword": "젓가락",
+      "level": "TOPIK-2",
+      "glossZh": "筷子",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-750",
+      "headword": "장미",
+      "level": "TOPIK-2",
+      "glossZh": "玫瑰，蔷薇",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-751",
+      "headword": "정거장",
+      "level": "TOPIK-2",
+      "glossZh": "车站",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-752",
+      "headword": "장소",
+      "level": "TOPIK-2",
+      "glossZh": "场所，地点",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-753",
+      "headword": "장점",
+      "level": "TOPIK-2",
+      "glossZh": "优点，长处",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-754",
+      "headword": "정류장",
+      "level": "TOPIK-2",
+      "glossZh": "车站",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-755",
+      "headword": "재료",
+      "level": "TOPIK-2",
+      "glossZh": "材料",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-756",
+      "headword": "정리하다",
+      "level": "TOPIK-2",
+      "glossZh": "整理，收拾，清理",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-757",
+      "headword": "재미없다",
+      "level": "TOPIK-2",
+      "glossZh": "无趣，没意思，没劲儿",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-758",
+      "headword": "재미있다",
+      "level": "TOPIK-2",
+      "glossZh": "有趣，有意思",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-759",
+      "headword": "재킷",
+      "level": "TOPIK-2",
+      "glossZh": "外套",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-760",
+      "headword": "정보",
+      "level": "TOPIK-2",
+      "glossZh": "信息",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-761",
+      "headword": "저거",
+      "level": "TOPIK-2",
+      "glossZh": "那个",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-762",
+      "headword": "저것",
+      "level": "TOPIK-2",
+      "glossZh": "那个",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-763",
+      "headword": "제목",
+      "level": "TOPIK-2",
+      "glossZh": "题目",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-764",
+      "headword": "저곳",
+      "level": "TOPIK-2",
+      "glossZh": "那里，那儿",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-765",
+      "headword": "조사하다",
+      "level": "TOPIK-2",
+      "glossZh": "调查",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-766",
+      "headword": "저렇게",
+      "level": "TOPIK-2",
+      "glossZh": "“저러하게(那样，那么)”的缩略语。",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-767",
+      "headword": "조선",
+      "level": "TOPIK-2",
+      "glossZh": "朝鲜",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-768",
+      "headword": "저분",
+      "level": "TOPIK-2",
+      "glossZh": "那位",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-769",
+      "headword": "조선말",
+      "level": "TOPIK-2",
+      "glossZh": "朝鲜语",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-770",
+      "headword": "저쪽",
+      "level": "TOPIK-2",
+      "glossZh": "那边",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-771",
+      "headword": "조선어",
+      "level": "TOPIK-2",
+      "glossZh": "朝鲜语",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-772",
+      "headword": "저희",
+      "level": "TOPIK-2",
+      "glossZh": "我们",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-773",
+      "headword": "조심하다",
+      "level": "TOPIK-2",
+      "glossZh": "小心，谨慎，留心",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-774",
+      "headword": "조용하다",
+      "level": "TOPIK-2",
+      "glossZh": "安静",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-775",
+      "headword": "조용히",
+      "level": "TOPIK-2",
+      "glossZh": "安静地",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-776",
+      "headword": "조카",
+      "level": "TOPIK-2",
+      "glossZh": "侄子，侄儿，侄女",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-777",
+      "headword": "졸업",
+      "level": "TOPIK-2",
+      "glossZh": "毕业",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-778",
+      "headword": "졸업하다",
+      "level": "TOPIK-2",
+      "glossZh": "毕业",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-779",
+      "headword": "전자사전",
+      "level": "TOPIK-2",
+      "glossZh": "电子词典",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-780",
+      "headword": "좀",
+      "level": "TOPIK-2",
+      "glossZh": "一点点，有一点",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-781",
+      "headword": "전하다",
+      "level": "TOPIK-2",
+      "glossZh": "流传",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-782",
+      "headword": "전혀",
+      "level": "TOPIK-2",
+      "glossZh": "全然",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-783",
+      "headword": "좁다",
+      "level": "TOPIK-2",
+      "glossZh": "窄小",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-784",
+      "headword": "전화",
+      "level": "TOPIK-2",
+      "glossZh": "电话",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-785",
+      "headword": "종로",
+      "level": "TOPIK-2",
+      "glossZh": "钟路",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-786",
+      "headword": "전화기",
+      "level": "TOPIK-2",
+      "glossZh": "电话机",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-787",
+      "headword": "종류",
+      "level": "TOPIK-2",
+      "glossZh": "种类",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-788",
+      "headword": "전화번호",
+      "level": "TOPIK-2",
+      "glossZh": "电话号码",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-789",
+      "headword": "종업원",
+      "level": "TOPIK-2",
+      "glossZh": "员工",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-790",
+      "headword": "종이",
+      "level": "TOPIK-2",
+      "glossZh": "纸，纸片",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-791",
+      "headword": "젊다",
+      "level": "TOPIK-2",
+      "glossZh": "年青，年轻",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-792",
+      "headword": "좋아하다",
+      "level": "TOPIK-2",
+      "glossZh": "喜欢",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-793",
+      "headword": "점수",
+      "level": "TOPIK-2",
+      "glossZh": "分数",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-794",
+      "headword": "죄송하다",
+      "level": "TOPIK-2",
+      "glossZh": "抱歉，愧疚",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-795",
+      "headword": "점심",
+      "level": "TOPIK-2",
+      "glossZh": "中饭，午饭，午餐",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-796",
+      "headword": "점심시간",
+      "level": "TOPIK-2",
+      "glossZh": "午饭时间",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-797",
+      "headword": "주로",
+      "level": "TOPIK-2",
+      "glossZh": "主要",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-798",
+      "headword": "점원",
+      "level": "TOPIK-2",
+      "glossZh": "店员",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-799",
+      "headword": "점퍼",
+      "level": "TOPIK-2",
+      "glossZh": "夹克",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-800",
+      "headword": "주머니",
+      "level": "TOPIK-2",
+      "glossZh": "口袋，袋子",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-801",
+      "headword": "주무시다",
+      "level": "TOPIK-2",
+      "glossZh": "就寝，睡",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-802",
+      "headword": "주문하다",
+      "level": "TOPIK-2",
+      "glossZh": "订购，预定，下单",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-803",
+      "headword": "주부",
+      "level": "TOPIK-2",
+      "glossZh": "主妇，家庭主妇",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-804",
+      "headword": "지우개",
+      "level": "TOPIK-2",
+      "glossZh": "橡皮擦",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-805",
+      "headword": "지키다",
+      "level": "TOPIK-2",
+      "glossZh": "守护，保卫",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-806",
+      "headword": "주소",
+      "level": "TOPIK-2",
+      "glossZh": "地址，住址",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-807",
+      "headword": "지하",
+      "level": "TOPIK-2",
+      "glossZh": "地下",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-808",
+      "headword": "주스",
+      "level": "TOPIK-2",
+      "glossZh": "汁，果汁",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-809",
+      "headword": "지하도",
+      "level": "TOPIK-2",
+      "glossZh": "地下道，地道",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-810",
+      "headword": "주위",
+      "level": "TOPIK-2",
+      "glossZh": "周围",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-811",
+      "headword": "지하철",
+      "level": "TOPIK-2",
+      "glossZh": "地铁",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-812",
+      "headword": "주인",
+      "level": "TOPIK-2",
+      "glossZh": "主人，物主",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-813",
+      "headword": "지하철역",
+      "level": "TOPIK-2",
+      "glossZh": "地铁站",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-814",
+      "headword": "주차장",
+      "level": "TOPIK-2",
+      "glossZh": "停车场",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-815",
+      "headword": "직업",
+      "level": "TOPIK-2",
+      "glossZh": "职业",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-816",
+      "headword": "주차하다",
+      "level": "TOPIK-2",
+      "glossZh": "停车，停放车辆",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-817",
+      "headword": "직원",
+      "level": "TOPIK-2",
+      "glossZh": "职员，职工",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-818",
+      "headword": "주황색",
+      "level": "TOPIK-2",
+      "glossZh": "朱黄色",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-819",
+      "headword": "직장",
+      "level": "TOPIK-2",
+      "glossZh": "工作单位，职场",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-820",
+      "headword": "진달래",
+      "level": "TOPIK-2",
+      "glossZh": "金达莱，杜鹃花，映山红",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-821",
+      "headword": "준비",
+      "level": "TOPIK-2",
+      "glossZh": "准备",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-822",
+      "headword": "준비하다",
+      "level": "TOPIK-2",
+      "glossZh": "准备",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-823",
+      "headword": "질문하다",
+      "level": "TOPIK-2",
+      "glossZh": "提问，问",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-824",
+      "headword": "줄다",
+      "level": "TOPIK-2",
+      "glossZh": "缩小，减少，减轻",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-825",
+      "headword": "짐",
+      "level": "TOPIK-2",
+      "glossZh": "行李，货物",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-826",
+      "headword": "중국",
+      "level": "TOPIK-2",
+      "glossZh": "中国",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-827",
+      "headword": "짓다",
+      "level": "TOPIK-2",
+      "glossZh": "做，造，建",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-828",
+      "headword": "중국어",
+      "level": "TOPIK-2",
+      "glossZh": "中国语",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-829",
+      "headword": "중국집",
+      "level": "TOPIK-2",
+      "glossZh": "中国餐厅，中华料理店",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-830",
+      "headword": "중식",
+      "level": "TOPIK-2",
+      "glossZh": "中国菜，中餐",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-831",
+      "headword": "짧다",
+      "level": "TOPIK-2",
+      "glossZh": "短",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-832",
+      "headword": "중심",
+      "level": "TOPIK-2",
+      "glossZh": "中心，正中",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-833",
+      "headword": "중요",
+      "level": "TOPIK-2",
+      "glossZh": "重要",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-834",
+      "headword": "중요하다",
+      "level": "TOPIK-2",
+      "glossZh": "重要",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-835",
+      "headword": "찌개",
+      "level": "TOPIK-2",
+      "glossZh": "浓汤，汤，锅",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-836",
+      "headword": "중학생",
+      "level": "TOPIK-2",
+      "glossZh": "初中生",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-837",
+      "headword": "즐거워하다",
+      "level": "TOPIK-2",
+      "glossZh": "高兴，愉悦",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-838",
+      "headword": "차갑다",
+      "level": "TOPIK-2",
+      "glossZh": "凉，冰凉",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-839",
+      "headword": "즐겁다",
+      "level": "TOPIK-2",
+      "glossZh": "愉快，欢乐，欢快",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-840",
+      "headword": "즐기다",
+      "level": "TOPIK-2",
+      "glossZh": "享受",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-841",
+      "headword": "차리다",
+      "level": "TOPIK-2",
+      "glossZh": "摆，置办",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-842",
+      "headword": "착하다",
+      "level": "TOPIK-2",
+      "glossZh": "善良",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-843",
+      "headword": "지갑",
+      "level": "TOPIK-2",
+      "glossZh": "钱包，钱夹，钱袋",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-844",
+      "headword": "창문",
+      "level": "TOPIK-2",
+      "glossZh": "窗，窗户",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-845",
+      "headword": "찾다",
+      "level": "TOPIK-2",
+      "glossZh": "寻，觅，访，寻找，查",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-846",
+      "headword": "지나다",
+      "level": "TOPIK-2",
+      "glossZh": "过，过去",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-847",
+      "headword": "찾아가다",
+      "level": "TOPIK-2",
+      "glossZh": "去，去找，去见，拜访",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-848",
+      "headword": "지난달",
+      "level": "TOPIK-2",
+      "glossZh": "上月，上个月",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-849",
+      "headword": "찾아오다",
+      "level": "TOPIK-2",
+      "glossZh": "来找，来访，访问",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-850",
+      "headword": "지난번",
+      "level": "TOPIK-2",
+      "glossZh": "上次，上回",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-851",
+      "headword": "채소",
+      "level": "TOPIK-2",
+      "glossZh": "菜，蔬菜",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-852",
+      "headword": "지난주",
+      "level": "TOPIK-2",
+      "glossZh": "上周",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-853",
+      "headword": "책",
+      "level": "TOPIK-2",
+      "glossZh": "书，书籍，画册",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-854",
+      "headword": "지내다",
+      "level": "TOPIK-2",
+      "glossZh": "度日，生活",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-855",
+      "headword": "책방",
+      "level": "TOPIK-2",
+      "glossZh": "书店",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-856",
+      "headword": "층",
+      "level": "TOPIK-2",
+      "glossZh": "层",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-857",
+      "headword": "책임",
+      "level": "TOPIK-2",
+      "glossZh": "责任",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-858",
+      "headword": "치과",
+      "level": "TOPIK-2",
+      "glossZh": "牙科",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-859",
+      "headword": "치료하다",
+      "level": "TOPIK-2",
+      "glossZh": "治疗",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-860",
+      "headword": "처음",
+      "level": "TOPIK-2",
+      "glossZh": "第一次，初次",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-861",
+      "headword": "치마",
+      "level": "TOPIK-2",
+      "glossZh": "裙，裙子",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-862",
+      "headword": "치약",
+      "level": "TOPIK-2",
+      "glossZh": "牙膏",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-863",
+      "headword": "천천히",
+      "level": "TOPIK-2",
+      "glossZh": "慢慢地，缓慢地",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-864",
+      "headword": "친절하다",
+      "level": "TOPIK-2",
+      "glossZh": "亲切，关切，热情",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-865",
+      "headword": "친척",
+      "level": "TOPIK-2",
+      "glossZh": "亲戚",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-866",
+      "headword": "첫",
+      "level": "TOPIK-2",
+      "glossZh": "首次，初次，第一次",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-867",
+      "headword": "친하다",
+      "level": "TOPIK-2",
+      "glossZh": "亲近，要好，亲密",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-868",
+      "headword": "청바지",
+      "level": "TOPIK-2",
+      "glossZh": "牛仔裤",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-869",
+      "headword": "청소기",
+      "level": "TOPIK-2",
+      "glossZh": "吸尘器",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-870",
+      "headword": "칠월",
+      "level": "TOPIK-2",
+      "glossZh": "七月",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-871",
+      "headword": "청소하다",
+      "level": "TOPIK-3",
+      "glossZh": "打扫，清扫 ，扫除",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-872",
+      "headword": "칠판",
+      "level": "TOPIK-3",
+      "glossZh": "黑板",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-873",
+      "headword": "초대하다",
+      "level": "TOPIK-3",
+      "glossZh": "邀请，招待",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-874",
+      "headword": "칫솔",
+      "level": "TOPIK-3",
+      "glossZh": "牙刷",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-875",
+      "headword": "카드",
+      "level": "TOPIK-3",
+      "glossZh": "卡",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-876",
+      "headword": "초등학생",
+      "level": "TOPIK-3",
+      "glossZh": "小学生",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-877",
+      "headword": "카레",
+      "level": "TOPIK-3",
+      "glossZh": "咖喱，咖喱粉",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-878",
+      "headword": "초록색",
+      "level": "TOPIK-3",
+      "glossZh": "草绿色",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-879",
+      "headword": "카메라",
+      "level": "TOPIK-3",
+      "glossZh": "照相机",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-880",
+      "headword": "초콜릿",
+      "level": "TOPIK-3",
+      "glossZh": "巧克力",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-881",
+      "headword": "카페",
+      "level": "TOPIK-3",
+      "glossZh": "咖啡店，咖啡馆",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-882",
+      "headword": "촬영하다",
+      "level": "TOPIK-3",
+      "glossZh": "摄影，摄制，拍摄",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-883",
+      "headword": "칼",
+      "level": "TOPIK-3",
+      "glossZh": "刀",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-884",
+      "headword": "캐나다",
+      "level": "TOPIK-3",
+      "glossZh": "加拿大",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-885",
+      "headword": "추다",
+      "level": "TOPIK-3",
+      "glossZh": "跳",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-886",
+      "headword": "커피",
+      "level": "TOPIK-3",
+      "glossZh": "咖啡",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-887",
+      "headword": "추석",
+      "level": "TOPIK-3",
+      "glossZh": "中秋节",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-888",
+      "headword": "커피숍",
+      "level": "TOPIK-3",
+      "glossZh": "咖啡店，咖啡馆，咖啡厅",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-889",
+      "headword": "추억",
+      "level": "TOPIK-3",
+      "glossZh": "回忆",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-890",
+      "headword": "컴퓨터",
+      "level": "TOPIK-3",
+      "glossZh": "电脑",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-891",
+      "headword": "컵",
+      "level": "TOPIK-3",
+      "glossZh": "杯子",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-892",
+      "headword": "축제",
+      "level": "TOPIK-3",
+      "glossZh": "庆典",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-893",
+      "headword": "케이크",
+      "level": "TOPIK-3",
+      "glossZh": "蛋糕",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-894",
+      "headword": "축하하다",
+      "level": "TOPIK-3",
+      "glossZh": "祝贺，庆贺，道贺",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-895",
+      "headword": "출구",
+      "level": "TOPIK-3",
+      "glossZh": "出口",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-896",
+      "headword": "코피",
+      "level": "TOPIK-3",
+      "glossZh": "鼻血",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-897",
+      "headword": "출근하다",
+      "level": "TOPIK-3",
+      "glossZh": "上班",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-898",
+      "headword": "콜라",
+      "level": "TOPIK-3",
+      "glossZh": "可乐",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-899",
+      "headword": "출발",
+      "level": "TOPIK-3",
+      "glossZh": "出发",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-900",
+      "headword": "콧노래",
+      "level": "TOPIK-3",
+      "glossZh": "哼歌，哼唱",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-901",
+      "headword": "출발하다",
+      "level": "TOPIK-3",
+      "glossZh": "出发",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-902",
+      "headword": "콧물",
+      "level": "TOPIK-3",
+      "glossZh": "鼻涕，鼻水",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-903",
+      "headword": "출장",
+      "level": "TOPIK-3",
+      "glossZh": "出差",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-904",
+      "headword": "콩",
+      "level": "TOPIK-3",
+      "glossZh": "大豆，黄豆",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-905",
+      "headword": "춤",
+      "level": "TOPIK-3",
+      "glossZh": "舞蹈",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-906",
+      "headword": "크기",
+      "level": "TOPIK-3",
+      "glossZh": "大小，高矮，高低",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-907",
+      "headword": "춤추다",
+      "level": "TOPIK-3",
+      "glossZh": "跳舞",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-908",
+      "headword": "춥다",
+      "level": "TOPIK-3",
+      "glossZh": "冷",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-909",
+      "headword": "크리스마스",
+      "level": "TOPIK-3",
+      "glossZh": "圣诞节",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-910",
+      "headword": "취미",
+      "level": "TOPIK-3",
+      "glossZh": "爱好，嗜好，趣味，兴趣",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-911",
+      "headword": "큰아버지",
+      "level": "TOPIK-3",
+      "glossZh": "大伯，大伯父",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-912",
+      "headword": "취소하다",
+      "level": "TOPIK-3",
+      "glossZh": "取消，解除",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-913",
+      "headword": "큰어머니",
+      "level": "TOPIK-3",
+      "glossZh": "伯母，大娘，大妈",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-914",
+      "headword": "취직하다",
+      "level": "TOPIK-3",
+      "glossZh": "就业，就职",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-915",
+      "headword": "킬로그램",
+      "level": "TOPIK-3",
+      "glossZh": "公斤",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-916",
+      "headword": "펜",
+      "level": "TOPIK-3",
+      "glossZh": "笔",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-917",
+      "headword": "킬로미터",
+      "level": "TOPIK-3",
+      "glossZh": "公里",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-918",
+      "headword": "펴다",
+      "level": "TOPIK-3",
+      "glossZh": "铺展，展开",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-919",
+      "headword": "타월",
+      "level": "TOPIK-3",
+      "glossZh": "毛巾，手巾",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-920",
+      "headword": "편지",
+      "level": "TOPIK-3",
+      "glossZh": "信，书信，信件",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-921",
+      "headword": "탁구",
+      "level": "TOPIK-3",
+      "glossZh": "乒乓球",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-922",
+      "headword": "태국",
+      "level": "TOPIK-3",
+      "glossZh": "泰国",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-923",
+      "headword": "평양",
+      "level": "TOPIK-3",
+      "glossZh": "平壤",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-924",
+      "headword": "태권도",
+      "level": "TOPIK-3",
+      "glossZh": "跆拳道",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-925",
+      "headword": "평일",
+      "level": "TOPIK-3",
+      "glossZh": "平常，平时，平日",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-926",
+      "headword": "태어나다",
+      "level": "TOPIK-3",
+      "glossZh": "诞生，出生，降生",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-927",
+      "headword": "포도",
+      "level": "TOPIK-3",
+      "glossZh": "葡萄",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-928",
+      "headword": "태풍",
+      "level": "TOPIK-3",
+      "glossZh": "台风",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-929",
+      "headword": "택시",
+      "level": "TOPIK-3",
+      "glossZh": "出租车",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-930",
+      "headword": "탤런트",
+      "level": "TOPIK-3",
+      "glossZh": "演员",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-931",
+      "headword": "표현",
+      "level": "TOPIK-3",
+      "glossZh": "表达，表示，表述",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-932",
+      "headword": "터미널",
+      "level": "TOPIK-3",
+      "glossZh": "总站",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-933",
+      "headword": "푹",
+      "level": "TOPIK-3",
+      "glossZh": "睡得很沉或使疲劳的身体得以充分休息的样子。",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-934",
+      "headword": "테니스",
+      "level": "TOPIK-3",
+      "glossZh": "网球",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-935",
+      "headword": "테이블",
+      "level": "TOPIK-3",
+      "glossZh": "桌子，台子，平台",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-936",
+      "headword": "텔레비전",
+      "level": "TOPIK-3",
+      "glossZh": "电视，电视机",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-937",
+      "headword": "프랑스",
+      "level": "TOPIK-3",
+      "glossZh": "法国",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-938",
+      "headword": "토마토",
+      "level": "TOPIK-3",
+      "glossZh": "番茄，西红柿",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-939",
+      "headword": "프로그램",
+      "level": "TOPIK-3",
+      "glossZh": "目录，计划，方案",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-940",
+      "headword": "토요일",
+      "level": "TOPIK-3",
+      "glossZh": "星期六，周六，礼拜六",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-941",
+      "headword": "프린트",
+      "level": "TOPIK-3",
+      "glossZh": "印，打印，印刷",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-942",
+      "headword": "통장",
+      "level": "TOPIK-3",
+      "glossZh": "存折",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-943",
+      "headword": "피곤하다",
+      "level": "TOPIK-3",
+      "glossZh": "疲倦，疲惫，困",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-944",
+      "headword": "통하다",
+      "level": "TOPIK-3",
+      "glossZh": "通，畅通，顺畅",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-945",
+      "headword": "피다",
+      "level": "TOPIK-3",
+      "glossZh": "开",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-946",
+      "headword": "퇴근하다",
+      "level": "TOPIK-3",
+      "glossZh": "下班",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-947",
+      "headword": "피아노",
+      "level": "TOPIK-3",
+      "glossZh": "钢琴",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-948",
+      "headword": "특별히",
+      "level": "TOPIK-3",
+      "glossZh": "特别，特意",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-949",
+      "headword": "피우다",
+      "level": "TOPIK-3",
+      "glossZh": "开",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-950",
+      "headword": "특징",
+      "level": "TOPIK-3",
+      "glossZh": "特征，特点，特色",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-951",
+      "headword": "피자",
+      "level": "TOPIK-3",
+      "glossZh": "比萨",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-952",
+      "headword": "특히",
+      "level": "TOPIK-3",
+      "glossZh": "特别，尤其，尤为",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-953",
+      "headword": "필름",
+      "level": "TOPIK-3",
+      "glossZh": "膜",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-954",
+      "headword": "틀다",
+      "level": "TOPIK-3",
+      "glossZh": "扭，转，拧",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-955",
+      "headword": "필요",
+      "level": "TOPIK-3",
+      "glossZh": "必要，需要",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-956",
+      "headword": "필요하다",
+      "level": "TOPIK-3",
+      "glossZh": "必需，必要",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-957",
+      "headword": "티셔츠",
+      "level": "TOPIK-3",
+      "glossZh": "T恤",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-958",
+      "headword": "필통",
+      "level": "TOPIK-3",
+      "glossZh": "笔筒",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-959",
+      "headword": "팀",
+      "level": "TOPIK-3",
+      "glossZh": "组，小组，团队",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-960",
+      "headword": "하늘",
+      "level": "TOPIK-3",
+      "glossZh": "天空",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-961",
+      "headword": "파란색",
+      "level": "TOPIK-3",
+      "glossZh": "湛绿色，湛蓝色",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-962",
+      "headword": "하늘색",
+      "level": "TOPIK-3",
+      "glossZh": "天蓝色",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-963",
+      "headword": "파랗다",
+      "level": "TOPIK-3",
+      "glossZh": "蓝",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-964",
+      "headword": "파티",
+      "level": "TOPIK-3",
+      "glossZh": "聚会，派对",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-965",
+      "headword": "하루",
+      "level": "TOPIK-3",
+      "glossZh": "一天",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-966",
+      "headword": "하숙",
+      "level": "TOPIK-3",
+      "glossZh": "寄宿，下宿，借宿",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-967",
+      "headword": "하숙집",
+      "level": "TOPIK-3",
+      "glossZh": "寄宿处",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-968",
+      "headword": "팔리다",
+      "level": "TOPIK-3",
+      "glossZh": "被卖掉，被卖出",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-969",
+      "headword": "하얀색",
+      "level": "TOPIK-3",
+      "glossZh": "白色",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-970",
+      "headword": "하얗다",
+      "level": "TOPIK-3",
+      "glossZh": "白",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-971",
+      "headword": "팔월",
+      "level": "TOPIK-3",
+      "glossZh": "八月",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-972",
+      "headword": "하지만",
+      "level": "TOPIK-3",
+      "glossZh": "可是，但是",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-973",
+      "headword": "패션",
+      "level": "TOPIK-3",
+      "glossZh": "服装，时装",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-974",
+      "headword": "학",
+      "level": "TOPIK-3",
+      "glossZh": "鹤，仙鹤",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-975",
+      "headword": "퍼센트",
+      "level": "TOPIK-3",
+      "glossZh": "百分之……",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-976",
+      "headword": "페이지",
+      "level": "TOPIK-3",
+      "glossZh": "页",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-977",
+      "headword": "학기",
+      "level": "TOPIK-3",
+      "glossZh": "学期",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-978",
+      "headword": "호텔",
+      "level": "TOPIK-3",
+      "glossZh": "酒店，饭店，宾馆",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-979",
+      "headword": "학생증",
+      "level": "TOPIK-3",
+      "glossZh": "学生证",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-980",
+      "headword": "학원",
+      "level": "TOPIK-3",
+      "glossZh": "学院，学校",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-981",
+      "headword": "홈페이지",
+      "level": "TOPIK-3",
+      "glossZh": "主页",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-982",
+      "headword": "홍차",
+      "level": "TOPIK-3",
+      "glossZh": "红茶",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-983",
+      "headword": "한강",
+      "level": "TOPIK-3",
+      "glossZh": "汉江",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-984",
+      "headword": "한국",
+      "level": "TOPIK-3",
+      "glossZh": "韩国",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-985",
+      "headword": "화가",
+      "level": "TOPIK-3",
+      "glossZh": "画家",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-986",
+      "headword": "화나다",
+      "level": "TOPIK-3",
+      "glossZh": "生气，发火",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-987",
+      "headword": "한국말",
+      "level": "TOPIK-3",
+      "glossZh": "韩国语，韩语",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-988",
+      "headword": "화내다",
+      "level": "TOPIK-3",
+      "glossZh": "发火，生气",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-989",
+      "headword": "화요일",
+      "level": "TOPIK-3",
+      "glossZh": "星期二，周二，礼拜二",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-990",
+      "headword": "한국어",
+      "level": "TOPIK-3",
+      "glossZh": "韩国语，韩语",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-991",
+      "headword": "화장실",
+      "level": "TOPIK-3",
+      "glossZh": "洗手间，卫生间",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-992",
+      "headword": "화장품",
+      "level": "TOPIK-3",
+      "glossZh": "化妆品",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-993",
+      "headword": "한글",
+      "level": "TOPIK-3",
+      "glossZh": "韩文",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-994",
+      "headword": "확인하다",
+      "level": "TOPIK-3",
+      "glossZh": "确认，得知，查看",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-995",
+      "headword": "한복",
+      "level": "TOPIK-3",
+      "glossZh": "韩服",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-996",
+      "headword": "환영하다",
+      "level": "TOPIK-3",
+      "glossZh": "欢迎",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-997",
+      "headword": "환자",
+      "level": "TOPIK-3",
+      "glossZh": "患者，病人",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-998",
+      "headword": "한자",
+      "level": "TOPIK-3",
+      "glossZh": "汉字",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-999",
+      "headword": "할머니",
+      "level": "TOPIK-3",
+      "glossZh": "奶奶，姥姥",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1000",
+      "headword": "할아버지",
+      "level": "TOPIK-3",
+      "glossZh": "爷爷，姥爷",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1001",
+      "headword": "회색",
+      "level": "TOPIK-3",
+      "glossZh": "灰色",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1002",
+      "headword": "할인",
+      "level": "TOPIK-3",
+      "glossZh": "打折，折扣，优惠，减价，降价",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1003",
+      "headword": "함께",
+      "level": "TOPIK-3",
+      "glossZh": "一起，共同，与共",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1004",
+      "headword": "횡단보도",
+      "level": "TOPIK-3",
+      "glossZh": "人行横道，斑马线",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1005",
+      "headword": "합격",
+      "level": "TOPIK-3",
+      "glossZh": "合格，及格，通过，录取",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1006",
+      "headword": "항상",
+      "level": "TOPIK-3",
+      "glossZh": "总，总是，老，老是，经常",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1007",
+      "headword": "후배",
+      "level": "TOPIK-3",
+      "glossZh": "后辈，晚辈，新人",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1008",
+      "headword": "휴가",
+      "level": "TOPIK-3",
+      "glossZh": "休假，度假，放假，假期",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1009",
+      "headword": "해외",
+      "level": "TOPIK-3",
+      "glossZh": "海外，国外",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1010",
+      "headword": "해외여행",
+      "level": "TOPIK-3",
+      "glossZh": "海外旅行，境外游",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1011",
+      "headword": "휴일",
+      "level": "TOPIK-3",
+      "glossZh": "休息日，公休日，假日",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1012",
+      "headword": "핸드폰",
+      "level": "TOPIK-3",
+      "glossZh": "手机，移动电话，手提电话",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1013",
+      "headword": "휴지",
+      "level": "TOPIK-3",
+      "glossZh": "废纸",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1014",
+      "headword": "햄버거",
+      "level": "TOPIK-3",
+      "glossZh": "汉堡包，汉堡",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1015",
+      "headword": "휴지통",
+      "level": "TOPIK-3",
+      "glossZh": "废纸篓，废纸桶，垃圾篓，垃圾桶",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1016",
+      "headword": "햇빛",
+      "level": "TOPIK-3",
+      "glossZh": "阳光，日光",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1017",
+      "headword": "행복",
+      "level": "TOPIK-3",
+      "glossZh": "幸福",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1018",
+      "headword": "흰색",
+      "level": "TOPIK-3",
+      "glossZh": "白色",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1019",
+      "headword": "행복하다",
+      "level": "TOPIK-3",
+      "glossZh": "幸福",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1020",
+      "headword": "힘",
+      "level": "TOPIK-3",
+      "glossZh": "力量，力气",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1021",
+      "headword": "허리",
+      "level": "TOPIK-3",
+      "glossZh": "腰",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1022",
+      "headword": "현금",
+      "level": "TOPIK-3",
+      "glossZh": "现金",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1023",
+      "headword": "형님",
+      "level": "TOPIK-3",
+      "glossZh": "大哥，兄长",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1024",
+      "headword": "형제",
+      "level": "TOPIK-3",
+      "glossZh": "兄弟",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-ti-1025",
+      "headword": "호랑이",
+      "level": "TOPIK-3",
+      "glossZh": "老虎",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    }
+  ],
+  "skipped": [
+    {
+      "word": "감사합니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "감자",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "갖다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "개",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "가위",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "가장",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "가지",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "가지다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "각",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "간",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "간장",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "감",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "걸리다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "걸어오다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "감다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "감사",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "감사드립니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "겨울방학",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "결정",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "곱다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "공",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "경기",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "공기",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "경주",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "과",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "과거",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "계시다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "고마웠습니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "괜찮습니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "고맙습니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "구",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "구십",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그리다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그만",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그저께",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "굽다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "귀",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "금주",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "급",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "기간",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그들",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "그래",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그래서",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "기사",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그러나",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그러면",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그런",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그런데",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그럼",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "기타",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그렇구나",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "길다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "그렇습니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "김",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "김포공항",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "남대문시장",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "깜짝",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "깨다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "꼭",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "내",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "내가",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "꾸다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "내다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "끼다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "나",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "나가다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "너",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "네",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "넷째",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "날",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "년",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "남",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "다음달",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "다음주",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "다음해",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "노트",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "놓다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "달다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "달러",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "누르다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "눈",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "달리다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "눈싸움",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "당근",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "대",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "다리",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "다섯",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "댁",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "두부찌개",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "둘째",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "도로",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "드리다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "드시다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "도착",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "들",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "등",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "동대문시장",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "따르다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "동안",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "땀",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "때",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "떠들다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "되다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "떡",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "두다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "매다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "뛰다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "매일",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "뜨다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "매주",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "먼저",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "마르다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "메다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "마흔",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "만",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "명",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "몇",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "모두",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "만일",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "모레",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "모르겠습니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "모양",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "말",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "맞다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "맞습니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "맞아요",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "못하다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "무",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "바람",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "무리",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "무엇이",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "무용",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "반갑습니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "문장",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "반달",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "묻다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "받다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "물론",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "발",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "뭐",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "밝다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "밤",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "미안합니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "밀리다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "부산",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "백",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "부인",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "부치다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "번호",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "불",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "붓다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "병",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "비",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "보도",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "보이다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "빨다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "부르다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "빵",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "빼다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "상관",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "뿐",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "사",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "상처",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "상품",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "사고",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "사랑",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "사례",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "사십",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "생기다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "사원",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "서로",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "사전",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "서른",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "살",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "삼",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "선수",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "삼십",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "수도",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "섬",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "성",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "수학",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "술",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "쉰",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "셋째",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "소",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "소설",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "손",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "시",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "시계",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "시내",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "쓰이다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "씨",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "시작",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "아까",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "시청",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "아니오",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "신",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "신문",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "아무",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "실례",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "십",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "아주",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "싸다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "아침식사",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "아홉",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "아흔",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "어리다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "안",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "안녕하세요",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "안녕하십니까",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "어저께",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "알았습니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "애",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "약",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "약간",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "엔",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "여권",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "양",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "여덟",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "양식",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "여든",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "여러가지",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "여섯",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "어떻게",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "어떻습니까",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "역",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "연습",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "연습하다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "오십",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "열",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "열리다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "영",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "영상",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "영어회화",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "옷가게",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "영화",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "왜",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "영화표",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "예",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "예순",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "오",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "오다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "요리",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "오래간만입니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "오랜만에",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "우리",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "은행",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "우선",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "의사",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "이",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "울다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "울리다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "이런",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "원",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "월",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "이사",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "이상",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "위",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "이십",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "유리",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "이월",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "유학",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "이제",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "육",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "육십",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "이해",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "인",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "있다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "인기스타",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "인도",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "인사",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "자",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "자기",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "인상",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "자동차회사",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "자리",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "일",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "자신",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "일곱",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "자연",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "일기",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "일기예보",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "일본드라마",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "일본말",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "일본사람",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "일본요리",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "일식",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "잘못",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "잠깐",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "잠시",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "일흔",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "장",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "정도",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "정말",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "정문",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "저",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "정하다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "제가",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "제일",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "저기",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "제주도",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "조금",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "저녁식사",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "적",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "전",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "전공",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "전기자동차",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "좀더",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "절",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "절대",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "종일",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "점",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "주",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "주다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "점심식사",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "지다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "지도",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "주변",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "지방",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "주사",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "죽",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "직접",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "죽다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "질",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "줄",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "중",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "짜다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "짜리",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "쪽",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "쯤",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "찍다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "차",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "차다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "증세",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "지각",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "참",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "지금",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "책장",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "천",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "철",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "첫째",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "칠",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "칠십",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "초",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "최고",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "축구",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "켜다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "코",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "축하합니다",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "코트",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "키",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "타다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "편",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "포장",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "표",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "풀",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "통",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "피",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "틀리다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "하나",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "파",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "하다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "팔",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "팔십",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "호주",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "혼자",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "한",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "화",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "한국드라마",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "한국사람",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "한국요리",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "화장하다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "한번",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "한식",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "회의",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "후",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "해",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "휴대전화",
+      "reason": "no exact KRDict Chinese translation"
+    },
+    {
+      "word": "흐리다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "행사",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "현재",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "호",
+      "reason": "ambiguous exact KRDict matches"
+    }
+  ]
+}

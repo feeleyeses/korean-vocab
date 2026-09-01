@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-09-01T14:51:52.832Z",
+  "source": "KRDict Open API search candidates",
+  "rules": {
+    "translated": true,
+    "transLang": "Chinese",
+    "grades": [
+      "중급",
+      "고급"
+    ],
+    "wordOnly": true,
+    "noSpaces": true,
+    "requiresPartOfSpeech": true,
+    "requiresChineseTranslation": true
+  },
+  "requestedLimit": 500,
+  "candidateCount": 500,
+  "prefixes": [
+    {
+      "prefix": "가",
+      "start": 1,
+      "total": 1354,
+      "items": 100,
+      "error": ""
+    },
+    {
+      "prefix": "가",
+      "start": 101,
+      "total": 1354,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "가",
+      "start": 201,
+      "total": 1354,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "거",
+      "start": 1,
+      "total": 966,
+      "items": 100,
+      "error": ""
+    },
+    {
+      "prefix": "거",
+      "start": 101,
+      "total": 966,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "거",
+      "start": 201,
+      "total": 966,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "고",
+      "start": 1,
+      "total": 1162,
+      "items": 100,
+      "error": ""
+    },
+    {
+      "prefix": "고",
+      "start": 101,
+      "total": 1162,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "고",
+      "start": 201,
+      "total": 1162,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "구",
+      "start": 1,
+      "total": 830,
+      "items": 100,
+      "error": ""
+    },
+    {
+      "prefix": "구",
+      "start": 101,
+      "total": 830,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "구",
+      "start": 201,
+      "total": 830,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "기",
+      "start": 1,
+      "total": 1883,
+      "items": 100,
+      "error": ""
+    },
+    {
+      "prefix": "기",
+      "start": 101,
+      "total": 1883,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "기",
+      "start": 201,
+      "total": 1883,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "나",
+      "start": 1,
+      "total": 590,
+      "items": 100,
+      "error": ""
+    },
+    {
+      "prefix": "나",
+      "start": 101,
+      "total": 590,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "나",
+      "start": 201,
+      "total": 590,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "내",
+      "start": 1,
+      "total": 525,
+      "items": 100,
+      "error": ""
+    },
+    {
+      "prefix": "내",
+      "start": 101,
+      "total": 525,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "내",
+      "start": 201,
+      "total": 525,
+      "items": 0,
+      "error": ""
+    },
+    {
+      "prefix": "다",
+      "start": 1,
+      "total": 15035,
+      "items": 100,
+      "error": ""
+    }
+  ]
+}

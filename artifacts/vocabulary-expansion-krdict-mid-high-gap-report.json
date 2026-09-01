@@ -1,0 +1,1495 @@
+{
+  "generatedAt": "2026-09-01T14:53:00.550Z",
+  "batchId": "2026-09-01-krdict-mid-high-gap",
+  "sourceName": "KRDICT_MID_HIGH_SEARCH",
+  "sourceUrl": "https://krdict.korean.go.kr",
+  "idPrefix": "exp-krd",
+  "levels": [
+    2,
+    3,
+    4
+  ],
+  "requestedLimit": 200,
+  "importedCount": 200,
+  "skippedCount": 19,
+  "imported": [
+    {
+      "id": "exp-krd-001",
+      "headword": "가끔가다가",
+      "level": "TOPIK-2",
+      "glossZh": "偶尔，有时",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-002",
+      "headword": "가다가",
+      "level": "TOPIK-2",
+      "glossZh": "有时，偶尔",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-003",
+      "headword": "가격대",
+      "level": "TOPIK-2",
+      "glossZh": "价格带，价格范围，价格区间",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-004",
+      "headword": "가계약",
+      "level": "TOPIK-2",
+      "glossZh": "临时合同，临时契约，草约",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-005",
+      "headword": "가공성",
+      "level": "TOPIK-2",
+      "glossZh": "可加工性",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-006",
+      "headword": "가공식품",
+      "level": "TOPIK-2",
+      "glossZh": "加工食品",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-007",
+      "headword": "가공품",
+      "level": "TOPIK-2",
+      "glossZh": "加工品",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-008",
+      "headword": "가구재",
+      "level": "TOPIK-2",
+      "glossZh": "家具材料",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-009",
+      "headword": "가극",
+      "level": "TOPIK-2",
+      "glossZh": "歌剧",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-010",
+      "headword": "가난뱅이",
+      "level": "TOPIK-2",
+      "glossZh": "穷光蛋",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-011",
+      "headword": "가난하다",
+      "level": "TOPIK-2",
+      "glossZh": "穷，穷困",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-012",
+      "headword": "가두다",
+      "level": "TOPIK-2",
+      "glossZh": "囚禁，关",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-013",
+      "headword": "가드레일",
+      "level": "TOPIK-2",
+      "glossZh": "护栏，栏杆",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-014",
+      "headword": "가득하다",
+      "level": "TOPIK-2",
+      "glossZh": "满满",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-015",
+      "headword": "가득히",
+      "level": "TOPIK-2",
+      "glossZh": "满满地",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-016",
+      "headword": "가라오케",
+      "level": "TOPIK-2",
+      "glossZh": "卡拉OK",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-017",
+      "headword": "가랑비",
+      "level": "TOPIK-2",
+      "glossZh": "毛毛雨，细雨",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-018",
+      "headword": "가래침",
+      "level": "TOPIK-2",
+      "glossZh": "痰",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-019",
+      "headword": "가려움증",
+      "level": "TOPIK-2",
+      "glossZh": "瘙痒症",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-020",
+      "headword": "가로대",
+      "level": "TOPIK-2",
+      "glossZh": "横杆",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-021",
+      "headword": "가로등",
+      "level": "TOPIK-2",
+      "glossZh": "路灯，街灯",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-022",
+      "headword": "가로막다",
+      "level": "TOPIK-2",
+      "glossZh": "挡，堵，截",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-023",
+      "headword": "가로무늬",
+      "level": "TOPIK-2",
+      "glossZh": "横纹",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-024",
+      "headword": "가로세로",
+      "level": "TOPIK-2",
+      "glossZh": "横竖",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-025",
+      "headword": "가로쓰기",
+      "level": "TOPIK-2",
+      "glossZh": "横写，横书",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-026",
+      "headword": "가로줄",
+      "level": "TOPIK-2",
+      "glossZh": "横线",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-027",
+      "headword": "거꾸로",
+      "level": "TOPIK-2",
+      "glossZh": "倒着，反着，颠倒地，逆转地",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-028",
+      "headword": "거대",
+      "level": "TOPIK-2",
+      "glossZh": "巨大，庞大",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-029",
+      "headword": "거대하다",
+      "level": "TOPIK-2",
+      "glossZh": "巨大，庞大",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-030",
+      "headword": "거들다",
+      "level": "TOPIK-2",
+      "glossZh": "帮，协助，打下手",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-031",
+      "headword": "거래되다",
+      "level": "TOPIK-2",
+      "glossZh": "交易",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-032",
+      "headword": "거래처",
+      "level": "TOPIK-2",
+      "glossZh": "客户",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-033",
+      "headword": "거래하다",
+      "level": "TOPIK-2",
+      "glossZh": "交易",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-034",
+      "headword": "거리감",
+      "level": "TOPIK-2",
+      "glossZh": "距离感",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-035",
+      "headword": "거리거리",
+      "level": "TOPIK-2",
+      "glossZh": "大街小巷",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-036",
+      "headword": "거미줄",
+      "level": "TOPIK-2",
+      "glossZh": "蜘蛛丝，蜘蛛网",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-037",
+      "headword": "거봐",
+      "level": "TOPIK-2",
+      "glossZh": "喏",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-038",
+      "headword": "거북",
+      "level": "TOPIK-2",
+      "glossZh": "龟，乌龟",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-039",
+      "headword": "거장",
+      "level": "TOPIK-2",
+      "glossZh": "巨匠，大师",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-040",
+      "headword": "거절당하다",
+      "level": "TOPIK-2",
+      "glossZh": "被拒，被拒绝",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-041",
+      "headword": "거지",
+      "level": "TOPIK-2",
+      "glossZh": "乞丐，叫花子，要饭的",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-042",
+      "headword": "거지꼴",
+      "level": "TOPIK-2",
+      "glossZh": "叫花子样，乞丐样",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-043",
+      "headword": "거짓되다",
+      "level": "TOPIK-2",
+      "glossZh": "假，虚假",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-044",
+      "headword": "거짓말쟁이",
+      "level": "TOPIK-2",
+      "glossZh": "满嘴谎话的人",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-045",
+      "headword": "거칠다",
+      "level": "TOPIK-2",
+      "glossZh": "粗，粗糙",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-046",
+      "headword": "거품기",
+      "level": "TOPIK-2",
+      "glossZh": "打蛋器",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-047",
+      "headword": "거구",
+      "level": "TOPIK-2",
+      "glossZh": "巨大身躯，大块头",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-048",
+      "headword": "거국",
+      "level": "TOPIK-2",
+      "glossZh": "举国，全国",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-049",
+      "headword": "거꾸러뜨리다",
+      "level": "TOPIK-2",
+      "glossZh": "推倒，绊倒",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-050",
+      "headword": "거꾸러지다",
+      "level": "TOPIK-2",
+      "glossZh": "栽倒，摔倒",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-051",
+      "headword": "거꾸러트리다",
+      "level": "TOPIK-2",
+      "glossZh": "推倒，绊倒",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-052",
+      "headword": "거나하다",
+      "level": "TOPIK-2",
+      "glossZh": "醉醺醺的",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-053",
+      "headword": "거느리다",
+      "level": "TOPIK-2",
+      "glossZh": "带，养",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-054",
+      "headword": "거닐다",
+      "level": "TOPIK-2",
+      "glossZh": "散步，漫步",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-055",
+      "headword": "거덜",
+      "level": "TOPIK-2",
+      "glossZh": "倾家荡产",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-056",
+      "headword": "거덜나다",
+      "level": "TOPIK-2",
+      "glossZh": "垮台，完蛋",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-057",
+      "headword": "거동",
+      "level": "TOPIK-2",
+      "glossZh": "举动，行动",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-058",
+      "headword": "거동하다",
+      "level": "TOPIK-2",
+      "glossZh": "行动，动弹",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-059",
+      "headword": "거두어들이다",
+      "level": "TOPIK-2",
+      "glossZh": "收，收获",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-060",
+      "headword": "거두절미",
+      "level": "TOPIK-2",
+      "glossZh": "掐头去尾，提纲挈领",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-061",
+      "headword": "거두절미하다",
+      "level": "TOPIK-2",
+      "glossZh": "掐头去尾，提纲挈领",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-062",
+      "headword": "거둬들이다",
+      "level": "TOPIK-2",
+      "glossZh": "收，收获",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-063",
+      "headword": "거드럭거드럭",
+      "level": "TOPIK-2",
+      "glossZh": "得意洋洋地，大摇大摆地，趾高气扬地",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-064",
+      "headword": "거드럭거드럭하다",
+      "level": "TOPIK-2",
+      "glossZh": "得意洋洋，趾高气扬",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-065",
+      "headword": "거드럭거리다",
+      "level": "TOPIK-2",
+      "glossZh": "得意洋洋，大摇大摆，趾高气扬",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-066",
+      "headword": "거드럭대다",
+      "level": "TOPIK-2",
+      "glossZh": "得意洋洋，趾高气扬",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-067",
+      "headword": "거드름",
+      "level": "TOPIK-2",
+      "glossZh": "高傲，傲慢",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-068",
+      "headword": "거들",
+      "level": "TOPIK-3",
+      "glossZh": "塑身衣，塑身裤",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-069",
+      "headword": "거들떠보다",
+      "level": "TOPIK-3",
+      "glossZh": "瞟，理，理睬",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-070",
+      "headword": "거들먹거들먹",
+      "level": "TOPIK-3",
+      "glossZh": "屁颠儿屁颠儿，美滋滋",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-071",
+      "headword": "거들먹거들먹하다",
+      "level": "TOPIK-3",
+      "glossZh": "屁颠儿屁颠儿，美滋滋",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-072",
+      "headword": "거들먹거리다",
+      "level": "TOPIK-3",
+      "glossZh": "得意忘形",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-073",
+      "headword": "거들먹대다",
+      "level": "TOPIK-3",
+      "glossZh": "屁颠儿屁颠儿",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-074",
+      "headword": "거들먹이다",
+      "level": "TOPIK-3",
+      "glossZh": "屁颠儿屁颠儿，美滋滋",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-075",
+      "headword": "거듭",
+      "level": "TOPIK-3",
+      "glossZh": "一再，再次",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-076",
+      "headword": "거듭거듭",
+      "level": "TOPIK-3",
+      "glossZh": "再次，屡次",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-077",
+      "headword": "거듭나다",
+      "level": "TOPIK-3",
+      "glossZh": "新生，重生",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-078",
+      "headword": "거듭되다",
+      "level": "TOPIK-3",
+      "glossZh": "一再，接二连三",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-079",
+      "headword": "거듭제곱",
+      "level": "TOPIK-3",
+      "glossZh": "乘方",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-080",
+      "headword": "거듭하다",
+      "level": "TOPIK-3",
+      "glossZh": "一再，接二连三",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-081",
+      "headword": "거뜬하다",
+      "level": "TOPIK-3",
+      "glossZh": "轻，轻便",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-082",
+      "headword": "거뜬히",
+      "level": "TOPIK-3",
+      "glossZh": "轻松地，轻易地",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-083",
+      "headword": "거래량",
+      "level": "TOPIK-3",
+      "glossZh": "交易量",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-084",
+      "headword": "거래소",
+      "level": "TOPIK-3",
+      "glossZh": "交易所",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-085",
+      "headword": "거래액",
+      "level": "TOPIK-3",
+      "glossZh": "交易额",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-086",
+      "headword": "거렁뱅이",
+      "level": "TOPIK-3",
+      "glossZh": "乞丐",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-087",
+      "headword": "거론",
+      "level": "TOPIK-3",
+      "glossZh": "提及，论及",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-088",
+      "headword": "거론되다",
+      "level": "TOPIK-3",
+      "glossZh": "被拿出来讨论，被论及",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-089",
+      "headword": "거론하다",
+      "level": "TOPIK-3",
+      "glossZh": "拿出来讨论，论及",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-090",
+      "headword": "거룩하다",
+      "level": "TOPIK-3",
+      "glossZh": "神圣，伟大",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-091",
+      "headword": "거룻배",
+      "level": "TOPIK-3",
+      "glossZh": "舢板",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-092",
+      "headword": "거름",
+      "level": "TOPIK-3",
+      "glossZh": "肥，肥料，粪",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-093",
+      "headword": "고고",
+      "level": "TOPIK-3",
+      "glossZh": "考古",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-094",
+      "headword": "고교",
+      "level": "TOPIK-3",
+      "glossZh": "高中",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-095",
+      "headword": "고국",
+      "level": "TOPIK-3",
+      "glossZh": "故国",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-096",
+      "headword": "고급반",
+      "level": "TOPIK-3",
+      "glossZh": "高级班",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-097",
+      "headword": "고급스럽다",
+      "level": "TOPIK-3",
+      "glossZh": "高档，高级",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-098",
+      "headword": "고급품",
+      "level": "TOPIK-3",
+      "glossZh": "高档品，高级品",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-099",
+      "headword": "고급화",
+      "level": "TOPIK-3",
+      "glossZh": "高档化",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-100",
+      "headword": "고기능",
+      "level": "TOPIK-3",
+      "glossZh": "高功能，高性能",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-101",
+      "headword": "고기밥",
+      "level": "TOPIK-3",
+      "glossZh": "鱼食，鱼饵",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-102",
+      "headword": "고기잡이배",
+      "level": "TOPIK-3",
+      "glossZh": "渔船",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-103",
+      "headword": "고깃덩어리",
+      "level": "TOPIK-3",
+      "glossZh": "肉块儿",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-104",
+      "headword": "고깃덩이",
+      "level": "TOPIK-3",
+      "glossZh": "肉块儿",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-105",
+      "headword": "고깃배",
+      "level": "TOPIK-3",
+      "glossZh": "渔船",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-106",
+      "headword": "고깃집",
+      "level": "TOPIK-3",
+      "glossZh": "肉店，烤肉店",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-107",
+      "headword": "고깔",
+      "level": "TOPIK-3",
+      "glossZh": "三角帽",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-108",
+      "headword": "고단백",
+      "level": "TOPIK-3",
+      "glossZh": "高蛋白",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-109",
+      "headword": "고단백질",
+      "level": "TOPIK-3",
+      "glossZh": "高蛋白",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-110",
+      "headword": "고독",
+      "level": "TOPIK-3",
+      "glossZh": "孤独，孤单",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-111",
+      "headword": "고독하다",
+      "level": "TOPIK-3",
+      "glossZh": "孤独",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-112",
+      "headword": "고드름",
+      "level": "TOPIK-3",
+      "glossZh": "冰柱，冰凌",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-113",
+      "headword": "고들빼기",
+      "level": "TOPIK-3",
+      "glossZh": "苦菜",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-114",
+      "headword": "고등",
+      "level": "TOPIK-3",
+      "glossZh": "高等，高级",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-115",
+      "headword": "고등어",
+      "level": "TOPIK-3",
+      "glossZh": "青花鱼，鲭鱼，鲐鱼",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-116",
+      "headword": "고등하다",
+      "level": "TOPIK-3",
+      "glossZh": "高等，高级",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-117",
+      "headword": "고려되다",
+      "level": "TOPIK-3",
+      "glossZh": "考虑",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-118",
+      "headword": "고려하다",
+      "level": "TOPIK-3",
+      "glossZh": "考虑",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-119",
+      "headword": "고마워하다",
+      "level": "TOPIK-3",
+      "glossZh": "感谢，感激",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-120",
+      "headword": "고목나무",
+      "level": "TOPIK-3",
+      "glossZh": "古木",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-121",
+      "headword": "고무마개",
+      "level": "TOPIK-3",
+      "glossZh": "橡皮塞",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-122",
+      "headword": "고무바퀴",
+      "level": "TOPIK-3",
+      "glossZh": "胶轮",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-123",
+      "headword": "고무보트",
+      "level": "TOPIK-3",
+      "glossZh": "橡皮艇，橡皮船",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-124",
+      "headword": "고무장갑",
+      "level": "TOPIK-3",
+      "glossZh": "橡胶手套",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-125",
+      "headword": "고무지우개",
+      "level": "TOPIK-3",
+      "glossZh": "橡皮，橡皮擦",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-126",
+      "headword": "고무찰흙",
+      "level": "TOPIK-3",
+      "glossZh": "橡皮泥",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-127",
+      "headword": "고무총",
+      "level": "TOPIK-3",
+      "glossZh": "弹弓",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-128",
+      "headword": "고무판",
+      "level": "TOPIK-3",
+      "glossZh": "橡胶板",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-129",
+      "headword": "고무풍선",
+      "level": "TOPIK-3",
+      "glossZh": "气球",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-130",
+      "headword": "고무호스",
+      "level": "TOPIK-3",
+      "glossZh": "橡皮管",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-131",
+      "headword": "고민거리",
+      "level": "TOPIK-3",
+      "glossZh": "烦心事",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-132",
+      "headword": "고민스럽다",
+      "level": "TOPIK-3",
+      "glossZh": "苦恼，烦恼",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-133",
+      "headword": "고백하다",
+      "level": "TOPIK-3",
+      "glossZh": "告白，坦白，表白",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-134",
+      "headword": "고새",
+      "level": "TOPIK-3",
+      "glossZh": "那一会儿",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-135",
+      "headword": "고생길",
+      "level": "TOPIK-4",
+      "glossZh": "苦难的道路，苦难的历程",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-136",
+      "headword": "고생하다",
+      "level": "TOPIK-4",
+      "glossZh": "吃苦，受罪",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-137",
+      "headword": "고슴도치",
+      "level": "TOPIK-4",
+      "glossZh": "刺猬",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-138",
+      "headword": "고시원",
+      "level": "TOPIK-4",
+      "glossZh": "考试院",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-139",
+      "headword": "고액",
+      "level": "TOPIK-4",
+      "glossZh": "高额，大额",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-140",
+      "headword": "구구",
+      "level": "TOPIK-4",
+      "glossZh": "咕咕",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-141",
+      "headword": "구경거리",
+      "level": "TOPIK-4",
+      "glossZh": "可看的，热闹的，看点",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-142",
+      "headword": "구경시키다",
+      "level": "TOPIK-4",
+      "glossZh": "让观看，让欣赏",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-143",
+      "headword": "구구단",
+      "level": "TOPIK-4",
+      "glossZh": "乘法口诀，九九诀，九九歌，小九九",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-144",
+      "headword": "구두끈",
+      "level": "TOPIK-4",
+      "glossZh": "鞋带",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-145",
+      "headword": "구두닦이",
+      "level": "TOPIK-4",
+      "glossZh": "擦鞋匠",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-146",
+      "headword": "구두약",
+      "level": "TOPIK-4",
+      "glossZh": "鞋油",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-147",
+      "headword": "구두점",
+      "level": "TOPIK-4",
+      "glossZh": "标点符号",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-148",
+      "headword": "구두창",
+      "level": "TOPIK-4",
+      "glossZh": "皮鞋底",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-149",
+      "headword": "구두코",
+      "level": "TOPIK-4",
+      "glossZh": "皮鞋尖，皮鞋头",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-150",
+      "headword": "구둣방",
+      "level": "TOPIK-4",
+      "glossZh": "鞋店，修鞋店",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-151",
+      "headword": "구둣솔",
+      "level": "TOPIK-4",
+      "glossZh": "皮鞋刷，鞋刷",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-152",
+      "headword": "구둣주걱",
+      "level": "TOPIK-4",
+      "glossZh": "鞋拔子",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-153",
+      "headword": "구렁이",
+      "level": "TOPIK-4",
+      "glossZh": "蟒，蟒蛇",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-154",
+      "headword": "구레나룻",
+      "level": "TOPIK-4",
+      "glossZh": "络腮胡子",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-155",
+      "headword": "구름다리",
+      "level": "TOPIK-4",
+      "glossZh": "天桥，吊桥，索桥，高架桥",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-156",
+      "headword": "구매하다",
+      "level": "TOPIK-4",
+      "glossZh": "购买，购置",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-157",
+      "headword": "구멍가게",
+      "level": "TOPIK-4",
+      "glossZh": "小卖店，小铺子",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-158",
+      "headword": "구별되다",
+      "level": "TOPIK-4",
+      "glossZh": "被区分，被区别",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-159",
+      "headword": "구별하다",
+      "level": "TOPIK-4",
+      "glossZh": "区分，辨别",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-160",
+      "headword": "구부러지다",
+      "level": "TOPIK-4",
+      "glossZh": "变弯，弯曲",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-161",
+      "headword": "구부리다",
+      "level": "TOPIK-4",
+      "glossZh": "弯曲",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-162",
+      "headword": "구분되다",
+      "level": "TOPIK-4",
+      "glossZh": "被区分，被划分，被区别",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-163",
+      "headword": "구분하다",
+      "level": "TOPIK-4",
+      "glossZh": "区分，划分，区别",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-164",
+      "headword": "구석",
+      "level": "TOPIK-4",
+      "glossZh": "角，角落",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-165",
+      "headword": "구성되다",
+      "level": "TOPIK-4",
+      "glossZh": "被构成，被组成",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-166",
+      "headword": "구성품",
+      "level": "TOPIK-4",
+      "glossZh": "部件，组成部分",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-167",
+      "headword": "구성하다",
+      "level": "TOPIK-4",
+      "glossZh": "构成，组成",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-168",
+      "headword": "구세대",
+      "level": "TOPIK-4",
+      "glossZh": "老一代，老一辈",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-169",
+      "headword": "구속당하다",
+      "level": "TOPIK-4",
+      "glossZh": "被拘束，被约束",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-170",
+      "headword": "구속되다",
+      "level": "TOPIK-4",
+      "glossZh": "被拘束，被限制",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-171",
+      "headword": "구속하다",
+      "level": "TOPIK-4",
+      "glossZh": "拘束，限制",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-172",
+      "headword": "구수하다",
+      "level": "TOPIK-4",
+      "glossZh": "香喷喷",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-173",
+      "headword": "구슬치기",
+      "level": "TOPIK-4",
+      "glossZh": "弹玻璃珠",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-174",
+      "headword": "구역",
+      "level": "TOPIK-4",
+      "glossZh": "区域",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-175",
+      "headword": "구입하다",
+      "level": "TOPIK-4",
+      "glossZh": "购买",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-176",
+      "headword": "구장",
+      "level": "TOPIK-4",
+      "glossZh": "球场",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-177",
+      "headword": "구조되다",
+      "level": "TOPIK-4",
+      "glossZh": "被救护，被营救，被搭救",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-178",
+      "headword": "구조하다",
+      "level": "TOPIK-4",
+      "glossZh": "救护，营救，搭救",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-179",
+      "headword": "구가하다",
+      "level": "TOPIK-4",
+      "glossZh": "讴歌，歌颂",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-180",
+      "headword": "구강",
+      "level": "TOPIK-4",
+      "glossZh": "口腔",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-181",
+      "headword": "구개음화",
+      "level": "TOPIK-4",
+      "glossZh": "颚音化",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-182",
+      "headword": "구걸",
+      "level": "TOPIK-4",
+      "glossZh": "乞讨，行乞",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-183",
+      "headword": "구걸하다",
+      "level": "TOPIK-4",
+      "glossZh": "乞讨，行乞",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-184",
+      "headword": "구겨지다",
+      "level": "TOPIK-4",
+      "glossZh": "皱，褶皱，起皱",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-185",
+      "headword": "구경꾼",
+      "level": "TOPIK-4",
+      "glossZh": "看客，看热闹的人",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-186",
+      "headword": "구경나다",
+      "level": "TOPIK-4",
+      "glossZh": "有戏看，有热闹看",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-187",
+      "headword": "구공탄",
+      "level": "TOPIK-4",
+      "glossZh": "蜂窝煤",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-188",
+      "headword": "구관조",
+      "level": "TOPIK-4",
+      "glossZh": "八哥，鹩哥，九官鸟",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-189",
+      "headword": "구교",
+      "level": "TOPIK-4",
+      "glossZh": "旧教",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-190",
+      "headword": "구구절절이",
+      "level": "TOPIK-4",
+      "glossZh": "字字句句地",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-191",
+      "headword": "구구절절하다",
+      "level": "TOPIK-4",
+      "glossZh": "字字句句的",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-192",
+      "headword": "구구하다",
+      "level": "TOPIK-4",
+      "glossZh": "各异，纷纭",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-193",
+      "headword": "구국",
+      "level": "TOPIK-4",
+      "glossZh": "救国",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-194",
+      "headword": "구근",
+      "level": "TOPIK-4",
+      "glossZh": "球根",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-195",
+      "headword": "구금",
+      "level": "TOPIK-4",
+      "glossZh": "拘禁，囚禁，监禁",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-196",
+      "headword": "구금되다",
+      "level": "TOPIK-4",
+      "glossZh": "被拘禁，被囚禁，被监禁",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-197",
+      "headword": "구금자",
+      "level": "TOPIK-4",
+      "glossZh": "囚犯，囚徒",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-198",
+      "headword": "구금하다",
+      "level": "TOPIK-4",
+      "glossZh": "拘禁，囚禁、监禁",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-199",
+      "headword": "구급",
+      "level": "TOPIK-4",
+      "glossZh": "急救，抢救",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    },
+    {
+      "id": "exp-krd-200",
+      "headword": "구급낭",
+      "level": "TOPIK-4",
+      "glossZh": "急救包",
+      "source": "KRDICT_MID_HIGH_SEARCH + KRDICT_EXACT_HEADWORD + AUTO_APPROVED"
+    }
+  ],
+  "skipped": [
+    {
+      "word": "가가호호",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "가로",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "거개",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "거국적",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "거금",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "거두다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "거르다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "고대",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "고래",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "고려",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "고목",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "고무",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "고소하다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "구르다",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "구속",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "구조",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "구간",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "구관",
+      "reason": "ambiguous exact KRDict matches"
+    },
+    {
+      "word": "구구절절",
+      "reason": "ambiguous exact KRDict matches"
+    }
+  ]
+}

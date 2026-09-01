@@ -1,0 +1,985 @@
+{
+  "generatedAt": "2026-09-01T14:54:08.732Z",
+  "source": "EDITORIAL_REVIEW high-confidence TOPIK-1 phrase translations",
+  "updatedCount": 122,
+  "skippedCount": 0,
+  "updated": [
+    {
+      "id": "w044",
+      "headword": "다르다",
+      "level": "TOPIK-1",
+      "collocation": "~와 다르다",
+      "collocationZh": "和……不同",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w046",
+      "headword": "도착하다",
+      "level": "TOPIK-2",
+      "collocation": "목적지에 도착하다",
+      "collocationZh": "到达目的地",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w047",
+      "headword": "도움",
+      "level": "TOPIK-2",
+      "collocation": "도움을 받다",
+      "collocationZh": "得到帮助",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w048",
+      "headword": "마감",
+      "level": "TOPIK-2",
+      "collocation": "마감 기한",
+      "collocationZh": "截止期限",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w049",
+      "headword": "마음",
+      "level": "TOPIK-1",
+      "collocation": "마음이 편하다",
+      "collocationZh": "心里舒服",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w049",
+      "headword": "마음",
+      "level": "TOPIK-2",
+      "collocation": "마음을 정하다",
+      "collocationZh": "下定决心",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w049",
+      "headword": "마음",
+      "level": "TOPIK-1",
+      "collocation": "마음에 들다",
+      "collocationZh": "喜欢；合心意",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w050",
+      "headword": "만나다",
+      "level": "TOPIK-1",
+      "collocation": "사람을 만나다",
+      "collocationZh": "见人",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w059",
+      "headword": "보다",
+      "level": "TOPIK-1",
+      "collocation": "사진을 보다",
+      "collocationZh": "看照片",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w066",
+      "headword": "생각",
+      "level": "TOPIK-1",
+      "collocation": "생각이 나다",
+      "collocationZh": "想起来",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w072",
+      "headword": "시작하다",
+      "level": "TOPIK-1",
+      "collocation": "일을 시작하다",
+      "collocationZh": "开始工作",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w075",
+      "headword": "알다",
+      "level": "TOPIK-1",
+      "collocation": "방법을 알다",
+      "collocationZh": "知道方法",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "w076",
+      "headword": "어렵다",
+      "level": "TOPIK-1",
+      "collocation": "이해하기 어렵다",
+      "collocationZh": "难以理解",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tb004",
+      "headword": "누구",
+      "level": "TOPIK-1",
+      "collocation": "누구와 같이",
+      "collocationZh": "和谁一起",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tb005",
+      "headword": "어디",
+      "level": "TOPIK-1",
+      "collocation": "어디에서 만나다",
+      "collocationZh": "在哪里见面",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tb006",
+      "headword": "언제",
+      "level": "TOPIK-1",
+      "collocation": "언제부터",
+      "collocationZh": "从什么时候开始",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tb007",
+      "headword": "오늘",
+      "level": "TOPIK-1",
+      "collocation": "오늘 아침",
+      "collocationZh": "今天早上",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tb009",
+      "headword": "어제",
+      "level": "TOPIK-1",
+      "collocation": "어제 저녁",
+      "collocationZh": "昨天晚上",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tb010",
+      "headword": "이름",
+      "level": "TOPIK-1",
+      "collocation": "이름을 쓰다",
+      "collocationZh": "写名字",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tb019",
+      "headword": "문화",
+      "level": "TOPIK-2",
+      "collocation": "문화를 배우다",
+      "collocationZh": "学习文化",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn004",
+      "headword": "동생",
+      "level": "TOPIK-1",
+      "collocation": "동생을 돌보다",
+      "collocationZh": "照顾弟弟妹妹",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn005",
+      "headword": "부모님",
+      "level": "TOPIK-1",
+      "collocation": "부모님과 살다",
+      "collocationZh": "和父母一起住",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn006",
+      "headword": "문",
+      "level": "TOPIK-1",
+      "collocation": "문을 열다",
+      "collocationZh": "开门",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn007",
+      "headword": "물",
+      "level": "TOPIK-1",
+      "collocation": "물을 마시다",
+      "collocationZh": "喝水",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn008",
+      "headword": "바다",
+      "level": "TOPIK-1",
+      "collocation": "바다를 보다",
+      "collocationZh": "看海",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn009",
+      "headword": "사진",
+      "level": "TOPIK-1",
+      "collocation": "사진을 찍다",
+      "collocationZh": "拍照",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn010",
+      "headword": "선생님",
+      "level": "TOPIK-1",
+      "collocation": "선생님께 묻다",
+      "collocationZh": "问老师",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn011",
+      "headword": "시간",
+      "level": "TOPIK-1",
+      "collocation": "시간이 없다",
+      "collocationZh": "没有时间",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn012",
+      "headword": "시장",
+      "level": "TOPIK-1",
+      "collocation": "시장에 가다",
+      "collocationZh": "去市场",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn013",
+      "headword": "아침",
+      "level": "TOPIK-1",
+      "collocation": "아침을 먹다",
+      "collocationZh": "吃早饭",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn014",
+      "headword": "오후",
+      "level": "TOPIK-1",
+      "collocation": "오후 세 시",
+      "collocationZh": "下午三点",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn015",
+      "headword": "저녁",
+      "level": "TOPIK-1",
+      "collocation": "저녁을 먹다",
+      "collocationZh": "吃晚饭",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn016",
+      "headword": "학교",
+      "level": "TOPIK-1",
+      "collocation": "학교에 다니다",
+      "collocationZh": "上学",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tn017",
+      "headword": "학생",
+      "level": "TOPIK-1",
+      "collocation": "학생이 많다",
+      "collocationZh": "学生很多",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta003",
+      "headword": "봄",
+      "level": "TOPIK-1",
+      "collocation": "봄이 오다",
+      "collocationZh": "春天来了",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta004",
+      "headword": "여름",
+      "level": "TOPIK-1",
+      "collocation": "여름 휴가",
+      "collocationZh": "暑假；夏季休假",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta005",
+      "headword": "월요일",
+      "level": "TOPIK-1",
+      "collocation": "월요일 아침",
+      "collocationZh": "星期一早上",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta006",
+      "headword": "주말",
+      "level": "TOPIK-1",
+      "collocation": "주말 계획",
+      "collocationZh": "周末计划",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta007",
+      "headword": "아버지",
+      "level": "TOPIK-1",
+      "collocation": "아버지와 어머니",
+      "collocationZh": "父亲和母亲",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta008",
+      "headword": "어머니",
+      "level": "TOPIK-1",
+      "collocation": "어머니께 전화하다",
+      "collocationZh": "给母亲打电话",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta009",
+      "headword": "형",
+      "level": "TOPIK-1",
+      "collocation": "우리 형",
+      "collocationZh": "我哥哥",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta010",
+      "headword": "언니",
+      "level": "TOPIK-1",
+      "collocation": "친한 언니",
+      "collocationZh": "亲近的姐姐",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta011",
+      "headword": "오빠",
+      "level": "TOPIK-1",
+      "collocation": "우리 오빠",
+      "collocationZh": "我哥哥",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta012",
+      "headword": "누나",
+      "level": "TOPIK-1",
+      "collocation": "우리 누나",
+      "collocationZh": "我姐姐",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta013",
+      "headword": "친구",
+      "level": "TOPIK-1",
+      "collocation": "친구를 만나다",
+      "collocationZh": "见朋友",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta014",
+      "headword": "사람",
+      "level": "TOPIK-1",
+      "collocation": "많은 사람",
+      "collocationZh": "很多人",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta015",
+      "headword": "아이",
+      "level": "TOPIK-1",
+      "collocation": "작은 아이",
+      "collocationZh": "小孩",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta016",
+      "headword": "집",
+      "level": "TOPIK-1",
+      "collocation": "집에 가다",
+      "collocationZh": "回家",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta017",
+      "headword": "방",
+      "level": "TOPIK-1",
+      "collocation": "방을 청소하다",
+      "collocationZh": "打扫房间",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta018",
+      "headword": "책상",
+      "level": "TOPIK-1",
+      "collocation": "책상 위",
+      "collocationZh": "书桌上",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta019",
+      "headword": "의자",
+      "level": "TOPIK-1",
+      "collocation": "의자에 앉다",
+      "collocationZh": "坐在椅子上",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta020",
+      "headword": "침대",
+      "level": "TOPIK-1",
+      "collocation": "침대에 눕다",
+      "collocationZh": "躺在床上",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta021",
+      "headword": "문제",
+      "level": "TOPIK-2",
+      "collocation": "문제를 풀다",
+      "collocationZh": "解题",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta026",
+      "headword": "배우다",
+      "level": "TOPIK-1",
+      "collocation": "언어를 배우다",
+      "collocationZh": "学习语言",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta027",
+      "headword": "쓰다",
+      "level": "TOPIK-1",
+      "collocation": "글을 쓰다",
+      "collocationZh": "写文章",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta028",
+      "headword": "읽다",
+      "level": "TOPIK-1",
+      "collocation": "책을 읽다",
+      "collocationZh": "读书",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta029",
+      "headword": "듣다",
+      "level": "TOPIK-1",
+      "collocation": "노래를 듣다",
+      "collocationZh": "听歌",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta030",
+      "headword": "말하다",
+      "level": "TOPIK-1",
+      "collocation": "한국어로 말하다",
+      "collocationZh": "用韩语说",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta031",
+      "headword": "먹다",
+      "level": "TOPIK-1",
+      "collocation": "밥을 먹다",
+      "collocationZh": "吃饭",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta032",
+      "headword": "마시다",
+      "level": "TOPIK-1",
+      "collocation": "물을 마시다",
+      "collocationZh": "喝水",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta033",
+      "headword": "사다",
+      "level": "TOPIK-1",
+      "collocation": "물건을 사다",
+      "collocationZh": "买东西",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta034",
+      "headword": "팔다",
+      "level": "TOPIK-1",
+      "collocation": "물건을 팔다",
+      "collocationZh": "卖东西",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta035",
+      "headword": "열다",
+      "level": "TOPIK-1",
+      "collocation": "문을 열다",
+      "collocationZh": "开门",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta036",
+      "headword": "닫다",
+      "level": "TOPIK-1",
+      "collocation": "문을 닫다",
+      "collocationZh": "关门",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta037",
+      "headword": "앉다",
+      "level": "TOPIK-1",
+      "collocation": "자리에 앉다",
+      "collocationZh": "坐到座位上",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta038",
+      "headword": "서다",
+      "level": "TOPIK-1",
+      "collocation": "줄을 서다",
+      "collocationZh": "排队",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta039",
+      "headword": "쉬다",
+      "level": "TOPIK-1",
+      "collocation": "잠깐 쉬다",
+      "collocationZh": "休息一会儿",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta040",
+      "headword": "자다",
+      "level": "TOPIK-1",
+      "collocation": "잠을 자다",
+      "collocationZh": "睡一觉",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta041",
+      "headword": "크다",
+      "level": "TOPIK-1",
+      "collocation": "키가 크다",
+      "collocationZh": "个子高",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta042",
+      "headword": "작다",
+      "level": "TOPIK-1",
+      "collocation": "크기가 작다",
+      "collocationZh": "尺寸小",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta043",
+      "headword": "많다",
+      "level": "TOPIK-1",
+      "collocation": "사람이 많다",
+      "collocationZh": "人多",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta044",
+      "headword": "적다",
+      "level": "TOPIK-1",
+      "collocation": "양이 적다",
+      "collocationZh": "量少",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta049",
+      "headword": "쉽다",
+      "level": "TOPIK-1",
+      "collocation": "쉽게 이해하다",
+      "collocationZh": "容易理解",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "ta050",
+      "headword": "맛있다",
+      "level": "TOPIK-1",
+      "collocation": "맛있는 음식",
+      "collocationZh": "好吃的食物",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw005",
+      "headword": "다음",
+      "level": "TOPIK-1",
+      "collocation": "다음 시간",
+      "collocationZh": "下节课；下次时间",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw006",
+      "headword": "달",
+      "level": "TOPIK-1",
+      "collocation": "이번 달",
+      "collocationZh": "这个月",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw007",
+      "headword": "닭",
+      "level": "TOPIK-1",
+      "collocation": "닭을 먹다",
+      "collocationZh": "吃鸡肉",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw010",
+      "headword": "도서관",
+      "level": "TOPIK-1",
+      "collocation": "도서관에 가다",
+      "collocationZh": "去图书馆",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw011",
+      "headword": "돈",
+      "level": "TOPIK-1",
+      "collocation": "돈을 쓰다",
+      "collocationZh": "花钱",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw012",
+      "headword": "돌아오다",
+      "level": "TOPIK-2",
+      "collocation": "집에 돌아오다",
+      "collocationZh": "回到家",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw013",
+      "headword": "동네",
+      "level": "TOPIK-2",
+      "collocation": "동네 사람",
+      "collocationZh": "街坊；小区居民",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw015",
+      "headword": "두껍다",
+      "level": "TOPIK-2",
+      "collocation": "두꺼운 책",
+      "collocationZh": "厚书",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw016",
+      "headword": "따뜻하다",
+      "level": "TOPIK-1",
+      "collocation": "따뜻한 물",
+      "collocationZh": "温水",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw017",
+      "headword": "딸",
+      "level": "TOPIK-1",
+      "collocation": "딸과 아들",
+      "collocationZh": "女儿和儿子",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw018",
+      "headword": "라디오",
+      "level": "TOPIK-1",
+      "collocation": "라디오 방송",
+      "collocationZh": "广播节目",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw019",
+      "headword": "마을",
+      "level": "TOPIK-2",
+      "collocation": "마을 사람",
+      "collocationZh": "村民；社区居民",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw020",
+      "headword": "맛",
+      "level": "TOPIK-1",
+      "collocation": "맛이 좋다",
+      "collocationZh": "味道好",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw021",
+      "headword": "머리",
+      "level": "TOPIK-1",
+      "collocation": "머리가 아프다",
+      "collocationZh": "头疼",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw022",
+      "headword": "멀다",
+      "level": "TOPIK-1",
+      "collocation": "거리가 멀다",
+      "collocationZh": "距离远",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw023",
+      "headword": "메뉴",
+      "level": "TOPIK-1",
+      "collocation": "메뉴를 보다",
+      "collocationZh": "看菜单",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw024",
+      "headword": "모자",
+      "level": "TOPIK-1",
+      "collocation": "모자를 쓰다",
+      "collocationZh": "戴帽子",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw025",
+      "headword": "모임",
+      "level": "TOPIK-2",
+      "collocation": "모임에 참석하다",
+      "collocationZh": "参加聚会",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw026",
+      "headword": "목",
+      "level": "TOPIK-1",
+      "collocation": "목이 아프다",
+      "collocationZh": "嗓子疼；脖子疼",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw027",
+      "headword": "몸",
+      "level": "TOPIK-1",
+      "collocation": "몸이 좋지 않다",
+      "collocationZh": "身体不舒服",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw028",
+      "headword": "무료",
+      "level": "TOPIK-2",
+      "collocation": "무료 서비스",
+      "collocationZh": "免费服务",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw029",
+      "headword": "문자",
+      "level": "TOPIK-2",
+      "collocation": "문자를 보내다",
+      "collocationZh": "发短信",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw030",
+      "headword": "미리",
+      "level": "TOPIK-2",
+      "collocation": "미리 준비하다",
+      "collocationZh": "提前准备",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw031",
+      "headword": "바지",
+      "level": "TOPIK-1",
+      "collocation": "바지를 입다",
+      "collocationZh": "穿裤子",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw032",
+      "headword": "밖",
+      "level": "TOPIK-1",
+      "collocation": "밖에 나가다",
+      "collocationZh": "到外面去",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw033",
+      "headword": "반",
+      "level": "TOPIK-1",
+      "collocation": "우리 반",
+      "collocationZh": "我们班",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw034",
+      "headword": "배",
+      "level": "TOPIK-1",
+      "collocation": "배가 고프다",
+      "collocationZh": "肚子饿",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw037",
+      "headword": "별",
+      "level": "TOPIK-1",
+      "collocation": "별을 보다",
+      "collocationZh": "看星星",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw038",
+      "headword": "보내다",
+      "level": "TOPIK-1",
+      "collocation": "시간을 보내다",
+      "collocationZh": "度过时间",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw040",
+      "headword": "분",
+      "level": "TOPIK-1",
+      "collocation": "십 분",
+      "collocationZh": "十分钟",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw043",
+      "headword": "사과",
+      "level": "TOPIK-1",
+      "collocation": "사과를 하다",
+      "collocationZh": "道歉",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw045",
+      "headword": "산",
+      "level": "TOPIK-1",
+      "collocation": "산에 오르다",
+      "collocationZh": "登山",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw046",
+      "headword": "새",
+      "level": "TOPIK-1",
+      "collocation": "새 신발",
+      "collocationZh": "新鞋",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw047",
+      "headword": "색",
+      "level": "TOPIK-1",
+      "collocation": "색이 예쁘다",
+      "collocationZh": "颜色漂亮",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw048",
+      "headword": "샤워하다",
+      "level": "TOPIK-1",
+      "collocation": "샤워를 하다",
+      "collocationZh": "冲澡；淋浴",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw049",
+      "headword": "서점",
+      "level": "TOPIK-1",
+      "collocation": "서점에 가다",
+      "collocationZh": "去书店",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "tw050",
+      "headword": "선물",
+      "level": "TOPIK-1",
+      "collocation": "선물을 주다",
+      "collocationZh": "送礼物",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "sc104",
+      "headword": "몇 년",
+      "level": "TOPIK-2",
+      "collocation": "몇 년 동안",
+      "collocationZh": "几年期间",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "sc108",
+      "headword": "꽃이",
+      "level": "TOPIK-2",
+      "collocation": "꽃이 피다",
+      "collocationZh": "花开",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "sc116",
+      "headword": "좋다",
+      "level": "TOPIK-1",
+      "collocation": "기분이 좋다",
+      "collocationZh": "心情好",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "sc120",
+      "headword": "옷이",
+      "level": "TOPIK-1",
+      "collocation": "옷이 예쁘다",
+      "collocationZh": "衣服漂亮",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "sc121",
+      "headword": "책을",
+      "level": "TOPIK-1",
+      "collocation": "책을 읽다",
+      "collocationZh": "读书",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "sc128",
+      "headword": "끝이",
+      "level": "TOPIK-2",
+      "collocation": "끝이 나다",
+      "collocationZh": "结束",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "sc129",
+      "headword": "밥을",
+      "level": "TOPIK-1",
+      "collocation": "밥을 먹다",
+      "collocationZh": "吃饭",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "px001",
+      "headword": "들다",
+      "level": "TOPIK-2",
+      "collocation": "가방을 들다",
+      "collocationZh": "提包",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "px001",
+      "headword": "들다",
+      "level": "TOPIK-2",
+      "collocation": "마음에 들다",
+      "collocationZh": "觉得满意；合自己的心意",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "px003",
+      "headword": "쓰다",
+      "level": "TOPIK-1",
+      "collocation": "글을 쓰다",
+      "collocationZh": "写文章",
+      "source": "EDITORIAL_REVIEW"
+    },
+    {
+      "id": "px007",
+      "headword": "먹다",
+      "level": "TOPIK-1",
+      "collocation": "밥을 먹다",
+      "collocationZh": "吃饭",
+      "source": "EDITORIAL_REVIEW"
+    }
+  ],
+  "skipped": []
+}

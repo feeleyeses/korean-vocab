@@ -1,0 +1,393 @@
+{
+  "generatedAt": "2026-09-01T14:55:04.098Z",
+  "source": "data\\vocabulary.json",
+  "summary": {
+    "totalGroups": 15,
+    "byClassification": {
+      "同词不同词性": 1,
+      "同词多义": 5,
+      "疑似应保留": 9
+    }
+  },
+  "rows": [
+    {
+      "headword": "불가피하다",
+      "count": 2,
+      "classification": "同词不同词性",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-불가피하다-301",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "不可避免",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-불가피하다-357",
+          "partOfSpeech": "形容词",
+          "levels": [
+            "TOPIK-6"
+          ],
+          "glossZh": "不可避免",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "발전기",
+      "count": 2,
+      "classification": "同词多义",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-발전기-559",
+          "partOfSpeech": "名词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "发展期",
+          "source": "KRDICT"
+        },
+        {
+          "lexicalEntryId": "ko-발전기-560",
+          "partOfSpeech": "名词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "发电机",
+          "source": "KRDICT"
+        }
+      ]
+    },
+    {
+      "headword": "완화하다",
+      "count": 2,
+      "classification": "同词多义",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-완화하다-297",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "缓解；放宽",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-완화하다-348",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "缓和；减轻",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "유발하다",
+      "count": 2,
+      "classification": "同词多义",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-유발하다-307",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-6"
+          ],
+          "glossZh": "诱发；引发",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-유발하다-349",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "诱发；导致",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "쟁점",
+      "count": 2,
+      "classification": "同词多义",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-쟁점-296",
+          "partOfSpeech": "名词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "争议焦点",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-쟁점-354",
+          "partOfSpeech": "名词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "争议点；议题",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "초점",
+      "count": 2,
+      "classification": "同词多义",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-초점-302",
+          "partOfSpeech": "名词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "焦点",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-초점-353",
+          "partOfSpeech": "名词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "焦点；重点",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "갈등",
+      "count": 2,
+      "classification": "疑似应保留",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-갈등-312",
+          "partOfSpeech": "名词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "矛盾；冲突",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-갈등-371",
+          "partOfSpeech": "名词",
+          "levels": [
+            "TOPIK-4"
+          ],
+          "glossZh": "矛盾；冲突",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "감소하다",
+      "count": 2,
+      "classification": "疑似应保留",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-감소하다-309",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "减少",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-감소하다-372",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-4"
+          ],
+          "glossZh": "减少",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "같이",
+      "count": 2,
+      "classification": "疑似应保留",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-같이-014",
+          "partOfSpeech": "副词",
+          "levels": [
+            "TOPIK-1"
+          ],
+          "glossZh": "一起",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-같이-436",
+          "partOfSpeech": "副词",
+          "levels": [
+            "TOPIK-1"
+          ],
+          "glossZh": "一起",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "대안",
+      "count": 2,
+      "classification": "疑似应保留",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-대안-310",
+          "partOfSpeech": "名词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "替代方案；对策",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-대안-355",
+          "partOfSpeech": "名词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "替代方案；对策",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "먹다",
+      "count": 2,
+      "classification": "疑似应保留",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-먹다-206",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-1"
+          ],
+          "glossZh": "吃 / 花费；消耗 / 受；遭受",
+          "source": "TOPIK"
+        },
+        {
+          "lexicalEntryId": "ko-먹다-610",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-1",
+            "TOPIK-3",
+            "TOPIK-4"
+          ],
+          "glossZh": "吃 / 花费；消耗 / 受；遭受",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "반영하다",
+      "count": 2,
+      "classification": "疑似应保留",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-반영하다-299",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "反映",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-반영하다-345",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-4"
+          ],
+          "glossZh": "反映",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "쓰다",
+      "count": 2,
+      "classification": "疑似应保留",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-쓰다-202",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-1"
+          ],
+          "glossZh": "写 / 使用 / 戴；穿戴 / 苦；味道苦",
+          "source": "TOPIK"
+        },
+        {
+          "lexicalEntryId": "ko-쓰다-606",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-1",
+            "TOPIK-2",
+            "TOPIK-3"
+          ],
+          "glossZh": "写 / 使用 / 戴；穿戴 / 苦；味道苦",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "유지하다",
+      "count": 2,
+      "classification": "疑似应保留",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-유지하다-110",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-3"
+          ],
+          "glossZh": "维持",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-유지하다-411",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "维持",
+          "source": "EDITORIAL"
+        }
+      ]
+    },
+    {
+      "headword": "확대하다",
+      "count": 2,
+      "classification": "疑似应保留",
+      "entries": [
+        {
+          "lexicalEntryId": "ko-확대하다-115",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-3"
+          ],
+          "glossZh": "扩大",
+          "source": "EDITORIAL"
+        },
+        {
+          "lexicalEntryId": "ko-확대하다-405",
+          "partOfSpeech": "动词",
+          "levels": [
+            "TOPIK-5"
+          ],
+          "glossZh": "扩大",
+          "source": "EDITORIAL"
+        }
+      ]
+    }
+  ]
+}
