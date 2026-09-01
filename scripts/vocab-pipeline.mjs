@@ -20,6 +20,7 @@ const toPair = (ko, zh, id) => ({ exampleId: id, ko: ko || '', zh: zh || '', sou
 function normalize(raw, index) {
   const entryId = `ko-${slug(raw.headword)}-${String(index + 1).padStart(3, '0')}`;
   const levels = [...new Set((raw.levels?.length ? raw.levels : [raw.level]).map(toLevel))];
+  const verificationStatus = raw.verificationStatus || (raw.needsReview ? 'needs_review' : 'approved');
   const senses = (raw.senses || []).map((sense, senseIndex) => {
     const senseId = `${entryId}-s${senseIndex + 1}`;
     return {
@@ -58,24 +59,31 @@ function normalize(raw, index) {
     },
     senses,
     source: raw.source || 'legacy-bundle',
-    verifiedAt: raw.verifiedAt || now,
-    verificationStatus: 'approved',
+    verifiedAt: raw.verifiedAt || (verificationStatus === 'approved' ? now : null),
+    verificationStatus,
     qualityScore: {
-      score: 100,
-      completeness: 100,
-      accuracy: 100,
-      sourceReliability: 100,
-      humanReviewed: true,
-      issues: []
+      score: verificationStatus === 'approved' ? 100 : 58,
+      completeness: verificationStatus === 'approved' ? 100 : 64,
+      accuracy: verificationStatus === 'approved' ? 100 : 62,
+      sourceReliability: verificationStatus === 'approved' ? 100 : 72,
+      humanReviewed: verificationStatus === 'approved',
+      issues: verificationStatus === 'approved' ? [] : ['Expansion draft requires human review before publishing.']
     }
   };
 }
 
-const entries = rawEntries.map(normalize);
+const normalizedEntries = rawEntries.map(normalize);
+const entries = normalizedEntries.filter(entry => entry.verificationStatus === 'approved');
 const payload = {
   schemaVersion: 2,
   generatedAt: new Date().toISOString(),
   pipeline: ['Raw', 'Normalize', 'Split Sense', 'Pronunciation', 'Romanization', 'Collocation', 'Quality Check', 'Publish'],
+  publicationPolicy: {
+    approved: 'included in learning and review queues',
+    needs_review: 'kept in raw intake and review queues only',
+    draft: 'kept in raw intake only'
+  },
+  skippedEntries: normalizedEntries.length - entries.length,
   entries
 };
 

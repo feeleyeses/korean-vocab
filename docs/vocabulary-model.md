@@ -16,7 +16,7 @@ Sprint 2 keeps the visible UI unchanged while moving the production word bank to
 - `qualityScore`: one Quality Score object.
 - `source`: source notes or citations for human review.
 - `verifiedAt`: ISO date or null.
-- `verificationStatus`: `draft`, `reviewed`, or `approved`.
+- `verificationStatus`: `draft`, `needs_review`, `reviewed`, or `approved`. Only `approved` entries are published to the frontend learning/review data.
 
 ## Sense
 

@@ -1,4931 +1,2745 @@
 {
-  "generatedAt": "2026-09-01T08:27:00.732Z",
-  "source": "artifacts/krdict-collocation-coverage-2026-08-29T21-26-08-061Z.json",
-  "summary": {
-    "total": 491,
-    "byLevel": {
-      "TOPIK-1": 177,
-      "TOPIK-2": 116,
-      "TOPIK-3": 54,
-      "TOPIK-4": 23,
-      "TOPIK-5": 93,
-      "TOPIK-6": 28
-    },
-    "byReason": {
-      "unavailable": 478,
-      "manual": 13
-    }
+  "generatedAt": "2026-09-01T09:15:21.353Z",
+  "source": "data\\vocabulary.json",
+  "total": 390,
+  "byLevel": {
+    "TOPIK-1": 103,
+    "TOPIK-2": 71,
+    "TOPIK-3": 67,
+    "TOPIK-4": 28,
+    "TOPIK-5": 93,
+    "TOPIK-6": 28
   },
   "rows": [
     {
-      "topikLevel": "TOPIK-1",
-      "headword": "가게",
-      "collocationKo": "가게에 가다",
-      "senseGlossZh": "商店",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가격",
-      "collocationKo": "가격이 비싸다",
-      "senseGlossZh": "价格",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가구",
-      "collocationKo": "가구를 사다",
-      "senseGlossZh": "家具",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가깝다",
-      "collocationKo": "집에서 가깝다",
-      "senseGlossZh": "近",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가끔",
-      "collocationKo": "가끔 만나다",
-      "senseGlossZh": "偶尔",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가다",
-      "collocationKo": "집에 가다",
-      "senseGlossZh": "去",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가르치다",
-      "collocationKo": "학생을 가르치다",
-      "senseGlossZh": "教",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가방",
-      "collocationKo": "가방을 들다",
-      "senseGlossZh": "包",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가수",
-      "collocationKo": "인기 가수",
-      "senseGlossZh": "歌手",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가을",
-      "collocationKo": "가을 날씨",
-      "senseGlossZh": "秋天",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가져오다",
-      "collocationKo": "책을 가져오다",
-      "senseGlossZh": "拿来；带来",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "가족",
-      "collocationKo": "우리 가족",
-      "senseGlossZh": "家人",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "간식",
-      "collocationKo": "간식을 먹다",
-      "senseGlossZh": "零食",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "감기",
-      "collocationKo": "감기에 걸리다",
-      "senseGlossZh": "感冒",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "감사하다",
-      "collocationKo": "진심으로 감사하다",
-      "senseGlossZh": "感谢",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "강",
-      "collocationKo": "강가를 걷다",
-      "senseGlossZh": "江；河",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "강아지",
-      "collocationKo": "강아지를 키우다",
-      "senseGlossZh": "小狗",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "같다",
-      "collocationKo": "~ 것 같다",
-      "senseGlossZh": "好像；似乎",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "같다",
-      "collocationKo": "~와 같다",
-      "senseGlossZh": "相同；一样",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "같다",
-      "collocationKo": "~와 같은",
-      "senseGlossZh": "像；类似",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "같이",
-      "collocationKo": "친구와 같이",
-      "senseGlossZh": "一起",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "같이",
-      "collocationKo": "친구와 같이",
-      "senseGlossZh": "一起",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "거기",
-      "collocationKo": "바로 거기",
-      "senseGlossZh": "那里",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "거리",
-      "collocationKo": "거리가 멀다",
-      "senseGlossZh": "距离；街道",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "거실",
-      "collocationKo": "거실에 있다",
-      "senseGlossZh": "客厅",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "거울",
-      "collocationKo": "거울을 보다",
-      "senseGlossZh": "镜子",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "건물",
-      "collocationKo": "높은 건물",
-      "senseGlossZh": "建筑物",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "걷다",
-      "collocationKo": "길을 걷다",
-      "senseGlossZh": "走路",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "계단",
-      "collocationKo": "계단을 오르다",
-      "senseGlossZh": "楼梯",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "계절",
-      "collocationKo": "계절이 바뀌다",
-      "senseGlossZh": "季节",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "고기",
-      "collocationKo": "고기를 굽다",
-      "senseGlossZh": "肉",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "고맙다",
-      "collocationKo": "도움이 고맙다",
-      "senseGlossZh": "感谢",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "공부",
-      "collocationKo": "공부를 하다",
-      "senseGlossZh": "学习",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "공원",
-      "collocationKo": "공원에 가다",
-      "senseGlossZh": "公园",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "과일",
-      "collocationKo": "과일을 사다",
-      "senseGlossZh": "水果",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "괜찮다",
-      "collocationKo": "괜찮은 생각",
-      "senseGlossZh": "没关系；不错",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "교실",
-      "collocationKo": "교실에 들어가다",
-      "senseGlossZh": "教室",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "구두",
-      "collocationKo": "구두를 신다",
-      "senseGlossZh": "皮鞋",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "구름",
-      "collocationKo": "구름이 끼다",
-      "senseGlossZh": "云",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "귀엽다",
-      "collocationKo": "귀여운 아이",
-      "senseGlossZh": "可爱",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "귤",
-      "collocationKo": "귤을 까다",
-      "senseGlossZh": "橘子",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "그릇",
-      "collocationKo": "그릇을 씻다",
-      "senseGlossZh": "碗；餐具",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "그림",
-      "collocationKo": "그림을 그리다",
-      "senseGlossZh": "画；图",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "기다리다",
-      "collocationKo": "버스를 기다리다",
-      "senseGlossZh": "等待",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "기쁘다",
-      "collocationKo": "기쁜 마음",
-      "senseGlossZh": "高兴",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "기차",
-      "collocationKo": "기차를 타다",
-      "senseGlossZh": "火车",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "길",
-      "collocationKo": "길을 묻다",
-      "senseGlossZh": "路",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "김치",
-      "collocationKo": "김치를 먹다",
-      "senseGlossZh": "泡菜",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "깨끗하다",
-      "collocationKo": "깨끗한 물",
-      "senseGlossZh": "干净",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "끝나다",
-      "collocationKo": "일이 끝나다",
-      "senseGlossZh": "结束",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "나라",
-      "collocationKo": "우리 나라",
-      "senseGlossZh": "国家",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "우리나라",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "나무",
-      "collocationKo": "나무 아래",
-      "senseGlossZh": "树",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "나쁘다",
-      "collocationKo": "기분이 나쁘다",
-      "senseGlossZh": "坏；差",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "나이",
-      "collocationKo": "나이가 많다",
-      "senseGlossZh": "年龄",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "나중",
-      "collocationKo": "나중에 만나다",
-      "senseGlossZh": "以后",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "날씨",
-      "collocationKo": "날씨가 좋다",
-      "senseGlossZh": "天气",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "날짜",
-      "collocationKo": "날짜를 확인하다",
-      "senseGlossZh": "日期",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "내일",
-      "collocationKo": "내일 오후",
-      "senseGlossZh": "明天",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "냉장고",
-      "collocationKo": "냉장고 문",
-      "senseGlossZh": "冰箱",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "노래",
-      "collocationKo": "노래를 부르다",
-      "senseGlossZh": "歌",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "놀다",
-      "collocationKo": "밖에서 놀다",
-      "senseGlossZh": "玩",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "누구",
-      "collocationKo": "누구와 같이",
-      "senseGlossZh": "谁",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "누구와 같이",
+      "gloss": "谁",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "누나",
-      "collocationKo": "우리 누나",
-      "senseGlossZh": "姐姐（男用）",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "우리 누나",
+      "gloss": "姐姐（男用）",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "다르다",
-      "collocationKo": "~와 다르다",
-      "senseGlossZh": "不同",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "~와 다르다",
+      "gloss": "不同",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "다음",
-      "collocationKo": "다음 시간",
-      "senseGlossZh": "下一个；下次",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "다음 시간",
+      "gloss": "下一个；下次",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "닫다",
-      "collocationKo": "문을 닫다",
-      "senseGlossZh": "关闭",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문을 닫다",
+      "gloss": "关闭",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "달",
-      "collocationKo": "이번 달",
-      "senseGlossZh": "月亮；月份",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "이번 달",
+      "gloss": "月亮；月份",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "닭",
-      "collocationKo": "닭을 먹다",
-      "senseGlossZh": "鸡",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "닭을 먹다",
+      "gloss": "鸡",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "도서관",
-      "collocationKo": "도서관에 가다",
-      "senseGlossZh": "图书馆",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "도서관에 가다",
+      "gloss": "图书馆",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "돈",
-      "collocationKo": "돈을 쓰다",
-      "senseGlossZh": "钱",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "돈을 쓰다",
+      "gloss": "钱",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "동생",
-      "collocationKo": "동생을 돌보다",
-      "senseGlossZh": "弟弟；妹妹",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "동생을 돌보다",
+      "gloss": "弟弟；妹妹",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "듣다",
-      "collocationKo": "노래를 듣다",
-      "senseGlossZh": "听",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "노래를 듣다",
+      "gloss": "听",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "따뜻하다",
-      "collocationKo": "따뜻한 물",
-      "senseGlossZh": "暖和",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "따뜻한 물",
+      "gloss": "暖和",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "딸",
-      "collocationKo": "딸과 아들",
-      "senseGlossZh": "女儿",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "딸과 아들",
+      "gloss": "女儿",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "라디오",
-      "collocationKo": "라디오 방송",
-      "senseGlossZh": "收音机",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "라디오 방송",
+      "gloss": "收音机",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "마시다",
-      "collocationKo": "물을 마시다",
-      "senseGlossZh": "喝",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "물을 마시다",
+      "gloss": "喝",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "마음",
-      "collocationKo": "마음에 들다",
-      "senseGlossZh": "喜欢；合意",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "마음에 들다",
+      "gloss": "喜欢；合意",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "마음",
-      "collocationKo": "마음을 정하다",
-      "senseGlossZh": "心意；意愿",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "마음이 편하다",
+      "gloss": "心；内心",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
-      "headword": "마음",
-      "collocationKo": "마음이 편하다",
-      "senseGlossZh": "心；内心",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "만나다",
-      "collocationKo": "사람을 만나다",
-      "senseGlossZh": "见面",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "사람을 만나다",
+      "gloss": "见面",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "많다",
-      "collocationKo": "사람이 많다",
-      "senseGlossZh": "多",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "사람이 많다",
+      "gloss": "多",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "말하다",
-      "collocationKo": "한국어로 말하다",
-      "senseGlossZh": "说",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "한국어로 말하다",
+      "gloss": "说",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "맛",
-      "collocationKo": "맛이 좋다",
-      "senseGlossZh": "味道",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "맛이 좋다",
+      "gloss": "味道",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "맛있다",
-      "collocationKo": "맛있는 음식",
-      "senseGlossZh": "好吃",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "맛있는 음식",
+      "gloss": "好吃",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "머리",
-      "collocationKo": "머리가 아프다",
-      "senseGlossZh": "头；头发",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "머리가 아프다",
+      "gloss": "头；头发",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "먹다",
-      "collocationKo": "밥을 먹다",
-      "senseGlossZh": "吃",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "밥을 먹다",
+      "gloss": "吃",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "먹다",
-      "collocationKo": "밥을 먹다",
-      "senseGlossZh": "吃",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "밥을 먹다",
+      "gloss": "吃",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
-      "headword": "먹다",
-      "collocationKo": "시간을 먹다",
-      "senseGlossZh": "花费；消耗",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "먹다",
-      "collocationKo": "시간을 먹다",
-      "senseGlossZh": "花费；消耗",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "먹다",
-      "collocationKo": "욕을 먹다",
-      "senseGlossZh": "受；遭受",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "먹다",
-      "collocationKo": "욕을 먹다",
-      "senseGlossZh": "受；遭受",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "멀다",
-      "collocationKo": "거리가 멀다",
-      "senseGlossZh": "远",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "거리가 멀다",
+      "gloss": "远",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "메뉴",
-      "collocationKo": "메뉴를 보다",
-      "senseGlossZh": "菜单",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "메뉴를 보다",
+      "gloss": "菜单",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "모자",
-      "collocationKo": "모자를 쓰다",
-      "senseGlossZh": "帽子",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "모자를 쓰다",
+      "gloss": "帽子",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "목",
-      "collocationKo": "목이 아프다",
-      "senseGlossZh": "脖子；喉咙",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "목이 아프다",
+      "gloss": "脖子；喉咙",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "몸",
-      "collocationKo": "몸이 좋지 않다",
-      "senseGlossZh": "身体",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "몸이 좋지 않다",
+      "gloss": "身体",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "문",
-      "collocationKo": "문을 열다",
-      "senseGlossZh": "门",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문을 열다",
+      "gloss": "门",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "물",
-      "collocationKo": "물을 마시다",
-      "senseGlossZh": "水",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "물을 마시다",
+      "gloss": "水",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "바다",
-      "collocationKo": "바다를 보다",
-      "senseGlossZh": "海",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "바다를 보다",
+      "gloss": "海",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "바지",
-      "collocationKo": "바지를 입다",
-      "senseGlossZh": "裤子",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "바지를 입다",
+      "gloss": "裤子",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "밖",
-      "collocationKo": "밖에 나가다",
-      "senseGlossZh": "外面",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "밖에 나가다",
+      "gloss": "外面",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "반",
-      "collocationKo": "우리 반",
-      "senseGlossZh": "班；半",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "우리 반",
+      "gloss": "班；半",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "밥을",
-      "collocationKo": "밥을 먹다",
-      "senseGlossZh": "饭（宾格）",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "밥을 먹다",
+      "gloss": "饭（宾格）",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "방",
-      "collocationKo": "방을 청소하다",
-      "senseGlossZh": "房间",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "방을 청소하다",
+      "gloss": "房间",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "배",
-      "collocationKo": "배가 고프다",
-      "senseGlossZh": "肚子；船；梨",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "배가 고프다",
+      "gloss": "肚子；船；梨",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "배우다",
-      "collocationKo": "언어를 배우다",
-      "senseGlossZh": "学习",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "언어를 배우다",
+      "gloss": "学习",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "별",
-      "collocationKo": "별을 보다",
-      "senseGlossZh": "星星",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "별을 보다",
+      "gloss": "星星",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "보내다",
-      "collocationKo": "시간을 보내다",
-      "senseGlossZh": "发送；度过",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "시간을 보내다",
+      "gloss": "发送；度过",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "보다",
-      "collocationKo": "~보다",
-      "senseGlossZh": "比起；相较",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "사진을 보다",
+      "gloss": "看",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
-      "headword": "보다",
-      "collocationKo": "~아/어 보다",
-      "senseGlossZh": "试着；尝试",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "보다",
-      "collocationKo": "사진을 보다",
-      "senseGlossZh": "看",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "봄",
-      "collocationKo": "봄이 오다",
-      "senseGlossZh": "春天",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "봄이 오다",
+      "gloss": "春天",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "부모님",
-      "collocationKo": "부모님과 살다",
-      "senseGlossZh": "父母",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "부모님과 살다",
+      "gloss": "父母",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "분",
-      "collocationKo": "십 분",
-      "senseGlossZh": "分钟；位",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "십분",
-      "krdictZh": ""
+      "collocation": "십 분",
+      "gloss": "分钟；位",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "사과",
-      "collocationKo": "사과를 하다",
-      "senseGlossZh": "苹果；道歉",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "사과를 하다",
+      "gloss": "苹果；道歉",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "사다",
-      "collocationKo": "물건을 사다",
-      "senseGlossZh": "买",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "물건을 사다",
+      "gloss": "买",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "사람",
-      "collocationKo": "많은 사람",
-      "senseGlossZh": "人",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "많은 사람",
+      "gloss": "人",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "사진",
-      "collocationKo": "사진을 찍다",
-      "senseGlossZh": "照片",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "사진을 찍다",
+      "gloss": "照片",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "산",
-      "collocationKo": "산에 오르다",
-      "senseGlossZh": "山",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "산에 오르다",
+      "gloss": "山",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "새",
-      "collocationKo": "새 신발",
-      "senseGlossZh": "鸟；新的",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "새 신발",
+      "gloss": "鸟；新的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "색",
-      "collocationKo": "색이 예쁘다",
-      "senseGlossZh": "颜色",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "색이 예쁘다",
+      "gloss": "颜色",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "생각",
-      "collocationKo": "생각이 나다",
-      "senseGlossZh": "想法",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "생각이 나다",
+      "gloss": "想法",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "샤워하다",
-      "collocationKo": "샤워를 하다",
-      "senseGlossZh": "洗澡",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "샤워를 하다",
+      "gloss": "洗澡",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "서다",
-      "collocationKo": "줄을 서다",
-      "senseGlossZh": "站；停",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "줄을 서다",
+      "gloss": "站；停",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "서점",
-      "collocationKo": "서점에 가다",
-      "senseGlossZh": "书店",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "서점에 가다",
+      "gloss": "书店",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "선물",
-      "collocationKo": "선물을 주다",
-      "senseGlossZh": "礼物",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "선물을 주다",
+      "gloss": "礼物",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "선생님",
-      "collocationKo": "선생님께 묻다",
-      "senseGlossZh": "老师",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "선생님께 묻다",
+      "gloss": "老师",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "쉬다",
-      "collocationKo": "잠깐 쉬다",
-      "senseGlossZh": "休息",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "잠깐 쉬다",
+      "gloss": "休息",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "쉽다",
-      "collocationKo": "쉽게 이해하다",
-      "senseGlossZh": "容易",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "쉽게 이해하다",
+      "gloss": "容易",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "시간",
-      "collocationKo": "시간이 없다",
-      "senseGlossZh": "时间",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "시간이 없다",
+      "gloss": "时间",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "시작하다",
-      "collocationKo": "일을 시작하다",
-      "senseGlossZh": "开始",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "일을 시작하다",
+      "gloss": "开始",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "시장",
-      "collocationKo": "시장에 가다",
-      "senseGlossZh": "市场",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "시장에 가다",
+      "gloss": "市场",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "쓰다",
-      "collocationKo": "글을 쓰다",
-      "senseGlossZh": "写",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "글을 쓰다",
+      "gloss": "写",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "쓰다",
-      "collocationKo": "글을 쓰다",
-      "senseGlossZh": "写",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "글을 쓰다",
+      "gloss": "写",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
-      "headword": "쓰다",
-      "collocationKo": "맛이 쓰다",
-      "senseGlossZh": "苦；味道苦",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "쓰다",
-      "collocationKo": "맛이 쓰다",
-      "senseGlossZh": "苦；味道苦",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "쓰다",
-      "collocationKo": "모자를 쓰다",
-      "senseGlossZh": "戴；穿戴",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "쓰다",
-      "collocationKo": "모자를 쓰다",
-      "senseGlossZh": "戴；穿戴",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "쓰다",
-      "collocationKo": "표현을 쓰다",
-      "senseGlossZh": "使用",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
-      "headword": "쓰다",
-      "collocationKo": "표현을 쓰다",
-      "senseGlossZh": "使用",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "아버지",
-      "collocationKo": "아버지와 어머니",
-      "senseGlossZh": "父亲",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "아버지와 어머니",
+      "gloss": "父亲",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "아이",
-      "collocationKo": "작은 아이",
-      "senseGlossZh": "孩子",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "작은 아이",
+      "gloss": "孩子",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "아침",
-      "collocationKo": "아침을 먹다",
-      "senseGlossZh": "早上；早饭",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "아침을 먹다",
+      "gloss": "早上；早饭",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "앉다",
-      "collocationKo": "자리에 앉다",
-      "senseGlossZh": "坐",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "자리에 앉다",
+      "gloss": "坐",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "알다",
-      "collocationKo": "방법을 알다",
-      "senseGlossZh": "知道",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "방법을 알다",
+      "gloss": "知道",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "어디",
-      "collocationKo": "어디에서 만나다",
-      "senseGlossZh": "哪里",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "어디에서 만나다",
+      "gloss": "哪里",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "어렵다",
-      "collocationKo": "이해하기 어렵다",
-      "senseGlossZh": "难",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "이해하기 어렵다",
+      "gloss": "难",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "어머니",
-      "collocationKo": "어머니께 전화하다",
-      "senseGlossZh": "母亲",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "어머니께 전화하다",
+      "gloss": "母亲",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "어제",
-      "collocationKo": "어제 저녁",
-      "senseGlossZh": "昨天",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "어제저녁",
-      "krdictZh": ""
+      "collocation": "어제 저녁",
+      "gloss": "昨天",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "언니",
-      "collocationKo": "친한 언니",
-      "senseGlossZh": "姐姐（女用）",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "친한 언니",
+      "gloss": "姐姐（女用）",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "언제",
-      "collocationKo": "언제부터",
-      "senseGlossZh": "什么时候",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "언제부터",
+      "gloss": "什么时候",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "여름",
-      "collocationKo": "여름 휴가",
-      "senseGlossZh": "夏天",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "여름휴가",
-      "krdictZh": ""
+      "collocation": "여름 휴가",
+      "gloss": "夏天",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "열다",
-      "collocationKo": "문을 열다",
-      "senseGlossZh": "打开",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문을 열다",
+      "gloss": "打开",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "오늘",
-      "collocationKo": "오늘 아침",
-      "senseGlossZh": "今天",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "오늘 아침",
+      "gloss": "今天",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "오빠",
-      "collocationKo": "우리 오빠",
-      "senseGlossZh": "哥哥（女用）",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "우리 오빠",
+      "gloss": "哥哥（女用）",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "오후",
-      "collocationKo": "오후 세 시",
-      "senseGlossZh": "下午",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "오후 세 시",
+      "gloss": "下午",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "옷이",
-      "collocationKo": "옷이 예쁘다",
-      "senseGlossZh": "衣服（主格）",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "옷이 예쁘다",
+      "gloss": "衣服（主格）",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "월요일",
-      "collocationKo": "월요일 아침",
-      "senseGlossZh": "星期一",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "월요일 아침",
+      "gloss": "星期一",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "의자",
-      "collocationKo": "의자에 앉다",
-      "senseGlossZh": "椅子",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "의자에 앉다",
+      "gloss": "椅子",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "이름",
-      "collocationKo": "이름을 쓰다",
-      "senseGlossZh": "名字",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "이름을 쓰다",
+      "gloss": "名字",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "읽다",
-      "collocationKo": "책을 읽다",
-      "senseGlossZh": "读",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "책을 읽다",
+      "gloss": "读",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "자다",
-      "collocationKo": "잠을 자다",
-      "senseGlossZh": "睡觉",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "잠을 자다",
+      "gloss": "睡觉",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "작다",
-      "collocationKo": "크기가 작다",
-      "senseGlossZh": "小",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "크기가 작다",
+      "gloss": "小",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "저녁",
-      "collocationKo": "저녁을 먹다",
-      "senseGlossZh": "晚上；晚饭",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "저녁을 먹다",
+      "gloss": "晚上；晚饭",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "적다",
-      "collocationKo": "양이 적다",
-      "senseGlossZh": "少",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "양이 적다",
+      "gloss": "少",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "좋다",
-      "collocationKo": "기분이 좋다",
-      "senseGlossZh": "好",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "기분이 좋다",
+      "gloss": "好",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "주말",
-      "collocationKo": "주말 계획",
-      "senseGlossZh": "周末",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "주말 계획",
+      "gloss": "周末",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "집",
-      "collocationKo": "집에 가다",
-      "senseGlossZh": "家；房子",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "집에 가다",
+      "gloss": "家；房子",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "책상",
-      "collocationKo": "책상 위",
-      "senseGlossZh": "书桌",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "책상 위",
+      "gloss": "书桌",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "책을",
-      "collocationKo": "책을 읽다",
-      "senseGlossZh": "书（宾格）",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "책을 읽다",
+      "gloss": "书（宾格）",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "친구",
-      "collocationKo": "친구를 만나다",
-      "senseGlossZh": "朋友",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "친구를 만나다",
+      "gloss": "朋友",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "침대",
-      "collocationKo": "침대에 눕다",
-      "senseGlossZh": "床",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "침대에 눕다",
+      "gloss": "床",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "크다",
-      "collocationKo": "키가 크다",
-      "senseGlossZh": "大",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "키가 크다",
+      "gloss": "大",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "팔다",
-      "collocationKo": "물건을 팔다",
-      "senseGlossZh": "卖",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "물건을 팔다",
+      "gloss": "卖",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "학교",
-      "collocationKo": "학교에 다니다",
-      "senseGlossZh": "学校",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "학교에 다니다",
+      "gloss": "学校",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "학생",
-      "collocationKo": "학생이 많다",
-      "senseGlossZh": "学生",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "학생이 많다",
+      "gloss": "学生",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-1",
+      "level": "TOPIK-1",
       "headword": "형",
-      "collocationKo": "우리 형",
-      "senseGlossZh": "哥哥（男用）",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "우리 형",
+      "gloss": "哥哥（男用）",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
-      "headword": "가능하다",
-      "collocationKo": "예약이 가능하다",
-      "senseGlossZh": "可能；可行",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "가볍다",
-      "collocationKo": "무게가 가볍다",
-      "senseGlossZh": "轻",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "가운데",
-      "collocationKo": "방 가운데",
-      "senseGlossZh": "中间",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "간단하다",
-      "collocationKo": "간단한 설명",
-      "senseGlossZh": "简单",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "갈아타다",
-      "collocationKo": "버스를 갈아타다",
-      "senseGlossZh": "换乘",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "갑자기",
-      "collocationKo": "갑자기 나타나다",
-      "senseGlossZh": "突然",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "값",
-      "collocationKo": "값이 비싸다",
-      "senseGlossZh": "价格；值",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "거의",
-      "collocationKo": "거의 끝나다",
-      "senseGlossZh": "几乎",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "거절하다",
-      "collocationKo": "제안을 거절하다",
-      "senseGlossZh": "拒绝",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "걱정하다",
-      "collocationKo": "건강을 걱정하다",
-      "senseGlossZh": "担心",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "건강",
-      "collocationKo": "건강을 챙기다",
-      "senseGlossZh": "健康",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "건너다",
-      "collocationKo": "길을 건너다",
-      "senseGlossZh": "过；穿过",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "걸다",
-      "collocationKo": "그림을 걸다",
-      "senseGlossZh": "挂",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "걸다",
-      "collocationKo": "목숨을 걸다",
-      "senseGlossZh": "打赌；押上",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "걸다",
-      "collocationKo": "전화를 걸다",
-      "senseGlossZh": "拨打电话",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "계획",
-      "collocationKo": "계획을 세우다",
-      "senseGlossZh": "计划",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "고르다",
-      "collocationKo": "색을 고르다",
-      "senseGlossZh": "挑选",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "고장",
-      "collocationKo": "고장이 나다",
-      "senseGlossZh": "故障",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "고향",
-      "collocationKo": "고향 친구",
-      "senseGlossZh": "故乡",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "과학",
-      "collocationKo": "과학 기술",
-      "senseGlossZh": "科学",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "교통",
-      "collocationKo": "대중교통을 이용하다",
-      "senseGlossZh": "交通",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "구경하다",
-      "collocationKo": "시장을 구경하다",
-      "senseGlossZh": "参观；看热闹",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "구하다",
-      "collocationKo": "도움을 구하다",
-      "senseGlossZh": "请求；征求",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "구하다",
-      "collocationKo": "사람을 구하다",
-      "senseGlossZh": "救；拯救",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "구하다",
-      "collocationKo": "일자리를 구하다",
-      "senseGlossZh": "寻找；求得",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "그냥",
-      "collocationKo": "그냥 두다",
-      "senseGlossZh": "就；只是",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "근처",
-      "collocationKo": "근처 카페",
-      "senseGlossZh": "附近",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "기분",
-      "collocationKo": "기분이 나아지다",
-      "senseGlossZh": "心情",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "기숙사",
-      "collocationKo": "기숙사 생활",
-      "senseGlossZh": "宿舍",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "기억하다",
-      "collocationKo": "이름을 기억하다",
-      "senseGlossZh": "记得",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "깎다",
-      "collocationKo": "가격을 깎다",
-      "senseGlossZh": "削；砍价",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "꽃이",
-      "collocationKo": "꽃이 피다",
-      "senseGlossZh": "花（主格）",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "꽃이 피다",
+      "gloss": "花（主格）",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "끝이",
-      "collocationKo": "끝이 나다",
-      "senseGlossZh": "末端；结尾（主格）",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "끝이 나다",
+      "gloss": "末端；结尾（主格）",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
-      "headword": "나다",
-      "collocationKo": "냄새가 나다",
-      "senseGlossZh": "发出；产生",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "나다",
-      "collocationKo": "사고가 나다",
-      "senseGlossZh": "发生；出现",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "나다",
-      "collocationKo": "생각이 나다",
-      "senseGlossZh": "想起；记起",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "나다",
-      "collocationKo": "서울에서 나다",
-      "senseGlossZh": "出生；出身",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "느리다",
-      "collocationKo": "속도가 느리다",
-      "senseGlossZh": "慢",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "늦다",
-      "collocationKo": "시간이 늦다",
-      "senseGlossZh": "晚；迟",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "답",
-      "collocationKo": "답을 쓰다",
-      "senseGlossZh": "答案",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "대답",
-      "collocationKo": "대답을 하다",
-      "senseGlossZh": "回答",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "대사관",
-      "collocationKo": "대사관에 가다",
-      "senseGlossZh": "大使馆",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "대학",
-      "collocationKo": "대학 생활",
-      "senseGlossZh": "大学",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "도움",
-      "collocationKo": "도움을 받다",
-      "senseGlossZh": "帮助",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "도움을 받다",
+      "gloss": "帮助",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "도착하다",
-      "collocationKo": "목적지에 도착하다",
-      "senseGlossZh": "到达",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "목적지에 도착하다",
+      "gloss": "到达",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "돌아오다",
-      "collocationKo": "집에 돌아오다",
-      "senseGlossZh": "回来",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "집에 돌아오다",
+      "gloss": "回来",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "동네",
-      "collocationKo": "동네 사람",
-      "senseGlossZh": "小区；街区",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "동네 사람",
+      "gloss": "小区；街区",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "두껍다",
-      "collocationKo": "두꺼운 책",
-      "senseGlossZh": "厚",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "두꺼운 책",
+      "gloss": "厚",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "들다",
-      "collocationKo": "가방을 들다",
-      "senseGlossZh": "拿；举",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "가방을 들다",
+      "gloss": "拿；举",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "들다",
-      "collocationKo": "돈이 들다",
-      "senseGlossZh": "花费；需要",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "마음에 들다",
+      "gloss": "喜欢；合心意",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
-      "headword": "들다",
-      "collocationKo": "마음에 들다",
-      "senseGlossZh": "喜欢；合心意",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "들다",
-      "collocationKo": "집에 들다",
-      "senseGlossZh": "进入；住进",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "마감",
-      "collocationKo": "마감 기한",
-      "senseGlossZh": "截止；收尾",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "마감 기한",
+      "gloss": "截止；收尾",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "마을",
-      "collocationKo": "마을 사람",
-      "senseGlossZh": "村庄；社区",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "마을 사람",
+      "gloss": "村庄；社区",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
+      "headword": "마음",
+      "collocation": "마음을 정하다",
+      "gloss": "心意；意愿",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-2",
       "headword": "몇 년",
-      "collocationKo": "몇 년 동안",
-      "senseGlossZh": "几年",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "몇 년 동안",
+      "gloss": "几年",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "모임",
-      "collocationKo": "모임에 참석하다",
-      "senseGlossZh": "聚会；会议",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "모임에 참석하다",
+      "gloss": "聚会；会议",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "무료",
-      "collocationKo": "무료 서비스",
-      "senseGlossZh": "免费",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "무료 서비스",
+      "gloss": "免费",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "문자",
-      "collocationKo": "문자를 보내다",
-      "senseGlossZh": "短信；文字",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문자를 보내다",
+      "gloss": "短信；文字",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "문제",
-      "collocationKo": "문제를 풀다",
-      "senseGlossZh": "问题；题目",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제를 풀다",
+      "gloss": "问题；题目",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "문화",
-      "collocationKo": "문화를 배우다",
-      "senseGlossZh": "文化",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문화를 배우다",
+      "gloss": "文化",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "미리",
-      "collocationKo": "미리 준비하다",
-      "senseGlossZh": "提前",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "미리 준비하다",
+      "gloss": "提前",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "바꾸다",
-      "collocationKo": "생각을 바꾸다",
-      "senseGlossZh": "更换；改变",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "생각을 바꾸다",
+      "gloss": "更换；改变",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "바르다",
-      "collocationKo": "바른 태도",
-      "senseGlossZh": "端正；正直",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "약을 바르다",
+      "gloss": "涂；抹",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
-      "headword": "바르다",
-      "collocationKo": "바른 표현",
-      "senseGlossZh": "正确；合乎规范",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "바르다",
-      "collocationKo": "약을 바르다",
-      "senseGlossZh": "涂；抹",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "방금",
-      "collocationKo": "방금 전",
-      "senseGlossZh": "刚刚",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "방금 전",
+      "gloss": "刚刚",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "방문하다",
-      "collocationKo": "한국을 방문하다",
-      "senseGlossZh": "访问；拜访",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "한국을 방문하다",
+      "gloss": "访问；拜访",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "방법",
-      "collocationKo": "해결 방법",
-      "senseGlossZh": "方法",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "해결 방법",
+      "gloss": "方法",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "버리다",
-      "collocationKo": "쓰레기를 버리다",
-      "senseGlossZh": "扔掉；丢弃",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "쓰레기를 버리다",
+      "gloss": "扔掉；丢弃",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "벌써",
-      "collocationKo": "벌써 끝나다",
-      "senseGlossZh": "已经",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "벌써 끝나다",
+      "gloss": "已经",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "병원",
-      "collocationKo": "병원에 다니다",
-      "senseGlossZh": "医院",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "병원에 다니다",
+      "gloss": "医院",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
+      "headword": "보다",
+      "collocation": "~보다",
+      "gloss": "比起；相较",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-2",
+      "headword": "보다",
+      "collocation": "~아/어 보다",
+      "gloss": "试着；尝试",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-2",
       "headword": "보통",
-      "collocationKo": "보통 사람",
-      "senseGlossZh": "通常；普通",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "보통 사람",
+      "gloss": "通常；普通",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "복잡하다",
-      "collocationKo": "길이 복잡하다",
-      "senseGlossZh": "复杂；拥挤",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "길이 복잡하다",
+      "gloss": "复杂；拥挤",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "불편하다",
-      "collocationKo": "생활이 불편하다",
-      "senseGlossZh": "不方便；不舒服",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "생활이 불편하다",
+      "gloss": "不方便；不舒服",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "비슷하다",
-      "collocationKo": "~와 비슷하다",
-      "senseGlossZh": "相似",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "~와 비슷하다",
+      "gloss": "相似",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "빠르다",
-      "collocationKo": "속도가 빠르다",
-      "senseGlossZh": "快",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "속도가 빠르다",
+      "gloss": "快",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "빨래",
-      "collocationKo": "빨래를 하다",
-      "senseGlossZh": "洗衣服；衣物",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "빨래를 하다",
+      "gloss": "洗衣服；衣物",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "사무실",
-      "collocationKo": "사무실에 있다",
-      "senseGlossZh": "办公室",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "사무실에 있다",
+      "gloss": "办公室",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "사용하다",
-      "collocationKo": "기계를 사용하다",
-      "senseGlossZh": "使用",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "기계를 사용하다",
+      "gloss": "使用",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "새롭다",
-      "collocationKo": "새로운 경험",
-      "senseGlossZh": "新",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "새로운 경험",
+      "gloss": "新",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "생활",
-      "collocationKo": "생활이 편하다",
-      "senseGlossZh": "生活",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "생활이 편하다",
+      "gloss": "生活",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "설날",
-      "collocationKo": "설날 연휴",
-      "senseGlossZh": "春节；韩国新年",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "설날 연휴",
+      "gloss": "春节；韩国新年",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "설명하다",
-      "collocationKo": "자세히 설명하다",
-      "senseGlossZh": "说明",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "자세히 설명하다",
+      "gloss": "说明",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "소식",
-      "collocationKo": "소식을 전하다",
-      "senseGlossZh": "消息",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "소식을 전하다",
+      "gloss": "消息",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "수업",
-      "collocationKo": "수업을 듣다",
-      "senseGlossZh": "课；课程",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "수업을 듣다",
+      "gloss": "课；课程",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "숙제",
-      "collocationKo": "숙제를 하다",
-      "senseGlossZh": "作业",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "숙제를 하다",
+      "gloss": "作业",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "시험",
-      "collocationKo": "시험을 보다",
-      "senseGlossZh": "考试",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "시험을 보다",
+      "gloss": "考试",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "신청하다",
-      "collocationKo": "수업을 신청하다",
-      "senseGlossZh": "申请",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "수업을 신청하다",
+      "gloss": "申请",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "실수",
-      "collocationKo": "실수를 줄이다",
-      "senseGlossZh": "失误",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "실수를 줄이다",
+      "gloss": "失误",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
+      "headword": "쓰다",
+      "collocation": "모자를 쓰다",
+      "gloss": "戴；穿戴",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-2",
+      "headword": "쓰다",
+      "collocation": "모자를 쓰다",
+      "gloss": "戴；穿戴",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-2",
+      "headword": "쓰다",
+      "collocation": "표현을 쓰다",
+      "gloss": "使用",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-2",
+      "headword": "쓰다",
+      "collocation": "표현을 쓰다",
+      "gloss": "使用",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-2",
       "headword": "약속",
-      "collocationKo": "약속을 지키다",
-      "senseGlossZh": "约定；约会",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "약속을 지키다",
+      "gloss": "约定；约会",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "여행",
-      "collocationKo": "여행을 떠나다",
-      "senseGlossZh": "旅行",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "여행을 떠나다",
+      "gloss": "旅行",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "연락",
-      "collocationKo": "연락을 하다",
-      "senseGlossZh": "联系",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "연락을 하다",
+      "gloss": "联系",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "연락하다",
-      "collocationKo": "연락을 받다",
-      "senseGlossZh": "联系",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "연락을 받다",
+      "gloss": "联系",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "오래되다",
-      "collocationKo": "오래된 친구",
-      "senseGlossZh": "旧；时间久",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "오래된 친구",
+      "gloss": "旧；时间久",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "운동",
-      "collocationKo": "운동을 하다",
-      "senseGlossZh": "运动",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "운동을 하다",
+      "gloss": "运动",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "음식",
-      "collocationKo": "음식을 주문하다",
-      "senseGlossZh": "食物",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "음식을 주문하다",
+      "gloss": "食物",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "입덕",
-      "collocationKo": "입덕 계기",
-      "senseGlossZh": "入坑",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "입덕 계기",
+      "gloss": "入坑",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "잡다",
-      "collocationKo": "날짜를 잡다",
-      "senseGlossZh": "确定；定下",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "손을 잡다",
+      "gloss": "抓住；握住",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
-      "headword": "잡다",
-      "collocationKo": "범인을 잡다",
-      "senseGlossZh": "捕捉；逮住",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "잡다",
-      "collocationKo": "손을 잡다",
-      "senseGlossZh": "抓住；握住",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "잡다",
-      "collocationKo": "흐름을 잡다",
-      "senseGlossZh": "掌握；抓住重点",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "질문",
-      "collocationKo": "질문을 받다",
-      "senseGlossZh": "问题；提问",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "질문을 받다",
+      "gloss": "问题；提问",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "챙기다",
-      "collocationKo": "사람을 챙기다",
-      "senseGlossZh": "照顾；关照",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "짐을 챙기다",
+      "gloss": "带好；收拾",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
-      "headword": "챙기다",
-      "collocationKo": "실속을 챙기다",
-      "senseGlossZh": "争取；获得",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "챙기다",
-      "collocationKo": "짐을 챙기다",
-      "senseGlossZh": "带好；收拾",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "최애",
-      "collocationKo": "최애 멤버",
-      "senseGlossZh": "最爱；本命",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "최애 멤버",
+      "gloss": "最爱；本命",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "축하",
-      "collocationKo": "축하를 받다",
-      "senseGlossZh": "祝贺",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "축하를 받다",
+      "gloss": "祝贺",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "편하다",
-      "collocationKo": "생활이 편하다",
-      "senseGlossZh": "舒服；方便",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "생활이 편하다",
+      "gloss": "舒服；方便",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "풀다",
-      "collocationKo": "끈을 풀다",
-      "senseGlossZh": "解开；松开",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "끈을 풀다",
+      "gloss": "解开；松开",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "풀다",
-      "collocationKo": "문제를 풀다",
-      "senseGlossZh": "解决；解题",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제를 풀다",
+      "gloss": "解决；解题",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
-      "headword": "풀다",
-      "collocationKo": "쉽게 풀다",
-      "senseGlossZh": "讲解；说明",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
-      "headword": "풀다",
-      "collocationKo": "스트레스를 풀다",
-      "senseGlossZh": "缓解；消除",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
-    },
-    {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "학년",
-      "collocationKo": "새 학년",
-      "senseGlossZh": "学年；年级",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "새 학년",
+      "gloss": "学年；年级",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "회사",
-      "collocationKo": "회사에 출근하다",
-      "senseGlossZh": "公司",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "회사에 출근하다",
+      "gloss": "公司",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "휴대폰",
-      "collocationKo": "휴대폰을 쓰다",
-      "senseGlossZh": "手机",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "휴대폰을 쓰다",
+      "gloss": "手机",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-2",
+      "level": "TOPIK-2",
       "headword": "힘들다",
-      "collocationKo": "몸이 힘들다",
-      "senseGlossZh": "辛苦；累",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "몸이 힘들다",
+      "gloss": "辛苦；累",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "가족적",
-      "collocationKo": "가족적",
-      "senseGlossZh": "家庭般的",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "가족적",
-      "krdictZh": "家庭般的"
+      "collocation": "가족적",
+      "gloss": "家庭般的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "갑분싸",
-      "collocationKo": "갑분싸가 되다",
-      "senseGlossZh": "气氛突然冷掉",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "갑분싸가 되다",
+      "gloss": "气氛突然冷掉",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "강조하다",
-      "collocationKo": "중요성을 강조하다",
-      "senseGlossZh": "强调",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "중요성을 강조하다",
+      "gloss": "强调",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "결과",
-      "collocationKo": "결과가 나오다",
-      "senseGlossZh": "结果",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "결과가 나오다",
+      "gloss": "结果",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "결정하다",
-      "collocationKo": "결정을 내리다",
-      "senseGlossZh": "决定",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "결정을 내리다",
+      "gloss": "决定",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "경제적",
-      "collocationKo": "경제적",
-      "senseGlossZh": "经济的",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "경제적",
-      "krdictZh": "经济的"
+      "collocation": "경제적",
+      "gloss": "经济的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "경험",
-      "collocationKo": "경험이 많다",
-      "senseGlossZh": "经验",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "경험이 많다",
+      "gloss": "经验",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "관계",
-      "collocationKo": "관계가 있다",
-      "senseGlossZh": "关系",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "관계가 있다",
+      "gloss": "关系",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "관심",
-      "collocationKo": "관심을 가지다",
-      "senseGlossZh": "兴趣",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "관심을 가지다",
+      "gloss": "兴趣",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "관심",
-      "collocationKo": "관심을 가지다",
-      "senseGlossZh": "关注；关心",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "관심을 가지다",
+      "gloss": "关注；关心",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "굳이",
-      "collocationKo": "굳이 필요하다",
-      "senseGlossZh": "非要；硬要",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "굳이 필요하다",
+      "gloss": "非要；硬要",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "기준",
-      "collocationKo": "기준을 정하다",
-      "senseGlossZh": "标准",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "기준을 정하다",
+      "gloss": "标准",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "기회",
-      "collocationKo": "기회를 잡다",
-      "senseGlossZh": "机会",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "기회를 잡다",
+      "gloss": "机会",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "꾸안꾸",
-      "collocationKo": "꾸안꾸 패션",
-      "senseGlossZh": "看似没打扮却很讲究",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "꾸안꾸 패션",
+      "gloss": "看似没打扮却很讲究",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "나누다",
-      "collocationKo": "의견을 나누다",
-      "senseGlossZh": "分；分享",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "의견을 나누다",
+      "gloss": "分；分享",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
+      "headword": "나다",
+      "collocation": "서울에서 나다",
+      "gloss": "出生；出身",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
       "headword": "난로",
-      "collocationKo": "난로를 켜다",
-      "senseGlossZh": "暖炉",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "난로를 켜다",
+      "gloss": "暖炉",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "내용",
-      "collocationKo": "주요 내용",
-      "senseGlossZh": "内容",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "주요 내용",
+      "gloss": "内容",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "노력",
-      "collocationKo": "노력을 하다",
-      "senseGlossZh": "努力",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "노력을 하다",
+      "gloss": "努力",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "놓치다",
-      "collocationKo": "기회를 놓치다",
-      "senseGlossZh": "错过",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "기회를 놓치다",
+      "gloss": "错过",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "눈치",
-      "collocationKo": "눈치가 빠르다",
-      "senseGlossZh": "察言观色的能力",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "눈치가 빠르다",
+      "gloss": "察言观色的能力",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "눈치",
-      "collocationKo": "눈치를 보다",
-      "senseGlossZh": "别人施加的眼色或压力",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "눈치를 보다",
+      "gloss": "别人施加的眼色或压力",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "느끼다",
-      "collocationKo": "필요성을 느끼다",
-      "senseGlossZh": "感到",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "필요성을 느끼다",
+      "gloss": "感到",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "닫히다",
-      "collocationKo": "문이 닫히다",
-      "senseGlossZh": "被关上",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문이 닫히다",
+      "gloss": "被关上",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "대부분",
-      "collocationKo": "대부분의 사람",
-      "senseGlossZh": "大部分",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "대부분의 사람",
+      "gloss": "大部分",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "도전하다",
-      "collocationKo": "목표에 도전하다",
-      "senseGlossZh": "挑战",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "목표에 도전하다",
+      "gloss": "挑战",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
+      "headword": "들다",
+      "collocation": "돈이 들다",
+      "gloss": "花费；需要",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
+      "headword": "들다",
+      "collocation": "집에 들다",
+      "gloss": "进入；住进",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
       "headword": "만족하다",
-      "collocationKo": "결과에 만족하다",
-      "senseGlossZh": "满意",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "결과에 만족하다",
+      "gloss": "满意",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "맞히다",
-      "collocationKo": "정답을 맞히다",
-      "senseGlossZh": "答对；猜中",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "정답을 맞히다",
+      "gloss": "答对；猜中",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
+      "headword": "먹다",
+      "collocation": "시간을 먹다",
+      "gloss": "花费；消耗",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
+      "headword": "먹다",
+      "collocation": "시간을 먹다",
+      "gloss": "花费；消耗",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
       "headword": "문화적",
-      "collocationKo": "문화적",
-      "senseGlossZh": "文化的",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "문화적",
-      "krdictZh": "文化的"
+      "collocation": "문화적",
+      "gloss": "文化的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
+      "headword": "바르다",
+      "collocation": "바른 태도",
+      "gloss": "端正；正直",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
+      "headword": "바르다",
+      "collocation": "바른 표현",
+      "gloss": "正确；合乎规范",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
       "headword": "발견하다",
-      "collocationKo": "차이를 발견하다",
-      "senseGlossZh": "发现",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "차이를 발견하다",
+      "gloss": "发现",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "발표하다",
-      "collocationKo": "결과를 발표하다",
-      "senseGlossZh": "发表；公布",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "결과를 발표하다",
+      "gloss": "发表；公布",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "밥물",
-      "collocationKo": "밥물이 넘치다",
-      "senseGlossZh": "米汤；饭水",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "밥물이 넘치다",
+      "gloss": "米汤；饭水",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "밭이",
-      "collocationKo": "밭이 있다",
-      "senseGlossZh": "田地（主格）",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "밭이 있다",
+      "gloss": "田地（主格）",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "변화",
-      "collocationKo": "변화가 생기다",
-      "senseGlossZh": "变化",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "변화가 생기다",
+      "gloss": "变化",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "부족하다",
-      "collocationKo": "시간이 부족하다",
-      "senseGlossZh": "不足",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "시간이 부족하다",
+      "gloss": "不足",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "분위기",
-      "collocationKo": "분위기를 만들다",
-      "senseGlossZh": "氛围",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "분위기를 만들다",
+      "gloss": "氛围",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "비교하다",
-      "collocationKo": "가격을 비교하다",
-      "senseGlossZh": "比较",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "가격을 비교하다",
+      "gloss": "比较",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "사회",
-      "collocationKo": "사회",
-      "senseGlossZh": "社会",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "사회",
-      "krdictZh": "社会"
+      "collocation": "사회",
+      "gloss": "社会",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "상황",
-      "collocationKo": "상황을 파악하다",
-      "senseGlossZh": "情况；状况",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "상황을 파악하다",
+      "gloss": "情况；状况",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "선택하다",
-      "collocationKo": "방법을 선택하다",
-      "senseGlossZh": "选择",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "방법을 선택하다",
+      "gloss": "选择",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "성공",
-      "collocationKo": "성공을 거두다",
-      "senseGlossZh": "成功",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "성공을 거두다",
+      "gloss": "成功",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "수준",
-      "collocationKo": "수준이 높다",
-      "senseGlossZh": "水平",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "수준이 높다",
+      "gloss": "水平",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "습관",
-      "collocationKo": "습관을 기르다",
-      "senseGlossZh": "习惯",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "습관을 기르다",
+      "gloss": "习惯",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "실내",
-      "collocationKo": "실내 활동",
-      "senseGlossZh": "室内",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "실내 활동",
+      "gloss": "室内",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
+      "headword": "쓰다",
+      "collocation": "맛이 쓰다",
+      "gloss": "苦；味道苦",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
+      "headword": "쓰다",
+      "collocation": "맛이 쓰다",
+      "gloss": "苦；味道苦",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
       "headword": "억까",
-      "collocationKo": "억까를 하다",
-      "senseGlossZh": "硬黑；无理贬低",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "억까를 하다",
+      "gloss": "硬黑；无理贬低",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "유지하다",
-      "collocationKo": "관계를 유지하다",
-      "senseGlossZh": "维持",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "관계를 유지하다",
+      "gloss": "维持",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "의견",
-      "collocationKo": "의견을 제시하다",
-      "senseGlossZh": "意见",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "의견을 제시하다",
+      "gloss": "意见",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "입학",
-      "collocationKo": "입학 준비",
-      "senseGlossZh": "入学",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "입학 준비",
+      "gloss": "入学",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "입히다",
-      "collocationKo": "옷을 입히다",
-      "senseGlossZh": "使穿上；穿给",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "옷을 입히다",
+      "gloss": "使穿上；穿给",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
+      "headword": "잡다",
+      "collocation": "날짜를 잡다",
+      "gloss": "确定；定下",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
+      "headword": "잡다",
+      "collocation": "범인을 잡다",
+      "gloss": "捕捉；逮住",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
       "headword": "증가하다",
-      "collocationKo": "수가 증가하다",
-      "senseGlossZh": "增加",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "수가 증가하다",
+      "gloss": "增加",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "차이",
-      "collocationKo": "차이가 크다",
-      "senseGlossZh": "差异",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "차이가 크다",
+      "gloss": "差异",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "참여하다",
-      "collocationKo": "활동에 참여하다",
-      "senseGlossZh": "参与",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "활동에 참여하다",
+      "gloss": "参与",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
+      "headword": "챙기다",
+      "collocation": "사람을 챙기다",
+      "gloss": "照顾；关照",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
       "headword": "킹받다",
-      "collocationKo": "킹받네",
-      "senseGlossZh": "让人上头又恼火",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "킹받네",
+      "gloss": "让人上头又恼火",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
       "headword": "평가하다",
-      "collocationKo": "능력을 평가하다",
-      "senseGlossZh": "评价",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "능력을 평가하다",
+      "gloss": "评价",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-3",
+      "level": "TOPIK-3",
+      "headword": "풀다",
+      "collocation": "스트레스를 풀다",
+      "gloss": "缓解；消除",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-3",
       "headword": "확대하다",
-      "collocationKo": "범위를 확대하다",
-      "senseGlossZh": "扩大",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "범위를 확대하다",
+      "gloss": "扩大",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "갈등",
-      "collocationKo": "갈등을 겪다",
-      "senseGlossZh": "矛盾；冲突",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "갈등을 겪다",
+      "gloss": "矛盾；冲突",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "감소하다",
-      "collocationKo": "수가 감소하다",
-      "senseGlossZh": "减少",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "수가 감소하다",
+      "gloss": "减少",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "근거",
-      "collocationKo": "근거를 제시하다",
-      "senseGlossZh": "根据；依据",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "근거를 제시하다",
+      "gloss": "根据；依据",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "독립",
-      "collocationKo": "독립을 이루다",
-      "senseGlossZh": "独立",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "독립을 이루다",
+      "gloss": "独立",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
+      "headword": "먹다",
+      "collocation": "욕을 먹다",
+      "gloss": "受；遭受",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-4",
+      "headword": "먹다",
+      "collocation": "욕을 먹다",
+      "gloss": "受；遭受",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-4",
       "headword": "반면",
-      "collocationKo": "반면에 감소하다",
-      "senseGlossZh": "另一方面",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "반면에 감소하다",
+      "gloss": "另一方面",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "반영하다",
-      "collocationKo": "의견을 반영하다",
-      "senseGlossZh": "反映",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "의견을 반영하다",
+      "gloss": "反映",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "발전",
-      "collocationKo": "발전을 이루다",
-      "senseGlossZh": "发展",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "발전을 이루다",
+      "gloss": "发展",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "백 리",
-      "collocationKo": "백 리 길",
-      "senseGlossZh": "百里",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "백 리 길",
+      "gloss": "百里",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "분석하다",
-      "collocationKo": "자료를 분석하다",
-      "senseGlossZh": "分析",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "자료를 분석하다",
+      "gloss": "分析",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "비중",
-      "collocationKo": "비중이 높다",
-      "senseGlossZh": "比重",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "비중이 높다",
+      "gloss": "比重",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "비판하다",
-      "collocationKo": "정책을 비판하다",
-      "senseGlossZh": "批判；批评",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "정책을 비판하다",
+      "gloss": "批判；批评",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "손절",
-      "collocationKo": "손절하다",
-      "senseGlossZh": "断交；止损",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "손절하다",
+      "gloss": "断交；止损",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "신라",
-      "collocationKo": "신라 시대",
-      "senseGlossZh": "新罗",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "신라 시대",
+      "gloss": "新罗",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "알잘딱깔센",
-      "collocationKo": "알잘딱깔센",
-      "senseGlossZh": "看着办并做得利落",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "알잘딱깔센",
+      "gloss": "看着办并做得利落",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "영향",
-      "collocationKo": "영향을 미치다",
-      "senseGlossZh": "影响",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "영향을 미치다",
+      "gloss": "影响",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "예상하다",
-      "collocationKo": "예상보다 높다",
-      "senseGlossZh": "预想",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "예상보다 높다",
+      "gloss": "预想",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "요인",
-      "collocationKo": "주요 요인",
-      "senseGlossZh": "因素",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "주요인",
-      "krdictZh": ""
+      "collocation": "주요 요인",
+      "gloss": "因素",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "자원",
-      "collocationKo": "자원을 활용하다",
-      "senseGlossZh": "资源",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "자원을 활용하다",
+      "gloss": "资源",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
+      "headword": "잡다",
+      "collocation": "흐름을 잡다",
+      "gloss": "掌握；抓住重点",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-4",
       "headword": "적용하다",
-      "collocationKo": "기준을 적용하다",
-      "senseGlossZh": "适用；应用",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "기준을 적용하다",
+      "gloss": "适用；应用",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "전망",
-      "collocationKo": "전망이 밝다",
-      "senseGlossZh": "展望；前景",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "전망이 밝다",
+      "gloss": "展望；前景",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "제시하다",
-      "collocationKo": "방안을 제시하다",
-      "senseGlossZh": "提出；展示",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "방안을 제시하다",
+      "gloss": "提出；展示",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "증대하다",
-      "collocationKo": "기회를 증대하다",
-      "senseGlossZh": "增大；提高",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "기회를 증대하다",
+      "gloss": "增大；提高",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-4",
+      "level": "TOPIK-4",
       "headword": "지속되다",
-      "collocationKo": "상승이 지속되다",
-      "senseGlossZh": "持续",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "상승이 지속되다",
+      "gloss": "持续",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-4",
+      "headword": "챙기다",
+      "collocation": "실속을 챙기다",
+      "gloss": "争取；获得",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-4",
+      "headword": "풀다",
+      "collocation": "쉽게 풀다",
+      "gloss": "讲解；说明",
+      "reason": "Needs manual phrase translation review"
+    },
+    {
+      "level": "TOPIK-5",
       "headword": "가속화되다",
-      "collocationKo": "전환이 가속화되다",
-      "senseGlossZh": "加速",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "전환이 가속화되다",
+      "gloss": "加速",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "간주하다",
-      "collocationKo": "문제로 간주하다",
-      "senseGlossZh": "视为",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제로 간주하다",
+      "gloss": "视为",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "갈등",
-      "collocationKo": "갈등을 해결하다",
-      "senseGlossZh": "矛盾；冲突",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "갈등을 해결하다",
+      "gloss": "矛盾；冲突",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "감소하다",
-      "collocationKo": "인구가 감소하다",
-      "senseGlossZh": "减少",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "인구가 감소하다",
+      "gloss": "减少",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "강화하다",
-      "collocationKo": "교육을 강화하다",
-      "senseGlossZh": "加强",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "교육을 강화하다",
+      "gloss": "加强",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "개선하다",
-      "collocationKo": "환경을 개선하다",
-      "senseGlossZh": "改善",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "환경을 개선하다",
+      "gloss": "改善",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "검토하다",
-      "collocationKo": "정책을 검토하다",
-      "senseGlossZh": "讨论；研究；审查",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "정책을 검토하다",
+      "gloss": "讨论；研究；审查",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "격차",
-      "collocationKo": "격차를 줄이다",
-      "senseGlossZh": "差距",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "격차를 줄이다",
+      "gloss": "差距",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "경쟁력",
-      "collocationKo": "경쟁력을 높이다",
-      "senseGlossZh": "竞争力",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "경쟁력을 높이다",
+      "gloss": "竞争力",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "계층",
-      "collocationKo": "계층 이동",
-      "senseGlossZh": "阶层",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "계층 이동",
+      "gloss": "阶层",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "고령화",
-      "collocationKo": "고령화 사회",
-      "senseGlossZh": "老龄化",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "고령화 사회",
+      "gloss": "老龄化",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "고용",
-      "collocationKo": "고용 문제",
-      "senseGlossZh": "雇用；就业",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "고용 문제",
+      "gloss": "雇用；就业",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "공공",
-      "collocationKo": "공공 서비스",
-      "senseGlossZh": "公共",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "공공 서비스",
+      "gloss": "公共",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "공급",
-      "collocationKo": "공급을 늘리다",
-      "senseGlossZh": "供给；供应",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "공급을 늘리다",
+      "gloss": "供给；供应",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "관점",
-      "collocationKo": "관점에서 보다",
-      "senseGlossZh": "观点；角度",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "관점에서 보다",
+      "gloss": "观点；角度",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "구체적",
-      "collocationKo": "구체적인 사례",
-      "senseGlossZh": "具体的",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "구체적인 사례",
+      "gloss": "具体的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "규제",
-      "collocationKo": "규제를 줄이다",
-      "senseGlossZh": "规制；管制",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "규제를 줄이다",
+      "gloss": "规制；管制",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "균형",
-      "collocationKo": "균형을 맞추다",
-      "senseGlossZh": "均衡；平衡",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "균형을 맞추다",
+      "gloss": "均衡；平衡",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "급증하다",
-      "collocationKo": "수가 급증하다",
-      "senseGlossZh": "骤增",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "수가 급증하다",
+      "gloss": "骤增",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "기여하다",
-      "collocationKo": "발전에 기여하다",
-      "senseGlossZh": "贡献",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "발전에 기여하다",
+      "gloss": "贡献",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "당면하다",
-      "collocationKo": "문제에 당면하다",
-      "senseGlossZh": "面临",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제에 당면하다",
+      "gloss": "面临",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "대안",
-      "collocationKo": "대안을 마련하다",
-      "senseGlossZh": "替代方案；对策",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "대안을 마련하다",
+      "gloss": "替代方案；对策",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "대안",
-      "collocationKo": "대안을 마련하다",
-      "senseGlossZh": "替代方案；对策",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "대안을 마련하다",
+      "gloss": "替代方案；对策",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "도모하다",
-      "collocationKo": "협력을 도모하다",
-      "senseGlossZh": "谋求",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "협력을 도모하다",
+      "gloss": "谋求",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "도입하다",
-      "collocationKo": "제도를 도입하다",
-      "senseGlossZh": "引入",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "제도를 도입하다",
+      "gloss": "引入",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "도출하다",
-      "collocationKo": "결론을 도출하다",
-      "senseGlossZh": "得出；导出",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "결론을 도출하다",
+      "gloss": "得出；导出",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "마련하다",
-      "collocationKo": "대책을 마련하다",
-      "senseGlossZh": "准备；制定",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "대책을 마련하다",
+      "gloss": "准备；制定",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "모순",
-      "collocationKo": "모순이 생기다",
-      "senseGlossZh": "矛盾",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "모순이 생기다",
+      "gloss": "矛盾",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "민간",
-      "collocationKo": "민간 투자",
-      "senseGlossZh": "民间；私营",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "민간 투자",
+      "gloss": "民间；私营",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "반영하다",
-      "collocationKo": "의견을 반영하다",
-      "senseGlossZh": "反映",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "의견을 반영하다",
+      "gloss": "反映",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "발전기",
-      "collocationKo": "발전기",
-      "senseGlossZh": "发展期",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "발전기",
-      "krdictZh": "发展期"
+      "collocation": "발전기",
+      "gloss": "发展期",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "발전기",
-      "collocationKo": "발전기",
-      "senseGlossZh": "发电机",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "발전기",
-      "krdictZh": "发展期"
+      "collocation": "발전기",
+      "gloss": "发电机",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "방안",
-      "collocationKo": "개선 방안",
-      "senseGlossZh": "方案",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "개선 방안",
+      "gloss": "方案",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "배출",
-      "collocationKo": "배출을 제한하다",
-      "senseGlossZh": "排放",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "배출을 제한하다",
+      "gloss": "排放",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "법률",
-      "collocationKo": "관련 법률",
-      "senseGlossZh": "法律",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "관련 법률",
+      "gloss": "法律",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "보완하다",
-      "collocationKo": "제도를 보완하다",
-      "senseGlossZh": "补充；完善",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "제도를 보완하다",
+      "gloss": "补充；完善",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "복지",
-      "collocationKo": "복지 제도",
-      "senseGlossZh": "福利；福祉",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "복지 제도",
+      "gloss": "福利；福祉",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "부각되다",
-      "collocationKo": "문제가 부각되다",
-      "senseGlossZh": "凸显",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제가 부각되다",
+      "gloss": "凸显",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "부담",
-      "collocationKo": "부담이 커지다",
-      "senseGlossZh": "负担",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "부담이 커지다",
+      "gloss": "负担",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "부합하다",
-      "collocationKo": "기준에 부합하다",
-      "senseGlossZh": "符合",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "기준에 부합하다",
+      "gloss": "符合",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "불가피하다",
-      "collocationKo": "변화가 불가피하다",
-      "senseGlossZh": "不可避免",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "변화가 불가피하다",
+      "gloss": "不可避免",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "빈곤",
-      "collocationKo": "빈곤 문제",
-      "senseGlossZh": "贫困",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "빈곤 문제",
+      "gloss": "贫困",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "상대적",
-      "collocationKo": "상대적인 차이",
-      "senseGlossZh": "相对的",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "상대적인 차이",
+      "gloss": "相对的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "소득",
-      "collocationKo": "소득 격차",
-      "senseGlossZh": "收入",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "소득 격차",
+      "gloss": "收入",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "소비",
-      "collocationKo": "소비 패턴",
-      "senseGlossZh": "消费",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "소비 패턴",
+      "gloss": "消费",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "수요",
-      "collocationKo": "수요가 증가하다",
-      "senseGlossZh": "需求",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "수요가 증가하다",
+      "gloss": "需求",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "시행하다",
-      "collocationKo": "제도를 시행하다",
-      "senseGlossZh": "施行；实施",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "제도를 시행하다",
+      "gloss": "施行；实施",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "실업",
-      "collocationKo": "실업률 상승",
-      "senseGlossZh": "失业",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "실업률 상승",
+      "gloss": "失业",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "실태",
-      "collocationKo": "실태 조사",
-      "senseGlossZh": "实际情况",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "실태 조사",
+      "gloss": "实际情况",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "심리",
-      "collocationKo": "소비자 심리",
-      "senseGlossZh": "心理",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "소비자 심리",
+      "gloss": "心理",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "심화되다",
-      "collocationKo": "갈등이 심화되다",
-      "senseGlossZh": "加深；深化",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "갈등이 심화되다",
+      "gloss": "加深；深化",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "양극화",
-      "collocationKo": "양극화 현상",
-      "senseGlossZh": "两极分化",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "양극화 현상",
+      "gloss": "两极分化",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "완화하다",
-      "collocationKo": "규제를 완화하다",
-      "senseGlossZh": "缓解；放宽",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "규제를 완화하다",
+      "gloss": "缓解；放宽",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "완화하다",
-      "collocationKo": "부담을 완화하다",
-      "senseGlossZh": "缓和；减轻",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "부담을 완화하다",
+      "gloss": "缓和；减轻",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "유발하다",
-      "collocationKo": "문제를 유발하다",
-      "senseGlossZh": "诱发；导致",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제를 유발하다",
+      "gloss": "诱发；导致",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "유지하다",
-      "collocationKo": "수준을 유지하다",
-      "senseGlossZh": "维持",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "수준을 유지하다",
+      "gloss": "维持",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "의존하다",
-      "collocationKo": "자료에 의존하다",
-      "senseGlossZh": "依赖",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "자료에 의존하다",
+      "gloss": "依赖",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "인식",
-      "collocationKo": "인식이 바뀌다",
-      "senseGlossZh": "认识；观念",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "인식이 바뀌다",
+      "gloss": "认识；观念",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "자율",
-      "collocationKo": "자율을 보장하다",
-      "senseGlossZh": "自主；自律",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "자율을 보장하다",
+      "gloss": "自主；自律",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "재정",
-      "collocationKo": "재정 부담",
-      "senseGlossZh": "财政",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "재정 부담",
+      "gloss": "财政",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "쟁점",
-      "collocationKo": "주요 쟁점",
-      "senseGlossZh": "争议焦点",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "주요 쟁점",
+      "gloss": "争议焦点",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "쟁점",
-      "collocationKo": "핵심 쟁점",
-      "senseGlossZh": "争议点；议题",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "핵심 쟁점",
+      "gloss": "争议点；议题",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "저출산",
-      "collocationKo": "저출산 문제",
-      "senseGlossZh": "低生育率",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "저출산 문제",
+      "gloss": "低生育率",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "전환하다",
-      "collocationKo": "방향을 전환하다",
-      "senseGlossZh": "转换；转变",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "방향을 전환하다",
+      "gloss": "转换；转变",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "절감하다",
-      "collocationKo": "비용을 절감하다",
-      "senseGlossZh": "节减；降低",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "비용을 절감하다",
+      "gloss": "节减；降低",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "절약하다",
-      "collocationKo": "물을 절약하다",
-      "senseGlossZh": "节约",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "물을 절약하다",
+      "gloss": "节约",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "정책적",
-      "collocationKo": "정책적",
-      "senseGlossZh": "政策的",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "정책적",
-      "krdictZh": "政策的"
+      "collocation": "정책적",
+      "gloss": "政策的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "제기하다",
-      "collocationKo": "문제를 제기하다",
-      "senseGlossZh": "提出；提起",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제를 제기하다",
+      "gloss": "提出；提起",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "제한하다",
-      "collocationKo": "사용을 제한하다",
-      "senseGlossZh": "限制",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "사용을 제한하다",
+      "gloss": "限制",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "지속적",
-      "collocationKo": "지속적인 노력",
-      "senseGlossZh": "持续的",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "지속적인 노력",
+      "gloss": "持续的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "초래되다",
-      "collocationKo": "문제가 초래되다",
-      "senseGlossZh": "被导致；造成",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제가 초래되다",
+      "gloss": "被导致；造成",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "초래하다",
-      "collocationKo": "문제를 초래하다",
-      "senseGlossZh": "招致；导致",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제를 초래하다",
+      "gloss": "招致；导致",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "초점",
-      "collocationKo": "초점을 맞추다",
-      "senseGlossZh": "焦点",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "초점을 맞추다",
+      "gloss": "焦点",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "초점",
-      "collocationKo": "초점을 맞추다",
-      "senseGlossZh": "焦点；重点",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "초점을 맞추다",
+      "gloss": "焦点；重点",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "촉진하다",
-      "collocationKo": "성장을 촉진하다",
-      "senseGlossZh": "促进",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "성장을 촉진하다",
+      "gloss": "促进",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "추세",
-      "collocationKo": "증가 추세",
-      "senseGlossZh": "趋势",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "증가 추세",
+      "gloss": "趋势",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "추진하다",
-      "collocationKo": "개혁을 추진하다",
-      "senseGlossZh": "推进",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "개혁을 추진하다",
+      "gloss": "推进",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "축소하다",
-      "collocationKo": "규모를 축소하다",
-      "senseGlossZh": "缩小；缩减",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "규모를 축소하다",
+      "gloss": "缩小；缩减",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "탄소",
-      "collocationKo": "탄소 배출",
-      "senseGlossZh": "碳",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "탄소 배출",
+      "gloss": "碳",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "토대",
-      "collocationKo": "발전의 토대",
-      "senseGlossZh": "基础；根基",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "발전의 토대",
+      "gloss": "基础；根基",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "폐지하다",
-      "collocationKo": "절차를 폐지하다",
-      "senseGlossZh": "废除",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "절차를 폐지하다",
+      "gloss": "废除",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "해소하다",
-      "collocationKo": "불안을 해소하다",
-      "senseGlossZh": "消除；缓解",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "불안을 해소하다",
+      "gloss": "消除；缓解",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "혁신",
-      "collocationKo": "기술 혁신",
-      "senseGlossZh": "革新；创新",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "기술 혁신",
+      "gloss": "革新；创新",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "협력",
-      "collocationKo": "협력을 강화하다",
-      "senseGlossZh": "合作",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "협력을 강화하다",
+      "gloss": "合作",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "형성하다",
-      "collocationKo": "습관을 형성하다",
-      "senseGlossZh": "形成",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "습관을 형성하다",
+      "gloss": "形成",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "확대하다",
-      "collocationKo": "대상을 확대하다",
-      "senseGlossZh": "扩大",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "대상을 확대하다",
+      "gloss": "扩大",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "확립하다",
-      "collocationKo": "제도를 확립하다",
-      "senseGlossZh": "确立",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "제도를 확립하다",
+      "gloss": "确立",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "확보하다",
-      "collocationKo": "시간을 확보하다",
-      "senseGlossZh": "确保；获得",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "시간을 확보하다",
+      "gloss": "确保；获得",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "확산되다",
-      "collocationKo": "문화가 확산되다",
-      "senseGlossZh": "扩散；扩大",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문화가 확산되다",
+      "gloss": "扩散；扩大",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "환경오염",
-      "collocationKo": "환경오염을 줄이다",
-      "senseGlossZh": "环境污染",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "환경오염을 줄이다",
+      "gloss": "环境污染",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "환경적",
-      "collocationKo": "환경적",
-      "senseGlossZh": "环境的",
-      "reason": "KRDict result is ambiguous, non-exact, errored, or lacks Chinese translation",
-      "classification": "manual",
-      "krdictWord": "환경적",
-      "krdictZh": "环境的"
+      "collocation": "환경적",
+      "gloss": "环境的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "효과적",
-      "collocationKo": "효과적인 방법",
-      "senseGlossZh": "有效的",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "효과적인 방법",
+      "gloss": "有效的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-5",
+      "level": "TOPIK-5",
       "headword": "효율적",
-      "collocationKo": "효율적인 방법",
-      "senseGlossZh": "高效的",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "효율적인 방법",
+      "gloss": "高效的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "고찰하다",
-      "collocationKo": "문제를 고찰하다",
-      "senseGlossZh": "考察；探讨",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제를 고찰하다",
+      "gloss": "考察；探讨",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "규명하다",
-      "collocationKo": "원인을 규명하다",
-      "senseGlossZh": "查明；阐明",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "원인을 규명하다",
+      "gloss": "查明；阐明",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "대두되다",
-      "collocationKo": "문제가 대두되다",
-      "senseGlossZh": "浮现；成为问题",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "문제가 대두되다",
+      "gloss": "浮现；成为问题",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "모색하다",
-      "collocationKo": "방안을 모색하다",
-      "senseGlossZh": "摸索；寻求",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "방안을 모색하다",
+      "gloss": "摸索；寻求",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "분배",
-      "collocationKo": "자원 분배",
-      "senseGlossZh": "分配",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "자원 분배",
+      "gloss": "分配",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "불가피하다",
-      "collocationKo": "변경이 불가피하다",
-      "senseGlossZh": "不可避免",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "변경이 불가피하다",
+      "gloss": "不可避免",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "불균형",
-      "collocationKo": "불균형을 해소하다",
-      "senseGlossZh": "不均衡",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "불균형을 해소하다",
+      "gloss": "不均衡",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "비롯하다",
-      "collocationKo": "~을 비롯하다",
-      "senseGlossZh": "以……为首；始于",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "~을 비롯하다",
+      "gloss": "以……为首；始于",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "상쇄하다",
-      "collocationKo": "효과를 상쇄하다",
-      "senseGlossZh": "抵消",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "효과를 상쇄하다",
+      "gloss": "抵消",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "상충하다",
-      "collocationKo": "이익이 상충하다",
-      "senseGlossZh": "相冲突",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "이익이 상충하다",
+      "gloss": "相冲突",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "상호작용",
-      "collocationKo": "상호작용을 하다",
-      "senseGlossZh": "相互作用",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "상호작용을 하다",
+      "gloss": "相互作用",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "수반하다",
-      "collocationKo": "위험을 수반하다",
-      "senseGlossZh": "伴随",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "위험을 수반하다",
+      "gloss": "伴随",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "시사하다",
-      "collocationKo": "가능성을 시사하다",
-      "senseGlossZh": "暗示；表明",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "가능성을 시사하다",
+      "gloss": "暗示；表明",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "실효성",
-      "collocationKo": "실효성이 있다",
-      "senseGlossZh": "实效性",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "실효성이 있다",
+      "gloss": "实效性",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "예측하다",
-      "collocationKo": "변화를 예측하다",
-      "senseGlossZh": "预测",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "변화를 예측하다",
+      "gloss": "预测",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "유발하다",
-      "collocationKo": "갈등을 유발하다",
-      "senseGlossZh": "诱发；引发",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "갈등을 유발하다",
+      "gloss": "诱发；引发",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "유의미하다",
-      "collocationKo": "유의미한 결과",
-      "senseGlossZh": "有意义；显著",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "유의미한 결과",
+      "gloss": "有意义；显著",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "입증하다",
-      "collocationKo": "효과를 입증하다",
-      "senseGlossZh": "证明",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "효과를 입증하다",
+      "gloss": "证明",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "저해하다",
-      "collocationKo": "성장을 저해하다",
-      "senseGlossZh": "阻碍",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "성장을 저해하다",
+      "gloss": "阻碍",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "전반적",
-      "collocationKo": "전반적인 변화",
-      "senseGlossZh": "整体的",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "전반적인 변화",
+      "gloss": "整体的",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "전제하다",
-      "collocationKo": "조건을 전제하다",
-      "senseGlossZh": "以……为前提",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "조건을 전제하다",
+      "gloss": "以……为前提",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "차별화하다",
-      "collocationKo": "전략을 차별화하다",
-      "senseGlossZh": "差异化",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "전략을 차별화하다",
+      "gloss": "差异化",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "촉구하다",
-      "collocationKo": "대응을 촉구하다",
-      "senseGlossZh": "敦促；要求",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "대응을 촉구하다",
+      "gloss": "敦促；要求",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "취약하다",
-      "collocationKo": "구조가 취약하다",
-      "senseGlossZh": "脆弱；薄弱",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "구조가 취약하다",
+      "gloss": "脆弱；薄弱",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "타당하다",
-      "collocationKo": "근거가 타당하다",
-      "senseGlossZh": "妥当；合理",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "근거가 타당하다",
+      "gloss": "妥当；合理",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "함축하다",
-      "collocationKo": "의미를 함축하다",
-      "senseGlossZh": "蕴含",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "의미를 함축하다",
+      "gloss": "蕴含",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "해석하다",
-      "collocationKo": "자료를 해석하다",
-      "senseGlossZh": "解释；解读",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "자료를 해석하다",
+      "gloss": "解释；解读",
+      "reason": "Needs manual phrase translation review"
     },
     {
-      "topikLevel": "TOPIK-6",
+      "level": "TOPIK-6",
       "headword": "활성화하다",
-      "collocationKo": "경제를 활성화하다",
-      "senseGlossZh": "激活；促进活跃",
-      "reason": "KRDict exact collocation not found",
-      "classification": "unavailable",
-      "krdictWord": "",
-      "krdictZh": ""
+      "collocation": "경제를 활성화하다",
+      "gloss": "激活；促进活跃",
+      "reason": "Needs manual phrase translation review"
     }
   ]
 }

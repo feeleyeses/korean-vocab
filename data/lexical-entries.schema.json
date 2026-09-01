@@ -55,7 +55,7 @@
       },
       "source": { "type": ["string", "null"] },
       "verifiedAt": { "type": ["string", "null"] },
-      "verificationStatus": { "enum": ["draft", "normalized", "reviewed", "approved"] }
+      "verificationStatus": { "enum": ["draft", "needs_review", "normalized", "reviewed", "approved"] }
     }
   }
 }

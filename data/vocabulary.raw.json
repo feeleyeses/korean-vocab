@@ -24,7 +24,9 @@
           "exampleZh": "去商店。",
           "collocation": "가게에 가다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "去商店",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-ge"
@@ -51,7 +53,9 @@
           "exampleZh": "价格很贵。",
           "collocation": "가격이 비싸다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "价格贵",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-gyeok"
@@ -78,7 +82,9 @@
           "exampleZh": "学校很近。",
           "collocation": "집에서 가깝다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "离家近",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-kkap-tta",
@@ -106,7 +112,9 @@
           "exampleZh": "现在回家。",
           "collocation": "집에 가다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "回家；去家里",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-da"
@@ -133,7 +141,9 @@
           "exampleZh": "教韩语。",
           "collocation": "학생을 가르치다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "教学生",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-reu-chi-da"
@@ -160,7 +170,9 @@
           "exampleZh": "包很重。",
           "collocation": "가방을 들다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "提包",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-bang"
@@ -187,7 +199,9 @@
           "exampleZh": "这双鞋很轻。",
           "collocation": "무게가 가볍다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "重量轻",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-byeop-tta",
@@ -215,7 +229,9 @@
           "exampleZh": "我有喜欢的歌手。",
           "collocation": "인기 가수",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "人气歌手",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-su"
@@ -242,7 +258,9 @@
           "exampleZh": "请坐在中间。",
           "collocation": "방 가운데",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "房间中央",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-un-de"
@@ -269,7 +287,9 @@
           "exampleZh": "和家人一起生活。",
           "collocation": "우리 가족",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "我们家人",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-jok"
@@ -296,7 +316,9 @@
           "exampleZh": "谢谢您的帮助。",
           "collocation": "진심으로 감사하다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "真心感谢",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gam-sa-ha-da"
@@ -323,7 +345,9 @@
           "exampleZh": "突然下雨了。",
           "collocation": "갑자기 나타나다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "突然出现",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gap-ja-gi"
@@ -350,7 +374,9 @@
           "exampleZh": "两个颜色相同。",
           "collocation": "~와 같다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "与……相同",
+          "collocationSource": "EDITORIAL_REVIEW"
         },
         {
           "id": "w013-s2",
@@ -358,7 +384,9 @@
           "exampleKo": "이 문제는 지난번 문제와 같아요.",
           "exampleZh": "这个问题和上次的问题类似。",
           "collocation": "~와 같은",
-          "level": 2
+          "level": 2,
+          "collocationZh": "像……一样的",
+          "collocationSource": "EDITORIAL_REVIEW"
         },
         {
           "id": "w013-s3",
@@ -366,7 +394,9 @@
           "exampleKo": "비가 올 것 같아요.",
           "exampleZh": "好像要下雨。",
           "collocation": "~ 것 같다",
-          "level": 2
+          "level": 2,
+          "collocationZh": "好像……",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gat-tta",
@@ -394,7 +424,9 @@
           "exampleZh": "一起吃饭吧。",
           "collocation": "친구와 같이",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "和朋友一起",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gap-jja-gi",
@@ -422,7 +454,9 @@
           "exampleZh": "在那里见面。",
           "collocation": "바로 거기",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "就是那里",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geo-gi"
@@ -449,7 +483,9 @@
           "exampleZh": "为了健康，我每天都走一会儿。",
           "collocation": "건강을 챙기다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "照顾健康",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geon-gang"
@@ -476,7 +512,9 @@
           "exampleZh": "每天在公园走路。",
           "collocation": "길을 걷다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "在路上走",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geot-tta",
@@ -624,7 +662,9 @@
           "exampleZh": "周末计划还没定下来。",
           "collocation": "계획을 세우다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "制定计划",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gye-hoek"
@@ -651,7 +691,9 @@
           "exampleZh": "请选择喜欢的。",
           "collocation": "색을 고르다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "挑选颜色",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "go-reu-da"
@@ -678,7 +720,9 @@
           "exampleZh": "真的谢谢你。",
           "collocation": "도움이 고맙다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "感谢帮助",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "go-map-tta",
@@ -706,7 +750,9 @@
           "exampleZh": "在图书馆学习。",
           "collocation": "공부를 하다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "用功学习",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gong-bu"
@@ -795,7 +841,9 @@
           "exampleZh": "我没关系。",
           "collocation": "괜찮은 생각",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "不错的想法",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gwaen-chan-ta",
@@ -823,7 +871,9 @@
           "exampleZh": "这个街区交通方便，很适合居住。",
           "collocation": "대중교통을 이용하다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "利用公共交通",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gyo-tong"
@@ -850,7 +900,9 @@
           "exampleZh": "正在找新房。",
           "collocation": "일자리를 구하다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "找工作",
+          "collocationSource": "EDITORIAL_REVIEW"
         },
         {
           "id": "w030-s2",
@@ -858,7 +910,9 @@
           "exampleKo": "사람을 위험에서 구했어요.",
           "exampleZh": "把人从危险中救了出来。",
           "collocation": "사람을 구하다",
-          "level": 4
+          "level": 4,
+          "collocationZh": "救人",
+          "collocationSource": "EDITORIAL_REVIEW"
         },
         {
           "id": "w030-s3",
@@ -866,7 +920,9 @@
           "exampleKo": "친구에게 도움을 구했어요.",
           "exampleZh": "向朋友请求帮助。",
           "collocation": "도움을 구하다",
-          "level": 4
+          "level": 4,
+          "collocationZh": "寻求帮助",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gu-ha-da"
@@ -893,7 +949,9 @@
           "exampleZh": "就在家待着。",
           "collocation": "그냥 두다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "就那样放着",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geu-nyang"
@@ -920,7 +978,9 @@
           "exampleZh": "请稍等一下。",
           "collocation": "버스를 기다리다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "等公交车",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gi-da-ri-da"
@@ -947,7 +1007,9 @@
           "exampleZh": "听到好消息后心情变好了。",
           "collocation": "기분이 나아지다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "心情好转",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gi-bun"
@@ -974,7 +1036,9 @@
           "exampleZh": "我记得那一天。",
           "collocation": "이름을 기억하다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "记住名字",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gi-eok-ha-da"
@@ -1028,7 +1092,9 @@
           "exampleZh": "下课了。",
           "collocation": "일이 끝나다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "事情结束",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "kkeun-na-da",
@@ -1083,7 +1149,9 @@
           "exampleZh": "结果不差。",
           "collocation": "기분이 나쁘다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "心情不好",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "na-ppeu-da"
@@ -1110,7 +1178,9 @@
           "exampleZh": "以后再打电话。",
           "collocation": "나중에 만나다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "以后见",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "na-jung"
@@ -2845,7 +2915,9 @@
           "exampleZh": "这周可以访问。",
           "collocation": "예약이 가능하다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "可以预约",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-neung-ha-da"
@@ -2872,7 +2944,9 @@
           "exampleZh": "礼貌地拒绝了邀请。",
           "collocation": "제안을 거절하다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "拒绝提议",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geo-jeol-ha-da"
@@ -2899,7 +2973,9 @@
           "exampleZh": "电脑出故障了。",
           "collocation": "고장이 나다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "出故障",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "go-jang"
@@ -2926,7 +3002,9 @@
           "exampleZh": "去了市场逛了逛。",
           "collocation": "시장을 구경하다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "逛市场",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gu-gyeong-ha-da"
@@ -2953,7 +3031,9 @@
           "exampleZh": "网速很慢。",
           "collocation": "속도가 느리다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "速度慢",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "neu-ri-da"
@@ -3251,7 +3331,9 @@
           "exampleZh": "你来自哪个国家？",
           "collocation": "우리 나라",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "我们国家",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "na-ra"
@@ -3278,7 +3360,9 @@
           "exampleZh": "今天天气很好。",
           "collocation": "날씨가 좋다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "天气好",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "nal-ssi"
@@ -3305,7 +3389,9 @@
           "exampleZh": "确认了考试日期。",
           "collocation": "날짜를 확인하다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "确认日期",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "nal-jja"
@@ -3440,7 +3526,9 @@
           "exampleZh": "明天再见。",
           "collocation": "내일 오후",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "明天下午",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "nae-il"
@@ -3710,7 +3798,9 @@
           "exampleZh": "回答了老师的问题。",
           "collocation": "대답을 하다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "作出回答",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "dae-dap"
@@ -3791,7 +3881,9 @@
           "exampleZh": "房间里家具很多。",
           "collocation": "가구를 사다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "买家具",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-gu"
@@ -3818,7 +3910,9 @@
           "exampleZh": "偶尔看电影。",
           "collocation": "가끔 만나다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "偶尔见面",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-kkeum"
@@ -3845,7 +3939,9 @@
           "exampleZh": "在河边散步了。",
           "collocation": "강가를 걷다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "沿河边走",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gang"
@@ -3872,7 +3968,9 @@
           "exampleZh": "价格涨得太多了。",
           "collocation": "값이 비싸다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "价格贵",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gap",
@@ -3900,7 +3998,9 @@
           "exampleZh": "从家到学校距离很近。",
           "collocation": "거리가 멀다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "距离远",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geo-ri"
@@ -3927,7 +4027,9 @@
           "exampleZh": "作业几乎都做完了。",
           "collocation": "거의 끝나다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "快结束了",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geo-ui"
@@ -3954,7 +4056,9 @@
           "exampleZh": "我最喜欢的季节是秋天。",
           "collocation": "계절이 바뀌다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "季节变化",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gye-jeol"
@@ -3981,7 +4085,9 @@
           "exampleZh": "放假时要回故乡。",
           "collocation": "고향 친구",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "故乡朋友",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "go-hyang"
@@ -4008,7 +4114,9 @@
           "exampleZh": "周末在公园休息了。",
           "collocation": "공원에 가다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "去公园",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gong-won"
@@ -4064,7 +4172,9 @@
           "exampleZh": "早上吃水果。",
           "collocation": "과일을 사다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "买水果",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gwa-il"
@@ -4091,7 +4201,9 @@
           "exampleZh": "教室很安静。",
           "collocation": "교실에 들어가다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "进教室",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gyo-sil"
@@ -4118,7 +4230,9 @@
           "exampleZh": "穿了黑色皮鞋。",
           "collocation": "구두를 신다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "穿皮鞋",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gu-du"
@@ -4145,7 +4259,9 @@
           "exampleZh": "画画画得很好。",
           "collocation": "그림을 그리다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "画画",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geu-rim"
@@ -4172,7 +4288,9 @@
           "exampleZh": "公司附近餐厅很多。",
           "collocation": "근처 카페",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "附近的咖啡馆",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geun-cheo"
@@ -4199,7 +4317,9 @@
           "exampleZh": "坐火车去了釜山。",
           "collocation": "기차를 타다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "坐火车",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gi-cha"
@@ -4226,7 +4346,9 @@
           "exampleZh": "走这条路就可以。",
           "collocation": "길을 묻다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "问路",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gil"
@@ -4253,7 +4375,9 @@
           "exampleZh": "喜欢泡菜。",
           "collocation": "김치를 먹다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "吃泡菜",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gim-chi"
@@ -4280,7 +4404,9 @@
           "exampleZh": "请削一下苹果。",
           "collocation": "가격을 깎다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "砍价",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "kkak-tta",
@@ -4308,7 +4434,9 @@
           "exampleZh": "房间很干净。",
           "collocation": "깨끗한 물",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "干净的水",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "kkae-kkeut-ha-da"
@@ -4335,7 +4463,9 @@
           "exampleZh": "可以问年龄吗？",
           "collocation": "나이가 많다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "年纪大",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "na-i"
@@ -4879,7 +5009,9 @@
           "exampleZh": "秋天天气凉爽。",
           "collocation": "가을 날씨",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "秋天天气",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-eul"
@@ -5448,7 +5580,9 @@
           "exampleZh": "请写正确答案。",
           "collocation": "답을 쓰다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "写答案",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "dap"
@@ -6141,7 +6275,9 @@
           "exampleZh": "约会时间迟到了。",
           "collocation": "시간이 늦다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "时间晚了",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "neut-da"
@@ -6276,7 +6412,9 @@
           "exampleZh": "把书从家里带来了。",
           "collocation": "책을 가져오다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "把书带来",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "ga-jyeo-o-da"
@@ -6303,7 +6441,9 @@
           "exampleZh": "方法比想象中简单。",
           "collocation": "간단한 설명",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "简单说明",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gan-dan-ha-da"
@@ -6330,7 +6470,9 @@
           "exampleZh": "休息时间吃了零食。",
           "collocation": "간식을 먹다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "吃零食",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gan-sik"
@@ -6357,7 +6499,9 @@
           "exampleZh": "请在市厅站换乘地铁。",
           "collocation": "버스를 갈아타다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "换乘公交车",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gal-a-ta-da"
@@ -6384,7 +6528,9 @@
           "exampleZh": "感冒了所以嗓子疼。",
           "collocation": "감기에 걸리다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "患感冒",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gam-gi"
@@ -6411,7 +6557,9 @@
           "exampleZh": "小狗在公园里跑。",
           "collocation": "강아지를 키우다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "养小狗",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gang-a-ji"
@@ -6438,7 +6586,9 @@
           "exampleZh": "家人在客厅看电视。",
           "collocation": "거실에 있다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "在客厅",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geo-sil"
@@ -6465,7 +6615,9 @@
           "exampleZh": "照着镜子梳了头。",
           "collocation": "거울을 보다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "照镜子",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geo-ul"
@@ -6492,7 +6644,9 @@
           "exampleZh": "不要太担心考试。",
           "collocation": "건강을 걱정하다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "担心健康",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geok-jeong-ha-da"
@@ -6519,7 +6673,9 @@
           "exampleZh": "过马路时请小心。",
           "collocation": "길을 건너다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "过马路",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geon-neo-da"
@@ -6546,7 +6702,9 @@
           "exampleZh": "那栋建筑是图书馆。",
           "collocation": "높은 건물",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "高楼；高的建筑物",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geon-mul"
@@ -6573,7 +6731,9 @@
           "exampleZh": "没有坐电梯而是走了楼梯。",
           "collocation": "계단을 오르다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "上楼梯",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gye-dan"
@@ -6600,7 +6760,9 @@
           "exampleZh": "晚上烤肉吃了。",
           "collocation": "고기를 굽다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "烤肉",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "go-gi"
@@ -6627,7 +6789,9 @@
           "exampleZh": "科学课很有意思。",
           "collocation": "과학 기술",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "科学技术",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gwa-hak"
@@ -6654,7 +6818,9 @@
           "exampleZh": "天上云很多。",
           "collocation": "구름이 끼다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "云层密布",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gu-reum"
@@ -6681,7 +6847,9 @@
           "exampleZh": "那只小狗真的很可爱。",
           "collocation": "귀여운 아이",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "可爱的孩子",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gwi-yeop-da"
@@ -6708,7 +6876,9 @@
           "exampleZh": "冬天经常吃橘子。",
           "collocation": "귤을 까다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "剥橘子",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gyul"
@@ -6735,7 +6905,9 @@
           "exampleZh": "把碗洗干净了。",
           "collocation": "그릇을 씻다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "洗碗",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "geu-reut"
@@ -6762,7 +6934,9 @@
           "exampleZh": "听到好消息所以很高兴。",
           "collocation": "기쁜 마음",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "高兴的心情",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gi-ppeu-da"
@@ -6789,7 +6963,9 @@
           "exampleZh": "住在学校宿舍。",
           "collocation": "기숙사 생활",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "宿舍生活",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "gi-suk-sa"
@@ -6816,7 +6992,9 @@
           "exampleZh": "公园里有一棵大树。",
           "collocation": "나무 아래",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "树下",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "na-mu"
@@ -6843,7 +7021,9 @@
           "exampleZh": "冰箱里有水。",
           "collocation": "냉장고 문",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "冰箱门",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "naeng-jang-go"
@@ -6870,7 +7050,9 @@
           "exampleZh": "经常听韩国歌。",
           "collocation": "노래를 부르다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "唱歌",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "no-rae"
@@ -6897,7 +7079,9 @@
           "exampleZh": "周末和朋友玩了。",
           "collocation": "밖에서 놀다",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "在外面玩",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "nol-da"
@@ -7005,7 +7189,9 @@
           "exampleZh": "向大使馆提交了材料。",
           "collocation": "대사관에 가다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "去大使馆",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "dae-sa-gwan"
@@ -7032,7 +7218,9 @@
           "exampleZh": "在首尔的大学上学。",
           "collocation": "대학 생활",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "大学生活",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ],
       "romanization": "dae-hak"
@@ -11991,7 +12179,9 @@
           "exampleZh": "一起学习吧。",
           "collocation": "친구와 같이",
           "level": 1,
-          "primary": true
+          "primary": true,
+          "collocationZh": "和朋友一起",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ]
     },
@@ -16920,7 +17110,9 @@
           "exampleZh": "突然发生了事故。",
           "collocation": "사고가 나다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "发生事故",
+          "collocationSource": "EDITORIAL_REVIEW"
         },
         {
           "id": "px002-s2",
@@ -16936,7 +17128,9 @@
           "exampleKo": "이 음식에서 좋은 냄새가 나요.",
           "exampleZh": "这个食物散发出好闻的味道。",
           "collocation": "냄새가 나다",
-          "level": 2
+          "level": 2,
+          "collocationZh": "发出气味",
+          "collocationSource": "EDITORIAL_REVIEW"
         },
         {
           "id": "px002-s4",
@@ -16944,7 +17138,9 @@
           "exampleKo": "친구 생각이 났어요.",
           "exampleZh": "想起了朋友。",
           "collocation": "생각이 나다",
-          "level": 2
+          "level": 2,
+          "collocationZh": "想起来",
+          "collocationSource": "EDITORIAL_REVIEW"
         }
       ]
     },
@@ -17230,7 +17426,9 @@
           "exampleZh": "把画挂在墙上了。",
           "collocation": "그림을 걸다",
           "level": 2,
-          "primary": true
+          "primary": true,
+          "collocationZh": "挂画",
+          "collocationSource": "EDITORIAL_REVIEW"
         },
         {
           "id": "px008-s2",
@@ -17238,7 +17436,9 @@
           "exampleKo": "친구에게 전화를 걸었어요.",
           "exampleZh": "给朋友打了电话。",
           "collocation": "전화를 걸다",
-          "level": 2
+          "level": 2,
+          "collocationZh": "打电话",
+          "collocationSource": "EDITORIAL_REVIEW"
         },
         {
           "id": "px008-s3",
@@ -17246,7 +17446,4329 @@
           "exampleKo": "승부에 모든 것을 걸었어요.",
           "exampleZh": "把一切都赌在胜负上。",
           "collocation": "목숨을 걸다",
-          "level": 4
+          "level": 4,
+          "collocationZh": "豁出性命",
+          "collocationSource": "EDITORIAL_REVIEW"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-001",
+      "headword": "결혼",
+      "pronunciation": "결혼",
+      "romanization": "gyeol-hon",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "31665",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=31665",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-001-s1",
+          "gloss": "结婚",
+          "definitionZh": "男性和女性正式成为夫妻。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "结婚"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-002",
+      "headword": "결혼식",
+      "pronunciation": "결혼식",
+      "romanization": "gyeol-hon-sik",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "31666",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=31666",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-002-s1",
+          "gloss": "婚礼",
+          "definitionZh": "承诺结为夫妻的仪式。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "婚礼"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-003",
+      "headword": "결혼하다",
+      "pronunciation": "결혼하다",
+      "romanization": "gyeol-hon-ha-da",
+      "pos": "동사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "17314",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=17314",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-003-s1",
+          "gloss": "结婚",
+          "definitionZh": "男性和女性正式成为夫妻。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "结婚"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-004",
+      "headword": "경기장",
+      "pronunciation": "경ː기장",
+      "romanization": "gyeong-ː-gi-jang",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "32356",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=32356",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-004-s1",
+          "gloss": "体育场，赛场",
+          "definitionZh": "具有可以进行比赛的设施和可以观看的座位等的地方。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "体育场，赛场"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-005",
+      "headword": "경복궁",
+      "pronunciation": "경ː복꿍",
+      "romanization": "gyeong-ː-bok-kkung",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "68314",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=68314",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-005-s1",
+          "gloss": "景福宫",
+          "definitionZh": "朝鲜王朝时期最早建造的一座宫殿，位于首尔，为朝鲜王朝的正宫。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "景福宫"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-006",
+      "headword": "경찰",
+      "pronunciation": "경ː찰",
+      "romanization": "gyeong-ː-chal",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "25949",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=25949",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-006-s1",
+          "gloss": "警方，警察当局",
+          "definitionZh": "维持社会秩序、保护人民生命和财产安全；或指负责此事的国家机关。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "警方，警察当局"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-007",
+      "headword": "경찰관",
+      "pronunciation": "경ː찰관",
+      "romanization": "gyeong-ː-chal-gwan",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "25950",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=25950",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-007-s1",
+          "gloss": "警察",
+          "definitionZh": "维护社会秩序、保护人民生命和财产安全的公务员。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "警察"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-008",
+      "headword": "경찰서",
+      "pronunciation": "경ː찰써",
+      "romanization": "gyeong-ː-chal-sseo",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "25960",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=25960",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-008-s1",
+          "gloss": "警察署，警察局，公安局",
+          "definitionZh": "负责一个地区的公安工作的官厅。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "警察署，警察局，公安局"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-009",
+      "headword": "경치",
+      "pronunciation": "경치",
+      "romanization": "gyeong-chi",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "26024",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=26024",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-009-s1",
+          "gloss": "风景，景色",
+          "definitionZh": "自然或地区美丽的样子。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "风景，景色"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-010",
+      "headword": "계란",
+      "pronunciation": "계란/게란",
+      "romanization": "gye-ran-/-ge-ran",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "15355",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=15355",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-010-s1",
+          "gloss": "鸡蛋",
+          "definitionZh": "鸡下的蛋。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "鸡蛋"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-011",
+      "headword": "계산하다",
+      "pronunciation": "계ː산하다/게ː산하다",
+      "romanization": "gye-ː-san-ha-da-/-ge-ː-san-ha-da",
+      "pos": "동사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62498",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62498",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-011-s1",
+          "gloss": "计算",
+          "definitionZh": "数数或进行加减乘除等运算。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "计算"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-012",
+      "headword": "고등학생",
+      "pronunciation": "고등학쌩",
+      "romanization": "go-deung-hak-ssaeng",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "23381",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=23381",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-012-s1",
+          "gloss": "高中生",
+          "definitionZh": "读高中的学生。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "高中生"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-013",
+      "headword": "고모",
+      "pronunciation": "고모",
+      "romanization": "go-mo",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "20052",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=20052",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-013-s1",
+          "gloss": "姑姑，姑妈",
+          "definitionZh": "父亲的姐姐或妹妹，或用于指称她们。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "姑姑，姑妈"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-014",
+      "headword": "고모부",
+      "pronunciation": "고모부",
+      "romanization": "go-mo-bu",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "20055",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=20055",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-014-s1",
+          "gloss": "姑夫，姑父",
+          "definitionZh": "用于指称或称呼姑妈的丈夫。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "姑夫，姑父"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-015",
+      "headword": "고속버스",
+      "pronunciation": "고속버스",
+      "romanization": "go-sok-beo-seu",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "17987",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=17987",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-015-s1",
+          "gloss": "高速大巴，高速巴士",
+          "definitionZh": "主要走高速公路、时速很快跑长途的巴士。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "高速大巴，高速巴士"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-016",
+      "headword": "고양이",
+      "pronunciation": "고양이",
+      "romanization": "go-yang-i",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "18779",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=18779",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-016-s1",
+          "gloss": "猫",
+          "definitionZh": "一种可以家养的动物，在黑暗的地方也能看清事物，擅长捉老鼠。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "猫"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-017",
+      "headword": "고추",
+      "pronunciation": "고추",
+      "romanization": "go-chu",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "18366",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=18366",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-017-s1",
+          "gloss": "辣椒",
+          "definitionZh": "一种有辣味的果实，手指般大小，开始为绿色，成熟后变红。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "辣椒"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-018",
+      "headword": "고추장",
+      "pronunciation": "고추장",
+      "romanization": "go-chu-jang",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "18359",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=18359",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-018-s1",
+          "gloss": "韩式辣椒酱",
+          "definitionZh": "以辣椒面为主材料而制成的韩国传统调味料，色泽偏红。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "韩式辣椒酱"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-019",
+      "headword": "고치다",
+      "pronunciation": "고치다",
+      "romanization": "go-chi-da",
+      "pos": "동사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "18381",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=18381",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-019-s1",
+          "gloss": "修补，维修",
+          "definitionZh": "修理出故障或不能用的东西，使其可重新使用。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "修补，维修"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-020",
+      "headword": "고프다",
+      "pronunciation": "고프다",
+      "romanization": "go-peu-da",
+      "pos": "형용사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "18396",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=18396",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-020-s1",
+          "gloss": "饿，饥饿",
+          "definitionZh": "肚子空了，想吃东西。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "饿，饥饿"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-021",
+      "headword": "곧",
+      "pronunciation": "곧",
+      "romanization": "got",
+      "pos": "부사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "26802",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=26802",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-021-s1",
+          "gloss": "马上，就",
+          "definitionZh": "不拖延，紧接着。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "马上，就"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-022",
+      "headword": "골목",
+      "pronunciation": "골ː목",
+      "romanization": "gol-ː-mok",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "18338",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=18338",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-022-s1",
+          "gloss": "巷子，胡同",
+          "definitionZh": "两边有房屋的长而窄的街道。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "巷子，胡同"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-023",
+      "headword": "골프",
+      "pronunciation": "골프",
+      "romanization": "gol-peu",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "27872",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=27872",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-023-s1",
+          "gloss": "高尔夫，高尔夫球",
+          "definitionZh": "在宽广的草地上挖多个洞，用长杆击球并将球打入洞中的体育比赛。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "高尔夫，高尔夫球"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-024",
+      "headword": "곳",
+      "pronunciation": "곧",
+      "romanization": "got",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "18661",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=18661",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-024-s1",
+          "gloss": "地方，地区",
+          "definitionZh": "一个特定的位置或地区。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "地方，地区"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-025",
+      "headword": "공간",
+      "pronunciation": "공간",
+      "romanization": "gong-gan",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "18694",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=18694",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-025-s1",
+          "gloss": "空地",
+          "definitionZh": "空荡无物的地方。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "空地"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-026",
+      "headword": "공무원",
+      "pronunciation": "공무원",
+      "romanization": "gong-mu-won",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "23113",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=23113",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-026-s1",
+          "gloss": "公务员",
+          "definitionZh": "负责国家或地方公共团体事务的人。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "公务员"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-027",
+      "headword": "공부하다",
+      "pronunciation": "공부하다",
+      "romanization": "gong-bu-ha-da",
+      "pos": "동사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "23394",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=23394",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-027-s1",
+          "gloss": "学习，读书",
+          "definitionZh": "通过学习学问或技术而获得知识。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "学习，读书"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-028",
+      "headword": "공연",
+      "pronunciation": "공연",
+      "romanization": "gong-yeon",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62459",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62459",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-028-s1",
+          "gloss": "演出，表演",
+          "definitionZh": "将歌曲、舞蹈、戏剧等展现给观众。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "演出，表演"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-029",
+      "headword": "공중전화",
+      "pronunciation": "공중전화",
+      "romanization": "gong-jung-jeon-hwa",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "23600",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=23600",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-029-s1",
+          "gloss": "公用电话",
+          "definitionZh": "在街上或一定场所安装的，供大众使用的电话。可投币或刷卡使用。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "公用电话"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-030",
+      "headword": "공짜",
+      "pronunciation": "공짜",
+      "romanization": "gong-jja",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "24126",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=24126",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-030-s1",
+          "gloss": "白，免费",
+          "definitionZh": "不费力气、努力、金钱而得到的东西。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "白，免费"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-031",
+      "headword": "공책",
+      "pronunciation": "공책",
+      "romanization": "gong-chaek",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "15252",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=15252",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-031-s1",
+          "gloss": "笔记本",
+          "definitionZh": "可以写字或画画，用白纸或划线纸系成的本子。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "笔记本"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-032",
+      "headword": "공휴일",
+      "pronunciation": "공휴일",
+      "romanization": "gong-hyu-il",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "27216",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=27216",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-032-s1",
+          "gloss": "公休日，公共休假日，法定假日",
+          "definitionZh": "像国庆节或节日等由国家制定的休息日。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "公休日，公共休假日，法定假日"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-033",
+      "headword": "과자",
+      "pronunciation": "과자",
+      "romanization": "gwa-ja",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "18286",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=18286",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-033-s1",
+          "gloss": "饼干",
+          "definitionZh": "把牛奶、白糖等放入面粉或米粉中搅拌后烤制或油炸而成的零食。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "饼干"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-034",
+      "headword": "관광하다",
+      "pronunciation": "관광하다",
+      "romanization": "gwan-gwang-ha-da",
+      "pos": "동사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "22394",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=22394",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-034-s1",
+          "gloss": "旅游，观光",
+          "definitionZh": "去某个地方观览当地的景观、情况、风俗等。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "旅游，观光"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-035",
+      "headword": "광고",
+      "pronunciation": "광ː고",
+      "romanization": "gwang-ː-go",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62390",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62390",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-035-s1",
+          "gloss": "广告",
+          "definitionZh": "向人们广泛告知。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "广告"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-036",
+      "headword": "교과서",
+      "pronunciation": "교ː과서/교ː꽈서",
+      "romanization": "gyo-ː-gwa-seo-/-gyo-ː-kkwa-seo",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "28629",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=28629",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-036-s1",
+          "gloss": "教科书，教材",
+          "definitionZh": "学校里为教授某个科目而编订的书。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "教科书，教材"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-037",
+      "headword": "교수",
+      "pronunciation": "교ː수",
+      "romanization": "gyo-ː-su",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "31684",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=31684",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-037-s1",
+          "gloss": "教授，教学，讲授",
+          "definitionZh": "教授学问或技术的行为；或其方法。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "教授，教学，讲授"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-038",
+      "headword": "교체",
+      "pronunciation": "교체",
+      "romanization": "gyo-che",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "24074",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=24074",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-038-s1",
+          "gloss": "交替，更换，更替",
+          "definitionZh": "起特定作用的人、事物或制度等替换为其他人、事物或制度等 。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "交替，更换，更替"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-039",
+      "headword": "교회",
+      "pronunciation": "교ː회/교ː훼",
+      "romanization": "gyo-ː-hoe-/-gyo-ː-hwe",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "64370",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=64370",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-039-s1",
+          "gloss": "教会，教堂",
+          "definitionZh": "把耶稣基督视为救世主而信仰并追随的人们的共同体；或指那种人聚集在一起举行宗教活动的场所。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "教会，教堂"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-040",
+      "headword": "구월",
+      "pronunciation": "구월",
+      "romanization": "gu-wol",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "20190",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=20190",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-040-s1",
+          "gloss": "九月",
+          "definitionZh": "一年十二个月中第九个月。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "九月"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-041",
+      "headword": "국",
+      "pronunciation": "국",
+      "romanization": "guk",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "36778",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=36778",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-041-s1",
+          "gloss": "汤",
+          "definitionZh": "在肉类、鱼类或蔬菜等上倒入大量的水而煮成的食物。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "汤"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-042",
+      "headword": "국수",
+      "pronunciation": "국쑤",
+      "romanization": "guk-ssu",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "38579",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=38579",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-042-s1",
+          "gloss": "面，面条",
+          "definitionZh": "将大麦、荞麦、土豆等的面粉和好，用刀子、机器或手做成的细长的食品；或指将其煮熟而做成的食物。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "面，面条"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-043",
+      "headword": "국어",
+      "pronunciation": "구거",
+      "romanization": "gu-geo",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "38583",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=38583",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-043-s1",
+          "gloss": "国语",
+          "definitionZh": "一个国家的国民使用的话。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "国语"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-044",
+      "headword": "국적",
+      "pronunciation": "국쩍",
+      "romanization": "guk-jjeok",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "24524",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=24524",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-044-s1",
+          "gloss": "国籍",
+          "definitionZh": "成为一个国家成员的资格。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "国籍"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-045",
+      "headword": "국제",
+      "pronunciation": "국쩨",
+      "romanization": "guk-jje",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "58597",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=58597",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-045-s1",
+          "gloss": "国际",
+          "definitionZh": "与多个国家相关或多个国家共同参与的。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "国际"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-046",
+      "headword": "군인",
+      "pronunciation": "구닌",
+      "romanization": "gu-nin",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62241",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62241",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-046-s1",
+          "gloss": "军人",
+          "definitionZh": "隶属于军队并接受使用武器等的军事训练，承担一定任务的人。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "军人"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-047",
+      "headword": "권",
+      "pronunciation": "권",
+      "romanization": "gwon",
+      "pos": "의존 명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62537",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62537",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-047-s1",
+          "gloss": "本",
+          "definitionZh": "计算书或本子的数量单位。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "本"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-048",
+      "headword": "규칙",
+      "pronunciation": "규칙",
+      "romanization": "gyu-chik",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "35269",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=35269",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-048-s1",
+          "gloss": "规则，规定，条例",
+          "definitionZh": "规定出来供大家共同遵守的制度。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "规则，规定，条例"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-049",
+      "headword": "그거",
+      "pronunciation": "그거",
+      "romanization": "geu-geo",
+      "pos": "대명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62251",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62251",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-049-s1",
+          "gloss": "那个",
+          "definitionZh": "指代与听话人较近或听话人所想的东西。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "那个"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-050",
+      "headword": "그것",
+      "pronunciation": "그걷",
+      "romanization": "geu-geot",
+      "pos": "대명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "31953",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=31953",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-050-s1",
+          "gloss": "那个",
+          "definitionZh": "指代与听话人较近或听话人所想的东西。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "那个"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-051",
+      "headword": "그곳",
+      "pronunciation": "그곧",
+      "romanization": "geu-got",
+      "pos": "대명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "17207",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=17207",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-051-s1",
+          "gloss": "那儿，那边，那里",
+          "definitionZh": "指代与听话人较近的地方。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "那儿，那边，那里"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-052",
+      "headword": "그날",
+      "pronunciation": "그날",
+      "romanization": "geu-nal",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "36674",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=36674",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-052-s1",
+          "gloss": "那天，那日",
+          "definitionZh": "前面说过的那一天。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "那天，那日"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-053",
+      "headword": "그동안",
+      "pronunciation": "그동안",
+      "romanization": "geu-dong-an",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "60236",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=60236",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-053-s1",
+          "gloss": "近来，这段时间",
+          "definitionZh": "前面已经说过的那些时间；或指再次相逢或再次联系之前的一段时间。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "近来，这段时间"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-054",
+      "headword": "그때",
+      "pronunciation": "그때",
+      "romanization": "geu-ttae",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "29683",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=29683",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-054-s1",
+          "gloss": "那时，那时候",
+          "definitionZh": "前面所说的某一时间。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "那时，那时候"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-055",
+      "headword": "그램",
+      "pronunciation": "그램",
+      "romanization": "geu-raem",
+      "pos": "의존 명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "36267",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=36267",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-055-s1",
+          "gloss": "克",
+          "definitionZh": "重量单位。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "克"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-056",
+      "headword": "그러니까",
+      "pronunciation": "그러니까",
+      "romanization": "geu-reo-ni-kka",
+      "pos": "부사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "58609",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=58609",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-056-s1",
+          "gloss": "因此，所以",
+          "definitionZh": "因为那个原因；或因为那样的缘故。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "因此，所以"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-057",
+      "headword": "그렇게",
+      "pronunciation": "그렇게",
+      "romanization": "geu-reot-ge",
+      "pos": "품사 없음",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "36292",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=36292",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-057-s1",
+          "gloss": "“그러하게(那样，那么)”的缩略语。",
+          "definitionZh": "“그러하게(那样，那么)”的缩略语。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "“그러하게(那样，那么)”的缩略语。"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-058",
+      "headword": "그렇다",
+      "pronunciation": "그러타",
+      "romanization": "geu-reo-ta",
+      "pos": "형용사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "61178",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=61178",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-058-s1",
+          "gloss": "那样",
+          "definitionZh": "表示状态、样子、性质等与此相同。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "那样"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-059",
+      "headword": "그렇지만",
+      "pronunciation": "그러치만",
+      "romanization": "geu-reo-chi-man",
+      "pos": "부사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "70718",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=70718",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-059-s1",
+          "gloss": "即便是那样，但是",
+          "definitionZh": "表示与前面所说内容相对立的内容，尽管前面所说的是事实。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "即便是那样，但是"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-060",
+      "headword": "그리고",
+      "pronunciation": "그리고",
+      "romanization": "geu-ri-go",
+      "pos": "부사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62240",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62240",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-060-s1",
+          "gloss": "而且，并且，况且",
+          "definitionZh": "用于紧接前文，单纯罗列后文，表示前后位并列。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "而且，并且，况且"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-061",
+      "headword": "그분",
+      "pronunciation": "그분",
+      "romanization": "geu-bun",
+      "pos": "대명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "60635",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=60635",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-061-s1",
+          "gloss": "那位",
+          "definitionZh": "(高尊)那个人。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "那位"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-062",
+      "headword": "그중",
+      "pronunciation": "그중",
+      "romanization": "geu-jung",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62460",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62460",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-062-s1",
+          "gloss": "其中",
+          "definitionZh": "一定范围内的几个之中。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "其中"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-063",
+      "headword": "그쪽",
+      "pronunciation": "그쪽",
+      "romanization": "geu-jjok",
+      "pos": "대명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "17206",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=17206",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-063-s1",
+          "gloss": "那边",
+          "definitionZh": "指代离听话人近的地方或方向。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "那边"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-064",
+      "headword": "그치다",
+      "pronunciation": "그치다",
+      "romanization": "geu-chi-da",
+      "pos": "동사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "29775",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=29775",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-064-s1",
+          "gloss": "停止，结束",
+          "definitionZh": "一直持续的事情、动作、现象等不再继续，停下来。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "停止，结束"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-065",
+      "headword": "극장",
+      "pronunciation": "극짱",
+      "romanization": "geuk-jjang",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "31667",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=31667",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-065-s1",
+          "gloss": "剧场，戏院",
+          "definitionZh": "用于演戏、音乐、舞蹈或放映电影的场所。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "剧场，戏院"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-066",
+      "headword": "글",
+      "pronunciation": "글",
+      "romanization": "geul",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "59226",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=59226",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-066-s1",
+          "gloss": "文章",
+          "definitionZh": "将想法或事情等用文字表达出来。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "文章"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-067",
+      "headword": "글쎄요",
+      "pronunciation": "글쎄요",
+      "romanization": "geul-sse-yo",
+      "pos": "감탄사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "60633",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=60633",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-067-s1",
+          "gloss": "也许吧，或许吧，难说",
+          "definitionZh": "对于对方所提出的问题或要求，表现出不确定的态度。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "也许吧，或许吧，难说"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-068",
+      "headword": "금방",
+      "pronunciation": "금방",
+      "romanization": "geum-bang",
+      "pos": "부사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "34764",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=34764",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-068-s1",
+          "gloss": "刚，刚刚，刚才",
+          "definitionZh": "就在不久前。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "刚，刚刚，刚才"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-069",
+      "headword": "금연",
+      "pronunciation": "그ː면",
+      "romanization": "geu-ː-myeon",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "60641",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=60641",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-069-s1",
+          "gloss": "禁烟",
+          "definitionZh": "禁止吸烟。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "禁烟"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-070",
+      "headword": "금요일",
+      "pronunciation": "그묘일",
+      "romanization": "geu-myo-il",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "17289",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=17289",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-070-s1",
+          "gloss": "星期五，周五，礼拜五",
+          "definitionZh": "以星期一为基准，指一个星期中的第五天。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "星期五，周五，礼拜五"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-071",
+      "headword": "급하다",
+      "pronunciation": "그파다",
+      "romanization": "geu-pa-da",
+      "pos": "형용사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "86862",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=86862",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-071-s1",
+          "gloss": "急",
+          "definitionZh": "处境或情况处于需要赶紧处理的状态。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "急"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-072",
+      "headword": "기르다",
+      "pronunciation": "기르다",
+      "romanization": "gi-reu-da",
+      "pos": "동사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62242",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62242",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-072-s1",
+          "gloss": "养，喂养，饲养，栽培",
+          "definitionZh": "给动物食物或给植物养分，并予以保护，使其成长。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "养，喂养，饲养，栽培"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-073",
+      "headword": "기름",
+      "pronunciation": "기름",
+      "romanization": "gi-reum",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "40022",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=40022",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-073-s1",
+          "gloss": "油",
+          "definitionZh": "易燃、不溶水的滑润的液体。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "油"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-074",
+      "headword": "기뻐하다",
+      "pronunciation": "기뻐하다",
+      "romanization": "gi-ppeo-ha-da",
+      "pos": "동사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "61533",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=61533",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-074-s1",
+          "gloss": "高兴，欢喜",
+          "definitionZh": "觉得愉快而兴奋。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "高兴，欢喜"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-075",
+      "headword": "기온",
+      "pronunciation": "기온",
+      "romanization": "gi-on",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "38103",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=38103",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-075-s1",
+          "gloss": "气温",
+          "definitionZh": "空气的温度。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "气温"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-076",
+      "headword": "기자",
+      "pronunciation": "기자",
+      "romanization": "gi-ja",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "61280",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=61280",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-076-s1",
+          "gloss": "记者",
+          "definitionZh": "在报纸、杂志、广播等中调查将要报道的新闻并攥稿编辑的人。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "记者"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-077",
+      "headword": "기침",
+      "pronunciation": "기침",
+      "romanization": "gi-chim",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "38465",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=38465",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-077-s1",
+          "gloss": "咳嗽",
+          "definitionZh": "空气从肺部通过喉咙突然喷出来，同时发出粗声。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "咳嗽"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-078",
+      "headword": "긴장되다",
+      "pronunciation": "긴장되다/긴장뒈다",
+      "romanization": "gin-jang-doe-da-/-gin-jang-dwe-da",
+      "pos": "동사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "32539",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=32539",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-078-s1",
+          "gloss": "紧张",
+          "definitionZh": "不敢松懈，精神变得高度集中。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "紧张"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-079",
+      "headword": "김밥",
+      "pronunciation": "김ː밥/김ː빱",
+      "romanization": "gim-ː-bap-/-gim-ː-ppap",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "58106",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=58106",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-079-s1",
+          "gloss": "紫菜卷饭，紫菜包饭",
+          "definitionZh": "用紫菜将米饭和各种菜包卷起来，再切成适当大小的食物。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "紫菜卷饭，紫菜包饭"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-080",
+      "headword": "김치찌개",
+      "pronunciation": "김치찌개",
+      "romanization": "gim-chi-jji-gae",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "32543",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=32543",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-080-s1",
+          "gloss": "辛奇汤",
+          "definitionZh": "以辛奇为主材煮制而成的汤。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "辛奇汤"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-081",
+      "headword": "까만색",
+      "pronunciation": "까만색",
+      "romanization": "kka-man-saek",
+      "pos": "명사",
+      "levels": [
+        1
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "32548",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=32548",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-081-s1",
+          "gloss": "黑色",
+          "definitionZh": "无光的夜空或墨汁一样的颜色。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 1,
+          "primary": true,
+          "glossZh": "黑色"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-082",
+      "headword": "까맣다",
+      "pronunciation": "까ː마타",
+      "romanization": "kka-ː-ma-ta",
+      "pos": "형용사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "64358",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=64358",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-082-s1",
+          "gloss": "乌黑，漆黑",
+          "definitionZh": "颜色像没有一丝光亮的夜空一样黑。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "乌黑，漆黑"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-083",
+      "headword": "깨지다",
+      "pronunciation": "깨ː지다",
+      "romanization": "kkae-ː-ji-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "85871",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=85871",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-083-s1",
+          "gloss": "破碎",
+          "definitionZh": "坚硬的东西被碎成几块儿。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "破碎"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-084",
+      "headword": "꺼내다",
+      "pronunciation": "꺼ː내다",
+      "romanization": "kkeo-ː-nae-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62265",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62265",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-084-s1",
+          "gloss": "拿出，掏出，取出",
+          "definitionZh": "把里面的东西拿到外面。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "拿出，掏出，取出"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-085",
+      "headword": "껌",
+      "pronunciation": "껌",
+      "romanization": "kkeom",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "41635",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=41635",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-085-s1",
+          "gloss": "口香糖",
+          "definitionZh": "一种可以放入口中长时间咀嚼、吃掉甜味后吐掉的糖果。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "口香糖"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-086",
+      "headword": "꽃",
+      "pronunciation": "꼳",
+      "romanization": "kkot",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62838",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62838",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-086-s1",
+          "gloss": "花，花朵",
+          "definitionZh": "长在植物茎干顶端的一部分，具有特有的模样、颜色和香气；或指会开此物的植物。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "花，花朵"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-087",
+      "headword": "꽃집",
+      "pronunciation": "꼳찝",
+      "romanization": "kkot-jjip",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "38277",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=38277",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-087-s1",
+          "gloss": "花店",
+          "definitionZh": "出售鲜花或花草等植物的商店。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "花店"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-088",
+      "headword": "꿈",
+      "pronunciation": "꿈",
+      "romanization": "kkum",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "57279",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=57279",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-088-s1",
+          "gloss": "梦",
+          "definitionZh": "指睡觉期间有着和清醒时一样的视听感觉的精神现象。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "梦"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-089",
+      "headword": "끄다",
+      "pronunciation": "끄다",
+      "romanization": "kkeu-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "73443",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=73443",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-089-s1",
+          "gloss": "熄灭",
+          "definitionZh": "使燃烧的火不再燃烧。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "熄灭"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-090",
+      "headword": "끓이다",
+      "pronunciation": "끄리다",
+      "romanization": "kkeu-ri-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "59474",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=59474",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-090-s1",
+          "gloss": "煮沸，烧开",
+          "definitionZh": "给液体加热，使其冒气泡。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "煮沸，烧开"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-091",
+      "headword": "끝",
+      "pronunciation": "끋",
+      "romanization": "kkeut",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "48072",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=48072",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-091-s1",
+          "gloss": "尽头，最后，终",
+          "definitionZh": "时间上的最后时刻。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "尽头，最后，终"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-092",
+      "headword": "끝내다",
+      "pronunciation": "끈내다",
+      "romanization": "kkeun-nae-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "29692",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=29692",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-092-s1",
+          "gloss": "结束，完成",
+          "definitionZh": "做完事情。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "结束，完成"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-093",
+      "headword": "나빠지다",
+      "pronunciation": "나빠지다",
+      "romanization": "na-ppa-ji-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "59497",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=59497",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-093-s1",
+          "gloss": "变坏，恶化",
+          "definitionZh": "向坏的方面变化。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "变坏，恶化"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-094",
+      "headword": "나오다",
+      "pronunciation": "나오다",
+      "romanization": "na-o-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62233",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62233",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-094-s1",
+          "gloss": "出，出来",
+          "definitionZh": "从里面到外面。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "出，出来"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-095",
+      "headword": "나타나다",
+      "pronunciation": "나타나다",
+      "romanization": "na-ta-na-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62286",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62286",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-095-s1",
+          "gloss": "出现，露面",
+          "definitionZh": "原本隐而不见的某个对象露出形貌。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "出现，露面"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-096",
+      "headword": "나흘",
+      "pronunciation": "나흘",
+      "romanization": "na-heul",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "16315",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=16315",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-096-s1",
+          "gloss": "四天",
+          "definitionZh": "四日。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "四天"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-097",
+      "headword": "낚시",
+      "pronunciation": "낙씨",
+      "romanization": "nak-ssi",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "56098",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=56098",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-097-s1",
+          "gloss": "钓钩，鱼钩",
+          "definitionZh": "钓鱼用的、头上尖尖的小工具。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "钓钩，鱼钩"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-098",
+      "headword": "남기다",
+      "pronunciation": "남기다",
+      "romanization": "nam-gi-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "64371",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=64371",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-098-s1",
+          "gloss": "剩，剩下",
+          "definitionZh": "没用完，留下了一部分。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "剩，剩下"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-099",
+      "headword": "남녀",
+      "pronunciation": "남녀",
+      "romanization": "nam-nyeo",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "60628",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=60628",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-099-s1",
+          "gloss": "男女",
+          "definitionZh": "男性与女性。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "男女"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-100",
+      "headword": "남동생",
+      "pronunciation": "남동생",
+      "romanization": "nam-dong-saeng",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "26820",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=26820",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-100-s1",
+          "gloss": "弟弟",
+          "definitionZh": "比自己小的男性。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "弟弟"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-101",
+      "headword": "남미",
+      "pronunciation": "남미",
+      "romanization": "nam-mi",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "92075",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=92075",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-101-s1",
+          "gloss": "南美洲",
+          "definitionZh": "美洲的南部地区，包括巴西、阿根廷、智利、哥伦比亚等国家。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "南美洲"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-102",
+      "headword": "남북",
+      "pronunciation": "남북",
+      "romanization": "nam-buk",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "45034",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=45034",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-102-s1",
+          "gloss": "南北",
+          "definitionZh": "南边和北边。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "南北"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-103",
+      "headword": "남쪽",
+      "pronunciation": "남쪽",
+      "romanization": "nam-jjok",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "63619",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=63619",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-103-s1",
+          "gloss": "南侧，南边，南方",
+          "definitionZh": "东西南北四个方位之一，指南针的“S”极所指方向。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "南侧，南边，南方"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-104",
+      "headword": "남편",
+      "pronunciation": "남편",
+      "romanization": "nam-pyeon",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "31919",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=31919",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-104-s1",
+          "gloss": "丈夫，老公",
+          "definitionZh": "夫妻关系中的男人。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "丈夫，老公"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-105",
+      "headword": "남학생",
+      "pronunciation": "남학쌩",
+      "romanization": "nam-hak-ssaeng",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "58151",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=58151",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-105-s1",
+          "gloss": "男学生，男生",
+          "definitionZh": "男性学生。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "男学生，男生"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-106",
+      "headword": "낮",
+      "pronunciation": "낟",
+      "romanization": "nat",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "64497",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=64497",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-106-s1",
+          "gloss": "白天，白日，日间",
+          "definitionZh": "从天亮到天黑的一段时间。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "白天，白日，日间"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-107",
+      "headword": "낮다",
+      "pronunciation": "낟따",
+      "romanization": "nat-tta",
+      "pos": "형용사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "58155",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=58155",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-107-s1",
+          "gloss": "低，矮，低洼",
+          "definitionZh": "由下到上的距离较短。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "低，矮，低洼"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-108",
+      "headword": "내과",
+      "pronunciation": "내ː꽈",
+      "romanization": "nae-ː-kkwa",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "28417",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=28417",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-108-s1",
+          "gloss": "内科",
+          "definitionZh": "主要用药物来治疗内脏器官疾病的医学领域；或指那个领域的医院。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "内科"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-109",
+      "headword": "내년",
+      "pronunciation": "내년",
+      "romanization": "nae-nyeon",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "64517",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=64517",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-109-s1",
+          "gloss": "明年，来年",
+          "definitionZh": "今年的下一年。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "明年，来年"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-110",
+      "headword": "내려가다",
+      "pronunciation": "내려가다",
+      "romanization": "nae-ryeo-ga-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "63723",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=63723",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-110-s1",
+          "gloss": "下去，下行",
+          "definitionZh": "从上往下走。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "下去，下行"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-111",
+      "headword": "내려오다",
+      "pronunciation": "내려오다",
+      "romanization": "nae-ryeo-o-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "64559",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=64559",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-111-s1",
+          "gloss": "下来",
+          "definitionZh": "从高处来到低处或从上面来到下面。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "下来"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-112",
+      "headword": "내리다",
+      "pronunciation": "내리다",
+      "romanization": "nae-ri-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "73353",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=73353",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-112-s1",
+          "gloss": "下，落",
+          "definitionZh": "雪或雨等降下。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "下，落"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-113",
+      "headword": "냄비",
+      "pronunciation": "냄비",
+      "romanization": "naem-bi",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "41163",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=41163",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-113-s1",
+          "gloss": "小锅，汤锅，铝锅",
+          "definitionZh": "用于煮食的厨具，比锅小，带有盖子和手把的厨房用具。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "小锅，汤锅，铝锅"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-114",
+      "headword": "냄새",
+      "pronunciation": "냄ː새",
+      "romanization": "naem-ː-sae",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "58180",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=58180",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-114-s1",
+          "gloss": "气味，味道，香味，臭味",
+          "definitionZh": "能用鼻子闻到的味儿。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "气味，味道，香味，臭味"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-115",
+      "headword": "냉면",
+      "pronunciation": "냉ː면",
+      "romanization": "naeng-ː-myeon",
+      "pos": "명사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "32777",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=32777",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-115-s1",
+          "gloss": "冷面",
+          "definitionZh": "一种将面条用凉汤或辛奇汤汁泡着吃，或用辣椒酱拌着吃的食物。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "冷面"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-116",
+      "headword": "너무",
+      "pronunciation": "너무",
+      "romanization": "neo-mu",
+      "pos": "부사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "28183",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=28183",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-116-s1",
+          "gloss": "太",
+          "definitionZh": "已超过一定的程度或限度的状态。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "太"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-117",
+      "headword": "넓다",
+      "pronunciation": "널따",
+      "romanization": "neol-tta",
+      "pos": "형용사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "64511",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=64511",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-117-s1",
+          "gloss": "宽敞，宽阔，宽广",
+          "definitionZh": "整个面或地面的面积很大。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "宽敞，宽阔，宽广"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-118",
+      "headword": "넘다",
+      "pronunciation": "넘ː따",
+      "romanization": "neom-ː-tta",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "64524",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=64524",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-118-s1",
+          "gloss": "过，超过",
+          "definitionZh": "超出一定时间、时期或范围等。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "过，超过"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-119",
+      "headword": "넘어지다",
+      "pronunciation": "너머지다",
+      "romanization": "neo-meo-ji-da",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "62363",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=62363",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-119-s1",
+          "gloss": "跌倒，倒下，摔倒",
+          "definitionZh": "站立着的人或物失去重心，倾向一边而倒下。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "跌倒，倒下，摔倒"
+        }
+      ]
+    },
+    {
+      "id": "exp-ti-120",
+      "headword": "넣다",
+      "pronunciation": "너ː타",
+      "romanization": "neo-ː-ta",
+      "pos": "동사",
+      "levels": [
+        2
+      ],
+      "tracks": [
+        "TOPIK",
+        "expansion"
+      ],
+      "register": "中性",
+      "source": "TOPIK_I_1671 + KRDICT_EXACT_HEADWORD",
+      "sourceUrl": "https://learning-korean.com/DL/TOPIK-I-1671.pdf",
+      "krdictTargetCode": "64509",
+      "krdictLink": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=64509",
+      "expansionBatch": "2026-09-01-topik12-expansion-draft",
+      "levelAssignment": "TOPIK_I_ORDER_HEURISTIC_NEEDS_REVIEW",
+      "verificationStatus": "draft",
+      "verifiedAt": null,
+      "senses": [
+        {
+          "id": "exp-ti-120-s1",
+          "gloss": "放进，装进",
+          "definitionZh": "使进入某个空间里。",
+          "exampleKo": "",
+          "exampleZh": "",
+          "collocation": "",
+          "level": 2,
+          "primary": true,
+          "glossZh": "放进，装进"
         }
       ]
     }

@@ -197,7 +197,7 @@ async function enhanceRevealData(){
   const headword=txt(card.querySelector('.word h3')); if(!headword)return;
   const data=await vocabulary();
   const entry=data.entries?.find(e=>e.headword===headword); if(!entry)return;
-  const collocations=(entry.senses||[]).flatMap(s=>(s.collocations||[]).map(c=>({...c,zh:c?.zh&&c.zh!==s.glossZh?c.zh:''}))).filter(c=>c?.ko);
+  const collocations=(entry.senses||[]).flatMap(s=>(s.collocations||[]).map(c=>({...c,zh:c?.zh||''}))).filter(c=>c?.ko);
   const block=card.querySelector('.kwf-v2-collocation'); if(!block||!collocations.length)return;
   const signature=collocations.map(c=>`${c.ko}\u0000${c.zh||''}`).join('\u0001');
   if(block.dataset.kwfCollocationSignature===signature)return;
@@ -424,7 +424,7 @@ async function rebuildCardV3(){
     const exampleZh=document.createElement('small');
     exampleZh.textContent=txt(sourceScroll.querySelector('.kwf-v2-example .sentence + p,.kwf-v2-example small'));
     if(exampleKo.textContent||exampleZh.textContent)knowledge.appendChild(block('kwf-v2-example','例句',[exampleKo,exampleZh.textContent?exampleZh:null]));
-    const collocations=(entry?.senses||[]).flatMap(s=>(s.collocations||[]).map(c=>({...c,zh:c?.zh&&c.zh!==s.glossZh?c.zh:''}))).filter(c=>c?.ko);
+    const collocations=(entry?.senses||[]).flatMap(s=>(s.collocations||[]).map(c=>({...c,zh:c?.zh||''}))).filter(c=>c?.ko);
     const collocationNodes=collocations.flatMap(c=>{const ko=document.createElement('p');ko.textContent=`• ${c.ko}`;if(!c.zh)return [ko];const zh=document.createElement('small');zh.textContent=c.zh;return [ko,zh];});
     if(!collocationNodes.length){
       const fallbackKo=txt(sourceScroll.querySelector('.kwf-v2-collocation p'));
@@ -521,7 +521,7 @@ async function rebuildRevealCard(){
   const definition=document.createElement('p'); definition.textContent=txt(sourceScroll.querySelector('.kwf-v2-definition h4'))||txt(sourceScroll.querySelector('h4'));
   const exampleKo=document.createElement('p'); exampleKo.textContent=txt(sourceScroll.querySelector('.kwf-v2-example .sentence,.kwf-v2-example p'));
   const exampleZh=document.createElement('small'); exampleZh.textContent=txt(sourceScroll.querySelector('.kwf-v2-example .sentence + p,.kwf-v2-example small'));
-  const collocations=(entry?.senses||[]).flatMap(s=>(s.collocations||[]).map(c=>({...c,zh:c?.zh&&c.zh!==s.glossZh?c.zh:''}))).filter(c=>c?.ko);
+  const collocations=(entry?.senses||[]).flatMap(s=>(s.collocations||[]).map(c=>({...c,zh:c?.zh||''}))).filter(c=>c?.ko);
   const collocationNodes=collocations.flatMap(c=>{const ko=document.createElement('p'); ko.textContent=`• ${c.ko}`; if(!c.zh)return [ko]; const zh=document.createElement('small'); zh.textContent=c.zh; return [ko,zh];});
   if(!collocationNodes.length){
     const fallbackKo=txt(sourceScroll.querySelector('.kwf-v2-collocation p'));

@@ -33,7 +33,7 @@
         "senses": { "type": "array", "items": { "$ref": "#/$defs/Sense" }, "minItems": 1 },
         "source": { "type": "string" },
         "verifiedAt": { "type": ["string", "null"] },
-        "verificationStatus": { "enum": ["draft", "reviewed", "approved"] },
+        "verificationStatus": { "enum": ["draft", "needs_review", "reviewed", "approved"] },
         "qualityScore": { "$ref": "#/$defs/QualityScore" }
       }
     },

@@ -5,6 +5,8 @@ const args = process.argv.slice(2);
 const inputPath = args.find(arg => !arg.startsWith('--')) || 'data/vocabulary.json';
 const reportFlag = args.find(arg => arg.startsWith('--report='));
 const reportPath = reportFlag?.split('=')[1] || null;
+const rawFlag = args.find(arg => arg.startsWith('--raw='));
+const rawPath = rawFlag?.split('=')[1] || null;
 const strict = args.includes('--strict');
 
 const payload = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
@@ -68,6 +70,83 @@ function addCollocationLevel(level, key) {
   const normalized = level || 'unknown';
   collocationZhStats.byLevel[normalized] ||= { total: 0, withZh: 0, missingZh: 0, fallbackToGloss: 0 };
   collocationZhStats.byLevel[normalized][key] += 1;
+}
+
+function normalizeRawLevel(value) {
+  return `TOPIK-${Number(String(value || 1).replace(/[^0-9]/g, '')) || 1}`;
+}
+
+function auditRawExpansion(rawInputPath, publishedEntries) {
+  if (!rawInputPath) return null;
+  const rawPayload = JSON.parse(fs.readFileSync(rawInputPath, 'utf8'));
+  const rawEntries = Array.isArray(rawPayload) ? rawPayload : rawPayload.entries || [];
+  const publishedHeadwords = new Set(publishedEntries.map(entry => entry.headword));
+  const seenIds = new Set();
+  const seenHeadwords = new Set();
+  const duplicateLexicalIds = [];
+  const duplicateHeadwords = [];
+  const missingTopikLevel = [];
+  const missingRomanization = [];
+  const missingGlossZh = [];
+  const byStatus = {};
+  const byLevel = {};
+  const rows = [];
+
+  for (const [index, entry] of rawEntries.entries()) {
+    const status = entry.verificationStatus || (entry.needsReview ? 'needs_review' : 'approved');
+    const rawId = entry.id || entry.lexicalEntryId || `raw-${index + 1}`;
+    const levels = entry.levels?.length ? entry.levels : [entry.level];
+    const normalizedLevels = levels.map(normalizeRawLevel);
+    byStatus[status] = (byStatus[status] || 0) + 1;
+    for (const level of normalizedLevels) byLevel[level] = (byLevel[level] || 0) + 1;
+
+    const lexicalKey = entry.lexicalEntryId || entry.id || '';
+    if (lexicalKey) {
+      if (seenIds.has(lexicalKey)) duplicateLexicalIds.push(lexicalKey);
+      seenIds.add(lexicalKey);
+    }
+    if (entry.headword) {
+      if (seenHeadwords.has(entry.headword)) duplicateHeadwords.push(entry.headword);
+      seenHeadwords.add(entry.headword);
+    }
+    if (!levels.length || !levels[0]) missingTopikLevel.push(rawId);
+    if (!entry.romanization && !entry.pronunciation?.romanization) missingRomanization.push(rawId);
+    const hasGloss = (entry.senses || []).some(sense => sense.gloss || sense.glossZh);
+    if (!hasGloss) missingGlossZh.push(rawId);
+    if (status !== 'approved') {
+      rows.push({
+        id: rawId,
+        headword: entry.headword || null,
+        status,
+        levels: normalizedLevels,
+        source: entry.source || null,
+        reasons: [
+          status === 'draft' ? 'draft entry is not published to learning queue' : '',
+          status === 'needs_review' ? 'entry needs human review before publishing' : '',
+          !levels.length || !levels[0] ? 'missing TOPIK level' : '',
+          !entry.romanization && !entry.pronunciation?.romanization ? 'missing romanization' : '',
+          !hasGloss ? 'missing glossZh' : ''
+        ].filter(Boolean)
+      });
+    }
+  }
+
+  return {
+    rawPath: rawInputPath,
+    totalRawEntries: rawEntries.length,
+    publishedEntries: publishedEntries.length,
+    newRawOnlyEntries: rawEntries.filter(entry => !publishedHeadwords.has(entry.headword)).length,
+    publishableApprovedEntries: byStatus.approved || 0,
+    pendingReviewEntries: (byStatus.needs_review || 0) + (byStatus.draft || 0),
+    byStatus,
+    byLevel,
+    duplicateLexicalIds,
+    duplicateHeadwords,
+    missingTopikLevel,
+    missingRomanization,
+    missingGlossZh,
+    reviewQueue: rows
+  };
 }
 
 function checkQualityScore(entry) {
@@ -201,6 +280,7 @@ const report = {
   },
   coverage,
   collocationZh: collocationZhStats,
+  expansion: auditRawExpansion(rawPath, entries || []),
   qualityBands: {
     approved: entries.filter(entry => entry.verificationStatus === 'approved').length,
     reviewed: entries.filter(entry => entry.verificationStatus === 'reviewed').length,

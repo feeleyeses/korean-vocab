@@ -1,5 +1,34 @@
 # Vocabulary Quality Report
 
+## 2026-09-01 TOPIK-1/2 Collocation Batch and Expansion Intake
+
+- Scope: continued the collocation meaning cleanup and started controlled TOPIK-1/2 expansion without UI changes.
+- Collocation batch: added 101 verified phrase-level `collocationZh` values across 100 high-confidence TOPIK-1/2 phrase rows, marked `EDITORIAL_REVIEW`.
+- Collocation publication rule: `collocation.zh` still publishes only from real phrase-level `collocationZh`; missing phrase meanings remain empty and never fallback to `sense.gloss`.
+- Published collocations with Chinese phrase meaning: 260/650.
+- Published collocations without Chinese phrase meaning: 390.
+- Detected fallback-to-sense-gloss rows after regeneration: 0.
+- Manual review queue: 390 rows.
+- Expansion intake: imported 120 TOPIK-1/2 raw draft entries from the TOPIK I source list after KRDict exact-headword Chinese lookup; skipped 52 already-existing or non-exact candidates.
+- Expansion status: 611 approved raw entries, 120 draft raw entries, 0 needs_review raw entries.
+- Publication boundary: `data/vocabulary.json` still publishes only the 611 approved entries and skips 120 draft entries.
+- Expansion draft distribution: TOPIK-1 81, TOPIK-2 39.
+- Expansion audit: 0 missing TOPIK level, 0 missing romanization, 0 missing glossZh, 0 duplicate lexicalEntryId; 15 historical duplicate headword warnings remain in raw for later lexical identity cleanup.
+- Blocking audit failures: 0.
+- Non-blocking quality warnings: 780.
+- Reports: `artifacts/vocab-quality-expansion-collocation.json`, `artifacts/vocabulary-expansion-import-report.json`, and `docs/collocation-manual-review-queue.md`.
+
+### Collocation zh by TOPIK Level
+
+| TOPIK | Total | With zh | Missing zh | Fallback to gloss |
+|---|---:|---:|---:|---:|
+| TOPIK-1 | 188 | 85 | 103 | 0 |
+| TOPIK-2 | 113 | 42 | 71 | 0 |
+| TOPIK-3 | 157 | 90 | 67 | 0 |
+| TOPIK-4 | 32 | 4 | 28 | 0 |
+| TOPIK-5 | 131 | 38 | 93 | 0 |
+| TOPIK-6 | 29 | 1 | 28 | 0 |
+
 ## 2026-09-01 Collocation Meaning Cleanup
 
 - Scope: fixed the collocation meaning data chain without UI style changes.

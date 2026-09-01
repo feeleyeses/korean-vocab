@@ -4,6 +4,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 
 ## 2026-09-01
 
+- Vocabulary Expansion Intake: added 120 TOPIK-1/2 draft entries to `data/vocabulary.raw.json`, kept draft entries out of `data/vocabulary.json`, added the expansion importer, raw expansion audit checks, regenerated the collocation manual review queue after 101 TOPIK-1/2 editorial phrase-meaning fixes, and adjusted runtime collocation mapping to trust audited `collocation.zh` instead of hiding exact phrase translations that equal the sense gloss.
 - Collocation Meaning Cleanup: removed the `sense.gloss` fallback from the vocabulary pipeline, applied 159 KRDict exact Chinese phrase meanings to `data/vocabulary.raw.json`, regenerated `data/vocabulary.json`, upgraded the quality audit with collocation-meaning fallback detection and TOPIK statistics, and added the manual review queue for unresolved collocations.
 
 ## 2026-08-30
