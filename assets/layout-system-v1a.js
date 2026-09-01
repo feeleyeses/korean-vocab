@@ -416,13 +416,17 @@ async function rebuildCardV3(){
     return section;
   };
   if(revealed){
+    const definitionText=txt(sourceScroll.querySelector('.kwf-v2-definition h4'))||txt(sourceScroll.querySelector('h4'));
+    const activeSense=(entry?.senses||[]).find(s=>s.glossZh===definitionText||s.gloss===definitionText)||entry?.senses?.[0]||null;
     const definition=document.createElement('p');
-    definition.textContent=txt(sourceScroll.querySelector('.kwf-v2-definition h4'))||txt(sourceScroll.querySelector('h4'));
+    definition.textContent=definitionText;
     if(definition.textContent)knowledge.appendChild(block('kwf-v2-definition','释义',[definition]));
     const exampleKo=document.createElement('p');
-    exampleKo.textContent=txt(sourceScroll.querySelector('.kwf-v2-example .sentence,.kwf-v2-example p'));
+    exampleKo.textContent=activeSense?.examples?.find(e=>e?.ko&&e?.ko!==activeSense.glossZh)?.ko||txt(sourceScroll.querySelector('.kwf-v2-example .sentence'));
     const exampleZh=document.createElement('small');
-    exampleZh.textContent=txt(sourceScroll.querySelector('.kwf-v2-example .sentence + p,.kwf-v2-example small'));
+    exampleZh.textContent=activeSense?.examples?.find(e=>e?.ko&&e?.ko===exampleKo.textContent)?.zh||txt(sourceScroll.querySelector('.kwf-v2-example .sentence + p,.kwf-v2-example small'));
+    if(exampleKo.textContent===definition.textContent)exampleKo.textContent='';
+    if(exampleZh.textContent===definition.textContent&&!exampleKo.textContent)exampleZh.textContent='';
     if(exampleKo.textContent||exampleZh.textContent)knowledge.appendChild(block('kwf-v2-example','例句',[exampleKo,exampleZh.textContent?exampleZh:null]));
     const collocations=(entry?.senses||[]).flatMap(s=>(s.collocations||[]).map(c=>({...c,zh:c?.zh||''}))).filter(c=>c?.ko);
     const collocationNodes=collocations.flatMap(c=>{const ko=document.createElement('p');ko.textContent=`• ${c.ko}`;if(!c.zh)return [ko];const zh=document.createElement('small');zh.textContent=c.zh;return [ko,zh];});
@@ -570,13 +574,16 @@ function injectBugfixStyles(){
     #study #study-card.kwf-card-v3-card{padding:0!important;overflow:hidden!important}
     #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{padding-bottom:20px!important}
     #study #study-card.kwf-card-v3-card .kwf-card-v3-continue{cursor:pointer!important;pointer-events:auto!important}
-    .kwf-mobile-review-menu{position:fixed;left:12px;right:12px;bottom:74px;z-index:90;display:grid;gap:8px;padding:12px;border:1px solid rgba(18,49,38,.16);border-radius:18px;background:#fffdf7;box-shadow:0 18px 44px rgba(18,49,38,.18)}
+    .kwf-mobile-review-menu{position:fixed;left:12px;right:12px;bottom:74px;z-index:90;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px;border:1px solid rgba(18,49,38,.16);border-radius:18px;background:#fffdf7;box-shadow:0 18px 44px rgba(18,49,38,.18)}
     .kwf-mobile-review-menu[hidden]{display:none!important}
     .kwf-mobile-review-menu button{width:100%;min-height:42px;border-radius:999px;white-space:nowrap;cursor:pointer}
     .kwf-toast{position:fixed;left:50%;bottom:86px;z-index:120;max-width:min(320px,calc(100vw - 32px));padding:10px 14px;border-radius:999px;background:#173d2e;color:#fffdf7;font:600 13px/1.35 Arial,"Noto Sans KR","Microsoft YaHei",sans-serif;box-shadow:0 14px 30px rgba(18,49,38,.22);transform:translateX(-50%);opacity:.98}
     .poly-secondary[data-kwf-disabled-review="true"],.review-subnav button[data-kwf-disabled-review="true"]{opacity:.55!important;cursor:not-allowed!important}
     @media (max-width:760px){
       html,body{overflow-x:hidden!important}
+      .hero .hero-copy{min-width:0!important}
+      .hero .hero-copy .hero-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-flow:column!important;gap:8px!important;align-items:center!important;width:100%!important;max-width:100%!important}
+      .hero .hero-copy .hero-actions button{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;width:100%!important;height:42px!important;min-height:42px!important;padding:0 8px!important;white-space:nowrap!important;font-size:12px!important;line-height:1!important}
       .mobile-tabbar{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:6px!important;padding:8px 10px calc(8px + env(safe-area-inset-bottom))!important}
       .mobile-tabbar>*{min-width:0!important;white-space:nowrap!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important;font-size:12px!important}
       .mobile-tabbar>button:nth-of-type(1){order:1!important}
@@ -585,25 +592,48 @@ function injectBugfixStyles(){
       .mobile-tabbar>button:nth-of-type(3){order:4!important}
       .study-wrap>.level-selector{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;padding:12px!important}
       .study-wrap>.level-selector>span{grid-column:1/-1!important}
-      .study-wrap>.level-selector>button{min-width:0!important;width:100%!important;height:36px!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
+      .study-wrap>.mode-switch{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;align-items:center!important}
+      .study-wrap>.mode-switch button{min-width:0!important;width:100%!important;height:34px!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
+      .study-wrap>.mode-switch span{grid-column:1/-1!important;font-size:12px!important;line-height:1.35!important}
+      .study-wrap>.study-tools{display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;min-height:36px!important;padding:8px 10px!important}
+      .study-wrap>.study-tools button{height:30px!important;min-height:30px!important;padding:0 12px!important;font-size:12px!important;white-space:nowrap!important}
+      .study-wrap>.study-tools span{font-size:12px!important;white-space:nowrap!important}
+      .study-wrap>.level-selector>button{min-width:0!important;width:100%!important;height:40px!important;padding:0 6px!important;font-size:11px!important;line-height:1.15!important;white-space:normal!important;text-align:center!important}
       .study-wrap>.study-settings{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
       .study-wrap>.study-settings>div{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;align-items:center!important}
       .study-wrap>.study-settings>div:nth-child(2){grid-template-columns:repeat(2,minmax(0,1fr))!important}
       .study-wrap>.study-settings span{grid-column:1/-1!important;white-space:nowrap!important}
       .study-wrap>.study-settings button{min-width:0!important;width:100%!important;height:34px!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
       .study-wrap>.study-settings p{min-height:40px!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+      #study{--kwf-action-h:46px!important;--kwf-primary-action-w:88px!important;--kwf-review-action-w:124px!important}
       #study #study-card.kwf-card-v3-card{height:520px!important;min-height:520px!important;max-height:520px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{padding-bottom:22px!important}
-      #study #study-card.kwf-card-v3-card .kwf-card-v3-review-actions{grid-template-columns:1fr!important;width:min(100%,var(--kwf-primary-action-group-w))!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-actions{width:280px!important;max-width:calc(100% - 36px)!important;grid-template-columns:repeat(3,88px)!important;justify-content:center!important;gap:8px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-actions button{width:88px!important;min-width:88px!important;max-width:88px!important;height:46px!important;min-height:46px!important;max-height:46px!important;padding:0 6px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-continue{width:280px!important;min-width:280px!important;max-width:calc(100% - 36px)!important;height:46px!important;min-height:46px!important;max-height:46px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-review-actions{display:grid!important;grid-template-columns:repeat(2,var(--kwf-review-action-w))!important;width:calc((2 * var(--kwf-review-action-w)) + var(--kwf-action-gap))!important;gap:8px var(--kwf-action-gap)!important;justify-content:center!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-review-actions button{width:var(--kwf-review-action-w)!important;min-width:var(--kwf-review-action-w)!important;max-width:var(--kwf-review-action-w)!important;height:46px!important;min-height:46px!important;padding:0 8px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-knowledge{overflow-y:auto!important;overscroll-behavior:contain!important;padding-right:2px!important}
       #poly-reference.kwf-poly-ref>summary{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:2px!important}
       #poly-reference.kwf-poly-ref>summary .kwf-poly-summary-title,#poly-reference.kwf-poly-ref>summary .kwf-poly-summary-count{display:block!important;white-space:normal!important;min-width:0!important}
-      #poly-reference .kwf-poly-ref-controls button,#poly-reference .kwf-poly-ref-bottom button{min-height:34px!important;padding:7px 10px!important;font-size:12px!important;white-space:nowrap!important}
+      #poly-reference.kwf-poly-ref{border-radius:18px!important}
+      #poly-reference .kwf-poly-ref-controls{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}
+      #poly-reference .kwf-poly-ref-controls>div{display:grid!important;grid-template-columns:44px repeat(4,minmax(0,1fr))!important;gap:6px!important;align-items:center!important}
+      #poly-reference .kwf-poly-ref-controls>div:first-child{grid-template-columns:44px repeat(3,minmax(0,1fr))!important}
+      #poly-reference .kwf-poly-ref-controls span{font-size:12px!important;white-space:nowrap!important}
+      #poly-reference .kwf-poly-ref-controls button,#poly-reference .kwf-poly-ref-bottom button{min-width:0!important;min-height:34px!important;padding:6px 6px!important;font-size:11px!important;line-height:1.15!important;white-space:normal!important;text-align:center!important}
       #poly-reference .kwf-poly-ref-bottom>div{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%!important;gap:8px!important}
       #learned-library-section .learned-card-actions .ghost{white-space:nowrap!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important;min-width:max-content!important}
       #learned-panel .learned-card-actions{display:flex!important;justify-content:flex-start!important;align-items:center!important;width:100%!important}
       #learned-panel .learned-card-actions .ghost{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:auto!important;min-width:132px!important;height:38px!important;padding:0 14px!important;white-space:nowrap!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important}
-      #learned-library-section .profile-level-progress{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;gap:8px!important;padding-bottom:4px!important}
-      #learned-library-section .profile-level-progress>button{flex:0 0 58px!important;min-width:58px!important;padding:8px!important}
+      #learned-panel.review-stat.learned-stat{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;grid-template-areas:"title count""desc desc""actions actions"!important;align-items:center!important;gap:8px 12px!important}
+      #learned-panel.review-stat.learned-stat>span{grid-area:title!important}
+      #learned-panel.review-stat.learned-stat>strong{grid-area:count!important;justify-self:end!important;line-height:1!important}
+      #learned-panel.review-stat.learned-stat>small{grid-area:desc!important;line-height:1.35!important}
+      #learned-panel.review-stat.learned-stat>.learned-card-actions{grid-area:actions!important}
+      #learned-library-section .profile-level-progress{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;overflow:visible!important;gap:8px!important;padding-bottom:4px!important}
+      #learned-library-section .profile-level-progress>span{grid-column:1/-1!important}
+      #learned-library-section .profile-level-progress>button{min-width:0!important;width:100%!important;padding:8px!important}
       #learned-library-section .archive-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
       #learned-library-section .archive-actions button{min-width:0!important;width:100%!important;white-space:nowrap!important;font-size:12px!important;padding:8px!important}
     }
@@ -621,9 +651,10 @@ function ensureTopikUnlock(){
   for(const button of document.querySelectorAll('.level-selector button')){
     const match=txt(button).match(/TOPIK\s*(\d)/);
     if(!match)continue;
-    button.disabled=false;
-    button.removeAttribute('disabled');
-    button.textContent=txt(button).replace(/\s*·\s*锁定/g,'');
+    if(button.disabled)button.disabled=false;
+    if(button.hasAttribute('disabled'))button.removeAttribute('disabled');
+    const label=txt(button);
+    if(label.includes('锁定'))button.textContent=label.replace(/\s*·\s*锁定/g,'');
   }
 }
 function ensureMobileLanding(){
@@ -712,22 +743,30 @@ function bindMobileReviewNav(){
   menu.className='kwf-mobile-review-menu';
   menu.hidden=true;
   menu.replaceChildren();
-  const enter=document.createElement('button');
-  enter.type='button';
-  enter.textContent='进入复习页';
+  const reviewItems=['复习·今日到期','复习·全量库','复习·急救包','复习·单个释义','复习·整词多选','复习·音变专项'];
+  const itemButtons=reviewItems.map(label=>{const button=document.createElement('button');button.type='button';button.textContent=label;return button;});
   const close=document.createElement('button');
   close.type='button';
   close.textContent='收起复习菜单';
-  menu.append(enter,close);
+  menu.append(...itemButtons,close);
   if(!menu.parentElement)document.body.appendChild(menu);
   window.__KWF_MOBILE_REVIEW_NAV_BOUND__=true;
   let lastTap=0;
-  const goReview=()=>{menu.hidden=true;document.querySelector('#review')?.scrollIntoView({block:'start'});history.replaceState(null,'','#review');};
-  enter.addEventListener('click',goReview);
+  const jumpTo=id=>{
+    const el=document.querySelector(id);
+    if(!el)return;
+    const top=Math.max(0,el.getBoundingClientRect().top+window.scrollY-8);
+    history.replaceState(null,'',id);
+    window.scrollTo({top,behavior:'auto'});
+    setTimeout(()=>window.scrollTo({top:Math.max(0,el.getBoundingClientRect().top+window.scrollY-8),behavior:'auto'}),80);
+  };
+  const goReview=()=>{menu.hidden=true;jumpTo('#review');};
+  for(const button of itemButtons)button.addEventListener('click',goReview);
   close.addEventListener('click',()=>{menu.hidden=true;});
   document.addEventListener('click',event=>{
     const target=event.target?.closest?.('.mobile-tabbar button,.mobile-tabbar a');
     if(!target)return;
+    if(target.closest('.mobile-tabbar'))return;
     const label=txt(target);
     if(label==='已学')target.textContent='词库';
     if(label!=='复习')return;
@@ -739,21 +778,48 @@ function bindMobileReviewNav(){
     lastTap=now;
     menu.hidden=!menu.hidden;
   },true);
-  const bindButtons=()=>{for(const button of document.querySelectorAll('.mobile-tabbar button')){if(txt(button)!=='复习')continue;button.onclick=event=>{event.preventDefault();event.stopPropagation();const now=Date.now();if(now-lastTap<360){lastTap=0;goReview();return false;}lastTap=now;menu.hidden=false;return false;};button.ondblclick=event=>{event.preventDefault();event.stopPropagation();goReview();return false;};}};
+  document.addEventListener('click',event=>{
+    if(!matchMedia('(max-width:760px)').matches)return;
+    const target=event.target?.closest?.('.mode-switch button');
+    if(!target||!/复习/.test(txt(target)))return;
+    event.preventDefault();
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    menu.hidden=!menu.hidden;
+  },true);
+  const bindButtons=()=>{for(const button of document.querySelectorAll('.mobile-tabbar button')){if(txt(button)!=='复习')continue;button.onclick=null;button.ondblclick=null;}};
   bindButtons();
   setTimeout(bindButtons,800);
   const tabbar=document.querySelector('.mobile-tabbar');
   if(tabbar&&!tabbar.dataset.kwfReviewCapture){
     tabbar.dataset.kwfReviewCapture='true';
-    tabbar.addEventListener('pointerup',event=>{
+    const handleTab=event=>{
+      const target=event.target?.closest?.('button,a');
+      if(!target)return;
+      const label=txt(target);
+      const isPoly=target.matches('a[href*="polysemy"]')||label==='多义';
+      const isLearned=label==='词库'||label==='已学';
+      const isStudy=label==='学习';
+      const isReview=label==='复习';
+      if(!isPoly&&!isLearned&&!isStudy&&!isReview)return;
+      event.preventDefault();
+      event.stopPropagation();
+      if(!isReview)menu.hidden=true;
+      if(isStudy){jumpTo('#study');return;}
+      if(isPoly){jumpTo('#polysemy');return;}
+      if(isLearned){jumpTo('#review');setTimeout(()=>document.querySelector('#learned-panel button')?.click(),120);return;}
+      const now=Date.now();
+      if(now-lastTap<360){lastTap=0;goReview();return;}
+      lastTap=now;
+      menu.hidden=!menu.hidden;
+    };
+    tabbar.addEventListener('click',handleTab,true);
+    tabbar.addEventListener('dblclick',event=>{
       const target=event.target?.closest?.('button');
       if(!target||txt(target)!=='复习')return;
       event.preventDefault();
       event.stopPropagation();
-      const now=Date.now();
-      if(now-lastTap<360){lastTap=0;goReview();return;}
-      lastTap=now;
-      menu.hidden=false;
+      goReview();
     },true);
   }
 }

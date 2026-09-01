@@ -225,6 +225,15 @@
 - TOPIK-5 review items before batch: 128.
 - TOPIK-6 review items before batch: 29.
 - Review items processed: 177 romanization normalization items.
+## 2026-09-02 Mobile Navigation and Polysemy Regression Fix
+
+- Scope: no vocabulary expansion and no new entries; this pass only verified the existing published vocabulary after mobile navigation, polysemy queue, and revealed-card mapping fixes.
+- Published vocabulary: 4020 approved lexical entries and 4059 senses.
+- Blocking audit failures: 0.
+- Non-blocking warnings: 7438.
+- Data guardrails confirmed: `data/vocabulary.json` still publishes only `approved` entries, `밥을` is absent from the published learning vocabulary, and collocation meaning fallback-to-gloss remains blocked by the audit.
+- UI/data mapping note: revealed-card examples now require a real example source; missing examples are left empty instead of borrowing `sense.gloss`.
+
 - Review items after batch: 0.
 - TOPIK-4 review items after batch: 0.
 - TOPIK-5 review items after batch: 0.
