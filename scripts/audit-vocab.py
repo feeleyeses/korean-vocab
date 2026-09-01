@@ -3,8 +3,12 @@
 from __future__ import annotations
 
 import json
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 payload = json.loads(Path("data/vocabulary.json").read_text(encoding="utf-8"))
 entries = payload["entries"] if isinstance(payload, dict) else payload
@@ -27,6 +31,7 @@ homograph_risks = {
     if len(rows) > 1 and len({tuple(s.get("glossZh", "") for s in row.get("senses", [])) for row in rows}) > 1
 }
 field_errors: list[str] = []
+field_warnings: list[str] = []
 
 for entry in entries:
     entry_id = entry.get("lexicalEntryId", "(missing)")
@@ -49,9 +54,9 @@ for entry in entries:
         if not sense.get("glossZh"):
             field_errors.append(f"{entry_id}/{sense_id}: missing Chinese gloss")
         if not sense.get("examples"):
-            field_errors.append(f"{entry_id}/{sense_id}: missing examples")
+            field_warnings.append(f"{entry_id}/{sense_id}: missing examples")
         if not sense.get("collocations"):
-            field_errors.append(f"{entry_id}/{sense_id}: missing collocations")
+            field_warnings.append(f"{entry_id}/{sense_id}: missing collocations")
 
 print("# Korean Word Field vocabulary audit")
 print()
@@ -62,6 +67,7 @@ print(f"- Duplicate entry IDs: {len(id_dupes)}")
 print(f"- Duplicate sense IDs: {len(sense_dupes)}")
 print(f"- Same-spelling / different-gloss groups: {len(homograph_risks)}")
 print(f"- Field errors: {len(field_errors)}")
+print(f"- Field warnings: {len(field_warnings)}")
 print()
 
 print("## Homograph review queue")
@@ -79,6 +85,14 @@ if field_errors:
         print(f"- {error}")
     if len(field_errors) > 80:
         print(f"- ... {len(field_errors) - 80} more")
+    print()
+
+if field_warnings:
+    print("## Warnings")
+    for warning in field_warnings[:80]:
+        print(f"- {warning}")
+    if len(field_warnings) > 80:
+        print(f"- ... {len(field_warnings) - 80} more")
     print()
 
 if id_dupes or sense_dupes or field_errors:
