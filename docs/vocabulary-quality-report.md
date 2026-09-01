@@ -1,5 +1,43 @@
 # Vocabulary Quality Report
 
+## 2026-09-01 Bulk TOPIK-5/6 Expansion and Collocation Cleanup
+
+- Scope: expanded the published learning vocabulary with a second TOPIK II batch while keeping UI Freeze.
+- Source: TOPIK II 2662 PDF (`https://learning-korean.com/DL/topik-2662.pdf`) plus KRDict exact-headword Chinese lookup.
+- Processing rule: auto-approved only exact KRDict headword matches with headword, part of speech, TOPIK level, romanization, and at least one Chinese gloss; ambiguous or non-exact candidates were skipped instead of forced into approved data.
+- Raw entries before batch: 2081.
+- Raw entries after batch: 2981.
+- New raw entries in this batch: 900.
+- New approved entries in this batch: 900.
+- Current published learning vocabulary: 2981 entries / 3020 senses.
+- Remaining distance to 6000 entries: 3019.
+- New TOPIK II approved distribution: TOPIK-5 450, TOPIK-6 450.
+- Current published primary-level distribution: TOPIK-1 603, TOPIK-2 302, TOPIK-3 567, TOPIK-4 449, TOPIK-5 581, TOPIK-6 479.
+- Current published all-level coverage distribution: TOPIK-1 603, TOPIK-2 303, TOPIK-3 575, TOPIK-4 455, TOPIK-5 581, TOPIK-6 479.
+- Current raw status: approved 2981, draft 0, needs_review 0.
+- Duplicate lexicalEntryId: 0.
+- Missing TOPIK level: 0.
+- Missing romanization: 0.
+- Missing glossZh: 0.
+- Historical duplicate headword warnings in raw: 15.
+- Collocation cleanup: filled 61 high-confidence manual-review phrase meanings with `EDITORIAL_REVIEW`; unresolved items stayed empty instead of falling back to headword or sense gloss.
+- Collocation fallback-to-gloss rows: 0.
+- Quality audit blocking failures: 0.
+- Quality audit warnings: 5398; previous total was 3720, so this batch added 1678 non-blocking warnings.
+- Warning type distribution: missing_collocation_zh 329, missing_collocation_verification 2699, missing_example_verification 2370.
+- Reports: `artifacts/vocab-quality-expansion-topik56-bulk.json`, `artifacts/vocabulary-expansion-topik56-bulk-report.json`, and `artifacts/collocation-zh-editorial-topik1-batch-report.json`.
+
+### Collocation zh by TOPIK Level
+
+| TOPIK | Total | With zh | Missing zh | Fallback to gloss |
+|---|---:|---:|---:|---:|
+| TOPIK-1 | 188 | 146 | 42 | 0 |
+| TOPIK-2 | 113 | 42 | 71 | 0 |
+| TOPIK-3 | 157 | 90 | 67 | 0 |
+| TOPIK-4 | 32 | 4 | 28 | 0 |
+| TOPIK-5 | 131 | 38 | 93 | 0 |
+| TOPIK-6 | 29 | 1 | 28 | 0 |
+
 ## 2026-09-01 Bulk TOPIK-3/4 Expansion
 
 - Scope: expanded the published learning vocabulary with TOPIK II candidates while keeping UI Freeze.

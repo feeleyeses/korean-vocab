@@ -6,8 +6,8 @@ Rows here should not be auto-filled. They need human review or a separate corpus
 
 ## Summary
 
-- Total manual/unavailable rows: 390
-- TOPIK-1: 103
+- Total manual/unavailable rows: 329
+- TOPIK-1: 42
 - TOPIK-2: 71
 - TOPIK-3: 67
 - TOPIK-4: 28
@@ -20,67 +20,6 @@ Rows here should not be auto-filled. They need human review or a separate corpus
 
 | Headword | Collocation | Current sense.gloss | Reason |
 |---|---|---|---|
-| 누구 | 누구와 같이 | 谁 | Needs manual phrase translation review |
-| 누나 | 우리 누나 | 姐姐（男用） | Needs manual phrase translation review |
-| 다르다 | ~와 다르다 | 不同 | Needs manual phrase translation review |
-| 다음 | 다음 시간 | 下一个；下次 | Needs manual phrase translation review |
-| 닫다 | 문을 닫다 | 关闭 | Needs manual phrase translation review |
-| 달 | 이번 달 | 月亮；月份 | Needs manual phrase translation review |
-| 닭 | 닭을 먹다 | 鸡 | Needs manual phrase translation review |
-| 도서관 | 도서관에 가다 | 图书馆 | Needs manual phrase translation review |
-| 돈 | 돈을 쓰다 | 钱 | Needs manual phrase translation review |
-| 동생 | 동생을 돌보다 | 弟弟；妹妹 | Needs manual phrase translation review |
-| 듣다 | 노래를 듣다 | 听 | Needs manual phrase translation review |
-| 따뜻하다 | 따뜻한 물 | 暖和 | Needs manual phrase translation review |
-| 딸 | 딸과 아들 | 女儿 | Needs manual phrase translation review |
-| 라디오 | 라디오 방송 | 收音机 | Needs manual phrase translation review |
-| 마시다 | 물을 마시다 | 喝 | Needs manual phrase translation review |
-| 마음 | 마음에 들다 | 喜欢；合意 | Needs manual phrase translation review |
-| 마음 | 마음이 편하다 | 心；内心 | Needs manual phrase translation review |
-| 만나다 | 사람을 만나다 | 见面 | Needs manual phrase translation review |
-| 많다 | 사람이 많다 | 多 | Needs manual phrase translation review |
-| 말하다 | 한국어로 말하다 | 说 | Needs manual phrase translation review |
-| 맛 | 맛이 좋다 | 味道 | Needs manual phrase translation review |
-| 맛있다 | 맛있는 음식 | 好吃 | Needs manual phrase translation review |
-| 머리 | 머리가 아프다 | 头；头发 | Needs manual phrase translation review |
-| 먹다 | 밥을 먹다 | 吃 | Needs manual phrase translation review |
-| 먹다 | 밥을 먹다 | 吃 | Needs manual phrase translation review |
-| 멀다 | 거리가 멀다 | 远 | Needs manual phrase translation review |
-| 메뉴 | 메뉴를 보다 | 菜单 | Needs manual phrase translation review |
-| 모자 | 모자를 쓰다 | 帽子 | Needs manual phrase translation review |
-| 목 | 목이 아프다 | 脖子；喉咙 | Needs manual phrase translation review |
-| 몸 | 몸이 좋지 않다 | 身体 | Needs manual phrase translation review |
-| 문 | 문을 열다 | 门 | Needs manual phrase translation review |
-| 물 | 물을 마시다 | 水 | Needs manual phrase translation review |
-| 바다 | 바다를 보다 | 海 | Needs manual phrase translation review |
-| 바지 | 바지를 입다 | 裤子 | Needs manual phrase translation review |
-| 밖 | 밖에 나가다 | 外面 | Needs manual phrase translation review |
-| 반 | 우리 반 | 班；半 | Needs manual phrase translation review |
-| 밥을 | 밥을 먹다 | 饭（宾格） | Needs manual phrase translation review |
-| 방 | 방을 청소하다 | 房间 | Needs manual phrase translation review |
-| 배 | 배가 고프다 | 肚子；船；梨 | Needs manual phrase translation review |
-| 배우다 | 언어를 배우다 | 学习 | Needs manual phrase translation review |
-| 별 | 별을 보다 | 星星 | Needs manual phrase translation review |
-| 보내다 | 시간을 보내다 | 发送；度过 | Needs manual phrase translation review |
-| 보다 | 사진을 보다 | 看 | Needs manual phrase translation review |
-| 봄 | 봄이 오다 | 春天 | Needs manual phrase translation review |
-| 부모님 | 부모님과 살다 | 父母 | Needs manual phrase translation review |
-| 분 | 십 분 | 分钟；位 | Needs manual phrase translation review |
-| 사과 | 사과를 하다 | 苹果；道歉 | Needs manual phrase translation review |
-| 사다 | 물건을 사다 | 买 | Needs manual phrase translation review |
-| 사람 | 많은 사람 | 人 | Needs manual phrase translation review |
-| 사진 | 사진을 찍다 | 照片 | Needs manual phrase translation review |
-| 산 | 산에 오르다 | 山 | Needs manual phrase translation review |
-| 새 | 새 신발 | 鸟；新的 | Needs manual phrase translation review |
-| 색 | 색이 예쁘다 | 颜色 | Needs manual phrase translation review |
-| 생각 | 생각이 나다 | 想法 | Needs manual phrase translation review |
-| 샤워하다 | 샤워를 하다 | 洗澡 | Needs manual phrase translation review |
-| 서다 | 줄을 서다 | 站；停 | Needs manual phrase translation review |
-| 서점 | 서점에 가다 | 书店 | Needs manual phrase translation review |
-| 선물 | 선물을 주다 | 礼物 | Needs manual phrase translation review |
-| 선생님 | 선생님께 묻다 | 老师 | Needs manual phrase translation review |
-| 쉬다 | 잠깐 쉬다 | 休息 | Needs manual phrase translation review |
-| 쉽다 | 쉽게 이해하다 | 容易 | Needs manual phrase translation review |
 | 시간 | 시간이 없다 | 时间 | Needs manual phrase translation review |
 | 시작하다 | 일을 시작하다 | 开始 | Needs manual phrase translation review |
 | 시장 | 시장에 가다 | 市场 | Needs manual phrase translation review |

@@ -109,7 +109,11 @@ function auditRawExpansion(rawInputPath, publishedEntries) {
   for (const [index, entry] of rawEntries.entries()) {
     const status = entry.verificationStatus || (entry.needsReview ? 'needs_review' : 'approved');
     const rawId = entry.id || entry.lexicalEntryId || `raw-${index + 1}`;
-    const levels = entry.levels?.length ? entry.levels : [entry.level];
+    const levels = Array.isArray(entry.levels) && entry.levels.length
+      ? entry.levels
+      : typeof entry.levels === 'string' && entry.levels
+        ? [entry.levels]
+        : [entry.level];
     const normalizedLevels = levels.map(normalizeRawLevel);
     byStatus[status] = (byStatus[status] || 0) + 1;
     for (const level of normalizedLevels) byLevel[level] = (byLevel[level] || 0) + 1;

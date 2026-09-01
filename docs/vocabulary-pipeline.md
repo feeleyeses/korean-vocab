@@ -22,6 +22,10 @@ New entries must pass this path before they enter the production vocabulary. The
   `node scripts/vocab-expansion-import.mjs --key=<KRDICT_API_KEY> --candidates=artifacts/topik-i-candidates.txt --limit=500 --status=approved --out=artifacts/vocabulary-expansion-bulk-report.json`
 - Import a bulk TOPIK-3/4 approved batch from exact TOPIK II KRDict hits:
   `node scripts/vocab-expansion-import.mjs --key=<KRDICT_API_KEY> --candidates=artifacts/topik-ii-candidates.txt --limit=850 --status=approved --levels=3,4 --source-url=https://learning-korean.com/DL/topik-2662.pdf --source-name=TOPIK_II_2662 --batch-id=2026-09-01-topik34-expansion-bulk --id-prefix=exp-tii --out=artifacts/vocabulary-expansion-topik34-bulk-report.json`
+- Import a bulk TOPIK-5/6 approved batch from exact TOPIK II KRDict hits:
+  `node scripts/vocab-expansion-import.mjs --key=<KRDICT_API_KEY> --candidates=artifacts/topik-ii-candidates.txt --limit=900 --status=approved --levels=5,6 --source-url=https://learning-korean.com/DL/topik-2662.pdf --source-name=TOPIK_II_2662 --batch-id=2026-09-01-topik56-expansion-bulk --id-prefix=exp-tii --out=artifacts/vocabulary-expansion-topik56-bulk-report.json`
+- Fill a reviewed collocation phrase-meaning batch without using headword or sense-gloss fallback:
+  `node scripts/fill-collocation-zh-batch.mjs data/vocabulary.raw.json artifacts/collocation-zh-editorial-topik1-batch-report.json`
 - Regenerate production data:
   `node scripts/vocab-pipeline.mjs data/vocabulary.raw.json data/vocabulary.json`
 - Regenerate the unresolved collocation queue:
