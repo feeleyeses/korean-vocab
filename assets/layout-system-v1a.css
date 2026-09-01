@@ -815,13 +815,10 @@ a.mobile-tab:hover {
   text-align: center !important;
 }
 #study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-hero {
-  gap: 4px !important;
-}
-#study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-word {
-  font: 800 clamp(36px, 3.2vw, 46px)/1 Arial, "Noto Sans KR", "Microsoft YaHei", sans-serif !important;
+  gap: 8px !important;
 }
 #study #study-card.revealed .kwf-card-v3-has-answer-map .kwf-card-v3-meta {
-  gap: 2px !important;
+  gap: 4px !important;
 }
 #study #study-card .kwf-card-v3-meta {
   display: grid !important;

@@ -11,9 +11,9 @@ function injectPolishStyles() {
     :root { --kwf-card-h: 500px !important; --kwf-word-h: 136px !important; --kwf-content-safe-w: 1180px !important; --kwf-page-pad-x: max(24px, calc((100vw - var(--kwf-content-safe-w)) / 2)) !important; --kwf-section-gap: 22px !important; --kwf-card-gap: 12px !important; --kwf-card-pad: 16px !important; --kwf-footer-pad: 18px !important; --kwf-action-h: 52px !important; --kwf-action-x: 24px !important; --kwf-action-gap: 8px !important; --kwf-primary-action-w: 134px !important; --kwf-primary-action-group-w: calc((3 * var(--kwf-primary-action-w)) + (2 * var(--kwf-action-gap))) !important; --kwf-secondary-action-w: 168px !important; --kwf-review-action-w: 206px !important; --kwf-hero-x: var(--kwf-page-pad-x) !important; --kwf-hero-bottom-gap: 24px !important; --kwf-review-container-w: var(--kwf-content-safe-w) !important; --kwf-filter-title-h: 16px !important; --kwf-filter-chip-h: 32px !important; --kwf-card-vpad: 0px !important; --kwf-card-content-align: center !important; --kwf-card-v2-block-gap:4px!important; --kwf-card-v2-inner-gap:4px!important; --kwf-card-v2-answer-max-w:560px!important; --kwf-card-v2-title-font:700 12px/1.1 Arial,"Noto Sans KR","Microsoft YaHei",sans-serif!important; --kwf-card-v2-body-font:600 15px/1.1 Arial,"Noto Sans KR","Microsoft YaHei",sans-serif!important; --kwf-card-v2-support-font:600 12px/1.1 Arial,"Noto Sans KR","Microsoft YaHei",sans-serif!important; --kwf-card-v2-block-pad:4px 10px!important; --kwf-card-v2-block-radius:12px!important; --kwf-card-v2-block-bg:rgba(255,253,247,.74)!important; --kwf-card-v2-block-border:1px solid rgba(34,56,44,.08)!important; --kwf-card-v2-pronunciation-clearance:0px!important; }
     .hero,.study-wrap,.polysemy,.review-hub,#review.review-hub { padding-left:var(--kwf-hero-x)!important; padding-right:var(--kwf-hero-x)!important; }
     .study-wrap,.polysemy,.review-hub { display:flex!important; flex-direction:column!important; gap:var(--kwf-section-gap)!important; box-sizing:border-box!important; }
-    .study-wrap>.section-heading,.study-wrap>.mode-switch,.study-wrap>.study-tools,.study-wrap>.deck-switch,.study-wrap>.level-selector,.study-wrap>.study-settings,.study-wrap>.unlock-panel,.study-wrap>.study-grid,.polysemy>.section-heading,.polysemy>.poly-actions,.polysemy>#poly-reference,#review .review-title,#review .review-board,#review .kwf-layout-review-stack { box-sizing:border-box!important; width:100%!important; max-width:var(--kwf-content-safe-w)!important; margin-left:auto!important; margin-right:auto!important; margin-top:0!important; margin-bottom:0!important; }
+    .study-wrap>.section-heading,.study-wrap>.mode-switch,.study-wrap>.study-tools,.study-wrap>.deck-switch,.study-wrap>.level-selector,.study-wrap>.study-settings,.study-wrap>.unlock-panel,.study-wrap>.study-grid,.study-wrap>.session-summary,.polysemy>.section-heading,.polysemy>.poly-actions,.polysemy>#poly-reference,#review .review-title,#review .review-board,#review .kwf-layout-review-stack { box-sizing:border-box!important; width:100%!important; max-width:var(--kwf-content-safe-w)!important; margin-left:auto!important; margin-right:auto!important; margin-top:0!important; margin-bottom:0!important; }
     .study-wrap>.section-heading,.polysemy>.section-heading,#review .review-title { align-self:center!important; }
-    .study-wrap>.level-selector{order:1!important}.study-wrap>.deck-switch{order:2!important}.study-wrap>.study-settings{order:3!important}.study-wrap>.mode-switch,.study-wrap>.study-tools{order:0!important}.study-wrap>.unlock-panel{order:4!important}.study-wrap>.study-grid{order:5!important}
+    .study-wrap>.level-selector{order:1!important}.study-wrap>.deck-switch{order:2!important}.study-wrap>.study-settings{order:3!important}.study-wrap>.mode-switch,.study-wrap>.study-tools{order:0!important}.study-wrap>.unlock-panel{order:4!important}.study-wrap>.study-grid,.study-wrap>.session-summary{order:5!important}
     .study-wrap>.deck-switch,.study-wrap>.level-selector,.study-wrap>.study-settings{margin-top:0!important;margin-bottom:0!important}
     .study-wrap>.study-settings{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto!important;align-items:center!important;gap:var(--kwf-card-gap)!important}
     .study-wrap>.study-settings>p{display:flex!important;align-items:center!important;align-self:stretch!important;margin:0!important;min-height:100%!important}
@@ -223,6 +223,7 @@ function cloneDetails(source,key=''){
   toggle.className='kwf-card-v3-answer-map-toggle';
   toggle.textContent=txt(source.querySelector(':scope > summary'))||'查看选项对应韩文';
   const list=source.querySelector('.option-map-list')?.cloneNode(true);
+  list?.querySelectorAll('small').forEach(el=>el.remove());
   if(list)clone.append(toggle,list); else clone.append(toggle);
   const setOpen=open=>{
     state.answerMap={key,open};
@@ -243,7 +244,7 @@ function normalizeAnswerMapClone(map){
   const open=map.classList.contains('is-open')||map.open;
   const summary=map.querySelector(':scope > summary, :scope > .kwf-card-v3-answer-map-toggle');
   const list=map.querySelector('.option-map-list');
-  const listH=window.matchMedia('(max-width: 560px)').matches?'108px':'118px';
+  const listH=window.matchMedia('(max-width: 560px)').matches?'116px':'126px';
   for(const [p,v] of [
     ['box-sizing','border-box'],['position','relative'],['inset','auto'],['display','block'],
     ['grid-template-rows','none'],['width','min(100%, var(--kwf-card-v2-answer-max-w))'],
@@ -279,11 +280,11 @@ function normalizeAnswerMapClone(map){
       for(const [p,v] of [
         ['box-sizing','border-box'],['display','grid'],['align-content','center'],['justify-items','center'],
         ['grid-template-areas','"ko" "zh"'],
-        ['min-width','0'],['min-height','0'],['height','auto'],['margin','0'],['padding','5px 7px'],
-        ['gap','3px'],['border-radius','12px'],['overflow','hidden'],['text-align','center']
+        ['min-width','0'],['min-height','0'],['height','auto'],['margin','0'],['padding','3px 7px'],
+        ['gap','2px'],['border-radius','12px'],['overflow','hidden'],['text-align','center']
       ])important(article,p,v);
-      for(const b of article.querySelectorAll('b')){important(b,'grid-area','zh');important(b,'font-size','10px');important(b,'line-height','1.05');}
-      for(const span of article.querySelectorAll('span')){important(span,'grid-area','ko');important(span,'font-size','13px');important(span,'line-height','1.08');}
+      for(const b of article.querySelectorAll('b')){important(b,'grid-area','zh');important(b,'font-size','10px');important(b,'line-height','1');}
+      for(const span of article.querySelectorAll('span')){important(span,'grid-area','ko');important(span,'font-size','13px');important(span,'line-height','1');}
       for(const small of article.querySelectorAll('small'))important(small,'display','none');
     }
   }
