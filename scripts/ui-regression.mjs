@@ -1,4 +1,9 @@
-const playwrightModule = await import(process.env.PLAYWRIGHT_MODULE || 'playwright').catch(() => import('playwright'));
+import { pathToFileURL } from 'node:url';
+
+const playwrightImport = process.env.PLAYWRIGHT_MODULE
+  ? pathToFileURL(process.env.PLAYWRIGHT_MODULE).href
+  : 'playwright';
+const playwrightModule = await import(playwrightImport).catch(() => import('playwright'));
 const { chromium } = playwrightModule.default || playwrightModule;
 const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH;
 
@@ -61,36 +66,38 @@ async function runViewport(viewport) {
   const label = `${viewport.width}x${viewport.height}`;
   const initial = await page.locator('#study-card').evaluate(card => {
     const cardRect = card.getBoundingClientRect();
-    const group = card.querySelector('.pre-answer > div');
+    const group = card.querySelector('.kwf-card-v3-actions') || card.querySelector('.pre-answer > div');
     const groupRect = group.getBoundingClientRect();
     const buttons = [...group.querySelectorAll('button')].map(button => button.getBoundingClientRect());
+    const railLeft = Math.min(...buttons.map(rect => rect.left));
+    const railRight = Math.max(...buttons.map(rect => rect.right));
     return {
       card: { width: cardRect.width, height: cardRect.height, center: (cardRect.left + cardRect.right) / 2 },
-      group: { width: groupRect.width, height: groupRect.height, center: (groupRect.left + groupRect.right) / 2, bottom: cardRect.bottom - groupRect.bottom },
+      group: { width: railRight - railLeft, height: groupRect.height, center: (railLeft + railRight) / 2, bottom: cardRect.bottom - groupRect.bottom },
       buttons: buttons.map(rect => ({ width: rect.width, height: rect.height }))
     };
   });
   check(`${label} initial card height`, Math.abs(initial.card.height - 500) <= 1, JSON.stringify(initial.card));
   check(`${label} initial button group centered`, Math.abs(initial.group.center - initial.card.center) <= 1, JSON.stringify(initial.group));
   check(`${label} initial buttons equal`, initial.buttons.every(button => Math.abs(button.height - initial.buttons[0].height) <= 0.5 && Math.abs(button.width - initial.buttons[0].width) <= 0.5), JSON.stringify(initial.buttons));
-  check(`${label} initial primary button token width`, Math.abs(initial.buttons[0].width - (viewport.width <= 900 ? 102 : 134)) <= 1, JSON.stringify(initial.buttons));
+  check(`${label} initial primary button token width`, Math.abs(initial.buttons[0].width - (viewport.width <= 900 ? 88 : 134)) <= 1, JSON.stringify(initial.buttons));
 
-  for (const button of await page.locator('#study-card .pre-answer > div > button').all()) {
+  for (const button of await page.locator('#study-card .kwf-card-v3-actions button:visible, #study-card .pre-answer > div > button:visible').all()) {
     await auditHoverGeometry(page, button, `${label} learn button`);
   }
-  await auditHoverGeometry(page, page.locator('#study-card .pre-answer > .show-shortcut'), `${label} reveal shortcut`);
+  await auditHoverGeometry(page, page.locator('#study-card .kwf-card-v3-shortcut:visible, #study-card .pre-answer > .show-shortcut:visible').first(), `${label} reveal shortcut`);
 
-  await page.locator('#study-card .pre-answer').getByRole('button', { name: '不认识', exact: true }).click();
+  await page.locator('#study-card .kwf-card-v3-actions:visible, #study-card .pre-answer:visible').getByRole('button', { name: '不认识', exact: true }).click();
   await page.waitForTimeout(350);
   const reveal = await page.locator('#study-card').evaluate(card => {
     const cardRect = card.getBoundingClientRect();
-    const button = card.querySelector('.continue').getBoundingClientRect();
+    const button = (card.querySelector('.kwf-card-v3-continue') || card.querySelector('.continue')).getBoundingClientRect();
     return { width: button.width, height: button.height, center: (button.left + button.right) / 2, bottom: cardRect.bottom - button.bottom };
   });
-  check(`${label} continue fixed width matches primary token`, Math.abs(reveal.width - initial.buttons[0].width) <= 1, JSON.stringify({ initial: initial.buttons[0], reveal }));
+  check(`${label} continue fixed width matches action rail`, Math.abs(reveal.width - initial.group.width) <= 1, JSON.stringify({ initial: initial.group, reveal }));
   check(`${label} continue same centerline`, Math.abs(reveal.center - initial.group.center) <= 1, JSON.stringify({ initial: initial.group, reveal }));
   check(`${label} continue height stable`, Math.abs(reveal.height - initial.buttons[0].height) <= 2, JSON.stringify(reveal));
-  await auditHoverGeometry(page, page.locator('#study-card .continue'), `${label} continue button`);
+  await auditHoverGeometry(page, page.locator('#study-card .kwf-card-v3-continue:visible, #study-card .continue:visible').first(), `${label} continue button`);
 
   const openLearned = page.getByRole('button', { name: /打开已学词库|查看已学词库/ }).first();
   await openLearned.evaluate(el => el.click());
@@ -119,13 +126,13 @@ async function runViewport(viewport) {
   if (await full.count() && !(await full.isDisabled())) {
     await full.evaluate(el => el.click());
     await page.waitForTimeout(350);
-    for (const button of await page.locator('#study-card .review-question > div > button').all()) {
+    for (const button of await page.locator('#study-card .kwf-card-v3-review-actions button:visible, #study-card .review-question > div > button:visible').all()) {
       await auditHoverGeometry(page, button, `${label} review button`);
     }
-    const firstReviewButton = page.locator('#study-card .review-question > div > button').first();
+    const firstReviewButton = page.locator('#study-card .kwf-card-v3-review-actions button:visible, #study-card .review-question > div > button:visible').first();
     await firstReviewButton.evaluate(el => el.click());
     await page.waitForTimeout(350);
-    const summary = page.locator('#study-card details.answer-map > summary');
+    const summary = page.locator('#study-card .kwf-card-v3-answer-toggle:visible, #study-card details.answer-map > summary:visible').first();
     if (await summary.count()) {
       await auditHoverGeometry(page, summary, `${label} answer map summary`);
     }
@@ -135,9 +142,12 @@ async function runViewport(viewport) {
 
   const scroll = await page.evaluate(() => ({
     bodyOverflow: document.body.scrollHeight - window.innerHeight,
-    internal: [...document.querySelectorAll('#study-card *')].filter(el => el.scrollHeight > el.clientHeight + 2 && getComputedStyle(el).overflowY !== 'visible').map(el => el.className || el.tagName)
+    internal: [...document.querySelectorAll('#study-card *')]
+      .filter(el => el.scrollHeight > el.clientHeight + 2 && getComputedStyle(el).overflowY !== 'visible')
+      .filter(el => !(el.classList && el.classList.contains('kwf-card-v3-knowledge')))
+      .map(el => el.className || el.tagName)
   }));
-  check(`${label} no internal scrollbars`, scroll.internal.length === 0, JSON.stringify(scroll));
+  check(`${label} no unexpected internal scrollbars`, scroll.internal.length === 0, JSON.stringify(scroll));
   await page.close();
 }
 
