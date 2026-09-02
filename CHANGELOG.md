@@ -5,6 +5,7 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 ## 2026-09-02
 
 - Mobile Navigation and Card Overflow Fixes: kept expansion paused, fixed mobile bottom-tab switching so `学习 / 多义 / 词库 / 复习` do not collapse into the polysemy page, restored review submenu open/close/double-tap behavior with six explicit review targets, removed the hardcoded polysemy `같다` fallback path, tightened mobile TOPIK/settings/learned-library overflow guards, and corrected revealed-card example mapping so missing examples are not faked from the sense gloss.
+- UI Regression Harness Update: aligned the Pages geometry check with the current visible v3 card shell, the full action-rail Continue width, and the allowed long-content knowledge-area overflow rule.
 - Headword Pollution Cleanup and Navigation Fixes: paused vocabulary expansion, added a suspect-headword scanner, moved 44 approved phrase/particle-polluted headwords into `needs_review` so `밥을` no longer publishes, regenerated `data/vocabulary.json`, unlocked TOPIK 1-6 selection, fixed mobile review navigation, restored TTS click behavior, guarded polysemy review queues against unlearned fallback entries, and tightened mobile overflow fixes for the learning settings, polysemy library, and learned-library controls.
 
 ## 2026-09-01
