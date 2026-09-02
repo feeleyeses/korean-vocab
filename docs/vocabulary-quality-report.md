@@ -1,5 +1,16 @@
 # Vocabulary Quality Report
 
+## 2026-09-02 Specific Mobile Regression Closure
+
+- Scope: no vocabulary expansion and no raw/published data changes; this pass only fixed rendering, navigation, and regression coverage.
+- Published learning vocabulary: 4020 entries / 4059 senses.
+- Targeted reveal validation: `교통사고` and `고등학교` hide dictionary-definition fallback examples; `같다` uses an internal knowledge-area scrollbar when collocations and sound rules exceed the available space.
+- Targeted polysemy validation: learning, single-sense review, and whole-word review each advanced through 5 items with fresh unsubmitted state and no auto-selected answers.
+- Mobile layout validation: main-content review secondary buttons wrap safely, review options keep 2x2 safe margins, the study help prompt is removed, and the collapsed polysemy library uses the same radius as the expanded card.
+- Quality audit blocking failures: 0.
+- Quality audit warnings: 7438.
+- Report: `artifacts/vocab-quality-specific-mobile-fix.json`.
+
 ## 2026-09-02 Mobile Long-Content and Polysemy Flow Fix
 
 - Scope: no vocabulary expansion and no raw/published data changes; this pass only fixed UI data mapping and queue behavior.

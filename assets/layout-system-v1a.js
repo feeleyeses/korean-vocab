@@ -149,7 +149,7 @@ function hideMisplacedPlacement(){ const study=document.querySelector('#study');
 
 function normalizeCard(){
   const card=document.querySelector('#study-card.study-card'); if(!card)return;
-  const mobile=matchMedia('(max-width:900px)').matches, cardH='500px', wordH=mobile?'132px':'136px', actionH=mobile?'50px':'52px', actionX=mobile?'14px':'24px', actionGap='8px', primaryActionW=mobile?'102px':'134px', secondaryActionW=mobile?'154px':'168px', reviewActionW=mobile?'158px':'206px', preActionGroupW=`calc((3 * ${primaryActionW}) + (2 * ${actionGap}))`, continueW=preActionGroupW, reviewActionGroupW=`calc((2 * ${reviewActionW}) + ${actionGap})`;
+  const mobile=matchMedia('(max-width:900px)').matches, cardH='500px', wordH=mobile?'132px':'136px', actionH=mobile?'50px':'52px', actionX=mobile?'14px':'24px', actionGap='8px', primaryActionW=mobile?'102px':'134px', secondaryActionW=mobile?'154px':'168px', reviewActionW=mobile?'142px':'206px', preActionGroupW=`calc((3 * ${primaryActionW}) + (2 * ${actionGap}))`, continueW=preActionGroupW, reviewActionGroupW=`calc((2 * ${reviewActionW}) + ${actionGap})`;
   const revealed=Boolean(card.querySelector('.answer,.compact-answer,.answer-scroll')), review=Boolean(card.querySelector('.review-question'))||/review-mode/.test(card.className);
   card.dataset.kwfLayoutSystem='layout-v1';card.dataset.kwfLayoutAuthority='layout-system'; card.dataset.kwfState=revealed?'revealed':'initial'; card.dataset.kwfMode=review?'review':'learn';
   for(const [p,v] of [['--kwf-card-h',cardH],['--kwf-action-h',actionH],['--kwf-action-x',actionX],['--kwf-action-gap',actionGap],['--kwf-primary-action-w',primaryActionW],['--kwf-primary-action-group-w',preActionGroupW],['--kwf-secondary-action-w',secondaryActionW],['--kwf-review-action-w',reviewActionW]])card.style.setProperty(p,v,'important');
@@ -585,7 +585,15 @@ function injectBugfixStyles(){
   style.id='kwf-critical-bugfixes';
   style.textContent=`
     #study #study-card.kwf-card-v3-card{padding:0!important;overflow:hidden!important}
-    #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{padding-bottom:20px!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3{box-sizing:border-box!important;display:grid!important;grid-template-rows:6px 50px minmax(0,1fr) 82px!important;width:100%!important;height:100%!important;min-height:0!important;max-height:100%!important;overflow:hidden!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-progress{grid-row:1!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-header{grid-row:2!important;min-height:0!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-content{grid-row:3!important;box-sizing:border-box!important;display:grid!important;grid-template-rows:auto auto minmax(0,1fr)!important;gap:8px!important;min-height:0!important;overflow:hidden!important;padding:8px 22px 0!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-hero{grid-row:1!important;min-height:0!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-status{grid-row:2!important;min-height:0!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-knowledge{grid-row:3!important;box-sizing:border-box!important;min-height:0!important;max-height:100%!important;overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-spacer{display:none!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{grid-row:4!important;box-sizing:border-box!important;display:flex!important;align-items:center!important;justify-content:center!important;min-height:0!important;height:82px!important;padding:10px 22px 20px!important;margin:0!important}
     #study #study-card.kwf-card-v3-card .kwf-card-v3-continue{cursor:pointer!important;pointer-events:auto!important}
     .kwf-mobile-review-menu{position:fixed;left:12px;right:12px;bottom:74px;z-index:90;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:10px;border:1px solid rgba(18,49,38,.16);border-radius:18px;background:#fffdf7;box-shadow:0 18px 44px rgba(18,49,38,.18)}
     .kwf-mobile-review-menu[hidden]{display:none!important}
@@ -595,6 +603,11 @@ function injectBugfixStyles(){
     .poly-secondary[data-kwf-disabled-review="true"],.review-subnav button[data-kwf-disabled-review="true"]{opacity:.55!important;cursor:not-allowed!important}
     @media (max-width:760px){
       html,body{overflow-x:hidden!important}
+      header.nav .brand{font-size:16px!important;gap:6px!important;white-space:nowrap!important}
+      header.nav .brand span{width:28px!important;height:28px!important;font-size:16px!important;flex:0 0 28px!important}
+      header.nav .nav-actions{gap:6px!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;min-width:0!important}
+      header.nav .nav-actions .mini{white-space:nowrap!important;width:auto!important;min-width:68px!important;max-width:98px!important;height:34px!important;min-height:34px!important;padding:0 8px!important;font-size:11px!important;line-height:1!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:4px!important}
+      header.nav .nav-actions .mini b{font-size:11px!important;line-height:1!important}
       .brand{font-size:18px!important;gap:8px!important}
       .brand span{width:32px!important;height:32px!important;font-size:18px!important}
       .stat-strip .pill,.stat-strip button,.hero .hero-copy .mini-stats>*{white-space:nowrap!important;font-size:12px!important;padding-inline:10px!important}
@@ -612,7 +625,7 @@ function injectBugfixStyles(){
       .study-wrap>.mode-switch{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;align-items:center!important}
       .study-wrap>.mode-switch button{min-width:0!important;width:100%!important;height:34px!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
       .study-wrap>.mode-switch span{grid-column:1/-1!important;font-size:12px!important;line-height:1.35!important}
-      .study-wrap>.study-tools{display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;min-height:36px!important;padding:8px 10px!important}
+      .study-wrap>.study-tools{display:none!important}
       .study-wrap>.study-tools button{height:30px!important;min-height:30px!important;padding:0 12px!important;font-size:12px!important;white-space:nowrap!important}
       .study-wrap>.study-tools span{font-size:12px!important;white-space:nowrap!important}
       .study-wrap>.level-selector>button{min-width:0!important;width:100%!important;height:40px!important;padding:0 6px!important;font-size:11px!important;line-height:1.15!important;white-space:normal!important;text-align:center!important}
@@ -622,9 +635,11 @@ function injectBugfixStyles(){
       .study-wrap>.study-settings span{grid-column:1/-1!important;white-space:nowrap!important}
       .study-wrap>.study-settings button{min-width:0!important;width:100%!important;height:34px!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
       .study-wrap>.study-settings p{min-height:40px!important;align-items:center!important;justify-content:center!important;text-align:center!important}
-      #study{--kwf-action-h:46px!important;--kwf-primary-action-w:88px!important;--kwf-review-action-w:112px!important}
+      #study{--kwf-action-h:46px!important;--kwf-primary-action-w:88px!important;--kwf-review-action-w:142px!important}
       #study #study-card.kwf-card-v3-card{height:520px!important;min-height:520px!important;max-height:520px!important}
-      #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{padding-bottom:22px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3{grid-template-rows:6px 48px minmax(0,1fr) 76px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-content{padding:6px 18px 0!important;gap:7px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{height:76px!important;padding:8px 18px 22px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-actions{width:280px!important;max-width:calc(100% - 36px)!important;grid-template-columns:repeat(3,88px)!important;justify-content:center!important;gap:8px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-actions button{width:88px!important;min-width:88px!important;max-width:88px!important;height:46px!important;min-height:46px!important;max-height:46px!important;padding:0 6px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-continue{width:280px!important;min-width:280px!important;max-width:calc(100% - 36px)!important;height:46px!important;min-height:46px!important;max-height:46px!important}
@@ -643,6 +658,9 @@ function injectBugfixStyles(){
       #poly-reference .kwf-poly-ref-controls span{font-size:12px!important;white-space:nowrap!important}
       #poly-reference .kwf-poly-ref-controls button,#poly-reference .kwf-poly-ref-bottom button{min-width:0!important;min-height:34px!important;padding:6px 6px!important;font-size:11px!important;line-height:1.15!important;white-space:normal!important;text-align:center!important}
       #poly-reference .kwf-poly-ref-bottom>div{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%!important;gap:8px!important}
+      #polysemy .poly-action-buttons{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+      #polysemy .poly-action-buttons .poly-primary{grid-column:1/-1!important}
+      #polysemy .poly-action-buttons .poly-secondary{min-width:0!important;width:100%!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
       #learned-library-section .learned-card-actions .ghost{white-space:nowrap!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important;min-width:max-content!important}
       #learned-panel .learned-card-actions{display:flex!important;justify-content:flex-start!important;align-items:center!important;width:100%!important}
       #learned-panel .learned-card-actions .ghost{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:auto!important;min-width:132px!important;height:38px!important;padding:0 14px!important;white-space:nowrap!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important}
