@@ -415,6 +415,16 @@ async function rebuildCardV3(){
     for(const node of nodes.filter(Boolean))section.appendChild(node);
     return section;
   };
+  const isRealExample=(ko,zh,sense)=>{
+    const k=(ko||'').trim(), z=(zh||'').trim();
+    const gloss=(sense?.glossZh||sense?.gloss||'').trim();
+    if(!k)return false;
+    if(k===gloss||z===gloss)return false;
+    if(!/[\uac00-\ud7a3]/u.test(k))return false;
+    if(!/[.!?。？！요다까니다]$/u.test(k))return false;
+    if(/또는|의미한다|가리키는|기관|시설|사람|직위|상태|행위|것\.?$/u.test(k))return false;
+    return true;
+  };
   if(revealed){
     const definitionText=txt(sourceScroll.querySelector('.kwf-v2-definition h4'))||txt(sourceScroll.querySelector('h4'));
     const activeSense=(entry?.senses||[]).find(s=>s.glossZh===definitionText||s.gloss===definitionText)||entry?.senses?.[0]||null;
@@ -422,12 +432,15 @@ async function rebuildCardV3(){
     definition.textContent=definitionText;
     if(definition.textContent)knowledge.appendChild(block('kwf-v2-definition','释义',[definition]));
     const exampleKo=document.createElement('p');
-    exampleKo.textContent=activeSense?.examples?.find(e=>e?.ko&&e?.ko!==activeSense.glossZh)?.ko||txt(sourceScroll.querySelector('.kwf-v2-example .sentence'));
+    const dataExample=activeSense?.examples?.find(e=>isRealExample(e?.ko,e?.zh,activeSense));
+    const domExampleKo=txt(sourceScroll.querySelector('.kwf-v2-example .sentence'));
+    const domExampleZh=txt(sourceScroll.querySelector('.kwf-v2-example .sentence + p,.kwf-v2-example small'));
+    exampleKo.textContent=dataExample?.ko||(isRealExample(domExampleKo,domExampleZh,activeSense)?domExampleKo:'');
     const exampleZh=document.createElement('small');
-    exampleZh.textContent=activeSense?.examples?.find(e=>e?.ko&&e?.ko===exampleKo.textContent)?.zh||txt(sourceScroll.querySelector('.kwf-v2-example .sentence + p,.kwf-v2-example small'));
+    exampleZh.textContent=dataExample?.zh||(exampleKo.textContent===domExampleKo?domExampleZh:'');
     if(exampleKo.textContent===definition.textContent)exampleKo.textContent='';
     if(exampleZh.textContent===definition.textContent&&!exampleKo.textContent)exampleZh.textContent='';
-    if(exampleKo.textContent||exampleZh.textContent)knowledge.appendChild(block('kwf-v2-example','例句',[exampleKo,exampleZh.textContent?exampleZh:null]));
+    if(exampleKo.textContent)knowledge.appendChild(block('kwf-v2-example','例句',[exampleKo,exampleZh.textContent?exampleZh:null]));
     const collocations=(entry?.senses||[]).flatMap(s=>(s.collocations||[]).map(c=>({...c,zh:c?.zh||''}))).filter(c=>c?.ko);
     const collocationNodes=collocations.flatMap(c=>{const ko=document.createElement('p');ko.textContent=`• ${c.ko}`;if(!c.zh)return [ko];const zh=document.createElement('small');zh.textContent=c.zh;return [ko,zh];});
     if(!collocationNodes.length){
@@ -574,13 +587,17 @@ function injectBugfixStyles(){
     #study #study-card.kwf-card-v3-card{padding:0!important;overflow:hidden!important}
     #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{padding-bottom:20px!important}
     #study #study-card.kwf-card-v3-card .kwf-card-v3-continue{cursor:pointer!important;pointer-events:auto!important}
-    .kwf-mobile-review-menu{position:fixed;left:12px;right:12px;bottom:74px;z-index:90;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px;border:1px solid rgba(18,49,38,.16);border-radius:18px;background:#fffdf7;box-shadow:0 18px 44px rgba(18,49,38,.18)}
+    .kwf-mobile-review-menu{position:fixed;left:12px;right:12px;bottom:74px;z-index:90;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:10px;border:1px solid rgba(18,49,38,.16);border-radius:18px;background:#fffdf7;box-shadow:0 18px 44px rgba(18,49,38,.18)}
     .kwf-mobile-review-menu[hidden]{display:none!important}
-    .kwf-mobile-review-menu button{width:100%;min-height:42px;border-radius:999px;white-space:nowrap;cursor:pointer}
+    .kwf-mobile-review-menu button{width:100%;min-height:34px;border-radius:999px;white-space:nowrap;cursor:pointer;font-size:11px;line-height:1}
+    .kwf-mobile-review-menu .kwf-mobile-review-close{grid-column:1/-1;justify-self:center;width:auto;min-width:128px;min-height:30px;padding:0 16px;font-size:10px}
     .kwf-toast{position:fixed;left:50%;bottom:86px;z-index:120;max-width:min(320px,calc(100vw - 32px));padding:10px 14px;border-radius:999px;background:#173d2e;color:#fffdf7;font:600 13px/1.35 Arial,"Noto Sans KR","Microsoft YaHei",sans-serif;box-shadow:0 14px 30px rgba(18,49,38,.22);transform:translateX(-50%);opacity:.98}
     .poly-secondary[data-kwf-disabled-review="true"],.review-subnav button[data-kwf-disabled-review="true"]{opacity:.55!important;cursor:not-allowed!important}
     @media (max-width:760px){
       html,body{overflow-x:hidden!important}
+      .brand{font-size:18px!important;gap:8px!important}
+      .brand span{width:32px!important;height:32px!important;font-size:18px!important}
+      .stat-strip .pill,.stat-strip button,.hero .hero-copy .mini-stats>*{white-space:nowrap!important;font-size:12px!important;padding-inline:10px!important}
       .hero .hero-copy{min-width:0!important}
       .hero .hero-copy .hero-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-flow:column!important;gap:8px!important;align-items:center!important;width:100%!important;max-width:100%!important}
       .hero .hero-copy .hero-actions button{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;width:100%!important;height:42px!important;min-height:42px!important;padding:0 8px!important;white-space:nowrap!important;font-size:12px!important;line-height:1!important}
@@ -605,7 +622,7 @@ function injectBugfixStyles(){
       .study-wrap>.study-settings span{grid-column:1/-1!important;white-space:nowrap!important}
       .study-wrap>.study-settings button{min-width:0!important;width:100%!important;height:34px!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
       .study-wrap>.study-settings p{min-height:40px!important;align-items:center!important;justify-content:center!important;text-align:center!important}
-      #study{--kwf-action-h:46px!important;--kwf-primary-action-w:88px!important;--kwf-review-action-w:124px!important}
+      #study{--kwf-action-h:46px!important;--kwf-primary-action-w:88px!important;--kwf-review-action-w:112px!important}
       #study #study-card.kwf-card-v3-card{height:520px!important;min-height:520px!important;max-height:520px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{padding-bottom:22px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-actions{width:280px!important;max-width:calc(100% - 36px)!important;grid-template-columns:repeat(3,88px)!important;justify-content:center!important;gap:8px!important}
@@ -613,10 +630,13 @@ function injectBugfixStyles(){
       #study #study-card.kwf-card-v3-card .kwf-card-v3-continue{width:280px!important;min-width:280px!important;max-width:calc(100% - 36px)!important;height:46px!important;min-height:46px!important;max-height:46px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-review-actions{display:grid!important;grid-template-columns:repeat(2,var(--kwf-review-action-w))!important;width:calc((2 * var(--kwf-review-action-w)) + var(--kwf-action-gap))!important;gap:8px var(--kwf-action-gap)!important;justify-content:center!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-review-actions button{width:var(--kwf-review-action-w)!important;min-width:var(--kwf-review-action-w)!important;max-width:var(--kwf-review-action-w)!important;height:46px!important;min-height:46px!important;padding:0 8px!important}
-      #study #study-card.kwf-card-v3-card .kwf-card-v3-knowledge{overflow-y:auto!important;overscroll-behavior:contain!important;padding-right:2px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-knowledge{overflow-y:auto!important;overscroll-behavior:contain!important;padding-right:4px!important;min-height:0!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-block{padding:10px 12px!important;gap:5px!important}
       #poly-reference.kwf-poly-ref>summary{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:2px!important}
       #poly-reference.kwf-poly-ref>summary .kwf-poly-summary-title,#poly-reference.kwf-poly-ref>summary .kwf-poly-summary-count{display:block!important;white-space:normal!important;min-width:0!important}
       #poly-reference.kwf-poly-ref{border-radius:18px!important}
+      #poly-trainer .poly-submit{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;align-items:center!important}
+      #poly-trainer .poly-submit button{min-width:0!important;width:100%!important;white-space:nowrap!important;font-size:12px!important;padding:8px 10px!important}
       #poly-reference .kwf-poly-ref-controls{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}
       #poly-reference .kwf-poly-ref-controls>div{display:grid!important;grid-template-columns:44px repeat(4,minmax(0,1fr))!important;gap:6px!important;align-items:center!important}
       #poly-reference .kwf-poly-ref-controls>div:first-child{grid-template-columns:44px repeat(3,minmax(0,1fr))!important}
@@ -748,6 +768,7 @@ function bindMobileReviewNav(){
   const close=document.createElement('button');
   close.type='button';
   close.textContent='收起复习菜单';
+  close.className='kwf-mobile-review-close';
   menu.append(...itemButtons,close);
   if(!menu.parentElement)document.body.appendChild(menu);
   window.__KWF_MOBILE_REVIEW_NAV_BOUND__=true;
@@ -761,7 +782,23 @@ function bindMobileReviewNav(){
     setTimeout(()=>window.scrollTo({top:Math.max(0,el.getBoundingClientRect().top+window.scrollY-8),behavior:'auto'}),80);
   };
   const goReview=()=>{menu.hidden=true;jumpTo('#review');};
-  for(const button of itemButtons)button.addEventListener('click',goReview);
+  const routeReviewItem=label=>{
+    menu.hidden=true;
+    const wantsPoly=/单个释义|整词多选/.test(label);
+    jumpTo(wantsPoly?'#polysemy':'#review');
+    const target=label.replace(/^复习·/,'').replace('今日到期','今日').replace('全量库','全量').replace('急救包','急救').replace('单个释义','单释义').replace('整词多选','整词').replace('音变专项','音变');
+    setTimeout(()=>{
+      if(wantsPoly){
+        const reference=document.querySelector('#poly-reference');
+        if(reference&&!reference.open)reference.querySelector('summary')?.click();
+      }
+      const candidates=[...document.querySelectorAll('#review .review-module-grid article button,#polysemy button,#poly-trainer button')];
+      const normalizedTarget=target.replace(/\s+/g,'');
+      const exact=candidates.find(button=>txt(button).replace(/\s+/g,'').includes(normalizedTarget)&&!button.disabled);
+      if(exact){exact.click();return;}
+    },wantsPoly?260:140);
+  };
+  for(const button of itemButtons)button.addEventListener('click',()=>routeReviewItem(txt(button)));
   close.addEventListener('click',()=>{menu.hidden=true;});
   document.addEventListener('click',event=>{
     const target=event.target?.closest?.('.mobile-tabbar button,.mobile-tabbar a');

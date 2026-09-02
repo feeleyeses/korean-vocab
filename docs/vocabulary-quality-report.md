@@ -1,5 +1,16 @@
 # Vocabulary Quality Report
 
+## 2026-09-02 Mobile Long-Content and Polysemy Flow Fix
+
+- Scope: no vocabulary expansion and no raw/published data changes; this pass only fixed UI data mapping and queue behavior.
+- Published learning vocabulary: 4020 entries / 4059 senses.
+- Example rendering rule: revealed cards now show only real examples; definition-like rows such as `고등학교` and `교통사고` are not displayed as examples.
+- Long-content rule: collocations and optional sound rules remain inside the knowledge area above the fixed Continue footer; the knowledge area scrolls only when content actually overflows.
+- Polysemy queue rule: learning uses unlearned polysemy senses, single-sense review uses real learned/due/weak sense records, and whole-word review advances through the active learned/weak queue without fixed `같다` / `잡다` fallback.
+- Quality audit blocking failures: 0.
+- Quality audit warnings: 7438.
+- Report: `artifacts/vocab-quality-mobile-polysemy-longcontent-fix.json`.
+
 ## 2026-09-02 Headword Pollution Cleanup
 
 - Scope: paused vocabulary expansion and removed polluted headwords from the approved learning queue.
