@@ -593,7 +593,9 @@ function injectBugfixStyles(){
     #study #study-card.kwf-card-v3-card .kwf-card-v3-status{grid-row:2!important;min-height:0!important}
     #study #study-card.kwf-card-v3-card .kwf-card-v3-knowledge{grid-row:3!important;box-sizing:border-box!important;min-height:0!important;max-height:100%!important;overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain!important}
     #study #study-card.kwf-card-v3-card .kwf-card-v3-spacer{display:none!important}
-    #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{grid-row:4!important;box-sizing:border-box!important;display:flex!important;align-items:center!important;justify-content:center!important;min-height:0!important;height:82px!important;padding:10px 22px 20px!important;margin:0!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{grid-row:4!important;box-sizing:border-box!important;position:relative!important;display:block!important;min-height:0!important;height:82px!important;padding:0 22px 20px!important;margin:0!important;--kwf-footer-action-bottom:20px}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-actions,#study #study-card.kwf-card-v3-card .kwf-card-v3-review-actions,#study #study-card.kwf-card-v3-card .kwf-card-v3-continue{position:absolute!important;left:50%!important;bottom:var(--kwf-footer-action-bottom)!important;transform:translateX(-50%)!important;margin:0!important}
+    #study #study-card.kwf-card-v3-card .kwf-card-v3-shortcut{position:absolute!important;left:50%!important;bottom:calc(var(--kwf-footer-action-bottom) + var(--kwf-action-h) + 8px)!important;transform:translateX(-50%)!important;margin:0!important}
     #study #study-card.kwf-card-v3-card .kwf-card-v3-continue{cursor:pointer!important;pointer-events:auto!important}
     .kwf-mobile-review-menu{position:fixed;left:12px;right:12px;bottom:74px;z-index:90;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:10px;border:1px solid rgba(18,49,38,.16);border-radius:18px;background:#fffdf7;box-shadow:0 18px 44px rgba(18,49,38,.18)}
     .kwf-mobile-review-menu[hidden]{display:none!important}
@@ -639,7 +641,7 @@ function injectBugfixStyles(){
       #study #study-card.kwf-card-v3-card{height:520px!important;min-height:520px!important;max-height:520px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3{grid-template-rows:6px 48px minmax(0,1fr) 76px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-content{padding:6px 18px 0!important;gap:7px!important}
-      #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{height:76px!important;padding:8px 18px 22px!important}
+      #study #study-card.kwf-card-v3-card .kwf-card-v3-footer{height:76px!important;padding:0 18px 22px!important;--kwf-footer-action-bottom:22px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-actions{width:280px!important;max-width:calc(100% - 36px)!important;grid-template-columns:repeat(3,88px)!important;justify-content:center!important;gap:8px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-actions button{width:88px!important;min-width:88px!important;max-width:88px!important;height:46px!important;min-height:46px!important;max-height:46px!important;padding:0 6px!important}
       #study #study-card.kwf-card-v3-card .kwf-card-v3-continue{width:280px!important;min-width:280px!important;max-width:calc(100% - 36px)!important;height:46px!important;min-height:46px!important;max-height:46px!important}
