@@ -660,7 +660,7 @@ function injectBugfixStyles(){
       #poly-reference .kwf-poly-ref-bottom>div{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%!important;gap:8px!important}
       #polysemy .poly-action-buttons{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
       #polysemy .poly-action-buttons .poly-primary{grid-column:1/-1!important}
-      #polysemy .poly-action-buttons .poly-secondary{min-width:0!important;width:100%!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
+      #polysemy .poly-action-buttons .poly-secondary{min-width:0!important;width:100%!important;height:34px!important;min-height:34px!important;padding:0 8px!important;font-size:12px!important;white-space:nowrap!important}
       #learned-library-section .learned-card-actions .ghost{white-space:nowrap!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important;min-width:max-content!important}
       #learned-panel .learned-card-actions{display:flex!important;justify-content:flex-start!important;align-items:center!important;width:100%!important}
       #learned-panel .learned-card-actions .ghost{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:auto!important;min-width:132px!important;height:38px!important;padding:0 14px!important;white-space:nowrap!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important}

@@ -1,4 +1,9 @@
-const playwrightModule = await import(process.env.PLAYWRIGHT_MODULE || 'playwright').catch(() => import('playwright'));
+import { pathToFileURL } from 'node:url';
+
+const playwrightImportTarget = process.env.PLAYWRIGHT_MODULE
+  ? pathToFileURL(process.env.PLAYWRIGHT_MODULE).href
+  : 'playwright';
+const playwrightModule = await import(playwrightImportTarget).catch(() => import('playwright'));
 const { chromium } = playwrightModule.default || playwrightModule;
 const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH;
 
@@ -45,7 +50,15 @@ await expect('legacy layout markers removed', async () => {
   const count = await mobile.evaluate(() => document.querySelectorAll('[class*="kwf-v2"],[class*="kwf-v3"]').length);
   return { ok: count === 0, detail: `legacy=${count}` };
 });
-await checkChange(mobile, '怎么学', mobile.getByRole('button', { name: '怎么学' }), async () => String(await mobile.getByRole('button', { name: '怎么学' }).getAttribute('aria-expanded')));
+await expect('学习规则入口已移除', async () => {
+  const count = await mobile.getByRole('button', { name: '怎么学' }).count();
+  const helperText = await mobile.getByText(/点击查看学习规则/).evaluateAll(nodes => nodes.filter(node => {
+    const style = getComputedStyle(node);
+    const rect = node.getBoundingClientRect();
+    return style.display !== 'none' && style.visibility !== 'hidden' && rect.width > 0 && rect.height > 0;
+  }).length);
+  return { ok: count === 0 && helperText === 0, detail: `button=${count}, visibleHelper=${helperText}` };
+});
 await checkChange(mobile, '直接看答案', mobile.getByRole('button', { name: '直接看答案' }), async () => `${(await mobile.locator('#study-card').innerText()).slice(-240)}|shortcut:${await mobile.getByRole('button', { name: '直接看答案' }).count()}`);
 await expect('学习卡无内部滚条', async () => {
   const data = await mobile.locator('#study-card').evaluate(card => {
