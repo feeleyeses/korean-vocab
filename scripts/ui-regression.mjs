@@ -87,6 +87,8 @@ async function runViewport(viewport) {
   }
   await auditHoverGeometry(page, page.locator('#study-card .kwf-card-v3-shortcut:visible, #study-card .pre-answer > .show-shortcut:visible').first(), `${label} reveal shortcut`);
 
+  await page.mouse.move(4, 4);
+  await page.waitForTimeout(120);
   await page.locator('#study-card .kwf-card-v3-actions:visible, #study-card .pre-answer:visible').getByRole('button', { name: '不认识', exact: true }).click();
   await page.waitForTimeout(350);
   const reveal = await page.locator('#study-card').evaluate(card => {
