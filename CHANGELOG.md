@@ -71,3 +71,10 @@ All meaningful product, UI, data, and pipeline changes must be recorded here.
 - Added canonical vocabulary model documentation for LexicalEntry, Sense, Example, Collocation, Pronunciation, and Quality Score.
 - Added vocabulary intake pipeline and non-destructive quality audit for future entries.
 - Updated browser smoke and regression checks to assert the unified layout authority after React redraws.
+# 2026-09-10 · D2 UI rebuild
+
+- Replaced the legacy pre-rendered UI and runtime style patches with a single React entry point.
+- Added shared D2 design tokens and reusable navigation, card, action rail, filter, progress, knowledge, and library components.
+- Rebuilt responsive home, learning, review, sound review, polysemy, and library flows for desktop and 390px mobile.
+- Preserved approved-only vocabulary loading, local learning records, scheduling, favorites, pronunciation, import, and export behavior.
+- Fixed real-example mapping, stable reveal rails, polysemy queue rotation, and per-question state reset.

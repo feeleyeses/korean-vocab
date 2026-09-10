@@ -50,3 +50,11 @@ Every bug fix must add or update a registry item before commit.
 | BUG-2026-09-04-002 | Fixed | UI regression harness | The Pages UI regression test could leave the mouse hovering over the learning action rail and then time out while waiting for the target button to become stable. | `scripts/ui-regression.mjs` now moves the pointer out of the card controls and waits briefly before the reveal click, preserving the real click path while avoiding hover-state test interference. |
 | BUG-2026-09-04-003 | Fixed | Polysemy answer state | Submitting a polysemy answer could update memory immediately, recompute the current queue, and render the previous submitted/selected state against the next word (`같다` result appearing on `계속`). | Multi-sense submit now freezes the current question result and stores memory as pending until the explicit next action applies it; `artifacts/polysemy-footer-regression.cjs` verifies `같다 -> submit -> next` plus five clean consecutive items. |
 | BUG-2026-09-04-004 | Fixed | Card footer rail | Learning initial action buttons, revealed Continue, and review initial option rows could resolve different vertical positions because footer children used normal flex flow. | The v3 card footer now uses one card-bottom action rail token so learning actions/Continue share exact top, bottom, height, and width, and the review initial second option row aligns with the revealed Continue rail. |
+# D2 UI rebuild verification · 2026-09-10
+
+- Closed: legacy green/yellow theme and competing runtime CSS sources.
+- Closed: mobile navigation depended on patched legacy event handlers.
+- Closed: learning reveal content could use a gloss as a fake example.
+- Closed: learning and review action rails changed height or vertical position after reveal.
+- Closed: polysemy sessions could repeatedly begin with the same first data item.
+- Closed: mobile library rows clipped, stacked, or switched to vertical text.
