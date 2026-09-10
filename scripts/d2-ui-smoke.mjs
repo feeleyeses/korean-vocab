@@ -1,0 +1,30 @@
+import {chromium} from 'playwright';
+import assert from 'node:assert/strict';
+const base=process.env.KWF_URL||'http://127.0.0.1:4173/';
+const browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{})});
+for(const cfg of [{name:'desktop',width:1440,height:950},{name:'mobile',width:390,height:844}]){
+  const page=await browser.newPage({viewport:{width:cfg.width,height:cfg.height},isMobile:cfg.name==='mobile'}),errors=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  await page.goto(`${base}?d2Smoke=${Date.now()}`,{waitUntil:'networkidle'});
+  assert.equal(await page.getByRole('heading',{name:/不只记住意思/}).count(),1);
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)<=1);
+  const nav=cfg.name==='mobile'?page.locator('.mobile-nav'):page.locator('.topbar nav');
+  assert.equal(await nav.getByRole('button').count(),4);
+  await page.getByRole('button',{name:/开始学习/}).first().click();
+  await page.getByRole('button',{name:'认识',exact:true}).click();
+  await page.getByRole('button',{name:/继续/}).waitFor();
+  await nav.getByRole('button',{name:'多义',exact:true}).click();
+  await page.getByRole('button',{name:/学习新多义/}).click();
+  await page.locator('.poly-option input').first().check();
+  await page.getByRole('button',{name:'提交所选释义'}).click();
+  await page.getByRole('button',{name:/下一题/}).click();
+  assert.equal(await page.locator('.poly-option input:checked').count(),0);
+  await nav.getByRole('button',{name:'词库',exact:true}).click();
+  assert.ok(await page.locator('.word-row').count()>0);
+  await nav.getByRole('button',{name:'复习',exact:true}).click();
+  assert.equal(await page.locator('.review-modes .button').count(),6);
+  assert.deepEqual(errors,[]);
+  await page.close();
+}
+await browser.close();
+console.log('PASS D2 desktop + 390px smoke');

@@ -1,33 +1,27 @@
 name: Deploy Korean Word Field
-
 on:
   push:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: korean-vocab-pages
   cancel-in-progress: true
-
 jobs:
   build-and-audit:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Audit vocabulary data
         shell: bash
         run: |
           set -euo pipefail
           python scripts/audit-vocab.py | tee vocab-audit.md
           cat vocab-audit.md >> "$GITHUB_STEP_SUMMARY"
-
       - name: Build static Pages artifact
         shell: bash
         run: |
@@ -35,34 +29,12 @@ jobs:
           rm -rf _site
           mkdir _site
           rsync -a ./ _site/ --exclude '.git' --exclude '.github' --exclude '_site' --exclude 'scripts' --exclude 'docs'
-          python - <<'PY'
-          from pathlib import Path
-          import re
-          p=Path('_site/index.html'); s=p.read_text(encoding='utf-8')
-          replacements={'"/assets/':'"assets/',"'/assets/":"'assets/",'\\"/assets/':'\\"assets/',"\\'/assets/":"\\'assets/",'import("/assets/':'import("./assets/',"import('/assets/":"import('./assets/",'import("assets/':'import("./assets/',"import('assets/":"import('./assets/",'href="/favicon.svg"':'href="favicon.svg"',"href='/favicon.svg'":"href='favicon.svg'",'\\"href\\":\\"/favicon.svg\\"':'\\"href\\":\\"favicon.svg\\"'}
-          for old,new in replacements.items(): s=s.replace(old,new)
-          s=re.sub(r'<script>\(function\(\)\{function c\(\).*?/cdn-cgi/challenge-platform/scripts/jsd/main\.js.*?</script>','',s,flags=re.S)
-          s=re.sub(r'<link[^>]+(?:study-card-v2|layout-v2|ui-v3(?:\.4)?)\.css[^>]*>','',s)
-          s=re.sub(r'<script[^>]+(?:study-card-v2|layout-v2|ui-v3(?:\.3|\.5|\.6|\.7|\.8)?)\.js[^>]*></script>','',s)
-          if 'layout-system-v1a.css' not in s:
-              s=s.replace('</head>','<link rel="stylesheet" href="assets/layout-system-v1a.css" data-kwf-layout-system-css="true"/></head>')
-          if 'layout-system-v1a.js' not in s:
-              s=s.replace('</body>','<script src="assets/layout-system-v1a.js" defer data-kwf-layout-system-js="true"></script></body>')
-          p.write_text(s,encoding='utf-8')
-          asset_base='korean-vocab/assets/'
-          for js in Path('_site/assets').glob('*.js'):
-              body=js.read_text(encoding='utf-8')
-              for old in ('"/assets/',"'/assets/",'`/assets/','"assets/',"'assets/",'`assets/'):
-                  quote=old[0];body=body.replace(old,quote+asset_base)
-              js.write_text(body,encoding='utf-8')
-          PY
           touch _site/.nojekyll
-          grep -q 'layout-system-v1a.css' _site/index.html
-          grep -q 'layout-system-v1a.js' _site/index.html
-          test -f _site/assets/layout-system-v1a.js
+          grep -q 'assets/app.css' _site/index.html
+          grep -q 'assets/app.js' _site/index.html
+          test -f _site/assets/app.css
+          test -f _site/assets/app.js
           test -f _site/data/vocabulary.json
-          grep -q 'import("./assets/index-' _site/index.html
-
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
@@ -70,9 +42,7 @@ jobs:
         with:
           path: _site
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
-
   smoke-check:
     needs: build-and-audit
     runs-on: ubuntu-latest
@@ -85,27 +55,16 @@ jobs:
           set -euo pipefail
           base='https://feeleyeses.github.io/korean-vocab/'; html=/tmp/kwf.html
           for i in 1 2 3 4 5 6; do
-            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html" && grep -q 'layout-system-v1a.js' "$html"; then break; fi
+            if curl -fsSL "$base" -o "$html" && grep -q '韩语词场' "$html" && grep -q 'assets/app.js' "$html"; then break; fi
             sleep 10
           done
-          grep -q 'layout-system-v1a.js' "$html"
-          curl -fsSL "${base}assets/layout-system-v1a.js" >/dev/null
+          grep -q 'assets/app.js' "$html"
+          curl -fsSL "${base}assets/app.js" >/dev/null
           curl -fsSL "${base}data/vocabulary.json" >/dev/null
-          curl -fsSL "${base}data/enrichment.json" >/dev/null
       - name: Install Playwright
         run: |
-          npm init -y >/dev/null 2>&1
           npm install --no-save playwright@1.55.0
           npx playwright install chromium --with-deps
-      - name: Browser interaction smoke test
+      - name: D2 interaction and geometry smoke
         env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
-        run: node scripts/browser-smoke.mjs
-      - name: UI geometry regression
-        env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
-        run: node scripts/ui-regression.mjs
-      - name: UI consistency audit
-        env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
-        run: node scripts/ui-consistency-audit.mjs
-      - name: Live DOM audit
-        env: { KWF_URL: 'https://feeleyeses.github.io/korean-vocab/' }
-        run: node scripts/dom-audit.mjs
+        run: node scripts/d2-ui-smoke.mjs
