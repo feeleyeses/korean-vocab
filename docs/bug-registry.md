@@ -2,6 +2,21 @@
 
 Every bug fix must add or update a registry item before commit.
 
+## D2 fixes · 2026-09-12
+
+| ID | Status | Fix and verification |
+| --- | --- | --- |
+| D2-0912-01 | Fixed | Empty polysemy result sections are not rendered; all-correct and missed/wrong browser cases covered. |
+| D2-0912-02 | Fixed | SenseCard contains a complete meaning with optional examples/collocations/rules; one-column full-meaning disclosure on both viewports. |
+| D2-0912-03 | Fixed | Page selection and filtered-result selection operate on actual IDs and survive pagination; drawer stages filters until Apply. |
+| D2-0912-04 | Fixed | POS mapping keeps original values but exposes only Chinese labels in dropdowns and rows. |
+| D2-0912-05 | Fixed | Review second row and Continue share exact top/bottom coordinates; mobile menu count changes cannot resize its rows. |
+| D2-0912-06 | Fixed | Learning footer remains fixed while long knowledge scrolls; option correspondence stays inside that scroll area. |
+| D2-0912-07 | Fixed | Polysemy review links enter their radio/checkbox modes, never ordinary review; session IDs reset local question state. |
+| D2-0912-08 | Fixed | Desktop Home has its own active tab; mobile brand returns home and retains four feature tabs. |
+
+Current D2 regression guard: `scripts/d2-ui-smoke.mjs`. The historical registry below describes retired UI versions.
+
 | ID | Status | Area | Summary | Guardrail |
 | --- | --- | --- | --- | --- |
 | BUG-2026-08-29-001 | Mitigated | Layout runtime | Multiple historical CSS/runtime files could compete over study/review/learned-card geometry after React redraws. | `assets/layout-system-v1a.css` and `assets/layout-system-v1a.js` are the only page-mounted Sprint 1 layout authority; tests assert `data-kwf-layout-authority="layout-system"`. |

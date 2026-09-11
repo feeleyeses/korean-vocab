@@ -2,6 +2,16 @@
 
 All meaningful product, UI, data, and pipeline changes must be recorded here.
 
+## 2026-09-12 · D2 cross-device interaction refinement
+
+- Added independent desktop Home navigation, retained four mobile feature tabs, and placed learning settings before TOPIK progress and today's summary.
+- Unified Lucide icons at 20/24px with a 1.8px stroke; localized POS display without changing source values.
+- Rendered only populated polysemy result sections and reused complete SenseCards for results, all-meaning disclosure, and expanded library entries.
+- Added page-wide / filtered-result bulk selection and a mobile filter drawer with draft filters, reset/apply, focus containment, and scroll restoration.
+- Rebuilt review footer sizing: desktop bottom padding 10→34px; mobile 48px options with 8px gap and 16px safe insets. Both review second-row and learning judgment rails exactly match their Continue states.
+- Routed both polysemy review modes into Polysemy, and remounted sessions when the session ID changes. Scheduling and vocabulary files are unchanged.
+- Validation: 1440×950 and 390×844 browser regression, 0px learning/review rail deltas, long-content scroll, perfect/missed/wrong results, reset on next, Chinese POS and 2,776 cross-page noun selections. No browser errors.
+
 ## 2026-09-02
 
 - Polysemy State and Footer Rail Fix: fixed the one-word-many-meanings submit flow so answering `같다` freezes and displays the current-word result until the explicit next action, then resets selected/submitted/result state for the next item; aligned learning initial actions, learning Continue, review initial second-row options, and review Continue onto the same card-bottom action rail without expanding vocabulary or changing unrelated UI.

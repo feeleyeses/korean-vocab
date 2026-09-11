@@ -3,7 +3,7 @@ export { schedule, intervalLabel, localDate } from './legacy-domain.js';
 
 export const levels = [1, 2, 3, 4, 5, 6];
 export const tags = [['all', '全部'], ['日常', '日常场景'], ['TOPIK', '书面/考试表达'], ['网络', '网络语境']];
-export const reviewModes = [['due','今日到期'], ['full','全量库'], ['sprint','急救包'], ['poly-single','单个释义'], ['poly-multi','整词多选'], ['sound','音变专项']];
+export const reviewModes = [['due','今日到期'], ['full','全量库'], ['sprint','急救包'], ['poly-single','一词多义（单选）'], ['poly-multi','一词多义（多选）'], ['sound','音变专项']];
 export function realExamples(sense) {
   return (sense.examples || []).filter(example => {
     const ko = example.ko?.trim(), zh = example.zh?.trim();

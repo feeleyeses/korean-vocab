@@ -29,13 +29,14 @@ function Question({item,index,total,mode,title,words,store,onNext}) {
   return <article className={`learning-card ${result?'revealed':'initial'}`} data-mode={mode} data-word={item.word.headword}>
     <header className="card-header"><div><span>{title} · TOPIK {item.sense.level}</span><small>{index+1} / {total} · 还剩 {total-index-1} 张</small></div><WordActions word={item.word} store={store}/></header>
     <WordHero word={item.word}/>
-    <div className="status-slot">{result&&<span className={`status ${review&&!result.isCorrect?'error':''}`}>{review?(result.isCorrect?<Check size={16}/>:<X size={16}/>):<Check size={16}/>} {review?(result.isCorrect?'答对':'答错'):({remember:'认识',fuzzy:'模糊',forgot:'不认识'})[result.rating]}<span>{intervalLabel(memory?.dueAt)}</span></span>}</div>
+    <div className="status-slot">{result&&<span className={`status ${review&&!result.isCorrect?'error':''}`}>{review?(result.isCorrect?<Check size={20}/>:<X size={20}/>):<Check size={20}/>} {review?(result.isCorrect?'答对':'答错'):({remember:'认识',fuzzy:'模糊',forgot:'不认识'})[result.rating]}<span>{intervalLabel(memory?.dueAt)}</span></span>}</div>
     <div className="content-area">
-      {result&&<div className="knowledge-scroll" tabIndex={0} aria-label="知识内容"><Knowledge word={item.word} sense={item.sense} allCollocations/></div>}
-      {result&&review&&<div className="answer-map"><Button variant="tertiary" aria-expanded={mapOpen} onClick={()=>setMapOpen(v=>!v)}>查看选项对应韩文{mapOpen?<ChevronDown size={16}/>:<ChevronUp size={16}/>}</Button>{mapOpen&&<div className="answer-map-overlay" role="region" aria-label="选项对应韩文"><div className="answer-map-grid">{options.map(o=><div className={`mapped-option ${o.id===item.sense.id?'correct':''}`} key={o.id}><strong lang="ko">{o.word.headword}</strong><span>{o.gloss}</span></div>)}</div></div>}</div>}
+      {result&&<div className="knowledge-scroll" tabIndex={0} aria-label="知识内容"><Knowledge word={item.word} sense={item.sense} allCollocations/>
+      {result&&review&&<div className="answer-map"><Button variant="tertiary" aria-expanded={mapOpen} onClick={()=>setMapOpen(v=>!v)}>查看选项对应韩文{mapOpen?<ChevronDown size={20}/>:<ChevronUp size={20}/>}</Button>{mapOpen&&<div className="answer-map-overlay" role="region" aria-label="选项对应韩文"><div className="answer-map-grid">{options.map(o=><div className={`mapped-option ${o.id===item.sense.id?'correct':''}`} key={o.id}><strong lang="ko">{o.word.headword}</strong><span>{o.gloss}</span></div>)}</div></div>}</div>}
+      </div>}
     </div>
-    <footer className="card-footer">
-      {result?<Button variant="primary" className="continue action-rail" onClick={onNext}>继续<ArrowRight size={18}/></Button>:review?<div className="review-options action-rail">{options.map(o=><Button key={o.id} className="choice" onClick={()=>answer(o.id)}>{o.gloss}</Button>)}</div>:<>
+    <footer className={`card-footer ${review?'review-action-rail':'learning-action-rail'}`}>
+      {result?<Button variant="primary" className="continue action-rail" onClick={onNext}>继续<ArrowRight size={20}/></Button>:review?<div className="review-options">{options.map(o=><Button key={o.id} className="choice" onClick={()=>answer(o.id)}>{o.gloss}</Button>)}</div>:<>
         <Button className="direct-answer" onClick={()=>answer('forgot')}>直接看答案</Button>
         <div className="judgment-buttons action-rail"><Button variant="primary" onClick={()=>answer('remember')}>认识</Button><Button variant="soft" onClick={()=>answer('fuzzy')}>模糊</Button><Button onClick={()=>answer('forgot')}>不认识</Button></div>
       </>}
