@@ -17,6 +17,18 @@ assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWid
 await page.screenshot({path:'artifacts/refinement-home-'+width+'.png',fullPage:true});
 await page.locator(width===390?'.mobile-nav':'.topbar nav').getByRole('button',{name:'复习',exact:true}).click();
 await page.screenshot({path:'artifacts/refinement-review-'+width+'.png',fullPage:true});
+await page.getByRole('button',{name:'开始今日复习',exact:true}).click();
+assert.equal(await page.locator('.empty-state').count(),1);
+assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+await page.locator(width===390?'.mobile-nav':'.topbar nav').getByRole('button',{name:'学习',exact:true}).click();
+const star=page.getByRole('button',{name:'收藏',exact:true});
+await star.click();
+assert.equal(await page.getByRole('button',{name:'取消收藏',exact:true}).locator('svg').getAttribute('fill'),'currentColor');
+await page.getByRole('button',{name:'取消收藏',exact:true}).click();
+await page.getByRole('button',{name:'听发音',exact:true}).click();
+assert.equal(await page.locator('.audio-pulse').count(),1);
+assert.equal(await page.locator('.progress-track>span').first().evaluate(e=>getComputedStyle(e).transitionProperty),'width');
+await page.screenshot({path:'artifacts/final-study-'+width+'.png'});
 await page.close();
 console.log(JSON.stringify({width,availability:true,zeroColor:true,overflow:false}));
 }}finally{await browser.close();}

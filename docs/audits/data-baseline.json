@@ -1,0 +1,1982 @@
+{
+  "dataset": "data/vocabulary.json",
+  "sha256": "6c925d748cf5aba66d038deca5554725dfb1d59dad72e3bddd9905ee11a439d2",
+  "publicationRule": "mapVocabulary: entry.verificationStatus === approved; no additional sense-level filtering",
+  "entries": 4020,
+  "senses": 4059,
+  "excludedEntries": 0,
+  "levels": [
+    {
+      "level": 1,
+      "entries": 596,
+      "senses": 597,
+      "sprint": 0,
+      "missingCollocationZh": 0
+    },
+    {
+      "level": 2,
+      "entries": 984,
+      "senses": 998,
+      "sprint": 0,
+      "missingCollocationZh": 52
+    },
+    {
+      "level": 3,
+      "entries": 882,
+      "senses": 889,
+      "sprint": 0,
+      "missingCollocationZh": 66
+    },
+    {
+      "level": 4,
+      "entries": 520,
+      "senses": 522,
+      "sprint": 0,
+      "missingCollocationZh": 27
+    },
+    {
+      "level": 5,
+      "entries": 574,
+      "senses": 574,
+      "sprint": 124,
+      "missingCollocationZh": 93
+    },
+    {
+      "level": 6,
+      "entries": 479,
+      "senses": 479,
+      "sprint": 29,
+      "missingCollocationZh": 28
+    }
+  ],
+  "polysemyWords": 18,
+  "senseGroups": 4059,
+  "polysemySenseGroups": 57,
+  "sensesMissingRealExamples": 3572,
+  "collocations": 606,
+  "missingCollocationZh": 266,
+  "missingCollocationVerification": 0,
+  "collocationsNotVerified": 266,
+  "soundRuleEntries": 53,
+  "metadata": {
+    "entries": {
+      "total": 4020,
+      "missingSource": 0,
+      "missingVerificationStatus": 0,
+      "missingAnyVerification": 0,
+      "verifiedTrue": 0
+    },
+    "senses": {
+      "total": 4059,
+      "missingSource": 4059,
+      "missingVerificationStatus": 4059,
+      "missingAnyVerification": 4059,
+      "verifiedTrue": 0
+    },
+    "examples": {
+      "total": 4059,
+      "missingSource": 0,
+      "missingVerificationStatus": 4059,
+      "missingAnyVerification": 0,
+      "verifiedTrue": 606
+    },
+    "collocations": {
+      "total": 606,
+      "missingSource": 266,
+      "missingVerificationStatus": 606,
+      "missingAnyVerification": 0,
+      "verifiedTrue": 340
+    },
+    "pronunciation": {
+      "total": 4020,
+      "missingSource": 4020,
+      "missingVerificationStatus": 4020,
+      "missingAnyVerification": 4020,
+      "verifiedTrue": 0
+    }
+  },
+  "fieldGaps": {
+    "headword": 0,
+    "partOfSpeech": 0,
+    "source": 0,
+    "verificationStatus": 0
+  },
+  "pronunciationGaps": {
+    "hangul": 0,
+    "romanization": 0,
+    "audio": 4020
+  },
+  "missingCollocationZhItems": [
+    {
+      "entryId": "ko-결과-018",
+      "senseId": "ko-결과-018-s1",
+      "collocationId": "ko-결과-018-s1-c1",
+      "ko": "결과가 나오다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-결정하다-019",
+      "senseId": "ko-결정하다-019-s1",
+      "collocationId": "ko-결정하다-019-s1-c1",
+      "ko": "결정을 내리다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-경험-020",
+      "senseId": "ko-경험-020-s1",
+      "collocationId": "ko-경험-020-s1-c1",
+      "ko": "경험이 많다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-관계-026",
+      "senseId": "ko-관계-026-s1",
+      "collocationId": "ko-관계-026-s1-c1",
+      "ko": "관계가 있다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-관심-027",
+      "senseId": "ko-관심-027-s1",
+      "collocationId": "ko-관심-027-s1-c1",
+      "ko": "관심을 가지다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-관심-027",
+      "senseId": "ko-관심-027-s2",
+      "collocationId": "ko-관심-027-s2-c1",
+      "ko": "관심을 가지다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-기회-035",
+      "senseId": "ko-기회-035-s1",
+      "collocationId": "ko-기회-035-s1-c1",
+      "ko": "기회를 잡다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-나누다-037",
+      "senseId": "ko-나누다-037-s1",
+      "collocationId": "ko-나누다-037-s1-c1",
+      "ko": "의견을 나누다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-내용-040",
+      "senseId": "ko-내용-040-s1",
+      "collocationId": "ko-내용-040-s1-c1",
+      "ko": "주요 내용",
+      "level": 3
+    },
+    {
+      "entryId": "ko-노력-041",
+      "senseId": "ko-노력-041-s1",
+      "collocationId": "ko-노력-041-s1-c1",
+      "ko": "노력을 하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-놓치다-042",
+      "senseId": "ko-놓치다-042-s1",
+      "collocationId": "ko-놓치다-042-s1-c1",
+      "ko": "기회를 놓치다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-느끼다-043",
+      "senseId": "ko-느끼다-043-s1",
+      "collocationId": "ko-느끼다-043-s1-c1",
+      "ko": "필요성을 느끼다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-대부분-045",
+      "senseId": "ko-대부분-045-s1",
+      "collocationId": "ko-대부분-045-s1-c1",
+      "ko": "대부분의 사람",
+      "level": 3
+    },
+    {
+      "entryId": "ko-방법-051",
+      "senseId": "ko-방법-051-s1",
+      "collocationId": "ko-방법-051-s1-c1",
+      "ko": "해결 방법",
+      "level": 2
+    },
+    {
+      "entryId": "ko-바꾸다-052",
+      "senseId": "ko-바꾸다-052-s1",
+      "collocationId": "ko-바꾸다-052-s1-c1",
+      "ko": "생각을 바꾸다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-반면-053",
+      "senseId": "ko-반면-053-s1",
+      "collocationId": "ko-반면-053-s1-c1",
+      "ko": "반면에 감소하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-발견하다-054",
+      "senseId": "ko-발견하다-054-s1",
+      "collocationId": "ko-발견하다-054-s1-c1",
+      "ko": "차이를 발견하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-발전-055",
+      "senseId": "ko-발전-055-s1",
+      "collocationId": "ko-발전-055-s1-c1",
+      "ko": "발전을 이루다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-방금-056",
+      "senseId": "ko-방금-056-s1",
+      "collocationId": "ko-방금-056-s1-c1",
+      "ko": "방금 전",
+      "level": 2
+    },
+    {
+      "entryId": "ko-방문하다-057",
+      "senseId": "ko-방문하다-057-s1",
+      "collocationId": "ko-방문하다-057-s1-c1",
+      "ko": "한국을 방문하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-변화-058",
+      "senseId": "ko-변화-058-s1",
+      "collocationId": "ko-변화-058-s1-c1",
+      "ko": "변화가 생기다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-보다-059",
+      "senseId": "ko-보다-059-s2",
+      "collocationId": "ko-보다-059-s2-c1",
+      "ko": "~아/어 보다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-보다-059",
+      "senseId": "ko-보다-059-s3",
+      "collocationId": "ko-보다-059-s3-c1",
+      "ko": "~보다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-보통-060",
+      "senseId": "ko-보통-060-s1",
+      "collocationId": "ko-보통-060-s1-c1",
+      "ko": "보통 사람",
+      "level": 2
+    },
+    {
+      "entryId": "ko-부족하다-061",
+      "senseId": "ko-부족하다-061-s1",
+      "collocationId": "ko-부족하다-061-s1-c1",
+      "ko": "시간이 부족하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-분위기-062",
+      "senseId": "ko-분위기-062-s1",
+      "collocationId": "ko-분위기-062-s1-c1",
+      "ko": "분위기를 만들다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-비교하다-063",
+      "senseId": "ko-비교하다-063-s1",
+      "collocationId": "ko-비교하다-063-s1-c1",
+      "ko": "가격을 비교하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-비슷하다-064",
+      "senseId": "ko-비슷하다-064-s1",
+      "collocationId": "ko-비슷하다-064-s1-c1",
+      "ko": "~와 비슷하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-사용하다-065",
+      "senseId": "ko-사용하다-065-s1",
+      "collocationId": "ko-사용하다-065-s1-c1",
+      "ko": "기계를 사용하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-선택하다-067",
+      "senseId": "ko-선택하다-067-s1",
+      "collocationId": "ko-선택하다-067-s1-c1",
+      "ko": "방법을 선택하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-설명하다-068",
+      "senseId": "ko-설명하다-068-s1",
+      "collocationId": "ko-설명하다-068-s1-c1",
+      "ko": "자세히 설명하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-성공-069",
+      "senseId": "ko-성공-069-s1",
+      "collocationId": "ko-성공-069-s1-c1",
+      "ko": "성공을 거두다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-소식-070",
+      "senseId": "ko-소식-070-s1",
+      "collocationId": "ko-소식-070-s1-c1",
+      "ko": "소식을 전하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-습관-071",
+      "senseId": "ko-습관-071-s1",
+      "collocationId": "ko-습관-071-s1-c1",
+      "ko": "습관을 기르다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-신청하다-073",
+      "senseId": "ko-신청하다-073-s1",
+      "collocationId": "ko-신청하다-073-s1-c1",
+      "ko": "수업을 신청하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-실수-074",
+      "senseId": "ko-실수-074-s1",
+      "collocationId": "ko-실수-074-s1-c1",
+      "ko": "실수를 줄이다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-연락하다-077",
+      "senseId": "ko-연락하다-077-s1",
+      "collocationId": "ko-연락하다-077-s1-c1",
+      "ko": "연락을 받다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-영향-078",
+      "senseId": "ko-영향-078-s1",
+      "collocationId": "ko-영향-078-s1-c1",
+      "ko": "영향을 미치다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-예상하다-079",
+      "senseId": "ko-예상하다-079-s1",
+      "collocationId": "ko-예상하다-079-s1-c1",
+      "ko": "예상보다 높다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-의견-080",
+      "senseId": "ko-의견-080-s1",
+      "collocationId": "ko-의견-080-s1-c1",
+      "ko": "의견을 제시하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-기여하다-081",
+      "senseId": "ko-기여하다-081-s1",
+      "collocationId": "ko-기여하다-081-s1-c1",
+      "ko": "발전에 기여하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-촉진하다-082",
+      "senseId": "ko-촉진하다-082-s1",
+      "collocationId": "ko-촉진하다-082-s1-c1",
+      "ko": "성장을 촉진하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-간주하다-083",
+      "senseId": "ko-간주하다-083-s1",
+      "collocationId": "ko-간주하다-083-s1-c1",
+      "ko": "문제로 간주하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-초래하다-084",
+      "senseId": "ko-초래하다-084-s1",
+      "collocationId": "ko-초래하다-084-s1-c1",
+      "ko": "문제를 초래하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-도모하다-085",
+      "senseId": "ko-도모하다-085-s1",
+      "collocationId": "ko-도모하다-085-s1-c1",
+      "ko": "협력을 도모하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-규명하다-086",
+      "senseId": "ko-규명하다-086-s1",
+      "collocationId": "ko-규명하다-086-s1-c1",
+      "ko": "원인을 규명하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-상충하다-087",
+      "senseId": "ko-상충하다-087-s1",
+      "collocationId": "ko-상충하다-087-s1-c1",
+      "ko": "이익이 상충하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-함축하다-088",
+      "senseId": "ko-함축하다-088-s1",
+      "collocationId": "ko-함축하다-088-s1-c1",
+      "ko": "의미를 함축하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-고찰하다-089",
+      "senseId": "ko-고찰하다-089-s1",
+      "collocationId": "ko-고찰하다-089-s1-c1",
+      "ko": "문제를 고찰하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-타당하다-090",
+      "senseId": "ko-타당하다-090-s1",
+      "collocationId": "ko-타당하다-090-s1-c1",
+      "ko": "근거가 타당하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-챙기다-091",
+      "senseId": "ko-챙기다-091-s1",
+      "collocationId": "ko-챙기다-091-s1-c1",
+      "ko": "짐을 챙기다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-챙기다-091",
+      "senseId": "ko-챙기다-091-s2",
+      "collocationId": "ko-챙기다-091-s2-c1",
+      "ko": "사람을 챙기다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-챙기다-091",
+      "senseId": "ko-챙기다-091-s3",
+      "collocationId": "ko-챙기다-091-s3-c1",
+      "ko": "실속을 챙기다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-눈치-092",
+      "senseId": "ko-눈치-092-s1",
+      "collocationId": "ko-눈치-092-s1-c1",
+      "ko": "눈치가 빠르다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-눈치-092",
+      "senseId": "ko-눈치-092-s2",
+      "collocationId": "ko-눈치-092-s2-c1",
+      "ko": "눈치를 보다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-억까-093",
+      "senseId": "ko-억까-093-s1",
+      "collocationId": "ko-억까-093-s1-c1",
+      "ko": "억까를 하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-킹받다-094",
+      "senseId": "ko-킹받다-094-s1",
+      "collocationId": "ko-킹받다-094-s1-c1",
+      "ko": "킹받네",
+      "level": 3
+    },
+    {
+      "entryId": "ko-알잘딱깔센-095",
+      "senseId": "ko-알잘딱깔센-095-s1",
+      "collocationId": "ko-알잘딱깔센-095-s1-c1",
+      "ko": "알잘딱깔센",
+      "level": 4
+    },
+    {
+      "entryId": "ko-꾸안꾸-096",
+      "senseId": "ko-꾸안꾸-096-s1",
+      "collocationId": "ko-꾸안꾸-096-s1-c1",
+      "ko": "꾸안꾸 패션",
+      "level": 3
+    },
+    {
+      "entryId": "ko-갑분싸-097",
+      "senseId": "ko-갑분싸-097-s1",
+      "collocationId": "ko-갑분싸-097-s1-c1",
+      "ko": "갑분싸가 되다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-손절-098",
+      "senseId": "ko-손절-098-s1",
+      "collocationId": "ko-손절-098-s1-c1",
+      "ko": "손절하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-최애-099",
+      "senseId": "ko-최애-099-s1",
+      "collocationId": "ko-최애-099-s1-c1",
+      "ko": "최애 멤버",
+      "level": 2
+    },
+    {
+      "entryId": "ko-입덕-100",
+      "senseId": "ko-입덕-100-s1",
+      "collocationId": "ko-입덕-100-s1-c1",
+      "ko": "입덕 계기",
+      "level": 2
+    },
+    {
+      "entryId": "ko-도전하다-106",
+      "senseId": "ko-도전하다-106-s1",
+      "collocationId": "ko-도전하다-106-s1-c1",
+      "ko": "목표에 도전하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-만족하다-107",
+      "senseId": "ko-만족하다-107-s1",
+      "collocationId": "ko-만족하다-107-s1-c1",
+      "ko": "결과에 만족하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-발표하다-108",
+      "senseId": "ko-발표하다-108-s1",
+      "collocationId": "ko-발표하다-108-s1-c1",
+      "ko": "결과를 발표하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-상황-109",
+      "senseId": "ko-상황-109-s1",
+      "collocationId": "ko-상황-109-s1-c1",
+      "ko": "상황을 파악하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-유지하다-110",
+      "senseId": "ko-유지하다-110-s1",
+      "collocationId": "ko-유지하다-110-s1-c1",
+      "ko": "관계를 유지하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-증가하다-111",
+      "senseId": "ko-증가하다-111-s1",
+      "collocationId": "ko-증가하다-111-s1-c1",
+      "ko": "수가 증가하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-차이-112",
+      "senseId": "ko-차이-112-s1",
+      "collocationId": "ko-차이-112-s1-c1",
+      "ko": "차이가 크다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-참여하다-113",
+      "senseId": "ko-참여하다-113-s1",
+      "collocationId": "ko-참여하다-113-s1-c1",
+      "ko": "활동에 참여하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-평가하다-114",
+      "senseId": "ko-평가하다-114-s1",
+      "collocationId": "ko-평가하다-114-s1-c1",
+      "ko": "능력을 평가하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-확대하다-115",
+      "senseId": "ko-확대하다-115-s1",
+      "collocationId": "ko-확대하다-115-s1-c1",
+      "ko": "범위를 확대하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-약속-126",
+      "senseId": "ko-약속-126-s1",
+      "collocationId": "ko-약속-126-s1-c1",
+      "ko": "약속을 지키다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-운동-127",
+      "senseId": "ko-운동-127-s1",
+      "collocationId": "ko-운동-127-s1-c1",
+      "ko": "운동을 하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-여행-128",
+      "senseId": "ko-여행-128-s1",
+      "collocationId": "ko-여행-128-s1-c1",
+      "ko": "여행을 떠나다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-음식-129",
+      "senseId": "ko-음식-129-s1",
+      "collocationId": "ko-음식-129-s1-c1",
+      "ko": "음식을 주문하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-병원-130",
+      "senseId": "ko-병원-130-s1",
+      "collocationId": "ko-병원-130-s1-c1",
+      "ko": "병원에 다니다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-회사-131",
+      "senseId": "ko-회사-131-s1",
+      "collocationId": "ko-회사-131-s1-c1",
+      "ko": "회사에 출근하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-질문-132",
+      "senseId": "ko-질문-132-s1",
+      "collocationId": "ko-질문-132-s1-c1",
+      "ko": "질문을 받다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-생활-135",
+      "senseId": "ko-생활-135-s1",
+      "collocationId": "ko-생활-135-s1-c1",
+      "ko": "생활이 편하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-휴대폰-173",
+      "senseId": "ko-휴대폰-173-s1",
+      "collocationId": "ko-휴대폰-173-s1-c1",
+      "ko": "휴대폰을 쓰다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-편하다-174",
+      "senseId": "ko-편하다-174-s1",
+      "collocationId": "ko-편하다-174-s1-c1",
+      "ko": "생활이 편하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-힘들다-175",
+      "senseId": "ko-힘들다-175-s1",
+      "collocationId": "ko-힘들다-175-s1-c1",
+      "ko": "몸이 힘들다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-시험-198",
+      "senseId": "ko-시험-198-s1",
+      "collocationId": "ko-시험-198-s1-c1",
+      "ko": "시험을 보다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-수업-199",
+      "senseId": "ko-수업-199-s1",
+      "collocationId": "ko-수업-199-s1-c1",
+      "ko": "수업을 듣다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-숙제-200",
+      "senseId": "ko-숙제-200-s1",
+      "collocationId": "ko-숙제-200-s1-c1",
+      "ko": "숙제를 하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-쓰다-202",
+      "senseId": "ko-쓰다-202-s2",
+      "collocationId": "ko-쓰다-202-s2-c1",
+      "ko": "표현을 쓰다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-쓰다-202",
+      "senseId": "ko-쓰다-202-s3",
+      "collocationId": "ko-쓰다-202-s3-c1",
+      "ko": "모자를 쓰다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-쓰다-202",
+      "senseId": "ko-쓰다-202-s4",
+      "collocationId": "ko-쓰다-202-s4-c1",
+      "ko": "맛이 쓰다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-먹다-206",
+      "senseId": "ko-먹다-206-s2",
+      "collocationId": "ko-먹다-206-s2-c1",
+      "ko": "시간을 먹다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-먹다-206",
+      "senseId": "ko-먹다-206-s3",
+      "collocationId": "ko-먹다-206-s3-c1",
+      "ko": "욕을 먹다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-빠르다-220",
+      "senseId": "ko-빠르다-220-s1",
+      "collocationId": "ko-빠르다-220-s1-c1",
+      "ko": "속도가 빠르다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-새롭다-222",
+      "senseId": "ko-새롭다-222-s1",
+      "collocationId": "ko-새롭다-222-s1-c1",
+      "ko": "새로운 경험",
+      "level": 2
+    },
+    {
+      "entryId": "ko-오래되다-223",
+      "senseId": "ko-오래되다-223-s1",
+      "collocationId": "ko-오래되다-223-s1-c1",
+      "ko": "오래된 친구",
+      "level": 2
+    },
+    {
+      "entryId": "ko-버리다-280",
+      "senseId": "ko-버리다-280-s1",
+      "collocationId": "ko-버리다-280-s1-c1",
+      "ko": "쓰레기를 버리다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-벌써-281",
+      "senseId": "ko-벌써-281-s1",
+      "collocationId": "ko-벌써-281-s1-c1",
+      "ko": "벌써 끝나다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-복잡하다-284",
+      "senseId": "ko-복잡하다-284-s1",
+      "collocationId": "ko-복잡하다-284-s1-c1",
+      "ko": "길이 복잡하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-불편하다-286",
+      "senseId": "ko-불편하다-286-s1",
+      "collocationId": "ko-불편하다-286-s1-c1",
+      "ko": "생활이 불편하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-빨래-287",
+      "senseId": "ko-빨래-287-s1",
+      "collocationId": "ko-빨래-287-s1-c1",
+      "ko": "빨래를 하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-사무실-289",
+      "senseId": "ko-사무실-289-s1",
+      "collocationId": "ko-사무실-289-s1-c1",
+      "ko": "사무실에 있다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-쟁점-296",
+      "senseId": "ko-쟁점-296-s1",
+      "collocationId": "ko-쟁점-296-s1-c1",
+      "ko": "주요 쟁점",
+      "level": 5
+    },
+    {
+      "entryId": "ko-완화하다-297",
+      "senseId": "ko-완화하다-297-s1",
+      "collocationId": "ko-완화하다-297-s1-c1",
+      "ko": "규제를 완화하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-제기하다-298",
+      "senseId": "ko-제기하다-298-s1",
+      "collocationId": "ko-제기하다-298-s1-c1",
+      "ko": "문제를 제기하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-반영하다-299",
+      "senseId": "ko-반영하다-299-s1",
+      "collocationId": "ko-반영하다-299-s1-c1",
+      "ko": "의견을 반영하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-부각되다-300",
+      "senseId": "ko-부각되다-300-s1",
+      "collocationId": "ko-부각되다-300-s1-c1",
+      "ko": "문제가 부각되다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-불가피하다-301",
+      "senseId": "ko-불가피하다-301-s1",
+      "collocationId": "ko-불가피하다-301-s1-c1",
+      "ko": "변화가 불가피하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-초점-302",
+      "senseId": "ko-초점-302-s1",
+      "collocationId": "ko-초점-302-s1-c1",
+      "ko": "초점을 맞추다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-토대-303",
+      "senseId": "ko-토대-303-s1",
+      "collocationId": "ko-토대-303-s1-c1",
+      "ko": "발전의 토대",
+      "level": 5
+    },
+    {
+      "entryId": "ko-저해하다-304",
+      "senseId": "ko-저해하다-304-s1",
+      "collocationId": "ko-저해하다-304-s1-c1",
+      "ko": "성장을 저해하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-수반하다-305",
+      "senseId": "ko-수반하다-305-s1",
+      "collocationId": "ko-수반하다-305-s1-c1",
+      "ko": "위험을 수반하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-상쇄하다-306",
+      "senseId": "ko-상쇄하다-306-s1",
+      "collocationId": "ko-상쇄하다-306-s1-c1",
+      "ko": "효과를 상쇄하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-유발하다-307",
+      "senseId": "ko-유발하다-307-s1",
+      "collocationId": "ko-유발하다-307-s1-c1",
+      "ko": "갈등을 유발하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-급증하다-308",
+      "senseId": "ko-급증하다-308-s1",
+      "collocationId": "ko-급증하다-308-s1-c1",
+      "ko": "수가 급증하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-감소하다-309",
+      "senseId": "ko-감소하다-309-s1",
+      "collocationId": "ko-감소하다-309-s1-c1",
+      "ko": "인구가 감소하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-대안-310",
+      "senseId": "ko-대안-310-s1",
+      "collocationId": "ko-대안-310-s1-c1",
+      "ko": "대안을 마련하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-방안-311",
+      "senseId": "ko-방안-311-s1",
+      "collocationId": "ko-방안-311-s1-c1",
+      "ko": "개선 방안",
+      "level": 5
+    },
+    {
+      "entryId": "ko-갈등-312",
+      "senseId": "ko-갈등-312-s1",
+      "collocationId": "ko-갈등-312-s1-c1",
+      "ko": "갈등을 해결하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-효율적-313",
+      "senseId": "ko-효율적-313-s1",
+      "collocationId": "ko-효율적-313-s1-c1",
+      "ko": "효율적인 방법",
+      "level": 5
+    },
+    {
+      "entryId": "ko-지속적-314",
+      "senseId": "ko-지속적-314-s1",
+      "collocationId": "ko-지속적-314-s1-c1",
+      "ko": "지속적인 노력",
+      "level": 5
+    },
+    {
+      "entryId": "ko-전반적-315",
+      "senseId": "ko-전반적-315-s1",
+      "collocationId": "ko-전반적-315-s1-c1",
+      "ko": "전반적인 변화",
+      "level": 6
+    },
+    {
+      "entryId": "ko-비롯하다-316",
+      "senseId": "ko-비롯하다-316-s1",
+      "collocationId": "ko-비롯하다-316-s1-c1",
+      "ko": "~을 비롯하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-대두되다-317",
+      "senseId": "ko-대두되다-317-s1",
+      "collocationId": "ko-대두되다-317-s1-c1",
+      "ko": "문제가 대두되다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-심화되다-318",
+      "senseId": "ko-심화되다-318-s1",
+      "collocationId": "ko-심화되다-318-s1-c1",
+      "ko": "갈등이 심화되다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-확산되다-319",
+      "senseId": "ko-확산되다-319-s1",
+      "collocationId": "ko-확산되다-319-s1-c1",
+      "ko": "문화가 확산되다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-저출산-320",
+      "senseId": "ko-저출산-320-s1",
+      "collocationId": "ko-저출산-320-s1-c1",
+      "ko": "저출산 문제",
+      "level": 5
+    },
+    {
+      "entryId": "ko-고령화-321",
+      "senseId": "ko-고령화-321-s1",
+      "collocationId": "ko-고령화-321-s1-c1",
+      "ko": "고령화 사회",
+      "level": 5
+    },
+    {
+      "entryId": "ko-양극화-322",
+      "senseId": "ko-양극화-322-s1",
+      "collocationId": "ko-양극화-322-s1-c1",
+      "ko": "양극화 현상",
+      "level": 5
+    },
+    {
+      "entryId": "ko-격차-323",
+      "senseId": "ko-격차-323-s1",
+      "collocationId": "ko-격차-323-s1-c1",
+      "ko": "격차를 줄이다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-부담-324",
+      "senseId": "ko-부담-324-s1",
+      "collocationId": "ko-부담-324-s1-c1",
+      "ko": "부담이 커지다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-인식-325",
+      "senseId": "ko-인식-325-s1",
+      "collocationId": "ko-인식-325-s1-c1",
+      "ko": "인식이 바뀌다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-관점-326",
+      "senseId": "ko-관점-326-s1",
+      "collocationId": "ko-관점-326-s1-c1",
+      "ko": "관점에서 보다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-추세-327",
+      "senseId": "ko-추세-327-s1",
+      "collocationId": "ko-추세-327-s1-c1",
+      "ko": "증가 추세",
+      "level": 5
+    },
+    {
+      "entryId": "ko-실태-328",
+      "senseId": "ko-실태-328-s1",
+      "collocationId": "ko-실태-328-s1-c1",
+      "ko": "실태 조사",
+      "level": 5
+    },
+    {
+      "entryId": "ko-개선하다-329",
+      "senseId": "ko-개선하다-329-s1",
+      "collocationId": "ko-개선하다-329-s1-c1",
+      "ko": "환경을 개선하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-보완하다-330",
+      "senseId": "ko-보완하다-330-s1",
+      "collocationId": "ko-보완하다-330-s1-c1",
+      "ko": "제도를 보완하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-강화하다-331",
+      "senseId": "ko-강화하다-331-s1",
+      "collocationId": "ko-강화하다-331-s1-c1",
+      "ko": "교육을 강화하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-마련하다-332",
+      "senseId": "ko-마련하다-332-s1",
+      "collocationId": "ko-마련하다-332-s1-c1",
+      "ko": "대책을 마련하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-도입하다-333",
+      "senseId": "ko-도입하다-333-s1",
+      "collocationId": "ko-도입하다-333-s1-c1",
+      "ko": "제도를 도입하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-제한하다-334",
+      "senseId": "ko-제한하다-334-s1",
+      "collocationId": "ko-제한하다-334-s1-c1",
+      "ko": "사용을 제한하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-촉구하다-335",
+      "senseId": "ko-촉구하다-335-s1",
+      "collocationId": "ko-촉구하다-335-s1-c1",
+      "ko": "대응을 촉구하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-시사하다-336",
+      "senseId": "ko-시사하다-336-s1",
+      "collocationId": "ko-시사하다-336-s1-c1",
+      "ko": "가능성을 시사하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-입증하다-337",
+      "senseId": "ko-입증하다-337-s1",
+      "collocationId": "ko-입증하다-337-s1-c1",
+      "ko": "효과를 입증하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-모색하다-338",
+      "senseId": "ko-모색하다-338-s1",
+      "collocationId": "ko-모색하다-338-s1-c1",
+      "ko": "방안을 모색하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-활성화하다-339",
+      "senseId": "ko-활성화하다-339-s1",
+      "collocationId": "ko-활성화하다-339-s1-c1",
+      "ko": "경제를 활성화하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-불균형-340",
+      "senseId": "ko-불균형-340-s1",
+      "collocationId": "ko-불균형-340-s1-c1",
+      "ko": "불균형을 해소하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-취약하다-341",
+      "senseId": "ko-취약하다-341-s1",
+      "collocationId": "ko-취약하다-341-s1-c1",
+      "ko": "구조가 취약하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-유의미하다-342",
+      "senseId": "ko-유의미하다-342-s1",
+      "collocationId": "ko-유의미하다-342-s1-c1",
+      "ko": "유의미한 결과",
+      "level": 6
+    },
+    {
+      "entryId": "ko-근거-343",
+      "senseId": "ko-근거-343-s1",
+      "collocationId": "ko-근거-343-s1-c1",
+      "ko": "근거를 제시하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-기준-344",
+      "senseId": "ko-기준-344-s1",
+      "collocationId": "ko-기준-344-s1-c1",
+      "ko": "기준을 정하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-반영하다-345",
+      "senseId": "ko-반영하다-345-s1",
+      "collocationId": "ko-반영하다-345-s1-c1",
+      "ko": "의견을 반영하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-제시하다-346",
+      "senseId": "ko-제시하다-346-s1",
+      "collocationId": "ko-제시하다-346-s1-c1",
+      "ko": "방안을 제시하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-확보하다-347",
+      "senseId": "ko-확보하다-347-s1",
+      "collocationId": "ko-확보하다-347-s1-c1",
+      "ko": "시간을 확보하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-완화하다-348",
+      "senseId": "ko-완화하다-348-s1",
+      "collocationId": "ko-완화하다-348-s1-c1",
+      "ko": "부담을 완화하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-유발하다-349",
+      "senseId": "ko-유발하다-349-s1",
+      "collocationId": "ko-유발하다-349-s1-c1",
+      "ko": "문제를 유발하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-비판하다-350",
+      "senseId": "ko-비판하다-350-s1",
+      "collocationId": "ko-비판하다-350-s1-c1",
+      "ko": "정책을 비판하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-강조하다-351",
+      "senseId": "ko-강조하다-351-s1",
+      "collocationId": "ko-강조하다-351-s1-c1",
+      "ko": "중요성을 강조하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-분석하다-352",
+      "senseId": "ko-분석하다-352-s1",
+      "collocationId": "ko-분석하다-352-s1-c1",
+      "ko": "자료를 분석하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-초점-353",
+      "senseId": "ko-초점-353-s1",
+      "collocationId": "ko-초점-353-s1-c1",
+      "ko": "초점을 맞추다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-쟁점-354",
+      "senseId": "ko-쟁점-354-s1",
+      "collocationId": "ko-쟁점-354-s1-c1",
+      "ko": "핵심 쟁점",
+      "level": 5
+    },
+    {
+      "entryId": "ko-대안-355",
+      "senseId": "ko-대안-355-s1",
+      "collocationId": "ko-대안-355-s1-c1",
+      "ko": "대안을 마련하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-효과적-356",
+      "senseId": "ko-효과적-356-s1",
+      "collocationId": "ko-효과적-356-s1-c1",
+      "ko": "효과적인 방법",
+      "level": 5
+    },
+    {
+      "entryId": "ko-불가피하다-357",
+      "senseId": "ko-불가피하다-357-s1",
+      "collocationId": "ko-불가피하다-357-s1-c1",
+      "ko": "변경이 불가피하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-상대적-358",
+      "senseId": "ko-상대적-358-s1",
+      "collocationId": "ko-상대적-358-s1-c1",
+      "ko": "상대적인 차이",
+      "level": 5
+    },
+    {
+      "entryId": "ko-의존하다-359",
+      "senseId": "ko-의존하다-359-s1",
+      "collocationId": "ko-의존하다-359-s1-c1",
+      "ko": "자료에 의존하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-전환하다-360",
+      "senseId": "ko-전환하다-360-s1",
+      "collocationId": "ko-전환하다-360-s1-c1",
+      "ko": "방향을 전환하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-증대하다-361",
+      "senseId": "ko-증대하다-361-s1",
+      "collocationId": "ko-증대하다-361-s1-c1",
+      "ko": "기회를 증대하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-비중-362",
+      "senseId": "ko-비중-362-s1",
+      "collocationId": "ko-비중-362-s1-c1",
+      "ko": "비중이 높다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-요인-363",
+      "senseId": "ko-요인-363-s1",
+      "collocationId": "ko-요인-363-s1-c1",
+      "ko": "주요 요인",
+      "level": 4
+    },
+    {
+      "entryId": "ko-해소하다-364",
+      "senseId": "ko-해소하다-364-s1",
+      "collocationId": "ko-해소하다-364-s1-c1",
+      "ko": "불안을 해소하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-지속되다-365",
+      "senseId": "ko-지속되다-365-s1",
+      "collocationId": "ko-지속되다-365-s1-c1",
+      "ko": "상승이 지속되다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-적용하다-366",
+      "senseId": "ko-적용하다-366-s1",
+      "collocationId": "ko-적용하다-366-s1-c1",
+      "ko": "기준을 적용하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-확립하다-367",
+      "senseId": "ko-확립하다-367-s1",
+      "collocationId": "ko-확립하다-367-s1-c1",
+      "ko": "제도를 확립하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-전망-368",
+      "senseId": "ko-전망-368-s1",
+      "collocationId": "ko-전망-368-s1-c1",
+      "ko": "전망이 밝다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-수준-369",
+      "senseId": "ko-수준-369-s1",
+      "collocationId": "ko-수준-369-s1-c1",
+      "ko": "수준이 높다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-자원-370",
+      "senseId": "ko-자원-370-s1",
+      "collocationId": "ko-자원-370-s1-c1",
+      "ko": "자원을 활용하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-갈등-371",
+      "senseId": "ko-갈등-371-s1",
+      "collocationId": "ko-갈등-371-s1-c1",
+      "ko": "갈등을 겪다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-감소하다-372",
+      "senseId": "ko-감소하다-372-s1",
+      "collocationId": "ko-감소하다-372-s1-c1",
+      "ko": "수가 감소하다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-가속화되다-373",
+      "senseId": "ko-가속화되다-373-s1",
+      "collocationId": "ko-가속화되다-373-s1-c1",
+      "ko": "전환이 가속화되다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-도출하다-374",
+      "senseId": "ko-도출하다-374-s1",
+      "collocationId": "ko-도출하다-374-s1-c1",
+      "ko": "결론을 도출하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-초래되다-375",
+      "senseId": "ko-초래되다-375-s1",
+      "collocationId": "ko-초래되다-375-s1-c1",
+      "ko": "문제가 초래되다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-차별화하다-376",
+      "senseId": "ko-차별화하다-376-s1",
+      "collocationId": "ko-차별화하다-376-s1-c1",
+      "ko": "전략을 차별화하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-실효성-377",
+      "senseId": "ko-실효성-377-s1",
+      "collocationId": "ko-실효성-377-s1-c1",
+      "ko": "실효성이 있다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-당면하다-378",
+      "senseId": "ko-당면하다-378-s1",
+      "collocationId": "ko-당면하다-378-s1-c1",
+      "ko": "문제에 당면하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-전제하다-379",
+      "senseId": "ko-전제하다-379-s1",
+      "collocationId": "ko-전제하다-379-s1-c1",
+      "ko": "조건을 전제하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-모순-380",
+      "senseId": "ko-모순-380-s1",
+      "collocationId": "ko-모순-380-s1-c1",
+      "ko": "모순이 생기다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-부합하다-381",
+      "senseId": "ko-부합하다-381-s1",
+      "collocationId": "ko-부합하다-381-s1-c1",
+      "ko": "기준에 부합하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-구체적-382",
+      "senseId": "ko-구체적-382-s1",
+      "collocationId": "ko-구체적-382-s1-c1",
+      "ko": "구체적인 사례",
+      "level": 5
+    },
+    {
+      "entryId": "ko-균형-383",
+      "senseId": "ko-균형-383-s1",
+      "collocationId": "ko-균형-383-s1-c1",
+      "ko": "균형을 맞추다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-재정-384",
+      "senseId": "ko-재정-384-s1",
+      "collocationId": "ko-재정-384-s1-c1",
+      "ko": "재정 부담",
+      "level": 5
+    },
+    {
+      "entryId": "ko-복지-385",
+      "senseId": "ko-복지-385-s1",
+      "collocationId": "ko-복지-385-s1-c1",
+      "ko": "복지 제도",
+      "level": 5
+    },
+    {
+      "entryId": "ko-고용-386",
+      "senseId": "ko-고용-386-s1",
+      "collocationId": "ko-고용-386-s1-c1",
+      "ko": "고용 문제",
+      "level": 5
+    },
+    {
+      "entryId": "ko-실업-387",
+      "senseId": "ko-실업-387-s1",
+      "collocationId": "ko-실업-387-s1-c1",
+      "ko": "실업률 상승",
+      "level": 5
+    },
+    {
+      "entryId": "ko-빈곤-388",
+      "senseId": "ko-빈곤-388-s1",
+      "collocationId": "ko-빈곤-388-s1-c1",
+      "ko": "빈곤 문제",
+      "level": 5
+    },
+    {
+      "entryId": "ko-계층-389",
+      "senseId": "ko-계층-389-s1",
+      "collocationId": "ko-계층-389-s1-c1",
+      "ko": "계층 이동",
+      "level": 5
+    },
+    {
+      "entryId": "ko-소득-390",
+      "senseId": "ko-소득-390-s1",
+      "collocationId": "ko-소득-390-s1-c1",
+      "ko": "소득 격차",
+      "level": 5
+    },
+    {
+      "entryId": "ko-소비-391",
+      "senseId": "ko-소비-391-s1",
+      "collocationId": "ko-소비-391-s1-c1",
+      "ko": "소비 패턴",
+      "level": 5
+    },
+    {
+      "entryId": "ko-수요-392",
+      "senseId": "ko-수요-392-s1",
+      "collocationId": "ko-수요-392-s1-c1",
+      "ko": "수요가 증가하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-공급-393",
+      "senseId": "ko-공급-393-s1",
+      "collocationId": "ko-공급-393-s1-c1",
+      "ko": "공급을 늘리다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-경쟁력-394",
+      "senseId": "ko-경쟁력-394-s1",
+      "collocationId": "ko-경쟁력-394-s1-c1",
+      "ko": "경쟁력을 높이다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-혁신-395",
+      "senseId": "ko-혁신-395-s1",
+      "collocationId": "ko-혁신-395-s1-c1",
+      "ko": "기술 혁신",
+      "level": 5
+    },
+    {
+      "entryId": "ko-규제-396",
+      "senseId": "ko-규제-396-s1",
+      "collocationId": "ko-규제-396-s1-c1",
+      "ko": "규제를 줄이다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-자율-397",
+      "senseId": "ko-자율-397-s1",
+      "collocationId": "ko-자율-397-s1-c1",
+      "ko": "자율을 보장하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-공공-398",
+      "senseId": "ko-공공-398-s1",
+      "collocationId": "ko-공공-398-s1-c1",
+      "ko": "공공 서비스",
+      "level": 5
+    },
+    {
+      "entryId": "ko-민간-399",
+      "senseId": "ko-민간-399-s1",
+      "collocationId": "ko-민간-399-s1-c1",
+      "ko": "민간 투자",
+      "level": 5
+    },
+    {
+      "entryId": "ko-환경오염-400",
+      "senseId": "ko-환경오염-400-s1",
+      "collocationId": "ko-환경오염-400-s1-c1",
+      "ko": "환경오염을 줄이다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-탄소-401",
+      "senseId": "ko-탄소-401-s1",
+      "collocationId": "ko-탄소-401-s1-c1",
+      "ko": "탄소 배출",
+      "level": 5
+    },
+    {
+      "entryId": "ko-배출-402",
+      "senseId": "ko-배출-402-s1",
+      "collocationId": "ko-배출-402-s1-c1",
+      "ko": "배출을 제한하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-절감하다-403",
+      "senseId": "ko-절감하다-403-s1",
+      "collocationId": "ko-절감하다-403-s1-c1",
+      "ko": "비용을 절감하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-절약하다-404",
+      "senseId": "ko-절약하다-404-s1",
+      "collocationId": "ko-절약하다-404-s1-c1",
+      "ko": "물을 절약하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-확대하다-405",
+      "senseId": "ko-확대하다-405-s1",
+      "collocationId": "ko-확대하다-405-s1-c1",
+      "ko": "대상을 확대하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-축소하다-406",
+      "senseId": "ko-축소하다-406-s1",
+      "collocationId": "ko-축소하다-406-s1-c1",
+      "ko": "규모를 축소하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-추진하다-407",
+      "senseId": "ko-추진하다-407-s1",
+      "collocationId": "ko-추진하다-407-s1-c1",
+      "ko": "개혁을 추진하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-검토하다-408",
+      "senseId": "ko-검토하다-408-s1",
+      "collocationId": "ko-검토하다-408-s1-c1",
+      "ko": "정책을 검토하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-시행하다-409",
+      "senseId": "ko-시행하다-409-s1",
+      "collocationId": "ko-시행하다-409-s1-c1",
+      "ko": "제도를 시행하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-폐지하다-410",
+      "senseId": "ko-폐지하다-410-s1",
+      "collocationId": "ko-폐지하다-410-s1-c1",
+      "ko": "절차를 폐지하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-유지하다-411",
+      "senseId": "ko-유지하다-411-s1",
+      "collocationId": "ko-유지하다-411-s1-c1",
+      "ko": "수준을 유지하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-형성하다-412",
+      "senseId": "ko-형성하다-412-s1",
+      "collocationId": "ko-형성하다-412-s1-c1",
+      "ko": "습관을 형성하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-분배-413",
+      "senseId": "ko-분배-413-s1",
+      "collocationId": "ko-분배-413-s1-c1",
+      "ko": "자원 분배",
+      "level": 6
+    },
+    {
+      "entryId": "ko-해석하다-414",
+      "senseId": "ko-해석하다-414-s1",
+      "collocationId": "ko-해석하다-414-s1-c1",
+      "ko": "자료를 해석하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-예측하다-415",
+      "senseId": "ko-예측하다-415-s1",
+      "collocationId": "ko-예측하다-415-s1-c1",
+      "ko": "변화를 예측하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-상호작용-416",
+      "senseId": "ko-상호작용-416-s1",
+      "collocationId": "ko-상호작용-416-s1-c1",
+      "ko": "상호작용을 하다",
+      "level": 6
+    },
+    {
+      "entryId": "ko-학년-418",
+      "senseId": "ko-학년-418-s1",
+      "collocationId": "ko-학년-418-s1-c1",
+      "ko": "새 학년",
+      "level": 2
+    },
+    {
+      "entryId": "ko-입학-419",
+      "senseId": "ko-입학-419-s1",
+      "collocationId": "ko-입학-419-s1-c1",
+      "ko": "입학 준비",
+      "level": 3
+    },
+    {
+      "entryId": "ko-신라-423",
+      "senseId": "ko-신라-423-s1",
+      "collocationId": "ko-신라-423-s1-c1",
+      "ko": "신라 시대",
+      "level": 4
+    },
+    {
+      "entryId": "ko-굳이-424",
+      "senseId": "ko-굳이-424-s1",
+      "collocationId": "ko-굳이-424-s1-c1",
+      "ko": "굳이 필요하다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-밥물-426",
+      "senseId": "ko-밥물-426-s1",
+      "collocationId": "ko-밥물-426-s1-c1",
+      "ko": "밥물이 넘치다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-독립-427",
+      "senseId": "ko-독립-427-s1",
+      "collocationId": "ko-독립-427-s1-c1",
+      "ko": "독립을 이루다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-심리-428",
+      "senseId": "ko-심리-428-s1",
+      "collocationId": "ko-심리-428-s1-c1",
+      "ko": "소비자 심리",
+      "level": 5
+    },
+    {
+      "entryId": "ko-협력-429",
+      "senseId": "ko-협력-429-s1",
+      "collocationId": "ko-협력-429-s1-c1",
+      "ko": "협력을 강화하다",
+      "level": 5
+    },
+    {
+      "entryId": "ko-설날-430",
+      "senseId": "ko-설날-430-s1",
+      "collocationId": "ko-설날-430-s1-c1",
+      "ko": "설날 연휴",
+      "level": 2
+    },
+    {
+      "entryId": "ko-난로-431",
+      "senseId": "ko-난로-431-s1",
+      "collocationId": "ko-난로-431-s1-c1",
+      "ko": "난로를 켜다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-맞히다-432",
+      "senseId": "ko-맞히다-432-s1",
+      "collocationId": "ko-맞히다-432-s1-c1",
+      "ko": "정답을 맞히다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-닫히다-434",
+      "senseId": "ko-닫히다-434-s1",
+      "collocationId": "ko-닫히다-434-s1-c1",
+      "ko": "문이 닫히다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-법률-440",
+      "senseId": "ko-법률-440-s1",
+      "collocationId": "ko-법률-440-s1-c1",
+      "ko": "관련 법률",
+      "level": 5
+    },
+    {
+      "entryId": "ko-연락-441",
+      "senseId": "ko-연락-441-s1",
+      "collocationId": "ko-연락-441-s1-c1",
+      "ko": "연락을 하다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-실내-442",
+      "senseId": "ko-실내-442-s1",
+      "collocationId": "ko-실내-442-s1-c1",
+      "ko": "실내 활동",
+      "level": 3
+    },
+    {
+      "entryId": "ko-축하-443",
+      "senseId": "ko-축하-443-s1",
+      "collocationId": "ko-축하-443-s1-c1",
+      "ko": "축하를 받다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-입히다-444",
+      "senseId": "ko-입히다-444-s1",
+      "collocationId": "ko-입히다-444-s1-c1",
+      "ko": "옷을 입히다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-가족적-450",
+      "senseId": "ko-가족적-450-s1",
+      "collocationId": "ko-가족적-450-s1-c1",
+      "ko": "가족적",
+      "level": 3
+    },
+    {
+      "entryId": "ko-문화적-471",
+      "senseId": "ko-문화적-471-s1",
+      "collocationId": "ko-문화적-471-s1-c1",
+      "ko": "문화적",
+      "level": 3
+    },
+    {
+      "entryId": "ko-경제적-475",
+      "senseId": "ko-경제적-475-s1",
+      "collocationId": "ko-경제적-475-s1-c1",
+      "ko": "경제적",
+      "level": 3
+    },
+    {
+      "entryId": "ko-사회-477",
+      "senseId": "ko-사회-477-s1",
+      "collocationId": "ko-사회-477-s1-c1",
+      "ko": "사회",
+      "level": 3
+    },
+    {
+      "entryId": "ko-환경적-538",
+      "senseId": "ko-환경적-538-s1",
+      "collocationId": "ko-환경적-538-s1-c1",
+      "ko": "환경적",
+      "level": 5
+    },
+    {
+      "entryId": "ko-정책적-540",
+      "senseId": "ko-정책적-540-s1",
+      "collocationId": "ko-정책적-540-s1-c1",
+      "ko": "정책적",
+      "level": 5
+    },
+    {
+      "entryId": "ko-발전기-559",
+      "senseId": "ko-발전기-559-s1",
+      "collocationId": "ko-발전기-559-s1-c1",
+      "ko": "발전기",
+      "level": 5
+    },
+    {
+      "entryId": "ko-발전기-560",
+      "senseId": "ko-발전기-560-s1",
+      "collocationId": "ko-발전기-560-s1-c1",
+      "ko": "발전기",
+      "level": 5
+    },
+    {
+      "entryId": "ko-들다-604",
+      "senseId": "ko-들다-604-s2",
+      "collocationId": "ko-들다-604-s2-c1",
+      "ko": "집에 들다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-들다-604",
+      "senseId": "ko-들다-604-s3",
+      "collocationId": "ko-들다-604-s3-c1",
+      "ko": "돈이 들다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-나다-605",
+      "senseId": "ko-나다-605-s2",
+      "collocationId": "ko-나다-605-s2-c1",
+      "ko": "서울에서 나다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-쓰다-606",
+      "senseId": "ko-쓰다-606-s2",
+      "collocationId": "ko-쓰다-606-s2-c1",
+      "ko": "표현을 쓰다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-쓰다-606",
+      "senseId": "ko-쓰다-606-s3",
+      "collocationId": "ko-쓰다-606-s3-c1",
+      "ko": "모자를 쓰다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-쓰다-606",
+      "senseId": "ko-쓰다-606-s4",
+      "collocationId": "ko-쓰다-606-s4-c1",
+      "ko": "맛이 쓰다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-잡다-607",
+      "senseId": "ko-잡다-607-s1",
+      "collocationId": "ko-잡다-607-s1-c1",
+      "ko": "손을 잡다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-잡다-607",
+      "senseId": "ko-잡다-607-s2",
+      "collocationId": "ko-잡다-607-s2-c1",
+      "ko": "범인을 잡다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-잡다-607",
+      "senseId": "ko-잡다-607-s3",
+      "collocationId": "ko-잡다-607-s3-c1",
+      "ko": "날짜를 잡다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-잡다-607",
+      "senseId": "ko-잡다-607-s4",
+      "collocationId": "ko-잡다-607-s4-c1",
+      "ko": "흐름을 잡다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-풀다-608",
+      "senseId": "ko-풀다-608-s1",
+      "collocationId": "ko-풀다-608-s1-c1",
+      "ko": "끈을 풀다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-풀다-608",
+      "senseId": "ko-풀다-608-s2",
+      "collocationId": "ko-풀다-608-s2-c1",
+      "ko": "문제를 풀다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-풀다-608",
+      "senseId": "ko-풀다-608-s3",
+      "collocationId": "ko-풀다-608-s3-c1",
+      "ko": "스트레스를 풀다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-풀다-608",
+      "senseId": "ko-풀다-608-s4",
+      "collocationId": "ko-풀다-608-s4-c1",
+      "ko": "쉽게 풀다",
+      "level": 4
+    },
+    {
+      "entryId": "ko-바르다-609",
+      "senseId": "ko-바르다-609-s1",
+      "collocationId": "ko-바르다-609-s1-c1",
+      "ko": "약을 바르다",
+      "level": 2
+    },
+    {
+      "entryId": "ko-바르다-609",
+      "senseId": "ko-바르다-609-s2",
+      "collocationId": "ko-바르다-609-s2-c1",
+      "ko": "바른 태도",
+      "level": 3
+    },
+    {
+      "entryId": "ko-바르다-609",
+      "senseId": "ko-바르다-609-s3",
+      "collocationId": "ko-바르다-609-s3-c1",
+      "ko": "바른 표현",
+      "level": 3
+    },
+    {
+      "entryId": "ko-먹다-610",
+      "senseId": "ko-먹다-610-s2",
+      "collocationId": "ko-먹다-610-s2-c1",
+      "ko": "시간을 먹다",
+      "level": 3
+    },
+    {
+      "entryId": "ko-먹다-610",
+      "senseId": "ko-먹다-610-s3",
+      "collocationId": "ko-먹다-610-s3-c1",
+      "ko": "욕을 먹다",
+      "level": 4
+    }
+  ],
+  "notes": [
+    "Counts are stored records, not globally deduplicated phrases.",
+    "Entry level coverage is multi-label; missing zh distribution uses sense.level exactly once.",
+    "realExamples is the existing UI heuristic, not an independent authenticity certification.",
+    "verified=true is existing metadata, not newly verified by this audit.",
+    "No per-field source inheritance assumed. Missing metadata is not proof that content is false.",
+    "Empty soundRules does not imply an error: many words require no sound change.",
+    "Old sprint predicate is not a high-frequency certification."
+  ]
+}

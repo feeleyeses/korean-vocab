@@ -7,6 +7,14 @@ try {
     const page=await browser.newPage({viewport:{width,height:950}});
     await page.goto(process.env.KWF_URL||'http://127.0.0.1:4173/',{waitUntil:'networkidle'});
     const card=page.locator('.home-study-card');
+    const baseline=await page.locator('.home-scope').evaluate(el=>{
+      const number=el.querySelector('.number-highlight'),learned=el.querySelector('.home-learned');
+      const markers=[number,learned].map(parent=>{const m=document.createElement('i');m.style.cssText='display:inline-block;width:0;height:0;padding:0;margin:0;vertical-align:baseline';parent.append(m);return m;});
+      const ys=markers.map(m=>m.getBoundingClientRect().y);markers.forEach(m=>m.remove());
+      return {delta:Math.abs(ys[0]-ys[1]),align:getComputedStyle(el).alignItems,border:getComputedStyle(number).borderLeftWidth};
+    });
+    assert.equal(baseline.align,'baseline');assert.equal(baseline.border,'0px');assert.ok(baseline.delta<0.5);
+    console.log(JSON.stringify({width,baseline}));
     assert.equal(await card.getByRole('button',{name:'开始学习',exact:true}).count(),1);
     assert.equal(await card.getByRole('button',{name:'查看已学词库',exact:true}).count(),1);
     const main=await card.boundingBox(), progress=await page.locator('.progress-section').boundingBox(), overview=await page.locator('.home-overview').boundingBox();

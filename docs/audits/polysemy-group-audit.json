@@ -1,0 +1,7 @@
+{
+  "datasetSha256": "6c925d748cf5aba66d038deca5554725dfb1d59dad72e3bddd9905ee11a439d2",
+  "method": "Existing senseGroups unchanged. Candidate detection uses NFKC and punctuation-stripped equality/containment only; no semantic rewriting.",
+  "mergedGroups": [],
+  "suspectedOverMerge": [],
+  "suspectedUnderMerge": []
+}

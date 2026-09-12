@@ -19,7 +19,7 @@ export function Home({words,store,settings,setSettings,start,openLibrary}){
     <section className="home-study-card" aria-label="开始你的学习">
       <div className="home-study-content">
         <Settings words={words} settings={settings} setSettings={setSettings}/>
-        <p className="home-scope">当前范围 <NumberHighlight value={scoped.length} compact/> 词<span>已学 {learned} / {scoped.length}</span></p>
+        <p className="home-scope">当前范围 <NumberHighlight value={scoped.length} compact/> 词<span className="home-learned">已学 {learned} / {scoped.length}</span></p>
         <div className="home-card-actions"><Button variant="primary" onClick={start}>开始学习<ArrowRight size={20}/></Button><Button onClick={openLibrary}>查看已学词库<ArrowRight size={20}/></Button></div>
       </div>
       <StudyIllustration/>
