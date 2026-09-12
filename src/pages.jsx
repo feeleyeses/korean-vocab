@@ -4,16 +4,7 @@ import { Button,Chip,Settings,ProgressLevels,WordRow,Pagination,EmptyState } fro
 import {posLabel,posOptions} from './pos-labels.js';
 import { levels,tags,scopeWords,wordProgress,reviewModes,reviewQueue,polyQueue } from './domain.js';
 
-export function Home({words,store,settings,setSettings,start,openLibrary}) {
-  const count=scopeWords(words,settings).length;
-  return <div className="page-stack home-page">
-    <Settings settings={settings} setSettings={setSettings}/>
-    <div className="home-actions"><Button variant="primary" onClick={start}>开始学习<ArrowRight size={20}/></Button><Button onClick={openLibrary}>查看已学词库<ArrowRight size={20}/></Button></div>
-    <ProgressLevels words={words} store={store} onSelect={l=>setSettings(s=>({...s,levels:[l]}))}/>
-    <section className="today-summary"><h2>今日摘要</h2><p>今日学习 <b>{store.profile.stats.newCount}</b> · 今日复习 <b>{store.profile.stats.reviewCount}</b> · 今日到期 <b>{reviewQueue(words,store.memories,'due').length}</b></p></section>
-    <div className="scope-summary">当前范围 {count} 词</div>
-  </div>;
-}
+export {Home} from './Home.jsx';
 const defaults={levels:[],route:'full',capacity:12,tags:[]};
 export function Library({words,store,compact=false,initialLearned=false,startReview}) {
   const [settings,setSettings]=useState(defaults),[states,setStates]=useState([]),[flags,setFlags]=useState(initialLearned?['learned']:[]),[sort,setSort]=useState('level'),[query,setQuery]=useState(''),[pos,setPos]=useState(''),[page,setPage]=useState(1),[expanded,setExpanded]=useState([]),[selected,setSelected]=useState([]);

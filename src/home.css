@@ -1,0 +1,70 @@
+/* Home-only composition. Shared feature-page styles remain unchanged. */
+.home-dashboard{display:grid;gap:24px;padding-top:10px}
+.home-study-card{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 248px;gap:24px;padding:32px;border:1px solid var(--line);border-radius:20px;background:var(--surface);box-shadow:var(--shadow)}
+.home-study-content{min-width:0}
+.home-dashboard .settings-section{padding:0;border:0;border-radius:0;box-shadow:none;background:transparent}
+.home-dashboard .settings-section h2{margin:0 0 28px;font-size:28px;line-height:1.3;letter-spacing:-.035em}
+.home-dashboard .settings-grid{gap:22px 24px}
+.home-dashboard .settings-grid legend{font-size:13px;margin-bottom:10px}
+.home-dashboard .button.chip{border-radius:8px;min-height:36px}
+.home-scope{display:flex;flex-wrap:wrap;gap:5px;margin:24px 0 18px;font-size:12px;color:var(--muted)}
+.home-scope strong{color:var(--ink);font-weight:650}
+.home-scope>span{padding-left:12px;margin-left:7px;border-left:1px solid var(--line)}
+.home-card-actions{display:flex;gap:12px;padding-top:20px;border-top:1px solid var(--line)}
+.home-card-actions .button{min-height:46px;padding:12px 22px;border-radius:10px}
+.home-card-actions .primary{min-width:168px}
+.home-illustration{position:relative;align-self:center;width:236px;height:234px;pointer-events:none}
+.home-art-card{position:absolute;width:142px;height:176px;border:1px solid var(--line-strong);border-radius:14px;background:var(--surface);padding:20px}
+.home-art-back{left:8px;top:16px;transform:rotate(-11deg);background:var(--control);color:var(--muted)}
+.home-art-back>span{display:block;margin-top:14px;font-size:16px;color:var(--weak)}
+.home-art-front{left:66px;top:40px;transform:rotate(8deg);box-shadow:0 4px 14px rgba(15,23,42,.035)}
+.home-art-label{color:var(--muted);font-size:11px}
+.home-art-front strong{display:block;margin:12px 0;font-size:42px;color:var(--ink);font-weight:650}
+.home-art-baseline{width:58px;height:3px;border-radius:2px;background:var(--coral);margin-bottom:12px}
+.home-art-front .lucide{color:var(--coral)}
+.home-art-bubble{position:absolute;right:7px;top:12px;color:var(--muted)}
+.home-dashboard .progress-section{padding:0;border:0;background:transparent;box-shadow:none}
+.home-dashboard .progress-section h2,.home-overview h2{font-size:15px;margin:0 0 12px;font-weight:650}
+.home-dashboard .level-progress-grid{gap:10px}
+.home-dashboard .level-progress{padding:12px 14px;border-radius:10px;min-height:66px}
+.home-dashboard .level-progress>div{margin-bottom:10px;align-items:center}
+.home-dashboard .level-progress span{font-size:11px}
+.home-overview{display:grid;grid-template-columns:136px 1fr;align-items:center;padding:20px 24px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.home-overview h2{margin:0}
+.home-overview dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:0}
+.home-overview dl>div{padding:0 24px;border-left:1px solid var(--line)}
+.home-overview dt{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+.home-overview dd{margin:8px 0 0 28px;font-size:26px;font-weight:650;line-height:1}
+.home-overview small{font-size:11px;color:var(--muted);font-weight:400;margin-left:6px}
+.app-shell:has(.home-dashboard) .topbar nav button.active{color:var(--ink)}
+.app-shell:has(.home-dashboard) .topbar nav button.active:after{left:16px;right:16px;height:2px;bottom:8px;border-radius:2px}
+@media(max-width:1100px) and (min-width:901px){
+ .home-study-card{grid-template-columns:minmax(0,1fr) 190px;padding:28px}
+ .home-illustration{transform:scale(.8);transform-origin:center;width:190px}
+}
+@media(max-width:900px){
+ .home-dashboard{gap:20px;padding-top:2px}
+ .home-study-card{display:block;padding:20px 16px;border-radius:16px}
+ .home-dashboard .settings-section h2{font-size:24px;min-height:52px;margin-bottom:20px;padding-right:86px}
+ .home-dashboard .settings-grid{grid-template-columns:1fr;gap:18px}
+ .home-illustration{position:absolute;right:12px;top:12px;width:78px;height:66px}
+ .home-art-card{width:44px;height:52px;padding:6px;border-radius:6px}
+ .home-art-back{left:2px;top:0}
+ .home-art-front{left:26px;top:8px}
+ .home-art-back>span,.home-art-label,.home-art-baseline,.home-art-bubble,.home-art-front .lucide{display:none}
+ .home-art-front strong{font-size:22px;margin:6px 0}
+ .home-art-back .lucide{width:20px;height:20px}
+ .home-card-actions{gap:8px;padding-top:16px}
+ .home-card-actions .button{flex:1;min-width:0;padding:10px 8px;font-size:12px;gap:5px}
+ .home-scope{margin:20px 0 16px}
+ .home-dashboard .level-progress-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .home-dashboard .level-progress{padding:10px;min-height:64px}
+ .home-dashboard .level-progress>div{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px}
+ .home-dashboard .level-progress span{font-size:10px}
+ .home-overview{display:block;padding:16px 12px}
+ .home-overview h2{margin-bottom:16px}
+ .home-overview dl>div{padding:0 9px}
+ .home-overview dl>div:first-child{border-left:0}
+ .home-overview dt{gap:5px;font-size:11px}
+ .home-overview dd{margin-left:25px;font-size:24px}
+}
