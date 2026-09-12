@@ -21,7 +21,7 @@ export default function App(){
   function startPoly(mode){setSession({id:crypto.randomUUID(),mode,queue:polyQueue(words,store.memories,mode)});setView('poly');}
   if(loading)return <div className="app-loading">正在载入词库…</div>;
   return <div className="app-shell">
-    <header className="topbar"><button className="brand" onClick={()=>go('home')}><House size={24}/><b>韩语词场</b></button><nav aria-label="主导航">{nav.map(([id,label,Icon])=><button key={id} className={view===id?'active':''} onClick={()=>go(id)}><Icon size={20}/>{label}</button>)}</nav><div className="header-stats"><span>已学 <b>{counts.learned}</b></span><span>今日复习 <b>{counts.due}</b></span></div></header>
+    <header className="topbar"><button className="brand" onClick={()=>go('home')}><House size={24}/><b>韩语词场</b></button><nav aria-label="主导航" style={{'--active-index':nav.findIndex(([id])=>id===view)}}>{nav.map(([id,label,Icon])=><button key={id} className={view===id?'active':''} onClick={()=>go(id)}><Icon size={20}/>{label}</button>)}</nav><div className="header-stats"><span>已学 <b>{counts.learned}</b></span><span>今日复习 <b>{counts.due}</b></span></div></header>
     <main className={`app-main view-${view}`}>
       {view==='home'&&<Home words={words} store={store} settings={settings} setSettings={setSettings} start={startLearning} openLibrary={()=>go('library')}/>}
       {view==='study'&&<><div className="mobile-session-title"><button onClick={()=>go('home')}>学习设置</button><b>学习新词</b></div><Session key={session.id} session={session} words={words} store={store} onExit={()=>go('home')} onRestart={startLearning}/></>}

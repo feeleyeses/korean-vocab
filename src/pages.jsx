@@ -1,6 +1,6 @@
 import React,{useMemo,useState,useRef,useEffect} from 'react';
 import { ArrowRight,Search,Download,Upload,ChevronDown as ChevronDownIcon,ListFilter,ArrowDownUp,SquareCheckBig,ListChecks,X,CalendarClock,AudioWaveform,Zap,Library as LibraryIcon } from 'lucide-react';
-import { Button,Chip,Settings,ProgressLevels,WordRow,Pagination,EmptyState } from './components.jsx';
+import { Button,Chip,Settings,ProgressLevels,WordRow,Pagination,EmptyState,NumberHighlight,LevelChoices,routeSettings } from './components.jsx';
 import {posLabel,posOptions} from './pos-labels.js';
 import { levels,tags,scopeWords,wordProgress,reviewModes,reviewQueue,polyQueue,dueStats } from './domain.js';
 
@@ -28,7 +28,7 @@ export function Library({words,store,compact=false,initialLearned=false,startRev
   const current=Math.min(page,Math.max(1,Math.ceil(result.length/8)));
   function toggle(value,set){set(s=>s.includes(value)?s.filter(x=>x!==value):[...s,value]);setPage(1);}
   return <div className="page-stack library-page">
-    {!compact&&<><div className="page-heading"><h1>词库</h1></div><ProgressLevels words={words} store={store} onSelect={l=>setSettings(s=>({...s,levels:[l]}))}/><div className="desktop-library-settings"><Settings library settings={settings} setSettings={s=>{setSettings(s);setPage(1);}}/></div></>}
+    {!compact&&<><div className="page-heading"><h1>词库</h1></div><ProgressLevels settings={settings} words={words} store={store} onSelect={l=>setSettings(s=>({...s,levels:[l]}))}/><div className="desktop-library-settings"><Settings words={words} library settings={settings} setSettings={s=>{setSettings(s);setPage(1);}}/></div></>}
     <section className="library-filters">
       <div className="search-row"><label className="search-input"><Search size={20}/><input type="search" aria-label="搜索词库" placeholder="搜索韩文 / 中文 / 罗马音" value={query} onChange={e=>{setQuery(e.target.value);setPage(1);}}/></label>
         <select className="desktop-filter" aria-label="词性" value={pos} onChange={e=>{setPos(e.target.value);setPage(1);}}><option value="">全部词性</option>{posOptions.map(p=><option key={p}>{p}</option>)}</select>
@@ -38,7 +38,7 @@ export function Library({words,store,compact=false,initialLearned=false,startRev
       <div className="chips"><ArrowDownUp size={20}/>{[['level','TOPIK顺序'],['progress','掌握进度'],['headword','韩语排序'],['weak','薄弱优先']].map(([v,l])=><Chip key={v} active={sort===v} onClick={()=>setSort(v)}>{l}</Chip>)}</div></div>
       <div className="mobile-library-toolbar"><button className="button" ref={openerRef} onClick={openFilters}><ListFilter size={20}/>筛选 {filterCount>0&&filterCount}</button>{!compact&&<Button onClick={()=>setMulti(v=>!v)}><ListChecks size={20}/>{multi?'退出多选':'多选'}</Button>}<small>当前筛选 {filterCount} 项</small></div>
     </section>
-    {!compact&&<header className={`list-toolbar ${multi?'is-selecting':''}`}><strong aria-live="polite">已选 {selected.length} 项</strong><div className="batch-controls">
+    {!compact&&<header className={`list-toolbar ${multi?'is-selecting':''}`}><strong aria-live="polite">已选 <NumberHighlight value={selected.length} compact/> 项</strong><div className="batch-controls">
       <Button disabled={!result.length} onClick={()=>setSelected(s=>[...new Set([...s,...result.slice((current-1)*8,current*8).map(w=>w.id)])])}><SquareCheckBig size={20}/>全选当页</Button>
       <Button className="desktop-filter" disabled={!result.length} onClick={()=>setSelected(s=>[...new Set([...s,...result.map(w=>w.id)])])}>全选当前筛选结果</Button><details className="batch-more"><summary>更多操作<ChevronDownIcon/></summary><Button disabled={!result.length} onClick={()=>setSelected(s=>[...new Set([...s,...result.map(w=>w.id)])])}>全选当前筛选结果</Button></details>
       <Button disabled={!selected.length} onClick={()=>setSelected([])}>取消选择</Button>
@@ -47,8 +47,8 @@ export function Library({words,store,compact=false,initialLearned=false,startRev
     {drawer&&draft&&<div className="drawer-backdrop" onClick={e=>{if(e.target===e.currentTarget)setDrawer(false);}}><section className="filter-drawer" role="dialog" aria-modal="true" aria-label="筛选词库" tabIndex={-1} ref={drawerRef} onKeyDown={closeOnKey}>
       <header><h2>筛选词库</h2><Button aria-label="关闭筛选" onClick={()=>setDrawer(false)}><X size={20}/></Button></header>
       <div className="drawer-content">
-        <fieldset><legend>TOPIK</legend><div className="chips">{levels.map(l=><Chip key={l} active={draft.settings.levels.includes(l)} onClick={()=>setDraft(d=>({...d,settings:{...d.settings,levels:d.settings.levels.includes(l)?d.settings.levels.filter(x=>x!==l):[...d.settings.levels,l]}}))}>T{l}</Chip>)}</div>
-        <p>词库路线</p><div className="chips">{[['full','TOPIK 全量库'],['sprint','考前急救包']].map(([v,l])=><Chip key={v} active={draft.settings.route===v} onClick={()=>setDraft(d=>({...d,settings:{...d.settings,route:v}}))}>{l}</Chip>)}</div>
+        <fieldset><legend>TOPIK</legend><LevelChoices words={words} settings={draft.settings} setSettings={fn=>setDraft(d=>({...d,settings:fn(d.settings)}))}/>
+        <p>词库路线</p><div className="chips">{[['full','TOPIK 全量库'],['sprint','考前急救包']].map(([v,l])=><Chip key={v} active={draft.settings.route===v} onClick={()=>setDraft(d=>({...d,settings:routeSettings(d.settings,v,words)}))}>{l}</Chip>)}</div>
         <p>本组容量</p><div className="chips">{[[12,'12 词'],[24,'24 词'],['all','本范围全部']].map(([v,l])=><Chip key={v} active={draft.settings.capacity===v} onClick={()=>setDraft(d=>({...d,settings:{...d.settings,capacity:v}}))}>{l}</Chip>)}</div></fieldset>
         <fieldset><legend>词性</legend><select aria-label="词性" value={draft.pos} onChange={e=>setDraft(d=>({...d,pos:e.target.value}))}><option value="">全部词性</option>{posOptions.map(p=><option key={p}>{p}</option>)}</select></fieldset>
         <fieldset><legend>状态</legend><div className="chips"><Chip active={!draft.states.length&&!draft.flags.length} onClick={()=>setDraft(d=>({...d,states:[],flags:[]}))}>全部</Chip>{[['pending','待学'],['weak','薄弱'],['known','已掌握']].map(([v,l])=><Chip key={v} active={draft.states.includes(v)} onClick={()=>draftToggle('states',v)}>{l}</Chip>)}{[['learned','仅已学'],['favorite','收藏'],['sound','音变'],['due','今日到期']].map(([v,l])=><Chip key={v} active={draft.flags.includes(v)} onClick={()=>draftToggle('flags',v)}>{l}</Chip>)}</div></fieldset>
@@ -66,10 +66,10 @@ export function ReviewMenu({words,store,startReview,active}) {
   return <div className="review-modes">{reviewModes.map(([mode,label])=>{
     const count=mode.startsWith('poly')?polyQueue(words,store.memories,mode).length:reviewQueue(words,store.memories,mode,store.favorites).length;
     const Icon=({due:CalendarClock,full:LibraryIcon,sprint:Zap,'poly-single':ListChecks,'poly-multi':ListChecks,sound:AudioWaveform})[mode];
-    return <Chip key={mode} active={mode===active} onClick={()=>startReview(mode)}><Icon size={20}/><span className="review-mode-label">复习·{label}</span><span>{count}</span></Chip>;
+    return <Chip key={mode} active={mode===active} onClick={()=>startReview(mode)}><Icon size={20}/><span className="review-mode-label">复习·{label}</span><span className="review-mode-count"><NumberHighlight value={count} tone={mode===active?'primary':'muted'} compact/></span></Chip>;
   })}</div>;
 }
 export function ReviewHome({words,store,startReview,startSound}) {
   const stats=dueStats(words,store.memories);
-  return <div className="page-stack"><div className="page-heading"><h1>复习</h1></div><ReviewMenu words={words} store={store} startReview={startReview}/><section className="review-overview"><div><h2>待复习 {stats.pending} 个释义</h2><p className="due-breakdown">逾期 {stats.overdue} · 今日到期 {stats.dueToday}{stats.overdue>0&&<span> · 最长逾期 {stats.longestOverdueDays} 天</span>}</p></div><Button variant="primary" onClick={()=>startReview('due')}>开始今日复习<ArrowRight size={20}/></Button></section><section className="sound-entry"><div><h2>音变专项</h2><p className="muted">实际读音 · 罗马音 · 音变规则</p></div><Button onClick={startSound}>进入音变专项<ArrowRight size={20}/></Button></section></div>;
+  return <div className="page-stack"><div className="page-heading"><h1>复习</h1></div><ReviewMenu words={words} store={store} startReview={startReview}/><section className="review-overview"><div><h2 className="pending-title">待复习 <NumberHighlight value={stats.pending}/> <small>个释义</small></h2><p className="due-breakdown">逾期 <NumberHighlight value={stats.overdue} tone="warning" compact/> · 今日到期 <NumberHighlight value={stats.dueToday} tone="muted" compact/>{stats.overdue>0&&<span> · 最长逾期 <NumberHighlight value={stats.longestOverdueDays} tone="amber" compact/> 天</span>}</p></div><Button variant="primary" onClick={()=>startReview('due')}>开始今日复习<ArrowRight size={20}/></Button></section><section className="sound-entry"><div><h2 className="section-title"><AudioWaveform size={18}/>音变专项</h2><p className="muted">实际读音 · 罗马音 · 音变规则</p></div><Button onClick={startSound}>进入音变专项<ArrowRight size={20}/></Button></section></div>;
 }

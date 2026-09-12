@@ -1,6 +1,6 @@
 import React from 'react';
 import {ArrowRight,BookOpen,RotateCcw,CalendarClock,Volume2,MessageCircle} from 'lucide-react';
-import {Button,Settings,ProgressLevels} from './components.jsx';
+import {Button,Settings,ProgressLevels,NumberHighlight} from './components.jsx';
 import {scopeWords,reviewQueue} from './domain.js';
 
 function StudyIllustration(){
@@ -18,13 +18,13 @@ export function Home({words,store,settings,setSettings,start,openLibrary}){
   return <div className="home-page home-dashboard">
     <section className="home-study-card" aria-label="开始你的学习">
       <div className="home-study-content">
-        <Settings settings={settings} setSettings={setSettings}/>
-        <p className="home-scope">当前范围 <strong>{scoped.length}</strong> 词<span>已学 {learned} / {scoped.length}</span></p>
+        <Settings words={words} settings={settings} setSettings={setSettings}/>
+        <p className="home-scope">当前范围 <NumberHighlight value={scoped.length} compact/> 词<span>已学 {learned} / {scoped.length}</span></p>
         <div className="home-card-actions"><Button variant="primary" onClick={start}>开始学习<ArrowRight size={20}/></Button><Button onClick={openLibrary}>查看已学词库<ArrowRight size={20}/></Button></div>
       </div>
       <StudyIllustration/>
     </section>
-    <ProgressLevels words={words} store={store} onSelect={l=>setSettings(s=>({...s,levels:[l]}))}/>
-    <section className="home-overview" aria-label="今日概览"><h2>今日概览</h2><dl>{metrics.map(([label,value,Icon])=><div key={label}><dt><Icon size={20}/>{label}</dt><dd>{value}<small>个</small></dd></div>)}</dl></section>
+    <ProgressLevels settings={settings} words={words} store={store} onSelect={l=>setSettings(s=>({...s,levels:[l]}))}/>
+    <section className="home-overview" aria-label="今日概览"><h2>今日概览</h2><dl>{metrics.map(([label,value,Icon])=><div key={label}><dt><Icon size={20}/>{label}</dt><dd><NumberHighlight value={value}/><small>个</small></dd></div>)}</dl></section>
   </div>;
 }

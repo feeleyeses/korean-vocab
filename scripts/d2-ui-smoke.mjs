@@ -34,7 +34,7 @@ await page.locator('.continue').click();
 assert.equal(await page.locator('.judgment-buttons').count(),1);
 await nav.getByRole('button',{name:'复习',exact:true}).click();
 assert.match(await page.locator('.review-overview').innerText(),/待复习 \d+ 个释义/);
-const dueText=await page.locator('.review-overview').innerText();
+const dueText=(await page.locator('.review-overview').innerText()).replace(/\s+/g,' ');
 const pending=Number(dueText.match(/待复习 (\d+)/)[1]), overdue=Number(dueText.match(/逾期 (\d+)/)[1]),today=Number(dueText.match(/今日到期 (\d+)/)[1]);
 assert.equal(pending,overdue+today);
 await page.locator('.review-modes').getByRole('button',{name:/复习·全量库/}).click();
