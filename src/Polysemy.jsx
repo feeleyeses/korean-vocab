@@ -1,6 +1,6 @@
 import React,{useState,useMemo,useRef} from 'react';
-import { ArrowRight,Check } from 'lucide-react';
-import { Button,WordHero,WordActions,EmptyState,SenseCard } from './components.jsx';
+import { ArrowRight,Check,CircleCheck,CircleX,CircleAlert } from 'lucide-react';
+import { Button,WordHero,WordActions,EmptyState,SenseCard,Progress } from './components.jsx';
 import { optionsFor,grade,senseGroups } from './domain.js';
 import { Library } from './pages.jsx';
 
@@ -29,14 +29,15 @@ function PolyQuestion({item,index,total,mode,words,store,next}) {
     store.record(item,result.correct.flatMap(o=>o.senses.map(sense=>({sense,rating:selected.includes(o.id)?'remember':'forgot'}))),mode==='poly-learn'?'new':'review',result.wrong);
   }
   return <><article className="poly-question" data-word={item.word.headword} data-submitted={!!result}>
-    <div className="poly-prompt"><h2>{mode==='poly-learn'?'学习新多义':multi?'复习·一词多义（多选）':'复习·一词多义（单选）'}</h2><WordHero word={item.word}/><p className="muted">{index+1} / {total} · {senseGroups(item.word).length} 个释义</p><WordActions word={item.word} store={store}/></div>
+    <div className="poly-prompt"><div className="poly-heading"><h2>{mode==='poly-learn'?'学习新多义':multi?'复习·一词多义（多选）':'复习·一词多义（单选）'}</h2><strong>{index+1} / {total}</strong></div><Progress value={index+1} max={total} label="多义题目进度"/><WordHero word={item.word}/><p className="muted poly-sense-count">{senseGroups(item.word).length} 个释义</p><WordActions word={item.word} store={store}/></div>
     <div className="poly-answer"><h2>{multi?'请选择这个词的所有正确释义':'请选择正确释义'}</h2><div className="poly-options" role="group" aria-label={multi?'多选释义':'单选释义'}>{options.map(o=>{
-      const isSelected=selected.includes(o.id),correct=result?.correct.some(c=>c.id===o.id),wrong=result?.wrong.some(c=>c.id===o.id);
-      return <label className={`poly-option ${isSelected?'selected':''} ${correct?'correct':''} ${wrong?'error':''}`} key={o.id}><input type={multi?'checkbox':'radio'} name="poly-answer" checked={isSelected} disabled={!!result} onChange={()=>setSelected(s=>multi?(s.includes(o.id)?s.filter(v=>v!==o.id):[...s,o.id]):[o.id])}/><span>{o.gloss}</span>{result&&correct&&<Check size={20}/>}</label>;
-    })}</div><div className="poly-submit">{result?<><span className="recorded"><Check size={20}/>已记录到复习档案</span><Button variant="primary" onClick={next}>下一题<ArrowRight size={20}/></Button></>:<Button variant="primary" disabled={!selected.length} onClick={submit}>提交所选释义</Button>}</div>{result&&<p className="muted">本次选对 {result.chosen.length}/{result.correct.length} 个释义 · 漏选 {result.missed.length} · 误选 {result.wrong.length}</p>}</div>
+      const isSelected=selected.includes(o.id),state=!result?'neutral':result.chosen.some(c=>c.id===o.id)?'chosen':result.wrong.some(c=>c.id===o.id)?'wrong':result.missed.some(c=>c.id===o.id)?'missed':'neutral';
+      const Icon={chosen:CircleCheck,wrong:CircleX,missed:CircleAlert}[state];
+      return <label className={`poly-option ${!result&&isSelected?'selected':''} ${state}`} key={o.id}><input type={multi?'checkbox':'radio'} name="poly-answer" checked={isSelected} disabled={!!result} onChange={()=>setSelected(s=>multi?(s.includes(o.id)?s.filter(v=>v!==o.id):[...s,o.id]):[o.id])}/><span>{o.gloss}</span>{Icon&&<Icon size={20}/ >}{state==='missed'&&<small>漏选</small>}</label>;
+    })}</div><div className="poly-submit">{result?<><span className="recorded"><Check size={20}/>已记录到复习档案</span><Button variant="primary" onClick={next}>下一题<ArrowRight size={20}/></Button></>:<Button variant="primary" disabled={!selected.length} onClick={submit}>提交所选释义</Button>}</div></div>
   </article>{result&&<section className="poly-results">
     <h2>本词释义结果</h2>
-    <p className="result-summary">{result.isCorrect?<><Check size={20}/>本题全对 · 本次选对 {result.chosen.length}</>:<>本次选对 {result.chosen.length} / 漏选 {result.missed.length} / 误选 {result.wrong.length}</>}</p>
+    <div className="result-summary" role="status"><span className="chosen"><CircleCheck size={20}/>{result.isCorrect?'本题全对':'选对'} <strong>{result.chosen.length}/{result.correct.length}</strong></span>{result.missed.length>0&&<span className="missed"><CircleAlert size={20}/>漏选 <strong>{result.missed.length}</strong></span>}{result.wrong.length>0&&<span className="wrong"><CircleX size={20}/>误选 <strong>{result.wrong.length}</strong></span>}</div>
     <div className="poly-result-grid">{[['漏选释义',result.missed],['误选项对应韩文',result.wrong],['本次选对',result.chosen]].filter(([,items])=>items.length>0).map(([label,items])=><section className="result-group" key={label}><h3>{label} · {items.length}</h3>{items.map(o=><SenseCard key={o.id} word={o.word} sense={o.senses[0]} showHeadword={label==='误选项对应韩文'}/>)}</section>)}</div>
     <details><summary>查看全部释义</summary><div className="all-senses">{item.word.senses.map((s,i)=><SenseCard key={s.id} word={item.word} sense={s} index={i+1} memory={store.memories[s.id]}/>)}</div></details>
   </section>}</>;

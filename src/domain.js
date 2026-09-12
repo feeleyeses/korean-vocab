@@ -60,6 +60,15 @@ export function reviewQueue(words, memories, mode, favorites = [], now = Date.no
   items.sort((a,b)=>new Date(memories[a.sense.id].dueAt)-new Date(memories[b.sense.id].dueAt));
   return interleave(items);
 }
+// Display-only statistics over the existing due queue; scheduling is unchanged.
+export function dueStats(words, memories, now=Date.now()) {
+  const today=new Date(now);today.setHours(0,0,0,0);
+  const dates=reviewQueue(words,memories,'due',[],now).map(i=>new Date(memories[i.sense.id].dueAt));
+  const overdueDates=dates.filter(d=>d.getTime()<today.getTime());
+  const dayIndex=d=>Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/86400000;
+  return {pending:dates.length,overdue:overdueDates.length,dueToday:dates.length-overdueDates.length,
+    longestOverdueDays:overdueDates.length?Math.max(...overdueDates.map(d=>dayIndex(today)-dayIndex(d))):0};
+}
 export function polyQueue(words, memories, mode, now=Date.now()) {
   const poly = words.filter(w=>senseGroups(w).length>1);
   if (mode==='poly-single') return poly.flatMap(word=>word.senses.filter(s=>isDueWeak(memories[s.id],now)).map(sense=>({word,sense})));

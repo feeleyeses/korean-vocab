@@ -2,7 +2,7 @@ import React,{useMemo,useState,useRef,useEffect} from 'react';
 import { ArrowRight,Search,Download,Upload,ChevronDown as ChevronDownIcon,ListFilter,ArrowDownUp,SquareCheckBig,ListChecks,X,CalendarClock,AudioWaveform,Zap,Library as LibraryIcon } from 'lucide-react';
 import { Button,Chip,Settings,ProgressLevels,WordRow,Pagination,EmptyState } from './components.jsx';
 import {posLabel,posOptions} from './pos-labels.js';
-import { levels,tags,scopeWords,wordProgress,reviewModes,reviewQueue,polyQueue } from './domain.js';
+import { levels,tags,scopeWords,wordProgress,reviewModes,reviewQueue,polyQueue,dueStats } from './domain.js';
 
 export {Home} from './Home.jsx';
 const defaults={levels:[],route:'full',capacity:12,tags:[]};
@@ -70,6 +70,6 @@ export function ReviewMenu({words,store,startReview,active}) {
   })}</div>;
 }
 export function ReviewHome({words,store,startReview,startSound}) {
-  const due=reviewQueue(words,store.memories,'due').length;
-  return <div className="page-stack"><div className="page-heading"><h1>复习</h1></div><ReviewMenu words={words} store={store} startReview={startReview}/><section className="review-overview"><div><p className="muted">今日到期</p><strong>{due}<small> 个释义</small></strong></div><Button variant="primary" onClick={()=>startReview('due')}>开始今日复习<ArrowRight size={20}/></Button></section><section className="sound-entry"><div><h2>音变专项</h2><p className="muted">实际读音 · 罗马音 · 音变规则</p></div><Button onClick={startSound}>进入音变专项<ArrowRight size={20}/></Button></section></div>;
+  const stats=dueStats(words,store.memories);
+  return <div className="page-stack"><div className="page-heading"><h1>复习</h1></div><ReviewMenu words={words} store={store} startReview={startReview}/><section className="review-overview"><div><h2>待复习 {stats.pending} 个释义</h2><p className="due-breakdown">逾期 {stats.overdue} · 今日到期 {stats.dueToday}{stats.overdue>0&&<span> · 最长逾期 {stats.longestOverdueDays} 天</span>}</p></div><Button variant="primary" onClick={()=>startReview('due')}>开始今日复习<ArrowRight size={20}/></Button></section><section className="sound-entry"><div><h2>音变专项</h2><p className="muted">实际读音 · 罗马音 · 音变规则</p></div><Button onClick={startSound}>进入音变专项<ArrowRight size={20}/></Button></section></div>;
 }

@@ -1,18 +1,19 @@
 import React,{useState,useMemo,useRef} from 'react';
 import { Check, X, ChevronUp, ChevronDown, ArrowRight } from 'lucide-react';
 import { Button,Progress,WordHero,WordActions,Knowledge,EmptyState } from './components.jsx';
-import { optionsFor,grade,intervalLabel } from './domain.js';
+import { optionsFor,grade,intervalLabel,dueStats } from './domain.js';
 
 export default function Session({session,words,store,onExit,onRestart}) {
   const [index,setIndex]=useState(0),[completed,setCompleted]=useState(false);
   if(!session.queue.length)return <EmptyState title={session.mode==='new'?'本范围没有待学新词':'暂无可复习内容'} text="选择其他学习范围，或先学习一些新词。" action={<Button onClick={onExit}>返回</Button>}/>;
   if(completed)return <EmptyState title={session.mode==='new'?'这一组完成了':'这轮复习完成了'} text={`已完成 ${session.queue.length} 张，结果已记录到学习档案。`} action={<div className="button-group"><Button onClick={onExit}>返回{session.mode==='new'?'学习':'复习'}</Button><Button variant="primary" onClick={onRestart}>再来一组</Button></div>}/>;
   const item=session.queue[index];
-  return <div className="session-layout">
+  const stats=session.reviewMode==='due'?dueStats(words,store.memories):null;
+  return <>{stats&&<section className="due-session-summary"><h1>待复习 {stats.pending} 个释义</h1><p className="due-breakdown">逾期 {stats.overdue} · 今日到期 {stats.dueToday}{stats.overdue>0&&<span> · 最长逾期 {stats.longestOverdueDays} 天</span>}</p></section>}<div className="session-layout">
     <aside className="session-sidebar"><h2>本组进度</h2><p className="session-count">{index}<small> / {session.queue.length}</small></p><Progress value={index} max={session.queue.length} label="本组进度"/><dl><dt>当前已学</dt><dd>{store.profile.learnedIds.length} / {words.length}</dd><dt>当前队列余量</dt><dd>{session.queue.length-index}</dd><dt>学习范围</dt><dd>TOPIK {session.levels.join(' / ')}</dd></dl><Button variant="tertiary" onClick={onExit}>返回</Button></aside>
     <Question key={`${session.id}:${index}`} item={item} index={index} total={session.queue.length} mode={session.mode} title={session.title} words={words} store={store} onNext={()=>index+1>=session.queue.length?setCompleted(true):setIndex(index+1)}/>
     <aside className="session-sidebar rules-panel"><h2>本组规则</h2><ol><li><span>01</span>只看韩语并主动回想</li><li><span>02</span>{session.mode==='new'?'先判断记忆，再揭晓答案':'选择释义，再核对答案'}</li></ol></aside>
-  </div>;
+  </div></>;
 }
 function Question({item,index,total,mode,title,words,store,onNext}) {
   const [result,setResult]=useState(null),[mapOpen,setMapOpen]=useState(false),locked=useRef(false);
