@@ -7,7 +7,7 @@ Release A is frozen at `examples-7d882c8df890c5ba0278`. Preparation never publis
 From the repository root, Node.js 22+; no network, private cache, Python runtime or model is required:
 
 ```sh
-node docs/review-tool/verify-release-a.mjs
+node docs/review-tool/verify-release-a.mjs --phase=pre_publish
 node --test docs/review-tool/automation.test.mjs docs/review-tool/sense-alignment.test.mjs docs/review-tool/example-lanes.test.mjs docs/review-tool/publication.test.mjs docs/review-tool/readiness.test.mjs docs/review-tool/expanded.test.mjs docs/review-tool/preparation.test.mjs
 node docs/review-tool/ingest-test.mjs
 ```
@@ -25,6 +25,16 @@ Historical full-corpus/WSD tests skip explicitly when ignored research data is a
 Git -text attributes preserve frozen manifest and attribution bytes across platforms. Vocabulary hashes use automation.mjs canonical JSON, distinct from file-byte SHA256. Stop on any drift; never regenerate an existing manifest to repair validation.
 
 ## Safety
+
+## Explicit release phases
+
+The verifier requires `phase: 'pre_publish'` or `phase: 'post_publish'`; omission is an error. Pre-publish requires the previous hash. An already-new hash returns `already_published` with `writerAllowed: false` (CLI exit 2), never another write. Other hashes fail with `Production drift`.
+
+Post-publish requires the new hash and distinct previous/new hashes. It checks all 150 example IDs and their sense associations, removes only these additions in memory to reconstruct the exact previous hash, reruns the unchanged complete publication gate and quality audit, and compares the full expected projection including provenance. Unexpected hashes fail with `Post-release drift`.
+
+`releaseATransaction` is the explicit orchestration API: disabled by default, exact Release A ID only, pre verification -> existing backup/atomic writer -> post verification inside the rollback boundary. It never changes a manifest. Enabled calls in tests target temporary copies only.
+
+CI selects a declared phase from `release-a-record.json.kind`, not from the vocabulary hash: `prepared-not-published` means `pre_publish`; `published` means `post_publish`; unknown states fail. A future authorized production release must update that release record to `published` in the same commit as the vocabulary. For local post-release verification run `node docs/review-tool/verify-release-a.mjs --phase=post_publish`; run tests with `RELEASE_PHASE=post_publish` in that phase. The frozen manifest, candidate input and attribution remain unchanged in both phases.
 
 publication.mjs checks registry, source nodes and KO/ZH links, credit, IDs, entry/dataset hashes, duplicate data, capacity, realExamples, and complete vocabulary quality audit. Only additions may be projected; all originals must remain unchanged. Writer defaults disabled; automated tests enable it only on temporary fixtures. verify-release-a.mjs never invokes writer.
 

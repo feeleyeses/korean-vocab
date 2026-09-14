@@ -13,8 +13,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verify frozen manifest, provenance and full publication dry-run
-        run: node docs/review-tool/verify-release-a.mjs
+      - name: Select explicitly recorded release phase (never infer from vocabulary hash)
+        run: |
+          node --input-type=module -e "import fs from 'node:fs'; const r=JSON.parse(fs.readFileSync('docs/review-tool/release-a-record.json')); const phase={'prepared-not-published':'pre_publish','published':'post_publish'}[r.kind]; if(!phase)throw Error('Unknown release record state'); fs.appendFileSync(process.env.GITHUB_ENV,'RELEASE_PHASE='+phase+'\n');"
+      - name: Verify frozen release in the declared phase
+        run: node docs/review-tool/verify-release-a.mjs --phase="$RELEASE_PHASE"
       - name: Automation and isolated writer rollback tests
         run: node --test docs/review-tool/*.test.mjs
       - name: Offline ingest fixture tests

@@ -6,6 +6,7 @@ import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {hash,norm,evaluate,publicationGate,freezePolicy} from './automation.mjs';
+import {verifyPhase} from './release-phase.mjs';
 export const WRITER_DEFAULTS=Object.freeze({enabled:false});
 export const byteHash=b=>createHash('sha256').update(b).digest('hex');
 export async function qualityAudit(doc){
@@ -56,14 +57,15 @@ export async function planRelease(raw,baseline,registry,options={}){
   manifest:{releaseId:'examples-'+hash([baseline.datasetHash,accepted.map(c=>c.candidateId)]).slice(0,20),sourceDatasetHash:hash(baseline.candidates),previousVocabularyHash:hash(raw),newVocabularyHash:hash(next),addedExampleIds:accepted.map(c=>'external-'+c.candidateId),timestamp:new Date().toISOString(),scoreVersion:policy.version},
   next:accepted.length===ready.length?next:null};
 }
-export async function writeRelease({target,release,enabled=false,confirmationReleaseId,audit=qualityAudit}){
+export async function writeRelease({target,release,enabled=false,confirmationReleaseId,audit=qualityAudit,postVerify}){
  if(!enabled)return {mode:'disabled',written:false};
  if(!release.next||release.blocked||!release.releaseReady||confirmationReleaseId!==release.manifest.releaseId)throw Error('Release not authorized/fully ready');
  const absolute=path.resolve(target),lock=absolute+'.publication.lock',temp=absolute+'.release.tmp',backup=absolute+'.'+release.manifest.releaseId+'.backup';
   const handle=await fs.open(lock,'wx');let replaced=false,previous,tempOwned=false;
  try{
   previous=await fs.readFile(absolute);
-  if(hash(JSON.parse(previous))!==release.manifest.previousVocabularyHash)throw Error('Dataset drift');
+  const state=verifyPhase('pre_publish',hash(JSON.parse(previous)),release.manifest);
+  if(state.status==='already_published')return {written:false,...state};
   await fs.writeFile(backup,previous,{flag:'wx'});
   await fs.writeFile(temp,JSON.stringify(release.next,null,2)+'\n',{flag:'wx'});
   tempOwned=true;
@@ -76,6 +78,8 @@ export async function writeRelease({target,release,enabled=false,confirmationRel
   await fs.rename(temp,absolute);replaced=true;
   const written=JSON.parse(await fs.readFile(absolute,'utf8'));
   if(hash(written)!==release.manifest.newVocabularyHash||!(await audit(written)).passed)throw Error('Post-write audit/hash failed');
+  verifyPhase('post_publish',hash(written),release.manifest);
+  if(postVerify)await postVerify({phase:'post_publish',target:absolute});
   await fs.writeFile(backup+'.release.json',JSON.stringify({...release.manifest,previousFileHash:byteHash(previous),newFileHash:byteHash(await fs.readFile(absolute))},null,2),{flag:'wx'});
   return {written:true,backup,releaseId:release.manifest.releaseId};
  }catch(e){
