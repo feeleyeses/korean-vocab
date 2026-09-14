@@ -1,5 +1,5 @@
 {
-  "kind": "prepared-not-published",
+  "kind": "published",
   "name": "B",
   "releaseId": "examples-2e4aa9f8191421c3e2fa",
   "createdAt": "2026-09-14T15:21:22.682Z",
@@ -128,5 +128,18 @@
     "alreadyPublishedPassed": true,
     "productionUntouched": true
   },
-  "writerEnabled": false
+  "writerEnabled": false,
+  "publication": {
+    "timestamp": "2026-09-14T15:34:34.791Z",
+    "previousVocabularyHash": "4c173f998f94072af4b54ad8fc176239c8910f57e9d9070cc596d28fcdeec9ca",
+    "newVocabularyHash": "83c62a43166d9aa507136beee1708118065142ddabdd6d6c4ec431662791a2b8",
+    "addedExamples": 250,
+    "coveredSenses": 250,
+    "blockingErrors": 0,
+    "newWarnings": 0
+  },
+  "online": {
+    "passed": false,
+    "status": "awaiting-ci-pages-smoke"
+  }
 }
