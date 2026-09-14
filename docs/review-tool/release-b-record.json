@@ -138,8 +138,927 @@
     "blockingErrors": 0,
     "newWarnings": 0
   },
+  "smokeAttempts": [
+    {
+      "passed": false,
+      "status": "smoke_failed",
+      "releaseId": "examples-2e4aa9f8191421c3e2fa",
+      "releaseCommit": "8fb272ac4953f2fa876cf66557f5bf3dd0208b66",
+      "ciRun": 34863137503,
+      "pagesRun": 34863137574,
+      "productionHash": "83c62a43166d9aa507136beee1708118065142ddabdd6d6c4ec431662791a2b8",
+      "smokeTimestamp": "2026-09-14 15:41:35 UTC",
+      "sampleRule": "First manifest candidate per TOPIK level and POS; shortest and longest; five ascending hash([releaseId,candidateId]) candidates; union in insertion order",
+      "smokeSampleIds": [
+        {
+          "candidateId": "152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+          "exampleId": "external-152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+          "senseId": "ko-때문-843-s1"
+        },
+        {
+          "candidateId": "1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+          "exampleId": "external-1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+          "senseId": "ko-어둡다-1194-s1"
+        },
+        {
+          "candidateId": "145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+          "exampleId": "external-145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+          "senseId": "ko-필요하다-3795-s1"
+        },
+        {
+          "candidateId": "143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+          "exampleId": "external-143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+          "senseId": "ko-바라보다-1964-s1"
+        },
+        {
+          "candidateId": "15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+          "exampleId": "external-15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+          "senseId": "ko-색상-2255-s1"
+        },
+        {
+          "candidateId": "153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+          "exampleId": "external-153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+          "senseId": "ko-유명-2758-s1"
+        },
+        {
+          "candidateId": "1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+          "exampleId": "external-1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+          "senseId": "ko-뱀-1997-s1"
+        },
+        {
+          "candidateId": "1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+          "exampleId": "external-1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+          "senseId": "ko-우연-2694-s1"
+        },
+        {
+          "candidateId": "22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+          "exampleId": "external-22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+          "senseId": "ko-평생-3236-s1"
+        },
+        {
+          "candidateId": "33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+          "exampleId": "external-33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+          "senseId": "ko-스케이트-1070-s1"
+        },
+        {
+          "candidateId": "191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+          "exampleId": "external-191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+          "senseId": "ko-바닷가-903-s1"
+        },
+        {
+          "candidateId": "1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+          "exampleId": "external-1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+          "senseId": "ko-전체-2903-s1"
+        },
+        {
+          "candidateId": "3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+          "exampleId": "external-3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+          "senseId": "ko-노력하다-762-s1"
+        }
+      ],
+      "desktopResult": {
+        "commonSmoke": "passed",
+        "isolatedRevealSamples": 13,
+        "isolatedRevealPassed": true,
+        "liveLibraryPassed": [
+          "때문",
+          "어둡다",
+          "필요하다",
+          "바라보다",
+          "색상"
+        ],
+        "liveLibrary": "stopped at ambiguous headword locator"
+      },
+      "mobileResult": {
+        "commonSmoke": "passed",
+        "isolatedRevealSamples": 13,
+        "isolatedRevealPassed": true,
+        "liveLibrary": "not completed"
+      },
+      "dataVerificationResult": {
+        "onlineHashMatches": true,
+        "all250ExampleTextsVerified": true
+      },
+      "failure": {
+        "type": "smoke_locator_error",
+        "headword": "유명",
+        "expected": "유명 / TOPIK 6 / 名词",
+        "actual": "유명하다 / TOPIK 2 / 形容词",
+        "reason": "First search result was expanded instead of exact headword. KO/ZH assertion failed on the wrong row.",
+        "productionDefectConfirmed": false
+      },
+      "blockingErrors": 1,
+      "blockingErrorScope": "smoke harness assertion, not vocabulary quality audit",
+      "warningsDelta": null,
+      "writerEnabled": false,
+      "smokeAttemptId": "release-b-smoke-001",
+      "reason": "locator_mismatch",
+      "detail": "query 유명 selected 유명하다"
+    },
+    {
+      "smokeAttemptId": "release-b-smoke-002",
+      "status": "smoke_passed",
+      "passed": true,
+      "locatorVersion": "exact-entity-v1",
+      "sampleIds": [
+        {
+          "candidateId": "152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+          "exampleId": "external-152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+          "senseId": "ko-때문-843-s1"
+        },
+        {
+          "candidateId": "1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+          "exampleId": "external-1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+          "senseId": "ko-어둡다-1194-s1"
+        },
+        {
+          "candidateId": "145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+          "exampleId": "external-145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+          "senseId": "ko-필요하다-3795-s1"
+        },
+        {
+          "candidateId": "143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+          "exampleId": "external-143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+          "senseId": "ko-바라보다-1964-s1"
+        },
+        {
+          "candidateId": "15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+          "exampleId": "external-15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+          "senseId": "ko-색상-2255-s1"
+        },
+        {
+          "candidateId": "153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+          "exampleId": "external-153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+          "senseId": "ko-유명-2758-s1"
+        },
+        {
+          "candidateId": "1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+          "exampleId": "external-1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+          "senseId": "ko-뱀-1997-s1"
+        },
+        {
+          "candidateId": "1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+          "exampleId": "external-1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+          "senseId": "ko-우연-2694-s1"
+        },
+        {
+          "candidateId": "22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+          "exampleId": "external-22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+          "senseId": "ko-평생-3236-s1"
+        },
+        {
+          "candidateId": "33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+          "exampleId": "external-33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+          "senseId": "ko-스케이트-1070-s1"
+        },
+        {
+          "candidateId": "191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+          "exampleId": "external-191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+          "senseId": "ko-바닷가-903-s1"
+        },
+        {
+          "candidateId": "1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+          "exampleId": "external-1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+          "senseId": "ko-전체-2903-s1"
+        },
+        {
+          "candidateId": "3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+          "exampleId": "external-3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+          "senseId": "ko-노력하다-762-s1"
+        }
+      ],
+      "timestamp": "2026-09-14 15:51:45 UTC",
+      "desktopResult": {
+        "passed": true,
+        "width": 1440,
+        "liveLibraryPassed": 13,
+        "isolatedLiveEntryRevealPassed": 13,
+        "reviewReveal": "passed in full deployed-site d2-ui-smoke",
+        "knowledgeScroll": "passed",
+        "footerContinue": "passed",
+        "horizontalOverflow": false,
+        "bottomNavigation": "desktop 5 entries passed",
+        "results": [
+          {
+            "candidateId": "152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+            "exampleId": "external-152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+            "senseId": "ko-때문-843-s1",
+            "entryId": "ko-때문-843",
+            "headword": "때문",
+            "pos": "의존 명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+            "exampleId": "external-1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+            "senseId": "ko-어둡다-1194-s1",
+            "entryId": "ko-어둡다-1194",
+            "headword": "어둡다",
+            "pos": "형용사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+            "exampleId": "external-145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+            "senseId": "ko-필요하다-3795-s1",
+            "entryId": "ko-필요하다-3795",
+            "headword": "필요하다",
+            "pos": "형용사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+            "exampleId": "external-143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+            "senseId": "ko-바라보다-1964-s1",
+            "entryId": "ko-바라보다-1964",
+            "headword": "바라보다",
+            "pos": "동사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+            "exampleId": "external-15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+            "senseId": "ko-색상-2255-s1",
+            "entryId": "ko-색상-2255",
+            "headword": "색상",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+            "exampleId": "external-153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+            "senseId": "ko-유명-2758-s1",
+            "entryId": "ko-유명-2758",
+            "headword": "유명",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+            "exampleId": "external-1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+            "senseId": "ko-뱀-1997-s1",
+            "entryId": "ko-뱀-1997",
+            "headword": "뱀",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+            "exampleId": "external-1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+            "senseId": "ko-우연-2694-s1",
+            "entryId": "ko-우연-2694",
+            "headword": "우연",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+            "exampleId": "external-22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+            "senseId": "ko-평생-3236-s1",
+            "entryId": "ko-평생-3236",
+            "headword": "평생",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+            "exampleId": "external-33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+            "senseId": "ko-스케이트-1070-s1",
+            "entryId": "ko-스케이트-1070",
+            "headword": "스케이트",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+            "exampleId": "external-191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+            "senseId": "ko-바닷가-903-s1",
+            "entryId": "ko-바닷가-903",
+            "headword": "바닷가",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+            "exampleId": "external-1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+            "senseId": "ko-전체-2903-s1",
+            "entryId": "ko-전체-2903",
+            "headword": "전체",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+            "exampleId": "external-3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+            "senseId": "ko-노력하다-762-s1",
+            "entryId": "ko-노력하다-762",
+            "headword": "노력하다",
+            "pos": "동사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+            "exampleId": "external-152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+            "senseId": "ko-때문-843-s1",
+            "entryId": "ko-때문-843",
+            "headword": "때문",
+            "pos": "의존 명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+            "exampleId": "external-1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+            "senseId": "ko-어둡다-1194-s1",
+            "entryId": "ko-어둡다-1194",
+            "headword": "어둡다",
+            "pos": "형용사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+            "exampleId": "external-145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+            "senseId": "ko-필요하다-3795-s1",
+            "entryId": "ko-필요하다-3795",
+            "headword": "필요하다",
+            "pos": "형용사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+            "exampleId": "external-143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+            "senseId": "ko-바라보다-1964-s1",
+            "entryId": "ko-바라보다-1964",
+            "headword": "바라보다",
+            "pos": "동사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+            "exampleId": "external-15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+            "senseId": "ko-색상-2255-s1",
+            "entryId": "ko-색상-2255",
+            "headword": "색상",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+            "exampleId": "external-153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+            "senseId": "ko-유명-2758-s1",
+            "entryId": "ko-유명-2758",
+            "headword": "유명",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+            "exampleId": "external-1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+            "senseId": "ko-뱀-1997-s1",
+            "entryId": "ko-뱀-1997",
+            "headword": "뱀",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+            "exampleId": "external-1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+            "senseId": "ko-우연-2694-s1",
+            "entryId": "ko-우연-2694",
+            "headword": "우연",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+            "exampleId": "external-22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+            "senseId": "ko-평생-3236-s1",
+            "entryId": "ko-평생-3236",
+            "headword": "평생",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+            "exampleId": "external-33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+            "senseId": "ko-스케이트-1070-s1",
+            "entryId": "ko-스케이트-1070",
+            "headword": "스케이트",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+            "exampleId": "external-191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+            "senseId": "ko-바닷가-903-s1",
+            "entryId": "ko-바닷가-903",
+            "headword": "바닷가",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+            "exampleId": "external-1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+            "senseId": "ko-전체-2903-s1",
+            "entryId": "ko-전체-2903",
+            "headword": "전체",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+            "exampleId": "external-3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+            "senseId": "ko-노력하다-762-s1",
+            "entryId": "ko-노력하다-762",
+            "headword": "노력하다",
+            "pos": "동사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          }
+        ]
+      },
+      "mobileResult": {
+        "passed": true,
+        "width": 390,
+        "liveLibraryPassed": 13,
+        "isolatedLiveEntryRevealPassed": 13,
+        "reviewReveal": "passed in full deployed-site d2-ui-smoke",
+        "knowledgeScroll": "passed",
+        "footerContinue": "passed",
+        "horizontalOverflow": false,
+        "bottomNavigation": "4 entries passed",
+        "results": [
+          {
+            "candidateId": "152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+            "exampleId": "external-152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+            "senseId": "ko-때문-843-s1",
+            "entryId": "ko-때문-843",
+            "headword": "때문",
+            "pos": "의존 명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+            "exampleId": "external-1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+            "senseId": "ko-어둡다-1194-s1",
+            "entryId": "ko-어둡다-1194",
+            "headword": "어둡다",
+            "pos": "형용사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+            "exampleId": "external-145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+            "senseId": "ko-필요하다-3795-s1",
+            "entryId": "ko-필요하다-3795",
+            "headword": "필요하다",
+            "pos": "형용사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+            "exampleId": "external-143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+            "senseId": "ko-바라보다-1964-s1",
+            "entryId": "ko-바라보다-1964",
+            "headword": "바라보다",
+            "pos": "동사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+            "exampleId": "external-15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+            "senseId": "ko-색상-2255-s1",
+            "entryId": "ko-색상-2255",
+            "headword": "색상",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+            "exampleId": "external-153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+            "senseId": "ko-유명-2758-s1",
+            "entryId": "ko-유명-2758",
+            "headword": "유명",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+            "exampleId": "external-1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+            "senseId": "ko-뱀-1997-s1",
+            "entryId": "ko-뱀-1997",
+            "headword": "뱀",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+            "exampleId": "external-1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+            "senseId": "ko-우연-2694-s1",
+            "entryId": "ko-우연-2694",
+            "headword": "우연",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+            "exampleId": "external-22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+            "senseId": "ko-평생-3236-s1",
+            "entryId": "ko-평생-3236",
+            "headword": "평생",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+            "exampleId": "external-33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+            "senseId": "ko-스케이트-1070-s1",
+            "entryId": "ko-스케이트-1070",
+            "headword": "스케이트",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+            "exampleId": "external-191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+            "senseId": "ko-바닷가-903-s1",
+            "entryId": "ko-바닷가-903",
+            "headword": "바닷가",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+            "exampleId": "external-1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+            "senseId": "ko-전체-2903-s1",
+            "entryId": "ko-전체-2903",
+            "headword": "전체",
+            "pos": "명사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+            "exampleId": "external-3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+            "senseId": "ko-노력하다-762-s1",
+            "entryId": "ko-노력하다-762",
+            "headword": "노력하다",
+            "pos": "동사",
+            "mode": "live-library",
+            "passed": true,
+            "ttsTriggered": true,
+            "favoriteRestored": true
+          },
+          {
+            "candidateId": "152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+            "exampleId": "external-152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+            "senseId": "ko-때문-843-s1",
+            "entryId": "ko-때문-843",
+            "headword": "때문",
+            "pos": "의존 명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+            "exampleId": "external-1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+            "senseId": "ko-어둡다-1194-s1",
+            "entryId": "ko-어둡다-1194",
+            "headword": "어둡다",
+            "pos": "형용사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+            "exampleId": "external-145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+            "senseId": "ko-필요하다-3795-s1",
+            "entryId": "ko-필요하다-3795",
+            "headword": "필요하다",
+            "pos": "형용사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+            "exampleId": "external-143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+            "senseId": "ko-바라보다-1964-s1",
+            "entryId": "ko-바라보다-1964",
+            "headword": "바라보다",
+            "pos": "동사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+            "exampleId": "external-15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+            "senseId": "ko-색상-2255-s1",
+            "entryId": "ko-색상-2255",
+            "headword": "색상",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+            "exampleId": "external-153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+            "senseId": "ko-유명-2758-s1",
+            "entryId": "ko-유명-2758",
+            "headword": "유명",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+            "exampleId": "external-1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+            "senseId": "ko-뱀-1997-s1",
+            "entryId": "ko-뱀-1997",
+            "headword": "뱀",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+            "exampleId": "external-1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+            "senseId": "ko-우연-2694-s1",
+            "entryId": "ko-우연-2694",
+            "headword": "우연",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+            "exampleId": "external-22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+            "senseId": "ko-평생-3236-s1",
+            "entryId": "ko-평생-3236",
+            "headword": "평생",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+            "exampleId": "external-33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+            "senseId": "ko-스케이트-1070-s1",
+            "entryId": "ko-스케이트-1070",
+            "headword": "스케이트",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+            "exampleId": "external-191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+            "senseId": "ko-바닷가-903-s1",
+            "entryId": "ko-바닷가-903",
+            "headword": "바닷가",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+            "exampleId": "external-1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+            "senseId": "ko-전체-2903-s1",
+            "entryId": "ko-전체-2903",
+            "headword": "전체",
+            "pos": "명사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          },
+          {
+            "candidateId": "3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+            "exampleId": "external-3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+            "senseId": "ko-노력하다-762-s1",
+            "entryId": "ko-노력하다-762",
+            "headword": "노력하다",
+            "pos": "동사",
+            "mode": "isolated-live-entry-reveal",
+            "passed": true
+          }
+        ]
+      },
+      "ttsResult": {
+        "passed": true,
+        "triggeredOnTarget": 26,
+        "audioContentJudged": false
+      },
+      "favoriteResult": {
+        "passed": true,
+        "toggleAndRestore": 26,
+        "userProfileTouched": false
+      },
+      "dataVerification": {
+        "productionHash": "83c62a43166d9aa507136beee1708118065142ddabdd6d6c4ec431662791a2b8",
+        "allExamples": 250,
+        "allMatched": true,
+        "provenanceVerified": true,
+        "wrongSenseOrDuplicates": 0,
+        "replacements": 0,
+        "deletions": 0
+      },
+      "blockingErrors": 0,
+      "warningsDelta": 0
+    }
+  ],
   "online": {
-    "passed": false,
-    "status": "awaiting-ci-pages-smoke"
-  }
+    "status": "published_verified",
+    "passed": true,
+    "releaseId": "examples-2e4aa9f8191421c3e2fa",
+    "releaseCommit": "8fb272ac4953f2fa876cf66557f5bf3dd0208b66",
+    "ci": "success",
+    "pages": "success",
+    "ciRun": 34863137503,
+    "pagesRun": 34863137574,
+    "productionHash": "83c62a43166d9aa507136beee1708118065142ddabdd6d6c4ec431662791a2b8",
+    "smokeTimestamp": "2026-09-14 15:51:45 UTC",
+    "smokeSampleIds": [
+      {
+        "candidateId": "152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+        "exampleId": "external-152991037ea90d2d0ee7bd4e1959d1812970fc098bd97b708868120ed0414615",
+        "senseId": "ko-때문-843-s1"
+      },
+      {
+        "candidateId": "1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+        "exampleId": "external-1443cd7565488dbb0fb2127979d2bcf92293bea67ab0d0de4904b1af2ff71934",
+        "senseId": "ko-어둡다-1194-s1"
+      },
+      {
+        "candidateId": "145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+        "exampleId": "external-145a9b44c4784b8c0f801b8d79fed7e0d78eb00f477ac2d151da403a84895a38",
+        "senseId": "ko-필요하다-3795-s1"
+      },
+      {
+        "candidateId": "143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+        "exampleId": "external-143388981ffd9a132df66242f4c7b436ee8abc94aa899ce2f5a2314e98a711b9",
+        "senseId": "ko-바라보다-1964-s1"
+      },
+      {
+        "candidateId": "15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+        "exampleId": "external-15e04b378336897e335d407763e953fbb9183f4aac3182eaedd17a1dfc7b80b5",
+        "senseId": "ko-색상-2255-s1"
+      },
+      {
+        "candidateId": "153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+        "exampleId": "external-153d1d7379484130c13422cb04ed2e1b911b375b016ce0acafde99977847ba5c",
+        "senseId": "ko-유명-2758-s1"
+      },
+      {
+        "candidateId": "1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+        "exampleId": "external-1f254de89de520b50b1c6dbbad8a5c12e9f0d50644c3a9d141d8481fa9173bb4",
+        "senseId": "ko-뱀-1997-s1"
+      },
+      {
+        "candidateId": "1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+        "exampleId": "external-1d6a09c5fc4782d9fc157ebcfb76fc30b830b8bb453dd4b847947f633d3163cc",
+        "senseId": "ko-우연-2694-s1"
+      },
+      {
+        "candidateId": "22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+        "exampleId": "external-22b3b9c4727caad234a4927e92863dbe5c2b0262f05d7cd8bd86e9add2d30f01",
+        "senseId": "ko-평생-3236-s1"
+      },
+      {
+        "candidateId": "33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+        "exampleId": "external-33909e2b5749718a1d1a7d95d4729e70375105274822c36c49831b5011d3b12d",
+        "senseId": "ko-스케이트-1070-s1"
+      },
+      {
+        "candidateId": "191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+        "exampleId": "external-191892ccf7e5c980d8392e70eb98148a709c03a1c3f1d025a7ff8091906e25b9",
+        "senseId": "ko-바닷가-903-s1"
+      },
+      {
+        "candidateId": "1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+        "exampleId": "external-1d9a14c0abe03e2a535fdb62179c4ecb1bf94d16688f064516edb413b6124649",
+        "senseId": "ko-전체-2903-s1"
+      },
+      {
+        "candidateId": "3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+        "exampleId": "external-3c4ca2a7dffca5533fa9b65504ec4e8f955010e00f166256420f732707086077",
+        "senseId": "ko-노력하다-762-s1"
+      }
+    ],
+    "locatorVersion": "exact-entity-v1",
+    "desktopResult": {
+      "passed": true,
+      "senses": 13
+    },
+    "mobileResult": {
+      "passed": true,
+      "senses": 13
+    },
+    "dataVerificationResult": {
+      "productionHash": "83c62a43166d9aa507136beee1708118065142ddabdd6d6c4ec431662791a2b8",
+      "allExamples": 250,
+      "allMatched": true,
+      "provenanceVerified": true,
+      "wrongSenseOrDuplicates": 0,
+      "replacements": 0,
+      "deletions": 0
+    },
+    "ttsResult": {
+      "passed": true,
+      "triggeredOnTarget": 26,
+      "audioContentJudged": false
+    },
+    "favoriteResult": {
+      "passed": true,
+      "toggleAndRestore": 26,
+      "userProfileTouched": false
+    },
+    "blockingErrors": 0,
+    "warningsDelta": 0,
+    "attemptId": "release-b-smoke-002",
+    "writerEnabled": false
+  },
+  "status": "published_verified"
 }
