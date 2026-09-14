@@ -1,5 +1,5 @@
 {
-  "kind": "prepared-not-published",
+  "kind": "published",
   "releaseId": "examples-7d882c8df890c5ba0278",
   "manifestByteHash": "7ac82e0292b6696fef2631efae051938544f56cc94b099d848d3d3ef8625647d",
   "attributionByteHash": "dd17e7716809bc5241613cdef1de3911d392b727e4a0226927faf696d4e57a1e",
@@ -55,5 +55,22 @@
       }
     }
   },
-  "productionWritten": false
+  "productionWritten": true,
+  "publication": {
+    "timestamp": "2026-09-14T15:09:44.944Z",
+    "previousVocabularyHash": "b8c949c82d4fed57b862a1accd84f71289ee209cfeb0a0b15ae0909051703db3",
+    "newVocabularyHash": "4c173f998f94072af4b54ad8fc176239c8910f57e9d9070cc596d28fcdeec9ca",
+    "addedExamples": 150,
+    "coveredSenses": 150,
+    "deletedExamples": 0,
+    "replacements": 0,
+    "entryCount": 4020,
+    "senseCount": 4059,
+    "blockingErrorDelta": 0,
+    "newWarnings": 0,
+    "writerEnabled": false,
+    "attributionPath": "data/releases/examples-7d882c8df890c5ba0278-ATTRIBUTION.md",
+    "provenance": "data/vocabulary.json entries[].senses[].examples[].provenance",
+    "transaction": "atomic replace and post_publish verification passed"
+  }
 }
