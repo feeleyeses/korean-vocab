@@ -1,0 +1,377 @@
+# Release Preparation — initial working-tree audit
+
+Initial git status --short --untracked-files=all: 330 files (1 tracked modification, 329 untracked files). Full original status, diff stat and bundle diff retained locally in .git/release-preparation-audit; this document lists every initial path. Already-ignored runtimes/models are not part of git status counts.
+
+The legacy bundle is formatting-only: esbuild-normalized HEAD and working copy are identical. The live entry references assets/app.js, not this legacy bundle; origin/main matched HEAD before preparation. Restored only assets/page-BbjdI8N_.js to HEAD after preserving its full diff.
+
+## A — Formal release source / configuration
+
+- .gitignore
+- docs/review-tool/.gitignore
+- docs/review-tool/README.md
+- docs/review-tool/RELEASE-A-ATTRIBUTION.md
+- docs/review-tool/STATE-MATRIX.md
+- docs/review-tool/automation.mjs
+- docs/review-tool/automation.test.mjs
+- docs/review-tool/benchmark-lock.json
+- docs/review-tool/bge-wsd.py
+- docs/review-tool/calibrate-wsd.mjs
+- docs/review-tool/calibrate.mjs
+- docs/review-tool/candidate.schema.json
+- docs/review-tool/core.mjs
+- docs/review-tool/core.test.mjs
+- docs/review-tool/corpus-interface.mjs
+- docs/review-tool/example-lanes.mjs
+- docs/review-tool/example-lanes.test.mjs
+- docs/review-tool/expanded.test.mjs
+- docs/review-tool/index.html
+- docs/review-tool/ingest-test.mjs
+- docs/review-tool/ingest.mjs
+- docs/review-tool/krdict-cache.example.json
+- docs/review-tool/manifest.example.json
+- docs/review-tool/morph_batch.py
+- docs/review-tool/multi-wsd.py
+- docs/review-tool/pipeline.example.json
+- docs/review-tool/pipeline.mjs
+- docs/review-tool/prepare-expanded.mjs
+- docs/review-tool/prepare-wsd.mjs
+- docs/review-tool/prepare.mjs
+- docs/review-tool/publication.mjs
+- docs/review-tool/publication.test.mjs
+- docs/review-tool/readiness-rules.mjs
+- docs/review-tool/readiness.test.mjs
+- docs/review-tool/release-a-manifest.json
+- docs/review-tool/requirements.txt
+- docs/review-tool/review.css
+- docs/review-tool/review.mjs
+- docs/review-tool/run-benchmark.mjs
+- docs/review-tool/run-example-lanes.mjs
+- docs/review-tool/run-expanded.mjs
+- docs/review-tool/run-publication.mjs
+- docs/review-tool/run-readiness.mjs
+- docs/review-tool/sense-alignment.mjs
+- docs/review-tool/sense-alignment.test.mjs
+- docs/review-tool/serve.mjs
+- docs/review-tool/silver-benchmark.mjs
+- docs/review-tool/source-registry.json
+- docs/review-tool/ui-test.mjs
+- docs/review-tool/unblock-benchmark.mjs
+- docs/review-tool/unblock_sources.py
+- docs/review-tool/unblock_tests.py
+- docs/review-tool/write-expanded-report.mjs
+- docs/review-tool/write-readiness-report.mjs
+- docs/review-tool/wsd-requirements.txt
+
+## B — Reproducible generated output (preserved locally, ignored; tracked legacy bundle restored)
+
+- assets/page-BbjdI8N_.js
+- artifacts/card-v2-learning-initial-1920.png
+- artifacts/card-v2-learning-revealed-1920.png
+- artifacts/card-v2-polish-pages-learning-revealed-1920.png
+- artifacts/card-v2-review-initial-1920.png
+- artifacts/card-v2-review-revealed-1920.png
+- artifacts/card-v2-section-layout-local-1920.png
+- artifacts/card-v2-section-layout-review-local-1920.png
+- artifacts/content-safe-after-learned-open-1920.png
+- artifacts/content-safe-after-poly-open-1920.png
+- artifacts/content-safe-final-learned-open-1920.png
+- artifacts/content-safe-final-poly-open-1920.png
+- artifacts/content-safe-local-learned-open-1920.png
+- artifacts/content-safe-local-poly-open-1920.png
+- artifacts/d2-desktop-learning-revealed.png
+- artifacts/d2-desktop-library-expanded.png
+- artifacts/d2-mobile-learning-revealed.png
+- artifacts/d2-mobile-library-expanded.png
+- artifacts/data-inspector-1440.png
+- artifacts/data-inspector-390.png
+- artifacts/density-local-final-learned-open-1920.png
+- artifacts/density-local-final-poly-open-1920.png
+- artifacts/density-local-learned-open-1920.png
+- artifacts/density-local-poly-open-1920.png
+- artifacts/drawer-390.png
+- artifacts/final-study-1440.png
+- artifacts/final-study-390.png
+- artifacts/home-1440.png
+- artifacts/home-390.png
+- artifacts/home-mobile-bottom.png
+- artifacts/krdict-collocation-coverage-2026-08-29T21-22-49-383Z.json
+- artifacts/krdict-collocation-coverage-2026-08-29T21-26-08-061Z.json
+- artifacts/krdict-collocation-coverage-2026-08-29T21-26-59-128Z.json
+- artifacts/learned-layout-local-1920.png
+- artifacts/learned-layout-pages-1920.png
+- artifacts/local-after-continue-1920.png
+- artifacts/local-after-filters-1920.png
+- artifacts/local-after-hero-1920.png
+- artifacts/local-after-row-1920.png
+- artifacts/pages-vocabulary-check.json
+- artifacts/poly-mixed-1440.png
+- artifacts/poly-mixed-390.png
+- artifacts/poly-perfect-1440.png
+- artifacts/poly-perfect-390.png
+- artifacts/rails-1440.png
+- artifacts/rails-390.png
+- artifacts/refinement-home-1440.png
+- artifacts/refinement-home-390.png
+- artifacts/refinement-review-1440.png
+- artifacts/refinement-review-390.png
+- artifacts/review-1440.png
+- artifacts/review-390.png
+- artifacts/review-tool-1440.png
+- artifacts/review-tool-390.png
+- artifacts/right-info-group-local-1920.png
+- artifacts/right-info-group-local-fixed-1920.png
+- artifacts/right-info-group-local-starred-1920.png
+- artifacts/right-info-group-pages-1920.png
+- artifacts/sprint3-topik1-pronunciation-batch.json
+- artifacts/sprint3-topik1-romanization-batch.json
+- artifacts/sprint3-topik2-quality-batch.json
+- artifacts/sprint3-topik3-quality-batch.json
+- artifacts/sprint4-topik456-quality-batch.json
+- artifacts/ui-freeze-local-1920.png
+- artifacts/ui-freeze-pages-1920.png
+- artifacts/ui-lock-after-continue-1920.png
+- artifacts/ui-lock-after-expanded-1920.png
+- artifacts/ui-lock-after-review-1920.png
+- artifacts/ui-lock-before-continue-1920.png
+- artifacts/ui-lock-before-expanded-1920.png
+- artifacts/ui-lock-before-review-1920.png
+- artifacts/ui-lock-local-after-continue-1920.png
+- artifacts/ui-lock-local-after-expanded-1920.png
+- artifacts/ui-lock-local-after-review-1920.png
+- artifacts/ui-polish-after-continue-1920.png
+- artifacts/ui-polish-after-filters-1920.png
+- artifacts/ui-polish-after-hero-1920.png
+- artifacts/ui-polish-after-row-1920.png
+- artifacts/ui-polish-before-continue-1920.png
+- artifacts/ui-polish-before-filters-1920.png
+- artifacts/ui-polish-before-full-1920.png
+- artifacts/ui-polish-before-hero-1920.png
+- artifacts/ui-polish-before-row-1920.png
+- artifacts/v2-flow-desktop-sound.png
+- artifacts/v2-flow-mobile-sound.png
+- artifacts/v2-flow-pages-desktop-review-open.png
+- artifacts/v2-flow-pages-desktop-sound.png
+- artifacts/v2-flow-pages-desktop-summer.png
+- artifacts/v2-flow-pages-desktop-winter.png
+- artifacts/v2-flow-pages-mobile-review-open.png
+- artifacts/v2-flow-pages-mobile-sound.png
+- artifacts/v2-flow-pages-mobile-summer.png
+- artifacts/v2-flow-pages-mobile-winter.png
+- artifacts/v2-info-block-sound-1920.png
+- artifacts/v2-info-block-summer-1920.png
+- artifacts/v2-info-block-winter-1920.png
+- artifacts/v2-layout-desktop-sound.png
+- artifacts/v2-layout-desktop-summer.png
+- artifacts/v2-layout-desktop-winter.png
+- artifacts/v2-layout-mobile-sound.png
+- artifacts/v2-layout-mobile-summer.png
+- artifacts/v2-layout-mobile-winter.png
+- artifacts/v2-redesign-local-desktop-sound.png
+- artifacts/v2-redesign-local-desktop-summer.png
+- artifacts/v2-redesign-local-desktop-winter.png
+- artifacts/v2-redesign-local-mobile-sound.png
+- artifacts/v2-redesign-local-mobile-summer.png
+- artifacts/v2-redesign-local-mobile-winter.png
+- artifacts/v2-redesign-pages-desktop-review.png
+- artifacts/v2-redesign-pages-desktop-sound.png
+- artifacts/v2-redesign-pages-desktop-summer.png
+- artifacts/v2-redesign-pages-desktop-winter.png
+- artifacts/v2-redesign-pages-mobile-review.png
+- artifacts/v2-redesign-pages-mobile-sound.png
+- artifacts/v2-redesign-pages-mobile-summer.png
+- artifacts/v2-redesign-pages-mobile-winter.png
+- artifacts/vocab-quality-card-interaction-recovery.json
+- artifacts/vocab-quality-card-v2-final.json
+- artifacts/vocab-quality-card-v2-polish-final.json
+- artifacts/vocab-quality-card-v2-polish.json
+- artifacts/vocab-quality-card-v2-section-final.json
+- artifacts/vocab-quality-card-v2-section.json
+- artifacts/vocab-quality-card-v2.json
+- artifacts/vocab-quality-card-v3-recovery.json
+- artifacts/vocab-quality-report-final.json
+- artifacts/vocab-quality-report-right-info.json
+- artifacts/vocab-quality-report.json
+- artifacts/vocab-quality-reveal-bugfix.json
+- artifacts/vocab-quality-sprint3-after-topik1-pronunciation.json
+- artifacts/vocab-quality-sprint3-after-topik1.json
+- artifacts/vocab-quality-sprint3-before.json
+- artifacts/vocab-quality-sprint3-final-after-deploy.json
+- artifacts/vocab-quality-sprint3-final.json
+- artifacts/vocab-quality-sprint3-topik2-after.json
+- artifacts/vocab-quality-sprint3-topik2-before.json
+- artifacts/vocab-quality-sprint3-topik2-final.json
+- artifacts/vocab-quality-sprint3-topik3-after.json
+- artifacts/vocab-quality-sprint3-topik3-before.json
+- artifacts/vocab-quality-sprint3-topik3-final.json
+- artifacts/vocab-quality-sprint4-after.json
+- artifacts/vocab-quality-sprint4-before.json
+- artifacts/vocab-quality-sprint4-final.json
+- artifacts/vocab-quality-v2-card-layout.json
+- artifacts/vocab-quality-v2-flow-final.json
+- artifacts/vocab-quality-v2-flow-layout.json
+- artifacts/vocab-quality-v2-info-block-final.json
+- artifacts/vocab-quality-v2-info-hierarchy-final.json
+- artifacts/vocab-quality-v2-rebuild-final.json
+- artifacts/vocab-quality-v2-redesign-final.json
+- artifacts/vocab-quality-v2-reference-blocks-final.json
+- artifacts/vocabulary-pipeline-card-v2-section.json
+- artifacts/vocabulary-pipeline-right-info.json
+- artifacts/vocabulary-pipeline-sprint3-final.json
+- artifacts/vocabulary-pipeline-sprint4-final.json
+- artifacts/vocabulary-pipeline-test.json
+- artifacts/vocabulary-pipeline-topik2-final.json
+- artifacts/vocabulary-pipeline-topik3-final.json
+
+## C — Local research, raw data, caches and ad-hoc historical scripts (preserved locally, ignored)
+
+- artifacts/TOPIK-I-1671.pdf
+- artifacts/TOPIK-II-2662.pdf
+- artifacts/apply-card-v2-definition-block.mjs
+- artifacts/apply-card-v2-inline-alignment.mjs
+- artifacts/apply-card-v2-polish.mjs
+- artifacts/apply-card-v2-section-layout.mjs
+- artifacts/apply-card-v2-transform.mjs
+- artifacts/card-v2-local-qa.cjs
+- artifacts/card-v2-polish-measure.cjs
+- artifacts/card-v2-polish-pages-measure.cjs
+- artifacts/card-v2-section-layout-qa.cjs
+- artifacts/card-v2-section-layout-review-pages-qa.cjs
+- artifacts/card-v2-section-layout-review-qa.cjs
+- artifacts/collocation-chain-audit.cjs
+- artifacts/collocation-pages-random-samples.cjs
+- artifacts/collocation-pages-samples.cjs
+- artifacts/d2-ui-smoke.cjs
+- artifacts/expansion-data-stats.cjs
+- artifacts/fix-card-v2-button-label.mjs
+- artifacts/inspect-buttons.cjs
+- artifacts/inspect-card-css.cjs
+- artifacts/inspect-review-revealed-flow.cjs
+- artifacts/krdict-collocation-coverage-2026-08-29T21-22-49-383Z.md
+- artifacts/krdict-collocation-coverage-2026-08-29T21-26-08-061Z.md
+- artifacts/krdict-collocation-coverage-2026-08-29T21-26-59-128Z.md
+- artifacts/local-expansion-smoke-unlocked.cjs
+- artifacts/local-expansion-smoke.cjs
+- artifacts/local-expansion-topik234-smoke.cjs
+- artifacts/local-expansion-topik56-smoke.cjs
+- artifacts/mobile-nav-polysemy-overflow-local.log
+- artifacts/pages-expansion-smoke.cjs
+- artifacts/pages-sprint4-qa.cjs
+- artifacts/pages-topik234-expansion-smoke.cjs
+- artifacts/pages-topik56-expansion-smoke.cjs
+- artifacts/poll-pages-card-v2-section.cjs
+- artifacts/poll-pages-expansion.cjs
+- artifacts/poll-pages-topik234-expansion.cjs
+- artifacts/poll-pages-topik56-expansion.cjs
+- artifacts/poll-pages-v2-info-block.cjs
+- artifacts/poll-pages-v2-info-hierarchy.cjs
+- artifacts/poll-pages-v2-reference-blocks.cjs
+- artifacts/probe-krdict-num.cjs
+- artifacts/probe-krdict-view.cjs
+- artifacts/sprint3-romanize-topik1.mjs
+- artifacts/sprint3-topik1-pronunciation-batch.mjs
+- artifacts/sprint3-topik2-quality-batch.mjs
+- artifacts/sprint3-topik3-quality-batch.mjs
+- artifacts/sprint4-topik456-quality-batch.mjs
+- artifacts/static-server.cjs
+- artifacts/v2-card-layout-budget-pages-qa.cjs
+- artifacts/v2-card-layout-budget-qa.cjs
+- artifacts/v2-info-block-pages-qa.cjs
+- artifacts/v2-info-block-qa.cjs
+- artifacts/v2-info-block-review-pages-qa.cjs
+- artifacts/v2-info-block-review-sound-qa.cjs
+- artifacts/v2-info-hierarchy-align-pages.cjs
+- artifacts/v2-info-hierarchy-pages-qa.cjs
+- artifacts/v2-info-hierarchy-review-pages-qa.cjs
+- artifacts/v2-reference-blocks-pages-qa.cjs
+- artifacts/v2-reference-blocks-review-pages-qa.cjs
+- artifacts/validate-learned-layout.mjs
+- artifacts/validate-ui-freeze.mjs
+- docs/EXTERNAL-RESOURCE-AUDIT.md
+- docs/OPEN-SOURCE-PRODUCT-AUDIT.md
+- docs/research-poc/README.md
+- docs/research-poc/collocation-poc-report.json
+- docs/research-poc/collocation-poc-report.md
+- docs/research-poc/example-poc-report.json
+- docs/research-poc/example-poc-report.md
+- docs/research-poc/kaikki-matched-cache.json
+- docs/research-poc/krdict-live-attempt.json
+- docs/research-poc/polysemy-candidates.json
+- docs/research-poc/polysemy-candidates.md
+- docs/research-poc/polysemy-review-notes.md
+- docs/research-poc/source-access.json
+- docs/review-tool/AUTOMATION-POC-REPORT.md
+- docs/review-tool/AUTOMATION-UNBLOCK-REPORT.md
+- docs/review-tool/EXAMPLE-FAST-LANE-REPORT.md
+- docs/review-tool/EXPANDED-DRY-RUN-REPORT.md
+- docs/review-tool/SINGLE-SENSE-PRODUCTION-READINESS.md
+- docs/review-tool/access-status.json
+- docs/review-tool/automation-results.json
+- docs/review-tool/benchmark-report.json
+- docs/review-tool/bge-report.json
+- docs/review-tool/calibration-report.json
+- docs/review-tool/candidates.json
+- docs/review-tool/example-lanes-report.json
+- docs/review-tool/example-lanes-results.json
+- docs/review-tool/expanded-report.json
+- docs/review-tool/expanded-results.json
+- docs/review-tool/expanded-scope.json
+- docs/review-tool/imports/2026-09-13T08-46-14-265Z.json
+- docs/review-tool/imports/2026-09-13T08-50-27-575Z.json
+- docs/review-tool/imports/2026-09-13T14-28-08-465Z.json
+- docs/review-tool/morphology-report.json
+- docs/review-tool/multi-wsd-report.json
+- docs/review-tool/pipeline-results.json
+- docs/review-tool/polysemy-filter-report.json
+- docs/review-tool/polysemy-filter-report.md
+- docs/review-tool/publication-baseline.json
+- docs/review-tool/publication-report.json
+- docs/review-tool/readiness-attribution-audit.json
+- docs/review-tool/readiness-gate.json
+- docs/review-tool/readiness-replacement-proposals.json
+- docs/review-tool/readiness-report.json
+- docs/review-tool/readiness-score-audit.json
+- docs/review-tool/readiness-sentence-audit.json
+- docs/review-tool/release-a-plan.json
+- docs/review-tool/silver-report.json
+- docs/review-tool/unblock-report.json
+- docs/review-tool/unblock-results.json
+- docs/review-tool/wsd-input.json
+- scripts/__pycache__/audit-vocab.cpython-312.pyc
+- scripts/__pycache__/extract-topik-i-candidates.cpython-312.pyc
+- scripts/collocation-poc-mining.mjs
+- scripts/external-resource-poc.mjs
+- scripts/extract-domain.mjs
+- scripts/krdict-poc.mjs
+
+## Already-ignored local infrastructure
+
+- docs/review-tool/.venv/
+- docs/review-tool/unblock-local/ (official cached source nodes, model weights, isolated writer copies/backups)
+- docs/review-tool/__pycache__/
+- node_modules/
+- _site/
+
+## New release infrastructure
+
+- docs/review-tool/release-a-input.json: exact original 150-candidate inputs and policy, sourceDatasetHash checked against the unchanged manifest; not a new manifest.
+- docs/review-tool/release-a-record.json: portable prepared-not-published record, original manifest byte hash and attribution hash.
+- docs/review-tool/verify-release-a.mjs and preparation.test.mjs: offline release validation and fresh production projection tests.
+- docs/review-tool/provenance.schema.json: required source/credit fields.
+- docs/review-tool/README.md: clean-checkout commands and optional research-cache boundaries.
+
+## Sensitive-information audit
+
+Two pre-existing local probes contained hard-coded KRDict credentials:
+
+- artifacts/probe-krdict-num.cjs
+- artifacts/probe-krdict-view.cjs
+
+Both remain local and are exactly ignored; neither content nor credential value is committed. Rotate previously exposed credentials. Thirty-six initial local files contained machine-specific paths; these historical output/log files are not included. The staged release tooling scan reports no credential literals or machine absolute paths. API key environment-variable names, tokenization identifiers, defensive URL checks and the documented loopback-only Inspector are intentional keyword matches, not secret values.
+
+The full unredacted original bundle diff/status snapshots remain in local Git metadata, not in the published repository. No local research files were deleted.
+
+## Reproducibility checks
+
+The staged index was exported to an isolated directory without research caches or private runtimes. Mandatory frozen-release verification, automation/publication/rollback tests and offline-ingest fixture tests passed. Five historical cache-dependent test cases explicitly skip in this clean snapshot (including a duplicate import of the original benchmark case); none is the Release A gate.
+
+An additional legacy application test attempt found that package.json's existing npm test references tests/domain.test.mjs, which is not present in the tracked repository. This pre-existing application-test configuration was not changed in this tooling-only commit. Release tooling verification uses explicit, existing test files; deployed application interaction regression remains covered by the existing Pages smoke workflow.

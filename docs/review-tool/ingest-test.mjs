@@ -1,0 +1,22 @@
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+// Synthetic fixtures, never real external data or production records.
+const dir=await fs.mkdtemp(path.join(os.tmpdir(),'kwf-ingest-'));
+const target={lexicalEntryId:'fixture-entry',senseId:'fixture-sense',headword:'학교',gloss:'学校',pos:'名词'};
+const source={sourceId:'KRDict-fixture',sourceUrl:'https://example.invalid/cache',sourceLicense:'TEST ONLY',sourceVersion:'fixture-v1',fetchedAt:'2026-09-13T00:00:00Z'};
+await fs.writeFile(path.join(dir,'cache.json'),JSON.stringify({records:[{originalId:'1',senseId:target.senseId,text:'학교에 가요.',zh:'去学校。',kind:'example'},{originalId:'1',senseId:target.senseId,text:'학교에 가요.',zh:'去学校。',kind:'example'},{originalId:'2',senseId:target.senseId,text:'学校',kind:'definition'}]}));
+await fs.writeFile(path.join(dir,'sentences.tsv'),'10\tkor\t학교 가요.\tauthor-ko\n11\tcmn\t去学校。\tauthor-zh\n12\teng\tGo to school.\tauthor-en\n13\tfra\tignore\tx\n');
+await fs.writeFile(path.join(dir,'links.tsv'),'10\t11\n10\t12\n');
+const manifest={targets:[target],sources:[{...source,kind:'krdict-cache',file:'cache.json'},{...source,sourceId:'Tatoeba-fixture',kind:'tatoeba-tsv',sentences:['sentences.tsv'],links:'links.tsv'},{...source,sourceId:'offline-failure',status:'unavailable',reason:'timeout'}]};
+await fs.writeFile(path.join(dir,'manifest.json'),JSON.stringify(manifest));
+const result=JSON.parse(execFileSync(process.execPath,['docs/review-tool/ingest.mjs',path.join(dir,'manifest.json')],{encoding:'utf8'}));
+assert.equal(result.candidates,3);assert.equal(result.duplicates,1);assert.equal(result.unavailable,1);assert.equal(result.errors,1);
+const imported=JSON.parse(await fs.readFile(new URL('imports/'+result.runId+'.json',import.meta.url),'utf8'));
+assert.ok(imported.candidates.every(c=>c.reviewStatus==='candidate'));
+assert.equal(imported.candidates[1].translation.language,'cmn');
+assert.equal(imported.candidates[1].translation.author,'author-zh');
+assert.equal(imported.candidates[2].translation.language,'eng');
+console.log('PASS: offline cache, duplicate/definition rejection, direct translations, source failure, 3/sense cap');

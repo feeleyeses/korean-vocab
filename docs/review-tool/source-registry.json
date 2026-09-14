@@ -1,0 +1,23 @@
+{
+  "registryVersion": "unblock-2026-09-13-1",
+  "sources": {
+    "KRDict": {
+      "canonicalSourceId": "KRDict", "derivedFrom": [], "kind": "krdict", "authority": 1,
+      "licenseApproval": true, "sourceLicense": "CC-BY-SA-2.0-KR",
+      "policyUrl": "https://krdict.korean.go.kr/kor/kboardPolicy/copyRightTermsInfo",
+      "scope": "dictionary text only, unless separately marked; excludes multimedia",
+      "attribution": "National Institute of Korean Language, Korean Basic Dictionary",
+      "obligations": ["retain source URL and attribution", "mark modifications", "retain ShareAlike license for adapted text", "honor per-record exceptions"],
+      "hosts": ["krdict.korean.go.kr"], "verifiedAt": "2026-09-13"
+    },
+    "Tatoeba": {
+      "canonicalSourceId": "Tatoeba", "derivedFrom": [], "kind": "tatoeba", "authority": 0.8,
+      "licenseApproval": true, "sourceLicense": "CC-BY-2.0-FR",
+      "policyUrl": "https://tatoeba.org/en/downloads",
+      "scope": "official sentence text exports only; excludes audio",
+      "attribution": "Tatoeba contributors; retain sentence-level authors",
+      "obligations": ["retain sentence and translation IDs", "retain authors and license", "mark modifications"],
+      "hosts": ["tatoeba.org", "downloads.tatoeba.org"], "verifiedAt": "2026-09-13"
+    }
+  }
+}

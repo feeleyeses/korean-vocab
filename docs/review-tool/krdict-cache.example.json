@@ -1,0 +1,6 @@
+{
+ "records":[
+  {"kind":"example","type":"example","originalId":"target:sense:example","senseId":"REPLACE_WITH_EXISTING_SENSE_ID","text":"학교에 가요.","zh":null,"sourceUrl":"https://krdict.korean.go.kr/","posAligned":false,"senseAligned":false,"naturalnessReviewed":false}
+ ],
+ "notice":"Synthetic format example, not a fetched or verified KRDict response. Do not publish."
+}

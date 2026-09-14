@@ -1,0 +1,23 @@
+name: Release tooling verification
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  frozen-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify frozen manifest, provenance and full publication dry-run
+        run: node docs/review-tool/verify-release-a.mjs
+      - name: Automation and isolated writer rollback tests
+        run: node --test docs/review-tool/*.test.mjs
+      - name: Offline ingest fixture tests
+        run: node docs/review-tool/ingest-test.mjs
+      - name: Production and frozen artifact files are unchanged
+        run: git diff --exit-code -- data/vocabulary.json docs/review-tool/release-a-manifest.json docs/review-tool/RELEASE-A-ATTRIBUTION.md

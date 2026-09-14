@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Data Inspector · Debug Console</title>
+<link rel="stylesheet" href="review.css">
+<header><h1>Data Inspector <small>自动数据管线 · 只读检查</small></h1><button id="export">导出当前检查数据</button><label>载入结果 <input id="import" type="file" accept=".json"></label></header>
+<nav aria-label="检查筛选"><label>来源 <select id="source"><option value="">全部</option></select></label><label>类型 <select id="type"><option value="">全部</option><option>example</option><option>collocation</option><option>polysemy</option></select></label><label>状态 <select id="state"><option value="">全部</option><option>candidate</option><option>auto_verified</option><option>quarantine</option><option>auto_rejected</option><option>published</option></select></label><span id="counter" role="status"></span></nav>
+<p id="message" role="status">正在载入…</p><main><section><h2>当前词条</h2><div id="current"></div></section><section><h2>自动评分与证据</h2><div id="external"></div></section></main>
+<footer><div class="actions"><button id="prev">上一条 ←</button><button id="next">下一条 →</button></div><p>没有人工批准或发布按钮。旧审核日志不参与评分；证据或策略变化后由 CLI 重新评估。</p></footer>
+<script type="module" src="review.mjs"></script></html>

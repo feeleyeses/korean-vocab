@@ -1,0 +1,5 @@
+{
+  "inputs": ["candidates.json"],
+  "expectedDatasetHash": "replace-with-canonical-dataset-hash",
+  "blockingQualityAudit": null
+}

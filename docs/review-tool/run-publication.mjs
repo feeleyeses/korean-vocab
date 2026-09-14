@@ -1,0 +1,12 @@
+import fs from 'node:fs/promises';
+import {planRelease,writeRelease} from './publication.mjs';
+const read=async p=>JSON.parse(await fs.readFile(new URL(p,import.meta.url),'utf8'));
+const raw=await read('../../data/vocabulary.json'),baseline=await read('./publication-baseline.json'),registry=(await read('./source-registry.json')).sources;
+const release=await planRelease(raw,baseline,registry);
+const acceptedIds=new Set(release.candidates.filter(c=>c.reviewStatus==='auto_verified'&&!c.gateReasons.length).map(c=>c.candidateId));
+const readySubset=await planRelease(raw,{...baseline,candidates:baseline.candidates.filter(c=>acceptedIds.has(c.candidateId))},registry);
+const disabled=await writeRelease({target:new URL('../../data/vocabulary.json',import.meta.url).pathname,release});
+const previous=await read('./example-lanes-results.json');
+const lengths=previous.candidates.filter(c=>c.sourceId==='Tatoeba'&&c.reasons.includes('sentenceLength')).map(c=>({candidateId:c.candidateId,ko:c.content.text,zh:c.translation.text,characters:c.content.text.length,tokens:c.content.text.split(/[\s\p{P}]+/u).filter(Boolean).length,threshold:{minChars:8,maxChars:240,minTokens:3},reasons:c.reasons}));
+await fs.writeFile(new URL('./publication-report.json',import.meta.url),JSON.stringify({...release,next:undefined,readySubset:{releaseReady:readySubset.releaseReady,blocked:readySubset.blocked,auditPassed:readySubset.projectedAudit.passed,manifest:readySubset.manifest},disabledCheck:disabled,lengthAudit:lengths},null,2));
+console.log(JSON.stringify({releaseReady:release.releaseReady,blocked:release.blocked,blockReason:release.blockReason,auditPassed:release.audit.passed,projectedAuditPassed:release.projectedAudit.passed,invariant:release.invariant,disabled,lengths},null,2));

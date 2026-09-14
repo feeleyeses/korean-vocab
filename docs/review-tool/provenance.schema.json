@@ -1,0 +1,18 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Example provenance",
+ "type": "object",
+ "required": ["sentenceId", "translationSentenceId", "author", "translationAuthor", "license", "sourceUrl", "sourceVersion", "fetchedAt", "evidence", "scoreVersion"],
+ "properties": {
+  "sentenceId": {"type": "string", "minLength": 1},
+  "translationSentenceId": {"type": "string", "minLength": 1},
+  "author": {"type": "string", "minLength": 1},
+  "translationAuthor": {"type": "string", "minLength": 1},
+  "license": {"type": "string", "minLength": 1},
+  "sourceUrl": {"type": "string", "format": "uri"},
+  "sourceVersion": {"type": "string", "minLength": 1},
+  "fetchedAt": {"type": "string", "format": "date-time"},
+  "scoreVersion": {"type": "string", "minLength": 1},
+  "evidence": {"type": "array", "minItems": 3, "items": {"type": "object", "required": ["originalId", "rawNode", "nodeHash", "documentHash", "sourceId", "sourceUrl", "sourceVersion", "sourceLicense"]}}
+ }
+}

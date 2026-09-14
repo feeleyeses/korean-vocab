@@ -1,0 +1,7 @@
+{
+ "targets":[{"lexicalEntryId":"REPLACE_WITH_EXISTING_ID","senseId":"REPLACE_WITH_EXISTING_SENSE_ID","headword":"학교","pos":"名词","gloss":"学校","forms":["학교","학교에"],"externalWordId":"SOURCE_TARGET_CODE","externalSenseId":"SOURCE_SENSE_CODE"}],
+ "sources":[
+  {"kind":"krdict-cache","sourceId":"KRDict","file":"krdict-cache.json","sourceUrl":"https://krdict.korean.go.kr/","sourceLicense":"pending","sourceVersion":"LOCAL_EXPORT_VERSION","fetchedAt":"2026-09-13T00:00:00Z","attribution":"韩国语基础词典"},
+  {"kind":"tatoeba-tsv","sourceId":"Tatoeba","sentences":["kor_detailed.tsv","cmn_detailed.tsv","eng_detailed.tsv"],"links":"links.tsv","sourceUrl":"https://tatoeba.org/en/downloads","sourceLicense":"CC BY 2.0 FR","sourceVersion":"EXPORT_DATE_AND_HASH","fetchedAt":"2026-09-13T00:00:00Z","attribution":"Tatoeba contributors; keep sentence authors"}
+ ]
+}

@@ -1,0 +1,1222 @@
+{
+  "releaseId": "examples-7d882c8df890c5ba0278",
+  "sourceDatasetHash": "22e0f96e47e82ffa714475c960931642447b1ace0de1dd9fea9b4d19809143cf",
+  "previousVocabularyHash": "b8c949c82d4fed57b862a1accd84f71289ee209cfeb0a0b15ae0909051703db3",
+  "newVocabularyHash": "4c173f998f94072af4b54ad8fc176239c8910f57e9d9070cc596d28fcdeec9ca",
+  "addedExampleIds": [
+    "external-0008eaab987198227816ddae164c86068c37774f80d49309f6a5e70429d3b057",
+    "external-001876a9a29a48111b7da396b86ce796d161bf40caf3ff0377f56f4496994d68",
+    "external-0018a19a7f52ae07f6d9f991a791e7dc4d418c55f7161eb517e9368a02345a02",
+    "external-005372740aa6cbdbce521a1d12f32748334b66b86c3390b91f85d217327ff1b8",
+    "external-00570eb0d4855c609b463f9ec8adb3cce8c85926cf142f440b6b965168c9d2c7",
+    "external-0087188d72abd4220591f712b4f38f00c5a242034d620042fa26d68e5993902d",
+    "external-00cf015d9941ce1344f98a42df5894dc287ce112dae0c50a38e780a7ae593558",
+    "external-00e308b03ed4e2f626bb6b774609576a588fd9209b29d8cae2efb9c17b1ce4b1",
+    "external-00eb83f72c0f7f49433dd19ef04534733ddf170c1468c33b82ff056916ba790a",
+    "external-00fcaafdbd70d0703a49e5d147cd69b9c7a41a4b3eb375165529a1255411d38c",
+    "external-0111ab64115bcb69d5c2c09c11be0c8bb1f940616ccc709abe4f3c0491518ce6",
+    "external-0146d197caa654817095da034b80858145e7f347f0d9407db436a44d224709e8",
+    "external-015a7a9463d0bd0e2355a1cc3cd35717f60cc481ab30cb727c72011496226221",
+    "external-016e038b9e14f9ab25386a1bc8c865bf70798f698b80b99f821bfa723523d2e9",
+    "external-019141b1674837ae90a89e14b4d5a5ea049df963f25054dc06517adc22e54aaa",
+    "external-01a9903ed2621de196bb725070cb413c541df283f4b9e0080b9ca0a1b4c1e6b1",
+    "external-01c7836d95b329ba8685ef491532374af7fba7978fb5087915e365e50d50c20e",
+    "external-01ee666df459894b43f88f1a3240fa5f2638a3c93ee3157dfcc63e3dd6acc1ce",
+    "external-02088d4a25af26c533a3ef2f57857d7997043c59395b07084b6a98786111343d",
+    "external-02137bc20e44665e144a5c1b322a087b377dbd000bcec9c24c4af6662155c8df",
+    "external-024a4ef90ccd4cee3e406ac8a25a7c54a15cf8b4221e92140cdebadb32412fde",
+    "external-0254c79c6e53aec811d931a1a664fee9208c3b138d3ff6cc9a57d5b46ac9a4b7",
+    "external-0266503ed4aef78eeeae1484cc101e824188cb868f01b68839e19f3a942a9418",
+    "external-0275791fd5d548200f8139e60458f7066b2dd1eacbb8b407023385654e1b5d08",
+    "external-0276e926a08ed91c94c9a47d480b789362931a96b6e6e55d7528db8b5cece0ef",
+    "external-0279aab4494dd07045e89cae2ea3a3a2147f8ad26089d1a1945eb5e19b8a9546",
+    "external-029c2fd6a7248412ec8e7e010ce04a0dc59b59292b3468b281d4ec5107465b2e",
+    "external-02b6cc18226661241585c1602f12f432bbd5ded28ee0a72d8c1ae46b85373deb",
+    "external-02cdc94898b88cf9181f726d2eca73ba69610fb8b9061821133228ad2bdb4634",
+    "external-02e413c85c905fc80f221adf8602f26a129007fbd5d58ad948cbd27a97d00771",
+    "external-02e51a384471103510f0fdaa069108712e75297daa81c4771cfa377f1cd4bd4c",
+    "external-02fb9a28bff3ff839512202ed85b9c7619bbf7060f1aa1b71c190d119410462a",
+    "external-02fc4801194a4bfed4f0f68ea77d2db005c9d7f477d2a1fb04396266993035a4",
+    "external-02fd0d3b5a934f814ac202935571f8728b841fd75b4943573098ea0fb79231ca",
+    "external-031483e7645fcda130034afead85be2a7ba243a2ec97d5e6859b0c8c145a82e5",
+    "external-034084b4d95789eb0a889a7cb7442b6eebd9e334b0dbe0c094dc6069624cf414",
+    "external-03490f85b6dc273caa09a67e7486d56df840322e9db46ac1847aa11bfe988f43",
+    "external-035e00775426e2fc261328b1e9b993fe385cb68c51fe6dbf92c9e699d395ac3d",
+    "external-035f061e932dc6d5b96c68e3c1f20c69ac17d3d823c29adbfb55d817ebb1a318",
+    "external-037420d1583fd7febbe005d7edd15d0ab693c5db1c02ad08d437e39e4c1b6035",
+    "external-0377fa0424fb6f4685f4bb6863f45de80bf626c387ce157faac354f77028a2ce",
+    "external-038c3f439d0cb7505e0a7a6c28177fc87723cab24b50fca99283f5501d0ddad6",
+    "external-039099c2ab2aee459152871845863f15c16c5967623d0595393e859c0952ef5a",
+    "external-039c055331b300126c4d338f8d6e483ddb7dabe82af799849426b8e75d028b3c",
+    "external-03a960d7d2d0f4a0159bd0765d1b166f89e44c7dc08749aa0f56ddc2601ddd93",
+    "external-03b6f5a146d1ce7f80e6dbcccc529f7a14ddc752cbe8f2f52709e05d86dee9ed",
+    "external-040b192bdf07c90349161bcc3c57399c2e707e365048b25db5ef967cd45e1530",
+    "external-045f6764de4bcef108b28877cd9120629eccd73ff34ed879adb87ce416818bbf",
+    "external-0484bcc1db07e23eec5879eef021022ef1cfe0433cafde99852b8f871e324381",
+    "external-04aa9aa2a12d3d1cb1fec855f37230b793c09036006b39681b9c3e74980530c1",
+    "external-04b919ff0d22c3a05ced7d10e17e34d99c0db22ebe417d0bf3d1b9c0392c014d",
+    "external-04e0711773184d59f161829f1bc1620e69ed7a40129dcd4ab050fb93a12016a6",
+    "external-055a052b340b44f7727b1263d0809edb50b93c50a1f855d99b6b8ec977760052",
+    "external-059327b28b70920a9b2580a9c5c2d689e766dbeae7feb81a390b641a7ddde27e",
+    "external-059b59dfbd7c4f91e80caf3971c7f36328033acf8ed0628fbe5651ca07039775",
+    "external-05b55aab5be7a5feefdb80668e4e02d72ea91a4ceba6ee6a094f5332f562f892",
+    "external-05c25ad9f154be9cc45e688f54bd65e9e3d8924b6095905ebf96a4d07b903add",
+    "external-05e8f61ab24040650a85f33029ead9ef805a78091a08f0e932553b7640a1a66e",
+    "external-05efee4edf9ecab4aad404265d232e7c95321edc9b5f1a3edc11576fa18d3ba6",
+    "external-0615b11d9c43e4c8e78e81ec149ae45e2a4636caa2fbc72f7147e3aaa9fece4a",
+    "external-061ab2cec471f0dbd8a642844172382e169c5bfa45c80b0d29f2957e19103371",
+    "external-0645a948db6af43cfa14a0241524241cdaae596241b7a0fbe75db6e649447dd7",
+    "external-0661c609cf660aa3c45f1c52ba22b6f85b14e8292877efe6875035d85174020b",
+    "external-069bdb27410a616155c0490076bdd43fb3d131a79f5538a52f0b39c63315b65b",
+    "external-06acd8ec8f692defdb4e5e0c5bfd18727ad46d3f4108a1c56c1ee8ed5f257da7",
+    "external-06aeee0bd939d57388ad6e051c21bf7bc44cabf9fc6cadca427709826c10e848",
+    "external-06c291a64f52e01abef060170b660c5025e60ca2542089a291f855dc0f2d81d0",
+    "external-06c603bd4a056bdd9ac273e9791108ae399ba5d6ae3eccadeaf08b4926c32ce1",
+    "external-06c6d853d6da2967c84e6eed4e6df29df780d7e241a49cd719ed0d45aaac1d3b",
+    "external-06defd19e9a0aee0f7eca381b15cd9d1de55b18739169b1845213cd3e7fcc23c",
+    "external-06e25855439bc938515030ea620038bf90775651ace861af8991f5932bedbac3",
+    "external-06f560c67171634de3f82e99fae2b9404e0a6375987332ff3a364495f9f9fe1b",
+    "external-072ba0e8c547709c41142752ee01fd6fb5df63eaf65293156ec32b4846cc56c2",
+    "external-07457eb284d140728752537df89a2407edde30a1eec97f6c15f09a7954f12cb9",
+    "external-07733b4a60b5ad00128f276a57c7c8efedeb313df9189303c550e12a6ac5b3da",
+    "external-078c93ba043b54de678c5c9333703aaa2f2c5a7545fd579b69d5df50003eb8be",
+    "external-07b609f9f35b0966382269f6a392b96cf1b224e8dbbd328e01f2182db89b9d97",
+    "external-07d3626ab9346de10e1d791a7ba7ee98f00f35be6f439d931c05d250faa46a51",
+    "external-07f96f9ecdbcb8b46be0509fd8427ecbb72f0a7e302abc037cdc6b4f29d04ffe",
+    "external-0883d0f57f35ef8dde304e7bc78509f73513a14309cef7beaff876bdf2fc64f5",
+    "external-0892377993c90196384086d75f02bb544aa35660801a394fa6c0f0217ba0f9f7",
+    "external-0970bd2518d6b6f5b1412f0f0e8f96e08a352478531cb25cd272951327f20907",
+    "external-098b41eb16a97ba7dbbc3456d67ce33059e92a7c373fcf0e50be122ddc465af1",
+    "external-09a1e97a3ee3c0d104a78787835ae43f90c6e2748d2e349120b552fbe83d9f9b",
+    "external-09abca1b2bd0464d5dd87b55e638ecb3ecd86b155921ecb34e5b9236243cfa83",
+    "external-09d26abb0a710cf152a434b6c41f823891a1c6adb2f4f8a300fe363d3f42c1c7",
+    "external-09ef69791e53c7d083ad38821ae7b80940b1d2d5c092f13b71c15d95188fffb1",
+    "external-0a630a6ed31d50f7f91bff0900a11fc429f8dfcb4646a9c222423c7f8804c53a",
+    "external-0a6c2c9a6acfdcf49b3d4a9e41d722d52b883ed76263fcf477ba6fd66337cb10",
+    "external-0aa9c1b97ae81ebcdaa5987e432ad4f60bcf7c8c80a90292da13affc6c814f6c",
+    "external-0ab1d71d4ec162169528a168447c9256d1c53c804ff15fa175e599e55d704ffd",
+    "external-0ad5598e04a06ab09b028d1c20dcb6233d96c9f8a4d04feb948a34f706de56d8",
+    "external-0ae9a6de2f2c67519a907083780a00464113cae977720a5bdce94567021a74fd",
+    "external-0b195e3d138ee9e6860236c18327a4b380eb1e5d16e5f88bb10ba582ad98fa05",
+    "external-0b42d7fbd38da13bc12aa5a35b7769d162f071122ab174b10afb4f391d4bd598",
+    "external-0b640bb3bc6e1c92b7de30caf4b1f085300c12a50a00207544ea3caef21045a3",
+    "external-0b6c8da6bb336245be897130114a9b6fd8fe83457220999cb62c42bb4249bd00",
+    "external-0bc5399f2f3114ab426cdddd2b474cfee453a8664728167eaaa53cc6ff361348",
+    "external-0bce990813326aba7aaf1cfe1e05b1e4ef39c373b8f8982869e15543c5ffa925",
+    "external-0bdb07ae6ba25e35aeeebd9afbcf26e97a25836ef1596a836ec247c1523c3a16",
+    "external-0c0f452e91d1050cadc993994ada905c97b4173d983f05a91c987e9d27ca48ae",
+    "external-0c835ab1ab848ba1c9ad050942dd6a3831867ee2b660306fdb7cc7f507dcc342",
+    "external-0c91d343f79fa414c9d9ebf1c2eab28c46c9a13d09f68e6f942a2435a245a5e0",
+    "external-0ccfac00353e96bd1ac52325d7bdfc9a10fa38e0a66f586df6e62e7692d59f20",
+    "external-0cf58edfcb9729ef86d1fbe852f47d31e53854799667206d9ebda6f46e5b4f6f",
+    "external-0d31dcca3fb536d5f40dec82533f7e29699c65556b6a7411f2a5026896f488b6",
+    "external-0d347d39e6f7e43f3ace652d3bbb163912a5438dc8fd26159507072ff792fc53",
+    "external-0d440158f5e6500a6239a9024adf67c1453f85320c2067d80933f67bf1ee7876",
+    "external-0d7016650b919b021fd829a48310dc717871098ca25b75ba5867579e50857f10",
+    "external-0d8afb46110347847f126e2eccccd17ddeaf435cc8380ea37f15b8d4ecad8214",
+    "external-0da5d1f94d278ab2845c3419cdd0dab43448ff030386eae67fd3124021702852",
+    "external-0df59b270fe714bca91b7731f41ccedfa2fa8bc36af0b0bae05c1e2bc0204206",
+    "external-0e078404aa96988abe7ef9e722ac86e95c5fc511df6d7c25eeb59be9a02bb016",
+    "external-0e31b4fdcb6b774b99f3e4baf50f11dc79f1e1205090de5deba7c8d39021cfd6",
+    "external-0e53c8a684378e241018f08cd19e8e8dd61ec7e46fc49f868c1dee33f25c2804",
+    "external-0e5f92710ac3b1e88de804dd2b7d47684a5da021fea3882ea19dbcf8ac5512fd",
+    "external-0eb3a898dba4d347ba492bc7dabdc9c5361be796c5a7ec7fa8067541e82312d9",
+    "external-0ec7b7d5c5c70615fa32a12f462439d648ca40e2de1d402e2cabd2657414ce6c",
+    "external-0ece1e76cd4f9e99b3a8a7327d9dacba92adeefdc8b1bd2336a72c1cf7e72f77",
+    "external-0f1e08655b0fbc3fe4efe267dae2f3345d5ee87e2732f3b639deedccbacd9f00",
+    "external-0f22b382dd98c397eec32ed5edb463dbfc58f326c4f6641aaf133ce49424ab7c",
+    "external-0f50eb825cea3eb1ac9e16ce61235cc627c26668f9120cac1f58902098138ce6",
+    "external-0f93a2b1181adec142836c9025ff5a79d02dab65344203cf3e8bd3a2bc8ebc44",
+    "external-0fa7263b8b7276f38cdf2ad02f8e63bd693d267d52a1238f6dd096fef5338bf9",
+    "external-0fc3910546248d0d0d3b002d746f74d410fc406a25c4dd4f87a6580444f3240f",
+    "external-0fd15392e3aa9680de2f4d37fbad48a1f23d69d5636450041a1b4ae384d48ad4",
+    "external-0ff3b65397146b488c18e143cc792531351d88cd35c070885018044ef4bf5e65",
+    "external-0ffd668983c8baf3e6ac212b77d1b969550cd9345fab02018cc4f8bf3266c1d2",
+    "external-100268423d6f62210cb274e2f313c0c60777420280ec8c9868ccfde82c0f8d2d",
+    "external-1025631036a1d9c7cdd8fea867c53e86f181d112251410a7496b0e73312913a9",
+    "external-1048fd58b098b3efcc00e5525308f4925da469a7101528fde90f8ef9e596da5b",
+    "external-109cdeca60d5982e1a32a81e3c5d36df0e152f7d415f5932567694611748bf3a",
+    "external-10c4ae2c595e542d8d0d61b8eabedc5a8e57b04f142a8685092ccb9d9ec69388",
+    "external-10ff23311b35fddb84e535e807515b6cdd9883be7d203e7807b6f582f421445b",
+    "external-1103acea884ffa20e2730b6d3f35138dba28a9c77ee2116930c9696c7f2f9bbf",
+    "external-11186cb09fbee1c94774b4572968e16c3e5a07af154f5c01205570cfc0ef7fc6",
+    "external-111e463a03bbab594bdd1bcc0e45fabc7380c421143ec29cc39f484dec3b2e1b",
+    "external-11282b9ccf93cffdc5871d2592a8a76e48d49bf0de3b339cf44273b3dc0bea97",
+    "external-11b20e65672760bcb4690f59a88c5ab2a597940e29dcbb4661d182fa647db921",
+    "external-11f5439bb2ffe96af5cf4d1b7873f6695dcc6d856d84f81c998791e030421f83",
+    "external-120aea1dde3b835b29d829dc590fd9a10453e5d03b19647cbc94cd974bd09a42",
+    "external-122e8a929fcbc4e0e10c63de0558aaf021d6f0da56e6ed9af5a91b5f5efce096",
+    "external-123b154cdd95812f41e7971e8940e25e417d7d13cda2e70dd771c4cd2141286f",
+    "external-130849f6e116405e04a999c5bdf849832e365588119a87e3aa8ef9bd770d1308",
+    "external-131eb2c173826f8083306b5b056c3a39504913da4770f7c75c2f7f8abdd61002",
+    "external-1328ad8728909e807cc5bb42467351099b39a500a87e6c75da33e082dec29f7c",
+    "external-1356cc172156fa251f2538df54ad08533681aba3e9bbb669ccb29a0313ee5386",
+    "external-1364a58568289cd8f1ad478158893c25d6e9ca5a7cb823dc365686adfb2e4fcb",
+    "external-13e66796e4613c20550c89f80ed46ba2dc5845ec226d81cc51af8c0ec1a56730",
+    "external-140d34bd4fa27e4841112511efe24a6cbd19b69733599f5505b6e9076bd959b0"
+  ],
+  "timestamp": "2026-09-14T10:06:45.672Z",
+  "scoreVersion": "full-single-dry-run-v1",
+  "candidateIds": [
+    "0008eaab987198227816ddae164c86068c37774f80d49309f6a5e70429d3b057",
+    "001876a9a29a48111b7da396b86ce796d161bf40caf3ff0377f56f4496994d68",
+    "0018a19a7f52ae07f6d9f991a791e7dc4d418c55f7161eb517e9368a02345a02",
+    "005372740aa6cbdbce521a1d12f32748334b66b86c3390b91f85d217327ff1b8",
+    "00570eb0d4855c609b463f9ec8adb3cce8c85926cf142f440b6b965168c9d2c7",
+    "0087188d72abd4220591f712b4f38f00c5a242034d620042fa26d68e5993902d",
+    "00cf015d9941ce1344f98a42df5894dc287ce112dae0c50a38e780a7ae593558",
+    "00e308b03ed4e2f626bb6b774609576a588fd9209b29d8cae2efb9c17b1ce4b1",
+    "00eb83f72c0f7f49433dd19ef04534733ddf170c1468c33b82ff056916ba790a",
+    "00fcaafdbd70d0703a49e5d147cd69b9c7a41a4b3eb375165529a1255411d38c",
+    "0111ab64115bcb69d5c2c09c11be0c8bb1f940616ccc709abe4f3c0491518ce6",
+    "0146d197caa654817095da034b80858145e7f347f0d9407db436a44d224709e8",
+    "015a7a9463d0bd0e2355a1cc3cd35717f60cc481ab30cb727c72011496226221",
+    "016e038b9e14f9ab25386a1bc8c865bf70798f698b80b99f821bfa723523d2e9",
+    "019141b1674837ae90a89e14b4d5a5ea049df963f25054dc06517adc22e54aaa",
+    "01a9903ed2621de196bb725070cb413c541df283f4b9e0080b9ca0a1b4c1e6b1",
+    "01c7836d95b329ba8685ef491532374af7fba7978fb5087915e365e50d50c20e",
+    "01ee666df459894b43f88f1a3240fa5f2638a3c93ee3157dfcc63e3dd6acc1ce",
+    "02088d4a25af26c533a3ef2f57857d7997043c59395b07084b6a98786111343d",
+    "02137bc20e44665e144a5c1b322a087b377dbd000bcec9c24c4af6662155c8df",
+    "024a4ef90ccd4cee3e406ac8a25a7c54a15cf8b4221e92140cdebadb32412fde",
+    "0254c79c6e53aec811d931a1a664fee9208c3b138d3ff6cc9a57d5b46ac9a4b7",
+    "0266503ed4aef78eeeae1484cc101e824188cb868f01b68839e19f3a942a9418",
+    "0275791fd5d548200f8139e60458f7066b2dd1eacbb8b407023385654e1b5d08",
+    "0276e926a08ed91c94c9a47d480b789362931a96b6e6e55d7528db8b5cece0ef",
+    "0279aab4494dd07045e89cae2ea3a3a2147f8ad26089d1a1945eb5e19b8a9546",
+    "029c2fd6a7248412ec8e7e010ce04a0dc59b59292b3468b281d4ec5107465b2e",
+    "02b6cc18226661241585c1602f12f432bbd5ded28ee0a72d8c1ae46b85373deb",
+    "02cdc94898b88cf9181f726d2eca73ba69610fb8b9061821133228ad2bdb4634",
+    "02e413c85c905fc80f221adf8602f26a129007fbd5d58ad948cbd27a97d00771",
+    "02e51a384471103510f0fdaa069108712e75297daa81c4771cfa377f1cd4bd4c",
+    "02fb9a28bff3ff839512202ed85b9c7619bbf7060f1aa1b71c190d119410462a",
+    "02fc4801194a4bfed4f0f68ea77d2db005c9d7f477d2a1fb04396266993035a4",
+    "02fd0d3b5a934f814ac202935571f8728b841fd75b4943573098ea0fb79231ca",
+    "031483e7645fcda130034afead85be2a7ba243a2ec97d5e6859b0c8c145a82e5",
+    "034084b4d95789eb0a889a7cb7442b6eebd9e334b0dbe0c094dc6069624cf414",
+    "03490f85b6dc273caa09a67e7486d56df840322e9db46ac1847aa11bfe988f43",
+    "035e00775426e2fc261328b1e9b993fe385cb68c51fe6dbf92c9e699d395ac3d",
+    "035f061e932dc6d5b96c68e3c1f20c69ac17d3d823c29adbfb55d817ebb1a318",
+    "037420d1583fd7febbe005d7edd15d0ab693c5db1c02ad08d437e39e4c1b6035",
+    "0377fa0424fb6f4685f4bb6863f45de80bf626c387ce157faac354f77028a2ce",
+    "038c3f439d0cb7505e0a7a6c28177fc87723cab24b50fca99283f5501d0ddad6",
+    "039099c2ab2aee459152871845863f15c16c5967623d0595393e859c0952ef5a",
+    "039c055331b300126c4d338f8d6e483ddb7dabe82af799849426b8e75d028b3c",
+    "03a960d7d2d0f4a0159bd0765d1b166f89e44c7dc08749aa0f56ddc2601ddd93",
+    "03b6f5a146d1ce7f80e6dbcccc529f7a14ddc752cbe8f2f52709e05d86dee9ed",
+    "040b192bdf07c90349161bcc3c57399c2e707e365048b25db5ef967cd45e1530",
+    "045f6764de4bcef108b28877cd9120629eccd73ff34ed879adb87ce416818bbf",
+    "0484bcc1db07e23eec5879eef021022ef1cfe0433cafde99852b8f871e324381",
+    "04aa9aa2a12d3d1cb1fec855f37230b793c09036006b39681b9c3e74980530c1",
+    "04b919ff0d22c3a05ced7d10e17e34d99c0db22ebe417d0bf3d1b9c0392c014d",
+    "04e0711773184d59f161829f1bc1620e69ed7a40129dcd4ab050fb93a12016a6",
+    "055a052b340b44f7727b1263d0809edb50b93c50a1f855d99b6b8ec977760052",
+    "059327b28b70920a9b2580a9c5c2d689e766dbeae7feb81a390b641a7ddde27e",
+    "059b59dfbd7c4f91e80caf3971c7f36328033acf8ed0628fbe5651ca07039775",
+    "05b55aab5be7a5feefdb80668e4e02d72ea91a4ceba6ee6a094f5332f562f892",
+    "05c25ad9f154be9cc45e688f54bd65e9e3d8924b6095905ebf96a4d07b903add",
+    "05e8f61ab24040650a85f33029ead9ef805a78091a08f0e932553b7640a1a66e",
+    "05efee4edf9ecab4aad404265d232e7c95321edc9b5f1a3edc11576fa18d3ba6",
+    "0615b11d9c43e4c8e78e81ec149ae45e2a4636caa2fbc72f7147e3aaa9fece4a",
+    "061ab2cec471f0dbd8a642844172382e169c5bfa45c80b0d29f2957e19103371",
+    "0645a948db6af43cfa14a0241524241cdaae596241b7a0fbe75db6e649447dd7",
+    "0661c609cf660aa3c45f1c52ba22b6f85b14e8292877efe6875035d85174020b",
+    "069bdb27410a616155c0490076bdd43fb3d131a79f5538a52f0b39c63315b65b",
+    "06acd8ec8f692defdb4e5e0c5bfd18727ad46d3f4108a1c56c1ee8ed5f257da7",
+    "06aeee0bd939d57388ad6e051c21bf7bc44cabf9fc6cadca427709826c10e848",
+    "06c291a64f52e01abef060170b660c5025e60ca2542089a291f855dc0f2d81d0",
+    "06c603bd4a056bdd9ac273e9791108ae399ba5d6ae3eccadeaf08b4926c32ce1",
+    "06c6d853d6da2967c84e6eed4e6df29df780d7e241a49cd719ed0d45aaac1d3b",
+    "06defd19e9a0aee0f7eca381b15cd9d1de55b18739169b1845213cd3e7fcc23c",
+    "06e25855439bc938515030ea620038bf90775651ace861af8991f5932bedbac3",
+    "06f560c67171634de3f82e99fae2b9404e0a6375987332ff3a364495f9f9fe1b",
+    "072ba0e8c547709c41142752ee01fd6fb5df63eaf65293156ec32b4846cc56c2",
+    "07457eb284d140728752537df89a2407edde30a1eec97f6c15f09a7954f12cb9",
+    "07733b4a60b5ad00128f276a57c7c8efedeb313df9189303c550e12a6ac5b3da",
+    "078c93ba043b54de678c5c9333703aaa2f2c5a7545fd579b69d5df50003eb8be",
+    "07b609f9f35b0966382269f6a392b96cf1b224e8dbbd328e01f2182db89b9d97",
+    "07d3626ab9346de10e1d791a7ba7ee98f00f35be6f439d931c05d250faa46a51",
+    "07f96f9ecdbcb8b46be0509fd8427ecbb72f0a7e302abc037cdc6b4f29d04ffe",
+    "0883d0f57f35ef8dde304e7bc78509f73513a14309cef7beaff876bdf2fc64f5",
+    "0892377993c90196384086d75f02bb544aa35660801a394fa6c0f0217ba0f9f7",
+    "0970bd2518d6b6f5b1412f0f0e8f96e08a352478531cb25cd272951327f20907",
+    "098b41eb16a97ba7dbbc3456d67ce33059e92a7c373fcf0e50be122ddc465af1",
+    "09a1e97a3ee3c0d104a78787835ae43f90c6e2748d2e349120b552fbe83d9f9b",
+    "09abca1b2bd0464d5dd87b55e638ecb3ecd86b155921ecb34e5b9236243cfa83",
+    "09d26abb0a710cf152a434b6c41f823891a1c6adb2f4f8a300fe363d3f42c1c7",
+    "09ef69791e53c7d083ad38821ae7b80940b1d2d5c092f13b71c15d95188fffb1",
+    "0a630a6ed31d50f7f91bff0900a11fc429f8dfcb4646a9c222423c7f8804c53a",
+    "0a6c2c9a6acfdcf49b3d4a9e41d722d52b883ed76263fcf477ba6fd66337cb10",
+    "0aa9c1b97ae81ebcdaa5987e432ad4f60bcf7c8c80a90292da13affc6c814f6c",
+    "0ab1d71d4ec162169528a168447c9256d1c53c804ff15fa175e599e55d704ffd",
+    "0ad5598e04a06ab09b028d1c20dcb6233d96c9f8a4d04feb948a34f706de56d8",
+    "0ae9a6de2f2c67519a907083780a00464113cae977720a5bdce94567021a74fd",
+    "0b195e3d138ee9e6860236c18327a4b380eb1e5d16e5f88bb10ba582ad98fa05",
+    "0b42d7fbd38da13bc12aa5a35b7769d162f071122ab174b10afb4f391d4bd598",
+    "0b640bb3bc6e1c92b7de30caf4b1f085300c12a50a00207544ea3caef21045a3",
+    "0b6c8da6bb336245be897130114a9b6fd8fe83457220999cb62c42bb4249bd00",
+    "0bc5399f2f3114ab426cdddd2b474cfee453a8664728167eaaa53cc6ff361348",
+    "0bce990813326aba7aaf1cfe1e05b1e4ef39c373b8f8982869e15543c5ffa925",
+    "0bdb07ae6ba25e35aeeebd9afbcf26e97a25836ef1596a836ec247c1523c3a16",
+    "0c0f452e91d1050cadc993994ada905c97b4173d983f05a91c987e9d27ca48ae",
+    "0c835ab1ab848ba1c9ad050942dd6a3831867ee2b660306fdb7cc7f507dcc342",
+    "0c91d343f79fa414c9d9ebf1c2eab28c46c9a13d09f68e6f942a2435a245a5e0",
+    "0ccfac00353e96bd1ac52325d7bdfc9a10fa38e0a66f586df6e62e7692d59f20",
+    "0cf58edfcb9729ef86d1fbe852f47d31e53854799667206d9ebda6f46e5b4f6f",
+    "0d31dcca3fb536d5f40dec82533f7e29699c65556b6a7411f2a5026896f488b6",
+    "0d347d39e6f7e43f3ace652d3bbb163912a5438dc8fd26159507072ff792fc53",
+    "0d440158f5e6500a6239a9024adf67c1453f85320c2067d80933f67bf1ee7876",
+    "0d7016650b919b021fd829a48310dc717871098ca25b75ba5867579e50857f10",
+    "0d8afb46110347847f126e2eccccd17ddeaf435cc8380ea37f15b8d4ecad8214",
+    "0da5d1f94d278ab2845c3419cdd0dab43448ff030386eae67fd3124021702852",
+    "0df59b270fe714bca91b7731f41ccedfa2fa8bc36af0b0bae05c1e2bc0204206",
+    "0e078404aa96988abe7ef9e722ac86e95c5fc511df6d7c25eeb59be9a02bb016",
+    "0e31b4fdcb6b774b99f3e4baf50f11dc79f1e1205090de5deba7c8d39021cfd6",
+    "0e53c8a684378e241018f08cd19e8e8dd61ec7e46fc49f868c1dee33f25c2804",
+    "0e5f92710ac3b1e88de804dd2b7d47684a5da021fea3882ea19dbcf8ac5512fd",
+    "0eb3a898dba4d347ba492bc7dabdc9c5361be796c5a7ec7fa8067541e82312d9",
+    "0ec7b7d5c5c70615fa32a12f462439d648ca40e2de1d402e2cabd2657414ce6c",
+    "0ece1e76cd4f9e99b3a8a7327d9dacba92adeefdc8b1bd2336a72c1cf7e72f77",
+    "0f1e08655b0fbc3fe4efe267dae2f3345d5ee87e2732f3b639deedccbacd9f00",
+    "0f22b382dd98c397eec32ed5edb463dbfc58f326c4f6641aaf133ce49424ab7c",
+    "0f50eb825cea3eb1ac9e16ce61235cc627c26668f9120cac1f58902098138ce6",
+    "0f93a2b1181adec142836c9025ff5a79d02dab65344203cf3e8bd3a2bc8ebc44",
+    "0fa7263b8b7276f38cdf2ad02f8e63bd693d267d52a1238f6dd096fef5338bf9",
+    "0fc3910546248d0d0d3b002d746f74d410fc406a25c4dd4f87a6580444f3240f",
+    "0fd15392e3aa9680de2f4d37fbad48a1f23d69d5636450041a1b4ae384d48ad4",
+    "0ff3b65397146b488c18e143cc792531351d88cd35c070885018044ef4bf5e65",
+    "0ffd668983c8baf3e6ac212b77d1b969550cd9345fab02018cc4f8bf3266c1d2",
+    "100268423d6f62210cb274e2f313c0c60777420280ec8c9868ccfde82c0f8d2d",
+    "1025631036a1d9c7cdd8fea867c53e86f181d112251410a7496b0e73312913a9",
+    "1048fd58b098b3efcc00e5525308f4925da469a7101528fde90f8ef9e596da5b",
+    "109cdeca60d5982e1a32a81e3c5d36df0e152f7d415f5932567694611748bf3a",
+    "10c4ae2c595e542d8d0d61b8eabedc5a8e57b04f142a8685092ccb9d9ec69388",
+    "10ff23311b35fddb84e535e807515b6cdd9883be7d203e7807b6f582f421445b",
+    "1103acea884ffa20e2730b6d3f35138dba28a9c77ee2116930c9696c7f2f9bbf",
+    "11186cb09fbee1c94774b4572968e16c3e5a07af154f5c01205570cfc0ef7fc6",
+    "111e463a03bbab594bdd1bcc0e45fabc7380c421143ec29cc39f484dec3b2e1b",
+    "11282b9ccf93cffdc5871d2592a8a76e48d49bf0de3b339cf44273b3dc0bea97",
+    "11b20e65672760bcb4690f59a88c5ab2a597940e29dcbb4661d182fa647db921",
+    "11f5439bb2ffe96af5cf4d1b7873f6695dcc6d856d84f81c998791e030421f83",
+    "120aea1dde3b835b29d829dc590fd9a10453e5d03b19647cbc94cd974bd09a42",
+    "122e8a929fcbc4e0e10c63de0558aaf021d6f0da56e6ed9af5a91b5f5efce096",
+    "123b154cdd95812f41e7971e8940e25e417d7d13cda2e70dd771c4cd2141286f",
+    "130849f6e116405e04a999c5bdf849832e365588119a87e3aa8ef9bd770d1308",
+    "131eb2c173826f8083306b5b056c3a39504913da4770f7c75c2f7f8abdd61002",
+    "1328ad8728909e807cc5bb42467351099b39a500a87e6c75da33e082dec29f7c",
+    "1356cc172156fa251f2538df54ad08533681aba3e9bbb669ccb29a0313ee5386",
+    "1364a58568289cd8f1ad478158893c25d6e9ca5a7cb823dc365686adfb2e4fcb",
+    "13e66796e4613c20550c89f80ed46ba2dc5845ec226d81cc51af8c0ec1a56730",
+    "140d34bd4fa27e4841112511efe24a6cbd19b69733599f5505b6e9076bd959b0"
+  ],
+  "senseIds": [
+    "ko-침실-3204-s1",
+    "ko-준비하다-3661-s1",
+    "ko-번-955-s1",
+    "ko-파일-3268-s1",
+    "ko-자주-3558-s1",
+    "ko-늙다-1593-s1",
+    "ko-일본어-3560-s1",
+    "ko-팀-3798-s1",
+    "ko-항상-3845-s1",
+    "ko-바나나-901-s1",
+    "ko-더-804-s1",
+    "ko-것-753-s1",
+    "ko-고양이-627-s1",
+    "ko-없다-1176-s1",
+    "ko-기억-1467-s1",
+    "ko-덮다-811-s1",
+    "ko-훨씬-3436-s1",
+    "ko-비타민-2146-s1",
+    "ko-빨갛다-990-s1",
+    "ko-바로-907-s1",
+    "ko-보름달-2005-s1",
+    "ko-펜-3755-s1",
+    "ko-무엇-912-s1",
+    "ko-연필-1208-s1",
+    "ko-호랑이-3864-s1",
+    "ko-우체국-3489-s1",
+    "ko-종종-2966-s1",
+    "ko-이어지다-2800-s1",
+    "ko-그녀-1447-s1",
+    "ko-트럭-3246-s1",
+    "ko-엄마-1174-s1",
+    "ko-배고프다-941-s1",
+    "ko-오렌지-1202-s1",
+    "ko-내리다-723-s1",
+    "ko-편의점-3293-s1",
+    "ko-그거-660-s1",
+    "ko-책-3692-s1",
+    "ko-상자-997-s1",
+    "ko-흥미-3453-s1",
+    "ko-너무-727-s1",
+    "ko-좋아하다-3631-s1",
+    "ko-하루-3804-s1",
+    "ko-여기-1183-s1",
+    "ko-제공-2967-s1",
+    "ko-환영하다-3835-s1",
+    "ko-비행기-980-s1",
+    "ko-남편-715-s1",
+    "ko-중요-3672-s1",
+    "ko-지나다-3685-s1",
+    "ko-심하다-1135-s1",
+    "ko-향하다-3359-s1",
+    "ko-식당-1116-s1",
+    "ko-층-3695-s1",
+    "ko-색깔-1003-s1",
+    "ko-따라가다-834-s1",
+    "ko-아직-1142-s1",
+    "ko-저희-3611-s1",
+    "ko-높다-772-s1",
+    "ko-얇다-1182-s1",
+    "ko-위하다-3523-s1",
+    "ko-데리다-812-s1",
+    "ko-필요-3794-s1",
+    "ko-파란색-3800-s1",
+    "ko-매우-857-s1",
+    "ko-시키다-1113-s1",
+    "ko-테니스-3773-s1",
+    "ko-과학자-1356-s1",
+    "ko-일하다-3576-s1",
+    "ko-담배-783-s1",
+    "ko-사거리-998-s1",
+    "ko-목욕-894-s1",
+    "ko-자전거-3557-s1",
+    "ko-발음-926-s1",
+    "ko-컵-3730-s1",
+    "ko-잃어버리다-3582-s1",
+    "ko-잔디-2895-s1",
+    "ko-우유-3487-s1",
+    "ko-소년-2315-s1",
+    "ko-없이-1177-s1",
+    "ko-고통-1368-s1",
+    "ko-바위-1968-s1",
+    "ko-야구-1173-s1",
+    "ko-계란-621-s1",
+    "ko-역할-2607-s1",
+    "ko-경찰서-619-s1",
+    "ko-방해-1976-s1",
+    "ko-아름답다-1124-s1",
+    "ko-온몸-2677-s1",
+    "ko-화장실-3830-s1",
+    "ko-출발-3738-s1",
+    "ko-화가-3824-s1",
+    "ko-산책-1030-s1",
+    "ko-구성-1395-s1",
+    "ko-거대-3892-s1",
+    "ko-주차하다-3655-s1",
+    "ko-이모-3513-s1",
+    "ko-왕복-2699-s1",
+    "ko-또는-854-s1",
+    "ko-대통령-1657-s1",
+    "ko-참다-3108-s1",
+    "ko-덕분-808-s1",
+    "ko-마지막-869-s1",
+    "ko-넘치다-1580-s1",
+    "ko-어젯밤-1164-s1",
+    "ko-어떻다-1198-s1",
+    "ko-나날이-1496-s1",
+    "ko-안개-2489-s1",
+    "ko-나머지-1501-s1",
+    "ko-처음-3699-s1",
+    "ko-춥다-3747-s1",
+    "ko-생각하다-1008-s1",
+    "ko-주스-3647-s1",
+    "ko-도시-817-s1",
+    "ko-셔츠-2300-s1",
+    "ko-모으다-884-s1",
+    "ko-내년-720-s1",
+    "ko-넘다-729-s1",
+    "ko-이유-3532-s1",
+    "ko-종류-3626-s1",
+    "ko-그렇다-669-s1",
+    "ko-흰색-3857-s1",
+    "ko-만들다-878-s1",
+    "ko-열심히-1215-s1",
+    "ko-오히려-2665-s1",
+    "ko-외로움-2645-s1",
+    "ko-새로-1000-s1",
+    "ko-그분-672-s1",
+    "ko-바보-1966-s1",
+    "ko-인터넷-3549-s1",
+    "ko-찾다-3684-s1",
+    "ko-변하다-2051-s1",
+    "ko-일요일-3569-s1",
+    "ko-결혼-612-s1",
+    "ko-난방-1518-s1",
+    "ko-전혀-3621-s1",
+    "ko-앞-1168-s1",
+    "ko-물건-923-s1",
+    "ko-버스-954-s1",
+    "ko-수영-1045-s1",
+    "ko-뜨겁다-858-s1",
+    "ko-놀라다-769-s1",
+    "ko-그저-1413-s1",
+    "ko-버튼-2006-s1",
+    "ko-빨개지다-2160-s1",
+    "ko-고치다-630-s1",
+    "ko-곳-635-s1",
+    "ko-뚱뚱하다-1789-s1",
+    "ko-몹시-1886-s1",
+    "ko-식물-2379-s1",
+    "ko-옷-1226-s1"
+  ],
+  "sourceIds": [
+    "Tatoeba"
+  ],
+  "sourceRecords": [
+    {
+      "candidateId": "0008eaab987198227816ddae164c86068c37774f80d49309f6a5e70429d3b057",
+      "sentenceId": "13558966",
+      "translationSentenceId": "10320171"
+    },
+    {
+      "candidateId": "001876a9a29a48111b7da396b86ce796d161bf40caf3ff0377f56f4496994d68",
+      "sentenceId": "13559051",
+      "translationSentenceId": "5350403"
+    },
+    {
+      "candidateId": "0018a19a7f52ae07f6d9f991a791e7dc4d418c55f7161eb517e9368a02345a02",
+      "sentenceId": "13516604",
+      "translationSentenceId": "13516605"
+    },
+    {
+      "candidateId": "005372740aa6cbdbce521a1d12f32748334b66b86c3390b91f85d217327ff1b8",
+      "sentenceId": "11104862",
+      "translationSentenceId": "13515253"
+    },
+    {
+      "candidateId": "00570eb0d4855c609b463f9ec8adb3cce8c85926cf142f440b6b965168c9d2c7",
+      "sentenceId": "13543222",
+      "translationSentenceId": "13533995"
+    },
+    {
+      "candidateId": "0087188d72abd4220591f712b4f38f00c5a242034d620042fa26d68e5993902d",
+      "sentenceId": "13591591",
+      "translationSentenceId": "13573840"
+    },
+    {
+      "candidateId": "00cf015d9941ce1344f98a42df5894dc287ce112dae0c50a38e780a7ae593558",
+      "sentenceId": "961984",
+      "translationSentenceId": "8696248"
+    },
+    {
+      "candidateId": "00e308b03ed4e2f626bb6b774609576a588fd9209b29d8cae2efb9c17b1ce4b1",
+      "sentenceId": "13575938",
+      "translationSentenceId": "9972434"
+    },
+    {
+      "candidateId": "00eb83f72c0f7f49433dd19ef04534733ddf170c1468c33b82ff056916ba790a",
+      "sentenceId": "13559050",
+      "translationSentenceId": "346078"
+    },
+    {
+      "candidateId": "00fcaafdbd70d0703a49e5d147cd69b9c7a41a4b3eb375165529a1255411d38c",
+      "sentenceId": "13542279",
+      "translationSentenceId": "2062924"
+    },
+    {
+      "candidateId": "0111ab64115bcb69d5c2c09c11be0c8bb1f940616ccc709abe4f3c0491518ce6",
+      "sentenceId": "13548083",
+      "translationSentenceId": "1058982"
+    },
+    {
+      "candidateId": "0146d197caa654817095da034b80858145e7f347f0d9407db436a44d224709e8",
+      "sentenceId": "6295648",
+      "translationSentenceId": "8696329"
+    },
+    {
+      "candidateId": "015a7a9463d0bd0e2355a1cc3cd35717f60cc481ab30cb727c72011496226221",
+      "sentenceId": "8364991",
+      "translationSentenceId": "8686681"
+    },
+    {
+      "candidateId": "016e038b9e14f9ab25386a1bc8c865bf70798f698b80b99f821bfa723523d2e9",
+      "sentenceId": "13248340",
+      "translationSentenceId": "13532047"
+    },
+    {
+      "candidateId": "019141b1674837ae90a89e14b4d5a5ea049df963f25054dc06517adc22e54aaa",
+      "sentenceId": "13559146",
+      "translationSentenceId": "937642"
+    },
+    {
+      "candidateId": "01a9903ed2621de196bb725070cb413c541df283f4b9e0080b9ca0a1b4c1e6b1",
+      "sentenceId": "13559031",
+      "translationSentenceId": "9046294"
+    },
+    {
+      "candidateId": "01c7836d95b329ba8685ef491532374af7fba7978fb5087915e365e50d50c20e",
+      "sentenceId": "11104667",
+      "translationSentenceId": "13609718"
+    },
+    {
+      "candidateId": "01ee666df459894b43f88f1a3240fa5f2638a3c93ee3157dfcc63e3dd6acc1ce",
+      "sentenceId": "7965150",
+      "translationSentenceId": "13626044"
+    },
+    {
+      "candidateId": "02088d4a25af26c533a3ef2f57857d7997043c59395b07084b6a98786111343d",
+      "sentenceId": "13541024",
+      "translationSentenceId": "1193451"
+    },
+    {
+      "candidateId": "02137bc20e44665e144a5c1b322a087b377dbd000bcec9c24c4af6662155c8df",
+      "sentenceId": "8406257",
+      "translationSentenceId": "13532050"
+    },
+    {
+      "candidateId": "024a4ef90ccd4cee3e406ac8a25a7c54a15cf8b4221e92140cdebadb32412fde",
+      "sentenceId": "8365765",
+      "translationSentenceId": "339223"
+    },
+    {
+      "candidateId": "0254c79c6e53aec811d931a1a664fee9208c3b138d3ff6cc9a57d5b46ac9a4b7",
+      "sentenceId": "13142378",
+      "translationSentenceId": "13888903"
+    },
+    {
+      "candidateId": "0266503ed4aef78eeeae1484cc101e824188cb868f01b68839e19f3a942a9418",
+      "sentenceId": "1637221",
+      "translationSentenceId": "3693875"
+    },
+    {
+      "candidateId": "0275791fd5d548200f8139e60458f7066b2dd1eacbb8b407023385654e1b5d08",
+      "sentenceId": "2088315",
+      "translationSentenceId": "808253"
+    },
+    {
+      "candidateId": "0276e926a08ed91c94c9a47d480b789362931a96b6e6e55d7528db8b5cece0ef",
+      "sentenceId": "13543435",
+      "translationSentenceId": "13543434"
+    },
+    {
+      "candidateId": "0279aab4494dd07045e89cae2ea3a3a2147f8ad26089d1a1945eb5e19b8a9546",
+      "sentenceId": "13575967",
+      "translationSentenceId": "349719"
+    },
+    {
+      "candidateId": "029c2fd6a7248412ec8e7e010ce04a0dc59b59292b3468b281d4ec5107465b2e",
+      "sentenceId": "4571427",
+      "translationSentenceId": "8715876"
+    },
+    {
+      "candidateId": "02b6cc18226661241585c1602f12f432bbd5ded28ee0a72d8c1ae46b85373deb",
+      "sentenceId": "8548172",
+      "translationSentenceId": "13878119"
+    },
+    {
+      "candidateId": "02cdc94898b88cf9181f726d2eca73ba69610fb8b9061821133228ad2bdb4634",
+      "sentenceId": "13541074",
+      "translationSentenceId": "13539368"
+    },
+    {
+      "candidateId": "02e413c85c905fc80f221adf8602f26a129007fbd5d58ad948cbd27a97d00771",
+      "sentenceId": "11105718",
+      "translationSentenceId": "13501515"
+    },
+    {
+      "candidateId": "02e51a384471103510f0fdaa069108712e75297daa81c4771cfa377f1cd4bd4c",
+      "sentenceId": "13557088",
+      "translationSentenceId": "2766894"
+    },
+    {
+      "candidateId": "02fb9a28bff3ff839512202ed85b9c7619bbf7060f1aa1b71c190d119410462a",
+      "sentenceId": "13118588",
+      "translationSentenceId": "13894787"
+    },
+    {
+      "candidateId": "02fc4801194a4bfed4f0f68ea77d2db005c9d7f477d2a1fb04396266993035a4",
+      "sentenceId": "13542237",
+      "translationSentenceId": "13626048"
+    },
+    {
+      "candidateId": "02fd0d3b5a934f814ac202935571f8728b841fd75b4943573098ea0fb79231ca",
+      "sentenceId": "12385909",
+      "translationSentenceId": "1134549"
+    },
+    {
+      "candidateId": "031483e7645fcda130034afead85be2a7ba243a2ec97d5e6859b0c8c145a82e5",
+      "sentenceId": "13155957",
+      "translationSentenceId": "13155959"
+    },
+    {
+      "candidateId": "034084b4d95789eb0a889a7cb7442b6eebd9e334b0dbe0c094dc6069624cf414",
+      "sentenceId": "8360732",
+      "translationSentenceId": "8696301"
+    },
+    {
+      "candidateId": "03490f85b6dc273caa09a67e7486d56df840322e9db46ac1847aa11bfe988f43",
+      "sentenceId": "13575965",
+      "translationSentenceId": "13151226"
+    },
+    {
+      "candidateId": "035e00775426e2fc261328b1e9b993fe385cb68c51fe6dbf92c9e699d395ac3d",
+      "sentenceId": "4042842",
+      "translationSentenceId": "794133"
+    },
+    {
+      "candidateId": "035f061e932dc6d5b96c68e3c1f20c69ac17d3d823c29adbfb55d817ebb1a318",
+      "sentenceId": "7999544",
+      "translationSentenceId": "13502340"
+    },
+    {
+      "candidateId": "037420d1583fd7febbe005d7edd15d0ab693c5db1c02ad08d437e39e4c1b6035",
+      "sentenceId": "13535386",
+      "translationSentenceId": "13525484"
+    },
+    {
+      "candidateId": "0377fa0424fb6f4685f4bb6863f45de80bf626c387ce157faac354f77028a2ce",
+      "sentenceId": "4710377",
+      "translationSentenceId": "4881620"
+    },
+    {
+      "candidateId": "038c3f439d0cb7505e0a7a6c28177fc87723cab24b50fca99283f5501d0ddad6",
+      "sentenceId": "5366",
+      "translationSentenceId": "24"
+    },
+    {
+      "candidateId": "039099c2ab2aee459152871845863f15c16c5967623d0595393e859c0952ef5a",
+      "sentenceId": "13548101",
+      "translationSentenceId": "5900377"
+    },
+    {
+      "candidateId": "039c055331b300126c4d338f8d6e483ddb7dabe82af799849426b8e75d028b3c",
+      "sentenceId": "13591515",
+      "translationSentenceId": "13511569"
+    },
+    {
+      "candidateId": "03a960d7d2d0f4a0159bd0765d1b166f89e44c7dc08749aa0f56ddc2601ddd93",
+      "sentenceId": "5020798",
+      "translationSentenceId": "638027"
+    },
+    {
+      "candidateId": "03b6f5a146d1ce7f80e6dbcccc529f7a14ddc752cbe8f2f52709e05d86dee9ed",
+      "sentenceId": "7792000",
+      "translationSentenceId": "347420"
+    },
+    {
+      "candidateId": "040b192bdf07c90349161bcc3c57399c2e707e365048b25db5ef967cd45e1530",
+      "sentenceId": "8367161",
+      "translationSentenceId": "12686310"
+    },
+    {
+      "candidateId": "045f6764de4bcef108b28877cd9120629eccd73ff34ed879adb87ce416818bbf",
+      "sentenceId": "13008004",
+      "translationSentenceId": "13502099"
+    },
+    {
+      "candidateId": "0484bcc1db07e23eec5879eef021022ef1cfe0433cafde99852b8f871e324381",
+      "sentenceId": "906593",
+      "translationSentenceId": "2051364"
+    },
+    {
+      "candidateId": "04aa9aa2a12d3d1cb1fec855f37230b793c09036006b39681b9c3e74980530c1",
+      "sentenceId": "13535468",
+      "translationSentenceId": "13533865"
+    },
+    {
+      "candidateId": "04b919ff0d22c3a05ced7d10e17e34d99c0db22ebe417d0bf3d1b9c0392c014d",
+      "sentenceId": "13558965",
+      "translationSentenceId": "1454453"
+    },
+    {
+      "candidateId": "04e0711773184d59f161829f1bc1620e69ed7a40129dcd4ab050fb93a12016a6",
+      "sentenceId": "13559156",
+      "translationSentenceId": "801394"
+    },
+    {
+      "candidateId": "055a052b340b44f7727b1263d0809edb50b93c50a1f855d99b6b8ec977760052",
+      "sentenceId": "5271608",
+      "translationSentenceId": "8715880"
+    },
+    {
+      "candidateId": "059327b28b70920a9b2580a9c5c2d689e766dbeae7feb81a390b641a7ddde27e",
+      "sentenceId": "4748439",
+      "translationSentenceId": "13626087"
+    },
+    {
+      "candidateId": "059b59dfbd7c4f91e80caf3971c7f36328033acf8ed0628fbe5651ca07039775",
+      "sentenceId": "11106391",
+      "translationSentenceId": "13119386"
+    },
+    {
+      "candidateId": "05b55aab5be7a5feefdb80668e4e02d72ea91a4ceba6ee6a094f5332f562f892",
+      "sentenceId": "13559270",
+      "translationSentenceId": "420496"
+    },
+    {
+      "candidateId": "05c25ad9f154be9cc45e688f54bd65e9e3d8924b6095905ebf96a4d07b903add",
+      "sentenceId": "13138691",
+      "translationSentenceId": "13498452"
+    },
+    {
+      "candidateId": "05e8f61ab24040650a85f33029ead9ef805a78091a08f0e932553b7640a1a66e",
+      "sentenceId": "13547926",
+      "translationSentenceId": "4267328"
+    },
+    {
+      "candidateId": "05efee4edf9ecab4aad404265d232e7c95321edc9b5f1a3edc11576fa18d3ba6",
+      "sentenceId": "8365273",
+      "translationSentenceId": "13155821"
+    },
+    {
+      "candidateId": "0615b11d9c43e4c8e78e81ec149ae45e2a4636caa2fbc72f7147e3aaa9fece4a",
+      "sentenceId": "8361917",
+      "translationSentenceId": "8686666"
+    },
+    {
+      "candidateId": "061ab2cec471f0dbd8a642844172382e169c5bfa45c80b0d29f2957e19103371",
+      "sentenceId": "11090425",
+      "translationSentenceId": "13498455"
+    },
+    {
+      "candidateId": "0645a948db6af43cfa14a0241524241cdaae596241b7a0fbe75db6e649447dd7",
+      "sentenceId": "13548055",
+      "translationSentenceId": "10741802"
+    },
+    {
+      "candidateId": "0661c609cf660aa3c45f1c52ba22b6f85b14e8292877efe6875035d85174020b",
+      "sentenceId": "10608911",
+      "translationSentenceId": "13621147"
+    },
+    {
+      "candidateId": "069bdb27410a616155c0490076bdd43fb3d131a79f5538a52f0b39c63315b65b",
+      "sentenceId": "13203704",
+      "translationSentenceId": "13209825"
+    },
+    {
+      "candidateId": "06acd8ec8f692defdb4e5e0c5bfd18727ad46d3f4108a1c56c1ee8ed5f257da7",
+      "sentenceId": "13540925",
+      "translationSentenceId": "420300"
+    },
+    {
+      "candidateId": "06aeee0bd939d57388ad6e051c21bf7bc44cabf9fc6cadca427709826c10e848",
+      "sentenceId": "13547323",
+      "translationSentenceId": "834589"
+    },
+    {
+      "candidateId": "06c291a64f52e01abef060170b660c5025e60ca2542089a291f855dc0f2d81d0",
+      "sentenceId": "11106927",
+      "translationSentenceId": "13626092"
+    },
+    {
+      "candidateId": "06c603bd4a056bdd9ac273e9791108ae399ba5d6ae3eccadeaf08b4926c32ce1",
+      "sentenceId": "10617674",
+      "translationSentenceId": "13869344"
+    },
+    {
+      "candidateId": "06c6d853d6da2967c84e6eed4e6df29df780d7e241a49cd719ed0d45aaac1d3b",
+      "sentenceId": "13166578",
+      "translationSentenceId": "398950"
+    },
+    {
+      "candidateId": "06defd19e9a0aee0f7eca381b15cd9d1de55b18739169b1845213cd3e7fcc23c",
+      "sentenceId": "4657775",
+      "translationSentenceId": "1502346"
+    },
+    {
+      "candidateId": "06e25855439bc938515030ea620038bf90775651ace861af8991f5932bedbac3",
+      "sentenceId": "13250341",
+      "translationSentenceId": "13532025"
+    },
+    {
+      "candidateId": "06f560c67171634de3f82e99fae2b9404e0a6375987332ff3a364495f9f9fe1b",
+      "sentenceId": "13548047",
+      "translationSentenceId": "2690862"
+    },
+    {
+      "candidateId": "072ba0e8c547709c41142752ee01fd6fb5df63eaf65293156ec32b4846cc56c2",
+      "sentenceId": "13180157",
+      "translationSentenceId": "346163"
+    },
+    {
+      "candidateId": "07457eb284d140728752537df89a2407edde30a1eec97f6c15f09a7954f12cb9",
+      "sentenceId": "8533928",
+      "translationSentenceId": "8696293"
+    },
+    {
+      "candidateId": "07733b4a60b5ad00128f276a57c7c8efedeb313df9189303c550e12a6ac5b3da",
+      "sentenceId": "13547988",
+      "translationSentenceId": "1512370"
+    },
+    {
+      "candidateId": "078c93ba043b54de678c5c9333703aaa2f2c5a7545fd579b69d5df50003eb8be",
+      "sentenceId": "13587087",
+      "translationSentenceId": "840966"
+    },
+    {
+      "candidateId": "07b609f9f35b0966382269f6a392b96cf1b224e8dbbd328e01f2182db89b9d97",
+      "sentenceId": "13550695",
+      "translationSentenceId": "13549570"
+    },
+    {
+      "candidateId": "07d3626ab9346de10e1d791a7ba7ee98f00f35be6f439d931c05d250faa46a51",
+      "sentenceId": "13548050",
+      "translationSentenceId": "333998"
+    },
+    {
+      "candidateId": "07f96f9ecdbcb8b46be0509fd8427ecbb72f0a7e302abc037cdc6b4f29d04ffe",
+      "sentenceId": "13516911",
+      "translationSentenceId": "13516918"
+    },
+    {
+      "candidateId": "0883d0f57f35ef8dde304e7bc78509f73513a14309cef7beaff876bdf2fc64f5",
+      "sentenceId": "13537515",
+      "translationSentenceId": "13111771"
+    },
+    {
+      "candidateId": "0892377993c90196384086d75f02bb544aa35660801a394fa6c0f0217ba0f9f7",
+      "sentenceId": "5383613",
+      "translationSentenceId": "8686695"
+    },
+    {
+      "candidateId": "0970bd2518d6b6f5b1412f0f0e8f96e08a352478531cb25cd272951327f20907",
+      "sentenceId": "13545938",
+      "translationSentenceId": "10314052"
+    },
+    {
+      "candidateId": "098b41eb16a97ba7dbbc3456d67ce33059e92a7c373fcf0e50be122ddc465af1",
+      "sentenceId": "13540157",
+      "translationSentenceId": "13537423"
+    },
+    {
+      "candidateId": "09a1e97a3ee3c0d104a78787835ae43f90c6e2748d2e349120b552fbe83d9f9b",
+      "sentenceId": "10605585",
+      "translationSentenceId": "13502094"
+    },
+    {
+      "candidateId": "09abca1b2bd0464d5dd87b55e638ecb3ecd86b155921ecb34e5b9236243cfa83",
+      "sentenceId": "11107484",
+      "translationSentenceId": "683028"
+    },
+    {
+      "candidateId": "09d26abb0a710cf152a434b6c41f823891a1c6adb2f4f8a300fe363d3f42c1c7",
+      "sentenceId": "13547306",
+      "translationSentenceId": "13144705"
+    },
+    {
+      "candidateId": "09ef69791e53c7d083ad38821ae7b80940b1d2d5c092f13b71c15d95188fffb1",
+      "sentenceId": "2654548",
+      "translationSentenceId": "13515114"
+    },
+    {
+      "candidateId": "0a630a6ed31d50f7f91bff0900a11fc429f8dfcb4646a9c222423c7f8804c53a",
+      "sentenceId": "13590020",
+      "translationSentenceId": "334657"
+    },
+    {
+      "candidateId": "0a6c2c9a6acfdcf49b3d4a9e41d722d52b883ed76263fcf477ba6fd66337cb10",
+      "sentenceId": "13557001",
+      "translationSentenceId": "13556586"
+    },
+    {
+      "candidateId": "0aa9c1b97ae81ebcdaa5987e432ad4f60bcf7c8c80a90292da13affc6c814f6c",
+      "sentenceId": "13991505",
+      "translationSentenceId": "850411"
+    },
+    {
+      "candidateId": "0ab1d71d4ec162169528a168447c9256d1c53c804ff15fa175e599e55d704ffd",
+      "sentenceId": "507565",
+      "translationSentenceId": "13155887"
+    },
+    {
+      "candidateId": "0ad5598e04a06ab09b028d1c20dcb6233d96c9f8a4d04feb948a34f706de56d8",
+      "sentenceId": "13587101",
+      "translationSentenceId": "13609776"
+    },
+    {
+      "candidateId": "0ae9a6de2f2c67519a907083780a00464113cae977720a5bdce94567021a74fd",
+      "sentenceId": "13151249",
+      "translationSentenceId": "1881095"
+    },
+    {
+      "candidateId": "0b195e3d138ee9e6860236c18327a4b380eb1e5d16e5f88bb10ba582ad98fa05",
+      "sentenceId": "12385909",
+      "translationSentenceId": "1134549"
+    },
+    {
+      "candidateId": "0b42d7fbd38da13bc12aa5a35b7769d162f071122ab174b10afb4f391d4bd598",
+      "sentenceId": "13587138",
+      "translationSentenceId": "4765438"
+    },
+    {
+      "candidateId": "0b640bb3bc6e1c92b7de30caf4b1f085300c12a50a00207544ea3caef21045a3",
+      "sentenceId": "507619",
+      "translationSentenceId": "336447"
+    },
+    {
+      "candidateId": "0b6c8da6bb336245be897130114a9b6fd8fe83457220999cb62c42bb4249bd00",
+      "sentenceId": "910944",
+      "translationSentenceId": "2054068"
+    },
+    {
+      "candidateId": "0bc5399f2f3114ab426cdddd2b474cfee453a8664728167eaaa53cc6ff361348",
+      "sentenceId": "13514637",
+      "translationSentenceId": "13514638"
+    },
+    {
+      "candidateId": "0bce990813326aba7aaf1cfe1e05b1e4ef39c373b8f8982869e15543c5ffa925",
+      "sentenceId": "13535116",
+      "translationSentenceId": "13519432"
+    },
+    {
+      "candidateId": "0bdb07ae6ba25e35aeeebd9afbcf26e97a25836ef1596a836ec247c1523c3a16",
+      "sentenceId": "11105910",
+      "translationSentenceId": "833135"
+    },
+    {
+      "candidateId": "0c0f452e91d1050cadc993994ada905c97b4173d983f05a91c987e9d27ca48ae",
+      "sentenceId": "13591471",
+      "translationSentenceId": "2085116"
+    },
+    {
+      "candidateId": "0c835ab1ab848ba1c9ad050942dd6a3831867ee2b660306fdb7cc7f507dcc342",
+      "sentenceId": "13561163",
+      "translationSentenceId": "1066642"
+    },
+    {
+      "candidateId": "0c91d343f79fa414c9d9ebf1c2eab28c46c9a13d09f68e6f942a2435a245a5e0",
+      "sentenceId": "8357771",
+      "translationSentenceId": "13109230"
+    },
+    {
+      "candidateId": "0ccfac00353e96bd1ac52325d7bdfc9a10fa38e0a66f586df6e62e7692d59f20",
+      "sentenceId": "13559148",
+      "translationSentenceId": "461644"
+    },
+    {
+      "candidateId": "0cf58edfcb9729ef86d1fbe852f47d31e53854799667206d9ebda6f46e5b4f6f",
+      "sentenceId": "8556177",
+      "translationSentenceId": "8696327"
+    },
+    {
+      "candidateId": "0d31dcca3fb536d5f40dec82533f7e29699c65556b6a7411f2a5026896f488b6",
+      "sentenceId": "13561152",
+      "translationSentenceId": "13495623"
+    },
+    {
+      "candidateId": "0d347d39e6f7e43f3ace652d3bbb163912a5438dc8fd26159507072ff792fc53",
+      "sentenceId": "13587226",
+      "translationSentenceId": "13573405"
+    },
+    {
+      "candidateId": "0d440158f5e6500a6239a9024adf67c1453f85320c2067d80933f67bf1ee7876",
+      "sentenceId": "13541056",
+      "translationSentenceId": "13609706"
+    },
+    {
+      "candidateId": "0d7016650b919b021fd829a48310dc717871098ca25b75ba5867579e50857f10",
+      "sentenceId": "13543204",
+      "translationSentenceId": "13537552"
+    },
+    {
+      "candidateId": "0d8afb46110347847f126e2eccccd17ddeaf435cc8380ea37f15b8d4ecad8214",
+      "sentenceId": "1257639",
+      "translationSentenceId": "13515182"
+    },
+    {
+      "candidateId": "0da5d1f94d278ab2845c3419cdd0dab43448ff030386eae67fd3124021702852",
+      "sentenceId": "13250304",
+      "translationSentenceId": "503281"
+    },
+    {
+      "candidateId": "0df59b270fe714bca91b7731f41ccedfa2fa8bc36af0b0bae05c1e2bc0204206",
+      "sentenceId": "2834027",
+      "translationSentenceId": "8795138"
+    },
+    {
+      "candidateId": "0e078404aa96988abe7ef9e722ac86e95c5fc511df6d7c25eeb59be9a02bb016",
+      "sentenceId": "13547934",
+      "translationSentenceId": "471400"
+    },
+    {
+      "candidateId": "0e31b4fdcb6b774b99f3e4baf50f11dc79f1e1205090de5deba7c8d39021cfd6",
+      "sentenceId": "13541012",
+      "translationSentenceId": "471501"
+    },
+    {
+      "candidateId": "0e53c8a684378e241018f08cd19e8e8dd61ec7e46fc49f868c1dee33f25c2804",
+      "sentenceId": "3681041",
+      "translationSentenceId": "14013551"
+    },
+    {
+      "candidateId": "0e5f92710ac3b1e88de804dd2b7d47684a5da021fea3882ea19dbcf8ac5512fd",
+      "sentenceId": "11106429",
+      "translationSentenceId": "13109243"
+    },
+    {
+      "candidateId": "0eb3a898dba4d347ba492bc7dabdc9c5361be796c5a7ec7fa8067541e82312d9",
+      "sentenceId": "8327135",
+      "translationSentenceId": "334099"
+    },
+    {
+      "candidateId": "0ec7b7d5c5c70615fa32a12f462439d648ca40e2de1d402e2cabd2657414ce6c",
+      "sentenceId": "13161937",
+      "translationSentenceId": "385471"
+    },
+    {
+      "candidateId": "0ece1e76cd4f9e99b3a8a7327d9dacba92adeefdc8b1bd2336a72c1cf7e72f77",
+      "sentenceId": "13577807",
+      "translationSentenceId": "891045"
+    },
+    {
+      "candidateId": "0f1e08655b0fbc3fe4efe267dae2f3345d5ee87e2732f3b639deedccbacd9f00",
+      "sentenceId": "13118622",
+      "translationSentenceId": "13502346"
+    },
+    {
+      "candidateId": "0f22b382dd98c397eec32ed5edb463dbfc58f326c4f6641aaf133ce49424ab7c",
+      "sentenceId": "13587215",
+      "translationSentenceId": "6075259"
+    },
+    {
+      "candidateId": "0f50eb825cea3eb1ac9e16ce61235cc627c26668f9120cac1f58902098138ce6",
+      "sentenceId": "13540948",
+      "translationSentenceId": "759002"
+    },
+    {
+      "candidateId": "0f93a2b1181adec142836c9025ff5a79d02dab65344203cf3e8bd3a2bc8ebc44",
+      "sentenceId": "8364894",
+      "translationSentenceId": "13109235"
+    },
+    {
+      "candidateId": "0fa7263b8b7276f38cdf2ad02f8e63bd693d267d52a1238f6dd096fef5338bf9",
+      "sentenceId": "13571404",
+      "translationSentenceId": "3537587"
+    },
+    {
+      "candidateId": "0fc3910546248d0d0d3b002d746f74d410fc406a25c4dd4f87a6580444f3240f",
+      "sentenceId": "13542195",
+      "translationSentenceId": "1361990"
+    },
+    {
+      "candidateId": "0fd15392e3aa9680de2f4d37fbad48a1f23d69d5636450041a1b4ae384d48ad4",
+      "sentenceId": "13545682",
+      "translationSentenceId": "13498376"
+    },
+    {
+      "candidateId": "0ff3b65397146b488c18e143cc792531351d88cd35c070885018044ef4bf5e65",
+      "sentenceId": "13814372",
+      "translationSentenceId": "13814378"
+    },
+    {
+      "candidateId": "0ffd668983c8baf3e6ac212b77d1b969550cd9345fab02018cc4f8bf3266c1d2",
+      "sentenceId": "11106566",
+      "translationSentenceId": "13155924"
+    },
+    {
+      "candidateId": "100268423d6f62210cb274e2f313c0c60777420280ec8c9868ccfde82c0f8d2d",
+      "sentenceId": "13559255",
+      "translationSentenceId": "421064"
+    },
+    {
+      "candidateId": "1025631036a1d9c7cdd8fea867c53e86f181d112251410a7496b0e73312913a9",
+      "sentenceId": "13535428",
+      "translationSentenceId": "13174484"
+    },
+    {
+      "candidateId": "1048fd58b098b3efcc00e5525308f4925da469a7101528fde90f8ef9e596da5b",
+      "sentenceId": "8369664",
+      "translationSentenceId": "13155948"
+    },
+    {
+      "candidateId": "109cdeca60d5982e1a32a81e3c5d36df0e152f7d415f5932567694611748bf3a",
+      "sentenceId": "13150750",
+      "translationSentenceId": "13626135"
+    },
+    {
+      "candidateId": "10c4ae2c595e542d8d0d61b8eabedc5a8e57b04f142a8685092ccb9d9ec69388",
+      "sentenceId": "8394171",
+      "translationSentenceId": "13498368"
+    },
+    {
+      "candidateId": "10ff23311b35fddb84e535e807515b6cdd9883be7d203e7807b6f582f421445b",
+      "sentenceId": "906619",
+      "translationSentenceId": "2052285"
+    },
+    {
+      "candidateId": "1103acea884ffa20e2730b6d3f35138dba28a9c77ee2116930c9696c7f2f9bbf",
+      "sentenceId": "13250550",
+      "translationSentenceId": "13502332"
+    },
+    {
+      "candidateId": "11186cb09fbee1c94774b4572968e16c3e5a07af154f5c01205570cfc0ef7fc6",
+      "sentenceId": "13587141",
+      "translationSentenceId": "907545"
+    },
+    {
+      "candidateId": "111e463a03bbab594bdd1bcc0e45fabc7380c421143ec29cc39f484dec3b2e1b",
+      "sentenceId": "13587250",
+      "translationSentenceId": "13519473"
+    },
+    {
+      "candidateId": "11282b9ccf93cffdc5871d2592a8a76e48d49bf0de3b339cf44273b3dc0bea97",
+      "sentenceId": "13306347",
+      "translationSentenceId": "13498494"
+    },
+    {
+      "candidateId": "11b20e65672760bcb4690f59a88c5ab2a597940e29dcbb4661d182fa647db921",
+      "sentenceId": "10607045",
+      "translationSentenceId": "11524435"
+    },
+    {
+      "candidateId": "11f5439bb2ffe96af5cf4d1b7873f6695dcc6d856d84f81c998791e030421f83",
+      "sentenceId": "13596070",
+      "translationSentenceId": "13175454"
+    },
+    {
+      "candidateId": "120aea1dde3b835b29d829dc590fd9a10453e5d03b19647cbc94cd974bd09a42",
+      "sentenceId": "13587130",
+      "translationSentenceId": "13511154"
+    },
+    {
+      "candidateId": "122e8a929fcbc4e0e10c63de0558aaf021d6f0da56e6ed9af5a91b5f5efce096",
+      "sentenceId": "11110719",
+      "translationSentenceId": "13512213"
+    },
+    {
+      "candidateId": "123b154cdd95812f41e7971e8940e25e417d7d13cda2e70dd771c4cd2141286f",
+      "sentenceId": "13541021",
+      "translationSentenceId": "1300405"
+    },
+    {
+      "candidateId": "130849f6e116405e04a999c5bdf849832e365588119a87e3aa8ef9bd770d1308",
+      "sentenceId": "912392",
+      "translationSentenceId": "396112"
+    },
+    {
+      "candidateId": "131eb2c173826f8083306b5b056c3a39504913da4770f7c75c2f7f8abdd61002",
+      "sentenceId": "13180148",
+      "translationSentenceId": "346163"
+    },
+    {
+      "candidateId": "1328ad8728909e807cc5bb42467351099b39a500a87e6c75da33e082dec29f7c",
+      "sentenceId": "9803442",
+      "translationSentenceId": "13502287"
+    },
+    {
+      "candidateId": "1356cc172156fa251f2538df54ad08533681aba3e9bbb669ccb29a0313ee5386",
+      "sentenceId": "13559117",
+      "translationSentenceId": "1945994"
+    },
+    {
+      "candidateId": "1364a58568289cd8f1ad478158893c25d6e9ca5a7cb823dc365686adfb2e4fcb",
+      "sentenceId": "507549",
+      "translationSentenceId": "13582412"
+    },
+    {
+      "candidateId": "13e66796e4613c20550c89f80ed46ba2dc5845ec226d81cc51af8c0ec1a56730",
+      "sentenceId": "11107493",
+      "translationSentenceId": "13505780"
+    },
+    {
+      "candidateId": "140d34bd4fa27e4841112511efe24a6cbd19b69733599f5505b6e9076bd959b0",
+      "sentenceId": "8739163",
+      "translationSentenceId": "8738757"
+    }
+  ],
+  "datasetHash": "b8c949c82d4fed57b862a1accd84f71289ee209cfeb0a0b15ae0909051703db3",
+  "expectedNewHash": "4c173f998f94072af4b54ad8fc176239c8910f57e9d9070cc596d28fcdeec9ca",
+  "rankingVersion": "release-rank-lexicographic-v1"
+}

@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {alignSense} from './sense-alignment.mjs';
+import {evaluate} from './automation.mjs';
+const target={headword:'학교',pos:'名词',gloss:'学校',definitionZh:'教育机构',krdictTargetCode:'1',krdictSenseId:'2',homographNo:0};
+const sense={senseId:'2',senseIdKind:'explicit',glossZh:'学校',definitionZh:'教育机构',examples:[{text:'나는 학교에 갔다.'}]};
+const record={sourceId:'KRDict',headword:'학교',partOfSpeech:'명사',target_code:'1',homographNumber:0,senses:[sense]};
+test('Tier A requires exact explicit IDs and no source conflict',()=>{assert.equal(alignSense(target,record,sense,'나는 학교에 갔다.').tier,'A');assert.equal(alignSense({...target,krdictSenseId:'3'},record,sense,'나는 학교에 갔다.').tier,'B');assert.equal(alignSense(target,{...record,headword:'다른'},sense,'나는 학교에 갔다.').qualified,false);});
+test('Tier B exact unique gloss and source context; similarity alone cannot qualify',()=>{const t={...target,krdictSenseId:null};assert.equal(alignSense(t,record,sense,'나는 학교에 갔다.').qualified,true);assert.equal(alignSense(t,record,sense,'다른 문장').qualified,false);assert.equal(alignSense(t,{...record,senses:[sense,sense]},sense,'나는 학교에 갔다.').qualified,false);});
+test('Kiwi conflict is quarantine, not auto_rejected',()=>{const result=evaluate({candidateId:'x',type:'example',lexicalEntryId:'w',senseId:'s',sourceId:'source',sourceUrl:'https://example.org/',sourceLicense:'pending',sourceVersion:'1',originalId:'1',fetchedAt:'2026-09-13T00:00:00Z',reviewStatus:'candidate',matchMethod:'morphology',senseAlignment:'pending',target:{headword:'눈',pos:'名词'},content:{text:'눈이 내려요.'},translation:null,evidence:[],alignment:{headword:'눈',pos:'名词'},morphology:{posConflict:true}});assert.equal(result.reviewStatus,'quarantine');assert.ok(result.reasons.includes('kiwi_POS_conflict'));});

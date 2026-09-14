@@ -1,0 +1,59 @@
+{
+  "kind": "prepared-not-published",
+  "releaseId": "examples-7d882c8df890c5ba0278",
+  "manifestByteHash": "7ac82e0292b6696fef2631efae051938544f56cc94b099d848d3d3ef8625647d",
+  "attributionByteHash": "dd17e7716809bc5241613cdef1de3911d392b727e4a0226927faf696d4e57a1e",
+  "inputHash": "2493af5ad74e32a3beb512d2515b0ed5742b2281bee2c153faa00a7decf0041d",
+  "originalReadiness": {
+    "autoVerifiedTotal": 1817,
+    "releaseReadyTotal": 1180,
+    "blockedTotal": 637,
+    "attributionTotal": 417,
+    "scoreOnlyBlocked": 0
+  },
+  "releaseA": {
+    "count": 150,
+    "byLevel": {
+      "TOPIK-1": {
+        "examples": 43,
+        "senses": 43
+      },
+      "TOPIK-2": {
+        "examples": 54,
+        "senses": 54
+      },
+      "TOPIK-3": {
+        "examples": 29,
+        "senses": 29
+      },
+      "TOPIK-4": {
+        "examples": 9,
+        "senses": 9
+      },
+      "TOPIK-5": {
+        "examples": 6,
+        "senses": 6
+      },
+      "TOPIK-6": {
+        "examples": 9,
+        "senses": 9
+      }
+    },
+    "transaction": {
+      "blockingErrors": 0,
+      "newWarnings": 0,
+      "baselineWarnings": 7438,
+      "projectedWarnings": 7288,
+      "success": true,
+      "rollbackSimulated": true,
+      "rollbackByteIdentical": true,
+      "productionOriginalHash": "6c925d748cf5aba66d038deca5554725dfb1d59dad72e3bddd9905ee11a439d2",
+      "productionUnchanged": true,
+      "writerDefaultCheck": {
+        "mode": "disabled",
+        "written": false
+      }
+    }
+  },
+  "productionWritten": false
+}

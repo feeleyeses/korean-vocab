@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Automated Candidate v2",
+  "type": "object",
+  "required": [
+    "candidateId",
+    "type",
+    "lexicalEntryId",
+    "senseId",
+    "sourceId",
+    "sourceUrl",
+    "sourceLicense",
+    "originalId",
+    "sourceVersion",
+    "fetchedAt",
+    "content",
+    "translation",
+    "matchMethod",
+    "senseAlignment",
+    "reviewStatus"
+  ],
+  "properties": {
+    "candidateId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "enum": [
+        "example",
+        "collocation",
+        "polysemy"
+      ]
+    },
+    "lexicalEntryId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "senseId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sourceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "sourceLicense": {
+      "type": "string",
+      "minLength": 1
+    },
+    "originalId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fetchedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "content": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "translation": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "matchMethod": {
+      "type": "string"
+    },
+    "senseAlignment": {
+      "type": [
+        "object",
+        "string"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "reviewStatus": {
+      "enum": [
+        "candidate",
+        "auto_verified",
+        "published",
+        "quarantine",
+        "auto_rejected"
+      ]
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lastVerified": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "verificationStatus": {
+      "enum": [
+        "candidate",
+        "auto_verified",
+        "published",
+        "quarantine",
+        "auto_rejected"
+      ]
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "scoreVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scoreBreakdown": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceId",
+          "canonicalSourceId",
+          "derivedFrom",
+          "documentHash",
+          "sourceUrl",
+          "sourceLicense",
+          "sourceVersion",
+          "originalId",
+          "fetchedAt"
+        ]
+      }
+    },
+    "sourceCoverage": {
+      "type": "object"
+    },
+    "validationFlags": {
+      "type": "object"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "reviewStatus": {
+            "enum": [
+              "auto_verified",
+              "published",
+              "quarantine",
+              "auto_rejected"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "score",
+          "scoreVersion",
+          "scoreBreakdown",
+          "evidence",
+          "sourceCoverage",
+          "validationFlags"
+        ]
+      }
+    }
+  ]
+}
