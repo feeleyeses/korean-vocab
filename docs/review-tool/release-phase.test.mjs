@@ -8,6 +8,7 @@ import {verifyReleaseA} from './verify-release-a.mjs';
 import {releaseATransaction} from './release-a-transaction.mjs';
 import {hash} from './automation.mjs';
 import {planRelease,writeRelease} from './publication.mjs';
+import {releaseAPrevious} from './historical-fixture.mjs';
 const m={previousVocabularyHash:'previous',newVocabularyHash:'new'};
 test('A-F: explicit phase and drift matrix',()=>{
  assert.equal(verifyPhase('pre_publish','previous',m).status,'ready');
@@ -21,12 +22,7 @@ test('G-I: real frozen 150 transaction, post verification, repeat prevention and
  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'release-phase-test-'));
  const read=async p=>JSON.parse(await fs.readFile(new URL(p,import.meta.url),'utf8'));
  const manifest=await read('./release-a-manifest.json'),input=await read('./release-a-input.json'),registry=(await read('./source-registry.json')).sources;
- const raw=await read('../../data/vocabulary.json');
- // Explicit CI phase selects fixture reconstruction, never hash guessing.
- if(process.env.RELEASE_PHASE==='post_publish'){
-  const ids=new Set(manifest.addedExampleIds);
-  for(const w of raw.entries)for(const s of w.senses)s.examples=(s.examples||[]).filter(e=>!ids.has(e.exampleId));
- }
+ const raw=await releaseAPrevious(await read('../../data/vocabulary.json'));
  assert.equal(hash(raw),manifest.previousVocabularyHash);
  const bytes=JSON.stringify(raw),target=path.join(dir,'vocabulary.json');
  try{

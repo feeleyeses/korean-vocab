@@ -1,0 +1,132 @@
+{
+  "kind": "prepared-not-published",
+  "name": "B",
+  "releaseId": "examples-2e4aa9f8191421c3e2fa",
+  "createdAt": "2026-09-14T15:21:22.682Z",
+  "rulesHash": "13e9bcd0be0766d33c7c895c93c6cda38ab86625aa902d831ed1cce270b3545c",
+  "manifestByteHash": "d70a4e363d28541315b1d6314f1450ae34cf04d2ad1e01ee6aa51f5e9a3f8ce8",
+  "inputHash": "e899d085d4168256ea8d8b48be7a15e24026928b6531b819c3edbef044dacf4e",
+  "attributionHash": "2be971d79779c60c55039f6a63b4e60d0c359e71ce1fe72fe05c240e0935ea9d",
+  "previousVocabularyHash": "4c173f998f94072af4b54ad8fc176239c8910f57e9d9070cc596d28fcdeec9ca",
+  "newVocabularyHash": "83c62a43166d9aa507136beee1708118065142ddabdd6d6c4ec431662791a2b8",
+  "report": {
+    "mode": "dry-run",
+    "writerEnabled": false,
+    "published": 0,
+    "datasetHash": "4c173f998f94072af4b54ad8fc176239c8910f57e9d9070cc596d28fcdeec9ca",
+    "singleSenseTotal": 3826,
+    "tatoebaMatched": 5986,
+    "matchedSenseCount": 1298,
+    "autoVerified": 1763,
+    "coveredSenseCount": 1030,
+    "quarantine": 4221,
+    "autoRejected": 2,
+    "structurePassed": 4274,
+    "levelCounting": "entry membership; entries may appear in multiple levels",
+    "blockedByReason": [
+      [
+        "per_sense_cap",
+        2511
+      ],
+      [
+        "below_provisional_high",
+        886
+      ],
+      [
+        "duplicate_or_check_missing",
+        593
+      ],
+      [
+        "sentenceLength",
+        591
+      ],
+      [
+        "attribution_missing",
+        417
+      ],
+      [
+        "pos_alignment_missing",
+        322
+      ],
+      [
+        "exact_sense_alignment_missing",
+        322
+      ],
+      [
+        "kiwi_POS_conflict",
+        322
+      ],
+      [
+        "target_token_or_lemma_unproven",
+        322
+      ],
+      [
+        "threshold_uncalibrated",
+        322
+      ],
+      [
+        "koreanLanguage",
+        10
+      ],
+      [
+        "translation_gloss_fallback",
+        2
+      ]
+    ],
+    "sourceAccess": "available",
+    "releaseReady": 1030,
+    "capacitySelected": 733,
+    "publicationBlocked": 733,
+    "blockingReasons": [
+      [
+        "example_cap",
+        733
+      ]
+    ],
+    "morphologyReplay": {
+      "count": 5986,
+      "mismatches": 0
+    },
+    "blocked": {
+      "duplicate_or_check_missing": 593,
+      "attribution_missing": 417,
+      "per_sense_cap": 2511,
+      "sentenceLength": 591,
+      "below_provisional_high": 886,
+      "koreanLanguage": 10,
+      "translation_gloss_fallback": 2,
+      "pos_alignment_missing": 322,
+      "exact_sense_alignment_missing": 322,
+      "kiwi_POS_conflict": 322,
+      "target_token_or_lemma_unproven": 322,
+      "threshold_uncalibrated": 322
+    }
+  },
+  "byLevel": {
+    "TOPIK-4": 24,
+    "TOPIK-2": 79,
+    "TOPIK-3": 49,
+    "TOPIK-1": 51,
+    "TOPIK-6": 26,
+    "TOPIK-5": 21
+  },
+  "sourceInputs": {
+    "tatoebaHash": "33dca07573f41cd53e70a39ea1db8347c9a6854f255be216ee4a97bf69e812da",
+    "homographCacheHash": "221e18788231bc6a50e72f9d371a553904088800e5cdd6c399be6381c4506b55"
+  },
+  "dryRun": {
+    "passed": true,
+    "blockingErrors": 0,
+    "newWarnings": 0,
+    "warningDelta": -249,
+    "addedExamples": 250,
+    "coveredSenses": 250,
+    "replacements": 0,
+    "deletedExamples": 0,
+    "transactionPassed": true,
+    "rollbackByteIdentical": true,
+    "alreadyPublishedPassed": true,
+    "productionUntouched": true
+  },
+  "writerEnabled": false
+}

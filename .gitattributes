@@ -1,3 +1,4 @@
 # Frozen artifacts must retain their original bytes on Windows and POSIX.
 docs/review-tool/release-a-manifest.json -text
 docs/review-tool/RELEASE-A-ATTRIBUTION.md -text
+docs/review-tool/release-[b-z]-manifest.json -text

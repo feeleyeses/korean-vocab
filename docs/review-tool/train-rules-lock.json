@@ -1,0 +1,16 @@
+{
+  "baselineCommit": "b4c89056fdb6bd02b48532404ecf4e2d07ab4b66",
+  "files": {
+    "docs/review-tool/automation.mjs": "aaaecccebda6900695bcfc4c1ca38b4ebeb4fe959962993e977ef68804b6d5b1",
+    "docs/review-tool/publication.mjs": "90b90217b92001540edbeaea33dca48753a980c41ce7e568bdc064a13ba025c4",
+    "docs/review-tool/example-lanes.mjs": "9dbc52b74effea9e53056442bdb1e41e518577bf1afc4e67f7abce7b7d6d0dae",
+    "docs/review-tool/readiness-rules.mjs": "c30c3925867456157e07d7eb4a72c77cf60a393062b10c3e28cd74c64dcc3625",
+    "docs/review-tool/sense-alignment.mjs": "446df2a65db415bf6fe0dd9c8b30bdc4a4bf0348e60cfbaf8d6760b1aed3187a",
+    "docs/review-tool/core.mjs": "9728ea9090b4fd129433c61baa7b3df5f720897e57f2f11c53e850f602ccd755",
+    "docs/review-tool/source-registry.json": "0a39205fe88144f196327387a2d8665d049dd9956aec158048539dfb70ff10ef",
+    "docs/review-tool/unblock_sources.py": "90c16a3ffe91178dc383f5c9fe415528fbfc01be62de04cac4905fbb0f269861",
+    "docs/review-tool/morph_batch.py": "a560e7dfee9e9850f2dc175a6ce4041f48ac65c53984630b99c1d0d62e88a3d8",
+    "src/domain.js": "a0b85e805d6de3c31e494a80977a3c3a1c292b3f80a829eee2f641f5335b6315",
+    "scripts/vocab-quality-audit.mjs": "ac60fefa9e6dfc1178e3e1166570d7ae0b301acfa8b25d3b0463300cb149003e"
+  }
+}

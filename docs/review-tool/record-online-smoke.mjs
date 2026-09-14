@@ -1,0 +1,16 @@
+import fs from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+import {args,root,loadRelease,check,verifyRelease} from './train-lib.mjs';
+const a=args(),{p,m,record}=await loadRelease(a.release);
+check(record.kind==='published','Cannot smoke an unpublished release');
+await verifyRelease({name:a.release,phase:'post_publish'});
+const git=process.env.GIT_BINARY||'git',rev=spawnSync(git,['rev-parse','HEAD'],{cwd:root,encoding:'utf8'});check(rev.status===0,'Commit unavailable');
+const sha=rev.stdout.trim();
+const getRun=async(id,name)=>{check(/^\d+$/.test(id||''),'Explicit CI and Pages run IDs required');const r=await fetch('https://api.github.com/repos/feeleyeses/korean-vocab/actions/runs/'+id,{headers:{Accept:'application/vnd.github+json',...(process.env.GITHUB_TOKEN?{Authorization:'Bearer '+process.env.GITHUB_TOKEN}:{})}});check(r.ok,'CI status unavailable; stop');const run=await r.json();check(run.head_sha===sha&&run.name===name&&run.status==='completed'&&run.conclusion==='success','CI/Pages failed, pending or wrong commit');return run.html_url;};
+const ciUrl=await getRun(a['ci-run'],'Release tooling verification'),pagesUrl=await getRun(a['pages-run'],'Deploy Korean Word Field');
+const common=spawnSync(process.execPath,['scripts/d2-ui-smoke.mjs'],{cwd:root,env:{...process.env,KWF_URL:a.url},encoding:'utf8'});check(common.status===0,'Pages interaction smoke failed');
+const result=spawnSync(process.execPath,['docs/review-tool/release-ui-smoke.mjs','--release',a.release,'--url',a.url],{cwd:root,env:process.env,encoding:'utf8',maxBuffer:8e6});check(result.status===0,'Release sample smoke failed; train stopped');
+const smoke=JSON.parse(result.stdout.trim());check(smoke.passed,'Smoke failed');
+const repeat=await verifyRelease({name:a.release,phase:'pre_publish'});check(repeat.status==='already_published'&&!repeat.writerAllowed,'Repeat protection failed');
+await fs.writeFile(p.record+'.tmp',JSON.stringify({...record,online:{...smoke,ci:'success',pages:'success',ciUrl,pagesUrl,commit:sha,verifiedAt:new Date().toISOString(),alreadyPublished:true}},null,2)+'\n',{flag:'wx'});await fs.rename(p.record+'.tmp',p.record);
+console.log(JSON.stringify({releaseId:m.releaseId,passed:true,next:'Commit smoke record before preparing the next batch'}));
