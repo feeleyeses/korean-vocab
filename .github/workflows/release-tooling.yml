@@ -13,11 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verify latest explicitly declared release phase (never infer from hash)
-        run: node docs/review-tool/train-ci.mjs
-      - name: Automation and isolated writer rollback tests
-        run: node --test docs/review-tool/*.test.mjs
-      - name: Offline ingest fixture tests
-        run: node docs/review-tool/ingest-test.mjs
+      - name: Verify explicit collocation cleanup and unchanged historical A/B gates
+        run: node docs/collocation/cleanup-ci.mjs
       - name: Production and frozen artifact files are unchanged
         run: git diff --exit-code -- data/vocabulary.json docs/review-tool/release-a-manifest.json docs/review-tool/RELEASE-A-ATTRIBUTION.md

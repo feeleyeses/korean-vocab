@@ -6177,15 +6177,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-알잘딱깔센-095-s1-c1",
-              "ko": "알잘딱깔센",
-              "zh": "",
-              "source": "",
-              "verified": false
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-4",
           "primary": true
@@ -27489,15 +27481,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-가족사진-447-s1-c1",
-              "ko": "가족사진",
-              "zh": "全家福，家庭照",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -27550,15 +27534,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-가족계획-448-s1-c1",
-              "ko": "가족계획",
-              "zh": "生育计划，生子计划",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -27611,15 +27587,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-가족원-449-s1-c1",
-              "ko": "가족원",
-              "zh": "家庭成员",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -27672,15 +27640,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-가족적-450-s1-c1",
-              "ko": "가족적",
-              "zh": "",
-              "source": "",
-              "verified": false
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -27733,15 +27693,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-가족회의-451-s1-c1",
-              "ko": "가족회의",
-              "zh": "家庭会议，家族会议",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -27794,15 +27746,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-학교생활-452-s1-c1",
-              "ko": "학교생활",
-              "zh": "校园生活",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -27855,15 +27799,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-학교장-453-s1-c1",
-              "ko": "학교장",
-              "zh": "校长",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -27916,15 +27852,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-고등학교-454-s1-c1",
-              "ko": "고등학교",
-              "zh": "高中",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -27977,15 +27905,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-대학교-455-s1-c1",
-              "ko": "대학교",
-              "zh": "大学",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -28038,15 +27958,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-중학교-456-s1-c1",
-              "ko": "중학교",
-              "zh": "初中",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -28099,15 +28011,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-초등학교-457-s1-c1",
-              "ko": "초등학교",
-              "zh": "小学",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -28160,15 +28064,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-회사원-458-s1-c1",
-              "ko": "회사원",
-              "zh": "公司职员，公司员工",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -28221,15 +28117,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-사회사업-459-s1-c1",
-              "ko": "사회사업",
-              "zh": "社会事业，社会福利事业",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -28282,15 +28170,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교통비-460-s1-c1",
-              "ko": "교통비",
-              "zh": "交通费，车费",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -28343,15 +28223,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교통사고-461-s1-c1",
-              "ko": "교통사고",
-              "zh": "交通事故",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -28404,15 +28276,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교통경찰-462-s1-c1",
-              "ko": "교통경찰",
-              "zh": "交通警察",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -28465,15 +28329,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교통난-463-s1-c1",
-              "ko": "교통난",
-              "zh": "交通困难，交通问题",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -28526,15 +28382,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교통량-464-s1-c1",
-              "ko": "교통량",
-              "zh": "交通量",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -28587,15 +28435,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교통수단-465-s1-c1",
-              "ko": "교통수단",
-              "zh": "交通，交通工具",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -28648,15 +28488,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교통순경-466-s1-c1",
-              "ko": "교통순경",
-              "zh": "交通巡警，交警",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -28709,15 +28541,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-환경-467-s1-c1",
-              "ko": "환경",
-              "zh": "环境",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -28770,15 +28594,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-자연환경-468-s1-c1",
-              "ko": "자연환경",
-              "zh": "自然环境",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -28831,15 +28647,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-정책-469-s1-c1",
-              "ko": "정책",
-              "zh": "政策",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -28892,15 +28700,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문화재-470-s1-c1",
-              "ko": "문화재",
-              "zh": "文化资产",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -28953,15 +28753,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문화적-471-s1-c1",
-              "ko": "문화적",
-              "zh": "",
-              "source": "",
-              "verified": false
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29014,15 +28806,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-경제-472-s1-c1",
-              "ko": "경제",
-              "zh": "经济",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29075,15 +28859,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-경제관-473-s1-c1",
-              "ko": "경제관",
-              "zh": "经济观",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29136,15 +28912,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-경제력-474-s1-c1",
-              "ko": "경제력",
-              "zh": "经济实力，经济能力",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29197,15 +28965,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-경제적-475-s1-c1",
-              "ko": "경제적",
-              "zh": "",
-              "source": "",
-              "verified": false
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29260,15 +29020,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-경제학과-476-s1-c1",
-              "ko": "경제학과",
-              "zh": "经济学系",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29321,15 +29073,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-사회-477-s1-c1",
-              "ko": "사회",
-              "zh": "",
-              "source": "",
-              "verified": false
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29382,15 +29126,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-사회단체-478-s1-c1",
-              "ko": "사회단체",
-              "zh": "社会团体",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29443,15 +29179,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-사회봉사-479-s1-c1",
-              "ko": "사회봉사",
-              "zh": "公益服务",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29504,15 +29232,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-사회생활-480-s1-c1",
-              "ko": "사회생활",
-              "zh": "社会生活",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29565,15 +29285,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-사회자-481-s1-c1",
-              "ko": "사회자",
-              "zh": "主持人，司仪",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29628,15 +29340,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문제없다-482-s1-c1",
-              "ko": "문제없다",
-              "zh": "没问题，不成问题，不在话下",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29691,15 +29395,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문제없이-483-s1-c1",
-              "ko": "문제없이",
-              "zh": "没问题，不成问题，不在话下",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29754,15 +29450,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문제점-484-s1-c1",
-              "ko": "문제점",
-              "zh": "问题点，问题",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29815,15 +29503,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문제지-485-s1-c1",
-              "ko": "문제지",
-              "zh": "试卷",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29876,15 +29556,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문제집-486-s1-c1",
-              "ko": "문제집",
-              "zh": "习题集",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29937,15 +29609,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-해결-487-s1-c1",
-              "ko": "해결",
-              "zh": "解决",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -29998,15 +29662,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-해결되다-488-s1-c1",
-              "ko": "해결되다",
-              "zh": "被解决，解决",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30059,15 +29715,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-해결책-489-s1-c1",
-              "ko": "해결책",
-              "zh": "解决方法",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30120,15 +29768,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-증가-490-s1-c1",
-              "ko": "증가",
-              "zh": "增加",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30181,15 +29821,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-증가되다-491-s1-c1",
-              "ko": "증가되다",
-              "zh": "被增加",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30242,15 +29874,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-증가량-492-s1-c1",
-              "ko": "증가량",
-              "zh": "增加量",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30303,15 +29927,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-증가시키다-493-s1-c1",
-              "ko": "증가시키다",
-              "zh": "使增加",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30364,15 +29980,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-증가율-494-s1-c1",
-              "ko": "증가율",
-              "zh": "增长率，增加率",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30425,15 +30033,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-감소-495-s1-c1",
-              "ko": "감소",
-              "zh": "减少，下降",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30486,15 +30086,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-감소되다-496-s1-c1",
-              "ko": "감소되다",
-              "zh": "减少，下降",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30547,15 +30139,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-감소시키다-497-s1-c1",
-              "ko": "감소시키다",
-              "zh": "减少，降低",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30608,15 +30192,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-감소율-498-s1-c1",
-              "ko": "감소율",
-              "zh": "减少率，下降率",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30669,15 +30245,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-변화되다-499-s1-c1",
-              "ko": "변화되다",
-              "zh": "变化，改变",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30730,15 +30298,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-변화시키다-500-s1-c1",
-              "ko": "변화시키다",
-              "zh": "改变，使变化",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30791,15 +30351,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-변화하다-501-s1-c1",
-              "ko": "변화하다",
-              "zh": "变化，改变",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30852,15 +30404,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-발전되다-502-s1-c1",
-              "ko": "발전되다",
-              "zh": "发展",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30913,15 +30457,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-발전시키다-503-s1-c1",
-              "ko": "발전시키다",
-              "zh": "使发展",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -30976,15 +30512,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-발전하다-504-s1-c1",
-              "ko": "발전하다",
-              "zh": "发展",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31037,15 +30565,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교육-505-s1-c1",
-              "ko": "교육",
-              "zh": "教育，培训",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -31098,15 +30618,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교육되다-506-s1-c1",
-              "ko": "교육되다",
-              "zh": "受教育",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -31159,15 +30671,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교육하다-507-s1-c1",
-              "ko": "교육하다",
-              "zh": "教育，培训",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -31220,15 +30724,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교육가-508-s1-c1",
-              "ko": "교육가",
-              "zh": "教育家",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31281,15 +30777,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교육비-509-s1-c1",
-              "ko": "교육비",
-              "zh": "学费，教育费用",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31344,15 +30832,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-교육시키다-510-s1-c1",
-              "ko": "교육시키다",
-              "zh": "教育，管教",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31405,15 +30885,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-생활하다-511-s1-c1",
-              "ko": "생활하다",
-              "zh": "生活，居住",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -31466,15 +30938,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-생활비-512-s1-c1",
-              "ko": "생활비",
-              "zh": "生活费",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31529,15 +30993,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-생활용품-513-s1-c1",
-              "ko": "생활용품",
-              "zh": "生活用品，日用品",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31590,15 +31046,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-생활필수품-514-s1-c1",
-              "ko": "생활필수품",
-              "zh": "生活必需品",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31651,15 +31099,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-건강하다-515-s1-c1",
-              "ko": "건강하다",
-              "zh": "健康",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -31712,15 +31152,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-건강미-516-s1-c1",
-              "ko": "건강미",
-              "zh": "健康美",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31773,15 +31205,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-건강식-517-s1-c1",
-              "ko": "건강식",
-              "zh": "健康餐，保健餐",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31834,15 +31258,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-건강식품-518-s1-c1",
-              "ko": "건강식품",
-              "zh": "保健食品，健康食品",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31895,15 +31311,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-건강히-519-s1-c1",
-              "ko": "건강히",
-              "zh": "健康地",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -31956,15 +31364,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-여행사-520-s1-c1",
-              "ko": "여행사",
-              "zh": "旅行社",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -32017,15 +31417,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-여행지-521-s1-c1",
-              "ko": "여행지",
-              "zh": "旅游地点，旅行地",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -32078,15 +31470,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-여행하다-522-s1-c1",
-              "ko": "여행하다",
-              "zh": "旅行，旅游",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -32139,15 +31523,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-여행가-523-s1-c1",
-              "ko": "여행가",
-              "zh": "旅行家",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -32200,15 +31576,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-여행객-524-s1-c1",
-              "ko": "여행객",
-              "zh": "游客，旅客",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -32261,15 +31629,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-여행담-525-s1-c1",
-              "ko": "여행담",
-              "zh": "旅行日记，旅行见闻",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -32322,15 +31682,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-여행용-526-s1-c1",
-              "ko": "여행용",
-              "zh": "旅行用",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -32383,15 +31735,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-여행자-527-s1-c1",
-              "ko": "여행자",
-              "zh": "旅行者，游客",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -32444,15 +31788,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-음식점-528-s1-c1",
-              "ko": "음식점",
-              "zh": "餐厅，饭店",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-1",
           "primary": true
@@ -32507,15 +31843,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-음식량-529-s1-c1",
-              "ko": "음식량",
-              "zh": "饮食量",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -32570,15 +31898,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-음식물-530-s1-c1",
-              "ko": "음식물",
-              "zh": "食物",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -32631,15 +31951,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-음식상-531-s1-c1",
-              "ko": "음식상",
-              "zh": "餐桌，饭桌",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true
@@ -32692,15 +32004,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-가족력-532-s1-c1",
-              "ko": "가족력",
-              "zh": "家族病史",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -32753,15 +32057,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-대가족-533-s1-c1",
-              "ko": "대가족",
-              "zh": "大家庭",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -32814,15 +32110,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-개회사-534-s1-c1",
-              "ko": "개회사",
-              "zh": "开会词，开幕词",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -32875,15 +32163,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-자회사-535-s1-c1",
-              "ko": "자회사",
-              "zh": "分公司，子公司",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -32936,15 +32216,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-주식회사-536-s1-c1",
-              "ko": "주식회사",
-              "zh": "株式会社，股份有限公司",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -32997,15 +32269,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-환경미화원-537-s1-c1",
-              "ko": "환경미화원",
-              "zh": "环卫工，清洁工",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33058,15 +32322,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-환경적-538-s1-c1",
-              "ko": "환경적",
-              "zh": "",
-              "source": "",
-              "verified": false
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33119,15 +32375,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-친환경-539-s1-c1",
-              "ko": "친환경",
-              "zh": "绿色",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33180,15 +32428,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-정책적-540-s1-c1",
-              "ko": "정책적",
-              "zh": "",
-              "source": "",
-              "verified": false
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33241,15 +32481,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문화계-541-s1-c1",
-              "ko": "문화계",
-              "zh": "文化界",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33302,15 +32534,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문화권-542-s1-c1",
-              "ko": "문화권",
-              "zh": "文化圈",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33363,15 +32587,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문화부-543-s1-c1",
-              "ko": "문화부",
-              "zh": "文化部",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33424,15 +32640,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문화비-544-s1-c1",
-              "ko": "문화비",
-              "zh": "文教费，文化经费",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33485,15 +32693,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문화사-545-s1-c1",
-              "ko": "문화사",
-              "zh": "文化史，文化发展史",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33546,15 +32746,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문제시되다-546-s1-c1",
-              "ko": "문제시되다",
-              "zh": "被视为问题，当作问题",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33607,15 +32799,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문제시하다-547-s1-c1",
-              "ko": "문제시하다",
-              "zh": "当作问题",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33668,15 +32852,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문제아-548-s1-c1",
-              "ko": "문제아",
-              "zh": "问题儿童",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33729,15 +32905,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-문제의식-549-s1-c1",
-              "ko": "문제의식",
-              "zh": "问题意识",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33790,15 +32958,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-해결사-550-s1-c1",
-              "ko": "해결사",
-              "zh": "暴力解决者",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33851,15 +33011,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-미해결-551-s1-c1",
-              "ko": "미해결",
-              "zh": "未解决",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33912,15 +33064,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-증가세-552-s1-c1",
-              "ko": "증가세",
-              "zh": "增势，增长势头",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -33973,15 +33117,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-감감소식-553-s1-c1",
-              "ko": "감감소식",
-              "zh": "杳无音讯，渺无音信，音信全无",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34034,15 +33170,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-변화무쌍-554-s1-c1",
-              "ko": "변화무쌍",
-              "zh": "变幻莫测，变化无常",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34095,15 +33223,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-변화무쌍하다-555-s1-c1",
-              "ko": "변화무쌍하다",
-              "zh": "变幻莫测，变化无常",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34156,15 +33276,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-변화율-556-s1-c1",
-              "ko": "변화율",
-              "zh": "变率",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34217,15 +33329,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-다변화-557-s1-c1",
-              "ko": "다변화",
-              "zh": "多元化，多边化，多样化",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34278,15 +33382,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-다변화되다-558-s1-c1",
-              "ko": "다변화되다",
-              "zh": "多元化，多边化，多样化",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34339,15 +33435,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-발전기-559-s1-c1",
-              "ko": "발전기",
-              "zh": "",
-              "source": "",
-              "verified": false
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34400,15 +33488,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-발전기-560-s1-c1",
-              "ko": "발전기",
-              "zh": "",
-              "source": "",
-              "verified": false
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34461,15 +33541,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-발전사-561-s1-c1",
-              "ko": "발전사",
-              "zh": "发展史",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34522,15 +33594,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-발전상-562-s1-c1",
-              "ko": "발전상",
-              "zh": "发展状况",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34583,15 +33647,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-발전성-563-s1-c1",
-              "ko": "발전성",
-              "zh": "发展前途",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34644,15 +33700,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-생활고-564-s1-c1",
-              "ko": "생활고",
-              "zh": "生活困难，生活之苦",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34705,15 +33753,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-생활권-565-s1-c1",
-              "ko": "생활권",
-              "zh": "生活圈",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34766,15 +33806,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-건강체-566-s1-c1",
-              "ko": "건강체",
-              "zh": "健康身体",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-5",
           "primary": true
@@ -34827,15 +33859,7 @@
               "verified": true
             }
           ],
-          "collocations": [
-            {
-              "collocationId": "ko-감소세-590-s1-c1",
-              "ko": "감소세",
-              "zh": "下降趋势，减少趋势",
-              "source": "KRDICT_EXACT",
-              "verified": true
-            }
-          ],
+          "collocations": [],
           "relations": [],
           "level": "TOPIK-3",
           "primary": true

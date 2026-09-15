@@ -1,0 +1,31 @@
+{
+  "releaseId": "collocation-cleanup-122-v1",
+  "phase": "post_publish",
+  "status": "published-awaiting-ci-pages-smoke",
+  "publishedAt": "2026-09-15T05:45:39.947Z",
+  "previousVocabularyHash": "83c62a43166d9aa507136beee1708118065142ddabdd6d6c4ec431662791a2b8",
+  "newVocabularyHash": "540ea19b9e12f6bcf311ae24d5ea9cdccc4d6d71576a381e8355780fb63b459f",
+  "sourcePlanHash": "234a815fe252dfe0cf1501cd36ca5343585f3abd5248256853c649e6c148f35d",
+  "removedCollocations": 122,
+  "affectedSenses": 122,
+  "remainingCollocations": 484,
+  "remainingCollocationsUnchanged": true,
+  "entries": 4020,
+  "senses": 4059,
+  "examples": 4459,
+  "blockingErrors": 0,
+  "warningBefore": 7039,
+  "warningAfter": 7143,
+  "warningDelta": {
+    "missingVerifiedCollocationPair": 113,
+    "missingCollocationZh": -9,
+    "net": 104,
+    "unexpected": 0
+  },
+  "qualityRulesUnchanged": true,
+  "backupId": "collocation-cleanup-122-v1-1789451136617",
+  "transaction": "atomic-replace-and-post-audit-passed",
+  "rollbackTest": "forced-post-write-failure-restored-original-bytes-in-isolated-copy",
+  "postWriteTests": {"cleanupPassed": 5, "historicalABPassed": 44, "historicalABSkipped": 5, "failed": 0},
+  "writerEnabled": false
+}
